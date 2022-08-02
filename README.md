@@ -21,4 +21,4 @@ python scrap.py
 
 ## 구조 및 설명
 
-https://miro.com/app/board/uXjVO-otrNc=/?share_link_id=948596105654
+https://miro.com/app/board/uXjVOmAO96A=/?share_link_id=344142157749
