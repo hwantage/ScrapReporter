@@ -15,13 +15,13 @@ db = open(path + "db.txt", 'r', encoding='utf8')
 report = ""
 tempForSameTxtCheck = ""
 
-#한글 2글자 이상 포함 여부 판단
+#한글 3글자 이상 포함 여부 판단
 def isKorInclude(input_s):
     k_count = 0
     for c in input_s:
         if ord('가') <= ord(c) <= ord('힣'):
             k_count+=1
-        if k_count>1:
+        if k_count>=3:
             return True
             break
     return False
@@ -95,7 +95,7 @@ while True:
                     soup = BeautifulSoup(line, "html.parser")
                     text = soup.get_text()
                     #print(text.lstrip("+").strip())
-                    if len(text)>10:
+                    if isKorInclude(text) and len(text)>10:
                         report += "+ " + text.lstrip("+").strip() + "\n\n"
 db.close()
 print(report)
