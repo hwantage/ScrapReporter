@@ -33,7 +33,7 @@ class CRAWL:
 		# 결과를 저장하기 위한 txt
 		f = open('secu_crawl.txt', 'w', encoding='utf-8')
 		
-		for i in range(10):
+		for i in range(20):
 			# 위에서 구한 index를 넣어 URL을 구성 (index는 계속 -1 됨)
 			self.news_url = "https://www.boannews.com/media/view.asp?idx="+str(self.index)+"&page=1"
 			print(self.news_url)
@@ -44,28 +44,29 @@ class CRAWL:
 			
 			# alert 경고창 처리를 위한 try, except 구문
 			try:
-				is_alert = self.driver.switch_to_alert()
+				#is_alert = self.driver.switch_to_alert()     #셀레니움 이전 버전에서 동작하는 코드
+				is_alert = self.driver.switch_to.alert
 				is_alert.dismiss()
-			
+				self.index = int(self.index)
+				self.index -= 1
 			except:
 				# 뉴스 기사 본문 텍스트에 접근
 				news_title=self.driver.find_element(By.ID, "news_title02").text
 				news_content=self.driver.find_element(By.ID, "news_content").text
 				news_date=self.driver.find_element(By.ID, "news_util01").text
 				news_date = news_date[10:20]
-		
-		
+				
 				# 출력
-				print(self.news_url)
-				print("["+news_title+"]\n")
-				print(news_date+"\n")
-				print(news_content+"\n\n")
+				#print("["+news_title+"]\n")
+				#print(news_date+"\n")
+				#print(news_content+"\n\n")
 				
 				# 파일에 쓰기
 				f.write(self.news_url + "\n")
 				f.write("["+news_title+"]\n")
 				f.write(news_date+"\n")
-				f.write(news_content+"\n\n")
+				f.write(news_content[0:100]+"...\n")
+				f.write("-------------------------------------------------------------------------\n\n")
 				
 				# 다음 기사 크롤링을 위해 index -1 을 해줌
 				self.index = int(self.index)
