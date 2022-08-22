@@ -6,6 +6,7 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from datetime import datetime
 
 class CRAWL:
 
@@ -30,8 +31,11 @@ class CRAWL:
 	
 	def crawling(self):
 	
+		now = datetime.now()
+		formattedDate = now.strftime("%Y%m%d")
+
 		# 결과를 저장하기 위한 txt
-		f = open('secu_crawl.txt', 'w', encoding='utf-8')
+		f = open('secunews_crawl_' + formattedDate + '.html', 'w', encoding='utf-8')
 		
 		for i in range(20):
 			# 위에서 구한 index를 넣어 URL을 구성 (index는 계속 -1 됨)
@@ -62,11 +66,11 @@ class CRAWL:
 				#print(news_content+"\n\n")
 				
 				# 파일에 쓰기
-				f.write(self.news_url + "\n")
-				f.write("["+news_title+"]\n")
-				f.write(news_date+"\n")
-				f.write(news_content[0:100]+"...\n")
-				f.write("-------------------------------------------------------------------------\n\n")
+				f.write("<a href='" + self.news_url + "' target='_blank'>" + self.news_url + "</a><br/>")
+				f.write("["+news_title+"]<br/>")
+				f.write(news_date+"<br/>")
+				f.write(news_content[0:100]+"...<br/>")
+				f.write("-------------------------------------------------------------------------<br/><br/>")
 				
 				# 다음 기사 크롤링을 위해 index -1 을 해줌
 				self.index = int(self.index)

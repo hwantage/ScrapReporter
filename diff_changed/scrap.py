@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from difflib import context_diff
 import ssl
 import os.path
+from datetime import datetime
 
 #안전하지 않은 연결 무시 NET::ERR_CERT_COMMON_NAME_INVALID
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -26,6 +27,17 @@ def isKorInclude(input_s):
             break
     return False
 
+def createFolder(directory):
+    try:
+         if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print ('Error: Creating directory. ' + directory)
+
+now = datetime.now()
+formattedDate = now.strftime("%Y%m%d")
+createFolder(formattedDate)
+
 while True:
     dbline = db.readline()
     if not dbline: break
@@ -34,7 +46,7 @@ while True:
     url = data[1].replace("\n","")
     
     report += "\n<a href='" + url + "' target='_blank'>" + name + "</a>\n"
-
+    
     try:
         print("TRY name : {}".format(name))
         req = Request(url)
@@ -62,7 +74,7 @@ while True:
         #기존 비교 대상 파일 있는지 확인
         #기존 파일이 있으면 새로운 파일로 저장하고 키워드 비교
         if os.path.isfile(file):
-            file_new = path + name + "_new.txt"
+            file_new = path + formattedDate +"/" + name + ".txt"
             f = open(file_new,'w', encoding='utf8')
             try: 
                 f.write(text_byte.decode('utf-8'))
@@ -99,6 +111,6 @@ while True:
                         report += "+ " + text.lstrip("+").strip() + "\n\n"
 db.close()
 print(report)
-file = path + "report.html"
+file = path + formattedDate + "/" + "report_changed_" + formattedDate + ".html"
 f = open(file,'w', encoding='utf8')
 f.write(report.replace("\n","<br>"))
