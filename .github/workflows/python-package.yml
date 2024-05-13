@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "master" ]
   schedule:
-   - cron:  "*/20 * * * *"
+   - cron:  "0 8 * * 1"
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
         git config --local user.email "hwantage@gmail.com"
         git config --local user.name "hwantage"
         git add secunews_crawl_${{ env.DATE }}.html
-        git commit -m "Auto - Update data with Scraping"
+        git commit -m "Auto - Update data with Github Action"
     - name: Push
       uses: ad-m/github-push-action@master
       with:
