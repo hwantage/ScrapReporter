@@ -34,14 +34,14 @@ jobs:
     - name: Run Scraper with python
       run: |
         python "secu_news.py"
-    - name: Get current date
+    - name: Set current date
       id: date
-      run: echo "::set-output name=date::$(date +'%Y%m%d')"        
+      run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
     - name: Commits
       run: |
         git config --local user.email "hwantage@gmail.com"
         git config --local user.name "hwantage"
-        git add secunews_crawl_${{ steps.date.outputs.date }}.html
+        git add secunews_crawl_${{ env.DATE }}.html
         git commit -m "Auto - Update data with Scraping"
     - name: Push
       uses: ad-m/github-push-action@master
