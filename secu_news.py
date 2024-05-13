@@ -5,6 +5,7 @@ import sys
 import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from datetime import datetime
 
@@ -19,7 +20,9 @@ class CRAWL:
 	# 크롤링을 시작할 뉴스 기사 URL 구성을 위해 index를 가져옴
 	def parsing_news_url(self, url):
 
-		self.driver = webdriver.Chrome(ChromeDriverManager().install())
+		chrome_options = Options()
+		chrome_options.add_argument("--headless")  # Headless 모드로 설정
+		self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 		self.driver.get(url)
 		
 		# 전체기사에서 첫 기사의 idx 가져오기
