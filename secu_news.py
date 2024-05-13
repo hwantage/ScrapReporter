@@ -92,7 +92,7 @@ class CRAWL:
 		body = open('secunews_crawl_' + formattedDate + '.html', 'r', encoding='utf-8').read()
 		url = "https://api.github.com/repos/hwantage/ScrapReporter/issues"
 		headers = {
-			"Authorization": "token " + os.environ['action_access_token'],
+			"Authorization": "token " + os.environ['ACTION_ACCESS_TOKEN'],
 			"Accept": "application/vnd.github.v3+json"
 		}
 
@@ -112,6 +112,6 @@ if __name__=="__main__":
 	secu_news_all = "https://www.boannews.com/media/t_list.asp"
 	
 	crawl = CRAWL()
-	#crawl.parsing_news_url(secu_news_all)
-	#crawl.crawling()
+	crawl.parsing_news_url(secu_news_all)
+	crawl.crawling()
 	crawl.create_issue()
