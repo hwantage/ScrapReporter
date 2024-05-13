@@ -43,6 +43,7 @@ jobs:
       run: |
         git config --local user.email "hwantage@gmail.com"
         git config --local user.name "hwantage"
+        git pull
         git add secunews_crawl_${{ env.DATE }}.html
         git commit -m "Auto - Update data with Github Action"
     - name: Push
