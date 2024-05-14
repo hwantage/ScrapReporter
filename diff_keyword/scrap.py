@@ -9,7 +9,7 @@ from datetime import datetime
 #안전하지 않은 연결 무시 NET::ERR_CERT_COMMON_NAME_INVALID
 ssl._create_default_https_context = ssl._create_unverified_context
 context = ssl._create_unverified_context()
-path = "C:/python/scraprepoter/diff_keyword/"
+path = "D:/python/scraprepoter/diff_keyword/"
 
 #데이터베이스 오픈
 db = open(path + "db.txt", 'r', encoding='utf8')
@@ -38,6 +38,7 @@ while True:
     report += "\n<a href='" + url + "' target='_blank'>" + name + "</a>\n"
 
     try:
+        print("TRY name : {}".format(name))
         req = Request(url)
         req.add_header('Cookie', 'JSESSIONID=43EnHJ1R1W26gIzDAxAFXnDLLn8C2dsCYOfdJ6yo.AP_msit_1')
         req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36')
