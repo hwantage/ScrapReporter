@@ -233,7 +233,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3262&amp;page=1">2024년 블록체인-정보보안 기술특례상장 컨설팅 지원기업 모집(~5.17(금) 14시)</a>
 </td>
 <td class="date">2024-04-30</td>
-<td class="count">9299</td>
+<td class="count">9302</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3262', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -245,7 +245,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3263&amp;page=1">「개인정보보호 중심 설계(PbD) 시범인증」 사업 모집공고</a>
 </td>
 <td class="date">2024-04-24</td>
-<td class="count">1010</td>
+<td class="count">1012</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3263', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -257,7 +257,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3259&amp;page=1">2024년 한국인터넷진흥원 공공데이터 활용 설문조사</a>
 </td>
 <td class="date">2024-04-08</td>
-<td class="count">15271</td>
+<td class="count">15273</td>
 <td class="attach">
 </td>
 </tr>
@@ -266,7 +266,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3273&amp;page=1">2024년 정보보호제품 성능평가자 양성교육 신청·접수 안내(1차, Keysight)</a>
 </td>
 <td class="date">2024-05-09</td>
-<td class="count">1553</td>
+<td class="count">1555</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3273', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -278,7 +278,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3272&amp;page=1">영세·중소업체 대상 암호모듈 시험평가 컨설팅 지원 참가기업 모집 안내(~5.23(목) 18시)</a>
 </td>
 <td class="date">2024-05-07</td>
-<td class="count">1887</td>
+<td class="count">1888</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3272', 1, 'KO');">
 <img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
@@ -290,7 +290,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3271&amp;page=1">개인정보관리 전문기관 지정 및 일반수신자 등록제도 사전 수요조사 안내</a>
 </td>
 <td class="date">2024-05-02</td>
-<td class="count">3243</td>
+<td class="count">3244</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3271', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -370,7 +370,7 @@ function oneDepMenu() {
 <dd>2024-05-14</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="f3e038a2-7363-4358-9951-35ba46195e59">
+<input name="_csrf" type="hidden" value="3163090d-a291-4707-85db-ac0bcf21052c">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -393,7 +393,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "f3e038a2-7363-4358-9951-35ba46195e59");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "3163090d-a291-4707-85db-ac0bcf21052c");
             },			
 			success: function(data) {
 				alert(data.message)
