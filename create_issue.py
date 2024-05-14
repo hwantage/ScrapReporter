@@ -1,6 +1,7 @@
 import os
 import requests
 from datetime import datetime
+import shutil
 
 class ISSUE:
 	def create_issue(self):
@@ -23,8 +24,21 @@ class ISSUE:
 		response = requests.post(url, headers=headers, json=data)
 		if response.status_code == 201:
 			print("Issue created successfully")
+			self.overwrite_txt_files(formattedDate)
 		else:
 			print("Failed to create issue. Status code:", response.status_code)
+
+	def overwrite_txt_files(self, formattedDate):
+		keyword_src = 'diff_keyword/' + formattedDate + '/'
+		keyword_files = [f for f in os.listdir(keyword_src) if f.endswith('.txt')]
+		for txt_file in keyword_files:
+			shutil.move(os.path.join(keyword_src, txt_file), os.path.join('diff_keyword/', txt_file))
+
+		changed_src = 'diff_changed/' + formattedDate + '/'
+		changed_files = [f for f in os.listdir(changed_src) if f.endswith('.txt')]
+		for txt_file in changed_files:
+			shutil.move(os.path.join(changed_src, txt_file), os.path.join('diff_changed/', txt_file))
+		print("Txt files moved successfully")            
 			
 if __name__=="__main__":
 	
