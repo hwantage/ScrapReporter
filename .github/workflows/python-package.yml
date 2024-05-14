@@ -12,8 +12,6 @@ on:
    - cron:  "0 8 * * *"
 
 jobs:
-
-
   changed:
     runs-on: ubuntu-latest
     strategy:
@@ -33,8 +31,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r diff_changed/requirements.txt
     - name: Run Scraper with python
-      env:
-        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
       working-directory: diff_changed
       run: |
         python "scrap.py"
@@ -71,8 +67,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r diff_keyword/requirements.txt
     - name: Run Scraper with python
-      env:
-        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
       working-directory: diff_keyword
       run: |
         python "scrap.py"
@@ -110,8 +104,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Scraper with python
-      env:
-        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
       run: |
         python "secu_news.py"
     - name: Set current date
@@ -129,3 +121,33 @@ jobs:
       with:
         branch: 'master'
         github_token: $ 
+
+  createIssue:
+    needs: [changed, keyword, news]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11.2"]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+          python-version: ${{ matrix.python-version }}
+          architecture: 'x64'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Source Pull
+      run: |
+        git config --local user.email "hwantagexsw2@gmail.com"
+        git config --local user.name "hwantage"
+        git pull origin master
+    - name: Create issue
+      env:
+        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
+      run: |
+        python "create_issue.py"
