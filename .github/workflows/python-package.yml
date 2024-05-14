@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "master" ]
   schedule:
-   - cron:  "0 8 * * 0"
+   - cron:  "0 8 * * *"
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
           python-version: ${{ matrix.python-version }}
           architecture: 'x64'
@@ -41,9 +41,8 @@ jobs:
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
     - name: Commits
       run: |
-        git config --local user.email "hwantage@gmail.com"
+        git config --local user.email "hwantagexsw2@gmail.com"
         git config --local user.name "hwantage"
-        git pull
         git add secunews_crawl_${{ env.DATE }}.html
         git commit -m "Auto - Update data with Github Action"
     - name: Push
