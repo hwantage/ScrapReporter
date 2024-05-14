@@ -9,7 +9,7 @@ from datetime import datetime
 #안전하지 않은 연결 무시 NET::ERR_CERT_COMMON_NAME_INVALID
 ssl._create_default_https_context = ssl._create_unverified_context
 context = ssl._create_unverified_context()
-path = "./"
+path = ""
 
 #데이터베이스 오픈
 db = open(path + "db.txt", 'r', encoding='utf8')
