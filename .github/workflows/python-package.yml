@@ -71,8 +71,9 @@ jobs:
     - name: Run Scraper with python
       env:
         ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
+      working-directory: diff_changed
       run: |
-        python "diff_changed/scrap.py"
+        python "scrap.py"
     - name: Set current date
       id: date
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
@@ -109,8 +110,9 @@ jobs:
     - name: Run Scraper with python
       env:
         ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
+      working-directory: diff_keyword
       run: |
-        python "diff_keyword/scrap.py"
+        python "scrap.py"
     - name: Set current date
       id: date
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
