@@ -38,13 +38,11 @@ jobs:
       working-directory: diff_changed
       run: |
         python "scrap.py"
-    - name: Set current date
-      id: date
-      run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
     - name: Commits
       run: |
         git config --local user.email "hwantagexsw2@gmail.com"
         git config --local user.name "hwantage"
+        git pull origin master
         git add diff_changed/
         git commit -m "Auto - Update data with Github Action"
     - name: Push
@@ -78,13 +76,11 @@ jobs:
       working-directory: diff_keyword
       run: |
         python "scrap.py"
-    - name: Set current date
-      id: date
-      run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
     - name: Commits
       run: |
         git config --local user.email "hwantagexsw2@gmail.com"
         git config --local user.name "hwantage"
+        git pull origin master
         git add diff_keyword/
         git commit -m "Auto - Update data with Github Action"
     - name: Push
@@ -125,6 +121,7 @@ jobs:
       run: |
         git config --local user.email "hwantagexsw2@gmail.com"
         git config --local user.name "hwantage"
+        git pull origin master
         git add secunews_crawl_${{ env.DATE }}.html
         git commit -m "Auto - Update data with Github Action"
     - name: Push
