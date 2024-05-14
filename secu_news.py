@@ -3,8 +3,6 @@
 #Reference:https://liveyourit.tistory.com/40?category=872251
 import sys
 import time
-import os
-import requests
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
@@ -85,27 +83,6 @@ class CRAWL:
 		f.close()
 		self.driver.close()
 
-	def create_issue(self):
-		now = datetime.now()
-		formattedDate = now.strftime("%Y%m%d")
-		title = formattedDate + " news"
-		body = open('secunews_crawl_' + formattedDate + '.html', 'r', encoding='utf-8').read()
-		url = "https://api.github.com/repos/hwantage/ScrapReporter/issues"
-		headers = {
-			"Authorization": "token " + os.environ['ACTION_ACCESS_TOKEN'],
-			"Accept": "application/vnd.github.v3+json"
-		}
-
-		data = {
-			"title": title,
-			"body": body
-		}
-		response = requests.post(url, headers=headers, json=data)
-		if response.status_code == 201:
-			print("Issue created successfully")
-		else:
-			print("Failed to create issue. Status code:", response.status_code)
-
 if __name__=="__main__":
 	
 	# 보안뉴스 전체기사 URL
@@ -114,4 +91,3 @@ if __name__=="__main__":
 	crawl = CRAWL()
 	crawl.parsing_news_url(secu_news_all)
 	crawl.crawling()
-	crawl.create_issue()
