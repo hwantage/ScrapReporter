@@ -1403,10 +1403,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="72651">
+<input id="totalCount" name="totalCount" type="hidden" value="72650">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>72,651건</span></h3>
+<h3 class="t_head">검색결과 <span>72,650건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1461,7 +1461,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2024년 국가(27개소) 및 새만금호 수질자동측정소(6개소) 운영관리" type="checkbox" value="1182478"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72651
+                            72650
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1496,7 +1496,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="어구부표 보증금제 세부 운영 방안 연구" type="checkbox" value="1182477"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72650
+                            72649
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1533,7 +1533,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="수요자 맞춤형 신품종, 신제품 개발방향 지원을 위한 소비정보 조사 체계 개선" type="checkbox" value="1182476"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72649
+                            72648
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1568,7 +1568,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="특수의료장비의 적정관리 및 의료방사선의 환자보호 방안 마련 연구" type="checkbox" value="1182475"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72648
+                            72647
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1603,7 +1603,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="장애인 고용컨설팅 포털 콘텐츠 수집, 분류 2차 연구 용역" type="checkbox" value="1182474"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72647
+                            72646
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1638,7 +1638,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2024년 디지털 헬스케어 의료기기(AI 의료기기) 데이터 로드맵 구축 전략 연구용역" type="checkbox" value="1182469"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72646
+                            72645
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1673,7 +1673,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="인공지능 기반 기지국 전자파 인체노출량 예측을 위한 기지국 전자파 데이터 수집용역" type="checkbox" value="1182468"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72645
+                            72644
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1710,7 +1710,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="SMR 캔드모터 실시간 열감지 가상센서 개발 용역" type="checkbox" value="1182466"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72644
+                            72643
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1745,7 +1745,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="경상북도 미세먼지관리 시행계획 및 대기환경관리 시행계획(2025~2029) 수립 연구용역" type="checkbox" value="1182465"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72643
+                            72642
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1780,7 +1780,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="제4단계 경상북도 수질오염총량관리 정밀이행 평가 연구용역" type="checkbox" value="1182462"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            72642
+                            72641
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1823,7 +1823,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7266" onclick="fn_search(7266);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7265" onclick="fn_search(7265);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
