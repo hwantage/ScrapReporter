@@ -110,6 +110,7 @@ jobs:
       id: date
       run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
     - name: Commits
+      continue-on-error: true
       run: |
         git config --local user.email "hwantagexsw2@gmail.com"
         git config --local user.name "hwantage"
@@ -152,6 +153,7 @@ jobs:
       run: |
         python "create_issue.py"
     - name: Commits
+      continue-on-error: true
       run: |
         git config --local user.email "hwantagexsw2@gmail.com"
         git config --local user.name "hwantage"
