@@ -11,9 +11,9 @@ class ISSUE:
 		body1 = open('secunews_crawl_' + formattedDate + '.html', 'r', encoding='utf-8').read()
 		body2 = open('diff_keyword/' + formattedDate + '/report_keyword_' + formattedDate + '.html', 'r', encoding='utf-8').read()
 		body3 = open('diff_changed/' + formattedDate + '/report_changed_' + formattedDate + '.html', 'r', encoding='utf-8').read()
-		url = "https://api.github.com/repos/heecastle/ScrapReporterAction/issues"
+		url = "https://api.github.com/repos/hwantage/ScrapReporter/issues"
 		headers = {
-			"Authorization": "token " + os.environ['HEECASTLE_ACCESS_TOKEN'],
+			"Authorization": "token " + os.environ['ACTION_ACCESS_TOKEN'],
 			"Accept": "application/vnd.github.v3+json"
 		}
 
