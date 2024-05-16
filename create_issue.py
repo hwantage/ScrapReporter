@@ -19,7 +19,7 @@ class ISSUE:
 
 		data = {
 			"title": title,
-			"body": body1 + body2 + body3
+			"body": "@hwantage \n\n" + body1 + body2 + body3
 		}
 		response = requests.post(url, headers=headers, json=data)
 		if response.status_code == 201:
