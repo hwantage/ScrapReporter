@@ -148,7 +148,7 @@ jobs:
         git pull origin master
     - name: Create issue
       env:
-        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
+        HEECASTLE_ACCESS_TOKEN: ${{ secrets.HEECASTLE_ACCESS_TOKEN }}
       run: |
         python "create_issue.py"
     - name: Commits
