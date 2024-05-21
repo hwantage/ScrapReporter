@@ -9,7 +9,7 @@ on:
   pull_request:
     branches: [ "master" ]
   schedule:
-   - cron:  "0 8 * * 1"
+   - cron:  "0 23 * * 0"
 
 jobs:
   changed:
@@ -124,7 +124,7 @@ jobs:
         github_token: $ 
         
   createIssue:
-    #needs: [changed, keyword, news]
+    needs: [changed, keyword, news]
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
