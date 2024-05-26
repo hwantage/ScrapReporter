@@ -3,7 +3,7 @@
 
 <html lang="ko">
 <head>
-<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="51d5306a-06c3-4e43-9424-8b41a92db16f" name="_csrf"/>
+<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="a5ac8bee-236e-4448-82e4-0918381f026a" name="_csrf"/>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, user-scalable=0, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
@@ -128,19 +128,19 @@
             $(".select_list").on("click",function(){
             	if($("input[name=condition]").val() == "searchPblancNm"){
             		$(".select_list_open").attr("title", "검색조건 지원사업명으로 검색");
-            		$(".select_list_open").attr("aria-label", "searchPblancNm");
+            		//$(".select_list_open").attr("aria-label", "searchPblancNm");
             	}else if($("input[name=condition]").val() == "pldirJrsdCodeNm"){
             		$(".select_list_open").attr("title", "검색조건 소관부처로 검색");
-            		$(".select_list_open").attr("aria-label", "pldirJrsdCodeNm");
+            		//$(".select_list_open").attr("aria-label", "pldirJrsdCodeNm");
             	}else if($("input[name=condition]").val() == "searchExcInsttNm"){ //20230522 검색조건 추가
             		$(".select_list_open").attr("title", "검색조건 사업수행기관으로 검색");
-            		$(".select_list_open").attr("aria-label", "searchExcInsttNm");
+            		//$(".select_list_open").attr("aria-label", "searchExcInsttNm");
             	}else if($("input[name=condition]").val() == "CONTS"){
             		$(".select_list_open").attr("title", "검색조건 내용으로 검색");
-            		$(".select_list_open").attr("aria-label", "CONTS");
+            		//$(".select_list_open").attr("aria-label", "CONTS");
             	}else{
             		$(".select_list_open").attr("title", "검색조건 해시태그로 검색");
-            		$(".select_list_open").attr("aria-label", "TAGNAME");
+            		//$(".select_list_open").attr("aria-label", "TAGNAME");
             	}
             	
             	if($("input[name=condition]").val() == ""){
@@ -532,6 +532,7 @@
 <span class="s_title">정책정보</span>
 <ul>
 <li class="on" grant="Y" menu-seq="128"> <a href="/web/lay1/bbs/S1T122C128/AS/74/list.do" title="지원사업 공고">지원사업 공고 </a> </li>
+<li class="" grant="Y" menu-seq="308"> <a href="/web/lay1/program/S1T122C308/auth/list.do" title="품목별 법정의무 인증제도">품목별 법정의무 인증제도 </a> </li>
 <li class="" grant="Y" menu-seq="127"> <a href="/web/lay1/bbs/S1T122C127/AX/210/list.do" title="행사정보">행사정보 </a> </li>
 <li class="" grant="Y" menu-seq="157"> <a href="/web/lay1/S1T122C157/sublink.do" title="정책뉴스">정책뉴스 </a> </li>
 <li class="" grant="Y" menu-seq="130"> <a href="/web/lay1/bbs/S1T122C130/AY/115/list.do" title="입법·행정예고/고시">입법·행정예고/고시 </a> </li>
@@ -841,7 +842,7 @@
 <div class="category">
 <div class="scroll_x">
 <div class="category_list icon_1">
-<a alt="분야(1063) 공고보기" class="on" href="#" id="hashAll" onclick="fn_hashCode_Change('')" title="분야(1063) 공고보기"><span>분야(1063)</span></a>
+<a alt="분야(1077) 공고보기" class="on" href="#" id="hashAll" onclick="fn_hashCode_Change('')" title="분야(1077) 공고보기"><span>분야(1077)</span></a>
 </div>
 <div class="category_list icon_2">
 <a alt="금융" href="javascript:void(0); return false;" id="01" onclick="fn_hashCode_Change('01')" title="금융">
@@ -850,22 +851,22 @@
 </div>
 <div class="category_list icon_3">
 <a alt="기술" href="javascript:void(0); return false;" id="02" onclick="fn_hashCode_Change('02')" title="기술">
-<span>기술(248)</span>
+<span>기술(240)</span>
 </a>
 </div>
 <div class="category_list icon_4">
 <a alt="인력" href="javascript:void(0); return false;" id="03" onclick="fn_hashCode_Change('03')" title="인력">
-<span>인력(66)</span>
+<span>인력(71)</span>
 </a>
 </div>
 <div class="category_list icon_8">
 <a alt="수출" href="javascript:void(0); return false;" id="07" onclick="fn_hashCode_Change('07')" title="수출">
-<span>수출(175)</span>
+<span>수출(182)</span>
 </a>
 </div>
 <div class="category_list icon_9">
 <a alt="내수" href="javascript:void(0); return false;" id="08" onclick="fn_hashCode_Change('08')" title="내수">
-<span>내수(76)</span>
+<span>내수(81)</span>
 </a>
 </div>
 <div class="category_list icon_10">
@@ -875,12 +876,12 @@
 </div>
 <div class="category_list icon_11">
 <a alt="경영" href="javascript:void(0); return false;" id="10" onclick="fn_hashCode_Change('10')" title="경영">
-<span>경영(233)</span>
+<span>경영(237)</span>
 </a>
 </div>
 <div class="category_list icon_13">
 <a alt="기타" href="javascript:void(0); return false;" id="12" onclick="fn_hashCode_Change('12')" title="기타">
-<span>기타(16)</span>
+<span>기타(17)</span>
 </a>
 </div>
 </div>
@@ -890,33 +891,33 @@
 <div class="area_btn_list">
 <ul>
 <li class="total_area_btn">
-<button class="toggle_area_btn" id="wnty" name="지역" title="지역(604) 공고보기" type="button">
-				                	지역(604)
+<button class="toggle_area_btn" id="wnty" name="지역" title="지역(608) 공고보기" type="button">
+				                	지역(608)
 				                </button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6110000" name="6110000" type="button">서울(39)</button>
+<button class="toggle_area_btn" id="6110000" name="6110000" type="button">서울(43)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6260000" name="6260000" type="button">부산(36)</button>
+<button class="toggle_area_btn" id="6260000" name="6260000" type="button">부산(43)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6270000" name="6270000" type="button">대구(25)</button>
+<button class="toggle_area_btn" id="6270000" name="6270000" type="button">대구(28)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6280000" name="6280000" type="button">인천(45)</button>
+<button class="toggle_area_btn" id="6280000" name="6280000" type="button">인천(51)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6290000" name="6290000" type="button">광주(34)</button>
+<button class="toggle_area_btn" id="6290000" name="6290000" type="button">광주(33)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6300000" name="6300000" type="button">대전(28)</button>
+<button class="toggle_area_btn" id="6300000" name="6300000" type="button">대전(25)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6310000" name="6310000" type="button">울산(26)</button>
+<button class="toggle_area_btn" id="6310000" name="6310000" type="button">울산(20)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="5690000" name="5690000" type="button">세종(16)</button>
+<button class="toggle_area_btn" id="5690000" name="5690000" type="button">세종(15)</button>
 </li>
 <div style="height:10px;"></div>
 <li class="area_btn">
@@ -926,25 +927,25 @@
 <button class="toggle_area_btn" id="6420000" name="6420000" type="button">강원(17)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6430000" name="6430000" type="button">충북(46)</button>
+<button class="toggle_area_btn" id="6430000" name="6430000" type="button">충북(41)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6440000" name="6440000" type="button">충남(28)</button>
+<button class="toggle_area_btn" id="6440000" name="6440000" type="button">충남(31)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6450000" name="6450000" type="button">전북(35)</button>
+<button class="toggle_area_btn" id="6450000" name="6450000" type="button">전북(38)</button>
 </li>
 <li class="area_btn">
 <button class="toggle_area_btn" id="6460000" name="6460000" type="button">전남(27)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6470000" name="6470000" type="button">경북(35)</button>
+<button class="toggle_area_btn" id="6470000" name="6470000" type="button">경북(37)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6480000" name="6480000" type="button">경남(53)</button>
+<button class="toggle_area_btn" id="6480000" name="6480000" type="button">경남(51)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6500000" name="6500000" type="button">제주(25)</button>
+<button class="toggle_area_btn" id="6500000" name="6500000" type="button">제주(19)</button>
 </li>
 </ul>
 </div>
@@ -1001,59 +1002,7 @@
 </thead>
 <tbody>
 <tr>
-<td>1062</td>
-<td>
-                            
-                                
-                                경영
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097668" title="[세종] 2024년 지역문제해결사업 참여기업 모집 공고 페이지 이동">
-                                [세종] 2024년 지역문제해결사업 참여기업 모집 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-16 ~ 2024-05-30
-                                
-                            
-                        </td>
-<td>세종특별자치시</td>
-<td>세종사회적경제공동체센터</td>
-<td>2024-05-20</td>
-<td>310</td>
-</tr>
-<tr>
-<td>1061</td>
-<td>
-                            
-                                
-                                수출
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097653" title="[대전] 2024년 2차 성장사다리 지원사업 수출기업 지원프로그램 모집 공고 페이지 이동">
-                                [대전] 2024년 2차 성장사다리 지원사업 수출기업 지원프로그램 모집 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-17 ~ 2024-05-31
-                                
-                            
-                        </td>
-<td>중소벤처기업부</td>
-<td>대전테크노파크</td>
-<td>2024-05-20</td>
-<td>337</td>
-</tr>
-<tr>
-<td>1060</td>
+<td>1076</td>
 <td>
                             
                                 
@@ -1061,25 +1010,51 @@
                             
                         </td>
 <td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097652" title="[광주] 2024년 AI+X 지역산업 기술개발 지원사업 신규과제 모집 공고 페이지 이동">
-                                [광주] 2024년 AI+X 지역산업 기술개발 지원사업 신규과제 모집 공고
+<a href="view.do?pblancId=PBLN_000000000097796" title="[서울] 2024년 수요과제형 돌봄로봇 테스트베드 실증지원 사업 추가공고 페이지 이동">
+                                [서울] 2024년 수요과제형 돌봄로봇 테스트베드 실증지원 사업 추가공고
                             </a>
 </td>
 <td>
                             
                                 
                                 
-                                    2024-05-17 ~ 2024-06-03
+                                    2024-06-07 ~ 2024-06-20
                                 
                             
                         </td>
-<td>광주광역시</td>
-<td>인공지능산업융합사업단</td>
-<td>2024-05-20</td>
-<td>247</td>
+<td>서울특별시</td>
+<td>서울경제진흥원</td>
+<td>2024-05-24</td>
+<td>441</td>
 </tr>
 <tr>
-<td>1059</td>
+<td>1075</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097813" title="[대구] 달성군 2024년 신기술 개발을 위한 맞춤형 R&amp;D기획 지원사업 참여기업 모집 공고 페이지 이동">
+                                [대구] 달성군 2024년 신기술 개발을 위한 맞춤형 R&amp;D기획 지원사업 참여기업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-06-18 ~ 2024-06-20
+                                
+                            
+                        </td>
+<td>대구광역시</td>
+<td>대구테크노파크</td>
+<td>2024-05-24</td>
+<td>407</td>
+</tr>
+<tr>
+<td>1074</td>
 <td>
                             
                                 
@@ -1087,34 +1062,268 @@
                             
                         </td>
 <td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097667" title="[충남] 2024년 내수ㆍ수출초보기업 해외마케팅 지원사업 공고 (일본,인도,독일,베트남) 페이지 이동">
-                                [충남] 2024년 내수ㆍ수출초보기업 해외마케팅 지원사업 공고 (일본,인도,독일,베트남)
+<a href="view.do?pblancId=PBLN_000000000097812" title="2024년 한류연계 협업콘텐츠 기획개발 지원(CAST)사업 IP매칭형 참여기업 모집 공고 페이지 이동">
+                                2024년 한류연계 협업콘텐츠 기획개발 지원(CAST)사업 IP매칭형 참여기업 모집 공고
                             </a>
 </td>
 <td>
                             
                                 
                                 
-                                    2024-05-14 ~ 2024-05-24
+                                    2024-05-24 ~ 2024-06-10
+                                
+                            
+                        </td>
+<td>문화체육관광부</td>
+<td>한국국제문화교류진흥원</td>
+<td>2024-05-24</td>
+<td>762</td>
+</tr>
+<tr>
+<td>1073</td>
+<td>
+                            
+                                
+                                경영
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097811" title="[충북] 청주시 2024년 반도체산업 기술경쟁력 강화 지원사업 모집 공고 페이지 이동">
+                                [충북] 청주시 2024년 반도체산업 기술경쟁력 강화 지원사업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-05-23 ~ 2024-06-14
+                                
+                            
+                        </td>
+<td>고용노동부</td>
+<td>충북테크노파크</td>
+<td>2024-05-24</td>
+<td>598</td>
+</tr>
+<tr>
+<td>1072</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097810" title="2024년 2차 이차전지분야 신규 지원대상 과제 공고 페이지 이동">
+                                2024년 2차 이차전지분야 신규 지원대상 과제 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-05-29 ~ 2024-06-21
+                                
+                            
+                        </td>
+<td>산업통상자원부</td>
+<td>한국산업기술기획평가원</td>
+<td>2024-05-24</td>
+<td>661</td>
+</tr>
+<tr>
+<td>1071</td>
+<td>
+                            
+                                
+                                금융
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097809" title="[부산] 2024년 소상공인 고용ㆍ산재보험료 지원사업 모집 공고 페이지 이동">
+                                [부산] 2024년 소상공인 고용ㆍ산재보험료 지원사업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-05-23 ~ 2024-12-31
+                                
+                            
+                        </td>
+<td>부산광역시</td>
+<td>부산경제진흥원</td>
+<td>2024-05-24</td>
+<td>388</td>
+</tr>
+<tr>
+<td>1070</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097795" title="2024년 글로벌 기술사업화 지원사업 (아시아) 참여 연구개발특구 기업 모집 공고 페이지 이동">
+                                2024년 글로벌 기술사업화 지원사업 (아시아) 참여 연구개발특구 기업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-05-20 ~ 2024-06-14
+                                
+                            
+                        </td>
+<td>과학기술정보통신부</td>
+<td>연구개발특구진흥재단</td>
+<td>2024-05-24</td>
+<td>713</td>
+</tr>
+<tr>
+<td>1069</td>
+<td>
+                            
+                                
+                                경영
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097794" title="2024년 친환경 그린 등 데이터센터 산업 활성화 사업 공고 페이지 이동">
+                                2024년 친환경 그린 등 데이터센터 산업 활성화 사업 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-05-23 ~ 2024-06-24
+                                
+                            
+                        </td>
+<td>과학기술정보통신부</td>
+<td>정보통신산업진흥원</td>
+<td>2024-05-24</td>
+<td>849</td>
+</tr>
+<tr>
+<td>1068</td>
+<td>
+                            
+                                
+                                기타
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097808" title="[충남] 2024년 장애인고용우수기업 선정ㆍ지원 공모 페이지 이동">
+                                [충남] 2024년 장애인고용우수기업 선정ㆍ지원 공모
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-05-20 ~ 2024-06-14
                                 
                             
                         </td>
 <td>충청남도</td>
-<td>KOTRA대전세종충남지원단</td>
-<td>2024-05-20</td>
-<td>190</td>
+<td>직접수행</td>
+<td>2024-05-24</td>
+<td>475</td>
 </tr>
 <tr>
-<td>1058</td>
+<td>1067</td>
 <td>
                             
                                 
-                                수출
+                                기술
                             
                         </td>
 <td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097651" title="2024년 경북 글로벌 스타트업 패키지 성장지원 참여기업 모집 공고 페이지 이동">
-                                2024년 경북 글로벌 스타트업 패키지 성장지원 참여기업 모집 공고
+<a href="view.do?pblancId=PBLN_000000000097793" title="2024년 2차 신재생에너지R&amp;D 신규지원대상 연구개발과제 공고 페이지 이동">
+                                2024년 2차 신재생에너지R&amp;D 신규지원대상 연구개발과제 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-06-03 ~ 2024-06-24
+                                
+                            
+                        </td>
+<td>산업통상자원부</td>
+<td>한국에너지기술평가원</td>
+<td>2024-05-24</td>
+<td>650</td>
+</tr>
+<tr>
+<td>1066</td>
+<td>
+                            
+                                
+                                내수
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097807" title="[전북] 전주시 2024년 국내개최 국제전시회 개별참가 지원사업 참여기업 모집 공고 페이지 이동">
+                                [전북] 전주시 2024년 국내개최 국제전시회 개별참가 지원사업 참여기업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                    예산 소진시까지
+                                
+                                
+                            
+                        </td>
+<td>전북특별자치도</td>
+<td>기초자치단체</td>
+<td>2024-05-24</td>
+<td>325</td>
+</tr>
+<tr>
+<td>1065</td>
+<td>
+                            
+                                
+                                경영
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097792" title="[경남] 2024년 메타버스 및 디지털콘텐츠 기업자문 지원 모집 공고 페이지 이동">
+                                [경남] 2024년 메타버스 및 디지털콘텐츠 기업자문 지원 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                    예산 소진시까지
+                                
+                                
+                            
+                        </td>
+<td>경상남도</td>
+<td>경남테크노파크</td>
+<td>2024-05-24</td>
+<td>351</td>
+</tr>
+<tr>
+<td>1064</td>
+<td>
+                            
+                                
+                                경영
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000097791" title="[부산] 사상구 2024년 착한가격업소 소규모 환경개선 지원사업 공고 페이지 이동">
+                                [부산] 사상구 2024년 착한가격업소 소규모 환경개선 지원사업 공고
                             </a>
 </td>
 <td>
@@ -1125,39 +1334,13 @@
                                 
                             
                         </td>
-<td>경상북도</td>
-<td>경북창조경제혁신센터</td>
-<td>2024-05-20</td>
-<td>285</td>
+<td>부산광역시</td>
+<td>기초자치단체</td>
+<td>2024-05-24</td>
+<td>314</td>
 </tr>
 <tr>
-<td>1057</td>
-<td>
-                            
-                                
-                                기술
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097650" title="2024년 공공 혁신 디바이스 실증 지원 모집 추가 공고 페이지 이동">
-                                2024년 공공 혁신 디바이스 실증 지원 모집 추가 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-16 ~ 2024-06-07
-                                
-                            
-                        </td>
-<td>과학기술정보통신부</td>
-<td>대구테크노파크</td>
-<td>2024-05-20</td>
-<td>413</td>
-</tr>
-<tr>
-<td>1056</td>
+<td>1063</td>
 <td>
                             
                                 
@@ -1165,164 +1348,8 @@
                             
                         </td>
 <td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097649" title="[부산] 게임콘텐츠 멀티부스팅 지원사업 모집 연장 공고 페이지 이동">
-                                [부산] 게임콘텐츠 멀티부스팅 지원사업 모집 연장 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-17 ~ 2024-05-29
-                                
-                            
-                        </td>
-<td>부산광역시</td>
-<td>부산정보산업진흥원</td>
-<td>2024-05-20</td>
-<td>176</td>
-</tr>
-<tr>
-<td>1055</td>
-<td>
-                            
-                                
-                                경영
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097648" title="[경기ㆍ충남ㆍ대전] 2024년 상시 디자인 컨설팅 지원 공고 페이지 이동">
-                                [경기ㆍ충남ㆍ대전] 2024년 상시 디자인 컨설팅 지원 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                    상시 접수
-                                
-                                
-                            
-                        </td>
-<td>산업통상자원부</td>
-<td>한국디자인진흥원</td>
-<td>2024-05-20</td>
-<td>352</td>
-</tr>
-<tr>
-<td>1054</td>
-<td>
-                            
-                                
-                                수출
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097666" title="[대구] 2024년 독일 뮌헨 국제스포츠용품 박람회 대구공동관(Daegu Pavilion) 참가업체 모집 공고 페이지 이동">
-                                [대구] 2024년 독일 뮌헨 국제스포츠용품 박람회 대구공동관(Daegu Pavilion) 참가업체 모집 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-20 ~ 2024-05-31
-                                
-                            
-                        </td>
-<td>대구광역시</td>
-<td>한국섬유마케팅센터</td>
-<td>2024-05-20</td>
-<td>207</td>
-</tr>
-<tr>
-<td>1053</td>
-<td>
-                            
-                                
-                                창업
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097665" title="[부산] 2024년 전자상거래 스타트업 스타일테크 기술지원 사업 모집 연장 공고 페이지 이동">
-                                [부산] 2024년 전자상거래 스타트업 스타일테크 기술지원 사업 모집 연장 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-04-25 ~ 2024-05-27
-                                
-                            
-                        </td>
-<td>부산광역시</td>
-<td>부산정보산업진흥원</td>
-<td>2024-05-20</td>
-<td>169</td>
-</tr>
-<tr>
-<td>1052</td>
-<td>
-                            
-                                
-                                내수
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097664" title="[충남] 2024년 2차 장애인기업 마케팅(홍보물 제작) 지원 연장 공고 페이지 이동">
-                                [충남] 2024년 2차 장애인기업 마케팅(홍보물 제작) 지원 연장 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-21 ~ 2024-06-07
-                                
-                            
-                        </td>
-<td>충청북도</td>
-<td>장애인기업종합지원센터</td>
-<td>2024-05-20</td>
-<td>140</td>
-</tr>
-<tr>
-<td>1051</td>
-<td>
-                            
-                                
-                                기술
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097647" title="[울산] 2024년 콘텐츠 개발ㆍ제작 지원사업(비즈니스창출형) 재공고 페이지 이동">
-                                [울산] 2024년 콘텐츠 개발ㆍ제작 지원사업(비즈니스창출형) 재공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-17 ~ 2024-05-31
-                                
-                            
-                        </td>
-<td>울산광역시</td>
-<td>울산정보산업진흥원</td>
-<td>2024-05-20</td>
-<td>210</td>
-</tr>
-<tr>
-<td>1050</td>
-<td>
-                            
-                                
-                                금융
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097646" title="[인천] 2024년 청년창업 특례보증 지원사업 공고 페이지 이동">
-                                [인천] 2024년 청년창업 특례보증 지원사업 공고
+<a href="view.do?pblancId=PBLN_000000000097790" title="[인천] 2024년 제조분야 친환경 관리인프라 구축사업 시설 안전성 개선, 모니터링 시스템보급 모집 공고 페이지 이동">
+                                [인천] 2024년 제조분야 친환경 관리인프라 구축사업 시설 안전성 개선, 모니터링 시스템보급 모집 공고
                             </a>
 </td>
 <td>
@@ -1334,12 +1361,12 @@
                             
                         </td>
 <td>인천광역시</td>
-<td>인천신용보증재단</td>
-<td>2024-05-20</td>
-<td>267</td>
+<td>인천테크노파크</td>
+<td>2024-05-24</td>
+<td>330</td>
 </tr>
 <tr>
-<td>1049</td>
+<td>1062</td>
 <td>
                             
                                 
@@ -1347,48 +1374,22 @@
                             
                         </td>
 <td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097663" title="2024년 전북글로벌게임센터 기능성게임 제작지원사업 모집 재공고 페이지 이동">
-                                2024년 전북글로벌게임센터 기능성게임 제작지원사업 모집 재공고
+<a href="view.do?pblancId=PBLN_000000000097789" title="2024년 글로벌 기술사업화 지원사업 (유럽) 참여 연구개발특구 기업 모집 공고 페이지 이동">
+                                2024년 글로벌 기술사업화 지원사업 (유럽) 참여 연구개발특구 기업 모집 공고
                             </a>
 </td>
 <td>
                             
                                 
                                 
-                                    2024-05-17 ~ 2024-05-31
+                                    2024-05-20 ~ 2024-06-14
                                 
                             
                         </td>
-<td>전북특별자치도</td>
-<td>전북특별자치도콘텐츠융합진흥원</td>
-<td>2024-05-20</td>
-<td>150</td>
-</tr>
-<tr>
-<td>1048</td>
-<td>
-                            
-                                
-                                기술
-                            
-                        </td>
-<td class="txt_l">
-<a href="view.do?pblancId=PBLN_000000000097645" title="2024년 제2차 국가신약개발사업 신규지원 대상과제 통합 공고 페이지 이동">
-                                2024년 제2차 국가신약개발사업 신규지원 대상과제 통합 공고
-                            </a>
-</td>
-<td>
-                            
-                                
-                                
-                                    2024-05-17 ~ 2024-07-01
-                                
-                            
-                        </td>
-<td>보건복지부</td>
-<td>국가신약개발재단</td>
-<td>2024-05-20</td>
-<td>267</td>
+<td>과학기술정보통신부</td>
+<td>연구개발특구진흥재단</td>
+<td>2024-05-24</td>
+<td>882</td>
 </tr>
 </tbody>
 </table>
@@ -1417,7 +1418,7 @@
 <a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=9" title="9페이지">9</a>
 <a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=10" title="10페이지">10</a>
 <a class="txt" href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=11" title="다음페이지">다음</a>
-<a class="txt" href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=71" title="마지막페이지">마지막</a>
+<a class="txt" href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=72" title="마지막페이지">마지막</a>
 </div>
 <!-- 만족도 조사-->
 </div>

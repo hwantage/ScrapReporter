@@ -258,7 +258,7 @@ var menuList = {
 													   , { menuId : '06030000' , title : '소통 및 참여', menuArr : [ 
 													                                       //{ menuId : '06030100' , url : '/joinrnd/cmtpd/retrieveCmtPdList.do?blbdId=S0000006' , title : 'PD와의 소통'} //PD와의 소통 - PD와의 소통 
 													   									     { menuId : '06030200' , url : '/joinrnd/rndinfoshr/retrieveRndInfoShrList.do?blbdId=S0000045' , title : '산업기술 정보공유 게시판'} //PD와의 소통 - 산업기술 정보공유 게시판
-													   										,{ menuId : '06030400' , url : '/joinrnd/areawin/retrieveAreaWinList.do?blbdId=S0000054' , title : 'R&amp;D 지역상생 정보교류방'} //지역 상생 정보 교류방
+													   										,{ menuId : '0603040006030400' , url : '/joinrnd/areawin/retrieveAreaWinList.do?blbdId=S0000054' , title : 'R&amp;D 지역상생 정보교류방'} //지역 상생 정보 교류방
 														   									 													   										
 													                                       ]
 						 								 }
@@ -936,7 +936,9 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <!-- <a href="#06030100">PD와의 소통</a> -->
 <a href="#06030200">산업기술 정보공유 게시판</a>
 <!-- <a href="#06030300">연구지원전문가 채용마당</a>-->
-<a href="#06030400">R&amp;D 지역상생 정보교류방</a>
+<!-- 
+                             <a href="#0603040006030400">R&amp;D 지역상생 정보교류방</a>
+                              -->
 </span>
 </li>
 <!-- 1년이상 준비중으로 삭제 20240422 김영훈 -->
@@ -1333,11 +1335,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_notice_list">
 <ul>
+<li><a href="#" onclick="f_gotoDetailPage('C', '117647'); return false;">2024년 6월 산업기술 R&amp;D 실무과정 교육 안내</a> <span class="date">2024.05.23</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '116749'); return false;">2024년도 소재부품기술개발사업(4차) 신규지원 대상과제 공고</a> <span class="date">2024.05.16</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '116748'); return false;">2024년도 소재부품기술개발사업(함께달리기) 신규지원 대상과제 공고</a> <span class="date">2024.05.16</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '116546'); return false;">인체질환 극복 마이크로바이옴 기술개발사업 공청회 안내</a> <span class="date">2024.05.14</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '115846'); return false;">2024년도 전자부품산업기술개발(반도체) 신규지원 대상과제 공고</a> <span class="date">2024.05.09</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '112049'); return false;">2024년 5월 산업기술 R&amp;D 실무과정 교육 안내</a> <span class="date">2024.04.18</span> </li>
 </ul>
 </div>
 </div>
@@ -1635,11 +1637,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <div class="title">진행중인 교육과정 <a class="more" href="#" onclick="f_chgPage('05020000'); return false;">더보기</a></div>
 <ul class="edu_list" id="edu_list">
 <li><span class="zone">지역</span><span class="edu">교육과정명</span><span class="day">날짜</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000007'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">06.04~06.04</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000006'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">05.28~05.28</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000005'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">05.21~05.21</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000004'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">05.14~05.14</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000003'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">05.09~05.09</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000002'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">04.24~04.24</span></li>
 </ul>
 </div>
 <!--  // edu_box -->

@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "3qWf_oi_gf5PunlIDhxQhIKOSI5PjL8y3AiTVakPJVxb-Bq5AYA3yMtUwh4J9V5p4aF0WveWSiIX6tpIUVs0vPup1MpMruW7qxrGqxDjZTMpx2YP4Ed1-aMyPNWet6I1LfOOPA2",
+                UserId: "KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "3qWf_oi_gf5PunlIDhxQhIKOSI5PjL8y3AiTVakPJVxb-Bq5AYA3yMtUwh4J9V5p4aF0WveWSiIX6tpIUVs0vPup1MpMruW7qxrGqxDjZTMpx2YP4Ed1-aMyPNWet6I1LfOOPA2" === "3qWf_oi_gf5PunlIDhxQhIKOSI5PjL8y3AiTVakPJVxb-Bq5AYA3yMtUwh4J9V5p4aF0WveWSiIX6tpIUVs0vPup1MpMruW7qxrGqxDjZTMpx2YP4Ed1-aMyPNWet6I1LfOOPA2" ? "Anonymous" : "User",
+                UserType: "KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2" === "KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -83,10 +83,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': '3qWf_oi_gf5PunlIDhxQhIKOSI5PjL8y3AiTVakPJVxb-Bq5AYA3yMtUwh4J9V5p4aF0WveWSiIX6tpIUVs0vPup1MpMruW7qxrGqxDjZTMpx2YP4Ed1-aMyPNWet6I1LfOOPA2'
+            'user_id': 'KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': '3qWf_oi_gf5PunlIDhxQhIKOSI5PjL8y3AiTVakPJVxb-Bq5AYA3yMtUwh4J9V5p4aF0WveWSiIX6tpIUVs0vPup1MpMruW7qxrGqxDjZTMpx2YP4Ed1-aMyPNWet6I1LfOOPA2'
+            'crm_id': 'KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2'
         });
     </script>
 <script>
@@ -2681,7 +2681,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="fWN7wCbcm2jVhggrKk8ywAWG-VASwfA0QuC9_cHwRf4ffXxfc3CtegbWVm58_0Y9OmyAnoaYxPYeumL77oTNmEzYhOw1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="-wlEC3vGbnPMXKzAFbtSzgHM75OjlBYIYQVuGc0f1Q2QMh9LFx59K5V1BoGskuD5YXFdJAYrJmakV4Z-pi67JxtrKzM1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3998,7 +3998,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', '3qWf_oi_gf5PunlIDhxQhIKOSI5PjL8y3AiTVakPJVxb-Bq5AYA3yMtUwh4J9V5p4aF0WveWSiIX6tpIUVs0vPup1MpMruW7qxrGqxDjZTMpx2YP4Ed1-aMyPNWet6I1LfOOPA2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4050,7 +4050,7 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4338,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b9e849ce671c4a2fa0a19db85f4d16e0.webp\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d4f599ce691e41169973bec40a39e6d3.webp\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://bit.ly/3UEAKlx\",\"BannerTitle\":\"『신한 스퀘어브릿지』\",\"BannerDescription\":\"제주·베트남·글로벌 스타트업 모집\",\"BannerMobileDescription\":\"제주·베트남·글로벌 스타트업 모집\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"2024. 05. 02.(목) ~ 2024. 05. 22.(수)\",\"BannerPlace\":\"온라인 접수\",\"Support\":false}]';
+    const bannerDataRaw = '[]';
     const searchDataRaw = '';
     const supportDataRaw = '[]';
     const defaultDataRaw = '[{\"Position\":\"search\",\"Id\":1158,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerMobileDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1169,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerMobileDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1228,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://event-us.kr/hostcenter\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerMobileDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null}]';
