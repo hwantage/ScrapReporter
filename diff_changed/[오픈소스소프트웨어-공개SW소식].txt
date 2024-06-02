@@ -25,10 +25,10 @@
 <!-- CSS -->
 <link href="https://www.oss.kr/assets/core/common/css/xe-common.css?1573799923" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/assets/core/xe-ui-component/xe-ui-component.css?1637824731" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281073" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611669" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281078" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611663" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick.css?1635139724" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686555729" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686556394" media="all" rel="stylesheet" type="text/css"/>
 <!-- JS at head.prepend -->
 <script>
         var xeBaseURL = 'https://www.oss.kr'; // @DEPRECATED
@@ -41,7 +41,7 @@
             XE.setup({
                 baseURL: 'https://www.oss.kr',
                 assetsURL: 'https://www.oss.kr',
-                userToken: 'LZAmeFj6CroMzANO4hvvQntCteqzbXsPzx9hUKNG',
+                userToken: 'AZ852UKG8gqCnlkQHqKULRa6Pp4cZSFO6AQdeZrg',
                 loginUserId: '', // @DEPRECATED
                 useXeSpinner: true, // @DEPRECATED
                 locale: 'ko',
@@ -997,8 +997,6 @@
 <th scope="col"><span>번호</span></th>
 <th class="title column-th-title" scope="col">
 <span>제목</span></th>
-<th class="column-th-read_count" scope="col">
-<span>조회수</span></th>
 <th class="column-th-created_at" scope="col">
 <span>작성</span></th>
 </tr>
@@ -1011,7 +1009,6 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/49e410fb-604d-4d35-ba25-8286b5f2c50d" id="title_49e410fb-604d-4d35-ba25-8286b5f2c50d">[Open UP 활용가이드] 공개SW 활용 및 개발, 창업, 교육 "Open UP을 활용하세요"</a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2020-10-27</td>
 </tr>
 <tr class="notice">
@@ -1019,17 +1016,50 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/ea60b452-72ea-4a83-93f5-450582463d87" id="title_ea60b452-72ea-4a83-93f5-450582463d87">[Open UP 소개] 공개SW 개발·공유·활용 원스톱 지원 Open UP이 함께합니다</a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2020-10-27</td>
 </tr>
 <!-- /NOTICE -->
 <!-- LIST -->
 <tr>
+<td>10960</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/51b96acf-5387-419b-9801-2b416103652e" id="title_51b96acf-5387-419b-9801-2b416103652e">제1차 SW 공급망 보안 포럼…과기정통부 “가이드라인 확산안 논의”</a>
+</td>
+<td class="time xe-hidden-xs column-created_at">2024-05-31</td>
+</tr>
+<tr>
+<td>10959</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/db34e364-23fe-4ae5-bcf6-8d355c383c70" id="title_db34e364-23fe-4ae5-bcf6-8d355c383c70">미스트랄 AI, '온프레미스 오픈 소스 전략'으로 미국 시장 공략</a>
+</td>
+<td class="time xe-hidden-xs column-created_at">2024-05-30</td>
+</tr>
+<tr>
+<td>10958</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/72cd1261-61c6-4a0e-aae2-17e357437338" id="title_72cd1261-61c6-4a0e-aae2-17e357437338">오픈소스 생태계 개발자 발굴 나선 정부 “5800만원 지원”</a>
+</td>
+<td class="time xe-hidden-xs column-created_at">2024-05-29</td>
+</tr>
+<tr>
+<td>10957</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/d901196c-5cfb-43f0-8c38-afd7fb5f442e" id="title_d901196c-5cfb-43f0-8c38-afd7fb5f442e">NASA, '날씨 예측 모델' 오픈 소스 공개..."날씨 애플리케이션 성능 향상 지원"</a>
+</td>
+<td class="time xe-hidden-xs column-created_at">2024-05-28</td>
+</tr>
+<tr>
+<td>10956</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/8375cb76-808e-45d5-a0df-62092e4de22c" id="title_8375cb76-808e-45d5-a0df-62092e4de22c">[주간 OSS 동향리포트] 2024 오픈소스 컨트리뷰션 아카데미 참가자 300여명 5/24(금)부터 한 달간 모집 </a>
+</td>
+<td class="time xe-hidden-xs column-created_at">2024-05-27</td>
+</tr>
+<tr>
 <td>10955</td>
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/049cbfa4-d371-4d6b-bf60-10e9a6f88af7" id="title_049cbfa4-d371-4d6b-bf60-10e9a6f88af7">오픈소스 모델 대세되나…AI 정상회의 관심사로 </a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2024-05-24</td>
 </tr>
 <tr>
@@ -1037,7 +1067,6 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/d63a93f5-3414-496b-b4bb-2d9d8711f3c1" id="title_d63a93f5-3414-496b-b4bb-2d9d8711f3c1">오픈소스 생태계 키울 학생·개발자 모집···“리더급이 멘토링”</a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2024-05-24</td>
 </tr>
 <tr>
@@ -1045,7 +1074,6 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/066575db-a845-429d-91ff-b2085811a923" id="title_066575db-a845-429d-91ff-b2085811a923">IBM, 코딩용 AI 모델 개발자들에 공유…'개방형 전략으로 영향력 키워'</a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2024-05-23</td>
 </tr>
 <tr>
@@ -1053,7 +1081,6 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/77f69a50-93ef-43b8-b377-04b74dd410ea" id="title_77f69a50-93ef-43b8-b377-04b74dd410ea">[주간 OSS 동향리포트] 정부, SW공급망 보안 가이드라인 발표(다운로드 포함)</a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2024-05-22</td>
 </tr>
 <tr>
@@ -1061,48 +1088,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/a3f3d132-a98e-4ad7-9609-34edba9457b8" id="title_a3f3d132-a98e-4ad7-9609-34edba9457b8">무엇이 ‘오픈소스 AI’인가, ‘논쟁’ 가열</a>
 </td>
-<td class="read_num xe-hidden-xs">1</td>
 <td class="time xe-hidden-xs column-created_at">2024-05-22</td>
-</tr>
-<tr>
-<td>10950</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/02f87424-2144-4fe3-a94d-f8ac8e26e797" id="title_02f87424-2144-4fe3-a94d-f8ac8e26e797">허깅페이스, 오픈 소스 위한 무료 GPU 공유 프로젝트 추진</a>
-</td>
-<td class="read_num xe-hidden-xs">1</td>
-<td class="time xe-hidden-xs column-created_at">2024-05-22</td>
-</tr>
-<tr>
-<td>10949</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/1ded9d3e-6c20-42a4-acde-1b6248fd29e0" id="title_1ded9d3e-6c20-42a4-acde-1b6248fd29e0">[주간 OSS 동향리포트] 마이크로소프트(MS), 매개변수 5000억개 규모의 오픈 소스 LLM 공개 예정</a>
-</td>
-<td class="read_num xe-hidden-xs">1</td>
-<td class="time xe-hidden-xs column-created_at">2024-05-16</td>
-</tr>
-<tr>
-<td>10948</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/9274c775-5c1b-4b1a-925b-a8ba1cac821b" id="title_9274c775-5c1b-4b1a-925b-a8ba1cac821b"> UAE, 인기 오픈 소스 모델 '팰컨' 후속작 출시...1년 새 3번째 LLM 공개</a>
-</td>
-<td class="read_num xe-hidden-xs">1</td>
-<td class="time xe-hidden-xs column-created_at">2024-05-16</td>
-</tr>
-<tr>
-<td>10947</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/4b0bebba-77c3-4dfc-a199-4e6d8edb577c" id="title_4b0bebba-77c3-4dfc-a199-4e6d8edb577c">정부, SW공급망 보안 가이드라인 발표…디플정 시스템에 SBOM 시범적용</a>
-</td>
-<td class="read_num xe-hidden-xs">1</td>
-<td class="time xe-hidden-xs column-created_at">2024-05-13</td>
-</tr>
-<tr>
-<td>10946</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/702f864f-b330-4154-b23c-34f8946a359b" id="title_702f864f-b330-4154-b23c-34f8946a359b">허깅페이스, 로봇 AI 학습 플랫폼 무료 공개..."최대 규모 데이터셋 구축 목표"</a>
-</td>
-<td class="read_num xe-hidden-xs">1</td>
-<td class="time xe-hidden-xs column-created_at">2024-05-08</td>
 </tr>
 <!-- /LIST -->
 </tbody>

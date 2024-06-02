@@ -30,7 +30,7 @@
 <meta content="3704d95cf4764b65ca1cfea40f2d1af2d21572f2" name="naver-site-verification">
 <meta content="vpzujpK-hobMlPNOk1yRN5aj31iVrls2qq-r9sAQtS0" name="google-site-verification"/>
 <script>
-    (function (w, d, s, l, i) {
+        (function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
                     new Date().getTime(), event: 'gtm.js'
@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2",
+                UserId: "XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2" === "KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2" ? "Anonymous" : "User",
+                UserType: "XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2" === "XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -77,16 +77,17 @@
 
             gtag('config', 'UA-75736254-1');
         </script>
+<script defer="" src="/contents/js/log.es5.min.js"></script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z3JJ3P1SEG"></script>
 <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2'
+            'user_id': 'XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2'
+            'crm_id': 'XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2'
         });
     </script>
 <script>
@@ -112,12 +113,12 @@
 
             if (typeof console === "object" && console.log && typeof console.log === "function") {
                 const msg = "%c _____                      _                       \
-                                        \n%c|  ___|                    | |                      \
-                                        \n%c| |__  __   __  ___  _ __  | |_  ______  _   _  ___ \
-                                        \n%c|  __| \\ \\ / / / _ \\| '_ \\ | __||______|| | | |/ __|\
-                                        \n%c| |___  \\ V / |  __/| | | || |_         | |_| |\\__ \\ \
-                                        \n%c|____/   \\_/   \\___||_| |_| \\__|         \\__,_||___/ \
-                                        \n%c 행사와 함께 하는 모든 순간 이벤터스\n";
+                                            \n%c|  ___|                    | |                      \
+                                            \n%c| |__  __   __  ___  _ __  | |_  ______  _   _  ___ \
+                                            \n%c|  __| \\ \\ / / / _ \\| '_ \\ | __||______|| | | |/ __|\
+                                            \n%c| |___  \\ V / |  __/| | | || |_         | |_| |\\__ \\ \
+                                            \n%c|____/   \\_/   \\___||_| |_| \\__|         \\__,_||___/ \
+                                            \n%c 행사와 함께 하는 모든 순간 이벤터스\n";
                 if (isUA('chrome') && !isUA('edge')) {
                     console.log(
                         msg,
@@ -153,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?8b09e5d95fa507d2"></script><style>body {
+<script src="/Content/dist/js/preload.js?fce48250e49506a4"></script><style>body {
         opacity: 0;
       }
 
@@ -167,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?8b09e5d95fa507d2"></script><script defer="defer" src="/Content/dist/js/default.js?8b09e5d95fa507d2"></script><link href="/Content/dist/css/default.css?8b09e5d95fa507d2" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?fce48250e49506a4"></script><script defer="defer" src="/Content/dist/js/default.js?fce48250e49506a4"></script><link href="/Content/dist/css/default.css?fce48250e49506a4" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -229,6 +230,7 @@
 <noscript>
 <img alt="" height="1" src="https://px.ads.linkedin.com/collect/?pid=4074420&amp;fmt=gif" style="display: none;" width="1"/>
 </noscript>
+<script defer="" src="/contents/js/log.es5.min.js"></script>
 </meta></meta></meta></meta></meta></meta></meta></meta></link></head>
 <body class="">
 <!-- GrowthFit Google Tag Manager (noscript) -->
@@ -796,8 +798,8 @@
             }" class="flex items-center w-full px-4 py-5 rounded-md border">
 <span class="mr-2.5 text-white">
 <template v-if="theme === 'success'">
-<svg class="w-6 h-6 fill-success-400" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+<svg class="w-6 h-6 fill-success-400" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" fill-rule="evenodd"></path>
 </svg>
 </template>
 <template v-else-if="theme === 'danger'">
@@ -826,7 +828,7 @@
                 message: '',
                 onOpen: null,
                 onClose: null,
-                onLocation:null,
+                onLocation: null,
                 duration: 5000,
             };
         }
@@ -1497,7 +1499,7 @@
 <a :href="getSearchUrl(searchHistory.Query)" :title="searchHistory.Query" @click="beforeSearch(searchHistory.Query)" class="truncate focus:bg-gray-100 min-w-5">
                                                 {{ searchHistory.Query }}
                                             </a>
-<button @click="searchHistoryRemove(searchHistory.HistoryId)" class="ml-2 px-2 text-gray-200 hover:text-gray-300" type="button">
+<button @click="searchHistoryRemove(searchHistory.HistoryId)" class="ml-2 px-2 text-gray-500 hover:text-gray-700" type="button">
 <svg class="h-4 w-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" fill-rule="evenodd"></path>
 </svg>
@@ -1792,9 +1794,16 @@
 </button>
 </div>
 <div class="space-y-4">
+<div class="flex justify-between items-center">
 <div class="font-bold">
 <span v-if="language === 'ko'">일시</span>
 <span v-else="">Date</span>
+</div>
+<div>
+<a @click="onCalendarClick()" href="/search/calendar">
+                        행사 캘린더 &gt;
+                    </a>
+</div>
 </div>
 <div class="space-y-2">
 <ev-radio v-model="searchTriggerModel.date" value="모든날">
@@ -1852,11 +1861,11 @@
 <button @click="categoryToggle()" class="text-gray-400 text-xs" type="button">
 <span class="flex items-center">
 <span v-if="language === 'ko'">
-                            {{ categoryOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
-                        </span>
+                                {{ categoryOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
+                            </span>
 <span v-else="">
-                            {{ categoryOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
-                        </span>
+                                {{ categoryOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
+                            </span>
 <span>
 <svg :class="categoryOpen ? '-rotate-90' : 'rotate-90'" class="h-4 w-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill-rule="evenodd"></path>
@@ -1876,11 +1885,11 @@
 <button @click="eventtypeToggle()" class="text-gray-400 text-xs" type="button">
 <span class="flex items-center">
 <span v-if="language === 'ko'">
-                            {{ eventtypeOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
-                        </span>
+                                {{ eventtypeOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
+                            </span>
 <span v-else="">
-                            {{ eventtypeOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
-                        </span>
+                                {{ eventtypeOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
+                            </span>
 <span>
 <svg :class="eventtypeOpen ? '-rotate-90' : 'rotate-90'" class="h-4 w-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill-rule="evenodd"></path>
@@ -1941,8 +1950,8 @@
 <div class="border-l h-full"></div>
 </div>
 <div>
-                                        0
-                                    </div>
+                                            0
+                                        </div>
 </div>
 </div>
 </div>
@@ -1979,8 +1988,8 @@
 <div class="space-y-4 p-4 pt-0 lg:hidden fixed inset-x-0 bottom-0 bg-white z-40">
 <div class="border-t -mx-4"></div>
 <ev-button @click="showFilter = false" class="bg-primary-500">
-                {{ eventCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',',) }}개의 행사 보기
-            </ev-button>
+                    {{ eventCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',',) }}개의 행사 보기
+                </ev-button>
 </div>
 </div>
 </div>
@@ -2099,9 +2108,16 @@
 </button>
 </div>
 <div class="space-y-4">
+<div class="flex justify-between items-center">
 <div class="font-bold">
 <span v-if="language === 'ko'">일시</span>
 <span v-else="">Date</span>
+</div>
+<div>
+<a @click="onCalendarClick()" href="/search/calendar">
+                        행사 캘린더 &gt;
+                    </a>
+</div>
 </div>
 <div class="space-y-2">
 <ev-radio v-model="searchTriggerModel.date" value="모든날">
@@ -2159,11 +2175,11 @@
 <button @click="categoryToggle()" class="text-gray-400 text-xs" type="button">
 <span class="flex items-center">
 <span v-if="language === 'ko'">
-                            {{ categoryOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
-                        </span>
+                                {{ categoryOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
+                            </span>
 <span v-else="">
-                            {{ categoryOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
-                        </span>
+                                {{ categoryOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
+                            </span>
 <span>
 <svg :class="categoryOpen ? '-rotate-90' : 'rotate-90'" class="h-4 w-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill-rule="evenodd"></path>
@@ -2183,11 +2199,11 @@
 <button @click="eventtypeToggle()" class="text-gray-400 text-xs" type="button">
 <span class="flex items-center">
 <span v-if="language === 'ko'">
-                            {{ eventtypeOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
-                        </span>
+                                {{ eventtypeOpen ? '접기' : `${Object.keys(categories).length}개 모두 보기` }}
+                            </span>
 <span v-else="">
-                            {{ eventtypeOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
-                        </span>
+                                {{ eventtypeOpen ? 'Fold' : `View all ${Object.keys(categories).length} items` }}
+                            </span>
 <span>
 <svg :class="eventtypeOpen ? '-rotate-90' : 'rotate-90'" class="h-4 w-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" fill-rule="evenodd"></path>
@@ -2248,8 +2264,8 @@
 <div class="border-l h-full"></div>
 </div>
 <div>
-                                        0
-                                    </div>
+                                            0
+                                        </div>
 </div>
 </div>
 </div>
@@ -2286,8 +2302,8 @@
 <div class="space-y-4 p-4 pt-0 lg:hidden fixed inset-x-0 bottom-0 bg-white z-40">
 <div class="border-t -mx-4"></div>
 <ev-button @click="showFilter = false" class="bg-primary-500">
-                {{ eventCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',',) }}개의 행사 보기
-            </ev-button>
+                    {{ eventCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g,',',) }}개의 행사 보기
+                </ev-button>
 </div>
 </div>
 </div>
@@ -2681,7 +2697,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="-wlEC3vGbnPMXKzAFbtSzgHM75OjlBYIYQVuGc0f1Q2QMh9LFx59K5V1BoGskuD5YXFdJAYrJmakV4Z-pi67JxtrKzM1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="64ZAAFkDwwZvkQ7bFexbw9B9iYHV1zPu9_rZRhDRHIWF_rga2Q_PXxu2smkZOvniSP2IuULW6X5TyupgdAC3NO8wUZo1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3998,7 +4014,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'KPj0g-qUMBTsxKdtIXQDSoobR2AbeujiHaoUaAEZ1q4-0Iyy_cGnw3oJNowVfIC8rmeQN1Uq62oZWvvpB54eSa525oNbuNclooqnAywx5Pr2BTYv3CEna6oYFdNVoA7D3XLpIQ2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4138,6 +4154,8 @@ docReady(() => {
                     '기타': false,
                 },
                 eventtypes: {
+                    '북 콘서트': false,
+                    '체험 프로그램': false,
                     '강연/세미나': false,
                     '모임/커뮤니티': false,
                     '멘토링/대외활동': false,
@@ -4890,6 +4908,9 @@ docReady(() => {
                 if (location.host === 'event-us.kr') {
                     axios.post('/userhelpers/targetclick', { targetid: id });
                 }
+            },
+            onCalendarClick() {
+                mixpanel.track("search_event_calendar");
             },
             getSearchpageBannerUtm(item) {
                 const url = new URL(item.Click_Url);

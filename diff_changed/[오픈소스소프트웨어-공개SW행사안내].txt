@@ -26,10 +26,10 @@
 <link href="https://www.oss.kr/assets/core/common/css/xe-common.css?1573799923" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/assets/core/xe-ui-component/xe-ui-component.css?1637824731" media="all" rel="stylesheet" type="text/css"/>
 <link href="http://www.oss.kr/assets/vendor/jqueryui/jquery-ui.min.css?1529999836" media="all" rel="stylesheet" type="text/css"/>
-<link href="http://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281073" media="all" rel="stylesheet" type="text/css"/>
-<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611669" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281078" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611663" media="all" rel="stylesheet" type="text/css"/>
 <link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick.css?1635139724" media="all" rel="stylesheet" type="text/css"/>
-<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686555729" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686556394" media="all" rel="stylesheet" type="text/css"/>
 <!-- JS at head.prepend -->
 <script>
         var xeBaseURL = 'http://www.oss.kr'; // @DEPRECATED
@@ -42,7 +42,7 @@
             XE.setup({
                 baseURL: 'http://www.oss.kr',
                 assetsURL: 'http://www.oss.kr',
-                userToken: '4hsldNy42wOtEiNigfvdbLxruWYFvkFnfZfCCA2G',
+                userToken: '1eP29qCNjY45nFMqofARuU50VFQzhunUvreiSagn',
                 loginUserId: '', // @DEPRECATED
                 useXeSpinner: true, // @DEPRECATED
                 locale: 'ko',
@@ -591,6 +591,9 @@
 <a href="#">분류</a>
 <ul class="xe-dropdown-menu__sub">
 <li>
+<a data-value="525" href="#">2024 (1)</a>
+</li>
+<li>
 <a data-value="516" href="#">2023 (4)</a>
 </li>
 <li>
@@ -1008,6 +1011,9 @@
 <a href="#">분류</a>
 <ul class="xe-dropdown-menu__sub">
 <li>
+<a data-value="525" href="#">2024 (1)</a>
+</li>
+<li>
 <a data-value="516" href="#">2023 (4)</a>
 </li>
 <li>
@@ -1263,15 +1269,15 @@
 </thead>
 <tbody>
 <!-- NOTICE -->
-<tr class="notice">
-<td><span class="xe-badge xe-primary">공지</span></td>
+<!-- /NOTICE -->
+<!-- LIST -->
+<tr>
+<td>385</td>
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/dc24f9cf-6ce1-4293-9387-19f0c4afe6c0" id="title_dc24f9cf-6ce1-4293-9387-19f0c4afe6c0"><span class="title-head title-head-행사">[행사]</span>2024년 정보통신산업진흥원 통합 사업설명회 개최</a>
 </td>
 <td class="xe-hidden-xs column-seminar">2024-01-08 ~ 2024-01-26</td>
 </tr>
-<!-- /NOTICE -->
-<!-- LIST -->
 <tr>
 <td>384</td>
 <td class="title column-title">
@@ -1337,14 +1343,6 @@
 <a class="title_text" href="http://www.oss.kr/event/show/f44e68b5-c8e3-48f1-8ec7-cdfc94e3b1e3" id="title_f44e68b5-c8e3-48f1-8ec7-cdfc94e3b1e3"><span class="title-head title-head-국제협력">[국제협력]</span>제19차 동북아 공개SW활성화포럼</a>
 </td>
 <td class="xe-hidden-xs column-seminar">2021-12-03 ~ 2021-12-04</td>
-</tr>
-<tr>
-<td>375</td>
-<td class="title column-title">
-<a class="title_text" href="http://www.oss.kr/event/show/1c4182aa-7941-4479-a98a-04052a4f5bf8" id="title_1c4182aa-7941-4479-a98a-04052a4f5bf8"><span class="title-head title-head-행사">[행사]</span> 래블업  lab | up &gt; conf</a>
-<span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
-</td>
-<td class="xe-hidden-xs column-seminar">2021-11-15 ~ 2021-11-22</td>
 </tr>
 <!-- /LIST -->
 </tbody>
