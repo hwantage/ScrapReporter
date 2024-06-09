@@ -122,14 +122,22 @@ $(document).ready(function(){
     {
     	if($(this).hasClass("sb-search-open"))
     	{
+    		$(this).find("label").attr("tabindex","0");
     		$(this).find("input").attr("tabindex","0");
     		$(this).find("a").attr("tabindex","0");
+    		$(this).find("label").attr("aria-hidden","false");
+            $(this).find("input").attr("aria-hidden","false");
+            $(this).find("a").attr("aria-hidden","false");
     		$(this).find("input").focus();
     	}
     	else
     	{
+    		$(this).find("label").attr("tabindex","-1");
     		$(this).find("input").attr("tabindex","-1");
             $(this).find("a").attr("tabindex","-1");
+            $(this).find("label").attr("aria-hidden","true");
+            $(this).find("input").attr("aria-hidden","true");
+            $(this).find("a").attr("aria-hidden","true");
     	}
     });
 });
@@ -154,8 +162,8 @@ function addTitleToMenu(obj)
 			$(item).children("span").children("a.accordion-collapsed").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 열기</span>");
 			$(item).children("span").children("a.accordion-expanded").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 닫기</span>");
 			
-			$(item).children("span").children("a.accordion-collapsed").attr("href","#");
-            $(item).children("span").children("a.accordion-expanded").attr("href","#");
+			$(item).children("span").children("a.accordion-collapsed").attr("href","#;");
+            $(item).children("span").children("a.accordion-expanded").attr("href","#;");
 			
 			addTitleToMenu($(item).children("ul").children("li"));
 		}
@@ -772,7 +780,7 @@ function addTitleToMenu(obj)
 <nav class="mainNav">
 <ul>
 <li>
-<em>주요사업</em>
+<em aria-hidden="true">주요사업</em>
 <!--                                 </a> -->
 <ul>
 <li>
@@ -793,11 +801,11 @@ function addTitleToMenu(obj)
 <a href="/site/nia_kor/ex/bbs/ListBusiness.do?businessMnCd=23000800" title="글로벌 협력본부">글로벌 협력본부</a> </li> </ul>
 </li>
 <li>
-<em>지식정보</em>
+<em aria-hidden="true">지식정보</em>
 <!--                                 </a> -->
 <ul>
 <li>
-<em>간행물</em>
+<em aria-hidden="true">간행물</em>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=44086" title="국가지능정보화백서">국가지능정보화백서</a>
@@ -825,7 +833,7 @@ function addTitleToMenu(obj)
 </li>
 </ul> </li>
 <li>
-<em>연구보고서</em>
+<em aria-hidden="true">연구보고서</em>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=66361" title="정책연구">정책연구</a>
@@ -838,7 +846,7 @@ function addTitleToMenu(obj)
 </li>
 </ul> </li>
 <li>
-<em>통계·실태조사</em>
+<em aria-hidden="true">통계·실태조사</em>
 <ul>
 <li>
 <a href="/site/nia_kor/02/10202030100002016092709.jsp" title="정보화통계">정보화통계</a>
@@ -869,7 +877,7 @@ function addTitleToMenu(obj)
 </li>
 </ul> </li>
 <li>
-<em>기타자료집</em>
+<em aria-hidden="true">기타자료집</em>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99852" title="법령 및 사업 관련규정">법령 및 사업 관련규정</a>
@@ -880,11 +888,11 @@ function addTitleToMenu(obj)
 </ul> </li> </ul>
 </li>
 <li class="selected">
-<em>알림마당</em>
+<em aria-hidden="true">알림마당</em>
 <!--                                 </a> -->
 <ul>
 <li class="selected">
-<em>NIA 알림</em>
+<em aria-hidden="true">NIA 알림</em>
 <ul>
 <li>
 <a class="active" href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835" title="공지사항">공지사항</a>
@@ -909,7 +917,7 @@ function addTitleToMenu(obj)
 </li>
 </ul> </li>
 <li>
-<em>윤리경영</em>
+<em aria-hidden="true">윤리경영</em>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99844" title="청탁금지법">청탁금지법</a>
@@ -935,11 +943,11 @@ function addTitleToMenu(obj)
 </ul> </li> </ul>
 </li>
 <li>
-<em>기관소개</em>
+<em aria-hidden="true">기관소개</em>
 <!--                                 </a> -->
 <ul>
 <li>
-<em>NIA 소개</em>
+<em aria-hidden="true">NIA 소개</em>
 <ul>
 <li>
 <a href="/site/nia_kor/04/10401010000002016082201.jsp" title="인사말">인사말</a>
@@ -964,7 +972,7 @@ function addTitleToMenu(obj)
 </li>
 </ul> </li>
 <li>
-<em>열린경영</em>
+<em aria-hidden="true">열린경영</em>
 <ul>
 <li>
 <a href="/site/nia_kor/04/10403020900002018111309.jsp" title="국민참여">국민참여</a>
@@ -992,7 +1000,7 @@ function addTitleToMenu(obj)
 <a href="/site/nia_kor/04/10403000000002016082210.jsp" title="경영공시">경영공시</a> </li> </ul>
 </li>
 <li>
-<em>정보공개</em>
+<em aria-hidden="true">정보공개</em>
 <!--                                 </a> -->
 <ul>
 <li>
@@ -1082,9 +1090,9 @@ function addTitleToMenu(obj)
 </div>
 <div class="sb-search" id="mobile_searchArea" tabindex="0">
 <form action="/site/nia_kor/ex/search/searchList.do" id="m_niaSearchVo" method="post" name="niaSearchVo">
-<label class="lHidden" for="m_search">통합검색</label>
-<input aria-label="통합검색" class="sb-search-input" id="m_search" name="query" placeholder="검색어를 입력하세요" style="display:none;" tabindex="-1" title="검색어 입력(모바일)" type="text"/>
-<a class="sb-icon-search" onclick="m_totalSearch(this);" tabindex="-1" title="통합검색 검색하기"><span class="hiddenTxt">검색하기</span></a>
+<label aria-hidden="true" class="lHidden" for="m_search" tabindex="-1">통합검색</label>
+<input aria-hidden="true" aria-label="통합검색" class="sb-search-input" id="m_search" name="query" placeholder="검색어를 입력하세요" style="display:none;" tabindex="-1" title="검색어 입력(모바일)" type="text"/>
+<a aria-hidden="true" class="sb-icon-search" onclick="m_totalSearch(this);" tabindex="-1" title="통합검색 검색하기"><span class="hiddenTxt">검색하기</span></a>
 </form>
 </div>
 </div>
@@ -1220,7 +1228,7 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,656</em>건
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,658</em>건
             (1페이지 / 166페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
@@ -1309,7 +1317,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2023.12.29</em>
-<em>조회수 1695</em>
+<em>조회수 1767</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1318,7 +1326,159 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','26765','16010100','26765');return false;" title="2024년 디지털정부 국제개발협력 1차 실무자 과정 교육생 모집 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','26797','16010100','26797');return false;" title="NIA 대구/제주 지역아동센터 · 비영리단체 노트북 지원사업 안내(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             NIA 대구/제주 지역아동센터 · 비영리단체 노트북 지원사업 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.06.05</em>
+<em>조회수 95</em>
+</span>
+<span class="writer">
+<em>문고운</em>
+<em>ESG혁신팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26790','16010100','26790');return false;" title="2024년도 스마트폰 과의존 예방 교육 우수사례 공모전 개최(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2024년도 스마트폰 과의존 예방 교육 우수사례 공모전 개최
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.06.03</em>
+<em>조회수 124</em>
+</span>
+<span class="writer">
+<em>한유정</em>
+<em>역기능대응팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26765','16010100','26765');return false;" title="2024년 디지털정부 국제개발협력 1차 실무자 과정 교육생 모집 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1381,11 +1541,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2024.05.28</em>
-<em>조회수 428</em>
+<em>조회수 629</em>
 </span>
 <span class="writer">
 <em>이대윤</em>
@@ -1460,7 +1619,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.05.22</em>
-<em>조회수 1026</em>
+<em>조회수 1339</em>
 </span>
 <span class="writer">
 <em>이인철</em>
@@ -1535,7 +1694,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.05.14</em>
-<em>조회수 1976</em>
+<em>조회수 2226</em>
 </span>
 <span class="writer">
 <em>정윤재</em>
@@ -1610,7 +1769,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.04.29</em>
-<em>조회수 3172</em>
+<em>조회수 3268</em>
 </span>
 <span class="writer">
 <em>박경실</em>
@@ -1685,7 +1844,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.04.26</em>
-<em>조회수 1100</em>
+<em>조회수 1153</em>
 </span>
 <span class="writer">
 <em>김정엽</em>
@@ -1760,7 +1919,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.04.25</em>
-<em>조회수 1342</em>
+<em>조회수 1445</em>
 </span>
 <span class="writer">
 <em>백경훈</em>
@@ -1835,161 +1994,11 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.04.25</em>
-<em>조회수 395</em>
+<em>조회수 437</em>
 </span>
 <span class="writer">
 <em>구서연</em>
 <em>ESG혁신팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26685','16010100','26685');return false;" title="안전보건관리규정 입안예고-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             안전보건관리규정 입안예고
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.04.25</em>
-<em>조회수 252</em>
-</span>
-<span class="writer">
-<em>남팔근</em>
-<em>안전환경팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26683','16010100','26683');return false;" title="[자격검정] 2024년 제11회 인터넷중독전문상담사 자격검정 시행 공고-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             [자격검정] 2024년 제11회 인터넷중독전문상담사 자격검정 시행 공고
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.04.24</em>
-<em>조회수 520</em>
-</span>
-<span class="writer">
-<em>김욱진</em>
-<em>역기능대응팀</em>
 </span>
 </a>
 </li>
@@ -2094,9 +2103,9 @@ function doOrderby(cbIdx,orderbyDiv){
 </ul>
 </div>
 <div class="logoArea">
-<a href="https://www.innovation.go.kr" target="_blank" title="e혁신사이트바로가기-새창">
-<span class="logo img03" title="e혁신">
-<span class="hiddenText">e혁신</span>
+<a href="https://www.innovation.go.kr" target="_blank" title="혁신24 사이트바로가기-새창">
+<span class="logo img03" title="혁신24">
+<span class="hiddenText">혁신24</span>
 </span>
 </a>
 <a href="http://kdaa.or.kr/CertificationSite/WA/1685/Detail" target="_blank" title="한국디지털접근성진흥원 홈페이지 바로가기-새창">

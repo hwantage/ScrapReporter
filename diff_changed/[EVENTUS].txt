@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2",
+                UserId: "6aHHFkvOHP2plntoqIOg-B1iJWEEUtbxFLrF06aOazuorqqt1Ev_p8eGmxjebfXgcdC-BDyxpDH4UaSiwINXj0HdsNG5ITn80fe9oX8twihA4e1pOioMk6dnon0ujggz-b1wxg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2" === "XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2" ? "Anonymous" : "User",
+                UserType: "6aHHFkvOHP2plntoqIOg-B1iJWEEUtbxFLrF06aOazuorqqt1Ev_p8eGmxjebfXgcdC-BDyxpDH4UaSiwINXj0HdsNG5ITn80fe9oX8twihA4e1pOioMk6dnon0ujggz-b1wxg2" === "6aHHFkvOHP2plntoqIOg-B1iJWEEUtbxFLrF06aOazuorqqt1Ev_p8eGmxjebfXgcdC-BDyxpDH4UaSiwINXj0HdsNG5ITn80fe9oX8twihA4e1pOioMk6dnon0ujggz-b1wxg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2'
+            'user_id': '6aHHFkvOHP2plntoqIOg-B1iJWEEUtbxFLrF06aOazuorqqt1Ev_p8eGmxjebfXgcdC-BDyxpDH4UaSiwINXj0HdsNG5ITn80fe9oX8twihA4e1pOioMk6dnon0ujggz-b1wxg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2'
+            'crm_id': '6aHHFkvOHP2plntoqIOg-B1iJWEEUtbxFLrF06aOazuorqqt1Ev_p8eGmxjebfXgcdC-BDyxpDH4UaSiwINXj0HdsNG5ITn80fe9oX8twihA4e1pOioMk6dnon0ujggz-b1wxg2'
         });
     </script>
 <script>
@@ -2697,7 +2697,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="64ZAAFkDwwZvkQ7bFexbw9B9iYHV1zPu9_rZRhDRHIWF_rga2Q_PXxu2smkZOvniSP2IuULW6X5TyupgdAC3NO8wUZo1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="QbvZIFu8_bAaro8e75XQPc1feXDWEZmBcUmzj5CziACEAQPCgp7xan2bMHfVgjjPUzZ4maHTli-KBg9LtOHJhZmbA7o1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4014,7 +4014,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'XccbMMUGMNEGEP8yOyLtxGNG_MqYVVEWAczv3aZxrRUuWVkuQMyi3O0sAVF0bqRJ53rQ7OZdzuS3nVOsjWSlDUslO0BI1ieG6dpz_NcnSGzggyHK99mha0IZaCH9sRzAhu3Mxg2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', '6aHHFkvOHP2plntoqIOg-B1iJWEEUtbxFLrF06aOazuorqqt1Ev_p8eGmxjebfXgcdC-BDyxpDH4UaSiwINXj0HdsNG5ITn80fe9oX8twihA4e1pOioMk6dnon0ujggz-b1wxg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4066,9 +4066,9 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[]';
+    const bannerDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4473,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a795d64f00544365baec1d055865fff7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e534aaf7990843f1baba58d7b3d23abf.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/2024esg/event/84537\",\"BannerTitle\":\" ESG 기업 경영 사례 GO!\",\"BannerDescription\":\"ESG x AI 콘퍼런스\",\"BannerMobileDescription\":\"ESG x AI 콘퍼런스\",\"Banner\":{\"color\":{\"title\":\"#003C8F\",\"description\":\"#003C8F\",\"date\":\"#003C8F\",\"place\":\"#003C8F\"}},\"BannerDate\":\"2024. 06. 14.(금) 13:00\",\"BannerPlace\":\"오프라인 행사\",\"Support\":false}]';
     const searchDataRaw = '';
-    const supportDataRaw = '[]';
+    const supportDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4368,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e86101309b84407382899d413c11b772.jpg\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c000856396754cedb5fd180158545f2c.jpg\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/maxmobidays/event/80492\",\"BannerTitle\":\"국내 최대 마케팅 컨퍼런스\",\"BannerDescription\":\"Max Summit 2024\",\"BannerMobileDescription\":\"Max Summit 2024\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"2024. 06. 26.(수) 09:30\",\"BannerPlace\":\"오프라인 행사\",\"Support\":true}]';
     const defaultDataRaw = '[{\"Position\":\"search\",\"Id\":1158,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerMobileDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1169,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerMobileDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1228,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://event-us.kr/hostcenter\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerMobileDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null}]';
     const priceConstants = {
         min: 0,
