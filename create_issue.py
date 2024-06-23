@@ -14,7 +14,8 @@ class ISSUE:
 		url = "https://api.github.com/repos/hwantage/ScrapReporter/issues"
 		headers = {
 			"Authorization": "token " + os.environ['ACTION_ACCESS_TOKEN'],
-			"Accept": "application/vnd.github.v3+json"
+			"Accept": "application/vnd.github.v3+json",
+			"User-Agent": "request"
 		}
 
 		data = {
