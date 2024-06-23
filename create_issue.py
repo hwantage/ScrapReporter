@@ -28,6 +28,7 @@ class ISSUE:
 			self.overwrite_txt_files(formattedDate)
 		else:
 			print("Failed to create issue. Status code:", response.status_code)
+			print("Response content:", response.content.decode())
 
 	def overwrite_txt_files(self, formattedDate):
 		keyword_src = 'diff_keyword/' + formattedDate + '/'
