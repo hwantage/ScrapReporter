@@ -10,19 +10,19 @@
 <!-- Share Setting -->
 <meta content="NIA 한국지능정보사회진흥원" name="title">
 <meta content="한국지능정보사회진흥원, 지능정보원, NIA, NIA한국지능정보사회진흥원, National Information Society Agency, 미래전략, ICT 융합, 디지털문화, 전자정부, 기술지원, 글로벌협력, IT&amp;Future Strategy, NEAR&amp;Future, 공공데이터 동향분석, Information and Communications Technologies, ICT Trend Caster, D.gov, 감리사, 정보화정책, 국가정보화, 정보문화, 인터넷중독, 정보격차, ICT" name="keywords"/>
-<meta content="정보화로 사회현안을 해결하고 국가미래를 열어가는 세계 최고의 ICT 전문기관 NIA한국지능정보사회진흥원입니다." name="description"/>
+<meta content="우리는 디지털로 사회 현안을 해결하고, 국가 미래를 열어가는 국가 디지털 대전환 선도기관 NIA한국지능정보사회진흥원입니다." name="description"/>
 <meta content="ALL" name="Robots"/>
 <meta content="http://www.nia.or.kr/img/nia_kor/sns_logo_new.jpg" property="og:image">
 <meta content="image/jpeg" property="og:image:type">
 <meta content="200" property="og:image:width">
 <meta content="200" property="og:image:height">
 <meta content="[NIA 한국지능정보사회진흥원]" id="ogTitle" property="og:title"/>
-<meta content="정보화로 사회현안을 해결하고 국가미래를 열어가는 세계 최고의 ICT 전문기관 NIA한국지능정보사회진흥원입니다." property="og:description"/>
+<meta content="우리는 디지털로 사회 현안을 해결하고, 국가 미래를 열어가는 국가 디지털 대전환 선도기관 NIA한국지능정보사회진흥원입니다." property="og:description"/>
 <meta content="summary" name="twitter:card"/>
 <meta content=" " name="twitter:title"/>
 <!-- <meta name="twitter:url" content="http://www.nia.or.kr"/> -->
 <meta content="http://www.nia.or.kr/img/nia_kor/sns_logo_new.jpg" name="twitter:image"/>
-<meta content="정보화로 사회현안을 해결하고 국가미래를 열어가는 세계 최고의 ICT 전문기관 NIA한국지능정보사회진흥원입니다." name="twitter:description"/>
+<meta content="우리는 디지털로 사회 현안을 해결하고, 국가 미래를 열어가는 국가 디지털 대전환 선도기관 NIA한국지능정보사회진흥원입니다." name="twitter:description"/>
 <!-- //Share Setting -->
 <title>
     
@@ -162,8 +162,8 @@ function addTitleToMenu(obj)
 			$(item).children("span").children("a.accordion-collapsed").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 열기</span>");
 			$(item).children("span").children("a.accordion-expanded").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 닫기</span>");
 			
-			$(item).children("span").children("a.accordion-collapsed").attr("href","#;");
-            $(item).children("span").children("a.accordion-expanded").attr("href","#;");
+			$(item).children("span").children("a.accordion-collapsed").attr("href","#").attr("onclick","ignore(window.event)");
+            $(item).children("span").children("a.accordion-expanded").attr("href","#").attr("onclick","ignore(window.event)");
 			
 			addTitleToMenu($(item).children("ul").children("li"));
 		}
@@ -172,6 +172,11 @@ function addTitleToMenu(obj)
 			$(item).children("a").attr("title", $(item).children("a").text() + " 페이지로 이동");
 		}
 	});
+}
+
+function ignore(e){
+	e.preventDefault();
+	return false;
 }
 </script>
 <!--[if lt IE 9]>
@@ -895,7 +900,7 @@ function addTitleToMenu(obj)
 <em aria-hidden="true">NIA 알림</em>
 <ul>
 <li>
-<a class="active" href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835" title="공지사항">공지사항</a>
+<a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835" title="공지사항">공지사항</a>
 </li>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=78336" title="입찰공고">입찰공고</a>
@@ -1088,11 +1093,11 @@ function addTitleToMenu(obj)
 </form>
 <!-- <button title="검색하기"><i class="ion-ios-search-strong"></i></button> -->
 </div>
-<div class="sb-search" id="mobile_searchArea" tabindex="0">
+<div class="sb-search" id="mobile_searchArea">
 <form action="/site/nia_kor/ex/search/searchList.do" id="m_niaSearchVo" method="post" name="niaSearchVo">
 <label aria-hidden="true" class="lHidden" for="m_search" tabindex="-1">통합검색</label>
 <input aria-hidden="true" aria-label="통합검색" class="sb-search-input" id="m_search" name="query" placeholder="검색어를 입력하세요" style="display:none;" tabindex="-1" title="검색어 입력(모바일)" type="text"/>
-<a aria-hidden="true" class="sb-icon-search" onclick="m_totalSearch(this);" tabindex="-1" title="통합검색 검색하기"><span class="hiddenTxt">검색하기</span></a>
+<a class="sb-icon-search" onclick="m_totalSearch(this);" title="통합검색 검색하기"><span class="hiddenTxt">검색하기</span></a>
 </form>
 </div>
 </div>
@@ -1228,8 +1233,8 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,658</em>건
-            (1페이지 / 166페이지)</span>
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,665</em>건
+            (1페이지 / 167페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
 <span class="bar"></span>
@@ -1317,7 +1322,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2023.12.29</em>
-<em>조회수 1767</em>
+<em>조회수 1886</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1326,7 +1331,615 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','26797','16010100','26797');return false;" title="NIA 대구/제주 지역아동센터 · 비영리단체 노트북 지원사업 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','26848','16010100','26848');return false;" title="DPG 통합테스트베드 활용 수요조사 안내(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             DPG 통합테스트베드 활용 수요조사 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.06.19</em>
+<em>조회수 843</em>
+</span>
+<span class="writer">
+<em>김성진</em>
+<em>플랫폼혁신팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26845','16010100','26845');return false;" title="2024년 디지털윤리 창작콘텐츠 공모전 안내(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2024년 디지털윤리 창작콘텐츠 공모전 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.06.18</em>
+<em>조회수 141</em>
+</span>
+<span class="writer">
+<em>정석원</em>
+<em>역기능대응팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26836','16010100','26836');return false;" title="[자격검정] 2024년 제11회 인터넷중독전문상담사 자격검정 원서접수 및 테스트 접수기간 운영 안내(매뉴얼 포함)(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             [자격검정] 2024년 제11회 인터넷중독전문상담사 자격검정 원서접수 및 테스트 접수기간 운영 안내(매뉴얼 포함)
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.06.17</em>
+<em>조회수 131</em>
+</span>
+<span class="writer">
+<em>김욱진</em>
+<em>역기능대응팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26830','16010100','26830');return false;" title="2024 공공 SaaS 도입 성공전략 컨퍼런스 개최 안내(새 글)-첨부파일 없음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2024 공공 SaaS 도입 성공전략 컨퍼런스 개최 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                        <em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.06.14</em>
+<em>조회수 950</em>
+</span>
+<span class="writer">
+<em>양수빈</em>
+<em>AI-클라우드기술혁신팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26827','16010100','26827');return false;" title="퀀텀 코리아 2024 행사 개최 안내-첨부파일 없음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             퀀텀 코리아 2024 행사 개최 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                    </span>
+<span class="src">
+<em>2024.06.12</em>
+<em>조회수 505</em>
+</span>
+<span class="writer">
+<em>배승훈</em>
+<em>AI-양자기술활용팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26823','16010100','26823');return false;" title="2024년 양자기술 포닥 정착지원 참여기관 모집 안내-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2024년 양자기술 포닥 정착지원 참여기관 모집 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+</span>
+<span class="src">
+<em>2024.06.12</em>
+<em>조회수 246</em>
+</span>
+<span class="writer">
+<em>배승훈</em>
+<em>AI-양자기술활용팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26822','16010100','26822');return false;" title="2024년 양자기술 분야 인턴십 프로그램 참여기업 모집 안내-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2024년 양자기술 분야 인턴십 프로그램 참여기업 모집 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+</span>
+<span class="src">
+<em>2024.06.12</em>
+<em>조회수 238</em>
+</span>
+<span class="writer">
+<em>배승훈</em>
+<em>AI-양자기술활용팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26809','16010100','26809');return false;" title="「2024년도 디지털서비스 이용·확산 지원 사업 2차 수요조사 안내」-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             「2024년도 디지털서비스 이용·확산 지원 사업 2차 수요조사 안내」
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+</span>
+<span class="src">
+<em>2024.06.11</em>
+<em>조회수 822</em>
+</span>
+<span class="writer">
+<em>신민호</em>
+<em>AI-클라우드기술혁신팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','26797','16010100','26797');return false;" title="NIA 대구/제주 지역아동센터 · 비영리단체 노트북 지원사업 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1389,11 +2002,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2024.06.05</em>
-<em>조회수 95</em>
+<em>조회수 274</em>
 </span>
 <span class="writer">
 <em>문고운</em>
@@ -1401,611 +2013,10 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 </a>
 </li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26790','16010100','26790');return false;" title="2024년도 스마트폰 과의존 예방 교육 우수사례 공모전 개최(새 글)-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년도 스마트폰 과의존 예방 교육 우수사례 공모전 개최
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
-</span>
-<span class="src">
-<em>2024.06.03</em>
-<em>조회수 124</em>
-</span>
-<span class="writer">
-<em>한유정</em>
-<em>역기능대응팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26765','16010100','26765');return false;" title="2024년 디지털정부 국제개발협력 1차 실무자 과정 교육생 모집 안내-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년 디지털정부 국제개발협력 1차 실무자 과정 교육생 모집 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.05.28</em>
-<em>조회수 629</em>
-</span>
-<span class="writer">
-<em>이대윤</em>
-<em>글로벌아카데미</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26754','16010100','26754');return false;" title="ISP·ISMP 수립 공통가이드(제8판) 배포-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             ISP·ISMP 수립 공통가이드(제8판) 배포
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.05.22</em>
-<em>조회수 1339</em>
-</span>
-<span class="writer">
-<em>이인철</em>
-<em>디지털투자성과센터</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26737','16010100','26737');return false;" title="2024년 초거대 AI 기반 플랫폼 이용지원 주관기관 사전 등록 안내 (5.29(수), 2차 사전등록 결과 추가)-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년 초거대 AI 기반 플랫폼 이용지원 주관기관 사전 등록 안내 (5.29(수), 2차 사전등록 결과 추가)
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.05.14</em>
-<em>조회수 2226</em>
-</span>
-<span class="writer">
-<em>정윤재</em>
-<em>AI서비스혁신팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26704','16010100','26704');return false;" title='2024년 초거대 AI 기반 "플랫폼 이용지원"  매칭데이 안내(참석 수행기관 연락처 첨부)-첨부파일 있음'>
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년 초거대 AI 기반 "플랫폼 이용지원"  매칭데이 안내(참석 수행기관 연락처 첨부)
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.04.29</em>
-<em>조회수 3268</em>
-</span>
-<span class="writer">
-<em>박경실</em>
-<em>AI서비스혁신팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26694','16010100','26694');return false;" title="2024년 국가 데이터 인프라 구축 사업 시범적용 플랫폼 선정 수요조사 안내-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년 국가 데이터 인프라 구축 사업 시범적용 플랫폼 선정 수요조사 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.04.26</em>
-<em>조회수 1153</em>
-</span>
-<span class="writer">
-<em>김정엽</em>
-<em>지능데이터인프라팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26689','16010100','26689');return false;" title="인공지능 활용 강국 구현을 위한 NIA 전략과 과제-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             인공지능 활용 강국 구현을 위한 NIA 전략과 과제
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.04.25</em>
-<em>조회수 1445</em>
-</span>
-<span class="writer">
-<em>백경훈</em>
-<em>기획조정팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','26688','16010100','26688');return false;" title="2024년 NIA 제2기 국민정책기자단 합격자 발표-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년 NIA 제2기 국민정책기자단 합격자 발표
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2024.04.25</em>
-<em>조회수 437</em>
-</span>
-<span class="writer">
-<em>구서연</em>
-<em>ESG혁신팀</em>
-</span>
-</a>
-</li>
 </ul>
 </div>
 <div class="pageNation">
-<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=166" onclick="doBbsFPag(166);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
+<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=167" onclick="doBbsFPag(167);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
 </div>
 </section>
 <!-- 0926수정 top버튼추가 --><!-- 0928 -->

@@ -25,10 +25,10 @@
 <!-- CSS -->
 <link href="https://www.oss.kr/assets/core/common/css/xe-common.css?1573799923" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/assets/core/xe-ui-component/xe-ui-component.css?1637824731" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281073" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611669" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281078" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611663" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick.css?1635139724" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686555729" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686556394" media="all" rel="stylesheet" type="text/css"/>
 <!-- JS at head.prepend -->
 <script>
         var xeBaseURL = 'https://www.oss.kr'; // @DEPRECATED
@@ -41,7 +41,7 @@
             XE.setup({
                 baseURL: 'https://www.oss.kr',
                 assetsURL: 'https://www.oss.kr',
-                userToken: '0sXoSLoJaT6yOVoPKjcH9AxSKgnMppaEaodoD3fB',
+                userToken: 'J1NxTySIoUSiTTHXEcVDIY91eitZEzt861C6iNbn',
                 loginUserId: '', // @DEPRECATED
                 useXeSpinner: true, // @DEPRECATED
                 locale: 'ko',
@@ -997,6 +997,8 @@
 <th scope="col"><span>번호</span></th>
 <th class="title column-th-title" scope="col">
 <span>제목</span></th>
+<th class="column-th-read_count" scope="col">
+<span>조회수</span></th>
 <th class="column-th-created_at" scope="col">
 <span>작성</span></th>
 </tr>
@@ -1009,6 +1011,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/49e410fb-604d-4d35-ba25-8286b5f2c50d" id="title_49e410fb-604d-4d35-ba25-8286b5f2c50d">[Open UP 활용가이드] 공개SW 활용 및 개발, 창업, 교육 "Open UP을 활용하세요"</a>
 </td>
+<td class="read_num xe-hidden-xs">300957</td>
 <td class="time xe-hidden-xs column-created_at">2020-10-27</td>
 </tr>
 <tr class="notice">
@@ -1016,79 +1019,90 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/ea60b452-72ea-4a83-93f5-450582463d87" id="title_ea60b452-72ea-4a83-93f5-450582463d87">[Open UP 소개] 공개SW 개발·공유·활용 원스톱 지원 Open UP이 함께합니다</a>
 </td>
+<td class="read_num xe-hidden-xs">290606</td>
 <td class="time xe-hidden-xs column-created_at">2020-10-27</td>
 </tr>
 <!-- /NOTICE -->
 <!-- LIST -->
 <tr>
-<td>10968</td>
+<td>10990</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/560384ac-5af3-4c4a-8f10-7f9aefc07ca6" id="title_560384ac-5af3-4c4a-8f10-7f9aefc07ca6">네이버 "올해 내 생성형AI vLLM 오픈소스 공개"</a>
+<a class="title_text" href="https://www.oss.kr/news/show/69bcb8d1-efc2-4df5-a608-a5ef5ee74c01" id="title_69bcb8d1-efc2-4df5-a608-a5ef5ee74c01">메타, 첨단 멀티모달 모델 '카멜레온' 오픈소스 출시…새로운 AI 모델은?</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-07</td>
+<td class="read_num xe-hidden-xs">109</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-21</td>
 </tr>
 <tr>
-<td>10967</td>
+<td>10989</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/de265120-5604-4c93-92e5-5245f454008b" id="title_de265120-5604-4c93-92e5-5245f454008b">아이스버그 주도권 경쟁 심화··· 데이터브릭스, 오픈소스 스토리지 플랫폼 업체 ‘태뷸러’ 인수</a>
+<a class="title_text" href="https://www.oss.kr/news/show/5b320d6e-8c41-4dc8-b539-d9924e3e0e4b" id="title_5b320d6e-8c41-4dc8-b539-d9924e3e0e4b"> 달아 오르는 음향 생성 AI...일레븐랩스도 오픈 소스 앱 출시</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-07</td>
+<td class="read_num xe-hidden-xs">148</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10966</td>
+<td>10988</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/874dd7c3-b8e4-46d8-aab7-c6dc5a5ea8cb" id="title_874dd7c3-b8e4-46d8-aab7-c6dc5a5ea8cb">[이재춘의 시큐리티 노트-1] '센트OS' 지원 종료로 인한 보안 위협</a>
+<a class="title_text" href="https://www.oss.kr/news/show/f381670a-8bc5-4515-83ed-e0e2312a9bf2" id="title_f381670a-8bc5-4515-83ed-e0e2312a9bf2">“생성형 AI 사용 시 SW 보안·라이선스 규정 준수 주의해야”</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-05</td>
+<td class="read_num xe-hidden-xs">145</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10965</td>
+<td>10987</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/847b9a71-f2fe-46d3-96ac-a8df1035fd45" id="title_847b9a71-f2fe-46d3-96ac-a8df1035fd45">출시 10주년 쿠버네티스가 클라우드 네이티브 플랫폼으로 성공한 비결 </a>
+<a class="title_text" href="https://www.oss.kr/news/show/2647c16c-22a9-4540-948d-783efd9711b8" id="title_2647c16c-22a9-4540-948d-783efd9711b8">데이터브릭스, 유니티 카탈로그 오픈소스 제공</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-05</td>
+<td class="read_num xe-hidden-xs">142</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10964</td>
+<td>10986</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/a7b4ddd8-445b-4b59-9be8-9b0d85f9b3a4" id="title_a7b4ddd8-445b-4b59-9be8-9b0d85f9b3a4">스노우플레이크, 데이터 거버넌스 서비스 ‘폴라리스 카탈로그’ 출시··· “오픈소스로 차별화” </a>
+<a class="title_text" href="https://www.oss.kr/news/show/1b3ed4c6-0dec-480b-b34e-2b8dfb3dcd3e" id="title_1b3ed4c6-0dec-480b-b34e-2b8dfb3dcd3e"> 로봇 시각·언어·행동 통합 첫 오픈 소스 모델 'VLA' 등장.."기존 구글 RT-2 능가"</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-05</td>
+<td class="read_num xe-hidden-xs">151</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10963</td>
+<td>10985</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/087a1bd1-92fe-4b74-92fa-0bbf8d6f14a8" id="title_087a1bd1-92fe-4b74-92fa-0bbf8d6f14a8">주요국 SW공급망 보안 빨라지는데…'오픈소스' 여전한 숙제</a>
+<a class="title_text" href="https://www.oss.kr/news/show/bb031986-eca2-47b6-86b4-122cfc5b457e" id="title_bb031986-eca2-47b6-86b4-122cfc5b457e">[수세콘2024] “센트OS 계속 쓰세요”…수세, ‘리버티 리눅스’ 새 버전 발표</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-05</td>
+<td class="read_num xe-hidden-xs">142</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10962</td>
+<td>10984</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/45777988-9f40-49a8-ad9f-f160c27c6f1f" id="title_45777988-9f40-49a8-ad9f-f160c27c6f1f">올거나이즈, 한국어 실무 특화 LLM '알파-인스트럭트' 오픈소스로 출시</a>
+<a class="title_text" href="https://www.oss.kr/news/show/2c7efe70-7f70-4b33-abfb-946c2aca4b07" id="title_2c7efe70-7f70-4b33-abfb-946c2aca4b07">애플, 온디바이스 AI용 모델·데이터셋 오픈 소스로 대거 출시</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-04</td>
+<td class="read_num xe-hidden-xs">134</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10961</td>
+<td>10983</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/ad40256e-a01d-4417-a359-2d1b488e110b" id="title_ad40256e-a01d-4417-a359-2d1b488e110b">[주간 OSS 동향리포트] 2024년 공개SW 개발자 대회, 7월 4일까지 참가자 모집</a>
+<a class="title_text" href="https://www.oss.kr/news/show/195cb80c-3b6b-410c-9809-4f5a0219d0ab" id="title_195cb80c-3b6b-410c-9809-4f5a0219d0ab">[주간 OSS 동향리포트] AI, 클라우드 등 신기술 도입이 늘어나면서 국내 오픈소스SW 시장 성장</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-06-04</td>
+<td class="read_num xe-hidden-xs">134</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-20</td>
 </tr>
 <tr>
-<td>10960</td>
+<td>10982</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/51b96acf-5387-419b-9801-2b416103652e" id="title_51b96acf-5387-419b-9801-2b416103652e">제1차 SW 공급망 보안 포럼…과기정통부 “가이드라인 확산안 논의”</a>
+<a class="title_text" href="https://www.oss.kr/news/show/25663508-0ac7-4cbb-bb65-ac34ade94844" id="title_25663508-0ac7-4cbb-bb65-ac34ade94844">네덜란드 델프트공대, 오픈소스 체스 로봇 개발</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-05-31</td>
+<td class="read_num xe-hidden-xs">205</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-18</td>
 </tr>
 <tr>
-<td>10959</td>
+<td>10981</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/db34e364-23fe-4ae5-bcf6-8d355c383c70" id="title_db34e364-23fe-4ae5-bcf6-8d355c383c70">미스트랄 AI, '온프레미스 오픈 소스 전략'으로 미국 시장 공략</a>
+<a class="title_text" href="https://www.oss.kr/news/show/1f81e26c-8756-4a71-b7f0-3f7344450f9c" id="title_1f81e26c-8756-4a71-b7f0-3f7344450f9c">폭스바겐 카리아드, 오픈 소스 선언문 발표</a>
 </td>
-<td class="time xe-hidden-xs column-created_at">2024-05-30</td>
+<td class="read_num xe-hidden-xs">206</td>
+<td class="time xe-hidden-xs column-created_at">2024-06-18</td>
 </tr>
 <!-- /LIST -->
 </tbody>
@@ -1107,15 +1121,15 @@
 <a href="https://www.oss.kr/news?page=7">7</a>
 <a href="https://www.oss.kr/news?page=8">8</a>
 <span>...</span>
-<a href="https://www.oss.kr/news?page=1096">1096</a>
-<a href="https://www.oss.kr/news?page=1097">1097</a>
+<a href="https://www.oss.kr/news?page=1098">1098</a>
+<a href="https://www.oss.kr/news?page=1099">1099</a>
 <a class="btn_pg btn_next" href="https://www.oss.kr/news?page=2"><i class="xi-angle-right"><span class="bd_hidden">다음 페이지로 이동</span></i></a>
 </div>
 <!-- /PAGINATION PC-->
 <!-- PAGINATAION Mobile -->
 <div class="bd_paginate v2 xe-visible-xs">
 <span class="btn_pg btn_prev"><i class="xi-angle-left"><span class="bd_hidden">«</span></i></span>
-<span class="pg_box"><strong>1</strong> / <span>1097</span></span>
+<span class="pg_box"><strong>1</strong> / <span>1099</span></span>
 <a class="btn_pg btn_next" href="https://www.oss.kr/news?page=2"><i class="xi-angle-right"><span class="bd_hidden">»</span></i></a>
 </div>
 <!-- /PAGINATION Mobile -->

@@ -15,8 +15,8 @@
 <title>공고 -  훈령/예규/고시/공고 -  법령정보  -  알림소식  - 중소벤처기업부</title>
 <link href="/images/smba/favicon2.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="/remixicon/remixicon-2.5.0.css" rel="stylesheet" type="text/css"/>
-<link href="/css/smba/np/common.css?version=1717974578948" rel="stylesheet" type="text/css"/>
-<link href="/css/smba/np/style.css?version=1717974578948" rel="stylesheet" type="text/css"/>
+<link href="/css/smba/np/common.css?version=1719132407643" rel="stylesheet" type="text/css"/>
+<link href="/css/smba/np/style.css?version=1719132407643" rel="stylesheet" type="text/css"/>
 <script src="/js/smba/np/jquery.js?version=1.0"></script>
 <script src="/js/smba/np/jquery.lazyload.js"></script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-73146338-2"></script>
@@ -1780,7 +1780,7 @@ function fn_sort_list(sort){
 <!-- 게시판 요약 정보 및 소팅 옵션 S -->
 <div class="board_top clearfix">
 <div class="list_info">
-<p><i class="ri-file-list-2-line"></i><span>전체 : <b>5,498</b>건</span></p>
+<p><i class="ri-file-list-2-line"></i><span>전체 : <b>5,499</b>건</span></p>
 <p><i class="ri-bookmark-2-line"></i><span>현재 페이지 : <b>1</b>/550</span></p>
 </div>
 <!-- 목록 정렬순 버튼 -->
@@ -1814,6 +1814,43 @@ function fn_sort_list(sort){
 </tr>
 </thead>
 <tbody>
+<tr class="">
+<td>
+										5499
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1051160','16010100','1051160');return false;" title="5499번글">
+										
+										소기업 우선구매 대상제품 지정내역 공고
+								</a></td>
+<td>판로정책과</td>
+<td class="attached-files">
+<a class="attach-file hangul" data-file-type="hwpx" href="/common/board/Download.do?bcIdx=1051160&amp;cbIdx=126&amp;streFileNm=1a60500f-fed1-4788-8b0d-4c36cf83ec15.hwpx" title="파일 내려받기"><img alt="HWPX 첨부파일" src="/images/smba/icon_fileHan.png"/></a>
+</td>
+<td>2024.06.19</td>
+<td>제2024-371호</td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1051160','16010100','1051160');return false;">
+<div class="subject">
+<strong>소기업 우선구매 대상제품 지정내역 공고</strong>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>판로정책과</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2024.06.19</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
 <tr class="">
 <td>
 										5498
@@ -2147,43 +2184,6 @@ function fn_sort_list(sort){
 </td>
 <!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
 </tr>
-<tr class="">
-<td>
-										5489
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1050501','16010100','1050501');return false;" title="5489번글">
-										
-										창업기획자 등록 말소 공고
-								</a></td>
-<td>투자관리감독과</td>
-<td class="attached-files">
-<a class="attach-file hangul" data-file-type="hwpx" href="/common/board/Download.do?bcIdx=1050501&amp;cbIdx=126&amp;streFileNm=ae1e4819-467f-4acb-b41c-74254767a255.hwpx" title="파일 내려받기"><img alt="HWPX 첨부파일" src="/images/smba/icon_fileHan.png"/></a>
-</td>
-<td>2024.05.21</td>
-<td>제2024-318호</td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1050501','16010100','1050501');return false;">
-<div class="subject">
-<strong>창업기획자 등록 말소 공고</strong>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>투자관리감독과</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2024.05.21</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
 </tbody>
 </table>
 <div class="btn-area" style="text-align: right;">
@@ -2316,7 +2316,7 @@ function getBizPopupInfo() {
 <div id="service_link">
 <h4 class="service-title">중소기업 정보서비스</h4>
 <ul class="clearfix">
-<li class="type1"><a href="https://smes.go.kr/index" target="_blank" title="중소벤처24 새창으로 열기">중소벤처24</a></li>
+<li class="type1"><a href="https://smes.go.kr/main/index" target="_blank" title="중소벤처24 새창으로 열기">중소벤처24</a></li>
 <li class="type3"><a href="http://www.k-startup.go.kr/" target="_blank" title="K-스타트업 새창으로 열기">K-스타트업</a></li>
 <li class="type5"><a href="http://sminfo.mss.go.kr/" target="_blank" title="중소기업현황 정보시스템 새창으로 열기">중소기업현황정보시스템</a></li>
 <li class="type2"><a href="http://www.bizinfo.go.kr/" target="_blank" title="기업마당 새창으로 열기">기업마당</a></li>

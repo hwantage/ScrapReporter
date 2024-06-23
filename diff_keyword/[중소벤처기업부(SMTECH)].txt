@@ -505,6 +505,20 @@ function fn_MenuMrfnPageMove(url){
 	/*상단메뉴 시안변경에 따른 수정요청 2018*/
 	$(document).ready(function(){
 
+		
+		
+		if (location.host == 'smtech.go.kr') {
+			let protocol = location.protocol;
+			let smtechHost = 'www.smtech.go.kr';
+			let path = location.pathname;
+
+			location.href = `${protocol}//${smtechHost}${path}`;
+			
+			return;
+		}
+		
+		
+
 		$(".inbN8 li a[name=navN8Tit]").mouseover(function(){
 			var inbN8a = $(".inbN8 li a[name=navN8Tit]");
 			var idx = $(this).parent().index();
@@ -1308,6 +1322,40 @@ $(document).ready(function () {
 <tbody>
 <tr>
 <td class="ac">1</td>
+<td class="ac">TIPA ValueUP 프로그램</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02725&amp;buclCd=S9141&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">TIPA ValueUP 프로그램 16기 참여기업 공고</a></td>
+<td class="ac">
+
+	                       	2024. 06. 17 ~ 2024. 07. 05
+	                  	</td>
+<td class="ac">
+	                    	2024-06-17
+
+	                    </td>
+<td class="ac ll">
+<!--6 7 6 23-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">2</td>
+<td class="ac">중소기업 R&amp;D 우수성과 사례발굴</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02724&amp;buclCd=S9161&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년도 중소기업 R&amp;D 우수성과 50선 모집 공고</a></td>
+<td class="ac">
+
+	                       	2024. 06. 14 ~ 2024. 07. 15
+	                  	</td>
+<td class="ac">
+	                    	2024-06-11
+
+	                    </td>
+<td class="ac ll">
+<!--6 7 6 23-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">3</td>
 <td class="ac">스마트 안전장비지원</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02723&amp;buclCd=S9151&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년도 제2차 고용노동부(한국산업안전보건공단) 연계 스마트 안전장비지원 품목등록 시행계획 공고</a></td>
 <td class="ac">
@@ -1319,12 +1367,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 6 10-->
+<!--6 6 6 23-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">2</td>
+<td class="ac">4</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02701&amp;buclCd=S6041&amp;dtlAncmSn=7&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 중소기업 연구인력지원사업(파견) 6월 공고</a></td>
 <td class="ac">
@@ -1336,12 +1384,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 6 10-->
+<!--6 6 6 23-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">3</td>
+<td class="ac">5</td>
 <td class="ac">컨소시엄형기술개발지원프로그램</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02722&amp;buclCd=S2H11&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년도 컨소시엄형기술개발사업 시행계획 공고</a></td>
 <td class="ac">
@@ -1353,29 +1401,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 6 10-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+<!--5 6 6 23-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">4</td>
-<td class="ac">(비R&amp;D)지역주력산업육성</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02718&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 지식산업센터 연계활용 지원사업</a></td>
-<td class="ac">
-
-	                       	2024. 04. 01 ~ 2024. 06. 14
-	                  	</td>
-<td class="ac">
-	                    	2024-03-01
-
-	                    </td>
-<td class="ac ll">
-<!--4 6 6 10-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">5</td>
+<td class="ac">6</td>
 <td class="ac">중소기업기술혁신개발사업(시장확대형)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02712&amp;buclCd=S2018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년도 중소기업기술혁신개발사업(시장확대형-상생협력) 제2차 시행계획 공고</a></td>
 <td class="ac">
@@ -1387,12 +1418,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 6 10-->
+<!--5 6 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">6</td>
+<td class="ac">7</td>
 <td class="ac">창업성장기술개발사업(디딤돌)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02717&amp;buclCd=S205D&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">(산학연협회) 2024년도 창업성장기술개발사업 디딤돌 제2차(하반기) 성장네트워크 R&amp;D 과제 시행계획 공고</a></td>
 <td class="ac">
@@ -1404,24 +1435,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 6 10-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">7</td>
-<td class="ac">창업성장기술개발사업(디딤돌)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02713&amp;buclCd=S205D&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">(경기창경센터) 2024년도 창업성장기술개발사업 디딤돌 제2차(하반기) 도약_글로벌R&amp;D 과제 시행계획 공고</a></td>
-<td class="ac">
-
-	                       	2024. 05. 20 ~ 2024. 06. 03
-	                  	</td>
-<td class="ac">
-	                    	2024-05-03
-
-	                    </td>
-<td class="ac ll">
-<!--5 6 6 10-->
+<!--5 6 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1438,7 +1452,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 6 10-->
+<!--5 6 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1455,7 +1469,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 6 10-->
+<!--5 6 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1472,12 +1486,29 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 6 10-->
+<!--5 6 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">11</td>
+<td class="ac">창업성장기술개발사업(디딤돌)</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02713&amp;buclCd=S205D&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">(경기창경센터) 2024년도 창업성장기술개발사업 디딤돌 제2차(하반기) 도약_글로벌R&amp;D 과제 시행계획 공고</a></td>
+<td class="ac">
+
+	                       	2024. 05. 20 ~ 2024. 06. 03
+	                  	</td>
+<td class="ac">
+	                    	2024-05-03
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 23-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">12</td>
 <td class="ac">지역산업육성 지방비 평가관리</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02719&amp;buclCd=S6561&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년도 지역산업육성 지방비 평가관리사업 지원계획 공고</a></td>
 <td class="ac">
@@ -1489,12 +1520,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 5 6 10-->
+<!--5 5 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">12</td>
+<td class="ac">13</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02701&amp;buclCd=S6041&amp;dtlAncmSn=6&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 중소기업 연구인력지원사업(파견) 5월 공고</a></td>
 <td class="ac">
@@ -1506,12 +1537,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 5 6 10-->
+<!--5 5 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">13</td>
+<td class="ac">14</td>
 <td class="ac">수출지원프로그램</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02711&amp;buclCd=S9121&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 제1차 한국무역보험공사 연계 수출지원프로그램 시행계획 공고</a></td>
 <td class="ac">
@@ -1523,12 +1554,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 5 6 10-->
+<!--4 5 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">14</td>
+<td class="ac">15</td>
 <td class="ac">중소벤처기업부 혁신제품 지정사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02710&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 중소벤처기업부 혁신제품 추가등록(규격추가) 안내문</a></td>
 <td class="ac">
@@ -1540,24 +1571,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 4 6 10-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">15</td>
-<td class="ac">스마트 안전장비지원</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02709&amp;buclCd=S9151&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 고용노동부(한국산업안전보건공단) 연계 스마트 안전장비지원 품목 등록 1차 시행계획 공고</a></td>
-<td class="ac">
-
-	                       	2024. 04. 03 ~ 2024. 04. 22
-	                  	</td>
-<td class="ac">
-	                    	2024-04-03
-
-	                    </td>
-<td class="ac ll">
-<!--4 4 6 10-->
+<!--4 4 6 23-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
