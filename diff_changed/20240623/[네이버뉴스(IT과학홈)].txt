@@ -1,0 +1,3807 @@
+<!DOCTYPE html>
+
+<html data-useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta contents="always" name="referrer"/>
+<meta content="600" http-equiv="refresh"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+<meta content="IT/과학 : 네이버 뉴스" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://news.naver.com/breakingnews/section/105/732" property="og:url"/>
+<meta content="https://ssl.pstatic.net/static.news/image/news/ogtag/navernews_800x420_20221201.png" property="og:image"/>
+<meta content="모바일, 인터넷, SNS, 통신 등 IT/과학 분야 뉴스 제공" property="og:description"/>
+<meta content="네이버" property="og:article:author"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="IT/과학 : 네이버 뉴스" name="twitter:title"/>
+<meta content="네이버 뉴스" name="twitter:site"/>
+<meta content="네이버 뉴스" name="twitter:creator"/>
+<meta content="https://ssl.pstatic.net/static.news/image/news/ogtag/navernews_800x420_20221201.png" name="twitter:image"/>
+<meta content="모바일, 인터넷, SNS, 통신 등 IT/과학 분야 뉴스 제공" name="twitter:description"/>
+<title>IT/과학 : 네이버 뉴스</title>
+<link href="https://static-nnews.pstatic.net/css/min/20240620/news.css" rel="stylesheet"/>
+<link href="https://ssl.pstatic.net/static.news/image/news/m/2023/08/21/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="https://ssl.pstatic.net/static.news/image/news/m/2018/favicon/06/android_legacy_xxxhpdi_192x192.png" rel="apple-touch-icon-precomposed"/>
+<link href="https://ssl.pstatic.net/static.news/image/news/m/2018/favicon/06/android_legacy_hdpi_72X72.png" rel="apple-touch-icon-precomposed" size="72x72"/>
+<link href="https://ssl.pstatic.net/static.news/image/news/m/2018/favicon/06/android_legacy_xhdpi_96x96.png" rel="apple-touch-icon-precomposed" size="96x96"/>
+<link href="https://ssl.pstatic.net/static.news/image/news/m/2018/favicon/06/android_legacy_xxhpdi_144x144.png" rel="apple-touch-icon-precomposed" size="144x144"/>
+<link href="https://ssl.pstatic.net/static.news/image/news/m/2018/favicon/06/android_legacy_xxxhpdi_192x192.png" rel="apple-touch-icon-precomposed" size="192x192"/>
+<script async="" src="https://ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js"></script>
+<script>
+			var g_ssc = nsc = "news.v3_flash";
+			var g_default_area = "itn";
+
+			var svr = "one-service-r-20240620-240620-152803-8456d67f8c-gwpj9";
+			var nelo = {
+				name : "one-front",
+				url : "https://kr-col-ext.nelo.navercorp.com/_store",
+				sampleNumber : 100,
+				maxCount : 100,
+				maxSendMessage : "로그 전송 최대치 도달"
+			};
+			var isGreendot = document.cookie.indexOf("MM_NEW=1") > -1;
+			var isNewGreendot = document.cookie.indexOf("MM_NEW=2") > -1;
+			var domain = "https://n.news.naver.com";
+			var ajaxDomain = "";
+			var newsDomain = "";
+			var layoutName = "section_home_second";
+			var layoutType = "section";
+			var isAvailableDarkMode = false;
+
+			var article = {
+				
+				officeId: "",
+				articleId: "",
+				sectionId : "",
+				gdid: "",
+				type: "",
+				sectionInfo: {
+					firstSection: "",
+					secondSection: "",
+					thirdSection: ""
+				},
+				title: document.title
+			};
+
+
+
+			var office = {
+				isChannel: false,
+				isPressHome: false,
+				name : "",
+				category : ""
+			};
+
+			var searchQuery = (function() {
+				var referrerLink = document.createElement("a");
+				var emptySearch = "";
+
+				referrerLink.href = document.referrer || "";
+
+				if (referrerLink.host.indexOf("search.naver.com") === -1) {
+					return emptySearch;
+				}
+
+				return decodeURIComponent(
+					(
+						referrerLink.search.match(/(?:\?|&)query\=([^&]+)/) || [ null, emptySearch ]
+					)[1].replace(/\+/g, " ")
+				);
+			})();
+
+			var divIds = [];
+			var syncDivIds = [];
+			var syncDivIdsForNonArticle = [];
+
+			var unitIds = [];
+			var syncUnitIds = [];
+			var syncUnitIdsForNonArticle = [];
+
+			window.gladsdk = window.gladsdk || { cmd: [] };
+			gladsdk.cmd.push(function() {
+				gladsdk.setGlobalConfig({ enablePersistAd: true });
+
+				var adInfoList = [];
+
+				adInfoList.push({
+					seq: 1,
+					unitId: "p_news_newslist",
+					sync: false,
+					mobileOnly: false,
+					article: false,
+					directSalesPct: "",
+					calp: false,
+					hasSid1: true
+				});
+				adInfoList.push({
+					seq: 2,
+					unitId: "p_news_sidebox",
+					sync: false,
+					mobileOnly: false,
+					article: false,
+					directSalesPct: "",
+					calp: true,
+					hasSid1: false
+				});
+
+				var userAgent = navigator.userAgent.toLowerCase();
+
+				for (var i = 0; i < adInfoList.length; i++) {
+					var adInfo = adInfoList[i];
+
+					var divId = "nmap_c_" + article.officeId + "_" + article.articleId + "_" + article.sectionId + "_" + adInfo.seq;
+
+					var unitId = adInfo.unitId;
+					var mobileOnly = adInfo.mobileOnly;
+					var sync = adInfo.sync;
+					var isArticle = adInfo.article;
+					var directSalesPct = adInfo.directSalesPct;
+					var calp = adInfo.calp;
+					var hasSid1 = adInfo.hasSid1;
+
+					if (mobileOnly == true) {
+						if (/iphone|android|ipod/.test(userAgent) == false) {
+							continue;
+						}
+					}
+
+					var customParam = {
+						sid1: article.sectionId,
+						oid: article.officeId,
+						gdid: article.gdid,
+						pk: searchQuery,
+						directSalesPct: directSalesPct
+					};
+
+					if (calp == true) {
+						customParam.calp = "shome";
+					}
+					if (hasSid1 == true) {
+						customParam.sid1 = "105";
+					}
+
+					var adUnit = {
+						adUnitId: unitId,
+						adSlotElementId: divId,
+						customParam: customParam
+					};
+
+					if (sync == true) {
+						syncUnitIds.push(unitId);
+						syncDivIds.push(divId);
+
+						if (isArticle == false) {
+							syncUnitIdsForNonArticle.push(unitId);
+							syncDivIdsForNonArticle.push(divId);
+						}
+					} else {
+						unitIds.push(unitId);
+						divIds.push(divId);
+					}
+
+					gladsdk.defineAdSlot(adUnit);
+				}
+
+			});
+			window.__htExternalUrl = window.__htExternalUrl || {};
+		</script>
+<script src="https://static-nnews.pstatic.net/js/min/20240620a/common.min.js"></script>
+</link></meta></head>
+<body class="n_news_mnews fs1 as_mp_layout as_section_home">
+<div class="end_container">
+<div class="u_skip"><a href="#ct">본문 바로가기</a></div>
+<header class="as_gnb_mnews as_type_section" role="banner">
+<div class="header_inner">
+<div class="Ngnb">
+<div class="Ngnb_inner">
+<div class="Ngnb_both">
+<div class="Ngnb_left">
+<span class="Ngnb_logo"><a class="Nlogo_link _LINK" data-clk="gnb.naver" data-pc-url="https://www.naver.com/" data-url="https://m.naver.com/" href="https://m.naver.com/"><span class="Nicon_logo">NAVER</span></a></span>
+<div class="Ngnb_service">
+<h1 class="Nservice_item"><a class="_LINK" data-clk="gnb.news" data-pc-url="https://news.naver.com/" data-url="https://m.news.naver.com" href="https://m.news.naver.com"><span class="Nicon_service">뉴스</span></a></h1>
+<span class="Nservice_subitem">
+<a class="_LINK" data-clk="gnb.entertain" data-pc-url="https://entertain.naver.com/home" data-url="https://m.entertain.naver.com" href="https://m.entertain.naver.com">
+<span class="Nicon_family Nicon_entertain">연예</span>
+</a>
+</span>
+<span class="Nservice_subitem">
+<a class="_LINK" data-clk="gnb.sports" data-pc-url="https://sports.news.naver.com/index" data-url="https://m.sports.naver.com" href="https://m.sports.naver.com">
+<span class="Nicon_family Nicon_sports">스포츠</span>
+</a>
+</span>
+<span class="Nservice_subitem">
+<a data-clk="gnb.weather" href="https://weather.naver.com">
+<span class="Nicon_family Nicon_weather">날씨</span>
+</a>
+</span>
+<span class="Nservice_subitem">
+<a data-clk="gnb.premium" href="https://contents.premium.naver.com">
+<span class="Nicon_family Nicon_premium">프리미엄</span>
+</a>
+</span>
+</div>
+</div>
+<div class="Ngnb_right">
+<div class="Ngnb_group">
+<div class="gnb_dark_type2" id="gnb"></div>
+</div>
+<div class="Ngnb_search _SEARCH_WRAP is_hidden"></div>
+<div class="Ngnb_tool">
+<a class="Ntool_button _SEARCH_CONTENT_TOGGLE_BUTTON" data-clk="gnb.scho" href="javascript:;"><span class="Nicon_search">검색</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="Nlnb" data-scroll-fixed="true" id="_LNB_PARENT_WRAP" style="z-index:3000;">
+<div class="Nlnb_menu Ntype_scroll" id="_LNB_WRAP">
+<div class="Nlnb_menu_inner" id="_LNB">
+<ul class="Nlnb_menu_list" role="tablist">
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.press" href="https://news.naver.com/" role="tab"><span class="Nitem_link_menu">언론사별</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.pol" href="https://news.naver.com/section/100" role="tab"><span class="Nitem_link_menu">정치</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.eco" href="https://news.naver.com/section/101" role="tab"><span class="Nitem_link_menu">경제</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.soc" href="https://news.naver.com/section/102" role="tab"><span class="Nitem_link_menu">사회</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.lif" href="https://news.naver.com/section/103" role="tab"><span class="Nitem_link_menu">생활/문화</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM is_active" role="presentation">
+<a aria-selected="true" class="Nitem_link" data-clk="lnb.it" href="https://news.naver.com/section/105" role="tab"><span class="Nitem_link_menu">IT/과학</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.wor" href="https://news.naver.com/section/104" role="tab"><span class="Nitem_link_menu">세계</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.rank" href="https://news.naver.com/main/ranking/popularDay.naver?mid=etc&amp;sid1=111" role="tab"><span class="Nitem_link_menu">랭킹</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.paper" href="https://news.naver.com/newspaper/home" role="tab"><span class="Nitem_link_menu">신문보기</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.opi" href="https://news.naver.com/main/opinion/home.naver" role="tab"><span class="Nitem_link_menu">오피니언</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.tv" href="https://news.naver.com/main/tv/index.naver?mid=tvh" role="tab"><span class="Nitem_link_menu">TV</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.fact" href="https://news.naver.com/main/factcheck/main.naver" role="tab"><span class="Nitem_link_menu">팩트체크</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.algo" href="https://media.naver.com/algorithm" role="tab"><span class="Nitem_link_menu">알고리즘 안내</span></a>
+</li>
+<li class="Nlist_item _LNB_ITEM" role="presentation">
+<a aria-selected="false" class="Nitem_link" data-clk="lnb.correct" href="https://news.naver.com/main/ombudsman/errorArticleList.naver?mid=omb" role="tab"><span class="Nitem_link_menu">정정보도 모음</span></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</header>
+<hr/>
+<script>
+	var svt = "20240623121037.252";
+	var timestamp = svt.substr(0, 8);
+	var isLogin = false;
+	var uhv = "";
+
+	var service = {
+		news: false,
+		entertain: false,
+		sports: false,
+		mnews: true,
+		newsType: true
+	};
+	var serviceName = "mnews";
+
+	var envPhase = "production";
+	var isProduction = true;
+
+	var gnb_service = "news";
+	var gnb_logout = encodeURIComponent(location.href);
+	var gnb_template = "gnb_utf8";
+	var gnb_brightness = 3;
+	var gnb_item_hide_option = 128;
+</script>
+<div class="ct_wrap" id="ct_wrap">
+<div class="ct_lnb">
+<div class="ct_lnb_inner">
+<strong class="ct_lnb_date">06.23(일)</strong>
+<ul class="ct_lnb_side">
+<li class="ct_lnb_side_item">
+<a class="ct_lnb_side_link" data-clk="slb.allmedia" href="https://news.naver.com/main/officeList.naver">전체 언론사</a>
+</li>
+<li class="ct_lnb_side_item">
+<a class="ct_lnb_side_link" data-clk="slb.newsstand" href="https://newsstand.naver.com/" target="_blank">뉴스스탠드</a>
+</li>
+<li class="ct_lnb_side_item">
+<a class="ct_lnb_side_link" data-clk="slb.library" href="https://newslibrary.naver.com/search/searchByDate.nhn" target="_blank">라이브러리</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="ct_scroll_wrapper">
+<div class="column0">
+<div class="ct_snb">
+<h2 class="ct_snb_h2">
+<a class="ct_snb_h2_a" data-clk="lmn_itn.home" href="/section/105">IT/과학</a>
+</h2>
+<ul class="ct_snb_nav">
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="1" href="/breakingnews/section/105/731">모바일</a>
+</li>
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="2" href="/breakingnews/section/105/226">인터넷/SNS</a>
+</li>
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="3" href="/breakingnews/section/105/227">통신/뉴미디어</a>
+</li>
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="4" href="/breakingnews/section/105/230">IT 일반</a>
+</li>
+<li class="ct_snb_nav_item is_selected">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="5" href="/breakingnews/section/105/732">보안/해킹</a>
+</li>
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="6" href="/breakingnews/section/105/283">컴퓨터</a>
+</li>
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="7" href="/breakingnews/section/105/229">게임/리뷰</a>
+</li>
+<li class="ct_snb_nav_item">
+<a class="ct_snb_nav_item_link" data-clk="lmn_itn.mnl" data-rank="8" href="/breakingnews/section/105/228">과학 일반</a>
+</li>
+</ul>
+<div class="ct_snb_banner _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<a data-clk="lmn_itn.pmb" data-rank="1" href="https://media.naver.com/algorithm">
+<img alt="AI 뉴스 알고리즘 안내" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://imgnews.pstatic.net/image/upload/item/2023/07/10/184436024_banner_left.png" height="74" style="display: none;" width="71"/>
+</a>
+</div>
+<div class="ct_snb_banner _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<a data-clk="lmn_itn.pmb" data-rank="2" href="https://contents.premium.naver.com/">
+<img alt="프리미엄콘텐츠" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://imgnews.pstatic.net/image/upload/item/2021/05/28/233112515_DA%2540PC%25B4%25BA%25BD%25BA%25C1%25C2%25C3%25F8.png" height="74" style="display: none;" width="71"/>
+</a>
+</div>
+</div>
+</div>
+<div class="newsct_wrapper _GRID_TEMPLATE_COLUMN _STICKY_CONTENT" id="newsct" role="main"><div class="section_title _CALENDAR_WRAP">
+<div class="section_title_inner">
+<h3 class="section_title_h">보안/해킹</h3>
+<div class="section_title_sort">
+<button class="section_title_btn is_selected _LINK _CALENDAR_TODAY_LINK" data-clk="alistlatest" data-url="/breakingnews/section/105/732" type="button">최신순</button>
+<button class="section_title_btn is_closed _CALENDAR_LAYER_TOGGLE" data-clk="caltoggle" type="button">날짜별</button>
+</div>
+</div>
+<div class="calendar">
+<div class="calendar_layer is_hidden _CALENDAR" data-selected-date="20240623" data-start-date="20140623"></div>
+<script class="_CALENDAR_TEMPLATE" type="x-tmpl-mustache">
+		<div class="calendar_layer_head">
+			<button type="button" class="calendar_layer_prev clndr-previous-button">
+				<span class="blind">이전</span>
+			</button>
+			<div class="calendar_layer_date">
+				<strong class="calendar_layer_date_text">{{year}}.{{monthInNumber}}</strong>
+				<button type="button" class="calendar_layer_today _CALENDAR_TODAY" data-clk="caltoday">오늘</button>
+			</div>
+			<button type="button" class="calendar_layer_next clndr-next-button">
+				<span class="blind">다음</span>
+			</button>
+		</div>
+		<div class="calendar_layer_body">
+			<table>
+				<caption><span class="blind">캘린더</span></caption>
+				<thead>
+					<tr>
+						{{#daysOfTheWeek}}
+						<th scope="col">{{.}}</th>
+						{{/daysOfTheWeek}}
+					</tr>
+				</thead>
+				<tbody>
+					{{#chunkedDays}}
+					<tr>
+						{{#.}}
+						<td class="{{classes}}">
+							<a href="javascript:;" class="calendar_a" data-clk="caldate">{{day}}</a>
+						</td>
+						{{/.}}
+					</tr>
+					{{/chunkedDays}}
+				</tbody>
+			</table>
+			<button type="button" class="calendar_layer_close _CALENDAR_LAYER_TOGGLE" data-clk="calclose">
+				<span class="blind">닫기</span>
+			</button>
+		</div>
+		</script>
+</div>
+</div>
+<div class="section_latest">
+<div class="section_component as_section_article_list _PERSIST_CONTENT" data-persist="SECTION_ARTICLE_LIST_FOR_LATEST">
+<div class="section_latest_article _CONTENT_LIST _PERSIST_META" data-cluid="" data-cursor="2024062110000081961" data-cursor-name="next" data-date="" data-has-next="true" data-nclk="alist" data-page-no="1" data-persist="SECTION_ARTICLE_LIST_FOR_LATEST_META" data-persist-meta-restore="true" data-sid="105" data-sid2="732" data-template="SECTION_ARTICLE_LIST_FOR_LATEST">
+<div class="section_article _TEMPLATE" data-template-id="SECTION_ARTICLE_LIST_FOR_LATEST">
+<ul class="sa_list">
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000EA_000000000000000003216736" data-rank="1" href="https://n.news.naver.com/mnews/article/030/0003216736">
+<img alt="개인정보위, 아태 개인정보 감독기구 협의체 포럼서 정책 방향 논의" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/030/2024/06/23/3216736.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000EA_000000000000000003216736" data-rank="1" href="https://n.news.naver.com/mnews/article/030/0003216736">
+<strong class="sa_text_strong">개인정보위, 아태 개인정보 감독기구 협의체 포럼서 정책 방향 논의</strong>
+</a>
+<div class="sa_text_lede">개인정보보호위원회가 지난 20~21일 캐나다 브리티시 컬럼비아주 개인정보 감독기구가 화상(온라인)으로 주최한 '제61차 아시아·태평양 개인정보보호감독기구 협의체(APPA) 포럼'에 참석했다. APPA엔 한국·미국·캐</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">전자신문</div>
+<div class="sa_text_datetime is_recent">
+<b>9분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news030,0003216736" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/030/0003216736" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175930" data-rank="2" href="https://n.news.naver.com/mnews/article/138/0002175930">
+<img alt="개인정보위, AI시대 개인정보 정책 방향 국제사회와 논의" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/23/2175930.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175930" data-rank="2" href="https://n.news.naver.com/mnews/article/138/0002175930">
+<strong class="sa_text_strong">개인정보위, AI시대 개인정보 정책 방향 국제사회와 논의</strong>
+</a>
+<div class="sa_text_lede">개인정보보호위원회가 인공지능(AI) 시대 개인정보 정책 방향을 국제사회와 논의했다. 개인정보보호위원회(위원장 고학수, 이하 개인정보위)는 지난 20일부터 21일까지 캐나다 브리티시 컬럼비아주 개인정보 감독기구가 화상</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime is_recent">
+<b>9분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175930" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175930" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D8_000000000000000014763333" data-rank="3" href="https://n.news.naver.com/mnews/article/001/0014763333">
+<img alt="개인정보위, APPA 포럼서 개인정보 현안·국제 협력 방안 논의" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/23/14763333.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D8_000000000000000014763333" data-rank="3" href="https://n.news.naver.com/mnews/article/001/0014763333">
+<strong class="sa_text_strong">개인정보위, APPA 포럼서 개인정보 현안·국제 협력 방안 논의</strong>
+</a>
+<div class="sa_text_lede">개인정보보호위원회는 20일부터 이틀간 캐나다 브리티시 컬럼비아주 개인정보 감독기구가 주최하는 '제61차 아시아태평양 개인정보보호감독기구 협의체(APPA) 포럼'에 참석해 아태 지역 개인정보 현안과 정책 협력을 논의했</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">연합뉴스</div>
+<div class="sa_text_datetime is_recent">
+<b>10분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news001,0014763333" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/001/0014763333" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AD_000000000000000002882188" data-rank="4" href="https://n.news.naver.com/mnews/article/029/0002882188">
+<img alt="개인정보위, AI시대 개인정보 정책 국제사회와 머리 맞댄다" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/23/2882188.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AD_000000000000000002882188" data-rank="4" href="https://n.news.naver.com/mnews/article/029/0002882188">
+<strong class="sa_text_strong">개인정보위, AI시대 개인정보 정책 국제사회와 머리 맞댄다</strong>
+</a>
+<div class="sa_text_lede">제61차 아태 개인정보보호감독기구 협의체 포럼 참가 비정형 데이터 가명처리 가이드라인, 합성데이터 모델 공유 개인정보보호위원회는 지난 20일과 21일 캐나다 브리티시 컬럼비아주 개인정보 감독기구가 화상으로 주최한 '</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털타임스</div>
+<div class="sa_text_datetime is_recent">
+<b>10분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news029,0002882188" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/029/0002882188" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AD_000000000000000002882182" data-rank="5" href="https://n.news.naver.com/mnews/article/029/0002882182">
+<img alt="러 추정 집단에 英 의료 시스템 떨렸다...개인정보 3억건 유출" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/23/2882182.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AD_000000000000000002882182" data-rank="5" href="https://n.news.naver.com/mnews/article/029/0002882182">
+<strong class="sa_text_strong">러 추정 집단에 英 의료 시스템 떨렸다...개인정보 3억건 유출</strong>
+</a>
+<div class="sa_text_lede">치린, 이달 초 NHS, 시노비스 시스템 공격...지난 20,21일 파일 104개 공개 영국 공공의료체계인 국민보건서비스(NHS) 환자 의료 정보가 대량 유출됐다. 22일(현지시간) 일간 가디언과 BBC 방송 등에 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털타임스</div>
+<div class="sa_text_datetime is_recent">
+<b>25분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news029,0002882182" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/029/0002882182" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175924" data-rank="6" href="https://n.news.naver.com/mnews/article/138/0002175924">
+<img alt="가짜 티켓 팔고 허위 정보 퍼뜨리고...파리올림픽 노리는 사이버 위협" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/23/2175924.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175924" data-rank="6" href="https://n.news.naver.com/mnews/article/138/0002175924">
+<strong class="sa_text_strong">가짜 티켓 팔고 허위 정보 퍼뜨리고...파리올림픽 노리는 사이버 위협</strong>
+</a>
+<div class="sa_text_lede">프랑스 파리 하계 올림픽이 약 한 달 앞으로 다가온 가운데, 이를 겨냥한 사이버 위협이 활개치고 있다는 조사가 나오기 시작했다. 경기 티켓을 판매한다는 명목으로 가짜 웹사이트를 운영하거나, 언론사를 위장해 악성 정보</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime is_recent">
+<b>42분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175924" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175924" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section_article _TEMPLATE" data-template-id="SECTION_ARTICLE_LIST_FOR_LATEST">
+<ul class="sa_list">
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175922" data-rank="7" href="https://n.news.naver.com/mnews/article/138/0002175922">
+<img alt="“비밀번호, 가장 취약한 보안” 제로트러스트 시대 ‘생체인증’ 도입 가속화" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/23/2175922.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175922" data-rank="7" href="https://n.news.naver.com/mnews/article/138/0002175922">
+<strong class="sa_text_strong">“비밀번호, 가장 취약한 보안” 제로트러스트 시대 ‘생체인증’ 도입 가속화</strong>
+</a>
+<div class="sa_text_lede">‘비밀번호(패스워드, Passsword)’는 더 이상 안전하지 않다. 비밀번호를 이용한 인증 방식의 보안 취약성 우려가 커진 가운데, ‘패스워드리스’ 기술이 각광받고 있다. 최근 아무것도 신뢰하지 않는 ‘제로트러스트</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime is_recent">
+<b>43분전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175922" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175922" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D8_000000000000000014763230" data-rank="8" href="https://n.news.naver.com/mnews/article/001/0014763230">
+<img alt="LGU+, 양자내성암호 적용 가상사설망 'U+ PQC-VPN' 출시" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/23/14763230.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D8_000000000000000014763230" data-rank="8" href="https://n.news.naver.com/mnews/article/001/0014763230">
+<strong class="sa_text_strong">LGU+, 양자내성암호 적용 가상사설망 'U+ PQC-VPN' 출시</strong>
+</a>
+<div class="sa_text_lede">LG유플러스가 기업 고객을 대상으로 양자내성암호(PQC) 기술을 적용한 가상사설망(VPN) 설루션 'U+ PQC-VPN'을 출시했다고 23일 밝혔다. 이 제품은 동일 종류 제품 중 국내 최초로 국가정보원의 '보안기능</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">연합뉴스</div>
+<div class="sa_text_datetime">
+<b>2시간전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news001,0014763230" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/001/0014763230" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AD_000000000000000002882122" data-rank="9" href="https://n.news.naver.com/mnews/article/029/0002882122">
+<img alt='안랩, 피싱메일 사례 발견..."주의 당부"' class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/23/2882122.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AD_000000000000000002882122" data-rank="9" href="https://n.news.naver.com/mnews/article/029/0002882122">
+<strong class="sa_text_strong">안랩, 피싱메일 사례 발견..."주의 당부"</strong>
+</a>
+<div class="sa_text_lede">이메일 저장용량 관리, 바이어 문의 공지 등 위장 안랩이 '이메일 저장 용량 관리', '바이어 문의 공지' 등 다양한 내용으로 위장한 피싱메일 사례를 발견하고 사용자의 주의를 당부했다. 두 사례 모두에서 공격자는 사</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털타임스</div>
+<div class="sa_text_datetime">
+<b>2시간전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news029,0002882122" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/029/0002882122" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AD_000000000000000002882102" data-rank="10" href="https://n.news.naver.com/mnews/article/029/0002882102">
+<img alt="SK쉴더스, 자율주행차 보안 사업 확대...씨피식스와 협력" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/23/2882102.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AD_000000000000000002882102" data-rank="10" href="https://n.news.naver.com/mnews/article/029/0002882102">
+<strong class="sa_text_strong">SK쉴더스, 자율주행차 보안 사업 확대...씨피식스와 협력</strong>
+</a>
+<div class="sa_text_lede">자율주행차 취약점 점검 등 서비스 제공 목표 SK쉴더스가 지난 19일 씨피식스와 자율주행차 보안 사업 확대를 위한 협력을 맺었다고 23일 밝혔다. 글로벌 시장조사업체 프리시던스 리서치 조사 결과에 의하면 모빌리티 보</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털타임스</div>
+<div class="sa_text_datetime">
+<b>2시간전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news029,0002882102" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/029/0002882102" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="88000127_000000000000000012622497" data-rank="11" href="https://n.news.naver.com/mnews/article/003/0012622497">
+<img alt="&quot;'가난'을 거꾸로 읽어보세요&quot;라고 유혹하는 문자, 링크 클릭했다간…." class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/003/2024/06/23/12622497.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="88000127_000000000000000012622497" data-rank="11" href="https://n.news.naver.com/mnews/article/003/0012622497">
+<strong class="sa_text_strong">"'가난'을 거꾸로 읽어보세요"라고 유혹하는 문자, 링크 클릭했다간….</strong>
+</a>
+<div class="sa_text_lede">#[Web발신] '가난'을 거꾸로 읽어보세요 '난가' 네, 선택되셨습니다. 부자되어보기 첫+50% 최근 한 온라인 커뮤니티에 올라온 문자 피싱(스미싱)사례다. 게시자는 다소 우스꽝스러운 이 문자 내용을 공개하며 "요</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">뉴시스</div>
+<div class="sa_text_datetime">
+<b>4시간전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news003,0012622497" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/003/0012622497" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D6_000000000000000000846779" data-rank="12" href="https://n.news.naver.com/mnews/article/031/0000846779">
+<img alt='"받은편지함이 꽉 찼습니다"…메일 잘못 눌렀다간 탈탈 털린다' class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/031/2024/06/22/846779.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D6_000000000000000000846779" data-rank="12" href="https://n.news.naver.com/mnews/article/031/0000846779">
+<strong class="sa_text_strong">"받은편지함이 꽉 찼습니다"…메일 잘못 눌렀다간 탈탈 털린다</strong>
+</a>
+<div class="sa_text_lede">'이메일 저장 용량 관리'나 '바이어 문의 공지' 같은 내용으로 위장해 계정과 비밀번호 등 개인정보를 탈취하려는 피싱메일 사례가 발견됐다. 22일 안랩이 소개한 두 사례에서 공격자는 사용자에게 교묘하게 위장한 가짜 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">아이뉴스24</div>
+<div class="sa_text_datetime">
+<b>15시간전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news031,0000846779" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/031/0000846779" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section_article _TEMPLATE" data-template-id="SECTION_ARTICLE_LIST_FOR_LATEST">
+<ul class="sa_list">
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="88000127_000000000000000012622032" data-rank="13" href="https://n.news.naver.com/mnews/article/003/0012622032">
+<img alt='"엄마 나 휴대폰 액정 깨졌어" 문자에 아직도 속으십니까' class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/003/2024/06/22/12622032.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="88000127_000000000000000012622032" data-rank="13" href="https://n.news.naver.com/mnews/article/003/0012622032">
+<strong class="sa_text_strong">"엄마 나 휴대폰 액정 깨졌어" 문자에 아직도 속으십니까</strong>
+</a>
+<div class="sa_text_lede">#어느날 A씨는 70대 어머니로부터 신분증 앞뒷면을 찍은 사진을 담은 카톡 메시지를 받았다. 뜬금 없는 메시지에 A씨는 어머니에게 '왜 갑자기 신분증 사진을 보냈느냐' 물었더니, 어머니는 '너가 방금 보내달라고 하지</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">뉴시스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news003,0012622032" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/003/0012622032" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D8_000000000000000014762502" data-rank="14" href="https://n.news.naver.com/mnews/article/001/0014762502">
+<img alt="사이버공격에 북미 전역 1만여개 자동차 딜러 업무 마비" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/21/14762502.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D8_000000000000000014762502" data-rank="14" href="https://n.news.naver.com/mnews/article/001/0014762502">
+<strong class="sa_text_strong">사이버공격에 북미 전역 1만여개 자동차 딜러 업무 마비</strong>
+</a>
+<div class="sa_text_lede">"19, 20일 이틀 걸친 사이버 공격 여파로 전산망 가동 중단" 이지헌 특파원 = 미국의 자동차 판매관리 소프트웨어 제공업체인 'CDK 글로벌'(이하 CDK)가 사이버 공격을 받으면서 북미 전역에서 1만 곳이 넘는</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">연합뉴스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news001,0014762502" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/001/0014762502" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D8_000000000000000014762380" data-rank="15" href="https://n.news.naver.com/mnews/article/001/0014762380">
+<img alt="미래에셋증권, 미나블록체인재단과 토큰증권 보안 강화 업무협약 체결" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/21/14762380.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D8_000000000000000014762380" data-rank="15" href="https://n.news.naver.com/mnews/article/001/0014762380">
+<strong class="sa_text_strong">미래에셋증권, 미나블록체인재단과 토큰증권 보안 강화 업무협약 체결</strong>
+</a>
+<div class="sa_text_lede">미래에셋증권이 토큰증권에 보안 기술인 '영지식증명(zero-knowledge proof)'을 도입하고자 글로벌 블록체인 네트워크인 미나 블록체인 재단과 업무협약을 맺었다고 21일 밝혔다. 사진은 업무협약 체결 후 류</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">연합뉴스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news001,0014762380" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/001/0014762380" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175892" data-rank="16" href="https://n.news.naver.com/mnews/article/138/0002175892">
+<img alt="상반기 '사이버 위기대응 모의훈련' 실시…해킹메일 감염률 4.7%" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/21/2175892.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175892" data-rank="16" href="https://n.news.naver.com/mnews/article/138/0002175892">
+<strong class="sa_text_strong">상반기 '사이버 위기대응 모의훈련' 실시…해킹메일 감염률 4.7%</strong>
+</a>
+<div class="sa_text_lede">정부가 국내 기업이 사이버 위기에 대비할 수 있도록 훈련을 진행했다. 과학기술정보통신부(이하 과기정통부)는 한국인터넷진흥원(KISA)과 5월 중순부터 2주간 국내 기업을 대상으로 '2024년 상반기 사이버 위기대응 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175892" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175892" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="88000127_000000000000000012621506" data-rank="17" href="https://n.news.naver.com/mnews/article/003/0012621506">
+<img alt='"받은 편지함이 꽉 찼습니다" 메일에 속지 마세요…피싱 주의보' class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/003/2024/06/21/12621506.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="88000127_000000000000000012621506" data-rank="17" href="https://n.news.naver.com/mnews/article/003/0012621506">
+<strong class="sa_text_strong">"받은 편지함이 꽉 찼습니다" 메일에 속지 마세요…피싱 주의보</strong>
+</a>
+<div class="sa_text_lede">안랩은 이메일 저장 용량 관리, 바이어 문의 공지 등 다양한 내용으로 위장한 피싱메일 사례를 발견해 사용자의 주의를 당부했다. 두 사례 모두에서 공격자는 사용자에게 교묘하게 위장한 가짜 로그인 사이트 접속을 유도해 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">뉴시스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news003,0012621506" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/003/0012621506" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="08138263_000000000000000007616659" data-rank="18" href="https://n.news.naver.com/mnews/article/421/0007616659">
+<img alt="네이버 '개인정보 확인절차 강화'…미성년 무단사용‧명의도용 원천봉쇄" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/421/2024/06/21/7616659.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="08138263_000000000000000007616659" data-rank="18" href="https://n.news.naver.com/mnews/article/421/0007616659">
+<strong class="sa_text_strong">네이버 '개인정보 확인절차 강화'…미성년 무단사용‧명의도용 원천봉쇄</strong>
+</a>
+<div class="sa_text_lede">네이버(035420)가 개인정보 확인 절차를 강화해 서비스 이용 시 명의도용 등을 원천 봉쇄하는 방향으로 '개인정보 처리방침'을 변경했다. 21일 업계에 따르면 네이버는 전날 '개인정보 처리방침'을 변경하면서 만 1</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">뉴스1</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news421,0007616659" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/421/0007616659" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section_article _TEMPLATE" data-template-id="SECTION_ARTICLE_LIST_FOR_LATEST">
+<ul class="sa_list">
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D8_000000000000000014762120" data-rank="19" href="https://n.news.naver.com/mnews/article/001/0014762120">
+<img alt="충남대 '2024 충청권 대학(원)생 사이버위협 시나리오 공모전'" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/21/14762120.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D8_000000000000000014762120" data-rank="19" href="https://n.news.naver.com/mnews/article/001/0014762120">
+<strong class="sa_text_strong">충남대 '2024 충청권 대학(원)생 사이버위협 시나리오 공모전'</strong>
+</a>
+<div class="sa_text_lede">충남대는 대전시, 한국서부발전, 수자원공사, 중부발전, 한국철도공사, 국가철도공단, 한국과학기술정보연구원, 한국정보보호학회 및 국가정보원과 함께 '충청권 대학(원)생 사이버 위협 시나리오 공모전'을 진행한다고 21일</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">연합뉴스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news001,0014762120" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/001/0014762120" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000EA_000000000000000003216614" data-rank="20" href="https://n.news.naver.com/mnews/article/030/0003216614">
+<img alt="펜타브리드, ISO27001·ISO27701 동시 획득" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/030/2024/06/21/3216614.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000EA_000000000000000003216614" data-rank="20" href="https://n.news.naver.com/mnews/article/030/0003216614">
+<strong class="sa_text_strong">펜타브리드, ISO27001·ISO27701 동시 획득</strong>
+</a>
+<div class="sa_text_lede">펜타브리드가 최근 ISO27001, ISO27701 인증을 획득하며 정보보호와 개인정보보호 경영시스템 운영능력을 강화했다. 펜타브리드는 디지털 트랜스포메이션 시대에 클라이언트 비즈니스를 위한 다양한 디지털 경험을 제</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">전자신문</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news030,0003216614" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/030/0003216614" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000FF_000000000000000005202816" data-rank="21" href="https://n.news.naver.com/mnews/article/014/0005202816">
+<img alt="“받은편지함이 꽉 찼습니다” 메일 눌렀다가 정보 털린다" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/014/2024/06/21/5202816.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000FF_000000000000000005202816" data-rank="21" href="https://n.news.naver.com/mnews/article/014/0005202816">
+<strong class="sa_text_strong">“받은편지함이 꽉 찼습니다” 메일 눌렀다가 정보 털린다</strong>
+</a>
+<div class="sa_text_lede">안랩이 '이메일 저장 용량 관리', '바이어 문의 공지' 등 다양한 내용으로 위장한 피싱메일 사례를 발견해 사용자 주의를 당부한다고 21일 밝혔다. 먼저 공격자는 '받은편지함이 꽉 찼습니다'라는 제목의 피싱 메일을 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">파이낸셜뉴스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news014,0005202816" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/014/0005202816" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000EA_000000000000000003216604" data-rank="22" href="https://n.news.naver.com/mnews/article/030/0003216604">
+<img alt="SK쉴더스, 씨피식스와 자율주행차 보안사업 협약" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/030/2024/06/21/3216604.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000EA_000000000000000003216604" data-rank="22" href="https://n.news.naver.com/mnews/article/030/0003216604">
+<strong class="sa_text_strong">SK쉴더스, 씨피식스와 자율주행차 보안사업 협약</strong>
+</a>
+<div class="sa_text_lede">SK쉴더스가 씨피식스와 자율주행차 보안 사업 확대를 위한 협력을 맺었다. 양사는 이번 협약을 계기로 자율주행차 취약점 점검 사업 추진 협력에 나선다. 자율주행차가 실제 도로에서 안전하게 운행되기 위해 보안 위협 요소</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">전자신문</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news030,0003216604" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/030/0003216604" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000D8_000000000000000014761752" data-rank="23" href="https://n.news.naver.com/mnews/article/001/0014761752">
+<img alt="미래에셋증권, 미나블록체인재단과 토큰증권 보안 강화" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/21/14761752.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000D8_000000000000000014761752" data-rank="23" href="https://n.news.naver.com/mnews/article/001/0014761752">
+<strong class="sa_text_strong">미래에셋증권, 미나블록체인재단과 토큰증권 보안 강화</strong>
+</a>
+<div class="sa_text_lede">미래에셋증권은 토큰증권에 보안 기술인 '영지식증명(zero-knowledge proof)'을 도입하고자 글로벌 블록체인 네트워크인 미나 블록체인 재단과 업무협약(MOU)을 맺었다고 21일 밝혔다. 영지식증명은 아무런</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">연합뉴스</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news001,0014761752" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/001/0014761752" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="08138263_000000000000000007616263" data-rank="24" href="https://n.news.naver.com/mnews/article/421/0007616263">
+<img alt="과기정보연, 충청권 대학 사이버 위협 시나리오 공모전" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/421/2024/06/21/7616263.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="08138263_000000000000000007616263" data-rank="24" href="https://n.news.naver.com/mnews/article/421/0007616263">
+<strong class="sa_text_strong">과기정보연, 충청권 대학 사이버 위협 시나리오 공모전</strong>
+</a>
+<div class="sa_text_lede">한국과학기술정보연구원(KISTI)은 ‘2024 충청 사이버보안 콘퍼런스’와 연계해 '충청권 대학(생) 사이버 위협 시나리오 공모전'을 개최한다고 21일 밝혔다. 접수는 오는 24일부터 9월 10일까지 진행하며, 올 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">뉴스1</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news421,0007616263" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/421/0007616263" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section_article _TEMPLATE" data-template-id="SECTION_ARTICLE_LIST_FOR_LATEST">
+<ul class="sa_list">
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000EA_000000000000000003216527" data-rank="25" href="https://n.news.naver.com/mnews/article/030/0003216527">
+<img alt="유니온커뮤니티, 대한전문건설협회 회원사 대상 전자카드 단말기 임대비용 할인" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/030/2024/06/21/3216527.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000EA_000000000000000003216527" data-rank="25" href="https://n.news.naver.com/mnews/article/030/0003216527">
+<strong class="sa_text_strong">유니온커뮤니티, 대한전문건설협회 회원사 대상 전자카드 단말기 임대비용 할인</strong>
+</a>
+<div class="sa_text_lede">바이오인식 보안 솔루션기업 유니온커뮤니티(대표이사 신요식)가 대한전문건설협회(이하 전건협, 회장 윤학수)와 함께 건설근로자 전자카드제 전자카드 단말기 업무협약을 추진했다고 21일 밝혔다. '건설근로자 전자카드제'는 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">전자신문</div>
+<div class="sa_text_datetime">
+<b>1일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news030,0003216527" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/030/0003216527" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175867" data-rank="26" href="https://n.news.naver.com/mnews/article/138/0002175867">
+<img alt="&quot;받은 편지함이 꽉 찼습니다&quot; 계정 정보 털어가는 '피싱메일 주의보'" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/21/2175867.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175867" data-rank="26" href="https://n.news.naver.com/mnews/article/138/0002175867">
+<strong class="sa_text_strong">"받은 편지함이 꽉 찼습니다" 계정 정보 털어가는 '피싱메일 주의보'</strong>
+</a>
+<div class="sa_text_lede">메일 관리자로 위장해 사용자 정보를 탈취해가는 피싱 공격법이 포착됐다. 안랩(대표 강석균)은 '이메일 저장 용량 관리', '바이어 문의 공지' 등 다양한 내용으로 위장한 피싱메일 사례를 발견했다고 21일 밝혔다. 공</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175867" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175867" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175866" data-rank="27" href="https://n.news.naver.com/mnews/article/138/0002175866">
+<img alt="SK쉴더스, 자율주행차 보안 뛰어든다…씨피식스와 '취약점 점검' 협력" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/21/2175866.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175866" data-rank="27" href="https://n.news.naver.com/mnews/article/138/0002175866">
+<strong class="sa_text_strong">SK쉴더스, 자율주행차 보안 뛰어든다…씨피식스와 '취약점 점검' 협력</strong>
+</a>
+<div class="sa_text_lede">SK쉴더스가 자율주행차 보안 시장에 뛰어든다. SK쉴더스(대표 홍원표)는 씨피식스와 자율주행차 보안 사업을 확대하기 위한 협력을 맺었다고 21일 밝혔다. SK쉴더스는 씨피식스와 기술 협력을 추진해 자율주행차 취약점 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175866" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175866" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="88000107_000000000000000004999973" data-rank="28" href="https://n.news.naver.com/mnews/article/015/0004999973">
+<img alt='"해킹 훈련 참여한 기업의 악성코드 감염확률 낮아"' class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/015/2024/06/21/4999973.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="88000107_000000000000000004999973" data-rank="28" href="https://n.news.naver.com/mnews/article/015/0004999973">
+<strong class="sa_text_strong">"해킹 훈련 참여한 기업의 악성코드 감염확률 낮아"</strong>
+</a>
+<div class="sa_text_lede">정부가 추진하는 해킹 메일 대응 훈련에 여러 번 참여한 기업일수록 악성코드 감염 확률이 낮은 것으로 나타났다. 반복적인 모의훈련이 임직원의 보안 인식과 대응 능력을 높일 수 있다는 분석이 나온다. 과학기술정보통신부와</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">한국경제</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news015,0004999973" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/015/0004999973" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175863" data-rank="29" href="https://n.news.naver.com/mnews/article/138/0002175863">
+<img alt="유엔 안보리 사이버안보 첫 대면회의…북한발 위협 공개 규탄" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/21/2175863.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175863" data-rank="29" href="https://n.news.naver.com/mnews/article/138/0002175863">
+<strong class="sa_text_strong">유엔 안보리 사이버안보 첫 대면회의…북한발 위협 공개 규탄</strong>
+</a>
+<div class="sa_text_lede">유엔 안전보장이사회(이하 안보리)가 사이버안보를 주제로 첫 대면 공개회의를 개최했다. 안보리 의장국인 한국을 대표해 회의를 주재한 조태열 외교부 장관은 북한발 위협 활동을 규탄하며, 안보리 차원에서 대응이 필요하다고</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175863" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175863" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="88000127_000000000000000012620695" data-rank="30" href="https://n.news.naver.com/mnews/article/003/0012620695">
+<img alt="'KISA와 함께하는 뱅크샐러드 이벤트'  속지 마세요" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/003/2024/06/21/12620695.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="88000127_000000000000000012620695" data-rank="30" href="https://n.news.naver.com/mnews/article/003/0012620695">
+<strong class="sa_text_strong">'KISA와 함께하는 뱅크샐러드 이벤트'  속지 마세요</strong>
+</a>
+<div class="sa_text_lede">한국인터넷진흥원(KISA)은 최근 'KISA와 함께하는 뱅크샐러드 이벤트' 문자 피싱(스미싱)이 유포됐다며 개인정보 탈취 등으로 인한 피해로 연계되지 않도록 주의를 당부했다. KISA는 핀테크 기업 뱅크샐러드와 콜라</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">뉴시스</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news003,0012620695" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/003/0012620695" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section_article _TEMPLATE" data-template-id="SECTION_ARTICLE_LIST_FOR_LATEST">
+<ul class="sa_list">
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175861" data-rank="31" href="https://n.news.naver.com/mnews/article/138/0002175861">
+<img alt="러시아 보안기업 ‘카스퍼스키’, 미국서 퇴출 위기…사용·판매금지 조치" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/21/2175861.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175861" data-rank="31" href="https://n.news.naver.com/mnews/article/138/0002175861">
+<strong class="sa_text_strong">러시아 보안기업 ‘카스퍼스키’, 미국서 퇴출 위기…사용·판매금지 조치</strong>
+</a>
+<div class="sa_text_lede">미국 정부가 러시아 보안기업 카스퍼스키가 만든 컴퓨터 백신 프로그램을 금지했다. 미국 상무부 산하 산업안보국(BIS)는 20일(현지시간) 카스퍼스키가 미국에서 소프트웨어를 판매하거나 이미 사용 중인 소프트웨어에 대한</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175861" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175861" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AC_000000000000000002175860" data-rank="32" href="https://n.news.naver.com/mnews/article/138/0002175860">
+<img alt="쉴 틈 없는 '개인정보 유출'…공공기관 해킹 도마에" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/21/2175860.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AC_000000000000000002175860" data-rank="32" href="https://n.news.naver.com/mnews/article/138/0002175860">
+<strong class="sa_text_strong">쉴 틈 없는 '개인정보 유출'…공공기관 해킹 도마에</strong>
+</a>
+<div class="sa_text_lede">개인정보 유출에 대한 경각심이 높아진 가운데, 공공을 비롯한 기관발 해킹이 주요 원인이었다는 분석이 나왔다. 21일 국민의힘 박충권 의원이 한국인터넷진흥원(KISA)으로부터 제출받아 공개한 현황 자료에 따르면, 지난</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털데일리</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news138,0002175860" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/138/0002175860" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000EA_000000000000000003216470" data-rank="33" href="https://n.news.naver.com/mnews/article/030/0003216470">
+<img alt="시큐아이, 통신사 고객사 대상 정보보호 세미나 성료" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/030/2024/06/21/3216470.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000EA_000000000000000003216470" data-rank="33" href="https://n.news.naver.com/mnews/article/030/0003216470">
+<strong class="sa_text_strong">시큐아이, 통신사 고객사 대상 정보보호 세미나 성료</strong>
+</a>
+<div class="sa_text_lede">시큐아이가 최근 서울 중구 소공동 롯데호텔에서 국내 주요 통신사 고객사를 대상으로 정보보호 세미나를 개최했다고 21일 밝혔다. 시큐아이는 세미나에서 △차세대 디도스(DDoS) 위협 대응 방안 △인공지능(AI) 데이터</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">전자신문</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news030,0003216470" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/030/0003216470" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AD_000000000000000002881973" data-rank="34" href="https://n.news.naver.com/mnews/article/029/0002881973">
+<img alt='"공공기관 믿고 줬는데"… 해킹·업무과실에 개인정보 무방비' class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/21/2881973.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AD_000000000000000002881973" data-rank="34" href="https://n.news.naver.com/mnews/article/029/0002881973">
+<strong class="sa_text_strong">"공공기관 믿고 줬는데"… 해킹·업무과실에 개인정보 무방비</strong>
+</a>
+<div class="sa_text_lede">최근 불법 스팸 문자가 기승을 부리는 가운데 지난해 일어난 개인정보 유출 사고의 원인 중 해킹이 가장 높은 비율을 차지했다. 특히 공공기관에서 해킹으로 인한 개인정보 유출이 급증했다. 국회 과학기술정보방송통신위원회 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털타임스</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news029,0002881973" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/029/0002881973" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="88000108_000000000000000004356228" data-rank="35" href="https://n.news.naver.com/mnews/article/011/0004356228">
+<img alt="자율주행차 보안 강화…SK쉴더스·씨피식스, 업무협약" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/011/2024/06/21/4356228.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="88000108_000000000000000004356228" data-rank="35" href="https://n.news.naver.com/mnews/article/011/0004356228">
+<strong class="sa_text_strong">자율주행차 보안 강화…SK쉴더스·씨피식스, 업무협약</strong>
+</a>
+<div class="sa_text_lede">SK쉴더스는 씨피식스와 자율주행차 보안 사업 확대를 위한 업무 협약을 체결했다고 21일 밝혔다. SK쉴더스는 씨피식스와 기술 협력을 통해 자율주행차 취약점 점검 등 모빌리티 보안 서비스를 제공할 예정이다. 양 사는 </div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">서울경제</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news011,0004356228" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/011/0004356228" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li class="sa_item _LAZY_LOADING_WRAP">
+<div class="sa_item_inner">
+<div class="sa_item_flex">
+<div class="sa_thumb _LAZY_LOADING_ERROR_HIDE">
+<div class="sa_thumb_inner">
+<a class="sa_thumb_link" data-clk="alist" data-gdid="880000AD_000000000000000002881961" data-rank="36" href="https://n.news.naver.com/mnews/article/029/0002881961">
+<img alt="과기정통부-KISA, 상반기 사이버 대응 모의훈련 실시...역대 최대 참가" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/21/2881961.jpg?type=nf220_150" height="75" onerror="this.outerHTML='&lt;span class=&quot;noimage&quot;&gt;&lt;/span&gt;'" style="display: none;" width="110"/>
+</a>
+</div>
+</div>
+<div class="sa_text">
+<a class="sa_text_title" data-clk="alist" data-gdid="880000AD_000000000000000002881961" data-rank="36" href="https://n.news.naver.com/mnews/article/029/0002881961">
+<strong class="sa_text_strong">과기정통부-KISA, 상반기 사이버 대응 모의훈련 실시...역대 최대 참가</strong>
+</a>
+<div class="sa_text_lede">기업 556개사, 임직원 23만4000명 참여 피싱 메일, 디도스 공격, 홈페이지 취약점 탐색 등 과학기술정보통신부와 한국인터넷진흥원(KISA)은 2024년 상반기 사이버 위기대응 모의훈련 결과를 발표했다. 양 기관</div>
+<div class="sa_text_info">
+<div class="sa_text_info_left">
+<div class="sa_text_press">디지털타임스</div>
+<div class="sa_text_datetime">
+<b>2일전</b>
+</div>
+</div>
+<div class="sa_text_info_right">
+<a class="sa_text_cmt _COMMENT_COUNT_LIST" data-object-id="news029,0002881961" data-ticket="news" data-zero-allow="false" href="https://n.news.naver.com/mnews/article/comment/029/0002881961" style="display: none;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="section_more">
+<a class="section_more_inner _CONTENT_LIST_LOAD_MORE_BUTTON" data-persistable="false" href="#">기사 더보기</a>
+</div>
+</div>
+</div>
+<div class="check_visible" id="frontDetect"></div>
+<script>
+function convertCommentCount(commentCount) {
+	if (!commentCount || commentCount < 10) {
+		return "";
+	}
+
+	var nCount = 0;
+	if (commentCount < 30) nCount = 10;
+	else if (commentCount < 50) nCount = 30;
+	else if (commentCount < 100) nCount = 50;
+	else if (commentCount < 10000) nCount = parseInt(commentCount / 100) * 100;
+	else if (commentCount < 100000) nCount = parseInt(commentCount / 1000) * 1000;
+
+	return $.number(nCount) + "<span class=\"sa_text_symbol\"><span class=\"blind\">이상</span>+</span>";
+}
+</script>
+<div class="rankingnews mobile_hidden is_hidden _FLICKING_WRAP _OFFICE_RANKING_ALL _PERSIST_META" data-aggregation-end="" data-aggregation-start="" data-count="1" data-flicking-disable="true" data-flicking-init-tab-index="" data-flicking-nclk="" data-grid-template-column-aside="true" data-nclk-prefix="rig" data-persist="4_officeRankingAll">
+<div class="ra_head">
+<strong class="ra_title"><em class="ra_highlight"></em> 언론사별 가장 많이 본 뉴스</strong>
+<button class="help_button _TOGGLE" data-clk="rig.renws2i" data-target="SECTION_RANKING_NEWS_TOOLTIP" type="button"><span class="blind">안내</span></button>
+<div class="help_layer" id="SECTION_RANKING_NEWS_TOOLTIP" style="display: none;">
+<p class="help_layer_text">각 언론사의 가장 많이 본 기사 1건을 제공합니다.</p>
+<button class="help_layer_close _TOGGLE" data-clk="rig.renws2i" data-target="SECTION_RANKING_NEWS_TOOLTIP" type="button">닫기</button>
+</div>
+</div>
+<div class="ra_area">
+<div class="flick" style="height:415px;">
+<div class="flick-container _FLICKING" style="height:415px; opacity:0;">
+<div class="flick-panel">
+<ul class="ranking_list _FLICKING_CONTENT" data-index="0" style="margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">美 71세 여성 미스유니버스 USA '역대 최고령' 참가</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/001">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/001/2020/08/11/logo_001_56_20200811154916.png" height="16" width="16"/>
+</span>
+														연합뉴스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING" data-scroll="true" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/23/14763059.jpg?type=nf190_130&amp;ut=1719093213000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/001/0014763059?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">유골 항아리에 붉은 액체…'2000년 넘은 로마 와인' 스페인서 발견</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/277">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/277/2018/07/18/logo_277_56_20180718153218.png" height="16" width="16"/>
+</span>
+														아시아경제
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING" data-scroll="true" data-src="https://mimgnews.pstatic.net/image/origin/277/2024/06/22/5435504.jpg?type=nf190_130&amp;ut=1719037956000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/277/0005435504?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"그냥 쉰다" 청년층 40만, 또 증가 전환…'구직 단념' 청년도 증가</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/055">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/055/2020/10/07/logo_055_56_20201007141807.jpg" height="16" width="16"/>
+</span>
+														SBS
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING" data-scroll="true" data-src="https://mimgnews.pstatic.net/image/origin/055/2024/06/23/1165841.jpg?type=nf190_130&amp;ut=1719106722000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/055/0001165841?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">[사반 제보] "수리비만 66만원"...남의 오토바이 일부러 넘어뜨리곤 나몰라라 도주</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/437">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/437/2023/07/17/logo_437_56_20230717153920.png" height="16" width="16"/>
+</span>
+														JTBC
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING" data-scroll="true" data-src="https://mimgnews.pstatic.net/image/origin/437/2024/06/23/398401.jpg?type=nf190_130&amp;ut=1719095533000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/437/0000398401?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">추억 깃든 63빌딩 아쿠아리움 폐관 소식에…“삼대가 같이 왔어요” [주말엔]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/056">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/056/2021/10/28/logo_056_56_20211028103053.png" height="16" width="16"/>
+</span>
+														KBS
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING" data-scroll="true" data-src="https://mimgnews.pstatic.net/image/origin/056/2024/06/23/11746768.jpg?type=nf190_130&amp;ut=1719100827000" height="65" width="95"/>
+<span class="rl_btn_play"><em class="blind">재생하기</em></span>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/056/0011746768?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="1" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“안녕 푸바오” 한국말 들리자 두리번</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/449">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/449/2020/06/26/logo_449_56_20200626104826.png" height="16" width="16"/>
+</span>
+														채널A
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/449/2024/06/22/278144.jpg?type=nf190_130&amp;ut=1719053626000" height="65" width="95"/>
+<span class="rl_btn_play"><em class="blind">재생하기</em></span>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/449/0000278144?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">부부 공동명의 하면 '3년 징역’...웬 날벼락, 논란의 실거주의무 왜? [부동산 아토즈]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/014">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/014/2020/12/23/logo_014_56_20201223183322.png" height="16" width="16"/>
+</span>
+														파이낸셜뉴스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/014/2024/06/22/5202950.jpg?type=nf190_130&amp;ut=1719032409000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/014/0005202950?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"수백만원 짜리가 1분에 7대씩"…요즘 미친듯이 팔린다는데</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/015">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/015/2020/08/11/logo_015_56_20200811194037.png" height="16" width="16"/>
+</span>
+														한국경제
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/015/2024/06/23/5000536.jpg?type=nf190_130&amp;ut=1719101411000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/015/0005000536?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">박세리, 부친 빚 대신 갚느라 힘들었는데…'증여세' 최소 50억 더 내라고?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/008">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/008/2018/09/13/logo_008_56_20180913140213.png" height="16" width="16"/>
+</span>
+														머니투데이
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/008/2024/06/23/5054103.jpg?type=nf190_130&amp;ut=1719095438000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/008/0005054103?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“절친 때문에 손가락 대부분 절단했다”…동남아서 탄 버기카 악몽, 소송으로 [어쩌다 세상이]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/009">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/009/2018/07/20/logo_009_56_20180720194820.png" height="16" width="16"/>
+</span>
+														매일경제
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/009/2024/06/23/5323139.jpg?type=nf190_130&amp;ut=1719102908000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/009/0005323139?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="2" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“푸틴이 배신당했다”…김정은·젤렌스키가 왜 거기서 나와?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/081">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/081/2022/01/05/logo_081_56_20220105195830.png" height="16" width="16"/>
+</span>
+														서울신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/081/2024/06/22/3459602.jpg?type=nf190_130&amp;ut=1719056300000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/081/0003459602?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">푸틴 "큰 실수" 경고에…대통령실 "우크라 살상무기 지원, 러에 달렸다"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/586">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/586/2018/09/20/logo_586_56_20180920154020.png" height="16" width="16"/>
+</span>
+														시사저널
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/586/2024/06/23/81210.jpg?type=nf190_130&amp;ut=1719108490000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/586/0000081210?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">테슬라 방전으로 폭염 속 아기 차에 갇혀..."유리창 깨고 구조"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/052">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/052/2021/10/01/logo_052_56_20211001183149.png" height="16" width="16"/>
+</span>
+														YTN
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/052/2024/06/23/2051693.jpg?type=nf190_130&amp;ut=1719104680000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/052/0002051693?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">이준석 "'밀양 사건' 영상 촬영 등 특수협박, 형량 대폭 높여야"[이정주의 질문하는 기자]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/079">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/079/2018/07/18/logo_079_56_20180718152918.png" height="16" width="16"/>
+</span>
+														노컷뉴스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/079/2024/06/23/3908110.jpg?type=nf190_130&amp;ut=1719097868000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/079/0003908110?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">대통령실 "러시아, 북에 정밀무기 주면 더 이상 어떤 선 있겠나"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/214">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/214/2020/06/30/logo_214_56_20200630111130.png" height="16" width="16"/>
+</span>
+														MBC
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/214/2024/06/23/1356626.jpg?type=nf190_130&amp;ut=1719105922000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/214/0001356626?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="3" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“음식 배달 안 왔다”며 주문 취소한 부녀…집 찾아가니 먹고 있어 ‘뻔뻔’ [e글e글]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/020">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/020/2020/09/17/logo_020_56_20200917112548.jpg" height="16" width="16"/>
+</span>
+														동아일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/020/2024/06/22/3572102.jpg?type=nf190_130&amp;ut=1719029113000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/020/0003572102?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">계단 오르자 감탄 터졌다…파노라마 한강뷰 끝판왕 '이곳' 가보니 [르포]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/025">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/025/2021/08/20/logo_025_56_20210820165911.png" height="16" width="16"/>
+</span>
+														중앙일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/025/2024/06/23/3368538.jpg?type=nf190_130&amp;ut=1719108000000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/025/0003368538?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"아가씨 없어요" 보도방 전방위 단속에 불야성 꺼졌다</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/003">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/003/2024/01/24/logo_003_56_20240124132451.jpg" height="16" width="16"/>
+</span>
+														뉴시스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/003/2024/06/23/12622617.jpg?type=nf190_130&amp;ut=1719104400000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/003/0012622617?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">광교 6억짜리 아파트, 2억 헐값 경매도 안 팔리네…무슨 일?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/421">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/421/2024/03/06/logo_421_56_20240306140514.png" height="16" width="16"/>
+</span>
+														뉴스1
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/421/2024/06/23/7617540.jpg?type=nf190_130&amp;ut=1719090000000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/421/0007617540?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">대만 어부에 사진 찍혔다...은밀 기동이 생명인 中핵잠의 굴욕</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/023">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/023/2020/04/29/logo_023_56_20200429140429.png" height="16" width="16"/>
+</span>
+														조선일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/023/2024/06/23/3841848.jpg?type=nf190_130&amp;ut=1719068471000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/023/0003841848?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="4" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">139년 역사 닥터페퍼, ‘탄산음료 전쟁’서 펩시 누르고 2위</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/366">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/366/2020/12/23/logo_366_56_20201223182636.png" height="16" width="16"/>
+</span>
+														조선비즈
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/366/2024/06/23/999798.jpg?type=nf190_130&amp;ut=1719090069000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/366/0000999798?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“댕댕이 맡겼던 아들의 전 여친, 헤어지자 데려가”…‘기른 정’은 어쩌라고</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/021">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/021/2022/08/04/logo_021_56_20220804125306.png" height="16" width="16"/>
+</span>
+														문화일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/021/2024/06/23/2644514.jpg?type=nf190_130&amp;ut=1719092709000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/021/0002644514?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">13년 만에 입 연 모친 살해 ‘전교 1등 아들’... 범죄 재조명 효과는</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/469">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/469/2023/02/07/logo_469_56_20230207160012.png" height="16" width="16"/>
+</span>
+														한국일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/469/2024/06/23/808182.jpg?type=nf190_130&amp;ut=1719093615000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/469/0000808182?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">주담대 금리 2%대 '뚝'…가계대출 불붙나</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/215">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/215/2020/08/12/logo_215_56_20200812134433.png" height="16" width="16"/>
+</span>
+														한국경제TV
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/215/2024/06/23/1167624.jpg?type=nf190_130&amp;ut=1719096505000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/215/0001167624?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">구역질 중 목에서 나온 지독한 ‘알갱이’… 입냄새의 ‘주범’ 편도결석 [건강+]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/022">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/022/2018/07/18/logo_022_56_20180718152618.png" height="16" width="16"/>
+</span>
+														세계일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/022/2024/06/22/3944143.jpg?type=nf190_130&amp;ut=1719050537000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/022/0003944143?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="5" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">민주당 ‘상임위원장 독식’…대선 승리 걸림돌 될수도</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/028">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/028/2024/06/18/logo_028_56_20240618172517.png" height="16" width="16"/>
+</span>
+														한겨레
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/028/2024/06/23/2694895.jpg?type=nf190_130&amp;ut=1719095527000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/028/0002694895?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">속보이는 PC '어항 케이스'…완제PC 제조사도 기웃</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/092">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/092/2022/09/05/logo_092_56_20220905090445.png" height="16" width="16"/>
+</span>
+														지디넷코리아
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/092/2024/06/22/2335627.jpg?type=nf190_130&amp;ut=1719025272000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/092/0002335627?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">백종원 솔루션 통한 포방터시장.. '여기' 노려 압도적 매출 냈다[전국시장자랑]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/018">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/018/2018/07/18/logo_018_56_20180718152418.png" height="16" width="16"/>
+</span>
+														이데일리
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/018/2024/06/23/5771341.jpg?type=nf190_130&amp;ut=1719090067000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/018/0005771341?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"상견례 100만원, 결혼축하금 2000만원 드려요"…파격 제안한 자치구 어디?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/011">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/011/2022/07/29/logo_011_56_20220729150242.jpg" height="16" width="16"/>
+</span>
+														서울경제
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/011/2024/06/22/4356661.jpg?type=nf190_130&amp;ut=1719065111000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/011/0004356661?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">미국 주식 투자 열풍에 증권사들 서학개미 확보 경쟁</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/293">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/293/2018/07/18/logo_293_56_20180718153318.png" height="16" width="16"/>
+</span>
+														블로터
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/293/2024/06/23/55583.jpg?type=nf190_130&amp;ut=1719100811000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/293/0000055583?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="6" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">쿠팡은 왜 로켓배송을 중단하겠다는 걸까[산업이지]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/032">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/032/2022/12/05/logo_032_56_20221205150153.png" height="16" width="16"/>
+</span>
+														경향신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/032/2024/06/23/3303888.jpg?type=nf190_130&amp;ut=1719090012000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/032/0003303888?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">`김호중 따라하기` 3번째 음주운전 친구 위해 운전자 행세, 징역형</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/029">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/029/2022/09/01/logo_029_56_20220901154918.jpg" height="16" width="16"/>
+</span>
+														디지털타임스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/029/2024/06/23/2882130.jpg?type=nf190_130&amp;ut=1719105547000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/029/0002882130?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">피 뚝뚝 흐르는데 업체는 "먹어도 된다"며 환불 거절… 취재 시작되자 사과</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/082">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/082/2019/08/22/logo_082_56_20190822111222.png" height="16" width="16"/>
+</span>
+														부산일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/082/2024/06/23/1275993.jpg?type=nf190_130&amp;ut=1719096550000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/082/0001275993?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“고객님 정말 죄송합니다!” 아샷추가 뭐길래…[식탐]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/016">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/016/2020/11/03/logo_016_56_20201103113832.jpg" height="16" width="16"/>
+</span>
+														헤럴드경제
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/016/2024/06/23/2325540.jpg?type=nf190_130&amp;ut=1719100330000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/016/0002325540?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"미중러, 줄을 서시오"…베트남 '대나무 외교' 주목</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/422">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/422/2019/11/29/logo_422_56_20191129165529.jpg" height="16" width="16"/>
+</span>
+														연합뉴스TV
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/422/2024/06/22/666653.jpg?type=nf190_130&amp;ut=1719048190000" height="65" width="95"/>
+<span class="rl_btn_play"><em class="blind">재생하기</em></span>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/422/0000666653?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="7" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">국가 석학 이기명 고등과학원 부원장, 정년 후 중국行</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/584">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/584/2018/09/20/logo_584_56_20180920154720.png" height="16" width="16"/>
+</span>
+														동아사이언스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/584/2024/06/23/27616.jpg?type=nf190_130&amp;ut=1719108494000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/584/0000027616?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">“170㎝ 후반에 코 오뚝” 故구하라 금고 도둑 몽타주</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/005">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/005/2018/07/18/logo_005_56_20180718152218.png" height="16" width="16"/>
+</span>
+														국민일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/005/2024/06/23/1705442.jpg?type=nf190_130&amp;ut=1719096248000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/005/0001705442?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">김호중 음주운전 자백했음에도 음주 혐의 제외돼 비판 여론…모방 범죄 우려</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/087">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/087/2019/08/22/logo_087_56_20190822110222.png" height="16" width="16"/>
+</span>
+														강원일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/087/2024/06/23/1051776.jpg?type=nf190_130&amp;ut=1719103871000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/087/0001051776?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">제네시스, 獨 뉘르부르크링서 트랙 택시 달린다</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/030">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/030/2018/07/20/logo_030_56_20180720194820.png" height="16" width="16"/>
+</span>
+														전자신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/030/2024/06/23/3216714.jpg?type=nf190_130&amp;ut=1719106573000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/030/0003216714?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">'안방은 불안해'…해외시장 두드리는 게임사들</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/648">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/648/2023/02/13/logo_648_56_20230213170647.png" height="16" width="16"/>
+</span>
+														비즈워치
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/648/2024/06/22/26669.jpg?type=nf190_130&amp;ut=1719025207000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/648/0000026669?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="8" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"배달 안왔다" 주문 취소한 부녀, 몰래 먹고 있었다…식당측 "고소"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/088">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/088/2019/08/22/logo_088_56_20190822111422.png" height="16" width="16"/>
+</span>
+														매일신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/088/2024/06/23/887415.jpg?type=nf190_130&amp;ut=1719096728000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/088/0000887415?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">71세 여성이 美 미스 유니버스 대회 참가…역대 최고령</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/448">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/448/2020/08/11/logo_448_56_20200811154809.png" height="16" width="16"/>
+</span>
+														TV조선
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/448/2024/06/23/463700.jpg?type=nf190_130&amp;ut=1719104840000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/448/0000463700?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"이종섭 등 선서와 증언 거부, 유죄판결 받을 사실 숨기기 위해서였다"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/002">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/002/2018/07/18/logo_002_56_20180718152018.png" height="16" width="16"/>
+</span>
+														프레시안
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/002/2024/06/23/2337566.jpg?type=nf190_130&amp;ut=1719086535000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/002/0002337566?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">'불닭볶음면 리콜'의 반전 효과...구글 검색 역대 최고</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/057">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/057/2019/11/25/logo_057_56_20191125103925.png" height="16" width="16"/>
+</span>
+														MBN
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/057/2024/06/23/1825330.jpg?type=nf190_130&amp;ut=1719104473000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/057/0001825330?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">최민희, 방통위원장에 "무슨 짓인가"…인사청문회 방불케 해</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/006">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/006/2018/07/18/logo_006_56_20180718152218.png" height="16" width="16"/>
+</span>
+														미디어오늘
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/006/2024/06/23/124564.jpg?type=nf190_130&amp;ut=1719072614000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/006/0000124564?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="9" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">할아버지의 옛 무지개 축제 깃발이 펼쳐진 미래</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/007">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/007/2020/04/02/logo_007_56_20200402163602.png" height="16" width="16"/>
+</span>
+														일다
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/007/2024/06/23/7678.jpg?type=nf190_130&amp;ut=1719103992000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/007/0000007678?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"라면 놓고 갈래?" 라면 카페로 고립 세대 발굴</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/659">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/659/2022/01/19/logo_659_56_20220119141438.png" height="16" width="16"/>
+</span>
+														전주MBC
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/659/2024/06/23/22725.jpg?type=nf190_130&amp;ut=1719094094000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/659/0000022725?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">[주말엔 운동] 오랜만에 운동하면 찾아오는 '근육통'…"좋은 건 줄 알았는데"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/031">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/031/2020/11/27/logo_031_56_20201127145235.jpg" height="16" width="16"/>
+</span>
+														아이뉴스24
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/031/2024/06/23/846783.jpg?type=nf190_130&amp;ut=1719068413000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/031/0000846783?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">다들 휴대폰만 보던 우리집, 이걸로 대화 물꼬 텄네요</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/047">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/047/2018/07/18/logo_047_56_20180718152818.png" height="16" width="16"/>
+</span>
+														오마이뉴스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/047/2024/06/22/2437544.jpg?type=nf190_130&amp;ut=1719032949000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/047/0002437544?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">흔들리는 청년 고용…"그냥 쉬어요" 40만명, 역대 두번째</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/374">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/374/2020/12/29/logo_374_56_20201229152554.jpg" height="16" width="16"/>
+</span>
+														SBS Biz
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/374/2024/06/23/389200.jpg?type=nf190_130&amp;ut=1719102491000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/374/0000389200?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="10" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"'전과자'는 국립묘지에 모실 수 없어"..법원, '안장 거부 결정' 정당</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/660">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/660/2022/01/19/logo_660_56_20220119141745.png" height="16" width="16"/>
+</span>
+														kbc광주방송
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/660/2024/06/23/63440.jpg?type=nf190_130&amp;ut=1719092287000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/660/0000063440?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">연락 거절한 여성 스토킹하다 성폭행한 60대 징역 3년</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/654">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/654/2022/01/14/logo_654_56_20220114111216.png" height="16" width="16"/>
+</span>
+														강원도민일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/654/2024/06/23/78668.jpg?type=nf190_130&amp;ut=1719101830000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/654/0000078668?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">하남, 까다로운 조건에 파크골프장 무산 위기</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/666">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/666/2023/01/03/logo_666_56_20230103174615.png" height="16" width="16"/>
+</span>
+														경기일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/666/2024/06/22/44810.jpg?type=nf190_130&amp;ut=1719023536000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/666/0000044810?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">[현장] 비가 와도, ‘마비노기’… 20년 추억으로 만든 ‘판타지 파티’</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/138">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/138/2018/07/18/logo_138_56_20180718153118.png" height="16" width="16"/>
+</span>
+														디지털데일리
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/138/2024/06/22/2175905.jpg?type=nf190_130&amp;ut=1719057551000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/138/0002175905?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">치킨에서 핏물 뚝뚝 떨어지는데…업체 "뼈에 남은 피라 먹어도 된다"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/123">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/123/2018/10/02/logo_123_56_20181002190002.png" height="16" width="16"/>
+</span>
+														조세일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/123/2024/06/23/2336659.jpg?type=nf190_130&amp;ut=1719097093000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/123/0002336659?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="11" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">로또 1125회 당첨번호 1등 21억, '수동 둘 한 곳 43억 기대감'</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/629">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/629/2019/09/26/logo_629_56_20190926182726.png" height="16" width="16"/>
+</span>
+														더팩트
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/629/2024/06/23/298210.jpg?type=nf190_130&amp;ut=1719091870000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/629/0000298210?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"꿈에 로또 번호 나오더니…" 5억원에 당첨된 '1등' 사연은?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/119">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/119/2023/03/17/logo_119_56_20230317161040.jpg" height="16" width="16"/>
+</span>
+														데일리안
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/119/2024/06/22/2842587.jpg?type=nf190_130&amp;ut=1719067575000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/119/0002842587?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">Streaming services gradually dominate sports broadcasts amid mixed reactions from fans</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/044">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/044/2018/10/02/logo_044_56_20181002183002.png" height="16" width="16"/>
+</span>
+														코리아헤럴드
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/044/2024/06/22/258552.jpg?type=nf190_130&amp;ut=1719039742000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/044/0000258552?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">알레르기인 줄 알고, 2년간 약만 발랐는데… 알고 보니 치명적인 '이 성병'?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/346">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/346/2023/02/24/logo_346_56_20230224143254.jpg" height="16" width="16"/>
+</span>
+														헬스조선
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/346/2024/06/22/76302.jpg?type=nf190_130&amp;ut=1719043271000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/346/0000076302?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"기른 정" vs "분양자" 전 연인 집에 맡긴 반려견 주인은?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/655">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/655/2022/01/20/logo_655_56_20220120164501.png" height="16" width="16"/>
+</span>
+														CJB청주방송
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/655/2024/06/23/19219.jpg?type=nf190_130&amp;ut=1719097991000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/655/0000019219?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="12" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">유럽 극우, 이대로 대세?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/036">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/036/2024/06/18/logo_036_56_20240618173251.png" height="16" width="16"/>
+</span>
+														한겨레21
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/036/2024/06/23/50021.jpg?type=nf190_130&amp;ut=1719102612000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/036/0000050021?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">김홍일 위원장 "방통위 2인체제 운영, 불법 아냐"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/127">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/127/2020/04/02/logo_127_56_20200402162102.png" height="16" width="16"/>
+</span>
+														기자협회보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/127/2024/06/21/35911.jpg?type=nf190_130&amp;ut=1718961615000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/127/0000035911?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">테슬라 방전에 40도 폭염 속 20개월 아기 갇혀…“외부서 열리지 않았다”</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/243">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/243/2023/01/12/logo_243_56_20230112142411.png" height="16" width="16"/>
+</span>
+														이코노미스트
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/243/2024/06/23/60994.jpg?type=nf190_130&amp;ut=1719107051000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/243/0000060994?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">인간을 닮은 챗봇, 과연 이 방향이 맞을까? [평범한 이웃, 유럽]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/308">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/308/2022/06/30/logo_308_56_20220630105919.jpg" height="16" width="16"/>
+</span>
+														시사IN
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/308/2024/06/23/35063.jpg?type=nf190_130&amp;ut=1719098520000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/308/0000035063?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">[WHY] Why are both Koreas fixated on cross-border propaganda?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/640">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/640/2020/05/06/logo_640_56_20200506111106.png" height="16" width="16"/>
+</span>
+														코리아중앙데일리
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/640/2024/06/22/55416.jpg?type=nf190_130&amp;ut=1719003613000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/640/0000055416?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="13" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">자산 65조원인데 가사도우미 일당 1만원 지급···英부호 징역형 선고</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/050">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/050/2021/07/15/logo_050_56_20210715110055.jpg" height="16" width="16"/>
+</span>
+														한경비즈니스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/050/2024/06/22/76589.jpg?type=nf190_130&amp;ut=1719045610000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/050/0000076589?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">[심층] 대출 받으려다 '보이스피싱 범죄자'로 몰려</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/657">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/657/2022/01/19/logo_657_56_20220119135625.png" height="16" width="16"/>
+</span>
+														대구MBC
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/657/2024/06/23/27178.jpg?type=nf190_130&amp;ut=1719104592000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/657/0000027178?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">10대 소녀들인데...뉴진스 ‘성상품화’ 논란 예측 못했나요</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/024">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/024/2020/12/23/logo_024_56_20201223182820.jpg" height="16" width="16"/>
+</span>
+														매경이코노미
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/024/2024/06/23/89830.jpg?type=nf190_130&amp;ut=1719100868000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/024/0000089830?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">증언대에 선 채 해병 사건 의혹 당사자들… “선서 거부" “착각했다"</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/607">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/607/2018/10/02/logo_607_56_20181002184602.png" height="16" width="16"/>
+</span>
+														뉴스타파
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/607/2024/06/21/2037.jpg?type=nf190_130&amp;ut=1718974810000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/607/0000002037?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">신이 내린 ‘재능’ 가진 젠슨 황, 신이 내린 ‘기회’ 잡은 대만</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/262">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/262/2018/09/20/logo_262_56_20180920153820.png" height="16" width="16"/>
+</span>
+														신동아
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/262/2024/06/23/17541.jpg?type=nf190_130&amp;ut=1719100870000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/262/0000017541?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="14" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">한국산 ‘해궁’ 미사일 콕 집어 요구한 말레이시아</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/037">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/037/2022/07/13/logo_037_56_20220713135804.png" height="16" width="16"/>
+</span>
+														주간동아
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/037/2024/06/23/34641.jpg?type=nf190_130&amp;ut=1719100935000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/037/0000034641?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">박세리, 아버지 빚 대신 갚았는데… 50억 규모 증여세 폭탄 가능성</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/417">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/417/2021/01/25/logo_417_56_20210125161624.png" height="16" width="16"/>
+</span>
+														머니S
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/417/2024/06/23/1009931.jpg?type=nf190_130&amp;ut=1719102130000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/417/0001009931?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"뇌 7.6cm 희귀암 자라고 있는데"...8개월간 편두통으로 오진, 무슨 일?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/296">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/296/2021/08/31/logo_296_56_20210831152430.png" height="16" width="16"/>
+</span>
+														코메디닷컴
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/296/2024/06/22/79136.jpg?type=nf190_130&amp;ut=1719068058000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/296/0000079136?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">사고 직후 소주 '벌컥' 김호중… 일명 '술타기' 방지법 속도 낸다</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/656">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/656/2022/01/19/logo_656_56_20220119134936.png" height="16" width="16"/>
+</span>
+														대전일보
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/656/2024/06/23/94763.jpg?type=nf190_130&amp;ut=1719103869000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/656/0000094763?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">한동훈, 진종오 영입... 장동혁·박정훈과 3인 라인업</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/053">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/053/2018/09/20/logo_053_56_20180920153620.png" height="16" width="16"/>
+</span>
+														주간조선
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/053/2024/06/23/44298.jpg?type=nf190_130&amp;ut=1719103268000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/053/0000044298?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="15" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">육지 거머리의 점프 포착...100년 논쟁 끝냈다</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/662">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/662/2024/03/06/logo_662_56_20240306140536.png" height="16" width="16"/>
+</span>
+														농민신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/662/2024/06/22/46186.jpg?type=nf190_130&amp;ut=1719021618000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/662/0000046186?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">고 구하라 금고 도둑 몽타주 공개… 이번엔 진범 잡힐까?</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/310">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/310/2020/08/11/logo_310_56_20200811154942.png" height="16" width="16"/>
+</span>
+														여성신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/310/2024/06/23/117075.jpg?type=nf190_130&amp;ut=1719106455000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/310/0000117075?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">‘과대 포장’된 대북 확성기 성능···북은 왜 알레르기 반응일까[박성진의 국방 B컷](9)</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/033">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/033/2018/09/20/logo_033_56_20180920152820.png" height="16" width="16"/>
+</span>
+														주간경향
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/033/2024/06/21/47331.jpg?type=nf190_130&amp;ut=1718953270000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/033/0000047331?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">부산 사하구 "결혼하면 축하금 및 전세금 지원" 파격제안</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/658">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/658/2022/01/20/logo_658_56_20220120164828.png" height="16" width="16"/>
+</span>
+														국제신문
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/658/2024/06/22/76694.jpg?type=nf190_130&amp;ut=1719032299000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/658/0000076694?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"왜 알리보다 훨씬 비싸죠?" 해외직구 불편한 질문들 [視리즈]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/665">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/665/2024/02/28/logo_665_56_20240228131302.png" height="16" width="16"/>
+</span>
+														더스쿠프
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/665/2024/06/23/3218.jpg?type=nf190_130&amp;ut=1719104058000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/665/0000003218?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+<ul class="ranking_list _FLICKING_CONTENT" data-index="16" style="display:none; margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">"넘친 빗물이 폭포처럼.." 기습 폭우에 제주 오일장  '날벼락'</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/661">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/661/2022/01/19/logo_661_56_20220119142145.png" height="16" width="16"/>
+</span>
+														JIBS
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/661/2024/06/22/41634.jpg?type=nf190_130&amp;ut=1719031329000" height="65" width="95"/>
+<span class="rl_btn_play"><em class="blind">재생하기</em></span>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/661/0000041634?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">[오늘의 운세] 6월 23일</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/353">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/353/2018/09/20/logo_353_56_20180920154420.png" height="16" width="16"/>
+</span>
+														중앙SUNDAY
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/353/2024/06/22/48354.jpg?type=nf190_130&amp;ut=1718982191000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/353/0000048354?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">‘한입에 쏙’ 색다르게 먹는 다이어트 식단 [저탄수 레시피]</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/145">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/145/2020/12/09/logo_145_56_20201209180915.png" height="16" width="16"/>
+</span>
+														레이디경향
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/145/2024/06/23/20892.jpg?type=nf190_130&amp;ut=1719100868000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/145/0000020892?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">美 71세 여성 미스유니버스 USA '역대 최고령' 참가</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/001">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/001/2020/08/11/logo_001_56_20200811154916.png" height="16" width="16"/>
+</span>
+														연합뉴스
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/001/2024/06/23/14763059.jpg?type=nf190_130&amp;ut=1719093213000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/001/0014763059?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">유골 항아리에 붉은 액체…'2000년 넘은 로마 와인' 스페인서 발견</p>
+<a class="rl_pressimg _LAZY_LOADING_WRAP" data-clk="rig.pname" href="https://media.naver.com/press/277">
+<span class="rl_pressimg_img _LAZY_LOADING_ERROR_HIDE">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-src="https://mimgnews.pstatic.net/image/upload/office_logo/277/2018/07/18/logo_277_56_20180718153218.png" height="16" width="16"/>
+</span>
+														아시아경제
+													</a>
+</div>
+<div class="rl_img _LAZY_LOADING_WRAP _LAZY_LOADING_ERROR_HIDE">
+<div class="rl_border">
+<img alt="" class="_LAZY_LOADING_REFRESH" data-scroll="false" data-src="https://mimgnews.pstatic.net/image/origin/277/2024/06/22/5435504.jpg?type=nf190_130&amp;ut=1719037956000" height="65" width="95"/>
+</div>
+</div>
+<a class="rl_coverlink" data-clk="rig.renws2" href="https://n.news.naver.com/mnews/ranking/article/277/0005435504?ntype=RANKING">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ra_desc">
+<p class="ra_desc_p">오전 11시~정오까지 집계한 결과입니다.</p>
+</div>
+<div class="ra_refresh">
+<button class="ra_refresh_btn _FLICKING_REFRESH" data-clk="rig.refresh" type="button">새로보기</button>
+</div>
+</div>
+<div class="r_group_comp ad_box _da_banner _PERSIST_HEIGHT is_border_none mobile_hidden" data-grid-template-column-aside="true" data-persist="2_ad">
+<div class="ad_area _AD_WRAP" data-article="false" data-mobileonly="false" data-sync="false" data-unitid="p_news_sidebox" id="nmap_c____2"></div>
+</div>
+<div class="_LAZY_LOADING_TEMPLATE" data-grid-template-column-aside="true" data-template="SECTION_MAINNEWS"></div>
+<div class="col2_banner mobile_hidden is_hidden _LAZY_LOADING_WRAP" data-grid-template-column-aside="true">
+<div class="col2_banner_inner _LAZY_LOADING_ERROR_HIDE">
+<a class="col2_banner_link" data-clk="asidebanner1" href="https://media.naver.com/channel/settings">
+<img alt="네이버 메인에서 바로 보는 언론사 편집뉴스 지금 바로 구독해보세요!" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://imgnews.pstatic.net/image/upload/item/2018/11/27/175236270_PC_%25BF%25EC%25C3%25F8%25B9%25E8%25B3%25CA_%25B1%25B8%25B5%25B6%25C8%25B0%25BC%25BA%25C8%25AD.png" height="80" style="display: none;" width="300"/>
+<div class="blind">
+<strong>네이버 메인에서 바로 보는 언론사 편집뉴스 지금 바로 구독해보세요!</strong>
+<p></p>
+</div>
+</a>
+</div>
+</div>
+<div class="col2_banner mobile_hidden is_hidden _LAZY_LOADING_WRAP" data-grid-template-column-aside="true">
+<div class="col2_banner_inner _LAZY_LOADING_ERROR_HIDE">
+<a class="col2_banner_link" data-clk="asidebanner2" href="https://media.naver.com/algorithm">
+<img alt="알고리즘 안내" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://imgnews.pstatic.net/image/upload/item/2023/07/06/183901500_banner_AI.png" height="80" style="display: none;" width="300"/>
+<div class="blind">
+<strong>알고리즘 안내</strong>
+<p></p>
+</div>
+</a>
+</div>
+</div>
+<div class="col2_banner mobile_hidden is_hidden _LAZY_LOADING_WRAP" data-grid-template-column-aside="true">
+<div class="col2_banner_inner _LAZY_LOADING_ERROR_HIDE">
+<a class="col2_banner_link" data-clk="asidebanner3" href="https://news.naver.com/main/ombudsman/guidecenter.naver?mid=omb">
+<img alt="뉴스 기사와 댓글로 인한 문제 발생 시 24시간 센터로 접수해주세요" class="_LAZY_LOADING _LAZY_LOADING_INIT_HIDE" data-src="https://imgnews.pstatic.net/image/upload/item/2023/06/23/195439840_banner_24hours.png" height="80" style="display: none;" width="300"/>
+<div class="blind">
+<strong>뉴스 기사와 댓글로 인한 문제 발생 시 24시간 센터로 접수해주세요</strong>
+<p></p>
+</div>
+</a>
+</div>
+</div>
+<div class="rankingnews as_type_flat mobile_hidden is_hidden _FLICKING_WRAP _OFFICE_RANKING_ALL _PERSIST_META" data-aggregation-end="" data-aggregation-start="" data-count="1" data-flicking-disable="true" data-flicking-init-tab-index="" data-flicking-nclk="true" data-grid-template-column-aside="true" data-nclk-prefix="rig" data-persist="6_officeRankingAll">
+<div class="ra_head">
+<strong class="ra_title"><em class="ra_highlight"></em> 서비스 안내</strong>
+<a class="media_more" data-clk="rig.more" href="https://news.naver.com/main/ombudsman/index.naver"><span class="blind">더보기</span></a>
+</div>
+<div class="ra_area">
+<div class="flick" style="height:90px;">
+<div class="flick-container _FLICKING" style="height:90px; opacity:0;">
+<div class="flick-panel">
+<ul class="ranking_list _FLICKING_CONTENT" data-index="0" style="margin-top: 0;">
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">고침 기사 모음</p>
+</div>
+<a class="rl_coverlink" data-clk="rig.text" href="https://news.naver.com/main/ombudsman/errorArticleList.naver?mid=omb">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">정정·반론·추후 보도 기사 모음</p>
+</div>
+<a class="rl_coverlink" data-clk="rig.text" href="https://news.naver.com/main/ombudsman/revisionArticleList.naver?mid=omb">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+<li class="rl_item _LAZY_LOADING_WRAP" data-loading-error-allowed="true">
+<div class="rl_link_end">
+<div class="rl_content">
+<p class="rl_txt">불공정 선거 보도 기사 모음</p>
+</div>
+<a class="rl_coverlink" data-clk="rig.text" href="https://news.naver.com/main/ombudsman/unfairArticleList.naver?mid=omb">
+<span class="blind">더보기</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="_MY_CHANNEL_OFFICE_WRAP pc_hidden" data-grid-template-column-aside="true">
+</div></div>
+<div class="outside_area _OUTSIDE_AREA">
+<div class="outside_area_inner _GRID_TEMPLATE_COLUMN_ASIDE _OUTSIDE_AREA_INNER"></div>
+</div>
+<aside class="main_aside _MAIN_ASIDE">
+<div class="main_aside_inner _MAIN_ASIDE_INNER">
+<h3 class="blind">구독</h3>
+<script class="_LAZY_LOADING_IFRAME" type="x-tmpl-mustache">
+			<iframe class="_aside _GRID_TEMPLATE_ASIDE_IFRAME" src="https://news.naver.com/aside" data-allow-domain="https://news.naver.com" style="visibility: hidden;" frameborder="no" scrolling="no" width="100%" title="구독"></iframe>
+			</script>
+</div>
+</aside>
+</div>
+</div>
+<div class="media_end_tts_ticker _FADE_LAYER" id="_media_end_tts_ticker" style="display: none;">
+<p class="media_end_tts_ticker_text" style="display: block;">본문 듣기를 <em class="media_end_tts_ticker_point">종료</em>하였습니다.</p>
+</div>
+<div class="tomain_ticker _TOMAIN_RECOMMAND_LAYER _FADE_LAYER" style="display: none;">이 기사를 <em class="tomain_ticker_point">추천</em>했습니다.
+</div>
+<div class="tomain_ticker _TOMAIN_CANCEL_LAYER _FADE_LAYER" style="display: none;">추천을 <em class="tomain_ticker_point">취소</em>했습니다.
+</div><hr/>
+<div class="u_ft _STICKY_FOOTER">
+<div class="u_ft_inner">
+<footer role="contentinfo">
+<p class="u_cr">
+<span class="u_ftm">
+<span class="u_cri u_cri_v1">
+<a class="u_cra _LINK" data-clk="fot.login" data-pc-url="https://nid.naver.com/nidlogin.login" data-url="https://nid.naver.com/nidlogin.login?svctype=262144" href="https://nid.naver.com/nidlogin.login?svctype=262144">로그인</a>
+</span>
+<span class="u_cri u_cri_v1">
+<a class="u_cra _LINK" data-clk="fot.serviceall" data-pc-url="https://www.naver.com/more.html" data-url="https://m.naver.com/services.html?f=svc.news" href="https://m.naver.com/services.html?f=svc.news">전체서비스</a>
+</span>
+</span>
+<span class="u_ftm">
+<span class="u_cri u_cri_v1">
+<a class="u_cra _LINK" data-clk="fot.guide" data-pc-url="https://news.naver.com/main/ombudsman/index.naver" data-url="https://m.news.naver.com/ombudsman/index" href="https://m.news.naver.com/ombudsman/index">서비스안내</a>
+</span>
+<span class="u_cri u_cri_v1">
+<a class="u_cra" data-clk="fot.report" href="https://help.naver.com/alias/news/news_001.naver">오류신고</a>
+</span>
+<span class="u_cri u_cri_v1">
+<a class="u_cra" data-clk="fot.help" href="https://help.naver.com/alias/news/news_007.naver">고객센터</a>
+</span>
+</span>
+<span class="u_charge">
+<a class="u_charge_item _LINK" data-clk="fot.editor" data-pc-url="https://news.naver.com/main/ombudsman/edit.naver?mid=omb" data-url="https://m.news.naver.com/ombudsman/index?mode=rule" href="https://m.news.naver.com/ombudsman/index?mode=rule">기사배열 책임자 : 김수향</a>
+<span class="u_charge_item">청소년 보호 책임자 : 이정규</span>
+</span>
+<span class="u_copyright">
+					이 콘텐츠의 저작권은 저작권자 또는 제공처에 있으며, 이를 무단 <br/>이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.
+				</span>
+<span class="u_naverlogo">
+<a class="u_naverlogo_a" data-clk="fot.navercorp" href="https://www.navercorp.com">NAVER</a>
+</span>
+</p>
+</footer>
+</div>
+</div>
+<a class="r_pg_top show _MOVE_TOP" data-clk="fot.top" href="#" id="goTop" style="display:none;">맨위로</a>
+<div class="subscribe_dimmed is_hidden" id="_MY_FEED_CANCEL_MODAL" style="display:none;">
+<div class="subscribe_alert">
+<p class="subscribe_alert_p _message _MY_FFED_CANCEL_MODAL_MESSAGE">
+</p>
+<div class="subscribe_alert_btns">
+<a class="subscribe_alert_btn _CANCEL_YES_BTN _TOGGLE" data-classvalue="is_hidden" data-target="_MY_FEED_CANCEL_MODAL" href="#">예</a>
+<a class="subscribe_alert_btn _TOGGLE" data-classvalue="is_hidden" data-target="_MY_FEED_CANCEL_MODAL" href="#">아니오</a>
+</div>
+</div>
+</div>
+<script class="_MY_FEED_CANCEL_MODAL_TEMPLATE" type="x-tmpl-mustache">
+			{{#series}}
+			<span class="subscribe_alert_p_ellipsis">{{value}}</span><br>연재 구독을 취소하시겠습니까? <span class="subscribe_alert_p_dsc">해당 연재는 <em>구독</em>에서 제외됩니다.</span>
+			{{/series}}
+			{{#journalist}}
+			{{value}} 기자의 기사<br> 구독을 취소하시겠습니까? <span class="subscribe_alert_p_dsc"><em>구독</em>에서 해당 기자의 기사가 제외됩니다.</span>
+			{{/journalist}}
+</script>
+<div class="modal is_hidden" id="_MODAL_LAYER_FOR_NOTIFICATION"></div>
+<div class="modal is_hidden" id="_MODAL_LAYER_FOR_NOTIFICATION_ALL"></div>
+<div class="modal is_hidden" id="_MODAL_LAYER_FOR_NOTIFICATION_OS"></div>
+<script class="_MODAL_LAYER_TEMPLATE_FOR_NOTIFICATION" type="x-tmpl-mustache">
+<div class="m_dimmed"></div>
+<div class="m_notification is_single">
+	<strong class="mn_ok">구독완료</strong>
+	{{#officeInfos}}
+	<div class="mn_text">
+		<h4 class="mn_h">{{officeName}} 뉴스를 <br> <span class="m_em">알림</span>으로 받아 보시겠습니까?</h4>
+		<p class="mn_p">언론사의 주요 콘텐츠를 <br> 네이버에서 빠르게 확인할 수 있습니다.</p>
+	</div>
+	{{/officeInfos}}
+	<div class="mn_btns">
+		<button type="button" class="mn_btn _MODAL_LAYER_NEGATIVE" data-clk="{{nclk}}no">닫기</button>
+		<button type="button" class="mn_btn as_em _MODAL_LAYER_POSITIVE" data-clk="{{nclk}}yes">알림받기</button>
+	</div>
+</div>
+</script>
+<script class="_MODAL_LAYER_TEMPLATE_FOR_NOTIFICATION_ALL" type="x-tmpl-mustache">
+<div class="m_dimmed"></div>
+<div class="m_notification">
+	<strong class="mn_ok">구독완료</strong>
+	<div class="mn_text">
+		<h4 class="mn_h">언론사의 주요 뉴스를 <br> <span class="m_em">알림</span>으로 받아 보시겠습니까?</h4>
+		<ul class="mn_list">
+			{{#officeInfos}}
+			<li class="mn_item">
+				<div class="mn_head">
+					<div class="mn_img">
+						<img src="{{logo}}" alt="" onerror="this.outerHTML='<span class=&quot;no_image&quot;></span>'">
+					</div>
+					<div class="mn_name">{{officeName}}</div>
+				</div>
+				<div class="mn_body">
+					<button type="button" class="mn_noti _ALL_OFFICES_NOTIFICATION_ITEM" data-oid="{{officeId}}" data-clk-add="notchnon" data-clk-remove="notchnoff">알림받기 사용함</button>
+				</div>
+			</li>
+			{{/officeInfos}}
+		</ul>
+	</div>
+	<div class="mn_btns">
+		<button type="button" class="mn_btn _MODAL_LAYER_NEGATIVE" data-clk="{{nclk}}no">닫기</button>
+		<button type="button" class="mn_btn as_em _MODAL_LAYER_POSITIVE _CHANNEL_BANNER_ITEM_NOTICE_COMPLETE" data-clk="{{nclk}}yes">완료</button>
+	</div>
+</div>
+</script>
+<script class="_MODAL_LAYER_TEMPLATE_FOR_NOTIFICATION_OS" type="x-tmpl-mustache">
+<div class="m_dimmed"></div>
+<div class="napp_notify_notice">
+	<div class="napp_notify_info_area">
+		<strong class="napp_notify_title">네이버 앱 푸시알림이 꺼져있어요.</strong>
+		<div class="napp_notify_desc_box">
+			<p class="napp_notify_desc1">네이버 앱 알림켜기 &gt; 알림탭 &gt; 알림허용</p>
+			<p class="napp_notify_desc2">버튼을 눌러 앱 알림 설정을 켜주세요.</p>
+		</div>
+	</div>
+	<div class="napp_notify_button_area">
+		<button type="button" class="napp_notify_btn _MODAL_LAYER_NEGATIVE" data-clk="{{nclk}}.osnotoff">닫기</button>
+		<button type="button" class="napp_notify_btn highlight _MODAL_LAYER_POSITIVE _NAPP_NOTIFY_COMPLETE" data-clk="{{nclk}}.osnoton">네이버 앱 알림 켜기</button>
+	</div>
+</div>
+</div>
+</script>
+<div id="_MODAL_COMMENT_FOLLOW_TUTORIAL" style="display: none;"></div>
+<script class="_MODAL_COMMENT_FOLLOW_TUTORIAL_TEMPLATE" type="x-tmpl-mustache">
+<div class="comment_follow_tutorial" role="dialog" aria-modal="true">
+	<div class="comment_follow_tutorial_layer">
+		<div class="comment_follow_tutorial_layer_dimmed"></div>
+		<div class="comment_follow_tutorial_layer_container">
+			<div class="comment_follow_tutorial_layer_content">
+				<div class="comment_follow_tutorial_layer_item">
+					<p class="{{className}}">{{text}}</p>
+					<i class="comment_follow_tutorial_layer_closeicon"></i>
+					<button type="button" class="comment_follow_tutorial_layer_close _MODAL_COMMENT_FOLLOW_TUTORIAL_CLOSE" data-clk="{{nclkPrefix}}tutclose">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</script>
+<div class="ticker" id="_TICKER_LAYER_FOR_NOTIFICATION" style="display: none;"></div>
+<script class="_TICKER_LAYER_TEMPLATE_FOR_NOTIFICATION" type="x-tmpl-mustache">
+{{#officeInfos}}
+<p class="t_inner"><em class="t_point">{{officeName}}</em> 언론사 알림이 설정되었습니다.</p>
+{{/officeInfos}}
+</script>
+<script src="https://static-nnews.pstatic.net/js/min/20240620a/library.min.js"></script>
+<script src="https://static-nnews.pstatic.net/js/min/20240620a/read.min.js"></script>
+<script>
+	window.ntm = window.ntm || [];
+	var ntmOption = {};
+
+	if (ntmOption) {
+
+		var section = {};
+		var redirectSection = {"id":"105","name":"IT"};
+
+		ntmOption["channelId"] = article.officeId;
+
+		// 기타 또는 주요 섹션 이름
+		var nilSendSectionName = "기타";
+		var nilSendSectionId = "";
+		if (/100|101|102|103|104|105|106|107/.test(section.id)) {
+			nilSendSectionName = section.name;
+			nilSendSectionId = section.id;
+		}
+
+		// 기사 타입
+		var htArticleTypeName = { "0": "text", "1": "photo", "2": "tv" };
+		var articleTypeName = htArticleTypeName[article.type] || "";
+
+		ntmOption["hitType"] = "cv";
+		ntmOption["eventCategory"] = "post_view";
+		ntmOption["uri"] = "";
+		ntmOption["gdid"] = article.gdid;
+		ntmOption["dimension1"] = encodeURIComponent(nilSendSectionName);
+		ntmOption["dimension4"] = articleTypeName;
+		ntmOption["optional2"] = nilSendSectionId;
+
+		var journalistIdList = [];
+
+		// 기자 목록
+		$("._JOURNALIST_CARD ._JOURNALIST_ID").each(function (index, object) {
+			var $this = $(object);
+			var journalistId = $this.attr("data-journalistId");
+
+			if (journalistId && journalistIdList.indexOf(journalistId) === -1) {
+				journalistIdList.push(journalistId);
+			}
+		});
+
+		if (journalistIdList.length > 0) {
+			ntmOption["dimension3"] = journalistIdList.join("___");
+		}
+
+		if (location.href.match(/ntype=RANKING/)) {
+			ntmOption["dimension5"] = "y";
+		}
+
+		if (service.sports || service.newsType) {
+			ntmOption["dimension2"] = article.sectionInfo.secondSection + "." + article.sectionInfo.thirdSection;
+		}
+
+		var seriesComponentId = $("._VALID_SERIES").attr("data-component-id");
+		ntmOption["dimension6"] = seriesComponentId;
+
+		if (/[?|&]type=breakingnews(&|$)/.test(location.href) === true) {
+			if (/(m\.naver\.com)|(media\.naver\.com)|(news\.naver\.com\/?$)|(www\.naver\.com)/.test(document.referrer) === true) {
+				ntmOption["dimension7"] = "breaking";
+			}
+		}
+
+		var ntmLeaveOption = $.extend({}, ntmOption);
+		ntmLeaveOption["hitType"] = "event";
+		ntmLeaveOption["eventCategory"] = "action";
+		ntmLeaveOption["eventAction"] = "leave";
+
+		if (/\/article\/comment\//.test(location.href) == false) {
+			if (window.addEventListener) {
+				window.addEventListener("load", function () {
+					ntm.push({
+						event: "nilSend",
+						ni: ntmOption
+					});
+				}, false);
+				window.addEventListener("onpagehide" in window ? "pagehide" : "beforeunload", function () {
+					ntm.push({
+						event: "nilSend",
+						ni: ntmLeaveOption
+					});
+				}, false);
+			} else if (window.attachEvent) {
+				window.attachEvent("onload", function () {
+					ntm.push({
+						event: "nilSend",
+						ni: ntmOption
+					});
+				});
+				window.attachEvent("onpagehide" in window ? "onpagehide" : "onbeforeunload", function () {
+					ntm.push({
+						event: "nilSend",
+						ni: ntmLeaveOption
+					});
+				});
+			} else {
+				var onUnloadEventName = "onpagehide" in window ? "onpagehide" : "onbeforeunload";
+				var fnOnUnload = window[onUnloadEventName];
+				window[onUnloadEventName] = function () {
+					ntm.push({
+						event: "nilSend",
+						ni: ntmLeaveOption
+					});
+					if (fnOnUnload) {
+						fnOnUnload();
+					}
+				};
+
+				var fnOnload = window.onload;
+				window.onload = function () {
+					ntm.push({
+						event: "nilSend",
+						ni: ntmOption
+					});
+					if (fnOnload) {
+						fnOnload();
+					}
+				};
+			}
+		}
+	}
+</script>
+</div>
+<script>
+			var eventType = "onpageshow" in window ? "pageshow" : "load";
+			$(window).on(eventType, function() {
+				lcs_do({ "sti": "news" });
+
+				// ma 로그 전송
+				var data = {
+					"service": "news",
+					"baseInfo": {
+						"category": "섹션홈"
+					},
+					"extraInfo": {
+						"sectionId": "105"
+					}
+				};
+
+				if (typeof ma !== "undefined") {
+					ma.init({
+						api: "https://ma.news.naver.com/l",
+						data: data
+					});
+				}
+				
+				if (window.matchMedia("(prefers-color-scheme)").media === "not all") {
+					$("html").removeClass("DARK_THEME");
+				}
+			});
+		</script>
+</body>
+</html>
