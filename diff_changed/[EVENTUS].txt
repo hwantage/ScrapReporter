@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "c0M9nq0DvCIRJM_JAnkvOAnIwupP-IRO-HqLIOwcNPGhP_4prMXLH7-SN43NQJA0Ub7W_wOhuB72c95pfhxfOdDT4FZ-Ufy4DLuV0S0gizP2jCyV5FcWXZJAe_wWkwaOzNWEPQ2",
+                UserId: "rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "c0M9nq0DvCIRJM_JAnkvOAnIwupP-IRO-HqLIOwcNPGhP_4prMXLH7-SN43NQJA0Ub7W_wOhuB72c95pfhxfOdDT4FZ-Ufy4DLuV0S0gizP2jCyV5FcWXZJAe_wWkwaOzNWEPQ2" === "c0M9nq0DvCIRJM_JAnkvOAnIwupP-IRO-HqLIOwcNPGhP_4prMXLH7-SN43NQJA0Ub7W_wOhuB72c95pfhxfOdDT4FZ-Ufy4DLuV0S0gizP2jCyV5FcWXZJAe_wWkwaOzNWEPQ2" ? "Anonymous" : "User",
+                UserType: "rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2" === "rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'c0M9nq0DvCIRJM_JAnkvOAnIwupP-IRO-HqLIOwcNPGhP_4prMXLH7-SN43NQJA0Ub7W_wOhuB72c95pfhxfOdDT4FZ-Ufy4DLuV0S0gizP2jCyV5FcWXZJAe_wWkwaOzNWEPQ2'
+            'user_id': 'rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'c0M9nq0DvCIRJM_JAnkvOAnIwupP-IRO-HqLIOwcNPGhP_4prMXLH7-SN43NQJA0Ub7W_wOhuB72c95pfhxfOdDT4FZ-Ufy4DLuV0S0gizP2jCyV5FcWXZJAe_wWkwaOzNWEPQ2'
+            'crm_id': 'rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2'
         });
     </script>
 <script>
@@ -2697,7 +2697,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="P5HUTkMDTtinPrlETcyuhjqeKwOUiQb0qA6eGL9iZahwGeIb922ZWJeKXLxAmRE6DH7s2NNg0M6W0zo1h_k-XJ5QlEU1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="vRGz6MoPWS9sqHaVrfKbQxkMnTy7wuZ2e5-RQsSbLyX_aUsi5JqaJqW8L9dIHa_hEh2wftXtkLh5_LPKnv4qCLaQVV81"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4014,7 +4014,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'c0M9nq0DvCIRJM_JAnkvOAnIwupP-IRO-HqLIOwcNPGhP_4prMXLH7-SN43NQJA0Ub7W_wOhuB72c95pfhxfOdDT4FZ-Ufy4DLuV0S0gizP2jCyV5FcWXZJAe_wWkwaOzNWEPQ2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
