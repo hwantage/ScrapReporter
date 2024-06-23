@@ -13,10 +13,118 @@ on:
 
 jobs:
 
+  changed:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11.2"]
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+          python-version: ${{ matrix.python-version }}
+          architecture: 'x64'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r diff_changed/requirements.txt
+    - name: Run Scraper with python
+      working-directory: diff_changed
+      run: |
+        python "scrap.py"
+    - name: Commits
+      run: |
+        git config --local user.email "hwantagexsw2@gmail.com"
+        git config --local user.name "hwantage"
+        git pull origin master
+        git add diff_changed/
+        git commit -m "Auto - Update data with Github Action"
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: 'master'
+        github_token: $ 
+        
+  keyword:
+    needs: [changed]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11.2"]
 
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+          python-version: ${{ matrix.python-version }}
+          architecture: 'x64'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r diff_keyword/requirements.txt
+    - name: Run Scraper with python
+      working-directory: diff_keyword
+      run: |
+        python "scrap.py"
+    - name: Commits
+      run: |
+        git config --local user.email "hwantagexsw2@gmail.com"
+        git config --local user.name "hwantage"
+        git pull origin master
+        git add diff_keyword/
+        git commit -m "Auto - Update data with Github Action"
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: 'master'
+        github_token: $ 
+
+
+  news:
+    needs: [changed, keyword]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11.2"]
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+          python-version: ${{ matrix.python-version }}
+          architecture: 'x64'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run Scraper with python
+      run: |
+        python "secu_news.py"
+    - name: Set current date
+      id: date
+      run: echo "DATE=$(date +'%Y%m%d')" >> $GITHUB_ENV        
+    - name: Commits
+      continue-on-error: true
+      run: |
+        git config --local user.email "hwantagexsw2@gmail.com"
+        git config --local user.name "hwantage"
+        git pull origin master
+        git add secunews_crawl_${{ env.DATE }}.html
+        git commit -m "Auto - Update data with Github Action"
+    - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: 'master'
+        github_token: $ 
         
   createIssue:
-    #needs: [changed, keyword, news]
+    needs: [changed, keyword, news]
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
