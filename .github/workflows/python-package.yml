@@ -12,12 +12,7 @@ on:
    - cron:  "0 23 * * 0"
 
 jobs:
-  changed:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.11.2"]
+
 
         
   createIssue:
