@@ -150,7 +150,8 @@ jobs:
         git pull origin master
     - name: Create issue
       env:
-        ACTION_ACCESS_TOKEN: ${{ secrets.HEECASTLE_ACCESS_TOKEN }}  #다른 사용자의 토큰으로 이슈를 생성해야만 이메일 알림이 발생함.
+        #ACTION_ACCESS_TOKEN: ${{ secrets.HEECASTLE_ACCESS_TOKEN }}  #다른 사용자의 토큰으로 이슈를 생성해야만 이메일 알림이 발생함.
+        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
       run: |
         python "create_issue.py"
     - name: Commits
