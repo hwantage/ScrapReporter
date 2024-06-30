@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2",
+                UserId: "8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2" === "rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2" ? "Anonymous" : "User",
+                UserType: "8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2" === "8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2'
+            'user_id': '8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2'
+            'crm_id': '8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?881b1178b4479f9b"></script><style>body {
+<script src="/Content/dist/js/preload.js?59ff9fa42b9846ea"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?881b1178b4479f9b"></script><script defer="defer" src="/Content/dist/js/default.js?881b1178b4479f9b"></script><link href="/Content/dist/css/default.css?881b1178b4479f9b" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?59ff9fa42b9846ea"></script><script defer="defer" src="/Content/dist/js/default.js?59ff9fa42b9846ea"></script><link href="/Content/dist/css/default.css?59ff9fa42b9846ea" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -196,18 +196,22 @@
         };
     </script>
 <script type="application/ld+json">
-        {
+        
+    {
         "@context": "http://schema.org",
         "@type": "Organization",
         "name": "이벤터스",
         "url": "https://event-us.kr",
+        "logo": "https://event-us.kr/Content/neweventus/Image/eventus_logo.png",
+        "description": "내가 원하는 행사를 개최하거나, 참여할 수 있는 플랫폼 - 이벤터스",
         "sameAs": [
             "https://blog.naver.com/withitblog",
             "https://www.facebook.com/eventus.korea",
             "https://www.instagram.com/event.with.us/",
             "https://www.youtube.com/channel/UCotb2ainbLyD59J88M0XXxw"
-            ]
-        }
+        ]
+    }
+    
     </script>
 <script type="text/javascript">
         _linkedin_partner_id = "4074420";
@@ -2697,7 +2701,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="vRGz6MoPWS9sqHaVrfKbQxkMnTy7wuZ2e5-RQsSbLyX_aUsi5JqaJqW8L9dIHa_hEh2wftXtkLh5_LPKnv4qCLaQVV81"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="Eb33FLJEvD3MYYR8e4fSwnhV1AhgTP3FjIjuq0AzA9eZZCBQFM0nNvVSe9EoX9ib-0YX4Ccb25LFrzCXvaC4KdwD8VM1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -2772,8 +2776,8 @@
         ],
         support: [
             { text: '블로그', enText: 'Blog', link: '/hostcenter/blog' },
-            { text: '고객사례', enText: 'Customer Stories', link: '/hostcenter/main/customerstory' },
-            { text: '호스트 뉴스레터', enText: 'Host Newsletter', link: '/hostcenter/hostnewsletter' },
+            //{ text: '고객사례', enText: 'Customer Stories', link: '/hostcenter/main/customerstory' },
+            //{ text: '호스트 뉴스레터', enText: 'Host Newsletter', link: '/hostcenter/hostnewsletter' },
             { text: '호스트 가이드 북', enText: 'Host Guidebook', link: 'https://m.site.naver.com/1gYog', outlink: true },
             
             { text: '문의하기', enText: 'Contact Us', link: 'https://event-us.channel.io/', outlink: true },
@@ -4014,7 +4018,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'rxQqf0FPrkF3q7pKkyKT9sTrDD1Z0I4U4YqOZWRdof34ipXshZcXs0sSZo-hr94lr9cl3vkIDogEfSuViZiP6OsEdXyqu9xhk7VyNaHPDjN9sQsJMEIyUhiyIsj6Q7v2_TeR9g2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', '8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
