@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2",
+                UserId: "ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2" === "8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2" ? "Anonymous" : "User",
+                UserType: "ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2" === "ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': '8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2'
+            'user_id': 'ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': '8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2'
+            'crm_id': 'ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2'
         });
     </script>
 <script>
@@ -2371,7 +2371,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">5월 이벤터스 휴무일 안내 : 5/1(수), 5/6(월), 5/15(수)</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">티켓 할인 쿠폰 기능 베타 버전 출시 안내</a>
 </div>
 </div>
 </div>
@@ -2701,7 +2701,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="Eb33FLJEvD3MYYR8e4fSwnhV1AhgTP3FjIjuq0AzA9eZZCBQFM0nNvVSe9EoX9ib-0YX4Ccb25LFrzCXvaC4KdwD8VM1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="IrvwD_eILIM7VVq8JVH37Ur_B96asDm1IdWFspCYZbMMA1LFBDNb4_27-9lG0zGRFIncAoTZJWfO2xktT_1Yu9TPR5I1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4018,7 +4018,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', '8A2fuhi5uSWK1_01m0gwLe2FLSustKjjWCrt7LkW9DNkhpZUYXLbfXCacFXOBMCRRLoLEuu92vLRLprOV4gTA2QKazpHERYZ9oQNkucPPW7lB90IB45r7VI2dZQ6XT88eIcwIw2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');

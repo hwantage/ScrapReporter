@@ -1104,12 +1104,17 @@ $(function(){
 </p>
 </td>
 <td>
-<p id="M16">
-<a href="#M16" onclick="return false;">국무조정실</a>
+<p id="M65">
+<a href="#M65" onclick="return false;">국가유산청</a>
 </p>
 </td>
 </tr>
 <tr>
+<td>
+<p id="M16">
+<a href="#M16" onclick="return false;">국무조정실</a>
+</p>
+</td>
 <td>
 <p id="M17">
 <a href="#M17" onclick="return false;">국방부</a>
@@ -1155,13 +1160,13 @@ $(function(){
 <a href="#M61" onclick="return false;">대통령비서실</a>
 </p>
 </td>
+</tr>
+<tr>
 <td>
 <p id="M24">
 <a href="#M24" onclick="return false;">문화재청</a>
 </p>
 </td>
-</tr>
-<tr>
 <td>
 <p id="M25">
 <a href="#M25" onclick="return false;">문화체육관광부</a>
@@ -1207,13 +1212,13 @@ $(function(){
 <a href="#M34" onclick="return false;">소방청</a>
 </p>
 </td>
+</tr>
+<tr>
 <td>
 <p id="M35">
 <a href="#M35" onclick="return false;">식품의약품안전처</a>
 </p>
 </td>
-</tr>
-<tr>
 <td>
 <p id="M37">
 <a href="#M37" onclick="return false;">여성가족부</a>
@@ -1222,6 +1227,11 @@ $(function(){
 <td>
 <p id="M38">
 <a href="#M38" onclick="return false;">외교부</a>
+</p>
+</td>
+<td>
+<p id="M64">
+<a href="#M64" onclick="return false;">우주항공청</a>
 </p>
 </td>
 <td>
@@ -1254,6 +1264,8 @@ $(function(){
 <a href="#M44" onclick="return false;">특허청</a>
 </p>
 </td>
+</tr>
+<tr>
 <td>
 <p id="M45">
 <a href="#M45" onclick="return false;">해양경찰청</a>
@@ -1264,8 +1276,6 @@ $(function(){
 <a href="#M46" onclick="return false;">해양수산부</a>
 </p>
 </td>
-</tr>
-<tr>
 <td>
 <p id="M47">
 <a href="#M47" onclick="return false;">행정안전부</a>
@@ -1403,10 +1413,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="73332">
+<input id="totalCount" name="totalCount" type="hidden" value="73344">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>73,332건</span></h3>
+<h3 class="t_head">검색결과 <span>73,344건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1459,22 +1469,22 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2024년 소재부품장비 융합혁신지원단 기술지원사업 (심화기술지원) 글로벌(GVC) 트랙 공고" type="checkbox" value="1187379"/></td>
+<td><input name="selectCheckList" title="2024년 한계도전 RD 프로젝트 신규과제 2차 공모" type="checkbox" value="1188008"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73332
+                            73344
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187379&amp;flag=rndList" onclick="javascript:fn_view('1187379'); return false;" title="2024년 소재부품장비 융합혁신지원단 기술지원사업 (심화기술지원) 글로벌(GVC) 트랙 공고"> 2024년 소재부품장비 융합혁신지원단 기술지원사업 (심화기술지원) 글로벌(GVC) 트랙 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1188008&amp;flag=rndList" onclick="javascript:fn_view('1188008'); return false;" title="2024년 한계도전 RD 프로젝트 신규과제 2차 공모"> 2024년 한계도전 RD 프로젝트 신규과제 2차 공모
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2024.07.01</td>
-<td data-title="마감일">2024.08.02</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.07.15</td>
+<td data-title="마감일">2024.08.09</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1494,218 +1504,43 @@ $(function(){
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2024년도 소재부품장비 융합혁신지원단 기술지원사업(심화기술지원) 자립화 트랙 2차 공고" type="checkbox" value="1187375"/></td>
+<td><input name="selectCheckList" title="2024년 국토교통연구기획사업 제1차 시행 재공고" type="checkbox" value="1188001"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73331
+                            73343
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187375&amp;flag=rndList" onclick="javascript:fn_view('1187375'); return false;" title="2024년도 소재부품장비 융합혁신지원단 기술지원사업(심화기술지원) 자립화 트랙 2차 공고"> 2024년도 소재부품장비 융합혁신지원단 기술지원사업(심화기술지원) 자립화 트랙 2차 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1188001&amp;flag=rndList" onclick="javascript:fn_view('1188001'); return false;" title="2024년 국토교통연구기획사업 제1차 시행 재공고"> 2024년 국토교통연구기획사업 제1차 시행 재공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2024.07.01</td>
-<td data-title="마감일">2024.08.02</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-33
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년 산업혁신인재성장지원(산업별 인적자원개발협의체)사업 시행계획 재공고" type="checkbox" value="1187374"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73330
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187374&amp;flag=rndList" onclick="javascript:fn_view('1187374'); return false;" title="2024년 산업혁신인재성장지원(산업별 인적자원개발협의체)사업 시행계획 재공고"> 2024년 산업혁신인재성장지원(산업별 인적자원개발협의체)사업 시행계획 재공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2024.06.28</td>
-<td data-title="마감일">2024.07.29</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-29
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="(연장공고)2024년도 실감콘텐츠핵심기술개발사업 혁신도전형 RnD신규지원 대상과제 공고" type="checkbox" value="1187263"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73329
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187263&amp;flag=rndList" onclick="javascript:fn_view('1187263'); return false;" title="(연장공고)2024년도 실감콘텐츠핵심기술개발사업 혁신도전형 RnD신규지원 대상과제 공고"> (연장공고)2024년도 실감콘텐츠핵심기술개발사업 혁신도전형 RnD신규지원 대상과제 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.06.28</td>
-<td data-title="마감일">2024.07.10</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년도 실감콘텐츠핵심기술개발사업 혁신도전형 RD신규지원 대상과제 공고" type="checkbox" value="1187127"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73328
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187127&amp;flag=rndList" onclick="javascript:fn_view('1187127'); return false;" title="2024년도 실감콘텐츠핵심기술개발사업 혁신도전형 RD신규지원 대상과제 공고"> 2024년도 실감콘텐츠핵심기술개발사업 혁신도전형 RD신규지원 대상과제 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.06.26</td>
-<td data-title="마감일">2024.07.10</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년 나노·기술개발사업(팹고도화) 고경력 전문인력 기술컨설팅 신규과제 재공모" type="checkbox" value="1187125"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73327
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187125&amp;flag=rndList" onclick="javascript:fn_view('1187125'); return false;" title="2024년 나노·기술개발사업(팹고도화) 고경력 전문인력 기술컨설팅 신규과제 재공모"> 2024년 나노·기술개발사업(팹고도화) 고경력 전문인력 기술컨설팅 신규과제 재공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.06.26</td>
-<td data-title="마감일">2024.07.05</td>
+<td data-title="부처명">국토교통부</td>
+<td data-title="접수일">2024.07.05</td>
+<td data-title="마감일">2024.07.12</td>
 <td class="end" data-title="D-day">
 <span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2024년도 제3차 백신실용화기술개발사업단 신규지원 대상과제 공고" type="checkbox" value="1187081"/></td>
+<td><input name="selectCheckList" title="온실가스 감시를 위한 초소형기상위성 개발 기획연구 용역" type="checkbox" value="1187940"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73326
+                            73342
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187081&amp;flag=rndList" onclick="javascript:fn_view('1187081'); return false;" title="2024년도 제3차 백신실용화기술개발사업단 신규지원 대상과제 공고"> 2024년도 제3차 백신실용화기술개발사업단 신규지원 대상과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187940&amp;flag=rndList" onclick="javascript:fn_view('1187940'); return false;" title="온실가스 감시를 위한 초소형기상위성 개발 기획연구 용역"> 온실가스 감시를 위한 초소형기상위성 개발 기획연구 용역
                                 </a>
 </div>
 </td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2024.06.26</td>
-<td data-title="마감일">2024.07.25</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-25
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년도 제2차 식품의약품안전처 출연연구개발사업 신규지원 대상과제 통합 공고" type="checkbox" value="1187078"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73325
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187078&amp;flag=rndList" onclick="javascript:fn_view('1187078'); return false;" title="2024년도 제2차 식품의약품안전처 출연연구개발사업 신규지원 대상과제 통합 공고"> 2024년도 제2차 식품의약품안전처 출연연구개발사업 신규지원 대상과제 통합 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">식품의약품안전처</td>
-<td data-title="접수일">2024.06.26</td>
-<td data-title="마감일">2024.07.09</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.07.12</td>
+<td data-title="마감일">2024.07.16</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1727,22 +1562,22 @@ $(function(){
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2024년도 소부장 특화단지 테스트베드 구축사업 신규과제 공고" type="checkbox" value="1187077"/></td>
+<td><input name="selectCheckList" title="2024년도 중소기업기술혁신개발사업 apos;수출지향형(Tech-Bridge)apos; 시행계획 공고" type="checkbox" value="1187915"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73324
+                            73341
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187077&amp;flag=rndList" onclick="javascript:fn_view('1187077'); return false;" title="2024년도 소부장 특화단지 테스트베드 구축사업 신규과제 공고"> 2024년도 소부장 특화단지 테스트베드 구축사업 신규과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187915&amp;flag=rndList" onclick="javascript:fn_view('1187915'); return false;" title="2024년도 중소기업기술혁신개발사업 apos;수출지향형(Tech-Bridge)apos; 시행계획 공고"> 2024년도 중소기업기술혁신개발사업 apos;수출지향형(Tech-Bridge)apos; 시행계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2024.06.26</td>
-<td data-title="마감일">2024.07.25</td>
+<td data-title="부처명">중소벤처기업부</td>
+<td data-title="접수일">2024.07.15</td>
+<td data-title="마감일">2024.08.07</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1756,28 +1591,91 @@ $(function(){
                                     
                                     
                                     
-                                    D-25
+                                    D-31
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2024년 착수 민/군기술협력사업(적용) 주관연구개발기관 선정을 위한 연구개발계획서 공모" type="checkbox" value="1187112"/></td>
+<td><input name="selectCheckList" title="[일반용역] 뎅기바이러스 mRNA면역후보물질 제형 용역" type="checkbox" value="1187848"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73323
+                            73340
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187112&amp;flag=rndList" onclick="javascript:fn_view('1187112'); return false;" title="2024년 착수 민/군기술협력사업(적용) 주관연구개발기관 선정을 위한 연구개발계획서 공모"> 2024년 착수 민/군기술협력사업(적용) 주관연구개발기관 선정을 위한 연구개발계획서 공모
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187848&amp;flag=rndList" onclick="javascript:fn_view('1187848'); return false;" title="[일반용역] 뎅기바이러스 mRNA면역후보물질 제형 용역"> [일반용역] 뎅기바이러스 mRNA면역후보물질 제형 용역
                                 </a>
 </div>
 </td>
-<td data-title="부처명">방위사업청</td>
-<td data-title="접수일">2024.06.25</td>
-<td data-title="마감일">2024.07.24</td>
+<td data-title="부처명">질병관리청</td>
+<td data-title="접수일">2024.07.03</td>
+<td data-title="마감일">2024.07.09</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 2</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="[일반용역]B 세포 에피토프 분석 시스템 구축을 위한 SARS-CoV-2 바이러스 펩타이드 합성" type="checkbox" value="1187792"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73339
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187792&amp;flag=rndList" onclick="javascript:fn_view('1187792'); return false;" title="[일반용역]B 세포 에피토프 분석 시스템 구축을 위한 SARS-CoV-2 바이러스 펩타이드 합성"> [일반용역]B 세포 에피토프 분석 시스템 구축을 위한 SARS-CoV-2 바이러스 펩타이드 합성
+                                </a>
+</div>
+</td>
+<td data-title="부처명">질병관리청</td>
+<td data-title="접수일">2024.07.03</td>
+<td data-title="마감일">2024.07.09</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 2</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2024년도 중소기업기술혁신개발사업(시장확대형) apos;초격차 스타트업1000+apos; 연계 RD 연구개발계획서 접수 안내" type="checkbox" value="1187736"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73338
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187736&amp;flag=rndList" onclick="javascript:fn_view('1187736'); return false;" title="2024년도 중소기업기술혁신개발사업(시장확대형) apos;초격차 스타트업1000+apos; 연계 RD 연구개발계획서 접수 안내"> 2024년도 중소기업기술혁신개발사업(시장확대형) apos;초격차 스타트업1000+apos; 연계 RD 연구개발계획서 접수 안내
+                                </a>
+</div>
+</td>
+<td data-title="부처명">중소벤처기업부</td>
+<td data-title="접수일">2024.07.03</td>
+<td data-title="마감일">2024.07.12</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 5</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="초거대 AI 데이터 공유 거버넌스 모델 개발 컨설팅 용역 사업" type="checkbox" value="1187684"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73337
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187684&amp;flag=rndList" onclick="javascript:fn_view('1187684'); return false;" title="초거대 AI 데이터 공유 거버넌스 모델 개발 컨설팅 용역 사업"> 초거대 AI 데이터 공유 거버넌스 모델 개발 컨설팅 용역 사업
+                                </a>
+</div>
+</td>
+<td data-title="부처명">문화체육관광부</td>
+<td data-title="접수일">2024.07.11</td>
+<td data-title="마감일">2024.07.15</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1791,7 +1689,81 @@ $(function(){
                                     
                                     
                                     
-                                    D-24
+                                        D - 8
+                                    
+                                    
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="[일반용역]XBB.1.5 백신 접종 후 면역반응 확인을 위한 단일세포 전사체 분석" type="checkbox" value="1187679"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73336
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187679&amp;flag=rndList" onclick="javascript:fn_view('1187679'); return false;" title="[일반용역]XBB.1.5 백신 접종 후 면역반응 확인을 위한 단일세포 전사체 분석"> [일반용역]XBB.1.5 백신 접종 후 면역반응 확인을 위한 단일세포 전사체 분석
+                                </a>
+</div>
+</td>
+<td data-title="부처명">질병관리청</td>
+<td data-title="접수일">2024.07.02</td>
+<td data-title="마감일">2024.07.15</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                        D - 8
+                                    
+                                    
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2024년도 바이오·의료기술개발사업 교류연구단 연구개발기관 3차 재공모 (A9-24-1-05 공동연구개발기관)" type="checkbox" value="1187675"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73335
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1187675&amp;flag=rndList" onclick="javascript:fn_view('1187675'); return false;" title="2024년도 바이오·의료기술개발사업 교류연구단 연구개발기관 3차 재공모 (A9-24-1-05 공동연구개발기관)"> 2024년도 바이오·의료기술개발사업 교류연구단 연구개발기관 3차 재공모 (A9-24-1-05 공동연구개발기관)
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.07.02</td>
+<td data-title="마감일">2024.07.18</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-11
                                 
 
                             </td>
@@ -1807,7 +1779,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7334" onclick="fn_search(7334);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7335" onclick="fn_search(7335);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
@@ -1933,178 +1905,188 @@ $(function(){
 <a onclick="filterChk('searchDeptListRe', '국가보훈부');" title="전체">국가보훈부</a>
 </li>
 <li id="navigation2Group8" style="display: none;">
-<input data-value="M16" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국무조정실');" title="국무조정실 입니다." type="checkbox" value="국무조정실"/>
-<label for="searchDeptListRe8" onclick="filterChk('searchDeptListRe', '국무조정실');"></label>
-<a onclick="filterChk('searchDeptListRe', '국무조정실');" title="전체">국무조정실</a>
+<input data-value="M65" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국가유산청');" title="국가유산청 입니다." type="checkbox" value="국가유산청"/>
+<label for="searchDeptListRe8" onclick="filterChk('searchDeptListRe', '국가유산청');"></label>
+<a onclick="filterChk('searchDeptListRe', '국가유산청');" title="전체">국가유산청</a>
 </li>
 <li id="navigation2Group9" style="display: none;">
-<input data-value="M17" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국방부');" title="국방부 입니다." type="checkbox" value="국방부"/>
-<label for="searchDeptListRe9" onclick="filterChk('searchDeptListRe', '국방부');"></label>
-<a onclick="filterChk('searchDeptListRe', '국방부');" title="전체">국방부</a>
+<input data-value="M16" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국무조정실');" title="국무조정실 입니다." type="checkbox" value="국무조정실"/>
+<label for="searchDeptListRe9" onclick="filterChk('searchDeptListRe', '국무조정실');"></label>
+<a onclick="filterChk('searchDeptListRe', '국무조정실');" title="전체">국무조정실</a>
 </li>
 <li id="navigation2Group10" style="display: none;">
-<input data-value="M19" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국토교통부');" title="국토교통부 입니다." type="checkbox" value="국토교통부"/>
-<label for="searchDeptListRe10" onclick="filterChk('searchDeptListRe', '국토교통부');"></label>
-<a onclick="filterChk('searchDeptListRe', '국토교통부');" title="전체">국토교통부</a>
+<input data-value="M17" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국방부');" title="국방부 입니다." type="checkbox" value="국방부"/>
+<label for="searchDeptListRe10" onclick="filterChk('searchDeptListRe', '국방부');"></label>
+<a onclick="filterChk('searchDeptListRe', '국방부');" title="전체">국방부</a>
 </li>
 <li id="navigation2Group11" style="display: none;">
-<input data-value="M60" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국회');" title="국회 입니다." type="checkbox" value="국회"/>
-<label for="searchDeptListRe11" onclick="filterChk('searchDeptListRe', '국회');"></label>
-<a onclick="filterChk('searchDeptListRe', '국회');" title="전체">국회</a>
+<input data-value="M19" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국토교통부');" title="국토교통부 입니다." type="checkbox" value="국토교통부"/>
+<label for="searchDeptListRe11" onclick="filterChk('searchDeptListRe', '국토교통부');"></label>
+<a onclick="filterChk('searchDeptListRe', '국토교통부');" title="전체">국토교통부</a>
 </li>
 <li id="navigation2Group12" style="display: none;">
-<input data-value="M20" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기상청');" title="기상청 입니다." type="checkbox" value="기상청"/>
-<label for="searchDeptListRe12" onclick="filterChk('searchDeptListRe', '기상청');"></label>
-<a onclick="filterChk('searchDeptListRe', '기상청');" title="전체">기상청</a>
+<input data-value="M60" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국회');" title="국회 입니다." type="checkbox" value="국회"/>
+<label for="searchDeptListRe12" onclick="filterChk('searchDeptListRe', '국회');"></label>
+<a onclick="filterChk('searchDeptListRe', '국회');" title="전체">국회</a>
 </li>
 <li id="navigation2Group13" style="display: none;">
-<input data-value="M21" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기획재정부');" title="기획재정부 입니다." type="checkbox" value="기획재정부"/>
-<label for="searchDeptListRe13" onclick="filterChk('searchDeptListRe', '기획재정부');"></label>
-<a onclick="filterChk('searchDeptListRe', '기획재정부');" title="전체">기획재정부</a>
+<input data-value="M20" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기상청');" title="기상청 입니다." type="checkbox" value="기상청"/>
+<label for="searchDeptListRe13" onclick="filterChk('searchDeptListRe', '기상청');"></label>
+<a onclick="filterChk('searchDeptListRe', '기상청');" title="전체">기상청</a>
 </li>
 <li id="navigation2Group14" style="display: none;">
-<input data-value="M22" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '농림축산식품부');" title="농림축산식품부 입니다." type="checkbox" value="농림축산식품부"/>
-<label for="searchDeptListRe14" onclick="filterChk('searchDeptListRe', '농림축산식품부');"></label>
-<a onclick="filterChk('searchDeptListRe', '농림축산식품부');" title="전체">농림축산식품부</a>
+<input data-value="M21" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기획재정부');" title="기획재정부 입니다." type="checkbox" value="기획재정부"/>
+<label for="searchDeptListRe14" onclick="filterChk('searchDeptListRe', '기획재정부');"></label>
+<a onclick="filterChk('searchDeptListRe', '기획재정부');" title="전체">기획재정부</a>
 </li>
 <li id="navigation2Group15" style="display: none;">
-<input data-value="M23" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '농촌진흥청');" title="농촌진흥청 입니다." type="checkbox" value="농촌진흥청"/>
-<label for="searchDeptListRe15" onclick="filterChk('searchDeptListRe', '농촌진흥청');"></label>
-<a onclick="filterChk('searchDeptListRe', '농촌진흥청');" title="전체">농촌진흥청</a>
+<input data-value="M22" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '농림축산식품부');" title="농림축산식품부 입니다." type="checkbox" value="농림축산식품부"/>
+<label for="searchDeptListRe15" onclick="filterChk('searchDeptListRe', '농림축산식품부');"></label>
+<a onclick="filterChk('searchDeptListRe', '농림축산식품부');" title="전체">농림축산식품부</a>
 </li>
 <li id="navigation2Group16" style="display: none;">
-<input data-value="M62" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '대통령경호처');" title="대통령경호처 입니다." type="checkbox" value="대통령경호처"/>
-<label for="searchDeptListRe16" onclick="filterChk('searchDeptListRe', '대통령경호처');"></label>
-<a onclick="filterChk('searchDeptListRe', '대통령경호처');" title="전체">대통령경호처</a>
+<input data-value="M23" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '농촌진흥청');" title="농촌진흥청 입니다." type="checkbox" value="농촌진흥청"/>
+<label for="searchDeptListRe16" onclick="filterChk('searchDeptListRe', '농촌진흥청');"></label>
+<a onclick="filterChk('searchDeptListRe', '농촌진흥청');" title="전체">농촌진흥청</a>
 </li>
 <li id="navigation2Group17" style="display: none;">
-<input data-value="M61" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '대통령비서실');" title="대통령비서실 입니다." type="checkbox" value="대통령비서실"/>
-<label for="searchDeptListRe17" onclick="filterChk('searchDeptListRe', '대통령비서실');"></label>
-<a onclick="filterChk('searchDeptListRe', '대통령비서실');" title="전체">대통령비서실</a>
+<input data-value="M62" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '대통령경호처');" title="대통령경호처 입니다." type="checkbox" value="대통령경호처"/>
+<label for="searchDeptListRe17" onclick="filterChk('searchDeptListRe', '대통령경호처');"></label>
+<a onclick="filterChk('searchDeptListRe', '대통령경호처');" title="전체">대통령경호처</a>
 </li>
 <li id="navigation2Group18" style="display: none;">
-<input data-value="M24" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '문화재청');" title="문화재청 입니다." type="checkbox" value="문화재청"/>
-<label for="searchDeptListRe18" onclick="filterChk('searchDeptListRe', '문화재청');"></label>
-<a onclick="filterChk('searchDeptListRe', '문화재청');" title="전체">문화재청</a>
+<input data-value="M61" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '대통령비서실');" title="대통령비서실 입니다." type="checkbox" value="대통령비서실"/>
+<label for="searchDeptListRe18" onclick="filterChk('searchDeptListRe', '대통령비서실');"></label>
+<a onclick="filterChk('searchDeptListRe', '대통령비서실');" title="전체">대통령비서실</a>
 </li>
 <li id="navigation2Group19" style="display: none;">
-<input data-value="M25" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '문화체육관광부');" title="문화체육관광부 입니다." type="checkbox" value="문화체육관광부"/>
-<label for="searchDeptListRe19" onclick="filterChk('searchDeptListRe', '문화체육관광부');"></label>
-<a onclick="filterChk('searchDeptListRe', '문화체육관광부');" title="전체">문화체육관광부</a>
+<input data-value="M24" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '문화재청');" title="문화재청 입니다." type="checkbox" value="문화재청"/>
+<label for="searchDeptListRe19" onclick="filterChk('searchDeptListRe', '문화재청');"></label>
+<a onclick="filterChk('searchDeptListRe', '문화재청');" title="전체">문화재청</a>
 </li>
 <li id="navigation2Group20" style="display: none;">
-<input data-value="M26" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '방송통신위원회');" title="방송통신위원회 입니다." type="checkbox" value="방송통신위원회"/>
-<label for="searchDeptListRe20" onclick="filterChk('searchDeptListRe', '방송통신위원회');"></label>
-<a onclick="filterChk('searchDeptListRe', '방송통신위원회');" title="전체">방송통신위원회</a>
+<input data-value="M25" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '문화체육관광부');" title="문화체육관광부 입니다." type="checkbox" value="문화체육관광부"/>
+<label for="searchDeptListRe20" onclick="filterChk('searchDeptListRe', '문화체육관광부');"></label>
+<a onclick="filterChk('searchDeptListRe', '문화체육관광부');" title="전체">문화체육관광부</a>
 </li>
 <li id="navigation2Group21" style="display: none;">
-<input data-value="M27" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '방위사업청');" title="방위사업청 입니다." type="checkbox" value="방위사업청"/>
-<label for="searchDeptListRe21" onclick="filterChk('searchDeptListRe', '방위사업청');"></label>
-<a onclick="filterChk('searchDeptListRe', '방위사업청');" title="전체">방위사업청</a>
+<input data-value="M26" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '방송통신위원회');" title="방송통신위원회 입니다." type="checkbox" value="방송통신위원회"/>
+<label for="searchDeptListRe21" onclick="filterChk('searchDeptListRe', '방송통신위원회');"></label>
+<a onclick="filterChk('searchDeptListRe', '방송통신위원회');" title="전체">방송통신위원회</a>
 </li>
 <li id="navigation2Group22" style="display: none;">
-<input data-value="M28" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '법무부');" title="법무부 입니다." type="checkbox" value="법무부"/>
-<label for="searchDeptListRe22" onclick="filterChk('searchDeptListRe', '법무부');"></label>
-<a onclick="filterChk('searchDeptListRe', '법무부');" title="전체">법무부</a>
+<input data-value="M27" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '방위사업청');" title="방위사업청 입니다." type="checkbox" value="방위사업청"/>
+<label for="searchDeptListRe22" onclick="filterChk('searchDeptListRe', '방위사업청');"></label>
+<a onclick="filterChk('searchDeptListRe', '방위사업청');" title="전체">방위사업청</a>
 </li>
 <li id="navigation2Group23" style="display: none;">
-<input data-value="M29" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '법제처');" title="법제처 입니다." type="checkbox" value="법제처"/>
-<label for="searchDeptListRe23" onclick="filterChk('searchDeptListRe', '법제처');"></label>
-<a onclick="filterChk('searchDeptListRe', '법제처');" title="전체">법제처</a>
+<input data-value="M28" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '법무부');" title="법무부 입니다." type="checkbox" value="법무부"/>
+<label for="searchDeptListRe23" onclick="filterChk('searchDeptListRe', '법무부');"></label>
+<a onclick="filterChk('searchDeptListRe', '법무부');" title="전체">법무부</a>
 </li>
 <li id="navigation2Group24" style="display: none;">
-<input data-value="M30" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '보건복지부');" title="보건복지부 입니다." type="checkbox" value="보건복지부"/>
-<label for="searchDeptListRe24" onclick="filterChk('searchDeptListRe', '보건복지부');"></label>
-<a onclick="filterChk('searchDeptListRe', '보건복지부');" title="전체">보건복지부</a>
+<input data-value="M29" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '법제처');" title="법제처 입니다." type="checkbox" value="법제처"/>
+<label for="searchDeptListRe24" onclick="filterChk('searchDeptListRe', '법제처');"></label>
+<a onclick="filterChk('searchDeptListRe', '법제처');" title="전체">법제처</a>
 </li>
 <li id="navigation2Group25" style="display: none;">
-<input data-value="M31" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '산림청');" title="산림청 입니다." type="checkbox" value="산림청"/>
-<label for="searchDeptListRe25" onclick="filterChk('searchDeptListRe', '산림청');"></label>
-<a onclick="filterChk('searchDeptListRe', '산림청');" title="전체">산림청</a>
+<input data-value="M30" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '보건복지부');" title="보건복지부 입니다." type="checkbox" value="보건복지부"/>
+<label for="searchDeptListRe25" onclick="filterChk('searchDeptListRe', '보건복지부');"></label>
+<a onclick="filterChk('searchDeptListRe', '보건복지부');" title="전체">보건복지부</a>
 </li>
 <li id="navigation2Group26" style="display: none;">
-<input data-value="M32" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '산업통상자원부');" title="산업통상자원부 입니다." type="checkbox" value="산업통상자원부"/>
-<label for="searchDeptListRe26" onclick="filterChk('searchDeptListRe', '산업통상자원부');"></label>
-<a onclick="filterChk('searchDeptListRe', '산업통상자원부');" title="전체">산업통상자원부</a>
+<input data-value="M31" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '산림청');" title="산림청 입니다." type="checkbox" value="산림청"/>
+<label for="searchDeptListRe26" onclick="filterChk('searchDeptListRe', '산림청');"></label>
+<a onclick="filterChk('searchDeptListRe', '산림청');" title="전체">산림청</a>
 </li>
 <li id="navigation2Group27" style="display: none;">
-<input data-value="M34" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '소방청');" title="소방청 입니다." type="checkbox" value="소방청"/>
-<label for="searchDeptListRe27" onclick="filterChk('searchDeptListRe', '소방청');"></label>
-<a onclick="filterChk('searchDeptListRe', '소방청');" title="전체">소방청</a>
+<input data-value="M32" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '산업통상자원부');" title="산업통상자원부 입니다." type="checkbox" value="산업통상자원부"/>
+<label for="searchDeptListRe27" onclick="filterChk('searchDeptListRe', '산업통상자원부');"></label>
+<a onclick="filterChk('searchDeptListRe', '산업통상자원부');" title="전체">산업통상자원부</a>
 </li>
 <li id="navigation2Group28" style="display: none;">
-<input data-value="M35" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '식품의약품안전처');" title="식품의약품안전처 입니다." type="checkbox" value="식품의약품안전처"/>
-<label for="searchDeptListRe28" onclick="filterChk('searchDeptListRe', '식품의약품안전처');"></label>
-<a onclick="filterChk('searchDeptListRe', '식품의약품안전처');" title="전체">식품의약품안전처</a>
+<input data-value="M34" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '소방청');" title="소방청 입니다." type="checkbox" value="소방청"/>
+<label for="searchDeptListRe28" onclick="filterChk('searchDeptListRe', '소방청');"></label>
+<a onclick="filterChk('searchDeptListRe', '소방청');" title="전체">소방청</a>
 </li>
 <li id="navigation2Group29" style="display: none;">
-<input data-value="M37" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '여성가족부');" title="여성가족부 입니다." type="checkbox" value="여성가족부"/>
-<label for="searchDeptListRe29" onclick="filterChk('searchDeptListRe', '여성가족부');"></label>
-<a onclick="filterChk('searchDeptListRe', '여성가족부');" title="전체">여성가족부</a>
+<input data-value="M35" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '식품의약품안전처');" title="식품의약품안전처 입니다." type="checkbox" value="식품의약품안전처"/>
+<label for="searchDeptListRe29" onclick="filterChk('searchDeptListRe', '식품의약품안전처');"></label>
+<a onclick="filterChk('searchDeptListRe', '식품의약품안전처');" title="전체">식품의약품안전처</a>
 </li>
 <li id="navigation2Group30" style="display: none;">
-<input data-value="M38" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '외교부');" title="외교부 입니다." type="checkbox" value="외교부"/>
-<label for="searchDeptListRe30" onclick="filterChk('searchDeptListRe', '외교부');"></label>
-<a onclick="filterChk('searchDeptListRe', '외교부');" title="전체">외교부</a>
+<input data-value="M37" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '여성가족부');" title="여성가족부 입니다." type="checkbox" value="여성가족부"/>
+<label for="searchDeptListRe30" onclick="filterChk('searchDeptListRe', '여성가족부');"></label>
+<a onclick="filterChk('searchDeptListRe', '여성가족부');" title="전체">여성가족부</a>
 </li>
 <li id="navigation2Group31" style="display: none;">
-<input data-value="M39" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '원자력안전위원회');" title="원자력안전위원회 입니다." type="checkbox" value="원자력안전위원회"/>
-<label for="searchDeptListRe31" onclick="filterChk('searchDeptListRe', '원자력안전위원회');"></label>
-<a onclick="filterChk('searchDeptListRe', '원자력안전위원회');" title="전체">원자력안전위원회</a>
+<input data-value="M38" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '외교부');" title="외교부 입니다." type="checkbox" value="외교부"/>
+<label for="searchDeptListRe31" onclick="filterChk('searchDeptListRe', '외교부');"></label>
+<a onclick="filterChk('searchDeptListRe', '외교부');" title="전체">외교부</a>
 </li>
 <li id="navigation2Group32" style="display: none;">
-<input data-value="M42" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '중소벤처기업부');" title="중소벤처기업부 입니다." type="checkbox" value="중소벤처기업부"/>
-<label for="searchDeptListRe32" onclick="filterChk('searchDeptListRe', '중소벤처기업부');"></label>
-<a onclick="filterChk('searchDeptListRe', '중소벤처기업부');" title="전체">중소벤처기업부</a>
+<input data-value="M64" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '우주항공청');" title="우주항공청 입니다." type="checkbox" value="우주항공청"/>
+<label for="searchDeptListRe32" onclick="filterChk('searchDeptListRe', '우주항공청');"></label>
+<a onclick="filterChk('searchDeptListRe', '우주항공청');" title="전체">우주항공청</a>
 </li>
 <li id="navigation2Group33" style="display: none;">
-<input data-value="M58" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '질병관리청');" title="질병관리청 입니다." type="checkbox" value="질병관리청"/>
-<label for="searchDeptListRe33" onclick="filterChk('searchDeptListRe', '질병관리청');"></label>
-<a onclick="filterChk('searchDeptListRe', '질병관리청');" title="전체">질병관리청</a>
+<input data-value="M39" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '원자력안전위원회');" title="원자력안전위원회 입니다." type="checkbox" value="원자력안전위원회"/>
+<label for="searchDeptListRe33" onclick="filterChk('searchDeptListRe', '원자력안전위원회');"></label>
+<a onclick="filterChk('searchDeptListRe', '원자력안전위원회');" title="전체">원자력안전위원회</a>
 </li>
 <li id="navigation2Group34" style="display: none;">
-<input data-value="M50" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '통계청');" title="통계청 입니다." type="checkbox" value="통계청"/>
-<label for="searchDeptListRe34" onclick="filterChk('searchDeptListRe', '통계청');"></label>
-<a onclick="filterChk('searchDeptListRe', '통계청');" title="전체">통계청</a>
+<input data-value="M42" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '중소벤처기업부');" title="중소벤처기업부 입니다." type="checkbox" value="중소벤처기업부"/>
+<label for="searchDeptListRe34" onclick="filterChk('searchDeptListRe', '중소벤처기업부');"></label>
+<a onclick="filterChk('searchDeptListRe', '중소벤처기업부');" title="전체">중소벤처기업부</a>
 </li>
 <li id="navigation2Group35" style="display: none;">
-<input data-value="M43" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '통일부');" title="통일부 입니다." type="checkbox" value="통일부"/>
-<label for="searchDeptListRe35" onclick="filterChk('searchDeptListRe', '통일부');"></label>
-<a onclick="filterChk('searchDeptListRe', '통일부');" title="전체">통일부</a>
+<input data-value="M58" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '질병관리청');" title="질병관리청 입니다." type="checkbox" value="질병관리청"/>
+<label for="searchDeptListRe35" onclick="filterChk('searchDeptListRe', '질병관리청');"></label>
+<a onclick="filterChk('searchDeptListRe', '질병관리청');" title="전체">질병관리청</a>
 </li>
 <li id="navigation2Group36" style="display: none;">
-<input data-value="M44" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '특허청');" title="특허청 입니다." type="checkbox" value="특허청"/>
-<label for="searchDeptListRe36" onclick="filterChk('searchDeptListRe', '특허청');"></label>
-<a onclick="filterChk('searchDeptListRe', '특허청');" title="전체">특허청</a>
+<input data-value="M50" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '통계청');" title="통계청 입니다." type="checkbox" value="통계청"/>
+<label for="searchDeptListRe36" onclick="filterChk('searchDeptListRe', '통계청');"></label>
+<a onclick="filterChk('searchDeptListRe', '통계청');" title="전체">통계청</a>
 </li>
 <li id="navigation2Group37" style="display: none;">
-<input data-value="M45" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '해양경찰청');" title="해양경찰청 입니다." type="checkbox" value="해양경찰청"/>
-<label for="searchDeptListRe37" onclick="filterChk('searchDeptListRe', '해양경찰청');"></label>
-<a onclick="filterChk('searchDeptListRe', '해양경찰청');" title="전체">해양경찰청</a>
+<input data-value="M43" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '통일부');" title="통일부 입니다." type="checkbox" value="통일부"/>
+<label for="searchDeptListRe37" onclick="filterChk('searchDeptListRe', '통일부');"></label>
+<a onclick="filterChk('searchDeptListRe', '통일부');" title="전체">통일부</a>
 </li>
 <li id="navigation2Group38" style="display: none;">
-<input data-value="M46" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '해양수산부');" title="해양수산부 입니다." type="checkbox" value="해양수산부"/>
-<label for="searchDeptListRe38" onclick="filterChk('searchDeptListRe', '해양수산부');"></label>
-<a onclick="filterChk('searchDeptListRe', '해양수산부');" title="전체">해양수산부</a>
+<input data-value="M44" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '특허청');" title="특허청 입니다." type="checkbox" value="특허청"/>
+<label for="searchDeptListRe38" onclick="filterChk('searchDeptListRe', '특허청');"></label>
+<a onclick="filterChk('searchDeptListRe', '특허청');" title="전체">특허청</a>
 </li>
 <li id="navigation2Group39" style="display: none;">
-<input data-value="M47" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '행정안전부');" title="행정안전부 입니다." type="checkbox" value="행정안전부"/>
-<label for="searchDeptListRe39" onclick="filterChk('searchDeptListRe', '행정안전부');"></label>
-<a onclick="filterChk('searchDeptListRe', '행정안전부');" title="전체">행정안전부</a>
+<input data-value="M45" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '해양경찰청');" title="해양경찰청 입니다." type="checkbox" value="해양경찰청"/>
+<label for="searchDeptListRe39" onclick="filterChk('searchDeptListRe', '해양경찰청');"></label>
+<a onclick="filterChk('searchDeptListRe', '해양경찰청');" title="전체">해양경찰청</a>
 </li>
 <li id="navigation2Group40" style="display: none;">
-<input data-value="M49" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '환경부');" title="환경부 입니다." type="checkbox" value="환경부"/>
-<label for="searchDeptListRe40" onclick="filterChk('searchDeptListRe', '환경부');"></label>
-<a onclick="filterChk('searchDeptListRe', '환경부');" title="전체">환경부</a>
+<input data-value="M46" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '해양수산부');" title="해양수산부 입니다." type="checkbox" value="해양수산부"/>
+<label for="searchDeptListRe40" onclick="filterChk('searchDeptListRe', '해양수산부');"></label>
+<a onclick="filterChk('searchDeptListRe', '해양수산부');" title="전체">해양수산부</a>
 </li>
 <li id="navigation2Group41" style="display: none;">
-<input data-value="M97" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '다부처');" title="다부처 입니다." type="checkbox" value="다부처"/>
-<label for="searchDeptListRe41" onclick="filterChk('searchDeptListRe', '다부처');"></label>
-<a onclick="filterChk('searchDeptListRe', '다부처');" title="전체">다부처</a>
+<input data-value="M47" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '행정안전부');" title="행정안전부 입니다." type="checkbox" value="행정안전부"/>
+<label for="searchDeptListRe41" onclick="filterChk('searchDeptListRe', '행정안전부');"></label>
+<a onclick="filterChk('searchDeptListRe', '행정안전부');" title="전체">행정안전부</a>
 </li>
 <li id="navigation2Group42" style="display: none;">
+<input data-value="M49" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '환경부');" title="환경부 입니다." type="checkbox" value="환경부"/>
+<label for="searchDeptListRe42" onclick="filterChk('searchDeptListRe', '환경부');"></label>
+<a onclick="filterChk('searchDeptListRe', '환경부');" title="전체">환경부</a>
+</li>
+<li id="navigation2Group43" style="display: none;">
+<input data-value="M97" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '다부처');" title="다부처 입니다." type="checkbox" value="다부처"/>
+<label for="searchDeptListRe43" onclick="filterChk('searchDeptListRe', '다부처');"></label>
+<a onclick="filterChk('searchDeptListRe', '다부처');" title="전체">다부처</a>
+</li>
+<li id="navigation2Group44" style="display: none;">
 <input data-value="M99" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기타');" title="기타 입니다." type="checkbox" value="기타"/>
-<label for="searchDeptListRe42" onclick="filterChk('searchDeptListRe', '기타');"></label>
+<label for="searchDeptListRe44" onclick="filterChk('searchDeptListRe', '기타');"></label>
 <a onclick="filterChk('searchDeptListRe', '기타');" title="전체">기타</a>
 </li>
 </ul>
