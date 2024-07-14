@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2",
+                UserId: "HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2" === "ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2" ? "Anonymous" : "User",
+                UserType: "HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2" === "HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2'
+            'user_id': 'HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2'
+            'crm_id': 'HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?59ff9fa42b9846ea"></script><style>body {
+<script src="/Content/dist/js/preload.js?97e4eb6cb7bea9d8"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?59ff9fa42b9846ea"></script><script defer="defer" src="/Content/dist/js/default.js?59ff9fa42b9846ea"></script><link href="/Content/dist/css/default.css?59ff9fa42b9846ea" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?97e4eb6cb7bea9d8"></script><script defer="defer" src="/Content/dist/js/default.js?97e4eb6cb7bea9d8"></script><link href="/Content/dist/css/default.css?97e4eb6cb7bea9d8" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -798,7 +798,8 @@
 <div :class="{
                 'bg-success-50 border-success-300': theme === 'success',
                 'bg-danger-50 border-danger-300': theme === 'danger',
-                'bg-info-50 border-info-300': theme === 'info' || !theme
+                'bg-info-50 border-info-300': theme === 'info',
+                'bg-gray-50 border-gray-300' : theme === 'disabled' || !theme
             }" class="flex items-center w-full px-4 py-5 rounded-md border">
 <span class="mr-2.5 text-white">
 <template v-if="theme === 'success'">
@@ -809,6 +810,11 @@
 <template v-else-if="theme === 'danger'">
 <svg class="w-6 h-6 fill-danger-400" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</template>
+<template v-else-if="theme === 'disabled'">
+<svg class="w-6 h-6 fill-gray-400" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" fill-rule="evenodd"></path>
 </svg>
 </template>
 <template v-else="">
@@ -2701,7 +2707,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="IrvwD_eILIM7VVq8JVH37Ur_B96asDm1IdWFspCYZbMMA1LFBDNb4_27-9lG0zGRFIncAoTZJWfO2xktT_1Yu9TPR5I1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="mCeYKR0hYov5ICiwNjXfZPwS8z2SPEiVeg24NLikymzlMeD1Nt1BXclopxAo2_ipk4mbWLmeSzMTa5t4PuulEISkpsc1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4018,7 +4024,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'ViLCe5Zm7UEFMoBs6dYmSD4L4UMS58vqPS71olPzqogllzhxo47RdAz_7WdkkiMkJX_n35z8C2Xqt4Ae3SxNeM1RcaTmysqxFG_Y6FMlcqkWI4Yo2zQjv26z0UHzoe8IAwyYtg2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4072,7 +4078,7 @@ docReady(() => {
 
     const bannerDataRaw = '[]';
     const searchDataRaw = '';
-    const supportDataRaw = '[]';
+    const supportDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4565,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/7a8d9626b0f443b09f7794bfd92e96fc.jpg\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/898716dc317244b2af1ef0c2bdb51025.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/efficcrm/event/86986\",\"BannerTitle\":\"3년만에 B2C 매출 30배 성장\",\"BannerDescription\":\"CRM마케팅으로 매출 극대화하는 방법\",\"BannerMobileDescription\":\"CRM마케팅으로 매출 극대화하는 방법\",\"Banner\":{\"color\":{\"title\":\"#141617\",\"description\":\"#141617\",\"date\":\"#141617\",\"place\":\"#141617\"}},\"BannerDate\":\"2024. 07. 16.(화) 20:00\",\"BannerPlace\":\"온라인 행사\",\"Support\":true}]';
     const defaultDataRaw = '[{\"Position\":\"search\",\"Id\":1158,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerMobileDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1169,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerMobileDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1228,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://event-us.kr/hostcenter\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerMobileDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null}]';
     const priceConstants = {
         min: 0,

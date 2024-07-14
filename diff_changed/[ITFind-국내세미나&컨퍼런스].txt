@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2024-07-08"></script>
+<script src="/contents/js/func.js?ver=2024-07-15"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -475,7 +475,7 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>2814건</strong></span>
+<span>총 게시물 : <strong>2818건</strong></span>
 <span>현재페이지 : <strong>1/282.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
@@ -506,7 +506,7 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">2814</th>
+<th data-cell-header="번호" scope="row">2818</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13685&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.10~11] 2024 첨단 모빌리티 산업 트렌드 및 핵심기술 세미나 / 한국</a></td>
@@ -514,7 +514,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-03-01~2024-09-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2813</th>
+<th data-cell-header="번호" scope="row">2817</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13734&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.6] 탄소중립 재생합성연료(e-Fuel) 생산 및 활용기술 세미나 / 한국</a></td>
@@ -522,7 +522,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-05-01~2024-09-05</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2812</th>
+<th data-cell-header="번호" scope="row">2816</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13661&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.4~5] 2024년 탄소중립을 위한 CCUS 기술 동향 및 사업전략 세미나 / 한국</a></td>
@@ -530,7 +530,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-02-01~2024-09-03</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2811</th>
+<th data-cell-header="번호" scope="row">2815</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13686&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.3] 2024 미래 도심항공모빌리티 (UAM) 상용화사업 추진전략 세미나 / 한국</a></td>
@@ -538,7 +538,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-03-01~2024-09-02</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2810</th>
+<th data-cell-header="번호" scope="row">2814</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13758&amp;boardParam1=ko&amp;searchTarget2=">국내//[08.29] 수소연료전지 개발 및 실증 사례와 시설 안전 기준/인증 방안 / 한국</a></td>
@@ -546,7 +546,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-06-17~2024-08-28</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2809</th>
+<th data-cell-header="번호" scope="row">2813</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13718&amp;boardParam1=ko&amp;searchTarget2=">국내//[8.27] 실무자를 위한 전기차 폐배터리 재활용기술 집중교육 세미나 / 한국</a></td>
@@ -554,7 +554,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-04-01~2024-08-26</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2808</th>
+<th data-cell-header="번호" scope="row">2812</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13778&amp;boardParam1=ko&amp;searchTarget2=">국내//[08.23] 고전압 배터리관리시스템(BMS) 이해 및 최적화 교육 / 한국</a></td>
+<td data-cell-header="행사기간">2024-08-23~2024-08-23</td>
+<td data-cell-header="접수기간">2024-07-09~2024-08-22</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2811</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13771&amp;boardParam1=ko&amp;searchTarget2=">국내//[한국광기술원/07.18] Micro LED 핵심 소재 기술개발과 상용화를 위한 심층 분석 세미나 / 한국</a></td>
@@ -562,7 +570,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-01~2024-07-18</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2807</th>
+<th data-cell-header="번호" scope="row">2810</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13770&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.16] 온디바이스 AI 최근 기술개발과 적용 및 신(新)비즈니스 사업화 방안 세미나 / 한국</a></td>
@@ -570,20 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-06-27~2024-07-15</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2806</th>
-<td data-cell-header="구분">예정</td>
+<th data-cell-header="번호" scope="row">2809</th>
+<td data-cell-header="구분">종료</td>
 <td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13769&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.12] 태양광 폐패널(폐모듈) 재활용ㆍ재사용 기술개발과 성공사례 및 사업전략 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2024-07-12~2024-07-12</td>
-<td data-cell-header="접수기간">2024-06-25~2024-07-11</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">2805</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13756&amp;boardParam1=ko&amp;searchTarget2=">국내//[7/12] “중국은 어떻게 전기차, 모빌리티 강국이 되었는가?” [인사이트콘서트Ⅱ]  / 한국</a></td>
-<td data-cell-header="행사기간">2024-07-12~2024-07-12</td>
-<td data-cell-header="접수기간">2024-06-10~2024-07-11</td>
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13777&amp;boardParam1=ko&amp;searchTarget2=">국내//GPT-4o 등 멀티모달모델이 가져올 파급효과 전망 그리고 AI-UX의 변화 / 한국</a></td>
+<td data-cell-header="행사기간">2024-07-15~2024-07-15</td>
+<td data-cell-header="접수기간">2024-06-12~2024-07-12</td>
 </tr>
 </tbody>
 </table>
