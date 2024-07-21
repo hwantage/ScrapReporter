@@ -46,7 +46,7 @@
 <script async="async" data-turbolinks-track="false" defer="defer" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/application-d696e851b7ccf914b3752f2927f5d87d474b4c6376443f4af2fa3df6ed401325.js"></script>
 <script data-turbolinks-track="false" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/controllers/seminars-07263be6dab85106e76160b1fe1cd524c0164649ba40806c403a1f82c0c57061.js"></script>
 <meta content="authenticity_token" name="csrf-param">
-<meta content="ZM2wfGQKCc0Q/KjoGydVCXDgw4cpRChSGA0doBdOBkOPaLytZdthKT1VC/qy6joeWJjy+QtNziAjWMU92BbVNw==" name="csrf-token">
+<meta content="mxkJz2vuV7K/12w2zuzRt2yqpAec0KKGoGa0kU47wco8l1g/PfdsIQu8VGCNbh+i8U6aUaA6aWO94v9iz4SbbA==" name="csrf-token">
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   var googletag = googletag || {};
@@ -132,7 +132,7 @@ ga("send","pageview");
 <li class="linkedin"><a href="https://www.linkedin.com/in/sharedit2014/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 <ul class="list-inline hidden-xs">
-<li><a href="/cdn-cgi/l/email-protection#b4d9d5c7c0d1c6f4c7dcd5c6d1d0ddc09ad7db9adfc6"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="4528243631203705362d243720212c316b262a6b2e37">[email protected]</span></a></li>
+<li><a href="/cdn-cgi/l/email-protection#88e5e9fbfcedfac8fbe0e9faedece1fca6ebe7a6e3fa"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="bfd2decccbdacdffccd7decddadbd6cb91dcd091d4cd">[email protected]</span></a></li>
 <li><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"><i class="fa fa-youtube-play pr-5 pl-10" title="SHAREDIT CLASS / SHAREDIT LIVE"></i></a><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"> YouTube</a></li>
 <li><a href="http://www.podbbang.com/ch/15150" target="_blank"><i class="fa fa-podcast pr-5 pl-10" title="팟빵 - 쌤팍의 전산쟁이 이야기"></i></a><a href="https://www.sharedit.co.kr/posts/1236" target="_blank"> 팟캐스트</a></li>
 </ul>
@@ -148,7 +148,7 @@ ga("send","pageview");
 <button class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" type="button"><i class="fa fa-lock pr-5"></i> 로그인</button>
 <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 <li>
-<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="nm3M9MDqHaysBJXCkDcngolcjQFSuFj1PyPgbgyWErl1yMAlwTt1SIGtNtA5+kiVoSS8f3CxvocEdjjzw87BzQ=="/>
+<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="xGrg3soeTwruqNmeD/Mxy98UWvL//Hle4vCcVPx4p8Vj5LEunAd0mVrD4chMcf/eQvBkpMMWsrv/dNenfcf9Yw=="/>
 <div class="form-group has-feedback">
 <label class="control-label">이메일 주소</label>
 <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="" type="email" value=""/>
@@ -379,8 +379,8 @@ ga("send","pageview");
 <i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
 </a> </li>
 <li class="col-lg-6">
-<a href="/companies/synapsoft/products">
-<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
+<a href="/companies/jiransoft/products">
+<i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
 </a> </li>
 </ul>
 </div>
@@ -388,12 +388,12 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/bellins/products">
-<i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
+<a href="/companies/synapsoft/products">
+<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
 </a> </li>
 <li class="col-lg-6">
-<a href="/companies/jiransoft/products">
-<i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
+<a href="/companies/bellins/products">
+<i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
 </a> </li>
 </ul>
 </div>
@@ -596,24 +596,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul class="list" style="min-height: 700px;">
 <div class="tags-cloud2 mb-10" style="color: #000000; margin-top: -20px;">
 <div class="tag">
-<a href="/seminars/1986" title="LG CNS - [LG CNS] AI기반 UI테스트 자동화 솔루션 Autify를 런칭합니다!">16일 (화)</a>
-</div>
-<div class="tag">
-<a href="/seminars/1991" title="산업교육연구소 - [07.16] 온디바이스 AI 최근 기술개발과 적용 및 신(新)비즈니스 사업화 방안 세미나">16일 (화)</a>
-</div>
-<div class="tag">
-<a href="/seminars/1976" title="엠클라우드브리지 - [웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">17일 (수)</a>
-</div>
-<div class="tag">
-<a href="/seminars/1980" title="엠클라우드브리지 - [무료 교육] 7월 Copilot for Microsoft 365 사용 무료 체험 교육 초청 _ Copilot for Microsoft 365 적용을 통한 업무 혁신 방안">18일 (목)</a>
-</div>
-<div class="tag">
-<a href="/seminars/1981" title="엠클라우드브리지 - AI 시대, 데이터 통합 분석 플랫폼 _ 7월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!">19일 (금)</a>
-</div>
-<div class="tag">
-<a href="/seminars/1998" title="더존비즈온 - [더존] ONE AI &amp; Amaranth 10 세미나">22일 (월)</a>
-</div>
-<div class="tag">
 <a href="/seminars/1992" title="NHN Cloud - [웨비나] 요즘 잘나가는 스타트업의 비즈니스 커뮤니케이션 SaaS (w/삼쩜삼, 퀸잇, 부드러운돌멩이)">23일 (화)</a>
 </div>
 <div class="tag">
@@ -628,7 +610,31 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="tag">
 <a href="/seminars/1990" title="메가존클라우드 스플렁크 사업부 - [웨비나] 클라우드 보안을 한눈에 관리하는 방법? _ Splunk ES 웨비나 ! ">24일 (수)</a>
 </div>
+<div class="tag">
+<a href="/seminars/1999" title="Slack - CJ올리브영과 함께하는 Why Slack 라이브 웨비나에서 Slack 활용 생산성 업그레이드 tip 공개합니다.">24일 (수)</a>
 </div>
+<div class="tag">
+<a href="/seminars/2000" title="공명 파트너즈  Weirdsector - [세미나] 데이터 및 지표 관리로 투자 유치 승률 올리기">29일 (월)</a>
+</div>
+</div>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1999/low_slack.png');"></figure>
+<header>
+<span class="sponsor">
+Slack
+</span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/1999" title="CJ올리브영과 함께하는 Why Slack 라이브 웨비나에서 Slack 활용 생산성 업그레이드 tip 공개합니다.">CJ올리브영과 함께하는 Why Slack 라이브 웨비나에서 Slack 활용 생산성 업그레이드 tip 공개합니다.</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-07-24(수) 15:00 ~ 16:15</dd>
+<dt>댓글</dt>
+<dd>1개의 댓글이 있습니다.</dd>
+</dl>
+</li>
 <li>
 <figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1992/low_shared_it.png');"></figure>
 <header>
@@ -648,39 +654,21 @@ NHN Cloud
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1998/low_240722%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2000/low_%EC%84%B8%EB%AF%B8%EB%82%98_%ED%8F%AC%EC%8A%A4%ED%84%B0_%EC%8D%B8%EB%84%A4%EC%9D%BC-1.png');"></figure>
 <header>
 <span class="sponsor">
-더존비즈온
+공명 파트너즈 Weirdsector
 </span>
 <span class="category">세미나</span>
 <strong>
-<a href="/seminars/1998" title="[더존] ONE AI &amp; Amaranth 10 세미나">[더존] ONE AI &amp; Amaranth 10 세미나</a>
+<a href="/seminars/2000" title="[세미나] 데이터 및 지표 관리로 투자 유치 승률 올리기">[세미나] 데이터 및 지표 관리로 투자 유치 승률 올리기</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-07-22(월) 15:00 ~ 17:00</dd>
+<dd>2024-07-29(월) 14:00 ~ 16:00</dd>
 <dt>장소</dt>
-<dd>서울 중구 을지로 29 더존을지타워</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1976/low__MCloudBridge_-2024%EB%85%84-7%EC%9B%94-Ai-365-%EC%A0%84%EC%9E%90%EA%B2%B0%EC%9E%AC-%EC%82%AC%EC%9A%A9-%EC%9B%A8%EB%B9%84%EB%82%98-%EC%B4%88%EC%B2%AD_SNS_SharedIT.jpg');"></figure>
-<header>
-<span class="sponsor">
-엠클라우드브리지
-</span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/1976" title="[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-07-17(수) 14:00 ~ 15:30</dd>
+<dd>서울시 강남구 역삼로 180 마루180 B1층 이벤트홀</dd>
 <dt>댓글</dt>
 <dd>2개의 댓글이 있습니다.</dd>
 </dl>
@@ -762,10 +750,30 @@ NHN Cloud
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1981/low__MCloudBridge_-2024%EB%85%84-7%EC%9B%94-Microsoft-Fabric-%EA%B8%B0%EB%B0%98-%EA%B2%BD%EC%98%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-BI-%EA%B5%90%EC%9C%A1_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1998/low_240722%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-엠클라우드브리지
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
+<span class="category">세미나</span>
+<strong>
+<a href="/seminars/1998" title="[더존] ONE AI &amp; Amaranth 10 세미나">[더존] ONE AI &amp; Amaranth 10 세미나</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-07-22(월) 15:00 ~ 17:00</dd>
+<dt>장소</dt>
+<dd>서울 중구 을지로 29 더존을지타워</dd>
+<dt>댓글</dt>
+<dd>2개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1981/low__MCloudBridge_-2024%EB%85%84-7%EC%9B%94-Microsoft-Fabric-%EA%B8%B0%EB%B0%98-%EA%B2%BD%EC%98%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-BI-%EA%B5%90%EC%9C%A1_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
+<header>
+<span class="sponsor">
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
 </span>
 <span class="category">교육</span>
 <strong>
@@ -778,14 +786,14 @@ NHN Cloud
 <dt>장소</dt>
 <dd>wework 삼성2호점 11층 컨퍼런스룸 (서울 강남구 테헤란로 518, 11층)</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1980/low__MCloudBridge_-2024%EB%85%84--7%EC%9B%94-Copilot-for-M365-%EC%82%AC%EC%9A%A9-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SNS.png');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1980/low__MCloudBridge_-2024%EB%85%84--7%EC%9B%94-Copilot-for-M365-%EC%82%AC%EC%9A%A9-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SNS.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-엠클라우드브리지
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
 </span>
 <span class="category">교육</span>
 <strong>
@@ -798,14 +806,32 @@ NHN Cloud
 <dt>장소</dt>
 <dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1986/low_LG-CNS-%EC%86%94%EB%A3%A8%EC%85%98_Autify%EC%9B%A8%EB%B9%84%EB%82%98_%EB%93%B1%EB%A1%9D%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%83%81%EB%8B%A8-%EB%B0%B0%EB%84%88_720x404.jpg');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1976/low__MCloudBridge_-2024%EB%85%84-7%EC%9B%94-Ai-365-%EC%A0%84%EC%9E%90%EA%B2%B0%EC%9E%AC-%EC%82%AC%EC%9A%A9-%EC%9B%A8%EB%B9%84%EB%82%98-%EC%B4%88%EC%B2%AD_SNS_SharedIT.jpg');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-LG CNS
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/1976" title="[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-07-17(수) 14:00 ~ 15:30</dd>
+<dt>댓글</dt>
+<dd>3개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1986/low_LG-CNS-%EC%86%94%EB%A3%A8%EC%85%98_Autify%EC%9B%A8%EB%B9%84%EB%82%98_%EB%93%B1%EB%A1%9D%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%83%81%EB%8B%A8-%EB%B0%B0%EB%84%88_720x404.jpg');opacity: .2;"></figure>
+<header>
+<span class="sponsor">
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
 </span>
 <span class="category">웨비나</span>
 <strong>
@@ -816,14 +842,14 @@ LG CNS
 <dt>일시</dt>
 <dd>2024-07-16(화) 15:10 ~ 16:00</dd>
 <dt>댓글</dt>
-<dd>3개의 댓글이 있습니다.</dd>
+<dd>4개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1991/low_%ED%99%8D%EB%B3%B4%ED%8F%AC%EC%8A%A4%ED%84%B0_0716_960540.jpg');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1991/low_%ED%99%8D%EB%B3%B4%ED%8F%AC%EC%8A%A4%ED%84%B0_0716_960540.jpg');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-산업교육연구소
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
 </span>
 <span class="category">세미나</span>
 <strong>
@@ -836,7 +862,7 @@ LG CNS
 <dt>장소</dt>
 <dd>서울특별시 금천구 디지털로9길 68 대륭포스트타워5차 2층 사회복지교육센터 평생교육원</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -856,7 +882,7 @@ LG CNS
 <dt>장소</dt>
 <dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -874,7 +900,7 @@ LG CNS
 <dt>일시</dt>
 <dd>2024-07-11(목) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -894,7 +920,7 @@ LG CNS
 <dt>장소</dt>
 <dd>그래비티 서울 판교 호텔</dd>
 <dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>3개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -912,7 +938,7 @@ LG CNS
 <dt>일시</dt>
 <dd>2024-07-10(수) 14:00 ~ 15:10</dd>
 <dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>3개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -930,7 +956,7 @@ LG CNS
 <dt>일시</dt>
 <dd>2024-07-10(수) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -950,7 +976,7 @@ LG CNS
 <dt>장소</dt>
 <dd>서울특별시 영등포구 국제금융로 10 서울 국제금융 센터 콘레드호텔</dd>
 <dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>3개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -968,7 +994,7 @@ LG CNS
 <dt>일시</dt>
 <dd>2024-07-09(화) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>3개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -986,7 +1012,7 @@ LG CNS
 <dt>일시</dt>
 <dd>2024-07-08(월) 10:00 ~ 11:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -1076,10 +1102,7 @@ LG CNS
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1689" title="특강 다시보고 설문조사에 1분 투자하면 커피가 딱!">특강 다시보고 설문조사에 (설문조사)<span>D-16</span></a>
-</li>
-<li>
-<a ,="" href="/promotions/1675" title="태니엄, 1주일 넘게 걸리던 패치 작업을 30분만에 끝낸 비결">태니엄, 1주일 넘게 걸 (자료다운로)<span>D-2</span></a>
+<a ,="" href="/promotions/1689" title="특강 다시보고 설문조사에 1분 투자하면 커피가 딱!">특강 다시보고 설문조사에 (설문조사)<span>D-9</span></a>
 </li>
 </ul>
 </div>
@@ -1088,30 +1111,28 @@ LG CNS
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1684" title=" [선착순 1,000명] #DellTechForum 등록하시고 얼리버드 경품을 놓치지 마세요!"> [선착순 1,000명] (기타)<span>D-11
+<a ,="" href="/promotions/1636" title="[AHTID] 최소의 임대 백업 서비스부터 최적의 프라이빗 백업 구축까지">[AHTID] 최소의 임 (상담요청)<span>D-9
 </span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1677" title="기업의 AI 미래를 어떻게 준비세요? AI와 Data를 위한 IBM watsonx 플랫폼과 함께 AI 미래를 준비하세요!">기업의 AI 미래를 어떻 (기타)<span>D-5
+<a ,="" href="/promotions/1688" title="[AHTID] 맞춤형 가상화 솔루션 컨설팅">[AHTID] 맞춤형 가 (상담요청)<span>D-67
 </span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1680" title="중소/벤처/OEM 대상 HP 고성능 AI PC (워크스테이션) 및 컨설팅 제공 대상 업체 공모 ">중소/벤처/OEM 대상 (기타)<span>D-16
+<a ,="" href="/seminars/2001" title="[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[웨비나] AI시대,Op (웨비나) <span>D-30</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1678" title="[다시보기 이벤트] 이론부터 실전까지, 오픈소스 DBMS 완전 정복!">[다시보기 이벤트] 이론 (기타)<span>D-2
 </span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1613" title="대한민국 1등 DAS를 1등 가격, 최고의 품질과 서비스로! ">대한민국 1등 DAS를 (할인혜택)<span>D-16
-</span></a>
+<a ,="" href="/seminars/1999" title="CJ올리브영과 함께하는 Why Slack 라이브 웨비나에서 Slack 활용 생산성 업그레이드 tip 공개합니다.">CJ올리브영과 함께하는 (웨비나) <span>D-2</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/1982" title="해커그라운드 해커톤 2024">해커그라운드 해커톤 20 (세미나) <span>D-41</span></a>
+<a ,="" href="/seminars/1982" title="해커그라운드 해커톤 2024">해커그라운드 해커톤 20 (세미나) <span>D-34</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1636" title="[AHTID] 최소의 임대 백업 서비스부터 최적의 프라이빗 백업 구축까지">[AHTID] 최소의 임 (상담요청)<span>D-16
-</span></a>
-</li>
-<li>
-<a ,="" href="/promotions/1689" title="특강 다시보고 설문조사에 1분 투자하면 커피가 딱!">특강 다시보고 설문조사에 (설문조사)<span>D-16
+<a ,="" href="/promotions/1652" title="U+웍스 팩트체크 이벤트">U+웍스 팩트체크 이벤트 (할인혜택)<span>D-40
 </span></a>
 </li>
 </ul>
@@ -1130,21 +1151,21 @@ LG CNS
 <div class="separator-2"></div>
 <div class="overlay-container overlay-visible" style="width: 100%; border: 1px solid #eee; height:220px; display:table-cell;vertical-align:middle;">
 <div class="sponsor-ad-box" style="width:260px;">
-<img alt="Medium officekeeper rgb en hv" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","399",null);' src="//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/399/medium_officekeeper_rgb_en_hv.png"/>
+<img alt="Medium %eb%b9%84%eb%94%94%ec%98%a4%ed%94%84%eb%a0%88%ec%86%8c %ec%8d%b8%eb%84%a4%ec%9d%bc" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","641",null);' src="//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/641/medium_%EB%B9%84%EB%94%94%EC%98%A4%ED%94%84%EB%A0%88%EC%86%8C-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg"/>
 </div>
-<a class="overlay-link" href="/evaluations/products/399">
+<a class="overlay-link" href="/evaluations/products/641">
 <i class="fa fa-link"></i>
 </a>
 <div class="overlay-bottom hidden-xs" style="padding: 10px;">
 <div class="text">
-<p class="lead margin-clear text-left" style="font-size: 16px;">오피스키퍼 </p>
+<p class="lead margin-clear text-left" style="font-size: 16px;">콘텐츠 용량 최적화, 비디오프레소</p>
 </div>
 </div>
 </div>
 <script>
     ;(function($){
       $(function(){
-        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","399",null);
+        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","641",null);
       });
     })(jQuery);
   </script>
@@ -1166,19 +1187,19 @@ LG CNS
 <nav>
 <ul class="nav product-brands-list">
 <li>
-<a href="/seminars/1992" rel="nofollow" target="_self" title="기대합니다">기대합니다<span>세미나</span></a>
+<a href="/seminars/1991" rel="nofollow" target="_self" title="정보 감사합니다.">정보 감사합니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/seminars/1986" rel="nofollow" target="_self" title="참고하겠습니다">참고하겠습니다<span>세미나</span></a>
+<a href="/seminars/1986" rel="nofollow" target="_self" title="정보 감사합니다.">정보 감사합니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/promotions/1684" rel="nofollow" target="_self" title="참여완료 기대합니다">참여완료 기대합니다<span>프로모션</span></a>
+<a href="/seminars/1976" rel="nofollow" target="_self" title="정보 감사합니다.">정보 감사합니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/board/solutions/3113" rel="nofollow" target="_self">시스코 네트워크 장비 견적 문의<span>상담실</span></a>
+<a href="/seminars/1980" rel="nofollow" target="_self" title="정보 감사합니다.">정보 감사합니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/board/solutions/3116" rel="nofollow" target="_self">IBM SYSTEM X 3250<span>상담실</span></a>
+<a href="/seminars/1981" rel="nofollow" target="_self" title="정보 감사합니다.">정보 감사합니다.<span>세미나</span></a>
 </li>
 </ul>
 </nav>
@@ -1199,7 +1220,7 @@ LG CNS
 <h3 class="title">IT 세미나/교육/프로모션 정보 구독 신청</h3>
 <p>새로운 세미나/교육/프로모션 정보를 메일로 편하게 받아 보세요. 정기적으로 보내 드립니다.</p>
 <div class="separator"></div>
-<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="L+Bwz31JoYylzSFRwR3VubWcPGfX8BnpfB6OkmTN43DERXwefJjJaIhkgkNo0LquneQNGfX5/5tHS1YPq5UwBA=="/>
+<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="EfpCuzQBZ0trPi830xHNm5U7uVuHgQzqP1zO+urUkkK2dBNLYhhc2N9VF2GQkwOOCN+HDbtrxw8i2IUJa2vI5A=="/>
 <div class="form-group has-feedback">
 <label class="sr-only" for="subscribe2">Email address</label>
 <input class="form-control" id="email" name="email" placeholder="Enter email" required="required" type="text"/>
@@ -1237,7 +1258,7 @@ Submit <i class="fa fa-send"></i>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>사업자 등록번호 : 144-81-29382</li>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>통신판매업신고 : 2017-용인수지-0227</li><br/>
 <li><i class="text-default fa fa-map-marker pr-5"></i>(주) 쉐어드커뮤니케이션</li>
-<li><a class="link-dark" href="/cdn-cgi/l/email-protection#f79a9684839285b7849f968592939e83d99498d99c85"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="630e021017061123100b021106070a174d000c4d0811">[email protected]</span></a></li>
+<li><a class="link-dark" href="/cdn-cgi/l/email-protection#1a777b696e7f685a69727b687f7e736e347975347168"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="c6aba7b5b2a3b486b5aea7b4a3a2afb2e8a5a9e8adb4">[email protected]</span></a></li>
 </ul>
 <ul class="list-inline small" style="margin-top: -9px">
 <li><i class="text-default fa fa-lock pr-5"></i><strong> <a class="link-dark" href="/welcome/terms_of_service" style="color: #777777;" target="_blank">이용약관</a> | <a class="link-dark" href="/welcome/personal_information" style="text-decoration: underline!important;" target="_blank">개인정보처리방침</a></strong></li>
@@ -1321,5 +1342,5 @@ Submit <i class="fa fa-send"></i>
       });
   });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8a353d34cd309c84',t:'MTcyMDk5OTE4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8a6eebd99f2e2a9a',t:'MTcyMTYwNDAyNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2",
+                UserId: "yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2" === "HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2" ? "Anonymous" : "User",
+                UserType: "yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2" === "yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2'
+            'user_id': 'yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2'
+            'crm_id': 'yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2'
         });
     </script>
 <script>
@@ -2377,7 +2377,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">티켓 할인 쿠폰 기능 베타 버전 출시 안내</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">광고 상품 가격 변경 등 사전 안내</a>
 </div>
 </div>
 </div>
@@ -2707,7 +2707,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="mCeYKR0hYov5ICiwNjXfZPwS8z2SPEiVeg24NLikymzlMeD1Nt1BXclopxAo2_ipk4mbWLmeSzMTa5t4PuulEISkpsc1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="5a4z4JrVTuBxR2WDHptc7let0KC3o3f46WNV005bAFN21Uq6JRZM-wjD1WomsjILZGE3kmaOxNjh3T96D_79Sy1FtE41"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4024,7 +4024,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'HXV87W34Zt1BdCuAyQagFt9OuzMrweLhkZj9Qlo5PRmojBv6FLVe-Ra3Sv0Ndx2quLJurG2Jv-CFplY8srxossevmIgVi33MSyjkSh-dLa_MnPblNFomxDnTXkmIv6JjhVdiqQ2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4076,9 +4076,9 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[]';
+    const bannerDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4712,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e5c47f668f1a434e94d9acbec76e18a2.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d522cf62d3d648d98af0a2f9d2b0db94.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://www.seoulwomen.or.kr/sfwf/contents/sfwf-notice.do?schM=view\u0026page=1\u0026viewCount=10\u0026id=28535\",\"BannerTitle\":\"양육 일환경 서비스/아이디어 공모\",\"BannerDescription\":\"2024 서울 우먼테크 해커톤\",\"BannerMobileDescription\":\"2024 서울 우먼테크 해커톤\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"2024. 07. 17.(수) ~ 2024. 07. 24.(수)\",\"BannerPlace\":\"온라인 접수\",\"Support\":false}]';
     const searchDataRaw = '';
-    const supportDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4565,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/7a8d9626b0f443b09f7794bfd92e96fc.jpg\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/898716dc317244b2af1ef0c2bdb51025.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/efficcrm/event/86986\",\"BannerTitle\":\"3년만에 B2C 매출 30배 성장\",\"BannerDescription\":\"CRM마케팅으로 매출 극대화하는 방법\",\"BannerMobileDescription\":\"CRM마케팅으로 매출 극대화하는 방법\",\"Banner\":{\"color\":{\"title\":\"#141617\",\"description\":\"#141617\",\"date\":\"#141617\",\"place\":\"#141617\"}},\"BannerDate\":\"2024. 07. 16.(화) 20:00\",\"BannerPlace\":\"온라인 행사\",\"Support\":true}]';
+    const supportDataRaw = '[]';
     const defaultDataRaw = '[{\"Position\":\"search\",\"Id\":1158,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerMobileDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1169,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerMobileDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1228,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://event-us.kr/hostcenter\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerMobileDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null}]';
     const priceConstants = {
         min: 0,
