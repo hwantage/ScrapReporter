@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2",
+                UserId: "fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2" === "yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2" ? "Anonymous" : "User",
+                UserType: "fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2" === "fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2'
+            'user_id': 'fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2'
+            'crm_id': 'fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?97e4eb6cb7bea9d8"></script><style>body {
+<script src="/Content/dist/js/preload.js?ab07cd1bc5e447d3"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?97e4eb6cb7bea9d8"></script><script defer="defer" src="/Content/dist/js/default.js?97e4eb6cb7bea9d8"></script><link href="/Content/dist/css/default.css?97e4eb6cb7bea9d8" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?ab07cd1bc5e447d3"></script><script defer="defer" src="/Content/dist/js/default.js?ab07cd1bc5e447d3"></script><link href="/Content/dist/css/default.css?ab07cd1bc5e447d3" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2474,83 +2474,8 @@
 <span v-else="">Service Brochure</span>
 </a>
 <ev-modal :open="brochure.isShow" @close="brochure.isShow = false" class="min-w-fit z-40">
-<template #title="">
-<span v-if="language === 'ko'">서비스 소개자료</span>
-<span v-else="">Service Brochure</span>
-</template>
-<template #description="">
-<span v-if="language === 'ko'">
-                                    아래 입력해주신 이메일로<span class="font-bold">서비스 소개자료를</span> 발송해드립니다.
-                                </span>
-<span v-else="">
-                                    We'll send our <span class="font-bold">Service Brochure</span> to your email.
-                                </span>
-</template>
-<form @submit.prevent="commitAnswer" class="space-y-4">
-<div>
-<ev-input required="" v-model="serviceModel.name">이름*</ev-input>
+<div ref="modalContent">
 </div>
-<div>
-<ev-input required="" v-model="serviceModel.email">이메일*</ev-input>
-</div>
-<div>
-<ev-input required="" v-model="serviceModel.phone">연락처*</ev-input>
-</div>
-<div>
-<ev-input placeholder="회사명/소속명" required="" v-model="serviceModel.team">
-                                        소속*
-                                    </ev-input>
-</div>
-<div class="grid grid-cols-2 gap-3">
-<ev-input placeholder="부서명" v-model="serviceModel.department">
-</ev-input>
-<ev-input placeholder="직급" v-model="serviceModel.level"></ev-input>
-</div>
-<div>
-<select :class="serviceModel.isEvent!=''?'text-gray-900':''" class="cursor-pointer block w-full p-3 border rounded-md shadow-sm hover:bg-gray-50 focus:outline-none text-gray-500" required="" v-model="serviceModel.isEvent">
-<option disabled="" selected="" value="">현재 행사를 준비하고 계신가요? *</option>
-<option class="!text-gray-900" value="예, 6개월 내 행사를 개최할 예정입니다.">
-                                            예, 6개월 내 행사를 개최할
-                                            예정입니다.
-                                        </option>
-<option class="!text-gray-900" value="아니오, 계획중인 행사가 없습니다.">
-                                            아니오, 계획중인 행사가 없습니다.
-                                        </option>
-</select>
-</div>
-<div>
-<div class="pt-1">
-<ev-checkbox @click="handleBrochureCheckAll" v-model="brochure.checkAll" value="true">
-<span class="text-sm">전체 동의하기</span>
-</ev-checkbox>
-</div>
-<div class="pt-1 ml-3">
-<ev-checkbox required="" v-model="brochure.privacy" value="true">
-<span class="text-sm">[필수] 개인정보 수집에 동의합니다.</span>
-<a class="underline text-sm ml-3" href="https://app.catchsecu.com/document/C/e2c8e0e33e2100f" target="_blank">내용보기</a>
-</ev-checkbox>
-</div>
-<div class="pt-1 ml-3">
-<ev-checkbox :value="true" v-model="serviceModel.marketing">
-<span class="text-sm">[선택] 마케팅 정보 수신에 동의합니다.</span>
-<a class="underline text-sm ml-3" href="/l/c_marketing" target="_blank">내용보기</a>
-</ev-checkbox>
-<span class="text-sm text-danger-500 ml-6" v-show="!serviceModel.marketing &amp;&amp; brochure.marketingUnchecked">
-                                            자료 발송을 위해 마케팅 정보수신에 동의해주세요.
-                                        </span>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div>
-<ev-button @click="brochure.isShow = false">취소</ev-button>
-</div>
-<div>
-<ev-button :class="{disabled:serviceModel.submitbtn==false}" class="bg-primary-500" type="submit">
-                                            신청하기
-                                        </ev-button>
-</div>
-</div>
-</form>
 </ev-modal>
 </div>
 </div>
@@ -2707,7 +2632,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="5a4z4JrVTuBxR2WDHptc7let0KC3o3f46WNV005bAFN21Uq6JRZM-wjD1WomsjILZGE3kmaOxNjh3T96D_79Sy1FtE41"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="MEcEy6zEr8otQH6bIs8kGMPB6s0xloPzxcvZVBCHh5fUADYBAhBpQ0ysHtU83STR6ualb1JomQTQZMNR1SccCoJWxXs1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3776,6 +3701,28 @@
                 },
                 showBrochure() {
                     this.brochure.isShow = true;
+                    this.$nextTick(() => {
+                    // 스크립트 로드 및 실행
+                    const script1 = document.createElement('script');
+                    script1.setAttribute('charset', 'utf-8');
+                    script1.setAttribute('type', 'text/javascript');
+                    script1.setAttribute('src', '//js.hsforms.net/forms/embed/v2.js');
+
+                    // script1을 먼저 추가
+                    this.$refs.modalContent.appendChild(script1);
+
+                    script1.onload = () => {
+                        const script2 = document.createElement('script');
+                        script2.innerHTML = `
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "22319584",
+                            formId: "74137034-bc21-4328-b8e1-b8ac25e9f411"
+                        });
+                        `;
+                        this.$refs.modalContent.appendChild(script2);
+                    };
+                    });                   
                     this.track('소개서 다운로드', { 위치: '푸터' });
                     mixpanel.track('start_lead', {
                         currency: 'KRW',
@@ -4024,7 +3971,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'yeibgk-ufWQOi5qnylcJ3FGZj5Yl7TLzQLBrb0ontduJwqOlisx2e1glc5oN_hFQutcKqM2-e5ERGyN5aLQhFsIOTzyABO1oBgKh51zBxKQavAiKd0cz6VyK3-kMfDLl6TROXQ2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4076,9 +4023,9 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4712,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e5c47f668f1a434e94d9acbec76e18a2.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d522cf62d3d648d98af0a2f9d2b0db94.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://www.seoulwomen.or.kr/sfwf/contents/sfwf-notice.do?schM=view\u0026page=1\u0026viewCount=10\u0026id=28535\",\"BannerTitle\":\"양육 일환경 서비스/아이디어 공모\",\"BannerDescription\":\"2024 서울 우먼테크 해커톤\",\"BannerMobileDescription\":\"2024 서울 우먼테크 해커톤\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"2024. 07. 17.(수) ~ 2024. 07. 24.(수)\",\"BannerPlace\":\"온라인 접수\",\"Support\":false}]';
+    const bannerDataRaw = '[]';
     const searchDataRaw = '';
-    const supportDataRaw = '[]';
+    const supportDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4758,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4965055d720f42428f38942805f3834f.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ac097a26679040e68c02106fa82b964d.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/purpleio/event/88289\",\"BannerTitle\":\"정체된 이커머스 성장의 돌파구\",\"BannerDescription\":\"자사몰 강화 SaaS 전략\",\"BannerMobileDescription\":\"자사몰 강화 SaaS 전략\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"2024. 08. 13.(화) 16:00\",\"BannerPlace\":\"온라인 행사\",\"Support\":true},{\"Position\":\"searchpage\",\"Id\":4759,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/836a3230ab1b4dc1a76f1408632fdeef.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/073631c390214ceaabb7f37f8a60e707.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/dallem/event/88227\",\"BannerTitle\":\"리더십 코칭 8월: 한기용 코치님\",\"BannerDescription\":\"리더들의 가장 흔한 고민 5가지\",\"BannerMobileDescription\":\"리더들의 가장 흔한 고민 5가지\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"2024. 08. 07.(수) 19:00\",\"BannerPlace\":\"오프라인 행사\",\"Support\":true}]';
     const defaultDataRaw = '[{\"Position\":\"search\",\"Id\":1158,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerMobileDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1169,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerMobileDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1228,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://event-us.kr/hostcenter\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerMobileDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null}]';
     const priceConstants = {
         min: 0,
