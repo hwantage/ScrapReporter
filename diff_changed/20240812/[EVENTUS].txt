@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "zgED0xFGJj5I8bVh9BdwTGeKOwLt9BKstpnIaYUgox7b8xM_5QwKFITjlmQHOtfFM06YyC8MQkc-NvWCnGPSGSZ0xFQvcFX4NN0x3xTg-R28364YWRGKRwBwTCLiySsghPHOag2",
+                UserId: "9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "zgED0xFGJj5I8bVh9BdwTGeKOwLt9BKstpnIaYUgox7b8xM_5QwKFITjlmQHOtfFM06YyC8MQkc-NvWCnGPSGSZ0xFQvcFX4NN0x3xTg-R28364YWRGKRwBwTCLiySsghPHOag2" === "zgED0xFGJj5I8bVh9BdwTGeKOwLt9BKstpnIaYUgox7b8xM_5QwKFITjlmQHOtfFM06YyC8MQkc-NvWCnGPSGSZ0xFQvcFX4NN0x3xTg-R28364YWRGKRwBwTCLiySsghPHOag2" ? "Anonymous" : "User",
+                UserType: "9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2" === "9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'zgED0xFGJj5I8bVh9BdwTGeKOwLt9BKstpnIaYUgox7b8xM_5QwKFITjlmQHOtfFM06YyC8MQkc-NvWCnGPSGSZ0xFQvcFX4NN0x3xTg-R28364YWRGKRwBwTCLiySsghPHOag2'
+            'user_id': '9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'zgED0xFGJj5I8bVh9BdwTGeKOwLt9BKstpnIaYUgox7b8xM_5QwKFITjlmQHOtfFM06YyC8MQkc-NvWCnGPSGSZ0xFQvcFX4NN0x3xTg-R28364YWRGKRwBwTCLiySsghPHOag2'
+            'crm_id': '9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2'
         });
     </script>
 <script>
@@ -2642,7 +2642,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="6jIWR5n77Wu8Daly3NSMIwKcRCSQs0VY1cbBJvzUbppInpQv_0bQDPNn0UiL6yi_5n9vhc97VuRDSB1JG542nAD6lh41"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="oKtSeldgQTwN6-9uYAOKVkhQ85ZQPZRa2Dllgv013jYqa2Tx0JWvKfRpIaxJ1EItRbxAnqDI7hfL8jcchQkJAl4NmMo1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3955,7 +3955,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'zgED0xFGJj5I8bVh9BdwTGeKOwLt9BKstpnIaYUgox7b8xM_5QwKFITjlmQHOtfFM06YyC8MQkc-NvWCnGPSGSZ0xFQvcFX4NN0x3xTg-R28364YWRGKRwBwTCLiySsghPHOag2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', '9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4007,7 +4007,7 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[{\"Id\":4784,\"New_Start_Date\":\"2024-08-06T00:00:00\",\"New_End_Date\":\"2024-08-21T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-05T19:14:28.3019374\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c7d6223cc4c04d0b862932885a206733.jpg\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d17dcca1ca774d1c905064f4208237d7.png\",\"Click_Url\":\"https://event-us.kr/wellbing/event/88623\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"쿠팡 자동화수익 프로세스 최초공개\",\"BannerDescription\":\"쿠팡으로 월300 자동화 수익만들기\",\"BannerDate\":\"2024. 08. 24.(토) 14:00\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":4792,\"New_Start_Date\":\"2024-08-12T00:00:00\",\"New_End_Date\":\"2024-08-14T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-07T22:23:24.5651149\",\"Support\":null,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f6c9a154c4a94e0d93ce6c6d7a8742b8.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c16d154c70b348bdb4abc6cdea107a0f.png\",\"Click_Url\":\"https://url.kr/wt5xa1\",\"Banner\":{\"color\":{\"title\":\"#FFFEFE\",\"description\":\"#FFFEFE\",\"date\":\"#FFFEFE\",\"place\":\"#FFFEFE\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFEFE\\\",\\\"description\\\":\\\"#FFFEFE\\\",\\\"date\\\":\\\"#FFFEFE\\\",\\\"place\\\":\\\"#FFFEFE\\\"}}\",\"BannerTitle\":\"세종대학교 캠퍼스타운\",\"BannerDescription\":\"창업세미나\",\"BannerDate\":\"2024. 08. 20.(화) ~ 2024. 08. 22.(목)\",\"BannerPlace\":\"오프라인 행사\"}]';
+    const bannerDataRaw = '[{\"Id\":4792,\"New_Start_Date\":\"2024-08-12T00:00:00\",\"New_End_Date\":\"2024-08-14T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-07T22:23:24.5651149\",\"Support\":null,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f6c9a154c4a94e0d93ce6c6d7a8742b8.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c16d154c70b348bdb4abc6cdea107a0f.png\",\"Click_Url\":\"https://url.kr/wt5xa1\",\"Banner\":{\"color\":{\"title\":\"#FFFEFE\",\"description\":\"#FFFEFE\",\"date\":\"#FFFEFE\",\"place\":\"#FFFEFE\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFEFE\\\",\\\"description\\\":\\\"#FFFEFE\\\",\\\"date\\\":\\\"#FFFEFE\\\",\\\"place\\\":\\\"#FFFEFE\\\"}}\",\"BannerTitle\":\"세종대학교 캠퍼스타운\",\"BannerDescription\":\"창업세미나\",\"BannerDate\":\"2024. 08. 20.(화) ~ 2024. 08. 22.(목)\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":4784,\"New_Start_Date\":\"2024-08-06T00:00:00\",\"New_End_Date\":\"2024-08-21T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-05T19:14:28.3019374\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c7d6223cc4c04d0b862932885a206733.jpg\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d17dcca1ca774d1c905064f4208237d7.png\",\"Click_Url\":\"https://event-us.kr/wellbing/event/88623\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"쿠팡 자동화수익 프로세스 최초공개\",\"BannerDescription\":\"쿠팡으로 월300 자동화 수익만들기\",\"BannerDate\":\"2024. 08. 24.(토) 14:00\",\"BannerPlace\":\"오프라인 행사\"}]';
     const searchDataRaw = '';
     const priceConstants = {
         min: 0,
