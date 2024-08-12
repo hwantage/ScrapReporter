@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2",
+                UserId: "9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2" === "fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2" ? "Anonymous" : "User",
+                UserType: "9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2" === "9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2'
+            'user_id': '9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2'
+            'crm_id': '9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?ab07cd1bc5e447d3"></script><style>body {
+<script src="/Content/dist/js/preload.js?45a5f1f36d0edcb3"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?ab07cd1bc5e447d3"></script><script defer="defer" src="/Content/dist/js/default.js?ab07cd1bc5e447d3"></script><link href="/Content/dist/css/default.css?ab07cd1bc5e447d3" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?45a5f1f36d0edcb3"></script><script defer="defer" src="/Content/dist/js/default.js?45a5f1f36d0edcb3"></script><link href="/Content/dist/css/default.css?45a5f1f36d0edcb3" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -791,10 +791,10 @@
 </script>
 <div id="uiToast">
 <ui-transition-root :show="isOpen" as="template" enter="transition-opacity duration-500" enter-from="opacity-0" enter-to="opacity-100" leave="transition-opacity duration-500" leave-from="opacity-100" leave-to="opacity-0">
-<div :class="{
+<div :class="[maxWidthClass,{
             'sm:left-auto' : onLocation === null,
             'mx-auto' : onLocation === 'center'
-        }" class="fixed left-0 right-0 top-0 z-[300] p-4 w-full sm:max-w-sm">
+        }]" class="fixed left-0 right-0 top-0 z-[300] p-4 w-full">
 <div :class="{
                 'bg-success-50 border-success-300': theme === 'success',
                 'bg-danger-50 border-danger-300': theme === 'danger',
@@ -835,6 +835,7 @@
         function getOptions() {
             return {
                 theme: 'info',
+                maxwidth: 'max-w-sm',
                 message: '',
                 onOpen: null,
                 onClose: null,
@@ -853,9 +854,23 @@
 
                 return data;
             },
+            computed: {
+                maxWidthClass() {
+                    const maxWidthMap = {
+                        'max-w-xs': 'sm:max-w-xs',
+                        'max-w-sm': 'sm:max-w-sm',
+                        'max-w-md': 'sm:max-w-md',
+                        'max-w-lg': 'sm:max-w-lg',
+                        'max-w-xl': 'sm:max-w-xl',
+                        'max-w-2xl': 'sm:max-w-2xl',
+                    };
+
+                    return maxWidthMap[this.maxwidth] || this.maxwidth;
+                },
+            },
             mounted() {
                 const self = this;
-                ui.toast = function (model, theme) {
+                ui.toast = function (model, theme, maxwidth) {
                     Object.assign(self, getOptions());
                     if (typeof model === 'object') {
                         Object.assign(self, model);
@@ -864,6 +879,9 @@
                     }
                     if (theme) {
                         self.theme = theme;
+                    }
+                    if (maxwidth) {
+                        self.maxwidth = maxwidth;
                     }
                     self.$nextTick(() => {
                         if (typeof self.onOpen === 'function') {
@@ -1727,15 +1745,8 @@
 <div class="flex justify-center items-center w-full h-full sm:justify-start">
 <div class="text-center sm:pl-8 sm:text-left">
 <div class="space-y-2">
-<!-- <div class="text-base sm:text-lg" :style="{ color: bannerColor(item).description }"
-                                    v-dompurify-html="replaceEnter(item.BannerTitle)"></div>
-                                <div class="text-lg font-bold sm:hidden" :style="{ color: bannerColor(item).title }"
-                                    v-dompurify-html="replaceEnter(item.BannerMobileDescription)"></div>
-                                <div class="hidden text-2xl font-bold sm:block"
-                                    :style="{ color: bannerColor(item).title }"
-                                    v-dompurify-html="replaceEnter(item.BannerDescription)"></div> -->
 <div :style="{ color: bannerColor(item).description }" class="text-base xl:text-xl lg:text-lg" v-dompurify-html="replaceEnter(item.BannerTitle)"></div>
-<div :style="{ color: bannerColor(item).title }" class="text-xl font-bold sm:hidden" v-dompurify-html="replaceEnter(item.BannerMobileDescription)"></div>
+<div :style="{ color: bannerColor(item).title }" class="text-xl font-bold sm:hidden" v-dompurify-html="replaceEnter(item.BannerDescription)"></div>
 <div :style="{ color: bannerColor(item).title }" class="hidden sm:block text-xl font-bold xl:text-3xl lg:text-2xl md:text-xl" v-dompurify-html="replaceEnter(item.BannerDescription)"></div>
 </div>
 <div class="mt-10 text-base font-bold sm:flex sm:space-x-8 sm:mt-6 xl:text-xl xl:mt-14 lg:text-lg lg:mt-8 md:text-base" v-if="item.BannerDate &amp;&amp; item.BannerPlace">
@@ -1753,13 +1764,12 @@
 <img :alt="item.BannerTitle" :src="item.M_ImageUrl" class="md:hidden object-cover"/>
 <img :alt="item.BannerTitle" :src="item.ImageUrl" class="hidden md:block object-cover"/>
 <div class="container">
-<a :href="getSearchpageBannerUtm(item)" @click="onBannerClick({type: 'main', pitId: item.Id,clickurl:item.Click_Url})" class="h-full flex items-center xl:pt-8 xl:px-8" target="_blank">
+<a :href="getSearchpageBannerUtm(item)" @click="onBannerClick({type: 'main', pitId: item.Id, clickurl:item.Click_Url})" class="h-full flex items-center xl:pt-8 xl:px-8" target="_blank">
 <div :style='{color: item.Banner.color.title ?? "#ffffff"}' class="h-1/2 flex flex-col justify-between sm:h-full sm:justify-around">
-<div class="space-y-8">
-<div class="text-2xl font-bold xl:text-[32px] xl:leading-[2.5rem]" v-dompurify-html="replaceEnter(item.BannerTitle)">
-</div>
-<div class="hidden lg:block text-xl" v-dompurify-html="replaceEnter(item.BannerDescription)">
-</div>
+<div class="space-y-2">
+<div :style="{ color: bannerColor(item).description }" class="text-base xl:text-xl lg:text-lg" v-dompurify-html="replaceEnter(item.BannerTitle)"></div>
+<div :style="{ color: bannerColor(item).title }" class="text-xl font-bold sm:hidden" v-dompurify-html="replaceEnter(item.BannerDescription)"></div>
+<div :style="{ color: bannerColor(item).title }" class="hidden sm:block text-xl font-bold xl:text-3xl lg:text-2xl md:text-xl" v-dompurify-html="replaceEnter(item.BannerDescription)"></div>
 </div>
 <div class="font-bold text-base md:flex md:space-x-8 xl:text-xl">
 <div>{{ item.BannerDate }}</div>
@@ -2632,7 +2642,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="MEcEy6zEr8otQH6bIs8kGMPB6s0xloPzxcvZVBCHh5fUADYBAhBpQ0ysHtU83STR6ualb1JomQTQZMNR1SccCoJWxXs1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="oKtSeldgQTwN6-9uYAOKVkhQ85ZQPZRa2Dllgv013jYqa2Tx0JWvKfRpIaxJ1EItRbxAnqDI7hfL8jcchQkJAl4NmMo1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -2699,7 +2709,6 @@
                 /*title: '부가서비스',*/
                 menus: [
                     { text: '명찰 출력', enText: 'Name Tag Printing', link: '/hostcenter/service/nametag' },
-                    { text: '비즈매칭', enText: 'BizMatching', link: '/hostcenter/solutiontype/bizmatching' },
                     { text: 'VOD', enText: 'VOD', link: '/hostcenter/service/vod' },
                     { text: '광고', enText: 'Ads', link: '/adcenter' },
                 ],
@@ -2709,7 +2718,7 @@
             { text: '블로그', enText: 'Blog', link: '/hostcenter/blog' },
             //{ text: '고객사례', enText: 'Customer Stories', link: '/hostcenter/main/customerstory' },
             //{ text: '호스트 뉴스레터', enText: 'Host Newsletter', link: '/hostcenter/hostnewsletter' },
-            { text: '호스트 가이드 북', enText: 'Host Guidebook', link: 'https://m.site.naver.com/1gYog', outlink: true },
+            { text: '호스트 가이드 북', enText: 'Host Guidebook', link: 'https://eventwithus.notion.site/bfac6c5fd45348cda8454175770870d6', outlink: true },
             
             { text: '문의하기', enText: 'Contact Us', link: 'https://event-us.channel.io/', outlink: true },
         ],
@@ -2947,7 +2956,6 @@
                         },
                         openAside: false,
                         openSearch: false,
-                        recommandEvents: [],
                         recommandSearchEvents: [],
                         userFavoriteEvents:[],
                         searchHistories: [],
@@ -2955,7 +2963,6 @@
                             isOpen:false,
                             data:[],
                         },
-                        searchRandomOne: '',
                         suggest: [],
                         useSearchHistory: true,
                         showAllSearchTrends: false,
@@ -3597,29 +3604,6 @@
                     });
                     axios.post('/home/getmainrecommandevent').then((response) => {
                         self.recommandSearchEvents = util.shuffleArray(response.data.sr);
-                        self.recommandEvents = response.data.r.filter(
-                            (x) => x.SearchTitle && x.Position === 'main' && x.Support !== true,
-                        );
-
-
-                        if (self.recommandEvents.length < 10) {
-                            let r = [];
-                            r = r.concat(
-                                response.data.r.filter((x) => {
-                                    if (x.SearchTitle && x.Position === 'main' && x.Support === true) {
-                                        return x;
-                                    }
-                                }),
-                            );
-                            for (let i = 0; i < r.length; i++) {
-                                if (self.recommandEvents.length > 9) {
-                                    break;
-                                }
-                                self.recommandEvents = self.recommandEvents.concat(r[i]);
-                            }
-                        }
-                        const randomIndex = Math.floor(Math.random() * self.recommandEvents.length);
-                        self.searchRandomOne = self.recommandEvents[randomIndex];
                     });
                     axios.post('/home/getuserfavoriteevents').then(function (result) {
                         self.userFavoriteEvents = result.data;
@@ -3971,7 +3955,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'fX-4L_WmBGSrarm5n0tg4-aDeedGo9uzrOAPtsNs1cDAXL_eyB73n6t33511xpYg1TceMdz_fqQABlXpCkE7EVtQdRH6LinTYxv8w-e0bKownI5WGIsm5-1yy0SUDmBuQL2_0Q2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', '9ZpBSwJSOOAo393Q6HaCXcDkn5qRr_U7nhobpzkLp4KtT2V9d0is4F67AGUbMOoJN4LSqzDbGml2p0ppC_lV-sDAZoVjBxV7h9XGyWvlP7sYMU5Hqh2AOz6crD3Rna2UNWJjVg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4023,10 +4007,8 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[]';
+    const bannerDataRaw = '[{\"Id\":4792,\"New_Start_Date\":\"2024-08-12T00:00:00\",\"New_End_Date\":\"2024-08-14T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-07T22:23:24.5651149\",\"Support\":null,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f6c9a154c4a94e0d93ce6c6d7a8742b8.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c16d154c70b348bdb4abc6cdea107a0f.png\",\"Click_Url\":\"https://url.kr/wt5xa1\",\"Banner\":{\"color\":{\"title\":\"#FFFEFE\",\"description\":\"#FFFEFE\",\"date\":\"#FFFEFE\",\"place\":\"#FFFEFE\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFEFE\\\",\\\"description\\\":\\\"#FFFEFE\\\",\\\"date\\\":\\\"#FFFEFE\\\",\\\"place\\\":\\\"#FFFEFE\\\"}}\",\"BannerTitle\":\"세종대학교 캠퍼스타운\",\"BannerDescription\":\"창업세미나\",\"BannerDate\":\"2024. 08. 20.(화) ~ 2024. 08. 22.(목)\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":4784,\"New_Start_Date\":\"2024-08-06T00:00:00\",\"New_End_Date\":\"2024-08-21T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-05T19:14:28.3019374\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c7d6223cc4c04d0b862932885a206733.jpg\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d17dcca1ca774d1c905064f4208237d7.png\",\"Click_Url\":\"https://event-us.kr/wellbing/event/88623\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"쿠팡 자동화수익 프로세스 최초공개\",\"BannerDescription\":\"쿠팡으로 월300 자동화 수익만들기\",\"BannerDate\":\"2024. 08. 24.(토) 14:00\",\"BannerPlace\":\"오프라인 행사\"}]';
     const searchDataRaw = '';
-    const supportDataRaw = '[{\"Position\":\"searchpage\",\"Id\":4758,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4965055d720f42428f38942805f3834f.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ac097a26679040e68c02106fa82b964d.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/purpleio/event/88289\",\"BannerTitle\":\"정체된 이커머스 성장의 돌파구\",\"BannerDescription\":\"자사몰 강화 SaaS 전략\",\"BannerMobileDescription\":\"자사몰 강화 SaaS 전략\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"2024. 08. 13.(화) 16:00\",\"BannerPlace\":\"온라인 행사\",\"Support\":true},{\"Position\":\"searchpage\",\"Id\":4759,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/836a3230ab1b4dc1a76f1408632fdeef.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/073631c390214ceaabb7f37f8a60e707.png\",\"ImageAlt\":null,\"QueryObj\":{},\"Click_Url\":\"https://event-us.kr/dallem/event/88227\",\"BannerTitle\":\"리더십 코칭 8월: 한기용 코치님\",\"BannerDescription\":\"리더들의 가장 흔한 고민 5가지\",\"BannerMobileDescription\":\"리더들의 가장 흔한 고민 5가지\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"2024. 08. 07.(수) 19:00\",\"BannerPlace\":\"오프라인 행사\",\"Support\":true}]';
-    const defaultDataRaw = '[{\"Position\":\"search\",\"Id\":1158,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerMobileDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1169,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerMobileDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null},{\"Position\":\"search\",\"Id\":1228,\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"ImageAlt\":null,\"QueryObj\":{\"type\":[],\"category\":[\"기타\"],\"cost\":[\"0\",\"1\"],\"area\":[],\"query\":[]},\"Click_Url\":\"https://event-us.kr/hostcenter\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerMobileDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerDate\":\"\",\"BannerPlace\":\"\",\"Support\":null}]';
     const priceConstants = {
         min: 0,
         max: 100,
@@ -4074,10 +4056,7 @@ docReady(() => {
                 user: asp.user,
                 searchTriggerModel: getSearchTriggerModel(),
                 showFilter: false,
-                bannerData: JSON.parse(bannerDataRaw),
-                supportData: JSON.parse(supportDataRaw),
-                defaultData: JSON.parse(defaultDataRaw),
-                banners: [],
+                banners: JSON.parse(bannerDataRaw),
                 eventList: [],
                 eventCount: 0,
                 metaData: {
@@ -4475,50 +4454,6 @@ docReady(() => {
 
                 self.searchTriggerModel = model;
             },
-            setBanners() {
-                function queryFilter(bannerData, query, name) {
-                    return bannerData.filter(function (d) {
-                        return d.QueryObj[name].indexOf(query) !== -1;
-                    });
-                }
-
-                const self = this;
-               
-                const result = Array.from(new Set(self.bannerData));
-                self.banners = util.shuffleArray(result);
-                // 후원 배너
-                if (self.banners.length < 10) {
-                    for (let i = 0; i < 10 - self.banners.length; i++) {
-                        if (self.supportData.length <= i) {
-                            break;
-                        }
-                        self.banners = self.banners.concat(self.supportData[i]);
-                    }
-                }
-                if (self.banners.length < 2) {
-                    const defaultData = util.shuffleArray(self.defaultData);
-                    self.banners = self.banners.concat(defaultData);
-                }
-               
-
-                //특정 광고 중복처리
-                let check = 0;
-                const idx = [];
-                self.banners.forEach((e, i, obj) => {
-                    if (e.Id > 2169 && e.Id < 2186) {
-                        if (check > 0) {
-                            idx.unshift(i);
-                        } else {
-                            check++;
-                        }
-                    }
-                });
-                idx.forEach((key) => {
-                    self.banners.splice(key, 1);
-                });
-
-                self.onBannerClick('search', 1, '');
-            },
             moment(time) {
                 return moment(time);
             },
@@ -4800,7 +4735,6 @@ docReady(() => {
                         return engineResultToItem(x);
                     });
                     self.isSearching = false;
-                    self.setBanners();
                     if (!self.inited) {
                         self.inited = true;
                     }
@@ -5077,9 +5011,9 @@ docReady(() => {
         }
     </script>
 <script src="https://wcs.naver.net/wcslog.js" type="text/javascript"></script>
-<!-- Start of HubSpot Embed Code -->
+<!-- Start of Hubspot Embed Code -->
 <script async="" defer="" id="hs-script-loader" src="//js.hs-scripts.com/22319584.js" type="text/javascript"></script>
-<!-- End of HubSpot Embed Code -->
+<!-- End of Hubspot Embed Code -->
 <script>
         //네이버 analytics
         if (!wcs_add) var wcs_add = {};

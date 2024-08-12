@@ -41,7 +41,7 @@
             XE.setup({
                 baseURL: 'https://www.oss.kr',
                 assetsURL: 'https://www.oss.kr',
-                userToken: '6MLLhguGkWGyXjtWCVWuqxU8ghqopBzzekL6lW0b',
+                userToken: '2mLXcdBllWXWYOcj8sAZdDke1XcR68AqNhtoBsmu',
                 loginUserId: '', // @DEPRECATED
                 useXeSpinner: true, // @DEPRECATED
                 locale: 'ko',
@@ -133,14 +133,9 @@
 <a class="gnb" href="https://www.oss.kr/plaza_intro" target="_self">공개SW 사업</a>
 <ul>
 <li><a href="https://www.oss.kr/plaza_intro" target="_self">공개SW 활용 지원</a></li>
-<li><a href="https://www.oss.kr/dev_support_intro" target="_self">공개SW 개발 지원</a></li>
-<li><a href="https://www.oss.kr/ability_up" target="_self">공개SW 교육 지원</a></li>
 <li><a href="https://www.oss.kr/developer_support" target="_self">공개SW 개발자 지원</a></li>
-<li><a href="https://www.oss.kr/community_support" target="_self">공개SW 커뮤니티 지원</a></li>
 <li><a href="https://www.oss.kr/dev_competition" target="_self">공개SW 개발자대회</a></li>
 <li><a href="https://www.oss.kr/contribution_academy" target="_self">컨트리뷰션 아카데미</a></li>
-<li><a href="https://www.oss.kr/forum_intro" target="_self">공개SW 국제협력</a></li>
-<li><a href="https://www.oss.kr/open_os" target="_self">개방형OS 활성화</a></li>
 </ul>
 </li>
 <li class="gnb-menu gnb03">
@@ -149,7 +144,6 @@
 <li><a href="https://www.oss.kr/solution_guide" target="_self">공개SW 활용 가이드</a></li>
 <li><a href="https://www.oss.kr/info_sec" target="_self">공개SW 보안취약점</a></li>
 <li><a href="https://www.oss.kr/oss_case" target="_self">공개SW 활용 성공사례</a></li>
-<li><a href="https://www.oss.kr/tech_support_intro" target="_self">공개SW 기술지원</a></li>
 <li><a href="https://www.oss.kr/sw_certificate" target="_self">공개SW 확인서발급</a></li>
 <li><a href="https://www.oss.kr/rnd_hub" target="_self">공개SW 프로젝트 허브</a></li>
 <li><a href="https://www.oss.kr/oss_data" target="_self">자료실</a></li>
@@ -161,8 +155,7 @@
 <li><a href="https://www.oss.kr/notice" target="_self">공지사항</a></li>
 <li><a href="https://www.oss.kr/news" target="_self">공개SW 소식</a></li>
 <li><a href="https://www.oss.kr/event" target="_self">공개SW 행사 안내</a></li>
-<li><a href="https://www.oss.kr/user_question" target="_self">공개SW 라이선스 문의</a></li>
-<li><a href="https://www.oss.kr/qna" target="_self">공개SW 사업문의</a></li>
+<li><a href="https://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의</a></li>
 <li><a href="https://www.oss.kr/news_letter" target="_self">공개SW 뉴스레터</a></li>
 </ul>
 </li>
@@ -226,21 +219,7 @@
 <ul class="clr">
 <li><a href="https://www.oss.kr/plaza_intro" target="_self">사업 소개</a></li>
 <li><a href="https://www.oss.kr/license_verify" target="_self">공개SW 라이선스/ 보안 검증</a></li>
-<li><a href="https://www.oss.kr/oss_consulting" target="_self">공개SW 도입 컨설팅</a></li>
-</ul>
-</li>
-<li class="inner-item">
-<a href="#">공개SW 개발 지원</a>
-<ul class="clr">
-<li><a href="https://www.oss.kr/dev_support_intro" target="_self">사업 소개</a></li>
-<li><a href="https://www.oss.kr/dev_support_activities" target="_self">지원 내역</a></li>
-</ul>
-</li>
-<li class="inner-item">
-<a href="#">공개SW 교육 지원</a>
-<ul class="clr">
-<li><a href="https://www.oss.kr/ability_notice" target="_self">공지사항</a></li>
-<li><a href="https://www.oss.kr/ability_up" target="_self">초급(예비) 개발자 역량강화 교육</a></li>
+<li><a href="https://www.oss.kr/license_education" target="_self">공개SW 라이선스 교육</a></li>
 </ul>
 </li>
 <li class="inner-item">
@@ -248,13 +227,6 @@
 <ul class="clr">
 <li><a href="https://www.oss.kr/developer_support" target="_self">사업 소개</a></li>
 <li><a href="https://www.oss.kr/developer_support_project" target="_self">전문개발자 프로젝트</a></li>
-</ul>
-</li>
-<li class="inner-item">
-<a href="#">공개SW 커뮤니티 지원</a>
-<ul class="clr">
-<li><a href="https://www.oss.kr/community_support" target="_self">사업 소개</a></li>
-<li><a href="https://www.oss.kr/community_support_cm" target="_self">지원 커뮤니티</a></li>
 </ul>
 </li>
 <li class="inner-item">
@@ -274,7 +246,6 @@
 <li><a href="https://www.oss.kr/contribution_academy" target="_self">컨트리뷰션 아카데미 소개</a></li>
 <li><a href="https://www.oss.kr/ossca_24_projects_1" target="_self">체험형 프로젝트 소개</a></li>
 <li><a href="https://www.oss.kr/ossca_24_projects_2" target="_self">참여형 프로젝트 소개</a></li>
-<li><a href="https://www.oss.kr/ossca_notice" target="_self">커뮤니티</a></li>
 <li><a href="https://www.oss.kr/ossca_23_projects" target="_self">지난 컨트리뷰톤</a></li>
 <li><a href="https://www.oss.kr/ossca_23_projects" target="_self">  2023년 프로젝트</a></li>
 <li><a href="https://www.oss.kr/ossca_22_projects" target="_self">  2022년 프로젝트</a></li>
@@ -282,15 +253,6 @@
 <li><a href="https://www.oss.kr/contributhon_20_projects" target="_self">  2020년 프로젝트</a></li>
 <li><a href="https://www.oss.kr/contributhon_19-16_projects?category_item_id=376" target="_self">  2019~2016년 프로젝트</a></li>
 </ul>
-</li>
-<li class="inner-item">
-<a href="#">공개SW 국제협력</a>
-<ul class="clr">
-<li><a href="https://www.oss.kr/forum_intro" target="_self">사업 소개</a></li>
-</ul>
-</li>
-<li class="inner-item">
-<a href="https://www.oss.kr/open_os" target="_self">개방형OS 활성화</a>
 </li>
 </ul>
 </li>
@@ -313,13 +275,6 @@
 </li>
 <li class="inner-item">
 <a href="https://www.oss.kr/oss_case" target="_self">공개SW 활용 성공사례</a>
-</li>
-<li class="inner-item">
-<a href="#">공개SW 기술지원</a>
-<ul class="clr">
-<li><a href="https://www.oss.kr/tech_support_intro" target="_self">기술지원 소개</a></li>
-<li><a href="https://www.oss.kr/tech_support_company" target="_self">기술지원기업</a></li>
-</ul>
 </li>
 <li class="inner-item">
 <a href="https://www.oss.kr/sw_certificate" target="_self">공개SW 확인서발급</a>
@@ -354,12 +309,8 @@
 <li class="inner-item">
 <a href="#">공개SW 라이선스 문의</a>
 <ul class="clr">
-<li><a href="https://www.oss.kr/user_question" target="_self">공개SW 라이선스 FAQ</a></li>
 <li><a href="https://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의하기</a></li>
 </ul>
-</li>
-<li class="inner-item">
-<a href="https://www.oss.kr/qna" target="_self">공개SW 사업문의</a>
 </li>
 <li class="inner-item">
 <a href="https://www.oss.kr/news_letter" target="_self">공개SW 뉴스레터</a>
@@ -501,16 +452,11 @@
 </ul>
 </li>
 <li>
-<a class="snb" href="https://www.oss.kr/user_question" target="_self">공개SW 라이선스 문의</a>
+<a class="snb" href="https://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의</a>
 <ul>
-<li><a href="https://www.oss.kr/user_question" target="_self">공개SW 라이선스 FAQ</a>
-</li>
 <li><a href="https://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의하기</a>
 </li>
 </ul>
-</li>
-<li>
-<a class="snb" href="https://www.oss.kr/qna" target="_self">공개SW 사업문의</a>
 </li>
 <li>
 <a class="snb" href="https://www.oss.kr/news_letter" target="_self">공개SW 뉴스레터</a>
@@ -1011,7 +957,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/49e410fb-604d-4d35-ba25-8286b5f2c50d" id="title_49e410fb-604d-4d35-ba25-8286b5f2c50d">[Open UP 활용가이드] 공개SW 활용 및 개발, 창업, 교육 "Open UP을 활용하세요"</a>
 </td>
-<td class="read_num xe-hidden-xs">304872</td>
+<td class="read_num xe-hidden-xs">307057</td>
 <td class="time xe-hidden-xs column-created_at">2020-10-27</td>
 </tr>
 <tr class="notice">
@@ -1019,90 +965,93 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/ea60b452-72ea-4a83-93f5-450582463d87" id="title_ea60b452-72ea-4a83-93f5-450582463d87">[Open UP 소개] 공개SW 개발·공유·활용 원스톱 지원 Open UP이 함께합니다</a>
 </td>
-<td class="read_num xe-hidden-xs">294477</td>
+<td class="read_num xe-hidden-xs">296668</td>
 <td class="time xe-hidden-xs column-created_at">2020-10-27</td>
 </tr>
 <!-- /NOTICE -->
 <!-- LIST -->
 <tr>
-<td>11017</td>
+<td>11030</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/7a814551-4c7c-4102-b8de-6bce953d6be8" id="title_7a814551-4c7c-4102-b8de-6bce953d6be8">스위스, 정부 기관서 오픈소스 소프트웨어 사용 의무화</a>
+<a class="title_text" href="https://www.oss.kr/news/show/07934556-6eb3-4e3e-b61f-30d49b80d127" id="title_07934556-6eb3-4e3e-b61f-30d49b80d127">알리바바, 수학 전용 모델 '큐원2-매스' 오픈 소스 출시 </a>
+<span class="bd_ico_new"><i class="xi-new"></i><span class="xe-sr-only">new</span></span>
 </td>
-<td class="read_num xe-hidden-xs">109</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-26</td>
+<td class="read_num xe-hidden-xs">4</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-12</td>
 </tr>
 <tr>
-<td>11016</td>
+<td>11029</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/9c9390d8-a212-4b3c-8092-4922224f2a4c" id="title_9c9390d8-a212-4b3c-8092-4922224f2a4c">메타, 오픈소스 LLM 라마3.1 시리즈 공개..."클라우드·보안 등 파트너 생태계 확대"</a>
+<a class="title_text" href="https://www.oss.kr/news/show/2eb8f05f-d981-4127-8786-db9f5b0039bd" id="title_2eb8f05f-d981-4127-8786-db9f5b0039bd">많은 기업이 사용하는 오픈소스 ERP 시스템 '아파치 OFBiz'에 심각한 보안취약점...사이버공격 주의</a>
+<span class="bd_ico_new"><i class="xi-new"></i><span class="xe-sr-only">new</span></span>
 </td>
-<td class="read_num xe-hidden-xs">144</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-24</td>
+<td class="read_num xe-hidden-xs">4</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-12</td>
 </tr>
 <tr>
-<td>11015</td>
+<td>11028</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/5202b67e-fb8c-4bcb-a8e3-e7351f34fb6f" id="title_5202b67e-fb8c-4bcb-a8e3-e7351f34fb6f">넷플릭스, 관리 시스템 '마에스트로' 오픈소스화</a>
+<a class="title_text" href="https://www.oss.kr/news/show/483646e0-bc30-4725-91dd-20a8727cac93" id="title_483646e0-bc30-4725-91dd-20a8727cac93">“2027년 80% 조직, SCA 사용해 오픈소스 관리”</a>
+<span class="bd_ico_new"><i class="xi-new"></i><span class="xe-sr-only">new</span></span>
 </td>
-<td class="read_num xe-hidden-xs">268</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-24</td>
+<td class="read_num xe-hidden-xs">4</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-12</td>
 </tr>
 <tr>
-<td>11014</td>
+<td>11027</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/f7603a63-2500-4cd6-b59f-f82ddfe18fd2" id="title_f7603a63-2500-4cd6-b59f-f82ddfe18fd2">구글 자회사 직소, 테러 콘텐츠 식별하는 도구 ‘알티튜드’ 오픈소스로 공개 </a>
+<a class="title_text" href="https://www.oss.kr/news/show/dc91c327-9507-43c4-a75e-866aac51a7ae" id="title_dc91c327-9507-43c4-a75e-866aac51a7ae">LG, AI 모델 '엑사원 3.0' 오픈 소스 공개…전 모델 比 성능 56%↑</a>
 </td>
-<td class="read_num xe-hidden-xs">144</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-24</td>
+<td class="read_num xe-hidden-xs">194</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-08</td>
 </tr>
 <tr>
-<td>11013</td>
+<td>11026</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/5adce72e-3958-4294-8899-39f1d5923a57" id="title_5adce72e-3958-4294-8899-39f1d5923a57">애플, 최강 성능 오픈 소스 sLM ‘DCLM’ 출시..."데이터 큐레이션으로 성능 극대화"</a>
+<a class="title_text" href="https://www.oss.kr/news/show/7b0068c2-0366-400a-9847-fcbf136a6cfb" id="title_7b0068c2-0366-400a-9847-fcbf136a6cfb">[주간 OSS 동향리포트] 세일즈포스, 역대 최대 규모의  AI 학습용 멀티모달 데이터셋 오픈소스 출시</a>
 </td>
-<td class="read_num xe-hidden-xs">204</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-23</td>
+<td class="read_num xe-hidden-xs">176</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-08</td>
 </tr>
 <tr>
-<td>11012</td>
+<td>11025</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/d5a6e8ab-4997-4e45-87ef-54cc4b133796" id="title_d5a6e8ab-4997-4e45-87ef-54cc4b133796">[주간 OSS 동향리포트] ‘2024 오픈소스 컨트리뷰션 아카데미(OSSCA) 참여형 발대식’을 개최</a>
+<a class="title_text" href="https://www.oss.kr/news/show/7fae183d-99df-4547-b389-8a0d32a60cce" id="title_7fae183d-99df-4547-b389-8a0d32a60cce">구글, 오픈소스 Gemma AI 모델 3개 출시</a>
 </td>
-<td class="read_num xe-hidden-xs">182</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-23</td>
+<td class="read_num xe-hidden-xs">270</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-05</td>
 </tr>
 <tr>
-<td>11011</td>
+<td>11024</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/4aaaab15-4d34-4215-83bf-f198a556ddd5" id="title_4aaaab15-4d34-4215-83bf-f198a556ddd5">엔비디아 “GPU 커널 모듈 모두 오픈소스로…”</a>
+<a class="title_text" href="https://www.oss.kr/news/show/f74e29ef-a325-47d9-8c3f-f2e8de465038" id="title_f74e29ef-a325-47d9-8c3f-f2e8de465038">[미국 정부, 더 '개방형' AI 원해] 오픈소스 AI 모델, 혁신과 안전 사이에서 고민하다</a>
 </td>
-<td class="read_num xe-hidden-xs">185</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-23</td>
+<td class="read_num xe-hidden-xs">305</td>
+<td class="time xe-hidden-xs column-created_at">2024-08-02</td>
 </tr>
 <tr>
-<td>11010</td>
+<td>11023</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/80a94c85-9a79-4a86-94e5-8aa1199b35b3" id="title_80a94c85-9a79-4a86-94e5-8aa1199b35b3">SW로 탄소중립을 실천하는 방법은?…오픈소스 역할 커져야</a>
+<a class="title_text" href="https://www.oss.kr/news/show/bec6b25a-fef7-4041-8bf6-8dec7f135758" id="title_bec6b25a-fef7-4041-8bf6-8dec7f135758">글로벌 칼럼 | 오픈소스 AI의 정의를 둘러싼 혼란과 현실  </a>
 </td>
-<td class="read_num xe-hidden-xs">177</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-23</td>
+<td class="read_num xe-hidden-xs">411</td>
+<td class="time xe-hidden-xs column-created_at">2024-07-31</td>
 </tr>
 <tr>
-<td>11009</td>
+<td>11022</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/eda8631c-9fc6-442a-8e74-f10f391852a0" id="title_eda8631c-9fc6-442a-8e74-f10f391852a0">"위험의 선행 지표를 살펴라" 오픈소스 소프트웨어의 10가지 위험과 완화 대책 </a>
+<a class="title_text" href="https://www.oss.kr/news/show/83007b88-9720-4e4c-b511-55cb60298f87" id="title_83007b88-9720-4e4c-b511-55cb60298f87">탄생 30주년 맞은 프리도스 "아직 죽지 않았다"</a>
 </td>
-<td class="read_num xe-hidden-xs">279</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-19</td>
+<td class="read_num xe-hidden-xs">400</td>
+<td class="time xe-hidden-xs column-created_at">2024-07-31</td>
 </tr>
 <tr>
-<td>11008</td>
+<td>11021</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/e1bb0817-97a0-4890-9ee4-93c8bafffd60" id="title_e1bb0817-97a0-4890-9ee4-93c8bafffd60">"개발자에 특화된 번역 등…" 구글, 새로운 오픈소스 및 개발 툴 공개 </a>
+<a class="title_text" href="https://www.oss.kr/news/show/aacb6561-8ad6-4521-bf3a-8da0d081849e" id="title_aacb6561-8ad6-4521-bf3a-8da0d081849e">젠슨 황·저커버그 대담으로 들여다본 '생성형 AI의 향방'</a>
 </td>
-<td class="read_num xe-hidden-xs">281</td>
-<td class="time xe-hidden-xs column-created_at">2024-07-19</td>
+<td class="read_num xe-hidden-xs">394</td>
+<td class="time xe-hidden-xs column-created_at">2024-07-31</td>
 </tr>
 <!-- /LIST -->
 </tbody>
@@ -1121,15 +1070,15 @@
 <a href="https://www.oss.kr/news?page=7">7</a>
 <a href="https://www.oss.kr/news?page=8">8</a>
 <span>...</span>
-<a href="https://www.oss.kr/news?page=1101">1101</a>
 <a href="https://www.oss.kr/news?page=1102">1102</a>
+<a href="https://www.oss.kr/news?page=1103">1103</a>
 <a class="btn_pg btn_next" href="https://www.oss.kr/news?page=2"><i class="xi-angle-right"><span class="bd_hidden">다음 페이지로 이동</span></i></a>
 </div>
 <!-- /PAGINATION PC-->
 <!-- PAGINATAION Mobile -->
 <div class="bd_paginate v2 xe-visible-xs">
 <span class="btn_pg btn_prev"><i class="xi-angle-left"><span class="bd_hidden">«</span></i></span>
-<span class="pg_box"><strong>1</strong> / <span>1102</span></span>
+<span class="pg_box"><strong>1</strong> / <span>1103</span></span>
 <a class="btn_pg btn_next" href="https://www.oss.kr/news?page=2"><i class="xi-angle-right"><span class="bd_hidden">»</span></i></a>
 </div>
 <!-- /PAGINATION Mobile -->

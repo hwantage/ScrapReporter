@@ -73,7 +73,7 @@
 <script src="/rndgate/eg/common/crossuploader/app/lib/contextmenu/jquery.contextMenu.js" type="text/javascript"></script>
 <script src="/rndgate/eg/common/crossuploader/app/lib/contextmenu/jquery.ui.position.js" type="text/javascript"></script>
 <link href="/rndgate/eg/common/crossuploader/app/lib/contextmenu/jquery.contextMenu.css" rel="stylesheet" type="text/css"/>
-<script src="/rndgate/eg/common/namoeditor/js/namo_scripteditor.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/namoeditor/js/namo_scripteditor.js?ver=20240415" type="text/javascript"></script>
 <!-- 202308 css 추가 영역 start -->
 <link href="/rndgate/eg/css/ntis/webChng/basic.css?v=20240222" rel="stylesheet" type="text/css"/>
 <link href="/rndgate/eg/css/ntis/webChng/common.css?v=20240222" rel="stylesheet" type="text/css"/>
@@ -1413,10 +1413,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="73396">
+<input id="totalCount" name="totalCount" type="hidden" value="73452">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>73,396건</span></h3>
+<h3 class="t_head">검색결과 <span>73,452건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1469,16 +1469,16 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2024년도 제1차 한국형 ARPA-H 프로젝트 통합공고" type="checkbox" value="1189712"/></td>
+<td><input name="selectCheckList" title="2024년도 제1차 한국형 ARPA-H 프로젝트 신규지원 대상과제 통합공고 안내" type="checkbox" value="1189717"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73396
+                            73452
                         </td>
 <td data-title="현황">
-<span style="color: blue;">접수예정</span>
+<span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189712&amp;flag=rndList" onclick="javascript:fn_view('1189712'); return false;" title="2024년도 제1차 한국형 ARPA-H 프로젝트 통합공고"> 2024년도 제1차 한국형 ARPA-H 프로젝트 통합공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189717&amp;flag=rndList" onclick="javascript:fn_view('1189717'); return false;" title="2024년도 제1차 한국형 ARPA-H 프로젝트 신규지원 대상과제 통합공고 안내"> 2024년도 제1차 한국형 ARPA-H 프로젝트 신규지원 대상과제 통합공고 안내
                                 </a>
 </div>
 </td>
@@ -1498,48 +1498,28 @@ $(function(){
                                     
                                     
                                     
-                                    D-29
+                                    D-14
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2024년 글로벌AI프론티어랩지원사업 신규지원 대상 과제 공고" type="checkbox" value="1189700"/></td>
+<td><input name="selectCheckList" title="기술 패권시대 국가 RD 사업의 전략적 IP 창출 관리 체계 마련 연구" type="checkbox" value="1190814"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73395
-                        </td>
-<td data-title="현황">
-<span>마감</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189700&amp;flag=rndList" onclick="javascript:fn_view('1189700'); return false;" title="2024년 글로벌AI프론티어랩지원사업 신규지원 대상 과제 공고"> 2024년 글로벌AI프론티어랩지원사업 신규지원 대상 과제 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.07.26</td>
-<td data-title="마감일">2024.07.26</td>
-<td class="end" data-title="D-day">
-</td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년도 제3차 감염병 예방·치료 기술개발사업 신규지원 대상과제 공고" type="checkbox" value="1189645"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73394
+                            73451
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189645&amp;flag=rndList" onclick="javascript:fn_view('1189645'); return false;" title="2024년도 제3차 감염병 예방·치료 기술개발사업 신규지원 대상과제 공고"> 2024년도 제3차 감염병 예방·치료 기술개발사업 신규지원 대상과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190814&amp;flag=rndList" onclick="javascript:fn_view('1190814'); return false;" title="기술 패권시대 국가 RD 사업의 전략적 IP 창출 관리 체계 마련 연구"> 기술 패권시대 국가 RD 사업의 전략적 IP 창출 관리 체계 마련 연구
                                 </a>
 </div>
 </td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2024.07.26</td>
-<td data-title="마감일">2024.08.26</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.08.11</td>
+<td data-title="마감일">2024.08.21</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1553,70 +1533,30 @@ $(function(){
                                     
                                     
                                     
-                                    D-29
+                                        D - 9
+                                    
+                                    
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="형질전환 면역세포 선별을 위한 펩타이드-덴드리머 복합체 기반 나노 표적물질 개발" type="checkbox" value="1189626"/></td>
+<td><input name="selectCheckList" title="글로벌 이슈별 2040 전망 및 기술개발 전략 도출을 위한 연구" type="checkbox" value="1190844"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73393
+                            73450
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189626&amp;flag=rndList" onclick="javascript:fn_view('1189626'); return false;" title="형질전환 면역세포 선별을 위한 펩타이드-덴드리머 복합체 기반 나노 표적물질 개발"> 형질전환 면역세포 선별을 위한 펩타이드-덴드리머 복합체 기반 나노 표적물질 개발
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190844&amp;flag=rndList" onclick="javascript:fn_view('1190844'); return false;" title="글로벌 이슈별 2040 전망 및 기술개발 전략 도출을 위한 연구"> 글로벌 이슈별 2040 전망 및 기술개발 전략 도출을 위한 연구
                                 </a>
 </div>
 </td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.07.25</td>
-<td data-title="마감일">2024.08.02</td>
-<td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
-</td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="[일반용역] 결핵백신용 면역증강제 비교평가를 위한 조직병리분석" type="checkbox" value="1189611"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73392
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189611&amp;flag=rndList" onclick="javascript:fn_view('1189611'); return false;" title="[일반용역] 결핵백신용 면역증강제 비교평가를 위한 조직병리분석"> [일반용역] 결핵백신용 면역증강제 비교평가를 위한 조직병리분석
-                                </a>
-</div>
-</td>
-<td data-title="부처명">질병관리청</td>
-<td data-title="접수일">2024.07.25</td>
-<td data-title="마감일">2024.07.31</td>
-<td class="end" data-title="D-day">
-<span style="color: red">D - 3</span>
-</td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년도 제3차 백신실용화기술개발사업단 신규지원 대상과제 재공고" type="checkbox" value="1189599"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73391
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189599&amp;flag=rndList" onclick="javascript:fn_view('1189599'); return false;" title="2024년도 제3차 백신실용화기술개발사업단 신규지원 대상과제 재공고"> 2024년도 제3차 백신실용화기술개발사업단 신규지원 대상과제 재공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2024.07.25</td>
-<td data-title="마감일">2024.08.05</td>
+<td data-title="부처명">산업통상자원부</td>
+<td data-title="접수일">2024.08.09</td>
+<td data-title="마감일">2024.08.20</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1638,22 +1578,22 @@ $(function(){
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="야생조류 고병원성 AI 감염의심개체 계류·격리를 위한 모듈 운영 및 SOP 마련" type="checkbox" value="1189519"/></td>
+<td><input name="selectCheckList" title="2024년 에너지국제공동연구사업 신규지원 대상과제 공고" type="checkbox" value="1190760"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73390
+                            73449
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189519&amp;flag=rndList" onclick="javascript:fn_view('1189519'); return false;" title="야생조류 고병원성 AI 감염의심개체 계류·격리를 위한 모듈 운영 및 SOP 마련"> 야생조류 고병원성 AI 감염의심개체 계류·격리를 위한 모듈 운영 및 SOP 마련
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190760&amp;flag=rndList" onclick="javascript:fn_view('1190760'); return false;" title="2024년 에너지국제공동연구사업 신규지원 대상과제 공고"> 2024년 에너지국제공동연구사업 신규지원 대상과제 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">환경부</td>
-<td data-title="접수일">2024.07.25</td>
-<td data-title="마감일">2024.08.07</td>
+<td data-title="부처명">산업통상자원부</td>
+<td data-title="접수일">2024.08.16</td>
+<td data-title="마감일">2024.09.23</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1667,49 +1607,49 @@ $(function(){
                                     
                                     
                                     
-                                    D-10
+                                    D-42
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="[일반용역] 리네졸리드 비감수성 장알균의 다중염기서열분석(MLST)" type="checkbox" value="1189502"/></td>
+<td><input name="selectCheckList" title="[국가통합바이오빅데이터구축사업] 유전체 고도분석 수행기관 위탁과제 공모(~2024.8.16.)" type="checkbox" value="1190732"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73389
+                            73448
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189502&amp;flag=rndList" onclick="javascript:fn_view('1189502'); return false;" title="[일반용역] 리네졸리드 비감수성 장알균의 다중염기서열분석(MLST)"> [일반용역] 리네졸리드 비감수성 장알균의 다중염기서열분석(MLST)
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190732&amp;flag=rndList" onclick="javascript:fn_view('1190732'); return false;" title="[국가통합바이오빅데이터구축사업] 유전체 고도분석 수행기관 위탁과제 공모(~2024.8.16.)"> [국가통합바이오빅데이터구축사업] 유전체 고도분석 수행기관 위탁과제 공모(~2024.8.16.)
                                 </a>
 </div>
 </td>
-<td data-title="부처명">질병관리청</td>
-<td data-title="접수일">2024.07.24</td>
-<td data-title="마감일">2024.07.30</td>
+<td data-title="부처명">보건복지부</td>
+<td data-title="접수일">2024.07.30</td>
+<td data-title="마감일">2024.08.16</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 2</span>
+<span style="color: red">D - 4</span>
 </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="사이버보안국제협력기반기술개발사업(해외진출촉진)" type="checkbox" value="1189498"/></td>
+<td><input name="selectCheckList" title="국내 동남권 5권역 파랑자원 추산을 위한 Metocean data 산출" type="checkbox" value="1190668"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73388
+                            73447
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189498&amp;flag=rndList" onclick="javascript:fn_view('1189498'); return false;" title="사이버보안국제협력기반기술개발사업(해외진출촉진)"> 사이버보안국제협력기반기술개발사업(해외진출촉진)
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190668&amp;flag=rndList" onclick="javascript:fn_view('1190668'); return false;" title="국내 동남권 5권역 파랑자원 추산을 위한 Metocean data 산출"> 국내 동남권 5권역 파랑자원 추산을 위한 Metocean data 산출
                                 </a>
 </div>
 </td>
 <td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.07.24</td>
-<td data-title="마감일">2024.12.31</td>
+<td data-title="접수일">2024.08.09</td>
+<td data-title="마감일">2024.08.19</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1723,28 +1663,30 @@ $(function(){
                                     
                                     
                                     
-                                    D-156
+                                        D - 7
+                                    
+                                    
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="핵융합 미래에너지 실현 가속화 지원을 위한 규제체계 기본방향 마련을 위한 정책연구용역과제 공모" type="checkbox" value="1189496"/></td>
+<td><input name="selectCheckList" title="2024년도 나노 및 소재기술개발사업 신규과제 선정계획 16차 공고" type="checkbox" value="1190662"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73387
+                            73446
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1189496&amp;flag=rndList" onclick="javascript:fn_view('1189496'); return false;" title="핵융합 미래에너지 실현 가속화 지원을 위한 규제체계 기본방향 마련을 위한 정책연구용역과제 공모"> 핵융합 미래에너지 실현 가속화 지원을 위한 규제체계 기본방향 마련을 위한 정책연구용역과제 공모
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190662&amp;flag=rndList" onclick="javascript:fn_view('1190662'); return false;" title="2024년도 나노 및 소재기술개발사업 신규과제 선정계획 16차 공고"> 2024년도 나노 및 소재기술개발사업 신규과제 선정계획 16차 공고
                                 </a>
 </div>
 </td>
 <td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.07.24</td>
-<td data-title="마감일">2024.08.05</td>
+<td data-title="접수일">2024.08.08</td>
+<td data-title="마감일">2024.09.09</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1758,9 +1700,112 @@ $(function(){
                                     
                                     
                                     
-                                        D - 8
+                                    D-28
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2024년도 전력정보화 및 정책지원 신규지원 대상 연구개발과제 정책지정" type="checkbox" value="1190658"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73445
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190658&amp;flag=rndList" onclick="javascript:fn_view('1190658'); return false;" title="2024년도 전력정보화 및 정책지원 신규지원 대상 연구개발과제 정책지정"> 2024년도 전력정보화 및 정책지원 신규지원 대상 연구개발과제 정책지정
+                                </a>
+</div>
+</td>
+<td data-title="부처명">산업통상자원부</td>
+<td data-title="접수일">2024.08.08</td>
+<td data-title="마감일">2024.09.09</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
                                     
                                     
+                                    
+                                    D-28
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2024년도 전력정보화 및 정책지원 신규지원 대상 연구개발과제 공고" type="checkbox" value="1190657"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73444
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190657&amp;flag=rndList" onclick="javascript:fn_view('1190657'); return false;" title="2024년도 전력정보화 및 정책지원 신규지원 대상 연구개발과제 공고"> 2024년도 전력정보화 및 정책지원 신규지원 대상 연구개발과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">산업통상자원부</td>
+<td data-title="접수일">2024.08.08</td>
+<td data-title="마감일">2024.09.09</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-28
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2024년 바이오·의료기술개발사업(바이오혁신기반조성) 신규과제 4차 공모" type="checkbox" value="1190651"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73443
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1190651&amp;flag=rndList" onclick="javascript:fn_view('1190651'); return false;" title="2024년 바이오·의료기술개발사업(바이오혁신기반조성) 신규과제 4차 공모"> 2024년 바이오·의료기술개발사업(바이오혁신기반조성) 신규과제 4차 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.08.07</td>
+<td data-title="마감일">2024.09.06</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-25
                                 
 
                             </td>
@@ -1776,7 +1821,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7340" onclick="fn_search(7340);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7346" onclick="fn_search(7346);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>

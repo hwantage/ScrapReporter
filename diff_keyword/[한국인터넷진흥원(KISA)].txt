@@ -38,7 +38,7 @@
 <meta content="/resource/kor/favicon/ms-icon-144x144.png" name="msapplication-TileImage"/>
 <meta content="#ffffff" name="theme-color"/>
 <!--favicon 추가 끝-->
-<link href="/resource/kor/css/style.css?p=5" media="all" rel="stylesheet" type="text/css">
+<link href="/resource/kor/css/style.css?p=10" media="all" rel="stylesheet" type="text/css">
 <link href="/resource/common/css/xeicon.min.css" media="all" rel="stylesheet"/>
 <link href="/resource/kor/css/jquery.fullpage.min.css" media="all" rel="stylesheet" type="text/css">
 <link href="/resource/common/css/swiper.css" media="all" rel="stylesheet">
@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1107; // 전체 조회 건수
+	var totalNum = 1113; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -127,7 +127,7 @@
 </dl>
 <!-- //Skip -->
 <div id="wrap">
-<!--Mobile Gnb--><div class="menuMo"><div class="hd"><div class="logo"><a href="/" title="KISA"><span class="blind">로고</span></a></div><div class="rb"><button class="mobie_sitemap" onclick="location.href='/701'" title="전체메뉴">전체메뉴</button><a href="/EN" title="영문">ENG</a><button class="mobie_allSearch" title="찾기">SEARCH</button><button class="close" title="닫기"><span class="blind">닫기</span></button></div></div><div class="menu_cont"> <nav id="mo_gnb"><ul><li class="more"><li class="more"><button>고객서비스</button><ul class="mo_gnb_depth2"><li><a href="/301">주요서비스</a></li><li><a href="/302">대민웹서비스</a></li><li><a href="/303">118 상담 서비스 안내</a></li><li><a href="/306">국민제안함</a></li><li><a href="/310">안전보건제안</a></li><li class="more"><button>통합신고센터</button><ul class="mo_gnb_depth3"><li><a href="/30407">부패·공익신고 안내</a></li><li><a href="/30403">복지보조금부정신고 센터</a></li><li><a href="/30404">이해충돌 신고·상담센터</a></li><li><a href="/30405">인권침해 구제</a></li><li><a href="/30406">기업성장 응답센터</a></li></ul></li></ul></li><li class="more"><li class="more"><button>지식플랫폼</button><ul class="mo_gnb_depth2"><li><a href="/201">연구보고서</a></li><li><a href="/20207">동향분석</a><ul class="mo_gnb_depth3"><li><a href="/20207">전체동향</a></li><li><a href="/20205">사이버 위협 동향</a></li><li><a href="/20206">랜섬웨어 동향</a></li><li><a href="/20201">인터넷·정보보호 법제 동향</a></li><li><a href="/20202">개인정보보호·인터넷 동향</a></li><li><a href="/20203">글로벌 정보보호 동향</a></li><li><a href="/20204">국내외 위치정보 동향</a></li><li><a href="/20208">글로벌 디지털 산업·정책 동향</a></li></ul></li><li><a href="/20305">정기간행물</a><ul class="mo_gnb_depth3"><li><a href="/20305">전체</a></li><li><a href="/20301">KISA Insight</a></li><li><a href="/20302">KISA Report</a></li><li><a href="/20303">국가정보보호백서</a></li><li><a href="/20304">인터넷·정보보호 법제연구</a></li></ul></li><li><a href="/20509">실태조사 및 통계</a><ul class="mo_gnb_depth3"><li><a href="/20509">전체</a></li><li><a href="/20506">5대 융합서비스 및 정보보호실태조사</a></li><li><a href="https://www.kisia.or.kr/research/reference_board" target="_blank" title="새창열림">정보보호실태조사·정보보호산업실태조사(KISIA)</a></li><li><a href="/20504">스팸 유통현황</a></li><li><a href="/20501">전자문서 산업 실태조사</a></li><li><a href="/20503">인터넷주소자원 통계</a></li><li><a href="/20505">개인정보보호 실태조사</a></li></ul></li><li><a href="/204">역대발간물</a></li><li class="more"><button>법령·가이드라인</button><ul class="mo_gnb_depth3"><li><a href="/20601">법령·고시</a></li><li><a href="/2060207">가이드라인</a></li><li><a href="/2060307">안내서</a></li><li><a href="/20604">사례집, 편람 등</a></li></ul></li></ul></li><li class="more"><li class="more"><button>사업소개</button><ul class="mo_gnb_depth2"><li class="more"><button>디지털위협대응본부</button><ul class="mo_gnb_depth3"><li><a href="/10201">본부소개</a></li><li><a href="/1020201">침해사고 대응</a></li><li><a href="/1020301">침해사고 분석</a></li><li><a href="/1020405">침해사고 예방</a></li><li><a href="/1020501">위협정보 공유ㆍ협력</a></li></ul></li><li class="more"><button>개인정보안전활용본부</button><ul class="mo_gnb_depth3"><li><a href="/10301">본부소개</a></li><li><a href="/1030201">정책·협력</a></li><li><a href="/1030301">안전활용·교육</a></li><li><a href="/1030402">침해사고 예방·신고</a></li><li><a href="/1030501">불법스팸 대응</a></li><li><a href="/1030601">위치정보·본인확인</a></li></ul></li><li class="more"><button>정보보호산업본부</button><ul class="mo_gnb_depth3"><li><a href="/10401">본부소개</a></li><li><a href="/1040801">정보보호 관련 정보공개 제도</a></li><li><a href="/1040201">정보보호 기업 육성 및 지원</a></li><li><a href="/1040408">융합보안 산업 활성화 지원</a></li><li><a href="/1041101">인터넷주소 관리</a></li><li><a href="/10412">디지털분쟁조정지원</a></li><li><a href="/1041301">지역 정보보호 지원</a></li><li><a href="/1041401">정보보호 인력 양성</a></li></ul></li><li class="more"><button>디지털안전지원본부</button><ul class="mo_gnb_depth3"><li><a href="/10501">본부소개</a></li><li><a href="/1050601">정보보호 인증·안전 관리</a></li><li><a href="/1050701">정보보호 테스트베드 운영</a></li><li><a href="/10510">블록체인 신뢰 기반 조성</a></li><li><a href="/1051101">전자문서 진흥</a></li></ul></li></ul></li><li class="more"><li class="more"><button>주요성과</button><ul class="mo_gnb_depth2"><li><a href="/801">사이버침해 대응본부</a></li><li><a href="/802">개인정보 본부</a></li><li><a href="/803">디지털산업본부</a></li><li><a href="/804">디지털안전본부</a></li></ul></li><li class="more"><li class="more"><button>알림마당</button><ul class="mo_gnb_depth2"><li><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a><ul class="mo_gnb_depth3"><li><a href="/40701">사회공헌활동</a></li><li><a href="/40702">세부추진실적조회</a></li></ul></li><li><a href="/408">위탁과제</a></li><li class="more"><button>알림판</button><ul class="mo_gnb_depth3"><li><a href="/40901">게재중인 알림판</a></li><li><a href="/40902">게재마감된 알림판</a></li></ul></li><li><a href="/41001">과제계획</a><ul class="mo_gnb_depth3"><li><a href="/41001">위탁과제 리스트</a></li><li><a href="/41002">용역과제 리스트</a></li></ul></li><li><a href="/41101">기술이전</a><ul class="mo_gnb_depth3"><li><a href="/41101">기술이전 리스트</a></li><li><a href="/41102">기술이전 업무프로세스</a></li></ul></li></ul></li><li class="more"><li class="more"><button>환경·사회·투명 경영</button><ul class="mo_gnb_depth2"><li><a href="/501">사전정보공표</a></li><li class="more"><button>정보공개</button><ul class="mo_gnb_depth3"><li><a href="/50201">업무처리절차</a></li><li><a href="/5020201">정보공개안내</a></li><li><a href="/50203">정보공개목록</a></li><li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개청구</a></li><li><a href="/50206">비공개기준</a></li><li><a href="/50204">공공데이터개방</a></li></ul></li><li><a href="/503">경영공시</a></li><li class="more"><button>자체경영공시</button><ul class="mo_gnb_depth3"><li><a href="/5040101">일반현황</a></li><li><a href="/5040201">기관운영현황</a></li><li><a href="/5040301">내·외부 감사 및 평가</a></li></ul></li><li><a href="/505">사업실명제</a></li><li><a href="/507">내부감사결과</a></li><li class="more"><button>고객만족경영</button><ul class="mo_gnb_depth3"><li><a href="/50801">고객만족비전</a></li><li><a href="/50802">고객서비스 헌장</a></li><li><a href="/50803">고객서비스 이행표준</a></li></ul></li><li class="more"><button>안전보건경영</button><ul class="mo_gnb_depth3"><li><a href="/50901">안전보건경영방침</a></li><li><a href="/50902">안전보건경영 현황공개</a></li><li><a href="/50903">업무연속성경영방침</a></li></ul></li><li class="more"><button>인권경영</button><ul class="mo_gnb_depth3"><li><a href="/51001">추진체계</a></li><li><a href="/51002">인권경영헌장</a></li><li><a href="/51003">인권경영활동</a></li></ul></li><li class="more"><button>환경·사회·투명(ESG) 경영</button><ul class="mo_gnb_depth3"><li><a href="/51303">CEO X ESG</a></li><li><a href="/51301">전략체계</a></li><li><a href="/51302">경영공시</a></li><li><a href="/51304">인증현황</a></li><li><a href="/51305">경영활동</a></li><li><a href="/51307">이사회 운영 현황</a></li></ul></li><li class="more"><button>사회적 가치 추진</button><ul class="mo_gnb_depth3"><li><a href="/51101">전략체계</a></li><li><a href="/51102">사회적 가치 추진 활동</a></li></ul></li><li><a href="/512">기업민원 보호·서비스 헌장</a></li><li><a href="/514">양성평등 임원임명 목표제</a></li></ul></li><li class="more"><li class="more"><button>KISA 소개</button><ul class="mo_gnb_depth2"><li><a href="/601">기관장 인사말</a></li><li><a href="/602">연혁</a></li><li><a href="/603">조직도</a></li><li><a href="/604">상징(CI)</a></li><li><a href="/605">비전 및 목표</a></li><li><a href="/606">시설개방현황</a></li><li><a href="/60701">찾아오시는길</a><ul class="mo_gnb_depth3"><li><a href="/60701">나주본원</a></li><li><a href="/60702">서울청사</a></li><li><a href="/60703">판교사무소</a></li></ul></li><li class="more"><button>국민소통채널</button><ul class="mo_gnb_depth3"><li><a href="/60809">기관 소식·홍보 영상</a></li></ul></li><li><a href="/609">기관내규(사규)</a></li><li><a href="/610">사규 제·개정예고</a></li></ul></li><li class="more"><li class="more"><button>이용안내</button><ul class="mo_gnb_depth2"><li><a href="/701">사이트맵</a></li><li><a href="/702">RSS</a></li><li><a href="/703">웹접근성 도움말</a></li><li><a href="/704">개인정보 처리방침</a></li></ul></li><li class="more"><li class="more"><button>사전정보공표</button><ul class="mo_gnb_depth2"><li class="more"><button>사전정보공표</button><ul class="mo_gnb_depth3"><li><a href="/9010101">감사·윤리</a></li><li><a href="/9010201">경영·인사</a></li><li><a href="/9010301">홍보·국제협력</a></li><li><a href="/9010401">재무회계</a></li><li><a href="/9010501">총무 일반</a></li></ul></li></ul></li></li></li></li></li></li></li></li></li></li></ul></nav></div></div><div class="menuMo_bg"></div><!--//Mobile Gnb--><header class="white sub" id="header"> <div class="bg"></div><h1 class="logo"><a href="/" title="한국인터넷진흥원">한국인터넷진흥원</a></h1><nav id="gnb"><ul><li><a href="/301" id="gnbTarget" onclick="oneDepMenu()">고객서비스</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>고객서비스</h2></div><ul class="gnb_depth2"><li><a href="/301">주요서비스</a></li><li><a href="/302">대민웹서비스</a></li><li><a href="/303">118 상담 서비스 안내</a></li><li><a href="/306">국민제안함</a></li><li><a href="/310">안전보건제안</a></li><li><a href="/30407">통합신고센터</a><ul class="gnb_depth3"><li><a href="/30407">부패·공익신고 안내</a></li><li><a href="/30403">복지보조금부정신고 센터</a></li><li><a href="/30404">이해충돌 신고·상담센터</a></li><li><a href="/30405">인권침해 구제</a></li><li><a href="/30406">기업성장 응답센터</a></li></ul></li></ul></div></div></li><li><a href="/201" onclick="oneDepMenu()">지식플랫폼</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>지식플랫폼</h2></div><ul class="gnb_depth2"><li><a href="/201">연구보고서</a></li><li><a href="/20207">동향분석</a><ul class="gnb_depth3"></ul></li><li><a href="/20305">정기간행물</a><ul class="gnb_depth3"></ul></li><li><a href="/20509">실태조사 및 통계</a><ul class="gnb_depth3"></ul></li><li><a href="/204">역대발간물</a></li><li><a href="/20601">법령·가이드라인</a><ul class="gnb_depth3"><li><a href="/20601">법령·고시</a></li><li><a href="/2060207">가이드라인</a></li><li><a href="/2060307">안내서</a></li><li><a href="/20604">사례집, 편람 등</a></li></ul></li></ul></div></div></li><li><a href="/10201" id="gnbTarget" onclick="oneDepMenu()">사업소개</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>사업소개</h2></div><ul class="gnb_depth2"><li><a href="/10201">디지털위협대응본부</a><ul class="gnb_depth3"><li><a href="/10201">본부소개</a></li><li><a href="/1020201">침해사고 대응</a></li><li><a href="/1020301">침해사고 분석</a></li><li><a href="/1020405">침해사고 예방</a></li><li><a href="/1020501">위협정보 공유ㆍ협력</a></li></ul></li><li><a href="/10301">개인정보안전활용본부</a><ul class="gnb_depth3"><li><a href="/10301">본부소개</a></li><li><a href="/1030201">정책·협력</a></li><li><a href="/1030301">안전활용·교육</a></li><li><a href="/1030402">침해사고 예방·신고</a></li><li><a href="/1030501">불법스팸 대응</a></li><li><a href="/1030601">위치정보·본인확인</a></li></ul></li><li><a href="/10401">정보보호산업본부</a><ul class="gnb_depth3"><li><a href="/10401">본부소개</a></li><li><a href="/1040801">정보보호 관련 정보공개 제도</a></li><li><a href="/1040201">정보보호 기업 육성 및 지원</a></li><li><a href="/1040408">융합보안 산업 활성화 지원</a></li><li><a href="/1041101">인터넷주소 관리</a></li><li><a href="/10412">디지털분쟁조정지원</a></li><li><a href="/1041301">지역 정보보호 지원</a></li><li><a href="/1041401">정보보호 인력 양성</a></li></ul></li><li><a href="/10501">디지털안전지원본부</a><ul class="gnb_depth3"><li><a href="/10501">본부소개</a></li><li><a href="/1050601">정보보호 인증·안전 관리</a></li><li><a href="/1050701">정보보호 테스트베드 운영</a></li><li><a href="/10510">블록체인 신뢰 기반 조성</a></li><li><a href="/1051101">전자문서 진흥</a></li></ul></li></ul></div></div></li><li><a href="/801" onclick="oneDepMenu()">주요성과</a></li><li><a href="/401" onclick="oneDepMenu()">알림마당</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>알림마당</h2></div><ul class="gnb_depth2"><li><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a><ul class="gnb_depth3"></ul></li><li><a href="/408">위탁과제</a></li><li><a href="/40901">알림판</a><ul class="gnb_depth3"></ul></li><li><a href="/41001">과제계획</a><ul class="gnb_depth3"></ul></li><li><a href="/41101">기술이전</a><ul class="gnb_depth3"></ul></li></ul></div></div></li><li><a href="/501" onclick="oneDepMenu()">환경·사회·투명 경영</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>환경·사회·투명 경영</h2></div><ul class="gnb_depth2"><li><a href="/501">사전정보공표</a></li><li><a href="/50201">정보공개</a><ul class="gnb_depth3"></ul></li><li><a href="/503">경영공시</a></li><li><a href="/5040101">자체경영공시</a><ul class="gnb_depth3"></ul></li><li><a href="/505">사업실명제</a></li><li><a href="/507">내부감사결과</a></li><li><a href="/50801">고객만족경영</a><ul class="gnb_depth3"></ul></li><li><a href="/50901">안전보건경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51001">인권경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51303">환경·사회·투명(ESG) 경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51101">사회적 가치 추진</a><ul class="gnb_depth3"></ul></li><li><a href="/512">기업민원 보호·서비스 헌장</a></li><li><a href="/514">양성평등 임원임명 목표제</a></li></ul></div></div></li><li><a href="/601" onclick="oneDepMenu()">KISA 소개</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>KISA 소개</h2></div><ul class="gnb_depth2"><li><a href="/601">기관장 인사말</a></li><li><a href="/602">연혁</a></li><li><a href="/603">조직도</a></li><li><a href="/604">상징(CI)</a></li><li><a href="/605">비전 및 목표</a></li><li><a href="/606">시설개방현황</a></li><li><a href="/60701">찾아오시는길</a><ul class="gnb_depth3"></ul></li><li><a href="/60809">국민소통채널</a><ul class="gnb_depth3"></ul></li><li><a href="/609">기관내규(사규)</a></li><li><a href="/610">사규 제·개정예고</a></li></ul></div></div></li></ul></nav><div class="rb"><a class="all_menu" href="/701" title="전체메뉴">전체메뉴</a><a class="eng" href="/EN" title="ENGLISH">ENG</a><a class="all_search" href="#funcClicked" onclick="funcClicked()" title="전체검색">전체검색 열기</a></div><button class="mobile_menu" title="모바일 메뉴" type="button"></button></header><div class="all_search_pop"><form action="https://search.kisa.or.kr/search/search.jsp"><div class="f_box"><label class="blind" for="txt_search">검색어 입력</label><input class="txt_search" id="txt_search" name="keyword" placeholder="검색어를 입력하세요" type="text"/><button class="btn_search" title="검색" type="submit"></button></div></form></div><!-- //Header --><!-- Sub Top Contents --><section class="sub_top_box"><div class="imgs"><img alt="" src="/resource/kor/images/sub/bg_sub_top_01.jpg"/></div><div class="cont"><div class="cont"><h2>알림마당</h2><nav class="sub_nav"><ul class="sub_nav"><li><a href="/" title="홈으로"><span class="blind">홈</span><img alt="" src="/resource/kor/images/common/ic_sub_nav_home.png"/></a></li><li><a href="/401" title="알림마당">알림마당</a></li><li><a href="/401" title="공지사항">공지사항</a></li></ul></nav></div></div></section><!-- // Sub Top Contents -->
+<!--Mobile Gnb--><div class="menuMo"><div class="hd"><div class="logo"><a href="/" title="KISA"><span class="blind">로고</span></a></div><div class="rb"><button class="mobie_sitemap" onclick="location.href='/701'" title="전체메뉴">전체메뉴</button><a href="/EN" title="영문">ENG</a><button class="mobie_allSearch" title="찾기">SEARCH</button><button class="close" title="닫기"><span class="blind">닫기</span></button></div></div><div class="menu_cont"> <nav id="mo_gnb"><ul><li class="more"><li class="more"><button>고객서비스</button><ul class="mo_gnb_depth2"><li><a href="/301">주요서비스</a></li><li><a href="/302">대민웹서비스</a></li><li><a href="/303">118 상담 서비스 안내</a></li><li><a href="/306">국민제안함</a></li><li><a href="/310">안전보건제안</a></li><li class="more"><button>통합신고센터</button><ul class="mo_gnb_depth3"><li><a href="/30407">부패·공익신고 안내</a></li><li><a href="/30403">복지보조금부정신고 센터</a></li><li><a href="/30404">이해충돌 신고·상담센터</a></li><li><a href="/30405">인권침해 구제</a></li><li><a href="/30406">기업성장 응답센터</a></li></ul></li></ul></li><li class="more"><li class="more"><button>지식플랫폼</button><ul class="mo_gnb_depth2"><li><a href="/201">연구보고서</a></li><li><a href="/20207">동향분석</a><ul class="mo_gnb_depth3"><li><a href="/20207">전체동향</a></li><li><a href="/20205">사이버 위협 동향</a></li><li><a href="/20206">랜섬웨어 동향</a></li><li><a href="/20201">인터넷·정보보호 법제 동향</a></li><li><a href="/20202">개인정보보호·인터넷 동향</a></li><li><a href="/20203">글로벌 정보보호 동향</a></li><li><a href="/20204">국내외 위치정보 동향</a></li><li><a href="/20208">글로벌 디지털 산업·정책 동향</a></li></ul></li><li><a href="/20305">정기간행물</a><ul class="mo_gnb_depth3"><li><a href="/20305">전체</a></li><li><a href="/20301">KISA Insight</a></li><li><a href="/20302">KISA Report</a></li><li><a href="/20303">국가정보보호백서</a></li><li><a href="/20304">인터넷·정보보호 법제연구</a></li></ul></li><li><a href="/20509">실태조사 및 통계</a><ul class="mo_gnb_depth3"><li><a href="/20509">전체</a></li><li><a href="/20506">5대 융합서비스 및 정보보호실태조사</a></li><li><a href="https://www.kisia.or.kr/research/reference_board" target="_blank" title="새창열림">정보보호실태조사·정보보호산업실태조사(KISIA)</a></li><li><a href="/20504">스팸 유통현황</a></li><li><a href="/20501">전자문서 산업 실태조사</a></li><li><a href="/20503">인터넷주소자원 통계</a></li><li><a href="/20505">개인정보보호 실태조사</a></li></ul></li><li><a href="/204">역대발간물</a></li><li class="more"><button>법령·가이드라인</button><ul class="mo_gnb_depth3"><li><a href="/20601">법령·고시</a></li><li><a href="/2060207">가이드라인</a></li><li><a href="/2060307">안내서</a></li><li><a href="/20604">사례집, 편람 등</a></li></ul></li></ul></li><li class="more"><li class="more"><button>사업소개</button><ul class="mo_gnb_depth2"><li class="more"><button>디지털위협대응본부</button><ul class="mo_gnb_depth3"><li><a href="/10201">본부소개</a></li><li><a href="/1020201">침해사고 대응</a></li><li><a href="/1020301">침해사고 분석</a></li><li><a href="/1020405">침해사고 예방</a></li><li><a href="/1020501">위협정보 공유ㆍ협력</a></li></ul></li><li class="more"><button>개인정보안전활용본부</button><ul class="mo_gnb_depth3"><li><a href="/10301">본부소개</a></li><li><a href="/1030201">정책·협력</a></li><li><a href="/1030301">안전활용·교육</a></li><li><a href="/1030402">침해사고 예방·신고</a></li><li><a href="/1030501">불법스팸 대응</a></li><li><a href="/1030601">위치정보·본인확인</a></li></ul></li><li class="more"><button>정보보호산업본부</button><ul class="mo_gnb_depth3"><li><a href="/10401">본부소개</a></li><li><a href="/1040801">정보보호 관련 정보공개 제도</a></li><li><a href="/1040201">정보보호 기업 육성 및 지원</a></li><li><a href="/1040408">융합보안 산업 활성화 지원</a></li><li><a href="/1041101">인터넷주소 관리</a></li><li><a href="/10412">디지털분쟁조정지원</a></li><li><a href="/1041301">지역 정보보호 지원</a></li><li><a href="/1041401">정보보호 인력 양성</a></li></ul></li><li class="more"><button>디지털안전지원본부</button><ul class="mo_gnb_depth3"><li><a href="/10501">본부소개</a></li><li><a href="/1050601">정보보호 인증·안전 관리</a></li><li><a href="/1050701">정보보호 테스트베드 운영</a></li><li><a href="/10510">블록체인 신뢰 기반 조성</a></li><li><a href="/1051101">전자문서 진흥</a></li></ul></li></ul></li><li class="more"><li class="more"><button>주요성과</button><ul class="mo_gnb_depth2"><li><a href="/801">디지털위협대응본부</a></li><li><a href="/802">개인정보안전활용본부</a></li><li><a href="/803">정보보호산업본부</a></li><li><a href="/804">디지털안전지원본부</a></li></ul></li><li class="more"><li class="more"><button>알림마당</button><ul class="mo_gnb_depth2"><li><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a><ul class="mo_gnb_depth3"><li><a href="/40701">사회공헌활동</a></li><li><a href="/40702">세부추진실적조회</a></li></ul></li><li><a href="/408">위탁과제</a></li><li class="more"><button>알림판</button><ul class="mo_gnb_depth3"><li><a href="/40901">게재중인 알림판</a></li><li><a href="/40902">게재마감된 알림판</a></li></ul></li><li><a href="/41001">과제계획</a><ul class="mo_gnb_depth3"><li><a href="/41001">위탁과제 리스트</a></li><li><a href="/41002">용역과제 리스트</a></li></ul></li><li><a href="/41101">기술이전</a><ul class="mo_gnb_depth3"><li><a href="/41101">기술이전 리스트</a></li><li><a href="/41102">기술이전 업무프로세스</a></li></ul></li></ul></li><li class="more"><li class="more"><button>환경·사회·투명 경영</button><ul class="mo_gnb_depth2"><li><a href="/501">사전정보공표</a></li><li class="more"><button>정보공개</button><ul class="mo_gnb_depth3"><li><a href="/50201">업무처리절차</a></li><li><a href="/5020201">정보공개안내</a></li><li><a href="/50203">정보공개목록</a></li><li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개청구</a></li><li><a href="/50206">비공개기준</a></li><li><a href="/50204">공공데이터개방</a></li></ul></li><li><a href="/503">경영공시</a></li><li class="more"><button>자체경영공시</button><ul class="mo_gnb_depth3"><li><a href="/5040101">일반현황</a></li><li><a href="/5040201">기관운영현황</a></li><li><a href="/5040301">내·외부 감사 및 평가</a></li></ul></li><li><a href="/505">사업실명제</a></li><li><a href="/507">내부감사결과</a></li><li class="more"><button>고객만족경영</button><ul class="mo_gnb_depth3"><li><a href="/50801">고객만족비전</a></li><li><a href="/50802">고객서비스 헌장</a></li><li><a href="/50803">고객서비스 이행표준</a></li></ul></li><li class="more"><button>안전보건경영</button><ul class="mo_gnb_depth3"><li><a href="/50901">안전보건경영방침</a></li><li><a href="/50902">안전보건경영 현황공개</a></li><li><a href="/50903">업무연속성경영방침</a></li></ul></li><li class="more"><button>인권경영</button><ul class="mo_gnb_depth3"><li><a href="/51001">추진체계</a></li><li><a href="/51002">인권경영헌장</a></li><li><a href="/51003">인권경영활동</a></li></ul></li><li class="more"><button>환경·사회·투명(ESG) 경영</button><ul class="mo_gnb_depth3"><li><a href="/51303">CEO X ESG</a></li><li><a href="/51301">전략체계</a></li><li><a href="/51302">경영공시</a></li><li><a href="/51304">인증현황</a></li><li><a href="/51305">경영활동</a></li><li><a href="/51307">이사회 운영 현황</a></li></ul></li><li class="more"><button>사회적 가치 추진</button><ul class="mo_gnb_depth3"><li><a href="/51101">전략체계</a></li><li><a href="/51102">사회적 가치 추진 활동</a></li></ul></li><li><a href="/512">기업민원 보호·서비스 헌장</a></li><li><a href="/514">양성평등 임원임명 목표제</a></li></ul></li><li class="more"><li class="more"><button>KISA 소개</button><ul class="mo_gnb_depth2"><li><a href="/601">기관장 인사말</a></li><li><a href="/602">연혁</a></li><li><a href="/603">조직도</a></li><li><a href="/604">상징(CI)</a></li><li><a href="/605">비전 및 목표</a></li><li><a href="/606">시설개방현황</a></li><li><a href="/60701">찾아오시는길</a><ul class="mo_gnb_depth3"><li><a href="/60701">나주본원</a></li><li><a href="/60702">서울청사</a></li><li><a href="/60703">판교사무소</a></li></ul></li><li class="more"><button>국민소통채널</button><ul class="mo_gnb_depth3"><li><a href="/60809">기관 소식·홍보 영상</a></li></ul></li><li><a href="/609">기관내규(사규)</a></li><li><a href="/610">사규 제·개정예고</a></li></ul></li><li class="more"><li class="more"><button>이용안내</button><ul class="mo_gnb_depth2"><li><a href="/701">사이트맵</a></li><li><a href="/702">RSS</a></li><li><a href="/703">웹접근성 도움말</a></li><li><a href="/704">개인정보 처리방침</a></li></ul></li><li class="more"><li class="more"><button>사전정보공표</button><ul class="mo_gnb_depth2"><li class="more"><button>사전정보공표</button><ul class="mo_gnb_depth3"><li><a href="/9010101">감사·윤리</a></li><li><a href="/9010201">경영·인사</a></li><li><a href="/9010301">홍보·국제협력</a></li><li><a href="/9010401">재무회계</a></li><li><a href="/9010501">총무 일반</a></li></ul></li></ul></li></li></li></li></li></li></li></li></li></li></ul></nav></div></div><div class="menuMo_bg"></div><!--//Mobile Gnb--><header class="white sub" id="header"> <div class="bg"></div><h1 class="logo"><a href="/" title="한국인터넷진흥원">한국인터넷진흥원</a></h1><nav id="gnb"><ul><li><a href="/301" id="gnbTarget" onclick="oneDepMenu()">고객서비스</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>고객서비스</h2></div><ul class="gnb_depth2"><li><a href="/301">주요서비스</a></li><li><a href="/302">대민웹서비스</a></li><li><a href="/303">118 상담 서비스 안내</a></li><li><a href="/306">국민제안함</a></li><li><a href="/310">안전보건제안</a></li><li><a href="/30407">통합신고센터</a><ul class="gnb_depth3"><li><a href="/30407">부패·공익신고 안내</a></li><li><a href="/30403">복지보조금부정신고 센터</a></li><li><a href="/30404">이해충돌 신고·상담센터</a></li><li><a href="/30405">인권침해 구제</a></li><li><a href="/30406">기업성장 응답센터</a></li></ul></li></ul></div></div></li><li><a href="/201" onclick="oneDepMenu()">지식플랫폼</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>지식플랫폼</h2></div><ul class="gnb_depth2"><li><a href="/201">연구보고서</a></li><li><a href="/20207">동향분석</a><ul class="gnb_depth3"></ul></li><li><a href="/20305">정기간행물</a><ul class="gnb_depth3"></ul></li><li><a href="/20509">실태조사 및 통계</a><ul class="gnb_depth3"></ul></li><li><a href="/204">역대발간물</a></li><li><a href="/20601">법령·가이드라인</a><ul class="gnb_depth3"><li><a href="/20601">법령·고시</a></li><li><a href="/2060207">가이드라인</a></li><li><a href="/2060307">안내서</a></li><li><a href="/20604">사례집, 편람 등</a></li></ul></li></ul></div></div></li><li><a href="/10201" id="gnbTarget" onclick="oneDepMenu()">사업소개</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>사업소개</h2></div><ul class="gnb_depth2"><li><a href="/10201">디지털위협대응본부</a><ul class="gnb_depth3"><li><a href="/10201">본부소개</a></li><li><a href="/1020201">침해사고 대응</a></li><li><a href="/1020301">침해사고 분석</a></li><li><a href="/1020405">침해사고 예방</a></li><li><a href="/1020501">위협정보 공유ㆍ협력</a></li></ul></li><li><a href="/10301">개인정보안전활용본부</a><ul class="gnb_depth3"><li><a href="/10301">본부소개</a></li><li><a href="/1030201">정책·협력</a></li><li><a href="/1030301">안전활용·교육</a></li><li><a href="/1030402">침해사고 예방·신고</a></li><li><a href="/1030501">불법스팸 대응</a></li><li><a href="/1030601">위치정보·본인확인</a></li></ul></li><li><a href="/10401">정보보호산업본부</a><ul class="gnb_depth3"><li><a href="/10401">본부소개</a></li><li><a href="/1040801">정보보호 관련 정보공개 제도</a></li><li><a href="/1040201">정보보호 기업 육성 및 지원</a></li><li><a href="/1040408">융합보안 산업 활성화 지원</a></li><li><a href="/1041101">인터넷주소 관리</a></li><li><a href="/10412">디지털분쟁조정지원</a></li><li><a href="/1041301">지역 정보보호 지원</a></li><li><a href="/1041401">정보보호 인력 양성</a></li></ul></li><li><a href="/10501">디지털안전지원본부</a><ul class="gnb_depth3"><li><a href="/10501">본부소개</a></li><li><a href="/1050601">정보보호 인증·안전 관리</a></li><li><a href="/1050701">정보보호 테스트베드 운영</a></li><li><a href="/10510">블록체인 신뢰 기반 조성</a></li><li><a href="/1051101">전자문서 진흥</a></li></ul></li></ul></div></div></li><li><a href="/801" onclick="oneDepMenu()">주요성과</a></li><li><a href="/401" onclick="oneDepMenu()">알림마당</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>알림마당</h2></div><ul class="gnb_depth2"><li><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a><ul class="gnb_depth3"></ul></li><li><a href="/408">위탁과제</a></li><li><a href="/40901">알림판</a><ul class="gnb_depth3"></ul></li><li><a href="/41001">과제계획</a><ul class="gnb_depth3"></ul></li><li><a href="/41101">기술이전</a><ul class="gnb_depth3"></ul></li></ul></div></div></li><li><a href="/501" onclick="oneDepMenu()">환경·사회·투명 경영</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>환경·사회·투명 경영</h2></div><ul class="gnb_depth2"><li><a href="/501">사전정보공표</a></li><li><a href="/50201">정보공개</a><ul class="gnb_depth3"></ul></li><li><a href="/503">경영공시</a></li><li><a href="/5040101">자체경영공시</a><ul class="gnb_depth3"></ul></li><li><a href="/505">사업실명제</a></li><li><a href="/507">내부감사결과</a></li><li><a href="/50801">고객만족경영</a><ul class="gnb_depth3"></ul></li><li><a href="/50901">안전보건경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51001">인권경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51303">환경·사회·투명(ESG) 경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51101">사회적 가치 추진</a><ul class="gnb_depth3"></ul></li><li><a href="/512">기업민원 보호·서비스 헌장</a></li><li><a href="/514">양성평등 임원임명 목표제</a></li></ul></div></div></li><li><a href="/601" onclick="oneDepMenu()">KISA 소개</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>KISA 소개</h2></div><ul class="gnb_depth2"><li><a href="/601">기관장 인사말</a></li><li><a href="/602">연혁</a></li><li><a href="/603">조직도</a></li><li><a href="/604">상징(CI)</a></li><li><a href="/605">비전 및 목표</a></li><li><a href="/606">시설개방현황</a></li><li><a href="/60701">찾아오시는길</a><ul class="gnb_depth3"></ul></li><li><a href="/60809">국민소통채널</a><ul class="gnb_depth3"></ul></li><li><a href="/609">기관내규(사규)</a></li><li><a href="/610">사규 제·개정예고</a></li></ul></div></div></li></ul></nav><div class="rb"><a class="all_menu" href="/701" title="전체메뉴">전체메뉴</a><a class="eng" href="/EN" title="ENGLISH">ENG</a><a class="all_search" href="#funcClicked" onclick="funcClicked()" title="전체검색">전체검색 열기</a></div><button class="mobile_menu" title="모바일 메뉴" type="button"></button></header><div class="all_search_pop"><form action="https://search.kisa.or.kr/search/search.jsp"><div class="f_box"><label class="blind" for="txt_search">검색어 입력</label><input class="txt_search" id="txt_search" name="keyword" placeholder="검색어를 입력하세요" type="text"/><button class="btn_search" title="검색" type="submit"></button></div></form></div><!-- //Header --><!-- Sub Top Contents --><section class="sub_top_box"><div class="imgs"><img alt="" src="/resource/kor/images/sub/bg_sub_top_01.jpg"/></div><div class="cont"><div class="cont"><h2>알림마당</h2><nav class="sub_nav"><ul class="sub_nav"><li><a href="/" title="홈으로"><span class="blind">홈</span><img alt="" src="/resource/kor/images/common/ic_sub_nav_home.png"/></a></li><li><a href="/401" title="알림마당">알림마당</a></li><li><a href="/401" title="공지사항">공지사항</a></li></ul></nav></div></div></section><!-- // Sub Top Contents -->
 <script>
 function oneDepMenu() {
 	$.ajax({
@@ -190,7 +190,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1107</b>건
+<span>총 <b>1113</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -230,10 +230,19 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
+</td>
+<td class="date">2024-08-12</td>
+<td class="count">11642</td>
+<td class="attach">
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3304&amp;page=1">2024년 AI+SECURITY 아이디어 공모전 참가자 모집안내 (~8.12 16시까지 이메일 접수)</a>
 </td>
 <td class="date">2024-07-11</td>
-<td class="count">8807</td>
+<td class="count">15472</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3304', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -242,19 +251,10 @@ function oneDepMenu() {
 </tr>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
-</td>
-<td class="date">2024-07-08</td>
-<td class="count">6925</td>
-<td class="attach">
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3299&amp;page=1">2024년 제11회 소프트웨어 개발보안 경진대회 개최</a>
 </td>
 <td class="date">2024-07-01</td>
-<td class="count">17078</td>
+<td class="count">25110</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3299', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -263,73 +263,76 @@ function oneDepMenu() {
 </tr>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3291&amp;page=1">2024 블록체인 경진대회 『BEST Challenge』 참가자 모집 공고(~7.23(화), 14:00까지)</a>
-</td>
-<td class="date">2024-06-14</td>
-<td class="count">17691</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3291', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3286&amp;page=1">2024년 블록체인 누리단 2차 모집 안내(~7.5)</a>
-</td>
-<td class="date">2024-06-05</td>
-<td class="count">14227</td>
-<td class="attach">
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3259&amp;page=1">2024년 한국인터넷진흥원 공공데이터 활용 설문조사</a>
 </td>
 <td class="date">2024-04-08</td>
-<td class="count">44609</td>
+<td class="count">48707</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1101</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3308&amp;page=1">2024년 3차 정보보호 인증제품 조달청 벤처나라 추천 희망기업 모집 공고(9월 지정심사) (~8.16(금) 18시까지)</a>
+<td class="num"><span class="cate red">New</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3315&amp;page=1">[기간연장]2024년 정보보호제품 성능평가 지원 공모 사업 추가 모집(~8/23)</a>
 </td>
-<td class="date">2024-07-25</td>
-<td class="count">205</td>
+<td class="date">2024-08-12</td>
+<td class="count">28</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3308', 1, 'KO');">
-<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3315', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
 <tr>
-<td class="num">1100</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3307&amp;page=1">공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항 알림</a>
+<td class="num">1108</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3314&amp;page=1">'2024 웹 개발교육[Web Tech Seminar]' 안내</a>
 </td>
-<td class="date">2024-07-24</td>
-<td class="count">175</td>
+<td class="date">2024-08-08</td>
+<td class="count">1796</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1099</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3306&amp;page=1">2024 사이버보안 AI 데이터셋 우수 활용 성과공유회(7.26) 개최 안내</a>
+<td class="num">1107</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3313&amp;page=1">제1기 정보보호특성화대학 대상 사이버전문사관 후보생 모집·선발 공고</a>
 </td>
-<td class="date">2024-07-19</td>
-<td class="count">1263</td>
+<td class="date">2024-08-07</td>
+<td class="count">1285</td>
 <td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1098</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3305&amp;page=1">2024년 하반기 인터넷주소 거버넌스 민간전문가 국제회의 참석자 모집</a>
-</td>
-<td class="date">2024-07-12</td>
-<td class="count">859</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3305', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3313', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1106</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3312&amp;page=1">중소기업 기술마켓 활용 안내</a>
+</td>
+<td class="date">2024-08-01</td>
+<td class="count">1354</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1105</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3311&amp;page=1">2024년도 위치정보 보호조치 비대면 실습교육(3차) 안내</a>
+</td>
+<td class="date">2024-08-01</td>
+<td class="count">1416</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3311', 1, 'KO');">
+<img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1104</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3310&amp;page=1">2024년 제19회 대한민국 인터넷대상 공모</a>
+</td>
+<td class="date">2024-07-31</td>
+<td class="count">465</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3310', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
 </td>
 </tr>
@@ -358,10 +361,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2024-07-25</dd>
+<dd>2024-08-12</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="0f9f76ff-41a1-4758-b6e0-916f08057c87">
+<input name="_csrf" type="hidden" value="5b907bc2-ba4a-4061-bf0d-a24c99a54b15">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -384,7 +387,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "0f9f76ff-41a1-4758-b6e0-916f08057c87");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "5b907bc2-ba4a-4061-bf0d-a24c99a54b15");
             },			
 			success: function(data) {
 				alert(data.message)
@@ -486,7 +489,7 @@ function oneDepMenu() {
 </ul>
 </div>
 <div>
-<span><a href="https://www.mois.go.kr/innogov/" target="_blank" title="새창열림"><span class="blind">내일을 위한 보다 나은 정부</span><img alt="내일을 위한 보다 나은 정부" src="/resource/kor/images/common/img_ft_goverment.jpg"/></a></span>
+<span><a href="https://www.innovation.go.kr/" target="_blank" title="새창열림"><span class="blind">내일을 위한 보다 나은 정부</span><img alt="내일을 위한 보다 나은 정부" src="/resource/kor/images/common/img_ft_goverment.jpg"/></a></span>
 <!--<span><a href="/webaccess" onclick="window.open(this.href,'wa','left=100px, top=100px, width=533,height=750,scrollbars=no');return false;" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img src="/resource/kor/images/common/wa_web_2024.png" alt="웹접근성 인증 마크" style="height:62px;"></a></span>-->
 <span><a href="http://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=https://www.kisa.or.kr&amp;BoardID=0006" target="_blank" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img alt="웹접근성 인증 마크" src="/resource/kor/images/common/wa_web_2024.png" style="height:62px;"/></a></span>-
                 </div>
