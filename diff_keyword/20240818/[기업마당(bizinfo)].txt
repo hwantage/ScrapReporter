@@ -1,0 +1,1652 @@
+
+<!DOCTYPE HTML>
+
+<html lang="ko">
+<head>
+<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="b648d504-6857-414b-ab27-06a95a6d2d67" name="_csrf"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, user-scalable=0, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
+<meta content="1" name="SiteID"/>
+<meta content="" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="/images/bizinfo/common/sns_thumbnail_img.png" property="og:image"/>
+<meta content="" property="og:url"/>
+<link href="/images/bizinfo/favicon/favicon.ico" rel="shortcut icon" type="image/ico"/>
+<title>기업마당&gt;정책정보&gt;지원사업 공고
+</title>
+<script src="/js/search/jquery-1.6.2.min.js" type="text/javascript"></script>
+<script src="/js/search/beta.fix.js" type="text/javascript"></script>
+<script src="/js/search/ark_main.js" type="text/javascript"></script>
+<link href="/css/bizinfo/common.css" rel="stylesheet" type="text/css"/>
+<link href="/lib/css/base/jquery-ui-1.12.1.css" rel="stylesheet" type="text/css"/>
+<link href="/lib/css/base/jquery-ui.theme.css" rel="stylesheet" type="text/css"/>
+<script src="/lib/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/jquery-migrate-1.4.1.min.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/jquery-ui-1.12.1.min.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/jquery.cookie.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/jquery.lck.util.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/jquery.form.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/gnb.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/sub.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/common.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/mc.js" type="text/javascript"></script>
+<script defer="" src="/lib/js/jquery.blockUI.js" type="text/javascript"></script>
+<script charset="utf-8" src="/js/bizinfo/zoom.js" type="text/javascript"></script>
+<script charset="utf-8" src="/js/bizinfo/slick.js" type="text/javascript"></script>
+<script charset="utf-8" src="/js/bizinfo/OverlayScrollbars.js" type="text/javascript"></script>
+<script charset="utf-8" src="/js/bizinfo/common.js" type="text/javascript"></script>
+<script src="/js/bizinfo/docuGate.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var KUPLOAD_SERVER_URL= "https://www.bizinfo.go.kr";
+	var PREVIEW_SERVER_URL= "https://dxviewer.bizinfo.go.kr:8787";
+
+	var REQUEST_URL = "https://www.bizinfo.go.kr:443";
+	if (REQUEST_URL == null || REQUEST_URL == '') {
+		REQUEST_URL = "https://www.bizinfo.go.kr";
+	}
+</script>
+<!-- 관리자 메뉴설정에서 설정 -->
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="/lib/js/bbs.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+        	addKwdLst();
+        	var schAreaDetailCodes = []; // 지역 코드
+        	if('' != '') {
+        		schAreaDetailCodes.push('');
+        		if(''.indexOf(",") > -1) {
+        			schAreaDetailCodes = ''.split(',');
+        		}
+        		for(var schAreaDetailCode in schAreaDetailCodes) {
+        			$("button[name="+schAreaDetailCodes[schAreaDetailCode]+"]").addClass('active');
+        		}
+        	}
+        	
+        	if($("input[name=schWntyAt]").val() == 'Y'){
+        		$("#wnty").addClass('active');
+        	}
+        	
+            var hashCode = "";
+            if (hashCode) {
+                if (hashCode !== "") {
+                    $(".icon_1 a").removeClass("on");
+                }
+                $("#" + hashCode).addClass("on");
+            }
+            var condition = "";
+            
+            if(hashCode == ""){
+                $("#hashAll").attr("title", "전체 선택됨");
+            }else{
+                $("#"+hashCode).attr("title", $("#"+hashCode).text()+" 선택됨");
+          } 
+            if($("input[name=schJrsdCodeTy]").val() == ""){
+            	 $("#1").attr("title", "전체 선택됨")
+         	}else if($("input[name=schJrsdCodeTy]").val() == "2"){
+         		$("#"+$("input[name=schJrsdCodeTy]").val()).attr("title", "중앙부처 선택됨")
+         	}else{
+         		$("#"+$("input[name=schJrsdCodeTy]").val()).attr("title", "지자체 선택됨")
+         	}
+            
+            $("#reSearch").on("click", function(){
+            	if($("#reSearch").val() != ""){
+            		$("#reSearch").val("Y");
+            	}else{
+            		$("#reSearch").val("N");
+            	}
+            });
+            
+            if($('input[name=keyword]').val() == "" || $('input[name=keyword]').val() == null){
+            	$("#rescanChk").css("display", "none");
+            }else{
+            	$("#rescanChk").css("display", "block");
+            }
+            
+            
+            $(".category_list a").each(function(){
+                if($(this).hasClass("on")){
+                	$(this).attr("title", $(this).text().trim() + " 선택됨");
+                    $(this).attr("alt", $(this).text().trim() + "선택됨");
+                } else {
+                	$(this).attr("title", $(this).text().trim());
+                    $(this).attr("alt", $(this).text().trim());
+                }
+            });
+            $(".toggle_area_btn").each(function(index) {
+            	if($(this).hasClass("active")){
+            		$(this).attr("title",$(this).text().trim() + " 선택됨");
+            		$(this).attr("alt",$(this).text().trim() + " 선택됨");
+            	} else {
+            		$(this).attr("title",$(this).text().trim() + " 공고보기");
+            		$(this).attr("alt",$(this).text().trim() + " 공고보기");
+            	}
+            });
+            
+            $(".select_list").on("click",function(){
+            	if($("input[name=condition]").val() == "searchPblancNm"){
+            		$(".select_list_open").attr("title", "검색조건 지원사업명으로 검색");
+            		//$(".select_list_open").attr("aria-label", "searchPblancNm");
+            	}else if($("input[name=condition]").val() == "pldirJrsdCodeNm"){
+            		$(".select_list_open").attr("title", "검색조건 소관부처로 검색");
+            		//$(".select_list_open").attr("aria-label", "pldirJrsdCodeNm");
+            	}else if($("input[name=condition]").val() == "searchExcInsttNm"){ //20230522 검색조건 추가
+            		$(".select_list_open").attr("title", "검색조건 사업수행기관으로 검색");
+            		//$(".select_list_open").attr("aria-label", "searchExcInsttNm");
+            	}else if($("input[name=condition]").val() == "CONTS"){
+            		$(".select_list_open").attr("title", "검색조건 내용으로 검색");
+            		//$(".select_list_open").attr("aria-label", "CONTS");
+            	}else{
+            		$(".select_list_open").attr("title", "검색조건 해시태그로 검색");
+            		//$(".select_list_open").attr("aria-label", "TAGNAME");
+            	}
+            	
+            	if($("input[name=condition]").val() == ""){
+            		$("#rescanChk").css("display","block");
+            	}else{
+            		$("#rescanChk").css("display","none");
+            		$("#reSearch").prop('checked', false);
+            	}
+            });
+            
+            $('.btn_search').on('click', function () {
+            	articleSearch();
+            });
+            
+            $('.btn_reset').on('click', function () {
+            	$("input[name=schAreaDetailCodes]").val("");
+            	$('input[name=keyword]').val("");
+            	$('input[name=preKeywords]').val("");
+            	$('input[name=rescan]').val("N");
+            	$("input[name=condition]").val("");
+            	$("input[name=schJrsdCodeTy]").val("");
+            	$("input[name=schEndAt]").val("");
+            	orderChange("1");
+            	$("input[name=sort]").val("desc");
+            	fn_hashCode_Change('');
+            });
+
+            // 마감여부 조건 버튼 스타일
+            if($("input[name=schEndAt]").val() == "N") {
+                $("#endBsnsBtn").css("display","block");
+                $("#bsnsBtn").css("display","none");
+            }else{
+                $("#endBsnsBtn").css("display","none");
+                $("#bsnsBtn").css("display","block");
+            }
+
+            // 정렬 조건 버튼 스타일
+            if($("input[name=orderGb]").val() == "1" || $("input[name=orderGb]").val() == "") {
+                if($("input[name=sort]").val() == "asc"){
+                    $("#orderBtn1").append("<img src='/images/bizinfo/sub/order_up.png'>");
+                    $("#orderBtn1").attr("title", "등록일순 오름차순으로 정렬 됨");
+                }else{
+                    $("#orderBtn1").append("<img src='/images/bizinfo/sub/order_down.png'>");
+                    $("#orderBtn1").attr("title", "등록일순 내림차순으로 정렬 됨");
+                }
+                $("#orderBtn1").addClass("active");
+            }else if($("input[name=orderGb]").val() == "2"){
+                if($("input[name=sort]").val() == "asc"){
+                    $("#orderBtn2").append("<img src='/images/bizinfo/sub/order_up.png'>");
+                    $("#orderBtn2").attr("title", "마감일순 오름차순으로 정렬 됨");
+                }else{
+                    $("#orderBtn2").append("<img src='/images/bizinfo/sub/order_down.png'>");
+                    $("#orderBtn2").attr("title", "마감일순 내림차순으로 정렬 됨");
+                }
+                $("#orderBtn2").addClass("active");
+            }
+
+            if($("input[name=schJrsdCodeTy]").val() == "2"){
+                $("#2").toggleClass("active");
+            }else if($("input[name=schJrsdCodeTy]").val() == "3"){
+                $("#3").toggleClass("active");
+            }else {
+                $("#1").toggleClass("active");
+            }
+            
+             /* $(".toggle_area_btn").on("click",function(index){
+            	if($(this).attr('name') != '지역') {
+            		// 선택 버튼이 전국이 아닐 경우 선택 값 배열에 입력
+	            	if(schAreaDetailCodes.indexOf($(this).attr('name')) > -1) {
+	            		// 중복 값 입력(토글)시 배열에서 삭제
+	            		schAreaDetailCodes = schAreaDetailCodes.filter((codeId) => codeId != $(this).attr('name'));
+	            		$("input[name=schAreaDetailCodes]").val(schAreaDetailCodes);
+	            	} else {
+	            		schAreaDetailCodes.push($(this).attr('name'));
+	            		$("input[name=schAreaDetailCodes]").val(schAreaDetailCodes);
+
+	            	}
+            	} else {
+            		// 전국 버튼 토글
+            		if('' == 'Y') {
+            			$("input[name=schWntyAt]").val("");
+            			
+            		} else { 
+            			$("input[name=schWntyAt]").val("Y");
+            		}
+            		
+            	}
+            	articleSearch();
+            });  */
+             
+            $(".total_area_btn > .toggle_area_btn").on("click",function(index){
+             		// 전국 버튼 토글
+             		if('' == 'Y') {
+             			$("input[name=schWntyAt]").val("");
+             			
+             		} else { 
+             			$("input[name=schWntyAt]").val("Y");
+                 		$("input[name=schAreaDetailCodes]").val("");
+             		}
+
+             	articleSearch();
+             }); 
+            
+            $(".area_btn > .toggle_area_btn").on("click",function(index){
+            	if($(this).attr('name') != '지역') {
+            		// 선택 버튼이 전국이 아닐 경우 선택 값 배열에 입력
+	            	if(schAreaDetailCodes.indexOf($(this).attr('name')) > -1) {
+	            		// 중복 값 입력(토글)시 배열에서 삭제
+	            		schAreaDetailCodes = schAreaDetailCodes.filter((codeId) => codeId != $(this).attr('name'));
+	            		$("input[name=schAreaDetailCodes]").val(schAreaDetailCodes);
+	            	} else {
+	            		if($(".area_btn > .toggle_area_btn.active").length < "3"){
+		            		schAreaDetailCodes.push($(this).attr('name'));
+		            		$("input[name=schAreaDetailCodes]").val(schAreaDetailCodes);
+            			}else{
+            				alert("지역은 3개만 선택할 수 있습니다.");
+            			}
+
+	            	}
+            		
+            		$(".total_area_btn > .toggle_area_btn").removeClass("active");
+            		$("input[name=schWntyAt]").val("");
+            	}
+            	
+            	articleSearch();
+            }); 
+
+            
+            //전체, 중앙부처, 지자체 버튼
+            $(".toggle_jrsd_btn").on("click",function(){
+                if($(this).attr("class").indexOf("active") > -1 ){
+                    $(".toggle_jrsd_btn").removeClass("active");
+                    $("input[name=schJrsdCodeTy]").val("");
+                    articleSearch();
+                }else {
+                    $(".toggle_jrsd_btn").removeClass("active");
+                    $(this).toggleClass("active");
+                    if ($(this).attr("id") == "1") {
+                        $("input[name=schJrsdCodeTy]").val("");
+                    }else{
+                        $("input[name=schJrsdCodeTy]").val($(this).attr("id"));
+                    }
+                    articleSearch();
+                }
+            });
+
+            // 엑셀 다운로드 버튼 이벤트
+            $(".excel_btn2").hover(function(){
+			    $("#excel_btn").attr("src","/images/super/excel_download.png");
+			    $(".excel_btn2").css("background-color","#43b968");
+			}, function() {
+				$(".excel_btn2").css("background-color","");
+			    $("#excel_btn").attr("src","/images/super/excel_download_over.png");
+			});
+            
+            $(".btn_search").on('focus',function(){
+               	$(".btn_search").attr("style", "outline:auto");
+            });
+            
+            $(".btn_reset").on('focus',function(){
+               	$(".btn_reset").attr("style", "outline:auto");
+            });
+            
+            $(".btn_search").focusout(function(){
+            	$(".btn_search").attr("style", "outline:none");
+            })
+            
+             $(".btn_reset").focusout('focus',function(){
+               	$(".btn_reset").attr("style", "outline:none");
+            });
+            
+            $(".select_list_open1").on("click",function(){
+                $(this).parents(".custom_select1").addClass("focus");
+            });
+
+            $(".custom_select1 .select_list1 li button").on("click",function(){
+                var txt = $(this).text();
+                var option = $(this).data('option');
+                $(this).parents(".custom_select1").find(".select_list_open1").text(txt);
+                $(this).parents(".custom_select1").find(".select_list_open1").data('option',option);
+                $(this).parents(".custom_select1").removeClass("focus");
+                // form 조건 설정 추가..
+                $('input[name=condition1]').val(option);
+            });
+
+            $('html').click(function(e){
+                if($(e.target).parents('.custom_select1').length < 1){
+                    $(".custom_select1").removeClass("focus");
+                    // console.log("end");
+                }
+            });
+	        
+        });
+		
+        function fn_hashCode_Change(hashCode) {
+            $("#div_load_image").addClass("on");
+            $("#hashCode").val(hashCode);
+            articleSearch();
+        }
+        
+        function press(event){
+            if(event.keyCode == 13){ 
+            	articleSearch(); 
+            }
+        }
+
+		// 공고 검색
+        function articleSearch() {
+        	var regExp = /[<>\'\"]/gi; 
+        	if (regExp.test($("input[name=keyword]").val())) {
+        		alert("<,>,\",\'를 제외한 검색어를 입력해주세요.");
+        		$("#div_load_image").hide();
+        		return;
+        	}
+        	$("#div_load_image").show();
+	        $('#articleSearchForm').submit();
+			
+        }
+        // 지난 사업 보기
+        function viewEndBsns(opt){
+            if(opt == 1) {
+                $("input[name=schEndAt]").val("");
+            }else{
+                $("input[name=schEndAt]").val("Y");
+            }
+            articleSearch();
+        }
+        
+        function hashtagProcedure(){
+        	if("" != ''){
+        		var jsonUrl = "/bbs/AS/hashtagProcedure.do";
+                var dataObj = {};
+                $.ajax({
+                    url: jsonUrl,
+                    type: "POST",
+                    data: dataObj,
+                    dataType: "json",
+                    success : function( data ) {
+                    	alert("해시태그 반영되었습니다.");
+                    },
+                    error:function(request,status,error){
+                    	alert("오류가 발생하였습니다.");
+                    }
+
+                }); 
+        	}
+        }
+
+        // 정렬 변경
+        function orderChange(gb){
+            $("input[name=orderGb]").val(gb);
+
+            if($("input[name=sort]").val() == "asc"){
+                $("input[name=sort]").val("desc");
+            }else{
+                $("input[name=sort]").val("asc");
+            }
+            articleSearch();
+        }
+
+
+        //엑셀 다운로드
+        function excelDown(){
+            // 검색 조건 값 세팅
+            var urlPath = "";
+            if($("input[name=hashCode]").val() != ""){
+                urlPath += "&hashCode=" + $("input[name=hashCode]").val();
+            }
+            if($("input[name=schAreaDetailCodes]").val() != ""){
+                urlPath += "&schAreaDetailCodes=" + $("input[name=schAreaDetailCodes]").val();
+            }
+            if($("input[name=schWntyAt]").val() != ""){
+                urlPath += "&schWntyAt=" + $("input[name=schWntyAt]").val();
+            }
+            if($("input[name=schJrsdCodeTy]").val() != ""){
+                urlPath += "&schJrsdCodeTy=" + $("input[name=schJrsdCodeTy]").val();
+            }
+            if($("input[name=schEndAt]").val() != ""){
+                urlPath += "&schEndAt=" + $("input[name=schEndAt]").val();
+            }
+            if($("input[name=condition]").val() != ""){
+                urlPath += "&condition=" + $("input[name=condition]").val();
+            }
+            if($("input[name=condition1]").val() != ""){
+                urlPath += "&condition1=" + $("input[name=condition1]").val();
+            }
+            if($("input[name=rescan]").val() != ""){
+                urlPath += "&rescan=" + $("input[name=rescan]").val();
+            }
+            if($("input[name=preKeywords]").val() != ""){
+                urlPath += "&preKeywords=" + $("input[name=preKeywords]").val().replace("&","%26");
+            }
+            if($("input[name=keyword]").val() != ""){
+                urlPath += "&keyword=" + $("input[name=keyword]").val().replace("&","%26");
+            }
+            if($("input[name=sort]").val() != ""){
+                urlPath += "&sort=" + $("input[name=sort]").val();
+            }
+            if($("input[name=orderGb]").val() != ""){
+                urlPath += "&orderGb=" + $("input[name=orderGb]").val();
+            }
+            location.href="/bbs/AS/excelDowload.do?1=1"+urlPath;  
+        }
+        
+        var keywords = []; // preKeywords
+        var htmlTag = "'";
+        // 현재 검색어
+        var schKeyword = "".replace("&amp;","&").replace(/amp;/gi,"").replace(/&gt;/gi,">").replace(/&lt;/gi,"<").trim();
+        // 이전 검색어
+        var preKeywords = ''.replace("&amp;","&").replace(/amp;/gi,"").replace(/&gt;/gi,">").replace(/&lt;/gi,"<");
+        function addKwdLst() {
+        	if(schKeyword == '' && "N" != 'Y') {
+                $("#rescanChk").css("display","none");
+            }
+        	// 결과 내 재검색
+            if("N" == "Y") {
+            	 // 검색1,검색2,검색3 ... String으로 넘어온 값을 배열로 파싱
+                 if(preKeywords.length > 0) {
+                     keywords = preKeywords.split(',');
+                 } 
+            	 // 재검색 중 이전에 검색한 적 없는 문자열만 배열에 추가
+                 if(!keywords.includes(schKeyword)) {
+                	keywords.push(schKeyword);
+                	$("input[name=preKeywords]").val(keywords);
+                 } else {
+                     $("input[name=preKeywords]").val("");
+                 }
+            	
+                $("#reSearch").prop("checked",true);
+                
+            } else if ("N" == "N") {
+                keywords.push("");
+                $("input[name=preKeywords]").val(keywords);
+            } else {
+                keywords.push("");
+            }
+            // 키워드 삭제 버튼 추가
+            for(var keyword in keywords) {
+            	var kwd = keywords[keyword].replace("&amp;","&").replace(/amp;/gi,"").replace(/&gt;/gi,">").replace(/&lt;/gi,"<");
+                htmlTag += kwd
+                +"<a href=\"#\" onclick=\"javascript:removeKwdLst('"+kwd+"');\">" 
+                  +"<img class='keyword_del_btn' style='position: relative; bottom: 1px; left: 1px;' alt='"+kwd+" 삭제' src=\"/images/bizinfo/common/btn_delete_02.gif\"/>"
+                   +"</a>,";
+            }
+            // 마지막 콤마 제거 정규식 (str1,str2,str3, -> str1,str2,str3)
+            htmlTag = htmlTag.replace(/,\s*$/, "");
+            htmlTag += "'";
+            $('#reSearchKeywords').html(htmlTag);
+            
+            // 마지막 키워드 삭제 버튼 제거
+            /* $('.keyword_del_btn').last().remove(); */
+        }
+        
+        
+        // 결과 내 재검색 검색어 삭제
+        function removeKwdLst(keyword){
+        	if(keywords.length <= 1) {
+                alert('검색어는 한 개 이상 존재해야 합니다.');
+                return;
+            }
+        	// 중복 데이터 배열에서 제거
+        	keywords = keywords.filter((kwd) => kwd != keyword);
+           	$("input[name=preKeywords]").val(keywords);
+           	$("input[name=keyword]").val(keywords[keywords.length - 1]);
+        	articleSearch();
+        }
+
+    </script>
+</meta></head>
+<body>
+<div id="wrap">
+<div class="skip" id="skip">
+<a href="#container">본문 바로가기</a>
+<a href="#gnb">주메뉴 바로가기</a>
+</div>
+<!-- visual배너  -->
+<!-- s: header -->
+<div class="header">
+<div class="header_inner">
+<div class="logo"><a href="/web/index.do" title="메인으로 이동"><img alt="중소기업 성공 길잡이 기업마당" src="/images/bizinfo/common/logo.png"/></a></div>
+<div class="gnb_open"><button class="btn_gnb_open" title="메뉴열기" type="button">메뉴열기</button></div>
+<div class="util_open"><button class="btn_gnb_util login" title="로그인" type="button">로그인</button></div>
+<div class="gnb" id="gnb">
+<div class="before"></div>
+<ul>
+<li class="on l_title3" grant="Y" menu-seq="122"> <a href="/web/lay1/S1T1C122/sublink.do" title="정책정보">정책정보 </a>
+<div class="s_gnb">
+<div class="inner">
+<span class="s_title">정책정보</span>
+<ul>
+<li class="on" grant="Y" menu-seq="128"> <a href="/web/lay1/bbs/S1T122C128/AS/74/list.do" title="지원사업 공고">지원사업 공고 </a> </li>
+<li class="" grant="Y" menu-seq="308"> <a href="/web/lay1/program/S1T122C308/auth/list.do" title="품목별 법정의무 인증제도">품목별 법정의무 인증제도 </a> </li>
+<li class="" grant="Y" menu-seq="127"> <a href="/web/lay1/bbs/S1T122C127/AX/210/list.do" title="행사정보">행사정보 </a> </li>
+<li class="" grant="Y" menu-seq="157"> <a href="/web/lay1/S1T122C157/sublink.do" title="정책뉴스">정책뉴스 </a> </li>
+<li class="" grant="Y" menu-seq="130"> <a href="/web/lay1/bbs/S1T122C130/AY/115/list.do" title="입법·행정예고/고시">입법·행정예고/고시 </a> </li>
+<li class="" grant="Y" menu-seq="161"> <a href="/web/lay1/bbs/S1T122C161/AW/114/list.do" title="월간 중기누리">월간 중기누리 </a> </li>
+</ul>
+</div>
+</div></li>
+<li class="l_title5" grant="Y" menu-seq="175"> <a href="/web/lay1/S1T1C175/sublink.do" title="활용정보">활용정보 </a>
+<div class="s_gnb">
+<div class="inner">
+<span class="s_title">활용정보</span>
+<ul>
+<li class="" grant="Y" menu-seq="112"> <a href="/web/lay1/bbs/S1T175C112/AK/61/list.do" title="기업업무용 서식">기업업무용 서식 </a> </li>
+<li class="" grant="Y" menu-seq="155"> <a href="/web/lay1/bbs/S1T175C155/AG/220/list.do" title="입주기업 모집공고">입주기업 모집공고 </a> </li>
+<li class="" grant="Y" menu-seq="178"> <a href="/web/lay1/bbs/S1T175C178/BB/122/list.do" title="공동활용 화상회의실">공동활용 화상회의실 </a> </li>
+<li class="" grant="Y" menu-seq="174"> <a href="/web/lay1/program/S1T175C174/apiList.do" title="정책정보 개방">정책정보 개방 </a> </li>
+<li class="link" grant="Y" menu-seq="152"> <a href="/dashboard.do" target="_blank" title="속보성 대시보드">속보성 대시보드 </a> </li>
+</ul>
+</div>
+</div></li>
+<li class="l_title6" grant="Y" menu-seq="176"> <a href="/web/lay1/S1T1C176/sublink.do" title="고객알림">고객알림 </a>
+<div class="s_gnb">
+<div class="inner">
+<span class="s_title">고객알림</span>
+<ul>
+<li class="" grant="Y" menu-seq="93"> <a href="/web/lay1/bbs/S1T108C93/AM/66/list.do" title="공지사항">공지사항 </a> </li>
+<li class="" grant="Y" menu-seq="96"> <a href="/web/lay1/bbs/S1T108C96/AD/130/insertForm.do" title="고객의 소리">고객의 소리 </a> </li>
+<li class="" grant="Y" menu-seq="115"> <a href="/web/lay1/bbs/S1T131C115/AL/64/list.do" title="자주하는질문">자주하는질문 </a> </li>
+</ul>
+</div>
+</div></li>
+<li class="l_title7" grant="Y" menu-seq="131"> <a href="/web/lay1/S1T1C131/sublink.do" title="이용안내">이용안내 </a>
+<div class="s_gnb">
+<div class="inner">
+<span class="s_title">이용안내</span>
+<ul>
+<li class="" grant="Y" menu-seq="166"> <a href="/web/lay1/S1T135C166/contents.do" title="개인정보처리방침">개인정보처리방침 </a> </li>
+<li class="" grant="Y" menu-seq="167"> <a href="/web/lay1/S1T131C167/contents.do" title="이메일주소 무단 수집 거부안내">이메일주소 무단 수집 거부안내 </a> </li>
+<li class="" grant="Y" menu-seq="168"> <a href="/web/lay1/S1T135C168/contents.do" title="저작권 정책">저작권 정책 </a> </li>
+<li class="" grant="Y" menu-seq="169"> <a href="/web/lay1/S1T131C169/contents.do" title="웹접근성 정책">웹접근성 정책 </a> </li>
+<li class="" grant="Y" menu-seq="170"> <a href="/web/lay1/S1T135C170/contents.do" title="이용약관">이용약관 </a> </li>
+</ul>
+</div>
+</div></li>
+</ul>
+</div>
+<div class="f-r clfx">
+<div class="app_download">
+<a class="app_download_button" href="javascript:fn_AppDownQrPopup();" id="app_download_button" title="기업마당 앱다운로드 QR코드 레이어팝업">
+<img alt="기업마당 앱다운로드" src="/images/bizinfo/common/app_download.png"/>
+</a>
+</div>
+<div class="util">
+<ul class="util_menu">
+<li><a href="/web/lay1/program/S1T6C7/sitemap/intro.do" title="전체메뉴보기 페이지 이동">전체메뉴보기</a></li>
+<li><a href="/web/lay1/program/S1T2C4/member/login.do" title="로그인 페이지 이동">로그인</a></li>
+<li><a href="/web/lay1/program/S1T1C3/member/join_step1.do" title="회원가입 페이지 이동">회원가입</a></li>
+</ul>
+<div class="font_controller">
+<span class="title zoom_info">100%</span>
+<ul>
+<li><button class="btn_font_minus zoomOut" title="화면 작게" type="button">폰트 작게</button></li>
+<li><button class="btn_font_plus zoomIn" title="화면 크게" type="button">폰트 크게</button></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	var size = '';
+	if(size != null && size != "" && size != "1.0"){
+		Zoom.size = Number(size);
+		Zoom.load();
+	}
+
+	$(".zoomIn").click(function(){
+		//zoom_in();
+		Zoom.exec(1);
+	});
+
+	$(".zoomOut").click(function(){
+		Zoom.exec(-1);
+	});
+
+	function fn_openPopupClinkLog(url,popGubun,cntntsDivCode,cntntsId){
+		var jsonUrl = "/web/insertCntsClikInfo.do";
+		var param =  {"cntntsDivCode" : cntntsDivCode ,"cntntsId" : cntntsId};
+		$.ajax({
+			url: jsonUrl,
+			type: "POST",
+			data: param,
+			async: false,
+			dataType: "json",
+			success : function( data ) {
+				window.open(url,popGubun, "");
+			}
+		}); 
+	}
+	
+	$(document).ready( function(){
+		if (matchMedia("screen and (min-width: 1201px)").matches) {
+			var menu = document.querySelector('.gnb');
+			var firstFocusableElement = menu.querySelectorAll('a')[0];
+			var focusableContent = menu.querySelectorAll('a');
+			var lastFocusableElement = focusableContent[focusableContent.length - 1];
+
+			// 상단 메뉴 키보드 포커스 이벤트
+			document.addEventListener('keydown', function(e) {
+				var isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+				if (isTabPressed) {
+					// tab + shift -> 이전 요소로 이동
+					if (document.activeElement === lastFocusableElement && !e.shiftKey) {
+						// 메뉴의 마지막 요소에서 tab키 입력시 메뉴 숨기기
+						if(!$('.gnb').is(':hover')){
+							$('.before').prop('style','display:none');
+							$(".s_gnb").prop('style','display:none');
+						}
+					}
+					else if(document.activeElement === firstFocusableElement && e.shiftKey) {
+						// 메뉴의 첫번째 요소에서 tab+shift키 입력시 메뉴 숨기기
+						if(!$('.gnb').is(':hover')){
+							$('.before').prop('style','display:none');
+							$(".s_gnb").prop('style','display:none');
+						}
+					}
+				}
+			});
+
+			$('.gnb ul li > a').on('click', function() {
+				if(!($(this).attr("target") == "_blank")){
+					$("#div_load_image").addClass("on");
+				}
+			});
+			$('.gnb ul li > a').on('focusin', function() {
+				$('.before').prop('style','display:block');
+				$('.s_gnb').prop('style','display:block');
+				$('.gnb').prop('style','display:block');
+				$(".s_gnb").fadeIn(200);
+			});
+
+			// Tab키 메뉴 초점이 되고, 다른 곳 클릭 할 경우 메뉴 안보이도록 수정
+/* 			$('#wrap').click(function(){
+				$('.before').prop('style','display:none');
+				$(".s_gnb").prop('style','display:none');
+			}); */
+
+			//메인페이지 상단 배너 초점
+			$('.slide_item_main').focus(function(){
+				$(".slide_item_main div").attr('style', 'outline:auto');
+			});
+
+			$('.slide_item_main').focusout(function(){
+				$(".slide_item_main div").attr('style', 'outline:none');
+			});
+		}
+		
+		var target = $(".header .gnb div.before")[0];
+		var target2 = $(".s_gnb")[0];
+		var previousValue = "";
+		var previousValue2 = "";
+		var observer = new MutationObserver(function(mutations) {
+			mutations.forEach(function(mutation) {
+				if (mutation.attributeName !== 'style') {
+					return;
+				}
+				var currentValue = mutation.target.style.display;
+				if (currentValue !== previousValue) {
+					if (previousValue !== "none" && currentValue === "none") {
+						$(".s_gnb").prop("display","none");
+					} else if (previousValue !== "block" && currentValue === "block") {
+						$(".s_gnb").prop("display","block");
+					}
+					previousValue = mutation.target.style.display;
+				}
+			});
+		});
+		
+		var observer2 = new MutationObserver(function(mutations) {
+			mutations.forEach(function(mutation) {
+				if (mutation.attributeName !== 'style') {
+					return;
+				}
+				var currentValue2 = mutation.target.style.display;
+				if (currentValue2 !== previousValue2) {
+					if (previousValue2 !== "none" && currentValue2 === "none") {
+						$(".header").prop("display","none");
+					} else if (previousValue2 !== "block" && currentValue2 === "block") {
+						$(".header").prop("display","block");
+					}
+					previousValue2 = mutation.target.style.display;
+				}
+			});
+		});
+		observer.observe(target, { attributes: true });
+		observer2.observe(target2, { attributes: true });
+		// 속보성 대시보드 클릭 로그 저장
+		$("[menu-seq=152]").attr('onclick','fn_openPopupClinkLog("/dashboard.do","_blank","6","");return false;');
+	});
+
+	//top 배너
+	$(function() {
+		// 상단 배너 반응형 변경 (2022-05-20 추가) 
+		$('.main_top_banner').slick({
+	        dots: false,
+	        prevArrow: $('.btn_slide_prev_main'),
+	        nextArrow: $('.btn_slide_next_main'),
+	        autoplaySpeed : 10000
+	    });
+		// 페이지 로드 시 자동 슬라이드 
+		$('.main_top_banner').slick('slickPlay');
+
+        $(".btn_slide_stop_main").click(function() {
+            $('.main_top_banner').slick('slickPause')
+            $('.btn_slide_play_main').css('display', 'block');
+            $(this).css('display', 'none');
+        });
+
+        $(".btn_slide_play_main").click(function() {
+            $('.main_top_banner').slick('slickPlay');    // 시작
+            $('.btn_slide_stop_main').css('display', 'block');
+            $(this).css('display', 'none');
+        });
+
+	});
+	
+	
+</script>
+<!-- e: header -->
+<section class="container sub_container" id="container">
+<!-- 로딩바 -->
+<div id="div_load_image">
+<img alt="로딩중" src="/images/sub/viewLoading.gif"/>
+</div>
+<div class="navi">
+<div class="state clearfix">
+<ul>
+<li class="home"><a href="/">HOME</a></li>
+<li>정책정보</li>
+<li>지원사업 공고</li>
+</ul>
+</div>
+</div>
+<!-- s: sub_cont -->
+<div class="sub_cont">
+<div class="sub_top_title_area">
+<h1 class="sub_top_title">지원사업 공고</h1>
+</div>
+<form action="list.do" enctype="multipart/form-data" id="articleSearchForm" method="get" name="articleSearchForm" onsubmit="return goPage(1);">
+<div class="search_Type_1">
+<input id="hashCode" name="hashCode" type="hidden" value=""/>
+<input id="rowsSel" name="rowsSel" type="hidden" value="6"/>
+<input name="rows" type="hidden" value="15"/>
+<input name="cpage" type="hidden" value="1"/>
+<input name="cat" type="hidden" value=""/>
+<input name="article_seq" type="hidden"/>
+<input name="pblancId" type="hidden"/>
+<input name="schJrsdCodeTy" type="hidden" value=""/>
+<input name="schWntyAt" type="hidden" value=""/>
+<input name="schAreaDetailCodes" type="hidden" value=""/>
+<input name="schEndAt" type="hidden" value="N"/>
+<input name="orderGb" type="hidden" value=""/>
+<input name="sort" type="hidden" value=""/>
+<input name="condition" type="hidden" value="searchPblancNm"/>
+<input name="condition1" type="hidden" value="AND"/>
+<input name="preKeywords" type="hidden"/>
+<div class="custom_select">
+<button class="select_list_open" title="검색조건 지원사업명으로 검색" type="button">
+                
+                    
+                    
+                    
+                    
+                    지원사업명
+                
+            </button>
+<div class="select_list" style="max-height: none;">
+<ul>
+<li>
+<button data-option="searchPblancNm" onclick="changeOption(0);" title="검색조건 지원사업명" type="button">지원사업명</button>
+</li>
+<li>
+<button data-option="pldirJrsdCodeNm" onclick="changeOption(1);" title="검색조건 소관부처" type="button">소관부처</button>
+</li>
+<li>
+<button data-option="searchExcInsttNm" onclick="changeOption(0);" title="검색조건 사업수행기관" type="button">사업수행기관</button>
+</li>
+<li>
+<button data-option="CONTS" onclick="changeOption(0);" title="검색조건 내용" type="button">내용</button>
+</li>
+<li>
+<button data-option="TAGNAME" onclick="changeOption(0);" title="검색조건 해시태그" type="button">해시태그</button>
+</li>
+</ul>
+</div>
+</div>
+<input name="keyword" onkeypress="JavaScript:press(event)" placeholder="검색어를 입력해 주세요." title="검색바" type="text" value=""/>
+<!-- DOM내에 input type="text"가 1개만 존재할 경우 enter키 입력 시 자동으로 submit 이벤트가 발생하므로 이를 막기 위해 임시로 넣음 -->
+<input style="display:none;" type="text"/>
+<input class="btn_search" title="검색시작 버튼" type="button" value="검색"/>
+<input class="btn_reset" title="초기화 버튼" type="reset" value="초기화"/>
+<div id="rescanChk" style="text-align:center;display:block;position: absolute; right:-20px; float:left; display: none;">
+<label for="reSearch"><input id="reSearch" name="rescan" style="margin-bottom:9px; height:40px;" type="checkbox" value="N"/><span style="color:#828282;">결과 내 재검색</span></label>
+</div>
+</div>
+<div class="support_project">
+<div class="category">
+<div class="scroll_x">
+<div class="category_list icon_1">
+<a alt="분야(1403) 공고보기" class="on" href="#" id="hashAll" onclick="fn_hashCode_Change('')" title="분야(1403) 공고보기"><span>분야(1403)</span></a>
+</div>
+<div class="category_list icon_2">
+<a alt="금융" href="javascript:void(0); return false;" id="01" onclick="fn_hashCode_Change('01')" title="금융">
+<span>금융(225)</span>
+</a>
+</div>
+<div class="category_list icon_3">
+<a alt="기술" href="javascript:void(0); return false;" id="02" onclick="fn_hashCode_Change('02')" title="기술">
+<span>기술(303)</span>
+</a>
+</div>
+<div class="category_list icon_4">
+<a alt="인력" href="javascript:void(0); return false;" id="03" onclick="fn_hashCode_Change('03')" title="인력">
+<span>인력(94)</span>
+</a>
+</div>
+<div class="category_list icon_8">
+<a alt="수출" href="javascript:void(0); return false;" id="07" onclick="fn_hashCode_Change('07')" title="수출">
+<span>수출(190)</span>
+</a>
+</div>
+<div class="category_list icon_9">
+<a alt="내수" href="javascript:void(0); return false;" id="08" onclick="fn_hashCode_Change('08')" title="내수">
+<span>내수(171)</span>
+</a>
+</div>
+<div class="category_list icon_10">
+<a alt="창업" href="javascript:void(0); return false;" id="09" onclick="fn_hashCode_Change('09')" title="창업">
+<span>창업(65)</span>
+</a>
+</div>
+<div class="category_list icon_11">
+<a alt="경영" href="javascript:void(0); return false;" id="10" onclick="fn_hashCode_Change('10')" title="경영">
+<span>경영(334)</span>
+</a>
+</div>
+<div class="category_list icon_13">
+<a alt="기타" href="javascript:void(0); return false;" id="12" onclick="fn_hashCode_Change('12')" title="기타">
+<span>기타(21)</span>
+</a>
+</div>
+</div>
+</div>
+<div class="sub_list_top_area">
+<div class="left_btn_list">
+<div class="area_btn_list">
+<ul>
+<li class="total_area_btn">
+<button class="toggle_area_btn" id="wnty" name="지역" title="지역(837) 공고보기" type="button">
+				                	지역(837)
+				                </button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6110000" name="6110000" type="button">서울(55)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6260000" name="6260000" type="button">부산(55)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6270000" name="6270000" type="button">대구(35)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6280000" name="6280000" type="button">인천(59)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6290000" name="6290000" type="button">광주(44)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6300000" name="6300000" type="button">대전(27)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6310000" name="6310000" type="button">울산(34)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="5690000" name="5690000" type="button">세종(17)</button>
+</li>
+<div style="height:10px;"></div>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6410000" name="6410000" type="button">경기(101)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6420000" name="6420000" type="button">강원(16)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6430000" name="6430000" type="button">충북(55)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6440000" name="6440000" type="button">충남(37)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6450000" name="6450000" type="button">전북(60)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6460000" name="6460000" type="button">전남(43)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6470000" name="6470000" type="button">경북(84)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6480000" name="6480000" type="button">경남(84)</button>
+</li>
+<li class="area_btn">
+<button class="toggle_area_btn" id="6500000" name="6500000" type="button">제주(31)</button>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sub_list_top_area">
+<div class="right_btn_list">
+<ul style="float:left">
+<li>
+<a class="btn" href="javascript:viewEndBsns(1)" id="bsnsBtn" style="display: none" title="진행중공고보기">진행중공고보기</a>
+<a class="btn" href="javascript:viewEndBsns(2)" id="endBsnsBtn" title="지난공고보기">지난공고보기</a>
+</li>
+<li>
+<a class="btn excel_btn2" href="javascript:excelDown()" style="padding:0 10px;" title="엑셀다운로드"><img alt="엑셀다운로드" id="excel_btn" src="/images/super/excel_download_over.png"/></a>
+</li>
+<li><a class="btn" href="javascript:orderChange(1)" id="orderBtn1" title="등록일순 정렬하기">등록일순</a></li>
+<li><a class="btn" href="javascript:orderChange(2)" id="orderBtn2" title="마감일순 정렬하기">마감일순</a></li>
+</ul>
+</div>
+<div class="right_jrsd_btn_list">
+<ul>
+<li><button class="toggle_jrsd_btn" id="1" title="전체 공고보기" type="button">전체</button></li>
+<li><button class="toggle_jrsd_btn" id="2" title="중앙부처 공고보기" type="button">중앙부처</button></li>
+<li><button class="toggle_jrsd_btn" id="3" title="지자체 공고보기" type="button">지자체</button></li>
+</ul>
+</div>
+</div>
+<div class="table_Type_1">
+<table>
+<caption>
+                    지원사업 공고에 대한 번호, 지원분야, 지원사업명, 신청기간, 소관부처, 등록일, 조회수의 정보가 기재된 표
+                </caption>
+<colgroup>
+<col width="5%"/>
+<col width="8%"/>
+<col/>
+<col class="w_3"/>
+<col class="w_3"/>
+<col width="11%"/>
+<col width="8%"/>
+<col width="6%"/>
+</colgroup>
+<thead>
+<tr>
+<th scope="col">번호</th>
+<th scope="col">지원분야</th>
+<th scope="col">지원사업명</th>
+<th scope="col">신청기간</th>
+<th scope="col">소관부처·지자체</th>
+<th scope="col">사업수행기관</th>
+<th scope="col">등록일</th>
+<th scope="col">조회수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1402</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100466" title="2024년 2차 문화체육관광 연구개발사업 신규과제(지정공모) 재공고 페이지 이동">
+                                2024년 2차 문화체육관광 연구개발사업 신규과제(지정공모) 재공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-12 ~ 2024-09-11
+                                
+                            
+                        </td>
+<td>문화체육관광부</td>
+<td>한국콘텐츠진흥원</td>
+<td>2024-08-16</td>
+<td>708</td>
+</tr>
+<tr>
+<td>1401</td>
+<td>
+                            
+                                
+                                금융
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100465" title="[전북] 2024년 중소기업 육성자금 고금리 대응 거치기간 연장 지원 공고 페이지 이동">
+                                [전북] 2024년 중소기업 육성자금 고금리 대응 거치기간 연장 지원 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                    예산 소진시까지
+                                
+                                
+                            
+                        </td>
+<td>전북특별자치도</td>
+<td>전북특별자치도경제통상진흥원</td>
+<td>2024-08-16</td>
+<td>349</td>
+</tr>
+<tr>
+<td>1400</td>
+<td>
+                            
+                                
+                                내수
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100464" title="2025년 수산업ㆍ어촌발전 유공 포상 추천 공고 페이지 이동">
+                                2025년 수산업ㆍ어촌발전 유공 포상 추천 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-05 ~ 2024-11-15
+                                
+                            
+                        </td>
+<td>해양수산부</td>
+<td>수협중앙회</td>
+<td>2024-08-16</td>
+<td>372</td>
+</tr>
+<tr>
+<td>1399</td>
+<td>
+                            
+                                
+                                내수
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100438" title="[제주] 서귀포시 2024년 아름다운 간판상 공모전 공고 페이지 이동">
+                                [제주] 서귀포시 2024년 아름다운 간판상 공모전 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-16 ~ 2024-09-24
+                                
+                            
+                        </td>
+<td>제주특별자치도</td>
+<td>기초자치단체</td>
+<td>2024-08-16</td>
+<td>308</td>
+</tr>
+<tr>
+<td>1398</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100463" title="2024년 3차 조선해양산업기술개발 사업 신규지원 대상과제 공고 페이지 이동">
+                                2024년 3차 조선해양산업기술개발 사업 신규지원 대상과제 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-26 ~ 2024-09-13
+                                
+                            
+                        </td>
+<td>산업통상자원부</td>
+<td>한국산업기술기획평가원</td>
+<td>2024-08-16</td>
+<td>430</td>
+</tr>
+<tr>
+<td>1397</td>
+<td>
+                            
+                                
+                                내수
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100437" title="2024년 공개SW 및 SW품질ㆍ안전 유공자 표창 계획 공고 페이지 이동">
+                                2024년 공개SW 및 SW품질ㆍ안전 유공자 표창 계획 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-14 ~ 2024-09-13
+                                
+                            
+                        </td>
+<td>과학기술정보통신부</td>
+<td>정보통신산업진흥원</td>
+<td>2024-08-16</td>
+<td>384</td>
+</tr>
+<tr>
+<td>1396</td>
+<td>
+                            
+                                
+                                경영
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100462" title="[경북] 2025년 청년농업인 육성분야 지원사업 신청 공고 페이지 이동">
+                                [경북] 2025년 청년농업인 육성분야 지원사업 신청 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                    세부사업별 상이
+                                
+                                
+                            
+                        </td>
+<td>경상북도</td>
+<td>기초자치단체</td>
+<td>2024-08-16</td>
+<td>357</td>
+</tr>
+<tr>
+<td>1395</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100436" title="[인천] 2024년 소비자중심 제품개발 서비스디자인컨설팅 지원사업 참여기업 모집 공고 페이지 이동">
+                                [인천] 2024년 소비자중심 제품개발 서비스디자인컨설팅 지원사업 참여기업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-14 ~ 2024-09-03
+                                
+                            
+                        </td>
+<td>인천광역시</td>
+<td>인천테크노파크</td>
+<td>2024-08-16</td>
+<td>362</td>
+</tr>
+<tr>
+<td>1394</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100435" title="[경북] 2024년 방위산업 기술고도화 및 사업화 지원 수혜기업 추가모집 공고 페이지 이동">
+                                [경북] 2024년 방위산업 기술고도화 및 사업화 지원 수혜기업 추가모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-13 ~ 2024-09-03
+                                
+                            
+                        </td>
+<td>경상북도</td>
+<td>경북테크노파크</td>
+<td>2024-08-16</td>
+<td>326</td>
+</tr>
+<tr>
+<td>1393</td>
+<td>
+                            
+                                
+                                내수
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100461" title="[서울] 2024년 소셜벤처 국내 전시회 참가 지원사업 추가모집 공모 페이지 이동">
+                                [서울] 2024년 소셜벤처 국내 전시회 참가 지원사업 추가모집 공모
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-05 ~ 2024-08-26
+                                
+                            
+                        </td>
+<td>서울특별시</td>
+<td>서울소셜벤처허브</td>
+<td>2024-08-16</td>
+<td>361</td>
+</tr>
+<tr>
+<td>1392</td>
+<td>
+                            
+                                
+                                수출
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100434" title="MBC-SK텔레콤 스타IP 및 메타버스 연계 판로개척 지원 사업 참여기업 모집 공고 페이지 이동">
+                                MBC-SK텔레콤 스타IP 및 메타버스 연계 판로개척 지원 사업 참여기업 모집 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-13 ~ 2024-08-23
+                                
+                            
+                        </td>
+<td>중소벤처기업부</td>
+<td>대중소기업농어업협력재단</td>
+<td>2024-08-16</td>
+<td>470</td>
+</tr>
+<tr>
+<td>1391</td>
+<td>
+                            
+                                
+                                금융
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100460" title="[충북] 2024년 4차 중소기업육성자금 융자(이차보전) 지원계획 변경 공고 페이지 이동">
+                                [충북] 2024년 4차 중소기업육성자금 융자(이차보전) 지원계획 변경 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                    예산 소진시까지
+                                
+                                
+                            
+                        </td>
+<td>충청북도</td>
+<td>충청북도기업진흥원</td>
+<td>2024-08-16</td>
+<td>326</td>
+</tr>
+<tr>
+<td>1390</td>
+<td>
+                            
+                                
+                                수출
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100459" title="2023년 도쿄 메디칼 재팬(MEDICAL JAPAN TOKYO) 공동관 참가 지원 모집 공고(시군구연고산업육성(비R&amp;D)사업) 페이지 이동">
+                                2023년 도쿄 메디칼 재팬(MEDICAL JAPAN TOKYO) 공동관 참가 지원 모집 공고(시군구연고산업육성(비R&amp;D)사업)
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-19 ~ 2024-08-30
+                                
+                            
+                        </td>
+<td>부산광역시</td>
+<td>부산테크노파크</td>
+<td>2024-08-16</td>
+<td>315</td>
+</tr>
+<tr>
+<td>1389</td>
+<td>
+                            
+                                
+                                기술
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100458" title="2024년 메디허브특구 연계 의료ㆍ헬스케어 제품 고도화 육성 지원사업 공고(시군구 연고산업육성사업) 페이지 이동">
+                                2024년 메디허브특구 연계 의료ㆍ헬스케어 제품 고도화 육성 지원사업 공고(시군구 연고산업육성사업)
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-14 ~ 2024-08-30
+                                
+                            
+                        </td>
+<td>부산광역시</td>
+<td>부산테크노파크</td>
+<td>2024-08-16</td>
+<td>339</td>
+</tr>
+<tr>
+<td>1388</td>
+<td>
+                            
+                                
+                                수출
+                            
+                        </td>
+<td class="txt_l">
+<a href="view.do?pblancId=PBLN_000000000100433" title="2024년 전문무역상사 수출촉진 지원사업 공고 페이지 이동">
+                                2024년 전문무역상사 수출촉진 지원사업 공고
+                            </a>
+</td>
+<td>
+                            
+                                
+                                
+                                    2024-08-19 ~ 2024-08-30
+                                
+                            
+                        </td>
+<td>산업통상자원부</td>
+<td>한국무역협회</td>
+<td>2024-08-16</td>
+<td>540</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</form>
+<script type="text/javascript">
+        $(document).ready(function () {
+        	 /* 2022.05.06. 웹접근성 수정 */
+             $('.page').attr('title','1페이지 선택됨'); 
+
+        });
+ </script>
+<!-- 파라미터 -->
+<!-- //파라미터 -->
+<div class="page_wrap">
+<a class="txt" href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=1" title="처음페이지">처음</a>
+<a class="page" href="javascript:void(0);" title="1페이지">1</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=2" title="2페이지">2</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=3" title="3페이지">3</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=4" title="4페이지">4</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=5" title="5페이지">5</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=6" title="6페이지">6</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=7" title="7페이지">7</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=8" title="8페이지">8</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=9" title="9페이지">9</a>
+<a href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=10" title="10페이지">10</a>
+<a class="txt" href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=11" title="다음페이지">다음</a>
+<a class="txt" href="/web/lay1/bbs/S1T122C128/AS/74/list.do?rows=15&amp;cpage=94" title="마지막페이지">마지막</a>
+</div>
+<!-- 만족도 조사-->
+</div>
+<!-- e: sub_cont -->
+</section>
+<script type="text/javascript">
+</script>
+<!-- 설정된게 없는경우 기본 화면 -->
+<!-- s: footer -->
+<div class="footer">
+<div class="footer_top">
+<div class="footer_left_menu">
+<ul>
+<li>
+<a href="/web/lay1/bbs/S1T108C93/AM/66/list.do" title="공지사항 페이지 이동">공지사항</a>
+</li>
+</ul>
+</div>
+<div class="footer_right_menu">
+<ul>
+<li>
+<a href="/web/lay1/S1T135C166/contents.do" style="font-weight:600; color : #37a2b5;" title="개인정보처리방침 페이지 이동">개인정보처리방침</a>
+</li>
+<li>
+<a href="/web/lay1/S1T135C167/contents.do" title="이메일무단수집거부 페이지 이동">이메일무단수집거부</a>
+</li>
+<li>
+<a href="/web/lay1/S1T135C168/contents.do" title="자료이용 및 저작권보호 페이지 이동">자료이용 및 저작권보호</a>
+</li>
+<li>
+<a href="/web/lay1/bbs/S1T131C115/AL/64/list.do" title="자주하는 질문 페이지 이동">자주하는 질문</a>
+</li>
+<li>
+<a href="/web/lay1/S1T135C169/contents.do" title="웹접근성정책 페이지 이동">웹접근성정책</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer_inner">
+<div class="footerCont">
+<div class="footer_logo">
+<ul>
+<li><a href="http://www.mss.go.kr/kr/index.do" target="_blank" title="중소벤처기업부 바로가기"><img alt="중소벤처기업부" src="/images/bizinfo/common/footer_logo1.png" style="margin-top:10px;width:200px;"/></a></li>
+<li><img alt="KOSI 중소벤처기업연구원" src="/images/bizinfo/common/footer_logo2.png" style="margin-top:18px;"/></li>
+</ul>
+</div>
+<div class="footer_info">
+<p class="copyright">07074 서울특별시 동작구 신대방1가길 77 중소벤처기업연구원</p>
+<p class="copyright">시스템문의 Tel. 02-867-9765</p>
+<p class="copyright">Copyright © All rights Reserved.</p>
+</div>
+<div class="web_accessibility">
+<a href="#" id="WWCer" onclick="javascript:fn_openPopupDivFooter('WWCer'); return false;" target="_blank" title="국가 공인 인증기관 : 웹와치">
+<img alt="과학기술정보통신부 WA 웹접근성 품질인증 마크 웹와치 2024.05.19~2025.05.18" src="/images/bizinfo/common/web_accessibility_1.png" title="과학기술정보통신부 WA 웹접근성 품질인증 마크 웹와치 2024.05.19~2025.05.18">
+</img></a>
+<a href="javascript:;" onclick="window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&amp;certNum=2023-EP-R021','seal','width=527,height=720,location=no,status=no,scrollbars=no')" title="ePrivacyPlus 새 창">
+<img alt="ePRYVACY PLUS 개인정보보호 우수웹시스템" src="/images/bizinfo/common/web_accessibility_2.png" title="ePRYVACY PLUS 개인정보보호 우수웹시스템">
+</img></a>
+</div>
+</div>
+</div>
+</div>
+<!-- e: footer -->
+<!-- 웹접근성 인증서 사진 구역 -->
+<div id="divPopupImage-WWCer" style="display: none; position: absolute; z-index: 9999; top: 481px; left: 30%; padding: 0px;" tabindex="1">
+<div style="position:absolute;top:1px;right:-29px;">
+<a href="javascript:;" onclick="javascript:fn_closePopupDivFooter('WWCer');" title="닫기">
+<img alt="div팝업닫기이미지" src="/images/bizinfo/popup/btn_pop_close.gif">
+</img></a>
+</div>
+<div style="border:1px solid #999;" tabindex="0">
+<a href="javascript:fn_closePopupDivFooter('WWCer'); return false;" title="국가 공인 인증기관 : 웹와치">
+<img alt="제 WAQC-230683호 정보통신접근성 품질인증서 과학기술정보통신부 WA(WEB접근성) 인증유형 : 웹 접근성, 운영기관 : 중소벤처기업연구원, 사이트명 : 기업마당, 사이트주소 : https://www.bizinfo.go.kr 인증기간 : 2024년 5월 19일부터 2025년 5월 18일까지 '지능정보화 기본법' 제47조제1항 및 같은 법시행규칙 제9조제5항에 따라 위와 같이 정보통신접근성 품질인증서를 발급합니다. 2023년 5월 19일 인증기관 웹와치 주식회사 대표 이범재" onerror="this.src='/images/common/no_image.gif'" src="/images/bizinfo/common/n_WWCer.png" style="width: 452px; height: 640px;">
+</img></a>
+</div>
+</div>
+<!-- qr_popup -->
+<div class="popup qr_modal" style="display:none">
+<div class="popup-content" style="max-width: 250px;">
+<div class="popup_inner">
+<div class="popup_title">
+<h1>QR코드</h1>
+</div>
+<div class="qr_list">
+<img alt="QR 이미지" id="qr_img"/>
+</div>
+<button aria-label="QR코드 팝업 종료" class="btn_popup_close popup_close" type="button"></button>
+</div>
+</div>
+</div>
+<!-- //qr_popup -->
+<!-- app_download_popup -->
+<div class="popup app_download_popup" style="display:none;">
+<div class="popup-content">
+<div class="popup_inner" id="app_download" style="padding: 30px 30px 70px;">
+<div class="popup_title">
+<h1>기업마당 앱 다운로드</h1>
+</div>
+<div class="qr_list">
+<ul>
+<li>
+<div class="qr_image" style="margin-bottom: 10px;">
+<img alt="기업마당 앱 앱스토어에서 다운로드할수있는 qr 코드 https://apps.apple.com/kr/app/기업마당/id640001911" class="app_QR" height="120" src="/images/bizinfo/sub/app_QR.svg" width="120"/>
+</div>
+<div class="app_name">
+<a href="https://apps.apple.com/kr/app/기업마당/id640001911" target="_blank" title="App Store 앱 다운로드 페이지 새창열림">
+<img alt="App Store 에서 다운로드" border="0" src="/images/bizinfo/sub/appstore-badge.png"/>
+</a>
+</div>
+</li>
+<li>
+<div class="qr_image">
+<img alt="기업마당 앱 구글 플레이스토어 에서 다운로드 할수있는 qr 코드 https://play.google.com/store/apps/details?id=kr.go.bizinfo.bizinfoapp" height="120" src="/images/bizinfo/sub/google_QR.svg" width="120"/>
+</div>
+<div class="app_name">
+<a href="https://play.google.com/store/apps/details?id=kr.go.bizinfo.bizinfoapp" target="_blank" title="Google Play 앱 다운로드 페이지 새창열림">
+<img alt="Google Play 에서 다운로드" border="0" src="/images/bizinfo/sub/google-play-badge.png"/>
+</a>
+</div>
+</li>
+</ul>
+</div>
+<div style="width: 100%;">
+<table style="width: 100%; margin: 0 auto;">
+<caption>앱스토어 사용자 및 플레이스토어 사용자 별 QR 코드 안내 테이블</caption>
+<colgroup>
+<col style="width:50%"/>
+<col style="width:50%"/>
+</colgroup>
+<thead>
+<tr style="text-align: center;">
+<th scope="col" style="padding-top: 15px;">▲ 앱스토어 사용자</th>
+<th scope="col" style="padding-top: 15px;">▲ 플레이스토어 사용자</th>
+</tr>
+</thead>
+</table>
+</div>
+<button class="btn_popup_close popup_close" id="app_download_popup_close" title="닫기" type="button"></button>
+</div>
+</div>
+</div>
+<!-- //app_download_popup -->
+<script async="async" src="/lib/js/pgwbrowser.js" type="text/javascript"></script>
+<script async="async" src="/lib/js/mc.analytics.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var focusableElements ='a, button, input, textarea, [tabindex]:not([tabindex="-1"])';
+	var modal = document.querySelector('#app_download');
+	var firstFocusableElement = modal.querySelectorAll(focusableElements)[0]; // 모달 내 첫번째 요소
+	var focusableContent = modal.querySelectorAll(focusableElements);    		
+	var lastFocusableElement = focusableContent[focusableContent.length - 1]; // 모달 내 마지막 요소
+	document.addEventListener('keydown', function(e) {
+		  var isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+		  if (!isTabPressed) {
+		    return;
+		  }
+		  if (e.shiftKey) { // 시프트 + 탭 (이전 포커스로 이동)
+		    if (document.activeElement === firstFocusableElement) {
+		      lastFocusableElement.focus(); // 모달 내 첫번째 요소에서 이전 요소로 이동 시 마지막 요소로 이동 
+		      e.preventDefault();
+		    }
+		  } else { // if tab key is pressed
+		    if (document.activeElement === lastFocusableElement) {
+		      firstFocusableElement.focus(); // 모달 내 마지막 요소에서 다음 요소로 이동 시 첫번째 요소로 이동
+		      e.preventDefault();
+		    }
+		  }
+		});
+    
+    firstFocusableElement.focus(); // 모달 창 열릴 시 첫번째 항목에 포커싱(WA)
+    $("#app_download_popup_close").on("click",function(){
+    	// 모달 창 종료시 기존 화면에 활성화 되어있던 요소로 포커스 이동
+    	// footer header index 간 포커싱 이동이 원활하지 않아 앱다운로드 버튼에 포커싱 고정
+        $('#app_download_button').focus();
+    });
+
+});
+	function fn_mssLogin(){
+		window.open("/see/cmmn/selectMss24LoginPopup.do", '중소벤처24 통합로그인', 'scrollbars=no, location=no, width=840, height=850');
+	}
+    /* div팝업 오픈 함수 */
+    function fn_openPopupDivFooter(param){
+        var openPopDivFilm = "<div id='divBackFirm' tabindex='0' style='display:none;position:absolute;z-index:9998;background:#000000;opacity:0.7;top:0;left:0;'></div>"
+        $("body").append(openPopDivFilm);
+        $("#divBackFirm").css( "display" , "block" );
+        $("#divBackFirm").css( "width"   , $(document).width() );
+        $("#divBackFirm").css( "height"  , $(document).height() );
+        $("#divPopupImage-"+param).css("display","block");
+        var topPos = Number(($(document).scrollTop()+document.documentElement.clientHeight/2)-280);
+        $("#divPopupImage-"+param).css("top",topPos);
+        $("#divPopupImage-"+param).css("left","30%");
+        $("#divPopupImage-"+param).attr("tabindex", "0");
+        $("#divPopupImage-"+param).draggable();
+        $("#divPopupImage-"+param).focus();
+        $("#divPopupImage-"+param).on("keypress", function(){
+            fn_closePopupDivFooter(param);
+        })
+    }
+
+    /* div팝업 닫기 함수 */
+    function fn_closePopupDivFooter(param){
+        $("#divBackFirm").remove();
+        $("#divPopupImage-"+param).css("display","none");
+        $("#"+param).focus();
+    }
+</script>
+</div>
+<div id="naviMenu">
+<div>
+<div class="navi_top">
+<a class="gnbHome" href="/web"><span>메인</span></a>
+<a class="sitemap" href="/web/lay1/program/S1T125C126/sitemap/intro.do"><span>사이트맵</span></a>
+</div>
+<ul class="menuCtg">
+</ul>
+<div class="sel_box1">
+<select>
+<option>유관기관 홈페이지</option>
+<option value="//www.rapa.or.kr">한국전파진흥협회</option>
+<option value="//www.nipa.kr">정보통신산업진흥원</option>
+<option value="//www.msip.go.kr">미래창조과학부</option>
+<option value="//www.rra.go.kr">국립전파연구원</option>
+<option value="//www.kca.kr">한국방송통신전파진흥원</option>
+</select>
+<span class="btn_go"><a href="#"><img alt="이동" src="/images/common/select_go_btn.gif"/></a></span>
+</div>
+</div>
+<p class="closeArea"><a class="close"></a></p>
+</div>
+</body>
+</html>

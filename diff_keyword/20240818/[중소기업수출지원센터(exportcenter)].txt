@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+
+<html class="ko" lang="ko">
+<head>
+<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="74a3165a-9c0d-4612-8626-3fb14f90b3f3" name="_csrf"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<title>수출지원센터</title>
+<link href="https://www.smes.go.kr/humanframe/theme/portal/assets/image/etc/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<link href="/exportcenter/smes/css/jquery-ui-1.13.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="/exportcenter/smes/css/common.css" rel="stylesheet" type="text/css"/>
+<link href="/exportcenter/smes/css/common-new.css" rel="stylesheet" type="text/css"/>
+<link href="/exportcenter/smes/css/sub.css" rel="stylesheet" type="text/css"/>
+<link href="/exportcenter/smes/css/sub_new.css" rel="stylesheet" type="text/css"/>
+<link href="/exportcenter/smes/css/content.css" rel="stylesheet" type="text/css"/>
+<script src="/exportcenter/smes/js/jquery-3.6.0.min.js"></script>
+<script src="/exportcenter/smes/js/jquery-ui-1.13.0..min.js"></script>
+<script src="/exportcenter/smes/js/datepicker-default.js"></script>
+<script src="/exportcenter/js/jquery-validation-1.19.3/jquery.validate.min.js"></script>
+<script src="/exportcenter/js/jquery-validation-1.19.3/additional-methods.min.js"></script>
+<script src="/exportcenter/js/jquery-validation-1.19.3/localization/messages_ko.min.js"></script>
+<script src="/exportcenter/smes/js/slick.min.js"></script>
+<script src="/exportcenter/smes/js/common.js"></script>
+<script src="/exportcenter/smes/js/control.js"></script>
+</head>
+<body class="homepage" id="body">
+<div class="wrapper sub">
+<div class="header">
+<style>
+    .header .tnb li.etc a.header-site {
+        font-size: 15px;
+        width:160px;
+    }
+</style>
+<script>
+    function logout() {
+        if (confirm('정말 로그아웃 하시겠습니까?')) {
+            $('#logoutForm').submit();
+        }
+        return false;
+    }
+</script>
+<div class="header-link-wrap">
+<div class="header-link-item">
+<ul class="h-right">
+<li><a class="co_blue" href="/exportcenter/account/login.do"><span></span>로그인</a></li>
+<li><a href="/exportcenter/account/join/agree.do"><span></span>회원가입</a></li>
+</ul>
+</div>
+</div>
+<div class="rela">
+<h1>
+<a href="https://www.smes.go.kr" target="_blank">중소벤처24</a>
+</h1>
+<div class="side-cont">
+<div class="gnb-box">
+<button class="smes-common-menu-button" id="smesCommonMenuButton" type="button"><span>중소벤처24 전체 메뉴 열기</span></button>
+<div class="smes-common-menu-holder" id="smesCommonMenuHolder">
+</div>
+<!--
+            <ul id="gnb" class="gnb">
+                <li>
+                    <a href="#">분야별정보</a>
+                </li>
+            </ul>
+            -->
+<form action="https://www.smes.go.kr/totalSrch" target="_blank">
+<input name="w" type="hidden" value="piio"/>
+<input name="cate" type="hidden" value="partInfo"/>
+<input name="section" type="hidden" value="csr_bbsctt_l"/>
+<a class="gnb-close" href="javascript:void(0)"><i class="el-icon-close"></i></a>
+<div class="search_area">
+<input name="q" title="검색어 입력" type="text"/>
+<button class="btn_headsc" title="검색" type="submit"><span>검색</span></button>
+</div>
+</form>
+</div>
+<ul class="tnb">
+<li class="etc">
+<a class="search-menu" href="javascript:void(0)" title="검색 버튼">검색토글</a>
+<a class="header-site" href="javascript:void(0)" id="smesCommonLoginButton">사이트 바로가기</a>
+<div class="h-23" id="smesCommonLoginHolder">
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="site_menu_wrap">
+<div class="inner_ctwrap">
+<h2 class="_csr">
+<a href="/exportcenter/" title="home">
+<img alt="중소기업 수출지원센터" src="/exportcenter/images/logo.png"/>
+</a>
+</h2>
+<nav class="site_menu" id="gnb">
+<button class="sitemenu_close_btn">중소기업 수출지원센터 전체 메뉴 닫기</button>
+<ul>
+<li class="">
+<button class="menu_depth1" type="button">주요수출지원사업</button>
+<a class="menu_depth1" href="/exportcenter/business/global-sme-1000/guide.do">주요수출지원사업</a>
+<ul class="depth2_wrap">
+<li>
+<button class="menu_depth2" type="button">글로벌강소기업 1000+</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3" href="/exportcenter/business/global-sme-1000/guide.do">사업안내</a></li>
+</ul>
+</li>
+<li>
+<button class="menu_depth2" type="button">중소기업해외진출</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3 out-link" href="https://www.win-win.or.kr/kr/contents/busi_coex_5/view.do" target="_blank">대중소동반진출</a></li>
+<li><a class="menu_depth3 out-link" href="https://www.smes.go.kr/sme-expo/site/main/content/fr02_0002.do" target="_blank">수출컨소시엄</a></li>
+<li><a class="menu_depth3 out-link" href="https://fanfandaero.kr/portal/preSprtBizPbancDetail.do?sprtBizCd=202305010000" target="_blank">브랜드K</a></li>
+</ul>
+</li>
+<li>
+<button class="menu_depth2" type="button">스타트업해외진출</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3 out-link" href="https://www.k-startup.go.kr/web/contents/webGLOBAL.do?id=157238&amp;schM=view" target="_blank">K-스타트업 센터</a></li>
+<li><a class="menu_depth3 out-link" href="http://k-startupcenter.org/kor/CMS/Contents/Contents.do?mCode=MN041" target="_blank">글로벌 엑셀러레이팅</a></li>
+<li><a class="menu_depth3 out-link" href="http://www.kosmes.or.kr/nsh/SH/REI/SHREI101M0.do" target="_blank">글로벌비즈니스센터</a></li>
+</ul>
+</li>
+<li>
+<button class="menu_depth2" type="button">온라인 수출지원</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3 out-link" href="https://kr.gobizkorea.com/support/ebsns/supporteBsnsInfo.do?svc=e24" target="_blank">온라인수출패키지</a></li>
+<li><a class="menu_depth3 out-link" href="https://kr.gobizkorea.com/support/ebsns/supporteBsnsInfo.do?svc=e20" target="_blank">절충교역</a></li>
+</ul>
+</li>
+<li>
+<button class="menu_depth2" type="button">해외 마케팅 지원</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3 out-link" href="https://www.exportvoucher.com/portal/bizinfo/voucher_01?active_menu_cd=EZ001001000" target="_blank">수출바우처</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<button class="menu_depth1" type="button">수출관련서비스</button>
+<a class="menu_depth1" href="/exportcenter/service/intercall-discount/guide.do">수출관련서비스</a>
+<ul class="depth2_wrap">
+<li>
+<a class="menu_depth2 out-link" href="https://www.smes.go.kr/globalcerti/info/standard/standardSearch.do" target="_blank">해외규격인증정보</a>
+</li>
+<li>
+<button class="menu_depth2" type="button">국제전화요금할인</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3" href="/exportcenter/service/intercall-discount/guide.do">사업안내</a></li>
+</ul>
+</li>
+<li>
+<button class="menu_depth2" type="button">국제특송지원사업</button>
+<ul class="depth3_wrap">
+<li><a class="menu_depth3" href="/exportcenter/service/express-support/fedex.do">FedEx물류비 할인 지원사업</a></li>
+<li><a class="menu_depth3" href="/exportcenter/service/express-support/dhl.do">DHL 물류비 할인 지원사업</a></li>
+<li><a class="menu_depth3" href="/exportcenter/service/express-support/ems.do">우체국 국제특송(EMS)</a></li>
+</ul>
+</li>
+<li>
+<a class="menu_depth2" href="/exportcenter/service/sme-expo/guide.do">해외전시포탈</a>
+</li>
+</ul>
+</li>
+<li class="">
+<a class="menu_depth1" href="/exportcenter/consulting/export-consulting/list.do">수출상담실</a>
+</li>
+<li class="_selected">
+<button class="menu_depth1" type="button">알림마당</button>
+<a class="menu_depth1" href="/exportcenter/information/notice/list.do">알림마당</a>
+<ul class="depth2_wrap">
+<li><a class="menu_depth2" href="/exportcenter/information/notice/list.do">공지사항</a></li>
+<li><a class="menu_depth2" href="/exportcenter/information/contact.do">수출지원사업 연락처</a></li>
+<li><a class="menu_depth2" href="/exportcenter/information/local-manager.do">지역담당자안내</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<button class="sitemenu_btn">중소기업 수출지원센터 전체 메뉴 열기</button>
+</div>
+</div>
+<div class="normal-wrap lnb-line">
+<aside class="sidebar">
+<div class="lnb">
+<h2>알림마당</h2>
+<ul>
+<li class="on">
+<a href="/exportcenter/information/notice/list.do">공지사항</a>
+</li>
+<li class="">
+<a href="/exportcenter/information/contact.do">수출지원사업 연락처</a>
+</li>
+<li class="">
+<a href="/exportcenter/information/local-manager.do">지역담당자안내</a>
+</li>
+</ul>
+</div>
+</aside>
+<div class="article">
+<header class="body-main-header">
+<ul class="loc-list">
+<li><a href="/exportcenter/">home</a></li>
+<li>알림마당</li>
+<li>공지사항</li>
+</ul>
+<div class="article-header">
+<h3>공지사항</h3>
+<div class="side-wrap">
+</div>
+</div>
+</header>
+<div class="content">
+<!-- content start -->
+<form action="/exportcenter/information/notice/list.do" id="searchVO" method="post">
+<input id="pageSize" name="pageSize" type="hidden" value="20">
+<input id="pageNumber" name="pageNumber" type="hidden" value="1"/>
+<!-- 컨텐츠 입력 -->
+<div class="search-box">
+<select id="searchTarget" name="searchTarget">
+<option value="sTotal">전체</option>
+<option value="sTitle">제목</option>
+<option value="sCo">내용</option>
+<option value="sTiCo">제목+내용</option>
+</select>
+<div class="input-group-text-button">
+<input class="form-control" id="searchText" name="searchText" placeholder="검색어를 입력해주세요" type="text" value=""/>
+<button class="button button-color-blue" type="submit">검색</button>
+</div>
+</div>
+<div>
+<input name="_csrf" type="hidden" value="74a3165a-9c0d-4612-8626-3fb14f90b3f3"/>
+</div></input></form>
+<p class="table-counter">
+<strong>2223</strong>건의 게시물이 등록되어 있습니다.
+                    
+                
+            </p>
+<div class="table-wrapper">
+<table class="table-type-list">
+<caption>게시판 목록 : 번호, 제목, 첨부파일, 작성일, 조회수</caption>
+<colgroup>
+<col style="width:100px;"/>
+<col style="width:auto"/>
+<col style="width:70px;"/>
+<col style="width:110px;"/>
+<col style="width:70px;"/>
+</colgroup>
+<thead>
+<tr>
+<th scope="col">번호</th>
+<th scope="col">제목</th>
+<th scope="col">첨부파일</th>
+<th scope="col">작성일</th>
+<th scope="col">조회수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9161&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 해외규격인증획득지원사업 일반분야(트랙) 3차 참여기업 모집 실시 (~8.30)
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-07-31</td>
+<td>211</td>
+</tr>
+<tr>
+<td>2</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9160&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 대한민국 소싱위크 참여기업 모집 (~8.8)
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-07-31</td>
+<td>115</td>
+</tr>
+<tr>
+<td>3</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9159&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 수출 고성장기업 스케일업 본격 지원, ’수출바우처‘ 2차 참여기업 모집
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-06-26</td>
+<td>638</td>
+</tr>
+<tr>
+<td>4</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9158&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 대중소기업동반진출지원사업 과제모집 2차 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-06-14</td>
+<td>562</td>
+</tr>
+<tr>
+<td>5</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9157&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [협력재단] 주요 원재료 확인 등 연동약정 체결지원 사업 참여기업 상시 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-05-10</td>
+<td>410</td>
+</tr>
+<tr>
+<td>6</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9156&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 중기부, 해외구매자(바이어) 수출계약 전과정 밀착 지원한다.
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-05-07</td>
+<td>622</td>
+</tr>
+<tr>
+<td>7</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9155&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 글로벌비즈니스센터 입주기업 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-03-29</td>
+<td>766</td>
+</tr>
+<tr>
+<td>8</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9154&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 전자상거래수출시장진출사업 참여기업 모집공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-03-29</td>
+<td>691</td>
+</tr>
+<tr>
+<td>9</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9153&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년도 지역특화 프로젝트 지원기업 대상 수출지원기반활용사업 참여기업 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-03-29</td>
+<td>646</td>
+</tr>
+<tr>
+<td>10</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9152&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 해외규격인증획득지원사업 패스트트랙 및 일반트랙 1차 참여기업 모집공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-02-29</td>
+<td>1115</td>
+</tr>
+<tr>
+<td>11</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9151&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 대·중소기업 동반진출 지원사업 과제 1차 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-02-29</td>
+<td>816</td>
+</tr>
+<tr>
+<td>12</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9150&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 온라인수출패키지 사업 참여기업 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-02-29</td>
+<td>788</td>
+</tr>
+<tr>
+<td>13</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9149&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 전자상거래수출 시장진출 사업 수행기관 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-02-29</td>
+<td>558</td>
+</tr>
+<tr>
+<td>14</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9148&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 글로벌 강소기업 1,000+ 프로젝트 참여기업 모집 공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-01-24</td>
+<td>1920</td>
+</tr>
+<tr>
+<td>15</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9147&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 수출지원기반활용(수출바우처) 사업 참여기업 1차 모집공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-01-24</td>
+<td>1886</td>
+</tr>
+<tr>
+<td>16</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9146&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중진공] 중소기업 CBAM 대응방안 세미나 개최(1.12.금)
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2024-01-08</td>
+<td>868</td>
+</tr>
+<tr>
+<td>17</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9145&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2023년 「중소기업수출동향」 이용자 만족도 설문조사(12.26.~1.16. 연장)
+                                        </a>
+</td>
+<td>
+</td>
+<td>2023-12-27</td>
+<td>1080</td>
+</tr>
+<tr>
+<td>18</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9144&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2024년 수출컨소시엄사업 주관단체 모집공고
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2023-09-06</td>
+<td>2287</td>
+</tr>
+<tr>
+<td>19</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9143&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [중기부] 2023년 대한민국 소싱위크 참여기업 모집(8.8~8.31)
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2023-08-08</td>
+<td>1717</td>
+</tr>
+<tr>
+<td>20</td>
+<td class="text-align-left">
+<a class="cms_inner-item-link" href="/exportcenter/information/notice/details.do?seq=9142&amp;pageSize=20&amp;pageNumber=1&amp;searchTarget=&amp;searchText=">
+                                            [경기중기청] 한·이스라엘 FTA 발효에 따른 시장진출 세미나 개최(8.22)
+                                        </a>
+</td>
+<td>
+<span class="att_file">첨부파일 있음</span>
+</td>
+<td>2023-07-27</td>
+<td>2065</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="page-navi-area"><ul class="paging-list"><li><span class="page-prev disabled">...</span></li><li><span class="page-link current">1</span></li><li><a class="page-link" href="?pageNumber=2" target="">2</a></li><li><a class="page-link" href="?pageNumber=3" target="">3</a></li><li><a class="page-link" href="?pageNumber=4" target="">4</a></li><li><a class="page-link" href="?pageNumber=5" target="">5</a></li><li><a class="page-link" href="?pageNumber=6" target="">6</a></li><li><a class="page-link" href="?pageNumber=7" target="">7</a></li><li><a class="page-link" href="?pageNumber=8" target="">8</a></li><li><a class="page-link" href="?pageNumber=9" target="">9</a></li><li><a class="page-link" href="?pageNumber=10" target="">10</a></li><li><a class="page-next" href="?pageNumber=2" target="">...</a></li></ul></div>
+<!-- content end -->
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="rela">
+<div class="site-wrap">
+</div>
+<div class="e-wrap">
+<img alt="중소벤처기업부" src="/exportcenter/smes/image/etc/etc-flogo.png"/>
+<span class="sitenm">중소기업 수출지원센터</span>
+</div>
+<style>
+        .bnb-list {
+            float: right
+        }
+    </style>
+<ul class="bnb-list">
+<li><a href="/exportcenter/guide/index.do">이용안내</a></li>
+<li><a href="/exportcenter/guide/terms.do">이용약관</a></li>
+<li><a href="/exportcenter/guide/private-policy.do">개인정보처리방침</a></li>
+<li><a href="/exportcenter/guide/copyright.do">저작권안내</a></li>
+<li><a href="/exportcenter/guide/deny.do">이메일무단수집거부</a></li>
+<li><a href="/exportcenter/guide/security.do">사이버보안</a></li>
+<li><a href="/exportcenter/guide/sitemap.do">사이트맵</a></li>
+<li><a href="/exportcenter/guide/contect.do">찾아오시는 길</a></li>
+</ul>
+<address>
+<p class="addr">일반 문의 : 1357 | 시스템관련 메일문의 : exportcenter@u-cube.kr </p>
+<p class="addr">중소벤처기업부 : 30121 세종특별자치시 가름로 180(어진동), 세종파이낸스센터3차 4층~6층 / 대표전화 : 국번없이 1357</p>
+<p class="copyright">COPYRIGHT ⓒ 중소벤처기업부. ALL RIGHTS RESERVED.</p>
+</address>
+</div>
+</div>
+</div>
+</body>
+<link href="https://www.smes.go.kr/smes-api/api/css/smes-common-menu-1.0.css" rel="stylesheet" type="text/css"/>
+<link href="https://www.smes.go.kr/smes-api/api/css/smes-common-login-1.0.css" rel="stylesheet" type="text/css"/>
+<script src="https://www.smes.go.kr/smes-api/api/scripts/smes-common-menu-1.0.js?v=20240130a"></script>
+<script src="https://www.smes.go.kr/smes-api/api/scripts/smes-common-login-1.0.js?v=20240130a"></script>
+<script>
+    try {
+        if (smes.CommonMenu) {
+            new smes.CommonMenu("smesCommonMenuButton").init();
+        }
+        
+        
+            if (smes.CommonLogin) {
+                
+                    new smes.CommonLogin("smesCommonLoginButton").init(
+                        '/exportcenter',
+                        false,
+                        'cp',
+                        '/exportcenter/account/login.do',
+                        'EXCR'
+                    );
+                
+                
+            }
+        
+    }
+    catch (e) {
+        console.log(e.message);
+    }
+</script>
+</html>

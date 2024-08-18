@@ -1,0 +1,615 @@
+
+<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="한국전자통신연구원, ETRI, 공동연구, 위탁연구" name="description"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<link href="/pcmx/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<title>공동연구공고 목록  | 한국전자통신연구원 : ETRI - 공동/위탁연구</title>
+<link href="/pcmx/css/style.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/pcmx/jquery-ui/css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="/pcmx/js/jquery.min.js" type="text/javascript"></script>
+<script src="/pcmx/jquery-ui/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="/pcmx/jquery-ui/jquery-ui.js" type="text/javascript"></script>
+<script src="/pcmx/js/common.js" type="text/javascript"></script>
+<script src="/pcmx/js/jquery.base64.js" type="text/javascript"></script>
+<script src="/pcmx/js/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+var returnURL = '';
+if('0' > -1){
+    returnURL = 'https%3A%2F%2Fpcm.etri.re.kr%3A443%2Fpcmx%2FcookieLogin.do';
+}else{
+    returnURL = 'http%3A%2F%2Fpcm.etri.re.kr%3A443%2Fpcmx%2FcookieLogin.do';
+}
+$(document).ready(function(){
+    
+});
+function login(){
+    window.open('https://csc.etri.re.kr/home/common/search/commonLogin.jsp?siteCode=02&amp;returnURL='+returnURL,'login','width=400px,height=205px');
+}
+function login2(){
+    window.open('/pcmx/login2.do','login','width=610px,height=350px');
+}
+function infoOpen() {
+    window.open('/pcmx/info/info.html' , "info1" , "width=750px,height=355px" );
+}
+
+function logout(){
+    loginSSo.returnURL.value = encodeURIComponent("https://pcm.etri.re.kr/pcmx/logout.do");
+    loginSSo.action = "http://hso.etri.re.kr/hmcm/sso/SSOLogout.do";
+
+    loginSSo.submit();
+    //location.href="http://hso.etri.re.kr/hmcm/sso/SSOLogout.do?returnURL=https%3A%2F%2Fpcm.etri.re.kr%2Fpcmx%2Flogout.do";
+}
+function oldPopup(){
+    var option = new Object();
+    option.width = '1200';
+    var url = "https://www.etri.re.kr/bbs/list.etri?b_board_id=ETRI04";
+    var title = "(구) 공동연구 정보";
+    popup.init(url, title, null, option);
+    popup.open();
+}
+
+function fnClick(idx){
+	var url = "";
+	if(idx == 1){
+		url = '/pcmx/join/main.do';
+	} else {
+		url = '/pcmx/comm/main.do';
+	}
+	var $form = $('<form></form>');
+	var linkYn = '<input type="hidden" value="N" name ="link_yn">';
+	$form.attr('action', url);
+	$form.attr('method', 'post');
+	$form.appendTo('body');
+	$form.append(linkYn);
+	$form.submit();
+
+}
+
+function getFile(fileCd){
+	var url = '/pcmx/getFile.do';
+	var $form = $('<form></form>');
+	var fileCd = '<input type="hidden" value="'+fileCd+'" name ="file_cd">';
+	var fileDiv = '<input type="hidden" value="1" name ="file_div">';
+	$form.attr('action', url);
+	$form.attr('method', 'post');
+	$form.appendTo('body');
+	$form.append(fileCd);
+	$form.append(fileDiv);
+	$form.submit();
+}
+
+function fnGetBoardFile(sno , file_gbn, table){
+	var url = '/pcmx/getBoardFile.do';
+	var $form = $('<form></form>');
+	var $sno = '<input type="hidden" value="'+sno+'" name ="sno">';
+	var $file_gbn = '<input type="hidden" value="'+file_gbn+'" name ="file_gbn">';
+	var $table = '<input type="hidden" value="'+table+'" name ="table">';
+	var fileDiv = '<input type="hidden" value="1" name ="file_div">';
+	$form.attr('action', url);
+	$form.attr('method', 'post');
+	$form.appendTo('body');
+	$form.append($sno).append($file_gbn).append($table).append(fileDiv);;
+	$form.submit();
+}
+</script>
+<meta content="-1" http-equiv="Expires"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="No-Cache" http-equiv="Cache-Control"/>
+<script src="/pcmx/js/calendar.js" type="text/javascript"></script>
+<script type="text/javascript">
+function chk(frm){
+    if($('#searchStartDate').val() != '' && $('#searchEndDate').val() != ''){
+        var thisVar = $('#searchStartDate').val();
+        var compVar = $('#searchEndDate').val();
+        thisVar = thisVar.replace('-','').replace('-','');
+        compVar = compVar.replace('-','').replace('-','');
+        if(thisVar > compVar){
+            alert('시작일은 종료일보다 작게 선택해주세요');
+            $('#searchStartDate').val('');
+            return false;
+        }
+    }
+    return true;
+}
+
+function fnAnnoView(key){
+	var url = "/pcmx/join/anno/annoView.do";
+	var $form = $('<form></form>');
+	var key = '<input type="hidden" value="'+key+'" name ="copertn_partcptn_org_pssrp_no">';
+	$form.attr('action', url);
+	$form.attr('method', 'post');
+	$form.appendTo('body');
+	$form.append(key);
+	$form.submit();
+}
+</script>
+</head>
+<body>
+<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsByzAS9XKJ3pJe3HYi3lIKzvC3l2yJqJow743W0PqS3Kye80m44utWot2zg6X/R7dK7edueXaz906dOCHhUdP402Lr1Jr3W/vZPaVQ1izPENMbliIA+u58Dt5aNrO9KMLvfIRBCxeu25r7fmRAxby2GGNROnMw1ayxUm3/vOmWEmii30VPSiuRwx5Oq8tYtWw=="/>
+<input name="csSignature" type="hidden" value="Cr1dB8vUbbihWataBeT/lA=="/>
+<input id="returnURL" name="returnURL" type="hidden" value=""/>
+<input id="userId" name="userId" type="hidden" value="">
+<input id="loginType" name="loginType" type="hidden" value=""/>
+<input id="identityValue" name="identityValue" type="hidden" value=""/>
+<input id="siteCode" name="siteCode" type="hidden" value="01"/>
+</input></form>
+<div id="wrap">
+<dl class="skip">
+<dt><strong>바로가기 메뉴</strong></dt>
+<dd><a href="#gnb_wrap">주요메뉴 바로가기</a></dd>
+<dd><a href="#left_menu_wrap">메인메뉴 바로가기</a></dd>
+<dd><a href="#content_wrap">본문내용 바로가기</a></dd>
+<dd><a href="#footer_wrap">하단메뉴 바로가기</a></dd>
+</dl>
+<!-- header -->
+<div id="header_wrap">
+<div id="header">
+<!-- global -->
+<div id="global_wrap">
+<div class="global">
+<h3 class="hidden">유틸메뉴</h3>
+<ul class="global_a">
+<li class="link1"><a href="/pcmx/index.do" title="홈으로 바로가기">HOME</a></li>
+<li class="link2"><a href="https://csc.etri.re.kr/home/" rel="noopener noreferrer" target="_blank" title="새창으로 고객만족센터 홈페이지가 열립니다.">고객만족센터</a></li>
+<li class="link3"><a onclick="javascript:infoOpen(); return false;">홈페이지 안내</a></li>
+<li class="link4"><a href="http://www.etri.re.kr" rel="noopener noreferrer" target="_blank" title="새창으로 ETRI 홈페이지가 열립니다.">한국전자통신연구원</a></li>
+</ul>
+<div class="global_b">
+<div class="login_area">
+<a class="btn_login" onclick="login2(); return false;" style="cursor:pointer;" title="새창으로 로그인 팝업창 페이지로 이동합니다.">로그인</a>
+</div>
+</div>
+<!-- //if else -->
+</div>
+</div>
+<!-- //global --><!-- logo -->
+<h1>
+<a href="/pcmx/index.do"><img alt="한국전자통신연구원" height="50" src="/pcmx/images/logo.gif" width="124"/></a>
+</h1>
+<!-- //logo -->
+<div class="gnb" id="gnb_wrap">
+<ul>
+<li class="gnb_1_on"><a href="javascript:fnClick(1)">공동연구<br/></a></li>
+<li class="gnb_2"><a href="javascript:fnClick(2)">위탁연구<br/></a></li>
+</ul>
+</div>
+<!-- //gnb -->
+</div>
+</div>
+<!-- //header --><!-- container -->
+<div id="main_wrap">
+<div class="content">
+<div class="content_left">
+<h3 class="left_title_01">공동연구</h3>
+<ul class="left_menu" id="left_menu_wrap">
+<li class="on"><a href="/pcmx/join/anno/annoList.do">공동연구공고</a></li>
+<li><a href="/pcmx/join/rqst/rqstList.do">공동연구신청</a></li>
+<li><a href="/pcmx/join/ctrt/ctrtList.do">계약체결</a></li>
+<li><a href="/pcmx/join/prog/progList.do">중간/최종결과물 제출</a></li>
+<li><a href="/pcmx/join/pds/pdsList.do">고객지원</a>
+<ul class="left_menu_sub" style="display: none;">
+<!-- <li><a href="/pcmx/join/noti/notiList.do">공지사항</a></li>
+                            <li><a href="/pcmx/join/qna/qnaList.do">질의응답</a></li>
+                            <li><a href="/pcmx/join/pds/pdsList.do">자료실</a></li>
+                            <li><a href="/pcmx/join/faq/faqList.do">FAQ</a></li>
+                            <li><a href="https://csc.etri.re.kr/home/myVoc.do?method=executeGetMyVocList&amp;type=VOCLIST" title="새창으로 고객의 소리 홈페이지로 이동합니다." target="_blank" rel="noopener noreferrer">고객의 소리</a></li>
+                             -->
+<li><a href="/pcmx/join/pds/pdsList.do">자료실</a></li>
+</ul>
+</li>
+<li><a href="/pcmx/join/qna/qnaList.do">질의응답</a></li>
+<li><a href="/pcmx/join/oldInfo.do" target="_self">관계규정 및 서식</a></li>
+<li class="on"><a href="/pcmx/join/oldView.do" target="_self">(구) 공동연구 정보</a></li>
+</ul>
+</div>
+<div class="content_right" id="content_wrap">
+<div class="top">
+<div class="nav">
+<div class="icon_home" style="width: 600px;">Home &gt; 공동연구
+                         &gt; 공동연구공고
+                        </div>
+</div>
+<span class="nav_info">공동연구, 위탁연구 홈페이지에 오신 것을 환영합니다.</span>
+</div>
+<!-- 공동연구공고검색 -->
+<div class="table_set">
+<h3 class="txt_coop_001">공동연구공고 검색</h3>
+<div class="search">
+<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsByzAS9XKJ3pJe3HYi3lIIrneUwZDXtDgncaO0lqIObkGYsHywCORdfZX3FOFTUSlfALbra7h+gj8dDb7SLMMO3xD9A8zG0N2irhwgU8g9PeJhn6aWbcsEZCULpLHxWLFY2S4XSBWUfqq1N/+plkMpWd17/M7Wnerfmh3ANjn6g"/>
+<input name="csSignature" type="hidden" value="Cr1dB8vUbbihWataBeT/lA=="/>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#searchStartDate').focus(function(){
+        fnPopUpCalendar(this,this,'yyyy-mm-dd');
+    });
+    $('#searchEndDate').focus(function(){
+        fnPopUpCalendar(this,this,'yyyy-mm-dd');
+    });
+});
+</script>
+<fieldset>
+<legend>공고 검색</legend>
+<table>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 50%"/>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+</colgroup>
+<tbody>
+<tr>
+<th>공고명</th>
+<td colspan="3"><input class="search_input" name="searchWord" title="공고명을 입력하세요" type="text" value=""/></td>
+</tr>
+<tr>
+<th>공고번호</th>
+<td><input class="search_input" name="keywords" title="공고번호를 입력하세요" type="text" value=""/></td>
+<th>진행상태</th>
+<td>
+<select class="ti" name="prgrs_sttus" title="검색대상을 선택합니다">
+<option value="">선택하세요</option>
+<option value="13">기관공모</option>
+<option value="99">마감</option>
+</select>
+</td>
+</tr>
+<tr>
+<th class="b_last">공고일시</th>
+<td class="b_last" colspan="3">
+<input class="search_input" id="searchStartDate" name="searchStartDate" style="width: 30%" title="시작일을 입력하세요" type="text" value=""/>
+                                                ~
+                                                <input class="search_input" id="searchEndDate" name="searchEndDate" style="width: 30%" title="종료일을 입력하세요" type="text" value=""/>
+<span class="search_btn"><input alt="검색" src="/pcmx/images/btn_search_i.gif" type="image"/></span>
+</td>
+</tr>
+</tbody>
+</table>
+</fieldset>
+</form>
+</div>
+</div>
+<!-- //공동연구공고검색 -->
+<!-- 리스트 -->
+<div class="table_set">
+<div class="total_page">
+<ul>
+<li><strong>Total</strong> : <span>2867</span></li>
+<li class="ml10"><strong>Page</strong> : <span>1/287</span></li>
+</ul>
+<div class="txt_n">
+<span class="fc_d71010">*</span> 공고명을 클릭하시면 상세 정보를 볼수 있습니다.
+                        </div>
+</div>
+<div class="ann">
+<table>
+<caption style="display: none;">공동연구공고 리스트</caption>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 35%"/>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+<col style="width: 15%"/>
+</colgroup>
+<thead>
+<tr>
+<th scope="col">공고번호</th>
+<th scope="col">공고명</th>
+<th scope="col">공고일자</th>
+<th scope="col">마감일자</th>
+<th scope="col">진행상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7211-2024-00002
+                                        
+                                    
+                                    </td>
+<td title="난치성 종양 조직세포 및 유전자염색/증폭법 RNA 공간분포 데이터셋 구축 및 분석 알고리즘 개발">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7211-2024-00002')">난치성 종양 조직세포 및 유전자염색/증폭법 RNA 공간분포 데이터셋 구축 및 분석 알고리즘 개발</a>
+</div>
+</td>
+<td>2024-08-02</td>
+<td>2024-08-09</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00033
+                                        
+                                    
+                                    </td>
+<td title="블록체인 기술 기반 탄소감축 행동데이터 검증 시스템 개발 및 실증">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00033')">블록체인 기술 기반 탄소감축 행동데이터 검증 시스템 개발 및 실증</a>
+</div>
+</td>
+<td>2024-06-25</td>
+<td>2024-07-01</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00034
+                                        
+                                    
+                                    </td>
+<td title="블록체인 기술 기반 문화공연 티켓팅 시스템 개발 및 실증">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00034')">블록체인 기술 기반 문화공연 티켓팅 시스템 개발 및 실증</a>
+</div>
+</td>
+<td>2024-06-25</td>
+<td>2024-07-01</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00035
+                                        
+                                    
+                                    </td>
+<td title="광고거래플랫폼의 통합인증 및 공공 블록체인 연동 모듈 개발 및 실증">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00035')">광고거래플랫폼의 통합인증 및 공공 블록체인 연동 모듈 개발 및 실증</a>
+</div>
+</td>
+<td>2024-06-25</td>
+<td>2024-07-01</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    4011-2024-00011
+                                        
+                                    
+                                    </td>
+<td title="초저비트율 비디오 부호화 환경에서의 원본충실도-맥락보존성 최적화 방안 연구">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('4011-2024-00011')">초저비트율 비디오 부호화 환경에서의 원본충실도-맥락보존성 최적화 방안 연구</a>
+</div>
+</td>
+<td>2024-06-18</td>
+<td>2024-06-24</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00020
+                                        
+                                    
+                                    </td>
+<td title="실내외 복합 주행 환경에 운용하기 위한 멀티 로봇 관제시스템 개발">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00020')">실내외 복합 주행 환경에 운용하기 위한 멀티 로봇 관제시스템 개발</a>
+</div>
+</td>
+<td>2024-05-08</td>
+<td>2024-05-13</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00019
+                                        
+                                    
+                                    </td>
+<td title="물류이송용 다중 자율 이동체를 위한 관제기술 개발">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00019')">물류이송용 다중 자율 이동체를 위한 관제기술 개발</a>
+</div>
+</td>
+<td>2024-05-08</td>
+<td>2024-05-13</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00021
+                                        
+                                    
+                                    </td>
+<td title="AI기반 차선 도장용 자율 무인이동체 고도화">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00021')">AI기반 차선 도장용 자율 무인이동체 고도화</a>
+</div>
+</td>
+<td>2024-05-08</td>
+<td>2024-05-13</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2024-00022
+                                        
+                                    
+                                    </td>
+<td title="축사 먹이 밀기용 자율 이동체 고도화">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2024-00022')">축사 먹이 밀기용 자율 이동체 고도화</a>
+</div>
+</td>
+<td>2024-05-08</td>
+<td>2024-05-13</td>
+<td>마감</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    5011-2024-00004
+                                        
+                                    
+                                    </td>
+<td title="5G NR-DC 기반 특화망 기술 개발">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('5011-2024-00004')">5G NR-DC 기반 특화망 기술 개발</a>
+</div>
+</td>
+<td>2024-03-26</td>
+<td>2024-04-01</td>
+<td>마감</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- paging -->
+<div class="paging">
+<div class="boardbtn">
+<div class="pagination">
+<strong>1</strong>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2">2</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=3">3</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=4">4</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=5">5</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=6">6</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=7">7</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=8">8</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
+<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
+<a class="direction last" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
+<a class="direction" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=287"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
+</div>
+</div>
+</div>
+<!--// paging -->
+</div>
+<!-- //리스트 -->
+</div>
+</div>
+</div>
+<!--// container --><!-- footer -->
+<div id="footer_wrap">
+<div class="footer_spot">
+<h3 class="hidden">하단메뉴</h3>
+<div class="spot_1">
+<ul>
+<li class="link1"><a href="http://www.etri.re.kr/etri/etc/etc_01000000.etri" rel="noopener noreferrer" target="_blank" title="새창으로 한국전자통신연구원 개인정보처리방침 페이지로 이동합니다."><strong>개인정보처리방침</strong></a></li>
+<li class="link2"><a href="http://rndcard.nipa.kr" rel="noopener noreferrer" target="_blank" title="새창으로 정보통신산업진흥원 사업비종합관리시스템 홈페이지로 이동합니다.">사업비종합관리시스템</a></li>
+</ul>
+</div>
+<h3 class="hidden">관련 홈페이지 바로가기</h3>
+<div class="spot_2">
+<ul>
+<li>
+<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsByzAS9XKJ3pJe3HYi3lIKYVAoucTnluX7W1nVVA4+l">
+<input name="csSignature" type="hidden" value="Cr1dB8vUbbihWataBeT/lA==">
+<fieldset>
+<legend>ETRI 직할부서 바로가기</legend>
+<label class="hidden" for="etri_siteurl">ETRI 직할부서 바로가기</label>
+<select class="spot_input" id="etri_siteurl" name="etri_siteurl" title="ETRI 직할부서 바로가기">
+<option value="">ETRI 직할부서</option>
+<option value="">호남권연구센터</option>
+<option value="">대경권연구센터</option>
+<option value="">방송통신융합연구부문</option>
+<option value="">SW콘텐츠연구부문</option>
+<option value="">융합 부품ㆍ소재 연구부문</option>
+<option value="">기술전략본부</option>
+<option value="">사업화본부</option>
+<option value="">경영기획실</option>
+<option value="">경영관리본부</option>
+<option value="">인재개발본부</option>
+<option value="">GTSC게임기술지원센터</option>
+<option value="">BcN 개방형서비스센터</option>
+<option value="">시스템반도체산업진흥센터</option>
+</select>
+<input alt="바로가기" src="/pcmx/images/btn_go.gif" type="image">
+</input></fieldset>
+</input></input></form>
+</li>
+<li>
+<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsByzAS9XKJ3pJe3HYi3lIKYVAoucTnluX7W1nVVA4+l">
+<input name="csSignature" type="hidden" value="Cr1dB8vUbbihWataBeT/lA==">
+<fieldset>
+<legend>ETRI SERVICE 바로가기</legend>
+<label class="hidden" for="etri_siteur2">ETRI SERVICE 바로가기</label>
+<select class="spot_input" id="etri_siteur2" name="etri_siteurl" title="ETRI SERVICE 바로가기">
+<option value="">ETRI SERVICE</option>
+<option value="http://www.itec.re.kr">기술이전</option>
+<option value="http://www.itec.re.kr/shared">공통서비스</option>
+<option value="http://etrij.etri.re.kr">ETRI저널</option>
+<option value="http://ettrends.etri.re.kr">전자통신동향분석</option>
+<option value="http://www.etri.re.kr/vr_1">ETRI 전시관</option>
+<option value="http://www.etri.re.kr/rnd/html">공동연구</option>
+<option value="http://bid.etri.re.kr/index1.html">구매&amp;입찰</option>
+<option value="http://www.etri.re.kr/kor/html/News0201.jsp">위탁연구과제</option>
+<option value="http://bid.etri.re.kr:8080/recruit/html/main.htm">채용안내</option>
+<option value="http://www.etri.re.kr/dongmun2">동문사랑방</option>
+<option value="http://escort.etri.re.kr">기술도우미</option>
+</select>
+<input alt="바로가기" src="/pcmx/images/btn_go.gif" type="image"/>
+</fieldset>
+</input></input></form>
+</li>
+<li>
+<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsByzAS9XKJ3pJe3HYi3lIKYVAoucTnluX7W1nVVA4+l"/>
+<input name="csSignature" type="hidden" value="Cr1dB8vUbbihWataBeT/lA=="/>
+<fieldset>
+<legend>ETRI 유관기관 바로가기</legend>
+<label class="hidden" for="etri_siteur3">ETRI 유관기관 바로가기</label>
+<select class="spot_input" id="etri_siteur3" name="etri_siteurl" title="ETRI 유관기관 바로가기">
+<option value="">ETRI 유관기관</option>
+<option value="http://www.msip.go.kr/">미래창조과학부</option>
+<option value="http://www.mke.go.kr/">산업통상자원부</option>
+<option value="http://www.ust.ac.kr/">과학기술연합대학원대학교</option>
+<option value="http://www.kcc.go.kr/user.do">방송통신위원회</option>
+<option value="http://www.mest.go.kr/">교육부</option>
+<option value="http://www.istk.re.kr/">산업기술연구회</option>
+<option value="http://www.acrc.go.kr/">국민권익위원회</option>
+<option value="http://www.copyright.or.kr/">한국저작권위원회</option>
+<option value="http://www.kocca.or.kr/">콘텐츠산업정보포털</option>
+<option value="http://www.nipa.kr">정보통신산업진흥원</option>
+<option value="http://www.kiica.or.kr/">정보통신국제협력진흥원</option>
+<option value="http://www.kama.or.kr/">한국자동차산업협회</option>
+</select>
+<input alt="바로가기" src="/pcmx/images/btn_go.gif" type="image"/>
+</fieldset>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="foot_ad">
+<div class="add_area">
+<address>305-700 대전광역시 유성구 가정로 218. TEL : 042) 860-6114</address>
+<p>Electronics and Telecommunications Research Institute. All rights reserved.</p>
+</div>
+</div>
+</div>
+<!-- //footer -->
+</div>
+</body>
+</html>

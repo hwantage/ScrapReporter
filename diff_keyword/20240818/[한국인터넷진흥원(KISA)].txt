@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="no" http-equiv="imagetoolbar"/>
+<meta content="no-cache" http-equiv="cache-control"/>
+<meta content="0" http-equiv="expires"/>
+<meta content="no-cache" http-equiv="pragma"/>
+<meta content="한국인터넷진흥원" name="description"/>
+<meta content="한국인터넷진흥원" name="keywords"/>
+<meta content="한국인터넷진흥원" name="classification"/>
+<meta content="한국인터넷진흥원" name="author"/>
+<meta content="한국인터넷진흥원" name="title"/>
+<meta content="한국인터넷진흥원" name="apple-mobile-web-app-title"/>
+<meta content="한국인터넷진흥원" name="subject">
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<title>KISA 한국인터넷진흥원</title>
+<!--favicon 추가 시작-->
+<link href="/resource/kor/favicon/favicon.ico" rel="shortcut icon"/>
+<link href="/resource/kor/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57"/>
+<link href="/resource/kor/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60"/>
+<link href="/resource/kor/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72"/>
+<link href="/resource/kor/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76"/>
+<link href="/resource/kor/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114"/>
+<link href="/resource/kor/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120"/>
+<link href="/resource/kor/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"/>
+<link href="/resource/kor/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152"/>
+<link href="/resource/kor/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/resource/kor/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+<link href="/resource/kor/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/resource/kor/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/resource/kor/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/resource/kor/favicon/manifest.json" rel="manifest"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="/resource/kor/favicon/ms-icon-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<!--favicon 추가 끝-->
+<link href="/resource/kor/css/style.css?p=10" media="all" rel="stylesheet" type="text/css">
+<link href="/resource/common/css/xeicon.min.css" media="all" rel="stylesheet"/>
+<link href="/resource/kor/css/jquery.fullpage.min.css" media="all" rel="stylesheet" type="text/css">
+<link href="/resource/common/css/swiper.css" media="all" rel="stylesheet">
+<script charset="utf-8" src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="/resource/kor/js/common.js" type="text/javascript"></script>
+<script charset="utf-8" src="/resource/kor/js/jquery.fullPage.min.js?p=4" type="text/javascript"></script>
+<script src="/resource/common/js/swiper.min.js" type="text/javascript"></script>
+<script charset="utf-8" src="/resource/kor/js/slider.js" type="text/javascript"></script>
+<!-- 공공누리 스트립트 -->
+<script charset="utf-8" src="/resource/kor/js/koglOpen.js?t=7" type="text/javascript"></script>
+<script type="text/javascript">
+		$(document).ready(function() {
+
+			// head title set
+			var pre_info_menunm = '';
+
+			if(pre_info_menunm == null || pre_info_menunm == ''){
+				document.title = 'KISA 한국인터넷진흥원>' + '알림마당>공지사항'
+			} else {
+				// 사전정보공표 화면일 경우
+				document.title = 'KISA 한국인터넷진흥원>' + '알림마당>공지사항' + '>' + pre_info_menunm
+			}
+
+			if (navigator.userAgent.toUpperCase().indexOf('TRIDENT') == -1) {
+				$('#fullpage').fullpage({
+					sectionSelector: 'section',
+					anchors: ['firstPage', 'secondPage', '3rdPage','footerPage'],
+					menu: '#menu',
+					responsiveWidth:1400,
+					responsiveHeight:900,
+					recordHistory: true,
+					animateAnchor: false,
+					afterLoad: function (anchorLink, index) {
+						if (index) {
+							$('#menu').show();
+							$('#menu li a').removeClass("color");
+							$('#header').removeClass('white');
+						}
+						if(index==3){
+							$('#header').addClass('white');
+							$('#menu li a').addClass("color");
+						}
+						if(index==4){
+							$('#header').addClass('white');
+							$('#menu').hide();
+						}
+					}
+				});
+			}
+		});
+	</script>
+<script>
+		function funcClicked(target){
+			//console.log('clicked'); // A 태그 삽입용
+		}
+	</script>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</link></link></link></meta></meta></head>
+<head>
+<script type="text/javascript">
+	var totalNum = 1116; // 전체 조회 건수
+	var currentPage = 1; // 현재 page 번호
+	var pageSize = 10; // 페이지당 최대 데이터 갯수
+	var pageScale = 5; // 페이지당 최대 페이징 갯수
+</script>
+<script src="/resource/kor/js/pagination.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- Skip -->
+<dl class="accessibilityWrap">
+<dt class="blind">
+<strong>바로가기 메뉴</strong>
+</dt>
+<dd>
+<a href="#container" title="본문 바로가기">본문 바로가기</a>
+</dd>
+<dd>
+<a href="#gnbTarget" title="주메뉴 바로가기">주메뉴 바로가기</a>
+</dd>
+<dd>
+<a href="#footerTarget" title="푸터 바로가기">푸터 바로가기</a>
+</dd>
+</dl>
+<!-- //Skip -->
+<div id="wrap">
+<!--Mobile Gnb--><div class="menuMo"><div class="hd"><div class="logo"><a href="/" title="KISA"><span class="blind">로고</span></a></div><div class="rb"><button class="mobie_sitemap" onclick="location.href='/701'" title="전체메뉴">전체메뉴</button><a href="/EN" title="영문">ENG</a><button class="mobie_allSearch" title="찾기">SEARCH</button><button class="close" title="닫기"><span class="blind">닫기</span></button></div></div><div class="menu_cont"> <nav id="mo_gnb"><ul><li class="more"><li class="more"><button>고객서비스</button><ul class="mo_gnb_depth2"><li><a href="/301">주요서비스</a></li><li><a href="/302">대민웹서비스</a></li><li><a href="/303">118 상담 서비스 안내</a></li><li><a href="/306">국민제안함</a></li><li><a href="/310">안전보건제안</a></li><li class="more"><button>통합신고센터</button><ul class="mo_gnb_depth3"><li><a href="/30407">부패·공익신고 안내</a></li><li><a href="/30403">복지보조금부정신고 센터</a></li><li><a href="/30404">이해충돌 신고·상담센터</a></li><li><a href="/30405">인권침해 구제</a></li><li><a href="/30406">기업성장 응답센터</a></li></ul></li></ul></li><li class="more"><li class="more"><button>지식플랫폼</button><ul class="mo_gnb_depth2"><li><a href="/201">연구보고서</a></li><li><a href="/20207">동향분석</a><ul class="mo_gnb_depth3"><li><a href="/20207">전체동향</a></li><li><a href="/20205">사이버 위협 동향</a></li><li><a href="/20206">랜섬웨어 동향</a></li><li><a href="/20201">인터넷·정보보호 법제 동향</a></li><li><a href="/20202">개인정보보호·인터넷 동향</a></li><li><a href="/20203">글로벌 정보보호 동향</a></li><li><a href="/20204">국내외 위치정보 동향</a></li><li><a href="/20208">글로벌 디지털 산업·정책 동향</a></li></ul></li><li><a href="/20305">정기간행물</a><ul class="mo_gnb_depth3"><li><a href="/20305">전체</a></li><li><a href="/20301">KISA Insight</a></li><li><a href="/20302">KISA Report</a></li><li><a href="/20303">국가정보보호백서</a></li><li><a href="/20304">인터넷·정보보호 법제연구</a></li></ul></li><li><a href="/20509">실태조사 및 통계</a><ul class="mo_gnb_depth3"><li><a href="/20509">전체</a></li><li><a href="/20506">5대 융합서비스 및 정보보호실태조사</a></li><li><a href="https://www.kisia.or.kr/research/reference_board" target="_blank" title="새창열림">정보보호실태조사·정보보호산업실태조사(KISIA)</a></li><li><a href="/20504">스팸 유통현황</a></li><li><a href="/20501">전자문서 산업 실태조사</a></li><li><a href="/20503">인터넷주소자원 통계</a></li><li><a href="/20505">개인정보보호 실태조사</a></li></ul></li><li><a href="/204">역대발간물</a></li><li class="more"><button>법령·가이드라인</button><ul class="mo_gnb_depth3"><li><a href="/20601">법령·고시</a></li><li><a href="/2060207">가이드라인</a></li><li><a href="/2060307">안내서</a></li><li><a href="/20604">사례집, 편람 등</a></li></ul></li></ul></li><li class="more"><li class="more"><button>사업소개</button><ul class="mo_gnb_depth2"><li class="more"><button>디지털위협대응본부</button><ul class="mo_gnb_depth3"><li><a href="/10201">본부소개</a></li><li><a href="/1020201">디지털위협 대응</a></li><li><a href="/1020301">디지털위협 분석</a></li><li><a href="/1020405">디지털 인프라 보호</a></li><li><a href="/1020501">위협정보 공유ㆍ협력</a></li><li><a href="/1020601">국민피해 대응</a></li><li><a href="/1020701">인터넷주소 관리</a></li></ul></li><li class="more"><button>개인정보안전활용본부</button><ul class="mo_gnb_depth3"><li><a href="/10301">본부소개</a></li><li><a href="/1030201">정책·협력</a></li><li><a href="/1030301">안전활용</a></li><li><a href="/1030402">침해사고 예방·신고</a></li><li><a href="/1030501">불법스팸 대응</a></li><li><a href="/1030601">위치정보·본인확인</a></li><li><a href="/1030701">디지털분쟁조정지원</a></li></ul></li><li class="more"><button>정보보호산업본부</button><ul class="mo_gnb_depth3"><li><a href="/10401">본부소개</a></li><li><a href="/1040801">정보보호산업 관련 제도</a></li><li><a href="/1040201">정보보호 기업 육성 및 지원</a></li><li><a href="/1040408">융합보안 산업 활성화 지원</a></li><li><a href="/1041501">물리보안 산업 활성화 지원</a></li><li><a href="/1041301">지역 정보보호 지원</a></li><li><a href="/1041401">정보보호 인력 양성</a></li></ul></li><li class="more"><button>디지털안전지원본부</button><ul class="mo_gnb_depth3"><li><a href="/10501">본부소개</a></li><li><a href="/1051201">공급망 안전 강화</a></li><li><a href="/1050602">정보보호 인증·안전 관리</a></li><li><a href="/10510">블록체인 활용 기반 조성</a></li><li><a href="/1051101">전자문서 이용 활성화</a></li></ul></li></ul></li><li class="more"><li class="more"><button>주요성과</button><ul class="mo_gnb_depth2"><li><a href="/801">디지털위협대응본부</a></li><li><a href="/802">개인정보안전활용본부</a></li><li><a href="/803">정보보호산업본부</a></li><li><a href="/804">디지털안전지원본부</a></li></ul></li><li class="more"><li class="more"><button>알림마당</button><ul class="mo_gnb_depth2"><li><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a><ul class="mo_gnb_depth3"><li><a href="/40701">사회공헌활동</a></li><li><a href="/40702">세부추진실적조회</a></li></ul></li><li><a href="/408">위탁과제</a></li><li class="more"><button>알림판</button><ul class="mo_gnb_depth3"><li><a href="/40901">게재중인 알림판</a></li><li><a href="/40902">게재마감된 알림판</a></li></ul></li><li><a href="/41001">과제계획</a><ul class="mo_gnb_depth3"><li><a href="/41001">위탁과제 리스트</a></li><li><a href="/41002">용역과제 리스트</a></li></ul></li><li><a href="/41101">기술이전</a><ul class="mo_gnb_depth3"><li><a href="/41101">기술이전 리스트</a></li><li><a href="/41102">기술이전 업무프로세스</a></li></ul></li></ul></li><li class="more"><li class="more"><button>환경·사회·투명 경영</button><ul class="mo_gnb_depth2"><li><a href="/501">사전정보공표</a></li><li class="more"><button>정보공개</button><ul class="mo_gnb_depth3"><li><a href="/50201">업무처리절차</a></li><li><a href="/5020201">정보공개안내</a></li><li><a href="/50203">정보공개목록</a></li><li><a href="https://www.open.go.kr" target="_blank" title="새창열림">정보공개청구</a></li><li><a href="/50206">비공개기준</a></li><li><a href="/50204">공공데이터개방</a></li></ul></li><li><a href="/503">경영공시</a></li><li class="more"><button>자체경영공시</button><ul class="mo_gnb_depth3"><li><a href="/5040101">일반현황</a></li><li><a href="/5040201">기관운영현황</a></li><li><a href="/5040301">내·외부 감사 및 평가</a></li></ul></li><li><a href="/505">사업실명제</a></li><li><a href="/507">내부감사결과</a></li><li class="more"><button>고객만족경영</button><ul class="mo_gnb_depth3"><li><a href="/50801">고객만족비전</a></li><li><a href="/50802">고객서비스 헌장</a></li><li><a href="/50803">고객서비스 이행표준</a></li></ul></li><li class="more"><button>안전보건경영</button><ul class="mo_gnb_depth3"><li><a href="/50901">안전보건경영방침</a></li><li><a href="/50902">안전보건경영 현황공개</a></li><li><a href="/50903">업무연속성경영방침</a></li></ul></li><li class="more"><button>인권경영</button><ul class="mo_gnb_depth3"><li><a href="/51001">추진체계</a></li><li><a href="/51002">인권경영헌장</a></li><li><a href="/51003">인권경영활동</a></li></ul></li><li class="more"><button>환경·사회·투명(ESG) 경영</button><ul class="mo_gnb_depth3"><li><a href="/51303">CEO X ESG</a></li><li><a href="/51301">전략체계</a></li><li><a href="/51302">경영공시</a></li><li><a href="/51304">인증현황</a></li><li><a href="/51305">경영활동</a></li><li><a href="/51307">이사회 운영 현황</a></li></ul></li><li class="more"><button>사회적 가치 추진</button><ul class="mo_gnb_depth3"><li><a href="/51101">전략체계</a></li><li><a href="/51102">사회적 가치 추진 활동</a></li></ul></li><li><a href="/512">기업민원 보호·서비스 헌장</a></li><li><a href="/514">양성평등 임원임명 목표제</a></li></ul></li><li class="more"><li class="more"><button>KISA 소개</button><ul class="mo_gnb_depth2"><li><a href="/601">기관장 인사말</a></li><li><a href="/602">연혁</a></li><li><a href="/603">조직도</a></li><li><a href="/604">상징(CI)</a></li><li><a href="/605">비전 및 목표</a></li><li><a href="/606">시설개방현황</a></li><li><a href="/60701">찾아오시는길</a><ul class="mo_gnb_depth3"><li><a href="/60701">나주본원</a></li><li><a href="/60702">서울청사</a></li><li><a href="/60703">판교사무소</a></li></ul></li><li class="more"><button>국민소통채널</button><ul class="mo_gnb_depth3"><li><a href="/60809">기관 소식·홍보 영상</a></li></ul></li><li><a href="/609">기관내규(사규)</a></li><li><a href="/610">사규 제·개정예고</a></li></ul></li><li class="more"><li class="more"><button>이용안내</button><ul class="mo_gnb_depth2"><li><a href="/701">사이트맵</a></li><li><a href="/702">RSS</a></li><li><a href="/703">웹접근성 도움말</a></li><li><a href="/704">개인정보 처리방침</a></li></ul></li><li class="more"><li class="more"><button>사전정보공표</button><ul class="mo_gnb_depth2"><li class="more"><button>사전정보공표</button><ul class="mo_gnb_depth3"><li><a href="/9010101">감사·윤리</a></li><li><a href="/9010201">경영·인사</a></li><li><a href="/9010301">홍보·국제협력</a></li><li><a href="/9010401">재무회계</a></li><li><a href="/9010501">총무 일반</a></li></ul></li></ul></li></li></li></li></li></li></li></li></li></li></ul></nav></div></div><div class="menuMo_bg"></div><!--//Mobile Gnb--><header class="white sub" id="header"> <div class="bg"></div><h1 class="logo"><a href="/" title="한국인터넷진흥원">한국인터넷진흥원</a></h1><nav id="gnb"><ul><li><a href="/301" id="gnbTarget" onclick="oneDepMenu()">고객서비스</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>고객서비스</h2></div><ul class="gnb_depth2"><li><a href="/301">주요서비스</a></li><li><a href="/302">대민웹서비스</a></li><li><a href="/303">118 상담 서비스 안내</a></li><li><a href="/306">국민제안함</a></li><li><a href="/310">안전보건제안</a></li><li><a href="/30407">통합신고센터</a><ul class="gnb_depth3"><li><a href="/30407">부패·공익신고 안내</a></li><li><a href="/30403">복지보조금부정신고 센터</a></li><li><a href="/30404">이해충돌 신고·상담센터</a></li><li><a href="/30405">인권침해 구제</a></li><li><a href="/30406">기업성장 응답센터</a></li></ul></li></ul></div></div></li><li><a href="/201" onclick="oneDepMenu()">지식플랫폼</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>지식플랫폼</h2></div><ul class="gnb_depth2"><li><a href="/201">연구보고서</a></li><li><a href="/20207">동향분석</a><ul class="gnb_depth3"></ul></li><li><a href="/20305">정기간행물</a><ul class="gnb_depth3"></ul></li><li><a href="/20509">실태조사 및 통계</a><ul class="gnb_depth3"></ul></li><li><a href="/204">역대발간물</a></li><li><a href="/20601">법령·가이드라인</a><ul class="gnb_depth3"><li><a href="/20601">법령·고시</a></li><li><a href="/2060207">가이드라인</a></li><li><a href="/2060307">안내서</a></li><li><a href="/20604">사례집, 편람 등</a></li></ul></li></ul></div></div></li><li><a href="/10201" id="gnbTarget" onclick="oneDepMenu()">사업소개</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>사업소개</h2></div><ul class="gnb_depth2"><li><a href="/10201">디지털위협대응본부</a><ul class="gnb_depth3"><li><a href="/10201">본부소개</a></li><li><a href="/1020201">디지털위협 대응</a></li><li><a href="/1020301">디지털위협 분석</a></li><li><a href="/1020405">디지털 인프라 보호</a></li><li><a href="/1020501">위협정보 공유ㆍ협력</a></li><li><a href="/1020601">국민피해 대응</a></li><li><a href="/1020701">인터넷주소 관리</a></li></ul></li><li><a href="/10301">개인정보안전활용본부</a><ul class="gnb_depth3"><li><a href="/10301">본부소개</a></li><li><a href="/1030201">정책·협력</a></li><li><a href="/1030301">안전활용</a></li><li><a href="/1030402">침해사고 예방·신고</a></li><li><a href="/1030501">불법스팸 대응</a></li><li><a href="/1030601">위치정보·본인확인</a></li><li><a href="/1030701">디지털분쟁조정지원</a></li></ul></li><li><a href="/10401">정보보호산업본부</a><ul class="gnb_depth3"><li><a href="/10401">본부소개</a></li><li><a href="/1040801">정보보호산업 관련 제도</a></li><li><a href="/1040201">정보보호 기업 육성 및 지원</a></li><li><a href="/1040408">융합보안 산업 활성화 지원</a></li><li><a href="/1041501">물리보안 산업 활성화 지원</a></li><li><a href="/1041301">지역 정보보호 지원</a></li><li><a href="/1041401">정보보호 인력 양성</a></li></ul></li><li><a href="/10501">디지털안전지원본부</a><ul class="gnb_depth3"><li><a href="/10501">본부소개</a></li><li><a href="/1051201">공급망 안전 강화</a></li><li><a href="/1050602">정보보호 인증·안전 관리</a></li><li><a href="/10510">블록체인 활용 기반 조성</a></li><li><a href="/1051101">전자문서 이용 활성화</a></li></ul></li></ul></div></div></li><li><a href="/801" onclick="oneDepMenu()">주요성과</a></li><li><a href="/401" onclick="oneDepMenu()">알림마당</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>알림마당</h2></div><ul class="gnb_depth2"><li><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a><ul class="gnb_depth3"></ul></li><li><a href="/408">위탁과제</a></li><li><a href="/40901">알림판</a><ul class="gnb_depth3"></ul></li><li><a href="/41001">과제계획</a><ul class="gnb_depth3"></ul></li><li><a href="/41101">기술이전</a><ul class="gnb_depth3"></ul></li></ul></div></div></li><li><a href="/501" onclick="oneDepMenu()">환경·사회·투명 경영</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>환경·사회·투명 경영</h2></div><ul class="gnb_depth2"><li><a href="/501">사전정보공표</a></li><li><a href="/50201">정보공개</a><ul class="gnb_depth3"></ul></li><li><a href="/503">경영공시</a></li><li><a href="/5040101">자체경영공시</a><ul class="gnb_depth3"></ul></li><li><a href="/505">사업실명제</a></li><li><a href="/507">내부감사결과</a></li><li><a href="/50801">고객만족경영</a><ul class="gnb_depth3"></ul></li><li><a href="/50901">안전보건경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51001">인권경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51303">환경·사회·투명(ESG) 경영</a><ul class="gnb_depth3"></ul></li><li><a href="/51101">사회적 가치 추진</a><ul class="gnb_depth3"></ul></li><li><a href="/512">기업민원 보호·서비스 헌장</a></li><li><a href="/514">양성평등 임원임명 목표제</a></li></ul></div></div></li><li><a href="/601" onclick="oneDepMenu()">KISA 소개</a><div class="depth02_menu_wrap"><div class="inner"><div class="title"><h2>KISA 소개</h2></div><ul class="gnb_depth2"><li><a href="/601">기관장 인사말</a></li><li><a href="/602">연혁</a></li><li><a href="/603">조직도</a></li><li><a href="/604">상징(CI)</a></li><li><a href="/605">비전 및 목표</a></li><li><a href="/606">시설개방현황</a></li><li><a href="/60701">찾아오시는길</a><ul class="gnb_depth3"></ul></li><li><a href="/60809">국민소통채널</a><ul class="gnb_depth3"></ul></li><li><a href="/609">기관내규(사규)</a></li><li><a href="/610">사규 제·개정예고</a></li></ul></div></div></li></ul></nav><div class="rb"><a class="all_menu" href="/701" title="전체메뉴">전체메뉴</a><a class="eng" href="/EN" title="ENGLISH">ENG</a><a class="all_search" href="#funcClicked" onclick="funcClicked()" title="전체검색">전체검색 열기</a></div><button class="mobile_menu" title="모바일 메뉴" type="button"></button></header><div class="all_search_pop"><form action="https://search.kisa.or.kr/search/search.jsp"><div class="f_box"><label class="blind" for="txt_search">검색어 입력</label><input class="txt_search" id="txt_search" name="keyword" placeholder="검색어를 입력하세요" type="text"/><button class="btn_search" title="검색" type="submit"></button></div></form></div><!-- //Header --><!-- Sub Top Contents --><section class="sub_top_box"><div class="imgs"><img alt="" src="/resource/kor/images/sub/bg_sub_top_01.jpg"/></div><div class="cont"><div class="cont"><h2>알림마당</h2><nav class="sub_nav"><ul class="sub_nav"><li><a href="/" title="홈으로"><span class="blind">홈</span><img alt="" src="/resource/kor/images/common/ic_sub_nav_home.png"/></a></li><li><a href="/401" title="알림마당">알림마당</a></li><li><a href="/401" title="공지사항">공지사항</a></li></ul></nav></div></div></section><!-- // Sub Top Contents -->
+<script>
+function oneDepMenu() {
+	$.ajax({
+		type: 'GET',
+		url: 'selectOneDepMenuClickReset.do',
+// 		data: {lang_type:'KO'},
+		success: function(data) {
+// 			console.log("메뉴 초기화")
+		},
+		fail : function() {
+			alert('oneDepMenuClickReset 통신 중 오류가 발생했습니다.');
+			closeLoading();
+		}				
+	});		
+}
+</script>
+<form id="searchFm">
+<input name="page" type="hidden" value="1">
+<!-- Container -->
+<div class="sub_container" id="container">
+<div class="inner">
+<!-- SUB inner START -->
+<section class="lb_con">
+<!-- contents -->
+<!-- SUB title -->
+<article class="sub_title_w">
+<h2 class="h2_type_1">공지사항</h2>
+<div class="rb">
+<button class="btn_tops print" onclick="printPc()" title="인쇄하기" type="button">인쇄하기</button>
+<button class="btn_tops snsShare" title="공유하기" type="button">공유하기</button>
+<div class="sns_share_pop">
+<button class="btn_close" title="닫기" type="button"><span class="blind">닫기</span><i class="xi-close"></i></button>
+<ul>
+<li>
+<a href="#shareTwitter" onclick="shareTwitter();" title="새창열림">
+<span class="icon"><i class="xi-twitter"></i></span>
+<p>트위터</p>
+</a>
+</li>
+<li>
+<a href="#shareFacebook" onclick="shareFacebook();" title="새창열림">
+<span class="icon"><i class="xi-facebook"></i></span>
+<p>페이스북</p>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- // SUB title -->
+<div class="board_top_content">
+<div class="board_icon">
+<img alt="" src="/resource/kor/images/sub/ic_board_list.png"/>
+</div>
+<div class="text_b">
+<p class="tit">한국인터넷진흥원 공지사항입니다.</p>
+<p class="nor">한국인터넷진흥원의 소식을 신속하고 정확하게 전해드립니다.</p>
+<p class="nor mgT20"><span class="color_red bold_1">[공지]</span> 각 분야별 제안서 평가위원 모집 <a class="btn_inline" href="/401/form?postSeq=2287&amp;lang_type=KO&amp;page=1">자세히 보기</a></p>
+</div>
+</div>
+<div class="board_top">
+<p class="lb count">
+<span>총 <b>1116</b>건
+								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
+</p>
+<div class="board_search_box">
+<label class="blind" for="searchDiv">검색 분류</label>
+<select class="search_select" id="searchDiv" name="searchDiv">
+<!-- db 작업으로 변경 필요 -->
+<option value="10">제목</option>
+<option value="20">내용</option>
+<option value="30">제목+내용</option>
+<option value="40">글쓴이</option>
+</select>
+<label class="blind" for="searchWord">검색어 입력</label>
+<input class="txt_search" id="searchWord" name="searchWord" placeholder="검색어 입력" type="text" value=""/>
+<button class="btn_search" onclick="search(1);" type="button">검색</button>
+</div>
+</div>
+<div class="board_wrap">
+<div class="board_tbl_box">
+<table class="tbl_board notice">
+<caption>공지사항</caption>
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 60%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+</colgroup>
+<thead>
+<tr>
+<th class="num" scope="col">번호</th>
+<th class="sbj" scope="col">제목</th>
+<th class="date" scope="col">등록일</th>
+<th class="count" scope="col">조회수</th>
+<th class="attach" scope="col">첨부파일</th>
+</tr>
+</thead>
+<tbody>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
+</td>
+<td class="date">2024-08-12</td>
+<td class="count">13870</td>
+<td class="attach">
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3304&amp;page=1">2024년 AI+SECURITY 아이디어 공모전 참가자 모집안내 (~8.12 16시까지 이메일 접수)</a>
+</td>
+<td class="date">2024-07-11</td>
+<td class="count">18220</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3304', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3299&amp;page=1">2024년 제11회 소프트웨어 개발보안 경진대회 개최</a>
+</td>
+<td class="date">2024-07-01</td>
+<td class="count">27223</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3299', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1113</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3318&amp;page=1">'2024 블록체인 밋업데이(Blockchain Meetup Day)' 안내</a>
+</td>
+<td class="date">2024-08-16</td>
+<td class="count">1313</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1112</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3317&amp;page=1">2024년도 위치정보 보호조치 비대면 이론교육(3차) 안내</a>
+</td>
+<td class="date">2024-08-14</td>
+<td class="count">29</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3317', 1, 'KO');">
+<img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1111</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3316&amp;page=1">2024년도 블록체인 유공 포상 계획 공고 안내(~9.13 15:00 마감)</a>
+</td>
+<td class="date">2024-08-12</td>
+<td class="count">1325</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3316', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1110</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3315&amp;page=1">[기간연장]2024년 정보보호제품 성능평가 지원 공모 사업 추가 모집(~8/23)</a>
+</td>
+<td class="date">2024-08-12</td>
+<td class="count">1533</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3315', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1109</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3314&amp;page=1">'2024 웹 개발교육[Web Tech Seminar]' 안내</a>
+</td>
+<td class="date">2024-08-08</td>
+<td class="count">3938</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1108</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3313&amp;page=1">제1기 정보보호특성화대학 대상 사이버전문사관 후보생 모집·선발 공고</a>
+</td>
+<td class="date">2024-08-07</td>
+<td class="count">1759</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3313', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1107</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3312&amp;page=1">중소기업 기술마켓 활용 안내</a>
+</td>
+<td class="date">2024-08-01</td>
+<td class="count">1537</td>
+<td class="attach">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pagination" id="pagination"></div>
+<!-- 만족도 조사 -->
+<article class="user_satisfaction_survey">
+<div class="top">
+<p class="title">이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</p>
+<div class="radio_b">
+<span><input id="sati_01" name="satis01" type="radio" value="5"/><label for="sati_01">매우 만족</label></span>
+<span><input id="sati_02" name="satis01" type="radio" value="4"/><label for="sati_02">만족</label></span>
+<span><input id="sati_03" name="satis01" type="radio" value="3"/><label for="sati_03">보통</label></span>
+<span><input id="sati_04" name="satis01" type="radio" value="2"/><label for="sati_04">불만족</label></span>
+<span><input id="sati_05" name="satis01" type="radio" value="1"/><label for="sati_05">매우 불만족</label></span>
+</div>
+<div class="upload_box">
+<label class="blind" for="txt_sati">의견입력란</label>
+<input class="txt_sati" id="txt_sati" maxlength="100" placeholder="의견을 입력해주세요" type="text"/>
+<button class="btn_upload" type="button">의견등록</button>
+</div>
+</div>
+<div class="info">
+<dl class="date">
+<dt>최종수정일 : </dt>
+<dd>2024-08-16</dd>
+</dl>
+</div>
+<input name="_csrf" type="hidden" value="458825f5-2056-468e-bd1d-7b6ef29f76bf">
+</input></article>
+<!-- // 만족도 조사 -->
+<script type="text/javascript">
+	$('.btn_upload').click(function(){
+        var radioVal = $('input[name="satis01"]:checked').val();
+        if(radioVal == null) {
+        	alert("만족도를 선택해주세요.");
+        	return;
+        }
+        
+        if($('.txt_sati').val() == ""){
+        	alert("의견을 입력해주세요.");
+        	return;
+        }
+        
+		$.ajax({
+			type: 'GET',
+			url: '/insertSatisfy.do',
+			dataType: 'json',
+			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
+		    beforeSend : function(xhr)
+            {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "458825f5-2056-468e-bd1d-7b6ef29f76bf");
+            },			
+			success: function(data) {
+				alert(data.message)
+			},
+			fail : function() {
+				alert('insertSatisfy 통신 중 오류가 발생했습니다.');
+				closeLoading();
+			},
+			error : function(xhr, status, error) { 
+				alert("만족도 처리 중 오류가 발생했습니다.")
+			}
+		});	        
+	});
+
+	function neverspam(){
+	    window.open('/neverSpam/view?menu_seq=401&lang_type=KO','AntiSpam','width=190,height=280,left=1,top=1');
+	}
+</script>
+</section>
+<!-- contents END -->
+<!--  sub Menu -->
+<aside class="rb_menu">
+<div class="sub_menu_title"><h2>알림마당</h2></div><nav class="sub_menu_wrap"><ul class="sub_menu"><li class="active"><a href="/401">공지사항</a></li><li><a href="/402">보도자료</a></li><li><a href="/403">입찰공고</a></li><li><a href="/404">채용정보</a></li><li><a href="/405">포토뉴스</a></li><li><a href="/40701">사회공헌</a></li><li><a href="/408">위탁과제</a></li><li><a class="more" href="/40901">알림판</a> <ul class="sub_menu_depth2"><li><a href="/40901">게재중인 알림판</a><li><a href="/40902">게재마감된 알림판</a></li></li></ul></li><li><a href="/41001">과제계획</a></li><li><a href="/41101">기술이전</a></li></ul></nav>
+</aside>
+<!--  sub Menu END -->
+</div>
+<!-- SUB inner END -->
+</div>
+</input></form>
+<!--//Container-->
+<!--Footer-->
+<section class="section" id="section3">
+<footer id="footer">
+<div class="top">
+<div class="inner">
+<ul class="ft_menu">
+<li class="white"><a href="/704" id="footerTarget">개인정보 처리방침</a></li>
+<li><a href="/702">RSS</a></li>
+<li><a href="/703">웹접근성 도움말</a></li>
+<li class="green"><a href="/303">해킹·스팸개인정보침해 신고는 118</a></li>
+</ul>
+<dl class="ft_data">
+<dt>KISA소개 자료</dt>
+<dd><a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(99999999, 1, 1, 'KO');" title="소개자료 다운로드 국문">KR</a></dd>
+<dd><a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(99999999, 1, 2, 'KO');" title="소개자료 다운로드 영문">ENG</a></dd>
+</dl>
+<dl class="ft_sns">
+<dt>SNS</dt>
+<dd><a href="https://www.instagram.com/kisa118_" target="_blank" title="새창열림"><span class="blind">인스타그램</span><i class="xi-instagram"></i></a></dd>
+<dd><a href="https://www.youtube.com/user/KISA118" target="_blank" title="새창열림"><span class="blind">유튜브</span><i class="xi-youtube-play"></i></a></dd>
+<dd><a href="https://blog.naver.com/kisa118" target="_blank" title="새창열림"><span class="blind">네이버 블로그</span><img alt="네이버 블로그" src="/resource/kor/images/common/ic_ft_blog.png"/></a></dd>
+<dd><a href="https://www.facebook.com/kisa118" target="_blank" title="새창열림"><span class="blind">페이스북</span><i class="xi-facebook"></i></a></dd>
+</dl>
+</div>
+</div>
+<div class="bott">
+<div class="inner">
+<address>
+<span class="left">[나주본원] (58324) 전라남도 나주시 진흥길 9 한국인터넷진흥원</span>
+<span class="right">대표번호 : <a href="tel:143325" title="전화걸기">1433-25</a>(수신자 요금 부담) </span>
+<span class="left">[서울청사] (05717) 서울시 송파구 중대로 135 (가락동) IT벤처타워</span>
+<span class="right">[해킹ㆍ스팸개인정보침해 신고 <a href="tel:118" title="전화걸기">118]</a></span>
+<span class="copyright">Copyright(C) 2021 KISA. All rights reserved.</span>
+</address>
+<div class="gover_logo">
+<div class="sitelinkArea">
+<ul>
+<li>
+<label class="blind" for="moveSel">정부·유관기관</label>
+<select class="search_select2" id="moveSel" name="moveSel" title="정부·유관기관">
+<option value="">정부·유관기관</option>
+<option value="">-- 정부기관 --</option>
+<option value="https://www.msit.go.kr">과학기술정보통신부</option>
+<option value="https://www.mois.go.kr">행정안전부</option>
+<option value="https://www.kcc.go.kr">방송통신위원회</option>
+<option value="https://www.pipc.go.kr">개인정보보호위원회</option>
+<option value="">-----------------</option>
+<option value="">-- 유관기관 --</option>
+<option value="https://www.nipa.kr">정보통신산업진흥원</option>
+<option value="https://www.kisdi.re.kr">정보통신정책연구원</option>
+<option value="https://www.kca.kr">한국방송통신전파진흥원</option>
+<option value="https://www.nia.or.kr">한국지능정보사회진흥원</option>
+<option value="https://www.kdata.or.kr">한국데이터산업진흥원</option>
+<option value="https://www.kisia.or.kr">한국정보보호산업협회</option>
+</select>
+<button class="btn_inline" onclick="moveSite('moveSel');return false;" title="새창" type="button">이동</button>
+</li>
+<script>
+                        function moveSite(selId) {
+                            if(selId == null || selId == '' || $.trim($('#'+selId).val()) == '') {
+                                alert('항목을 선택하세요.');
+                                $('#'+selId).focus();
+                                return ;
+                            } else {
+                                window.open($('#'+selId).val(), "_blank");
+                            }
+                        }
+                        </script>
+</ul>
+</div>
+<div>
+<span><a href="https://www.innovation.go.kr/" target="_blank" title="새창열림"><span class="blind">내일을 위한 보다 나은 정부</span><img alt="내일을 위한 보다 나은 정부" src="/resource/kor/images/common/img_ft_goverment.jpg"/></a></span>
+<!--<span><a href="/webaccess" onclick="window.open(this.href,'wa','left=100px, top=100px, width=533,height=750,scrollbars=no');return false;" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img src="/resource/kor/images/common/wa_web_2024.png" alt="웹접근성 인증 마크" style="height:62px;"></a></span>-->
+<span><a href="http://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=https://www.kisa.or.kr&amp;BoardID=0006" target="_blank" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img alt="웹접근성 인증 마크" src="/resource/kor/images/common/wa_web_2024.png" style="height:62px;"/></a></span>-
+                </div>
+</div>
+</div>
+</div>
+</footer>
+<style>
+    .sub_company_result_wrapper .re_cont_w .inner .info_b .re_info_b h3 .green {color: #4e9314;}
+</style>
+<script>
+//* 모바일에서 메뉴가리기 시작
+var hideInMobileMenuName = ['사전정보공표'];//모바일에서 가려야하는 메뉴는 여기에 메뉴명 추가
+function hideInMobileMenu(){
+	$('#mo_gnb > ul > li').each(function(){
+		var thisEl = $(this);
+		if(thisEl.find('> button').length >= 1){
+			var checkName = thisEl.find('> button').text();
+		}else{
+			var checkName = thisEl.find('> a').text();
+		}
+		var checkLength = hideInMobileMenuName.length;
+		if(hideInMobileMenuName.includes(checkName)){
+			thisEl.addClass('hideMenu');
+		}
+	});
+}
+$( document ).ready(function() {
+	hideInMobileMenu();
+});
+//* 모바일에서 메뉴가리기 끝 */
+</script>
+<!--
+<script>
+    //* 웹접근성 용도 (subtabmenu replace position) 시작
+    $(window).on('load',function(){ 
+        var moChecker = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ? true : false;
+        var roundToTwo = function(num) { //반올림 아래두자리까지 
+            return +(Math.round(num + "e+2")  + "e-2"); 
+        },
+        tabLiHeightChecker = function(){ //li영역의 높이값 체크
+            if($('.sub_tab_menu_wrap').length <= 0) return false;
+            var lbCon = $('.sub_container > .inner .lb_con'),
+            subTabWrap = $('.sub_tab_menu_wrap'),
+            posTop = subTabWrap.offset().top - lbCon.offset().top,
+            newLiLength = $('.sub_tab_menu_li').length;
+            if(newLiLength >= 7 && newLiLength != 9){ //탭버튼의 갯수에 따른 sub_tab_menu_wrap 영역의 높이값 변경
+				var ceilNum = Math.ceil(Number(newLiLength/4));
+                subTabWrap.css('min-height', (ceilNum * 55) + 'px');
+            }else if(newLiLength == 9){ //탭버튼의 갯수에 따른 sub_tab_menu_wrap 영역의 높이값 변경
+                subTabWrap.css('min-height', '165px');
+            }else if(newLiLength >= 6 ){
+                subTabWrap.css('min-height', '110px');
+            }
+            for (var i = 0; i < newLiLength; i++) {
+                if(newLiLength >= 7 && newLiLength != 9){ //탭버튼의 갯수에 따른 sub_tab_menu_wrap 영역의 높이값 변경
+					var floorNum = Math.floor(Number(i/4));
+					var forBorder;
+					if(i % 4 == 0){
+						forBorder = true;
+					}else{
+						forBorder = false;
+					}
+					$('.sub_tab_index_' + i).css('top', Number(posTop + (floorNum * 55)) + 'px');
+					if(forBorder) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+				}else{
+					if( newLiLength >= 6 ){	
+						if(newLiLength == 6 && i >= 3){ 
+							$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+							if(i == 3) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+						}else if(newLiLength == 7 && i >= 4){ 
+							$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+							if(i == 4) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+						}else if(newLiLength == 8 && i >= 4){ 
+							$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+							if(i == 4) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+						}else if(newLiLength == 9){
+							if(i >= 6){
+								$('.sub_tab_index_' + i).css('top', Number(posTop + 110) + 'px');
+								if(i == 6) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+							}else if(i >= 3){
+								$('.sub_tab_index_' + i).css('top', Number(posTop + 55) + 'px');
+								if(i == 3) $('.sub_tab_index_' + i).css('border-left-width', '1px');
+							}
+						}else{
+							$('.sub_tab_index_' + i).css('top', posTop + 'px');
+						}						
+					}else{
+						$('.sub_tab_index_' + i).css('top', posTop + 'px');
+					}	
+				}		
+            }
+        },
+        tabLiLeftChecker = function(widthVals, liLengths , nths){ //li영역 left 값 설정
+            var liWidthPer = widthVals,
+            liLength = liLengths,
+            i = nths,
+            tabLiLeftVal = liWidthPer * i;
+			//var ceilNum = Math.ceil(Number(liLength/4));
+            if( liLength >= 6 ){	
+                if(liLength == 6 && i >= 3){ 
+                    tabLiLeftVal = liWidthPer * (i - 3);
+                }else if(liLength == 7 && i >= 4){ 
+                    tabLiLeftVal = liWidthPer * (i - 4);
+                }else if(liLength == 8 && i >= 4){ 
+                    tabLiLeftVal = liWidthPer * (i - 4);
+                }else if(liLength == 9){
+                    if(i >= 6){
+                        tabLiLeftVal = liWidthPer * (i - 6); 
+                    }else if(i >= 3){
+                        tabLiLeftVal = liWidthPer * (i - 3);
+                    }
+                }else if(liLength >= 10){
+					
+				}						
+            }
+			if( tabLiLeftVal >= 100 ) tabLiLeftVal = tabLiLeftVal % 100;
+            return tabLiLeftVal;
+        },
+        tabLiWidthChecker = function(liLengths){ //li영역 width 값 설정
+            var liLength = liLengths,
+            tabLiWidthVal = roundToTwo(100/liLength);
+			if(liLength >= 7 && liLength != 9){
+				tabLiWidthVal = 25; 
+			}else{
+				if(liLength == 6){
+					tabLiWidthVal = 33.33; 
+				}else if(liLength == 7){
+					tabLiWidthVal = 25; 
+				}else if(liLength == 8){
+					tabLiWidthVal = 25; 
+				}else if(liLength == 9){
+					tabLiWidthVal = 33.33; 
+				} 
+			}
+            return tabLiWidthVal;
+        },
+        makeTabLiHtml = function(tabIndex,tabWidth,tabLeft,activeClass){ //li영역 html 생성
+            var i = tabIndex,
+            liWidthPer = tabWidth,
+            liPosLeft = tabLeft,
+            tabLiHtml = '';
+            if(activeClass){
+                tabLiHtml += '<li class="sub_tab_menu_li sub_tab_index_' + i + ' active" style="width:' + liWidthPer + '%;left:' + liPosLeft + '%;">';
+                tabLiHtml += $('.sub_tab_menu li').eq(i).html();
+                tabLiHtml += '</li>';
+            }else{
+                tabLiHtml += '<li class="sub_tab_menu_li sub_tab_index_' + i + '" style="width:' + liWidthPer + '%;left:' + liPosLeft + '%;">';
+                tabLiHtml += $('.sub_tab_menu li').eq(i).html();
+                tabLiHtml += '</li>';
+            }
+            return tabLiHtml;
+        },
+        hideOriTabArea = function(tabIndex){ //기존 li 선택막기
+            var i = tabIndex;
+            $('.sub_tab_menu li').eq(i).find('a').attr('tabindex','-1');
+        },
+        tabReplacePos = function(){
+            try {
+                if($('.sub_tab_menu').length <= 0) return false;
+                var defaultIndex = 1,
+                tabIndex = 1,
+                ulEl = $('.sub_tab_menu'),
+                liLength = $('.sub_tab_menu li').length,
+                oneLength = $('.one').length;
+                if(liLength >= 1){ //탭버튼이 있을때
+                    if(liLength == oneLength){ //탭버튼만큼 탭영역이 있을 때
+                        var liWidthPer = tabLiWidthChecker(liLength);
+                        for (var i = 0; i < liLength; i++) {
+                            var liPosLeft = tabLiLeftChecker(liWidthPer,liLength,i),
+                            liHtml = '';
+                            if($('.sub_tab_menu li').eq(i).hasClass('active')){
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,true);
+                            }else{
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,false);
+                            } 
+                            $('.one').eq(i).before(liHtml);
+                            hideOriTabArea(i);
+                        }				
+                        $('.sub_tab_menu_li').each(function(i,v){ //탭버튼 클릭시 기존 기능과 같게 효과내기
+                            if(i == 0) $(this).find('a').attr('title','선택됨');
+                            $(this).find('a').on('click',function(){
+                                $('.sub_tab_menu li').eq(i).find('a').click();
+                                $('.sub_tab_menu_li').removeClass('active');
+                                $('.sub_tab_menu_li a').attr('title','');
+                                $(this).closest('.sub_tab_menu_li').addClass('active');
+                                $(this).attr('title','선택됨');
+                            });
+                        });
+                    }else{ //탭버튼만큼 탭영역이 없을 때
+                        var liWidthPer = tabLiWidthChecker(liLength);
+                        var activeChecker = true;
+                        for (var i = 0; i < liLength; i++) {
+                            var activeTrigger = false;
+                            var liPosLeft = tabLiLeftChecker(liWidthPer,liLength,i),
+                            liHtml = '';
+                            if($('.sub_tab_menu li').eq(i).hasClass('active')){
+                                activeTrigger = true;
+                                activeChecker = false;
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,activeTrigger);
+                            }else{
+                                liHtml = makeTabLiHtml(i,liWidthPer,liPosLeft,activeTrigger);
+                            } 
+                            if(activeChecker || activeTrigger){
+                                $('.sub_tab_menu_wrap').before(liHtml);
+                            }else{
+                                $('.user_satisfaction_survey').before(liHtml);
+                            }
+                            hideOriTabArea(i);
+                        }				
+                    }		
+                    ulEl.addClass('blind'); //기존 li 영역 가리기
+                    tabLiHeightChecker();
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        }
+        setTimeout(function(){ //페이지 로딩 후 0.2초 딜레이 주기
+            if(!moChecker) tabReplacePos(); //pc에서만 기능 가동
+        },200)
+        window.addEventListener('resize', function(){ //pc에서 리사이징 시에 기능 가동
+            if(!moChecker) tabLiHeightChecker(); 
+        });
+    });
+    // 웹접근성 용도 (subtabmenu replace position) 끝 */
+</script>
+<script>
+    // /* 링크없는 a 태그 가리기, title, target 넣기 시작
+    $(function(){
+        var moChecker = navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) ? true : false;
+        if(!moChecker){ //pc에서만 기능 가동
+            $('a').each(function(){
+                var targetAEl = $(this);
+                var aHref = targetAEl.attr('href');
+                var locationHost = window.location.host;
+                if(aHref == undefined){ //href 없을 때
+                    targetAEl.hide();
+                }else{	
+                    if(aHref == '' || aHref == '#' || aHref == '#none' || aHref == 'javascript:;') targetAEl.hide(); //href 값이 웹접근성에 어긋날 때
+                    if(aHref.indexOf('javascript') != -1) targetAEl.hide(); //href에 script 넣었을 때
+                    if(aHref.indexOf('http') != -1 ){ //외부링크로 넘어갈 때
+                        var aTarget = targetAEl.attr('target');
+                        var aTitle = targetAEl.attr('title');
+                        if(aTarget == undefined || aTarget != '_blank'){ //target="_blank"가 아닐 때
+                            if(aHref.indexOf(locationHost) == -1) targetAEl.attr('target','_blank');
+                        }
+                        if(aTitle == undefined || aTitle.indexOf('새') == -1 || aTitle.indexOf('창') == -1){ //title에 새 창이 없을 때
+                            if(aHref.indexOf(locationHost) == -1) targetAEl.attr('title','새창열림');
+                        } 
+                    }
+                    if(targetAEl.text() == ''){ //적절한 텍스트가 없을 때
+                        if(targetAEl.find('> img').length >= 1){
+                            if(targetAEl.find('> img').attr('alt') == 'undefined' || targetAEl.find('> img').attr('alt') == '') { //적절한 대체 텍스트가 없을 때
+                                targetAEl.hide();
+                            }
+                        }else{
+                            targetAEl.hide();
+                        }
+                    } 
+                }
+            });
+        }
+    });
+    // 링크없는 a 태그 가리기, title, target 넣기 끝 */
+</script>
+-->
+</section>
+<!--//Footer-->
+</div>
+</body>
+<script type="text/javascript">
+	function shareFacebook(){		
+		var sendUrl = window.document.location.href;
+		window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+	}
+
+	function shareTwitter() {
+	    var sendUrl = window.document.location.href;
+	    window.open("https://twitter.com/intent/tweet?url=" + sendUrl);
+	}
+
+	document.addEventListener('DOMContentLoaded',()=>{
+		// 검색어 입력란에 enter event
+		document.getElementById('searchWord').addEventListener('keydown',(e)=>{
+			if (e.key === 'Enter') {
+				e.preventDefault();
+				search(1);
+			}
+		});
+	});
+
+</script>
+</html>
