@@ -1,0 +1,1149 @@
+
+<!DOCTYPE html>
+
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>보안뉴스 검색</title>
+<meta content="text/html; charset=euc-kr" http-equiv="Content-Type"/>
+<link href="https://www.boannews.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<script src="/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="/js/multiScroll.js" type="text/javascript"></script>
+<link href="../css/search.css?version=3.0" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+<!--
+//스크롤업 메뉴, 뉴스
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('#scroll_up').outerHeight();
+
+$(window).scroll(function(event){
+	didScroll = true;
+});
+
+setInterval(function() {
+	if (didScroll) {
+		hasScrolled();
+		didScroll = false;
+	}
+}, 250);
+
+function hasScrolled() {
+	var st = $(this).scrollTop();
+	if(Math.abs(lastScrollTop - st) <= delta)
+		return;
+
+	if (st > lastScrollTop && st > navbarHeight){
+		// Scroll Down
+		$('#scroll_up').removeClass('nav-down').hide();
+		$('#Second_Menu_area').show();
+	} else {
+		// Scroll Up
+		if(st + $(window).height() < $(document).height()) {
+			$('#scroll_up').removeClass('nav-down').show();
+			$('#scroll_up').removeClass('nav-up').addClass('nav-down');
+			$('#Second_Menu_area').show();
+
+			if(st < 200){
+				$('#scroll_up').removeClass('nav-down').hide();
+				$('#Second_Menu_area').hide();
+			}
+		}
+	}
+	lastScrollTop = st;
+}
+//-->
+</script>
+</head>
+<body>
+<div id="Second_Menu_area">
+<div id="Second_Menu">
+<div id="MainMenu">
+<div class="logo"><a href="/" onfocus="this.blur();"><img alt="" height="30" src="/pds/main/sub_logo.gif"/></a></div>
+<div class="menu" onclick="location.href='/media/t_list.asp?mkind=0';">전체기사</div>
+<div class="menu_tab">|</div>
+<div class="menu1" onclick="location.href='/media/list.asp?mkind=1';" onfocus="this.blur();">SECURITY</div>
+<div class="menu_tab">|</div>
+<div class="menu2" onclick="location.href='/media/list.asp?mkind=2';" onfocus="this.blur();">IT</div>
+<div class="menu_tab">|</div>
+<div class="menu3" onclick="location.href='/media/list.asp?mkind=3';" onfocus="this.blur();">DEFENSE</div>
+<div class="menu_tab">|</div>
+<div class="menu5"><a href="/securityworld/default.asp" target="_blank"><img alt="시큐리티월드" src="/images/sw_icon.jpg"/><img alt="시큐리티월드" class="over" src="/images/sw_icon_o.jpg"/></a></div>
+<div class="menu_tab">|</div>
+<!--<div class="menu6 " onclick="location.href='/service/video/default.asp';" onfocus="this.blur();">보안TV</div>-->
+</div>
+<div id="search">
+<form action="/search/list.asp" id="cse-search-box" method="get" name="form_search" onsubmit="return searchForm()">
+<input name="cx" type="hidden" value="partner-pub-9930086282638035:g8e0u1-r8xa"/>
+<input name="cof" type="hidden" value="FORID:9"/>
+<input name="ie" type="hidden" value="EUC-KR"/>
+<input name="q" size="12" type="hidden"/>
+<input name="sa" type="hidden" value="검색"/>
+<div class="find01" style="line-height:12px;">
+<select name="search" size="1" style="height:23px;font-size:12px;border:1px solid #d5d5d5;">
+<option value="">통합검색</option>
+<option value="key_word">뉴스</option>
+<option value="writer">기자명</option>
+<option value="content">컨텐츠</option>
+<option value="c_company">상호검색</option>
+<option value="c_product">제품검색</option>
+</select>
+</div>
+<div class="find02"><input class="find" maxlength="20" name="find" onkeyup="inputCheckTopSearch(document.form_search);" type="text"/></div>
+<div class="find03"><input alt="검색" src="/images/new02/search.gif" type="image"/></div>
+</form>
+</div>
+</div>
+</div>
+<div id="scroll_up">
+<ul>
+<li><a href="view.asp?idx=132097&amp;kind=26"><img align="left" alt="" height="50" src="/media/upFiles2/2024/08/mi-c.jpg" style="border:1px solid #DDDDDD" width="80"/></a>
+<p><a href="view.asp?idx=132097&amp;kind=26"><font color="#091545">[이슈칼럼] ‘캠프 데이비드 1년’과...</font></a></p></li>
+</ul>
+<li><a href="view.asp?idx=132099&amp;kind=1"><img align="left" alt="" height="50" src="/media/upFiles2/2024/08/IRAN-C.jpg" style="border:1px solid #DDDDDD" width="80"/></a>
+<p><a href="view.asp?idx=132099&amp;kind=1"><font color="#091545">이란 해커조직 APT42, 미국 대선...</font></a></p></li>
+
+<li><a href="view.asp?idx=131943&amp;kind=3"><img align="left" alt="" height="50" src="/media/upFiles2/2024/08/20240809etygs99536mulcl1sum.jpg" style="border:1px solid #DDDDDD" width="80"/></a>
+<p><a href="view.asp?idx=131943&amp;kind=3"><font color="#091545">최근 부각되고 있는 ‘멀티 클라우드’...</font></a></p></li>
+
+<li><a href="view.asp?idx=132094&amp;kind=1"><img align="left" alt="" height="50" src="/media/upFiles2/2024/08/t_news.jpg" style="border:1px solid #DDDDDD" width="80"/></a>
+<p><a href="view.asp?idx=132094&amp;kind=1"><font color="#091545">133만 구독자 보유한 ‘뉴스타파’ ...</font></a></p></li>
+
+</div>
+<!--Include virtual="/secu_admin/ad_log/log.asp"-->
+<link href="http://www.boannews.com/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<script src="/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="/JS/activex_load.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function searchForm(){
+	if(!document.form_search.find.value){
+		alert("검색어를 입력하세요!");
+		document.form_search.find.focus();
+		return false;
+	}
+	document.form_search.q.value=document.form_search.find.value;
+	return true;
+}
+
+function inputCheckTopSearch(f){
+	re = /[~!@\#$%^&*\()\-=+_"><:|']/gi;
+	if(re.test(f.find.value)){
+		alert("특수문자는 입력하실 수 없습니다.");
+		f.find.value=f.find.value.replace(re,"");
+		f.find.focus();
+	}
+}
+
+function add_favorites(){
+	var favorite_url = "http://www.boannews.com"   //즐겨찾기에 추가할 홈 주소
+	var favorite_title = "안전한 세상을 위한 뉴스 -보안뉴스"   // 즐겨찾기에 기록할 이름(제목)을 기록
+	if (document.all){
+		window.external.AddFavorite(favorite_url,favorite_title)
+	}
+}
+
+
+// 구글 로그분석 Start
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9071708-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+// 구글 로그분석 end
+
+function main_menu_view(){
+	main_menu_hide.style.display="block";
+}
+</script>
+<!-- Google GA4 start-->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-THLS4STN28"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-THLS4STN28');
+</script>
+<!-- Google GA4 end-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W36LD7L');</script>
+<!-- End Google Tag Manager -->
+<style type="text/css">
+#top_slide_ad { width:100%; height:180px; background:#003F89 url('/images/top/top_banner_bg.png') no-repeat center;}
+#top_slide_area{width:1125px; height:100px; margin:0 auto; padding:8px 0 0 30px;}
+.top_banner_title{margin:0; padding:0; font-family:'Noto Sans KR'; font-size:30px; color:#FFFFFF; font-weight:700; line-height:65px; text-align:left;}
+.top_banner_close{float:right; cursor:pointer;}
+.top_banner_wraper {position: absolute; width: 1100px; height: 80px; margin:0 auto; background-color:#FFFFFF; overflow: hidden; }
+.top_banner_wraper img {position: absolute; margin: 10px 0 0 0;}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+	var bannerLeft=0;
+	var first=1;
+	var last;
+	var imgCnt=0;
+	var $img = $(".top_banner_wraper img");
+	var $first;
+	var $last;
+
+	$img.each(function(){  //32px 간격으로 배너 처음 위치 시킴
+		$(this).css("left",bannerLeft);
+		bannerLeft += $(this).width()+12;
+		$(this).attr("id", "banner"+(++imgCnt));  // img에 id 속성 추가
+	});
+
+	if( imgCnt > 7){  //배너 6개 이상이면 이동시킴
+		last = imgCnt;
+		setInterval(function() {
+			$img.each(function(){
+				$(this).css("left", $(this).position().left-1);  // 1px씩 왼쪽으로 이동
+			});
+			$first = $("#banner"+first);
+			$last = $("#banner"+last);
+			if($first.position().left < -150) {  // 제일 앞에 배너 제일 뒤로 옮김
+				$first.css("left", $last.position().left + $last.width()+12 );
+				first++;
+				last++;
+				if(last > imgCnt) { last=1; }
+				if(first > imgCnt) { first=1; }
+			}
+		}, 10);   //속도 조정
+	}
+});
+
+function top_banner_close() {
+	$("#top_slide_ad").animate({height:0}, 300);
+	$(".top_banner_wraper").animate({height:0}, 200);
+	$(".top_banner_title").hide();
+	$(".top_banner_close").hide();
+
+	$('#scroll_banner1').animate({top:'-=180'}, 300);
+	$('#scroll_banner2').animate({top:'-=180'}, 300);
+}
+</script>
+<div id="top_slide_ad">
+<div id="top_slide_area">
+<p class="top_banner_title">보안뉴스 창간 18주년을 축하합니다!!</p>
+<div class="top_banner_wraper">
+<a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=980" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/1_SDS.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=981" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/2_s1(0).jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=982" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/3_hanhwa.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=983" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/4_ske.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=984" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/5_ahn.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=985" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/6_igloo.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=986" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/7_FSI.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=987" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/8_kitri.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=988" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/9_weeds.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=989" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/11_genians.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=991" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/12_softcamp.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=992" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/13_secuve.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=993" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/14_ini.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=997" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/15_s.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=1101" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/16_gms.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=1102" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/17_ssnc.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=1103" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/18_logpresso.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=1104" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/19_dahua.jpg" width="147"/></a><a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=1110" onfocus="this.blur();" target="_blank"><img alt="" height="60" src="/images/banner/20_ZKTeco.jpg" width="147"/></a>
+</div>
+<!--img src="/images/btn/close.gif" class="top_banner_close" onclick="top_banner_close();"-->
+</div>
+</div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W36LD7L" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--
+<div id="top_moveIcon">
+	<div style="font-size:11px; float:left; padding-left:20px;">
+		<img src="/images/family/tm14.gif"border="0">
+		<img src="/images/family/tm13.gif"border="0">&nbsp;&nbsp;
+		<A HREF="http://www.boannews.com" target="_blank" onfocus="this.blur();"><img src="/images/family/tm00.gif" border="0"></A>&nbsp;&nbsp;
+		<A HREF="http://www.industrynews.co.kr/" target="_blank" onfocus="this.blur();" ><img src="/images/family/tm19.gif" border="0"></A>&nbsp;&nbsp;
+		<A HREF="/securityworld/default.asp" target="_blank" onfocus="this.blur();" ><img src="/images/family/tm02.gif" border="0"></A>&nbsp;&nbsp;
+		<A HREF="http://www.solartodaymag.com" target="_blank" onfocus="this.blur();"><img src="/images/family/tm05.gif" border="0"></A>&nbsp;&nbsp;
+		<A HREF="http://www.fajournal.com" target="_blank" onfocus="this.blur();"><img src="/images/family/tm07.gif" border="0"></A>&nbsp;&nbsp;
+		<img src="/images/arrow_white.gif" width="110" height="1" alt="" />
+	</div>
+	<div style="font-size:11px; float:right; padding-right:20px;">
+		<A HREF="http://www.seconexpo.com/" target="_blank" onfocus="this.blur();"><img src="/images/family/tm10.gif" border="0" alt="세계 보안 엑스포"></A>
+		&nbsp;<A HREF="http://www.egisec.org" target="_blank" onfocus="this.blur();"><img src="/images/family/tm17.gif" border="0" alt="전자정부 솔루션 페어"></A>
+		&nbsp;<A HREF="http://www.pisfair.org" target="_blank" onfocus="this.blur();"><img src="/images/family/tm09.gif" border="0" alt="개인정보보호 페어"></A>
+		&nbsp;<A HREF="http://www.isecconference.org" target="_blank" onfocus="this.blur();"><img src="/images/family/tm08.gif" border="0" alt="국제 사이버 시큐리티 컨퍼런스"></A>
+		&nbsp;<A HREF="http://www.exposolar.org" target="_blank" onfocus="this.blur();"><img src="/images/family/tm12.gif" border="0" alt="세계 태양에너지 엑스포"></A>
+		&nbsp;<A HREF="http://www.smartfactorykorea.com" target="_blank" onfocus="this.blur();"><img src="/images/family/tm18.gif" border="0" alt="스마트팩토리"></A>		
+		&nbsp;<A HREF="http://www.info-con.org" target="_blank" onfocus="this.blur();"><img src="/images/family/tm16.gif" border="0" alt="INFO-CON"></A>
+	</div>
+</div>
+-->
+<div id="top_wrap">
+<div id="header">
+<div id="top_category" style="margin-top:5px;">
+<div id="top_banner"><a href="/securityworld/"><img src="/securityworld/img/sw.png" style="margin-top:25px;" width="180"/></a>
+<!--<IFRAME NAME="main_top" id="main_top" width="250" height="65" SRC="/main_files/top_banner.asp" frameborder="0"></IFRAME>--></div>
+<div id="top_logo"><a href="/default.asp" onfocus="this.blur();"><img alt="" height="65" src="/pds/main/default_ci.gif" width="340"/></a></div>
+<div id="search">
+<div id="AddMenu">
+<ul>
+<li>
+<a href="/custom/member_login.asp">로그인</a>
+<span style="">|</span>
+</li>
+<li>
+<a href="/custom/member_join.asp">회원가입</a>
+<span style="">|</span>
+</li>
+<li>
+<a href="/custom/news_jebo.asp">기사제보</a>
+<span style="">|</span>
+</li>
+<li>
+<a href="/custom/scrap_list.asp">스크랩</a>
+<span style="">|</span>
+</li>
+<li>
+<a href="/newsletter/">뉴스레터 신청</a>&#160;&#160;
+			</li>
+</ul>
+</div>
+<div id="searchbox">
+<div class="social">
+<a href="https://www.facebook.com/boannews" onfocus="this.blur();" target="_blank"><img src="/images/new02/social1.gif"/></a>
+<a href="https://twitter.com/boannews" onfocus="this.blur();" target="_blank"><img src="/images/new02/social2.gif"/></a>
+<a href="https://blog.naver.com/boannews6931" onfocus="this.blur();" target="_blank"><img src="/images/new02/social3.gif"/></a>
+<a href="https://pf.kakao.com/_nLKAxd" onfocus="this.blur();" target="_blank"><img src="/images/new02/social4.gif"/></a>
+<img src="/images/new02/social5.gif"/>
+</div>
+<form action="/search/list.asp" id="cse-search-box" method="get" name="form_search" onsubmit="return searchForm()">
+<input name="cx" type="hidden" value="partner-pub-9930086282638035:g8e0u1-r8xa"/>
+<input name="cof" type="hidden" value="FORID:9"/>
+<input name="ie" type="hidden" value="EUC-KR"/>
+<input name="q" size="12" type="hidden"/>
+<input name="sa" type="hidden" value="검색"/>
+<div class="find01" style="line-height:12px;">
+<select name="search" size="1" style="height:23px;font-size:13px;border:1px solid #d5d5d5;">
+<option value="">통합검색</option>
+<option value="key_word">뉴스</option>
+<option value="writer">기자명</option>
+<option value="content">컨텐츠</option>
+<option value="c_company">상호검색</option>
+<option value="c_product">제품검색</option>
+</select>
+</div>
+<input class="find" maxlength="20" name="find" onkeyup="inputCheckTopSearch(document.form_search);" type="text"/>
+<div class="find03"><input alt="검색" src="/images/new02/search.gif" type="image"/></div>
+</form>
+</div>
+</div>
+</div>
+<div class="top_line"></div>
+<div id="MainMenu_area">
+<ul id="main_menu_hide" onmouseout="this.style.display='none';" onmouseover="this.style.display='block';">
+<li class="menu" onclick="location.href='/media/t_list.asp?mkind=0';" onfocus="this.blur();">전체기사</li>
+<li class="menu" onclick="location.href='/media/list.asp?mkind=1';" onfocus="this.blur();">SECURITY</li>
+<li class="menu" onclick="location.href='/media/list.asp?mkind=2';" onfocus="this.blur();">IT</li>
+<li class="menu" onclick="location.href='/media/list.asp?mkind=4';" onfocus="this.blur();">SAFETY</li>
+<li class="menu2" onclick="location.href='/securityworld/';" onfocus="this.blur();"><i>Security World</i></li>
+</ul>
+<div id="main_menu_hash">
+<a href="javascript:main_menu_view();"><img src="/images/new02/all_menu_btn.png"/></a>
+<a href="/media/t_list.asp">#전체기사</a>
+<a href="https://www.boannews.com/media/list.asp?mkind=5">#시큐리티월드</a>
+<!--<a href="/search/news_list.asp?search=key_word&find=">#</a>-->
+<a href="https://www.boannews.com/search/news_hash.asp?find=%BB%E7%B0%C7%BB%E7%B0%ED">#사건사고</a>
+<!--<a href="/search/news_list.asp?search=key_word&find=">#</a>-->
+<a href="https://www.boannews.com/search/news_hash.asp?find=%BA%B8%BE%C8%B8%AE%C6%F7%C6%AE">#보안리포트</a>
+<!--<a href="/search/news_list.asp?search=key_word&find=">#</a>-->
+<a href="https://www.boannews.com/search/news_hash.asp?find=%BB%E7%C0%CC%B9%F6%BE%C8%BA%B8">#사이버안보</a>
+<!--<a href="/search/news_list.asp?search=key_word&find=">#</a>-->
+<a href="https://www.boannews.com/search/news_hash.asp?find=AI">#AI</a>
+<!--<a href="/search/news_list.asp?search=key_word&find=">#</a>-->
+</div>
+<div id="AddMenu2">
+<ul>
+<!--
+			
+					<li><a href="/securityworld/"><img src="/securityworld/img/sw.png" height="17" style="margin:5px 20px 0 0;"></a></li>
+			
+			<li>
+				<img src="/images/new/icon1.gif" style="margin:0;padding:0;vertical-align:middle;">
+				<a href="/media/s_list.asp?skind=C" style="font-size:15px;color:#359BED;font-weight:400">동영상</a>
+			</li>
+			<li>
+				<img src="/images/new/icon2.gif" style="margin:0;padding:0;vertical-align:middle;margin-left:20px;">
+				<a href="/media/s_list.asp?skind=J" style="font-size:15px;color:#359BED;font-weight:400">카드뉴스</a>
+			</li>
+			-->
+<li>
+<img src="/images/new/icon5.gif" style="margin:0;padding:0;vertical-align:middle;margin-left:20px;"/>
+<a href="/search/news_total.asp?search=key_word&amp;find=%C8%B8%BF%F8%C0%FC%BF%EB" style="font-size:15px;color:#359BED;font-weight:400">회원전용 기사</a>
+</li>
+<li>
+<img src="/images/new/icon3.gif" style="margin:0;padding:0;vertical-align:middle;margin-left:20px;"/>
+<a href="/sc/" style="font-size:15px;color:#359BED;font-weight:400">시큐리티 콘텐츠</a>&#160;&#160;&#160;&#160;&#160;
+			</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wrap">
+<div id="body">
+<div id="body_left">
+<!--#################### ■ BODY AREA-START ■ ####################-->
+<div id="media">
+<ul id="news_top">
+<li class="news_type1" style="margin:10px 0 0 0;font-weight:bold;">최근 한달간 '피싱' 검색 결과</li>
+<li class="news_type2"><a href="/">Home</a> &gt; 뉴스검색 &gt; 뉴스 키워드</li>
+</ul>
+<iframe frameborder="0" height="100" name="media_center" src="/media/include/media_center_banner.asp" width="750"></iframe>
+<div id="news_area">
+<div class="news_list">
+<a href="/media/view.asp?idx=132099&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/IRAN-C.jpg">
+<span class="news_txt">이란 해커조직 APT42, 미국 대선 관계자들 겨냥해 <b>피싱</b> 공격</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=132099&amp;page=1&amp;kind=1">미국 대선을 겨냥한 피싱 공격이 포착됐다. 공격 배후로는 이란 연계 그룹 APT42(칼랑크, UNC788)로 분석됐으며, 보안 전문가들은 이 사이버 스파이 조직이...</a> <span class="news_writer">김경애 기자 | 2024년 08월 18일 23:02</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=132095&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/t_asec.jpg">
+<span class="news_txt">명령 스크립트 파일로 압축해 유포되는 다운로더 악성코드 ‘DBatLoader’ 주의보  </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=132095&amp;page=1&amp;kind=1">최근 CMD 파일 형태로 유포되는 ‘DBatLoader(ModiLoader)’라는 이름의 다운로더 악성코드가 발견됐다. 피싱 메일을 통해 퍼지고 있으며 추가 악성...</a> <span class="news_writer">박은주 기자 | 2024년 08월 17일 20:09</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=132067&amp;page=1&amp;kind=3">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/8-106(295).jpg">
+<span class="news_txt">카카오, 사칭 사기·<b>피싱</b> 범죄 예방 위해 기술적 조치 강화한다</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=132067&amp;page=1&amp;kind=3">카카오가 사칭 사기와 피싱 범죄를 예방하고 이용자들을 선제적으로 보호하기 위해 ‘페이크 시그널’ 기능을 신규 도입했다고 밝혔다. ‘페이크 시그널’은 카카오톡을 최...</a> <span class="news_writer">박미영 기자 | 2024년 08월 15일 14:47</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=132043&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/t_ahn1(0).jpg">
+<span class="news_txt">2024년 2분기 <b>피싱</b> 메일 현황... 결제·구매로 주의 끌고, 가짜 페이지로 정보 입력 유도</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=132043&amp;page=1&amp;kind=1">2024년 2분기에는 가짜 페이지(Fake Page) 첨부파일을 악용한 피싱 메일 공격이 활발했다. HTML 등으로 제작된 가짜 페이지는 유명 포털이나 특정 로그...</a> <span class="news_writer">박은주 기자 | 2024년 08월 14일 10:44</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131964&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/20240810aisperapariorpik1sum.jpg">
+<span class="news_txt">올림픽 티켓 판매 사칭 ‘<b>피싱</b>’ 기승 부렸다! 사기 티케팅 사이트 어떻게 확인하나 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131964&amp;page=1&amp;kind=1">2024 파리 올림픽이 뜨거운 열기 속에 치러지며 끝을 향해 나아가고 있다. 이러한 가운데 7월 후반기부터 파리 올림픽 티켓 판매를 사칭하는 피싱 공격이 빠른 속...</a> <span class="news_writer">김영명 기자 | 2024년 08월 10일 23:27</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131948&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/t_qize.jpg">
+<span class="news_txt">[퀴즈 이·보·소] 최대 1,000여개 출판사와 물류사 네트워크를 마비시킨 사이버 공격은?</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131948&amp;page=1&amp;kind=1">얼마 전 ‘이’ 사이버 공격으로 700여개 출판사와 100여개 물류사 간 네트워크가 마비되며 도서 배송에 차질이 생겼다. 해커가 요구하는 돈을 보내며 협상을 시도...</a> <span class="news_writer">박은주 기자 | 2024년 08월 10일 12:15</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131938&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/GettyImages-687243662_copy_295x190.jpg">
+<span class="news_txt">북한 김수키, 한국 대학교 노리는 공격 캠페인 펼쳐</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131938&amp;page=1&amp;kind=1">보안 외신 해커뉴스에 의하면 북한의 해커 조직인 김수키(Kimsuky)가 대학교 교수와 교직원, 연구원들을 대상으로 새로운 공격을 실시하는 중이라고 한다. 보안 ...</a> <span class="news_writer">문가용 기자 | 2024년 08월 09일 12:09</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131925&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/t_kisa(0).jpg">
+<span class="news_txt">‘스팸메일 대량 발송 확인 요청의 건’ KISA 사칭 <b>피싱</b> 메일 주의보 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131925&amp;page=1&amp;kind=1">‘KISA 스팸메일 대량 발송 확인 요청의 건’ 제목으로 한국인터넷진흥원(KISA)을 사칭한 피싱 메일이 유포되고 있어 각별한 주의가 요구된다. 공격자는 메일 계...</a> <span class="news_writer">박은주 기자 | 2024년 08월 08일 17:10</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131890&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/S-c240807.jpg">
+<span class="news_txt">[긴급] 티메프 사칭 기승... ‘한국소비자보호원 중재 통해 환불’ 스미싱 주의!</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131890&amp;page=1&amp;kind=1">티메프 사태를 악용한 스미싱 문자가 기승을 부리고 있다. 특히 티메프를 사칭해 한국소비자보호원 중재를 통해 환불된다는 내용으로 이용자들을 속이고 있어 이용자들의 ...</a> <span class="news_writer">김경애 기자 | 2024년 08월 07일 17:31</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131874&amp;page=1&amp;kind=3">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/t_ahn1.jpg">
+<span class="news_txt">‘유급 휴가 일정변동 확인하라?’ 휴가철 노린 <b>피싱</b> 메일 주의 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131874&amp;page=1&amp;kind=3">최근 휴가철을 틈타 인사팀을 사칭한 휴가 관련 피싱 메일이 발견돼 각별한 주의가 요구된다. ‘유급 휴가 변경’ 등 허위 메시지로 기업 이메일 계정 탈취를 노리고 ...</a> <span class="news_writer">박은주 기자 | 2024년 08월 07일 11:03</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131817&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/3kisa240803-c.jpg">
+<span class="news_txt">2024년 2분기 침해사고 유형 분석했더니... 악성 웹사이트 유도 공격 급증 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131817&amp;page=1&amp;kind=1">최근 몇 달 동안 악성 웹사이트 유도 침해사고가 급격히 증가했다. 3월부터 급증했고, 5월에는 최고치를 기록했다. 2분기에 신고된 악성 웹사이트 유도 공격은 거의...</a> <span class="news_writer">김경애 기자 | 2024년 08월 03일 23:37</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131783&amp;page=1&amp;kind=3">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/summer-c.jpg">
+<span class="news_txt">여름 휴가 피크 8월 초, 보안담당자가 점검해야 할 키포인트</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131783&amp;page=1&amp;kind=3">본격적인 휴가철이어서 보안담당자들도 휴가를 보내야 하는데요. 하지만 휴가를 떠나기 전 사전에 철저한 대비가 필요합니다. 특히 최근 발생한 크라우드 스트라이크 사태...</a> <span class="news_writer">김경애 기자 | 2024년 08월 02일 10:21</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131782&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/08/t_(0).jpg">
+<span class="news_txt">[긴급] 티몬·위메프 등 이커머스 환불 사태 악용 스미싱 주의보 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131782&amp;page=1&amp;kind=1">최근 티몬·위메프 등 ‘이커머스 환불사태’를 악용한 스미싱이 번지고 있다. 이를 통한 개인정보 탈취 및 금융정보 탈취 등 피해가 발생하지 않도록 각별한 주의가 요...</a> <span class="news_writer">박은주 기자 | 2024년 08월 01일 15:46</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131748&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/kuk-c(0).jpg">
+<span class="news_txt">국세청 사칭 메일 공격 분석해보니... 북한의 코니 APT 캠페인 일환 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131748&amp;page=1&amp;kind=1">최근 유포된 국세청 사칭 피싱 메일이 북한의 해킹 공격으로 드러났다. 마치 금융소득 및 세무조사 관련 안내처럼 위장한 공격으로, 국세청은 ‘세무조사 출석요구’ 등...</a> <span class="news_writer">김경애 기자 | 2024년 07월 31일 16:13</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131746&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/t_(19).jpg">
+<span class="news_txt">국정원, 검·경 공조 中거점 보이스<b>피싱</b> 2개 조직 총책 검거</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131746&amp;page=1&amp;kind=1">국정원과 검·경 공조로 중국 소재 2개 보이스피싱 조직 총책을 검거했다. 국정원은 대한민국 정부와 금융기관을 사칭한 보이스피싱 조직 총책 이모(30대, 중국인)·...</a> <span class="news_writer">박은주 기자 | 2024년 07월 31일 13:42</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131741&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/20240731cjcheiljedngfishi1sum.jpg">
+<span class="news_txt">CJ제일제당, 회사 무관 지메일 계정 통한 저작권 침해 <b>피싱</b>메일 주의 당부</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131741&amp;page=1&amp;kind=1">CJ제일제당은 최근 회사 홈페이지 공지를 통해 CJ제일제당을 사칭하는 피싱 의심 사례가 발견됐다며 사용자 주의를 당부하면서 관련자를 엄벌하겠다고 밝혔다.</a> <span class="news_writer">김영명 기자 | 2024년 07월 31일 11:21</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131698&amp;page=1&amp;kind=2">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/3-c.jpg">
+<span class="news_txt">AI 대전환 시대, 사이버 안보 강화 위해 우리에게 필요한 것은? </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131698&amp;page=1&amp;kind=2">AI 기술의 발전으로 사회경제적으로 새로운 혁신이 일어나고 있는 반면, 사이버 위협은 더욱 지능화·고도화되고 있다. 해킹, 스팸, 멀웨어 등 전통적인 위협의 진화...</a> <span class="news_writer">김경애 기자 | 2024년 07월 30일 23:01</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131700&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/t_asec1.jpg">
+<span class="news_txt">“고수익 보장 사전청약, 선착순 모집”... 공모주 사칭 <b>피싱</b> 문자 31.8%</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131700&amp;page=1&amp;kind=1">2024년 2분기 피싱 문자 공격에 사용된 주요 키워드는 ‘공모주 사칭’이 31.8%로 가장 많았다. 사전 청약·고수익·선착순 모집 등 키워드가 자주 사용됐다. ...</a> <span class="news_writer">박은주 기자 | 2024년 07월 30일 16:03</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131655&amp;page=1&amp;kind=1">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/20240728bukkimskdahak1sum.jpg">
+<span class="news_txt">북한 김수키 추정 해킹그룹, 고려대와 성균관대 등 대학 <b>피싱</b> 사이트로 워터링 홀 공격 노렸나 </span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131655&amp;page=1&amp;kind=1">북한 해킹그룹 김수키(Kimsuky)가 고려대 포털 사이트로 위장한 피싱사이트를 개발한 것으로 추정돼 우려가 커지고 있다. 해당 고려대 피싱 사이트를 확인해보니 ...</a> <span class="news_writer">김영명 기자 | 2024년 07월 29일 11:22</span>
+</div>
+<div class="news_line"></div>
+<div class="news_list">
+<a href="/media/view.asp?idx=131589&amp;page=1&amp;kind=3">
+<img alt="" class="news_img" height="70" src="/media/upFiles2/2024/07/t_(12).jpg">
+<span class="news_txt">리얼시큐, 사회공학기법으로 생성된 계정을 통한 메일 공격 탐지 기술 개발</span>
+</img></a><br/>
+<a class="news_content" href="/media/view.asp?idx=131589&amp;page=1&amp;kind=3">스피어 피싱 공격을 효과적으로 탐지하고 방어할 수 있는 기술 개발이 시급한 과제로 떠오르고 있다. 리얼시큐는 이러한 사이버 위협에 대응하기 위해 ‘사회공학기법으로...</a> <span class="news_writer">박은주 기자 | 2024년 07월 25일 13:36</span>
+</div>
+<div class="news_line"></div>
+</div>
+<div id="PageNation"><img border="0" height="8" src="/images/body/list_icon02.gif" width="11"/>&#160;&#160;<b><font color="#D00000">1</font></b> | <a href="news_list.asp?Page=2&amp;search=key_word&amp;find=피싱">2</a>&#160;&#160;<img border="0" height="8" src="/images/body/list_icon01.gif" width="11"/></div>
+<div id="news_top" style="text-align:right;">
+<a href="news_total.asp?search=key_word&amp;find=%C7%C7%BD%CC"><span style="color:#1000CC;text-decoration:underline;line-height:25px;"><img border="0" height="7" src="/images/bottom/bottom_icon03.gif" width="4"/> 전체뉴스 검색결과 더보기</span></a>
+</div>
+</div>
+<!--#################### ■ BODY AREA-END ■ ####################-->
+</div>
+<div id="body_right">
+<div id="media-right-scroll-start">
+<div id="media-right-scroll-in">
+<div style="padding:10px 0 5px 0; background-color:#EEEEEE; border-bottom:1px solid #D5D5D5;">
+<a href="https://www.isecconference.org" target="_blank"><img src="/images/event2_1.jpg"/></a>
+<a href="https://www.seconexpo.com" target="_blank"><img src="/images/event3_1.jpg"/></a>
+<a href="https://www.egisec.org" target="_blank"><img src="/images/event4_1.jpg"/></a>
+<a href="https://www.pisfair.org" target="_blank"><img src="/images/event5_1.jpg"/></a>
+</div>
+<div id="main_HitNews_area">
+<div id="main_HitNews_title" onclick="location.href='/media/o_list.asp';"><span>가장 많이 본 기사 [주간]</span></div>
+<div id="main_HitNews">
+<ul>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/1.gif" width="13"> <a href="/media/view.asp?idx=132021">카카오페이, 中 알리페이에 4,045만명 신용정보 ...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/2.gif" width="13"> <a href="/media/view.asp?idx=132061">한국교육학술정보원 지식샘터 홈페이지, 교원 353명...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/3.gif" width="13"> <a href="/media/view.asp?idx=132018">라온시큐어 키보드 보안 솔루션에서 취약점 발견......</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/4.gif" width="13"> <a href="/media/view.asp?idx=132073" style="color:#999999;">한온시스템, 헌터스 인터내셔널 랜섬웨어에 해킹 피해...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/5.gif" width="13"> <a href="/media/view.asp?idx=132016" style="color:#999999;">해킹으로 인한 가상화폐 피해 금액 50%, 북한 소...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/6.gif" width="13"> <a href="/media/view.asp?idx=131979" style="color:#999999;">최근 사이버 공격자들 사이에서 유행하고 있는 데이터...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/7.gif" width="13"> <a href="/media/view.asp?idx=132094" style="color:#999999;">133만 구독자 보유한 ‘뉴스타파’ 유튜브 채널, ...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/8.gif" width="13"> <a href="/media/view.asp?idx=132055" style="color:#999999;">[bnTV] 개인정보 보호법 개정 그 이후, D사와...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/9.gif" width="13"> <a href="/media/view.asp?idx=132043" style="color:#999999;">2024년 2분기 피싱 메일 현황... 결제·구매로...</a></img></li>
+<li><img alt="" class="HitNews_img" height="13" src="/images/new/10.gif" width="13"> <a href="/media/view.asp?idx=131988" style="color:#999999;">최근 공격자들이 가장 좋아하는 파일 유출 도구 세 ...</a></img></li>
+</ul>
+</div>
+</div>
+<script src="/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<style type="text/css">
+#sponsor_banner_title{width:328px; padding:0; text-align:left; background:url(/images/new/main_title04_bg.gif) no-repeat;}
+#sponsor_banner_title span{font-family: 'Noto Sans KR'; font-size:13px; color:#0c2f4f; line-height: 30px; font-weight:600; margin-left:10px;}
+.sponsor_banner {position: relative; width: 328px; height: 290px; margin:0; padding:0; overflow: hidden; background-color:#EEEEEE;}
+.sponsor_banner ul {position: absolute; margin: 0; padding:0; list-style: none;}
+.sponsor_banner ul li {width: 328px; height: 290px; margin:0; padding:0; float: left;}
+.sponsor_banner dl{width: 328px; height: 290px; margin:0; padding:0; list-style:none;}
+.sponsor_banner dl dt{width: 164px; height:76px;margin:0; padding:0; text-align:center; float: left;}
+.sponsor_banner dl dt:nth-child(2n) {}
+.sponsor_banner dl dt img {width:136px; height:50px; margin:0 auto;}
+</style>
+<div id="sponsor_banner_title" onclick="javascript:next_chk();"><span>주요 기업별 기사</span></div>
+<div class="sponsor_banner">
+<ul class="logo_set">
+<li>
+<dl>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=시큐아이"><img border="0" src="https://www.boannews.com/images/sponsor/secui.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=티피링크"><img border="0" src="https://www.boannews.com/images/sponsor/tp.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=시큐레터"><img border="0" src="https://www.boannews.com/images/sponsor/seculetter.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=에스케어"><img border="0" src="https://www.boannews.com/images/sponsor/escare.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=슈프리마"><img border="0" src="https://www.boannews.com/images/sponsor/suprema.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=넷앤드"><img border="0" src="https://www.boannews.com/images/sponsor/netand.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=시큐브"><img border="0" src="https://www.boannews.com/images/sponsor/secuve.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=시큐어가드"><img border="0" src="https://www.boannews.com/images/sponsor/appm.jpg"/></a></dt>
+</dl>
+</li>
+<li>
+<dl>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=아이디스"><img border="0" src="https://www.boannews.com/images/sponsor/idis.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=안랩"><img border="0" src="https://www.boannews.com/images/sponsor/ahnlab.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=아스트론"><img border="0" src="https://www.boannews.com/images/sponsor/astron.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=엘세븐"><img border="0" src="https://www.boannews.com/images/sponsor/l7.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=원우이엔지"><img border="0" src="https://www.boannews.com/images/sponsor/wonwoo.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=웹게이트"><img border="0" src="https://www.boannews.com/images/sponsor/webgate.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=아이티스테이션"><img border="0" src="https://www.boannews.com/images/sponsor/it.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=위즈코리아"><img border="0" src="https://www.boannews.com/images/sponsor/weeds.jpg"/></a></dt>
+</dl>
+</li>
+<li>
+<dl>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=이글루시큐리티"><img border="0" src="https://www.boannews.com/images/sponsor/igloo.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=이노뎁"><img border="0" src="https://www.boannews.com/images/sponsor/innodep.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=인콘"><img border="0" src="https://www.boannews.com/images/sponsor/incon.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=카이스트"><img border="0" src="https://www.boannews.com/images/sponsor/kaist.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=하이젠"><img border="0" src="https://www.boannews.com/images/sponsor/hizen.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=하이크비전"><img border="0" src="https://www.boannews.com/images/sponsor/hik.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=한화비전"><img border="0" src="https://www.boannews.com/images/sponsor/hanwhav.jpg"/></a></dt>
+<dt><a href="https://www.boannews.com/search/news_total.asp?find=한국화웨이"><img border="0" src="https://www.boannews.com/images/sponsor/huawei.jpg"/></a></dt>
+</dl>
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//사용할 배너
+		var $banner = $(".sponsor_banner").find("ul");
+
+		var $bannerWidth = $banner.children().outerWidth();//배너 이미지의 폭
+		var $bannerHeight = $banner.children().outerHeight(); // 높이
+		var $bannerLength = $banner.children().length;//배너 이미지의 갯수
+		var rollingId;
+
+		//정해진 초마다 함수 실행
+		rollingId = setInterval(function() { rollingStart(); }, 3000);//다음 이미지로 롤링 애니메이션 할 시간차
+
+		//마우스 오버시 롤링을 멈춘다.
+		$banner.mouseover(function(){
+			//중지
+			clearInterval(rollingId);
+			$(".logo_set").css("cursor", "pointer");
+		});
+		//마우스 아웃되면 다시 시작
+		$banner.mouseout(function(){
+			rollingId = setInterval(function() { rollingStart(); }, 3000);
+			$(".logo_set").css("cursor", "default");
+		});
+		
+		function rollingStart() {
+			$banner.css("width", $bannerWidth * $bannerLength + "px");
+			$banner.css("height", $bannerHeight + "px");
+			//alert(bannerHeight);
+			//배너의 좌측 위치를 옮겨 준다.
+			$banner.animate({left: - $bannerWidth + "px"}, 1500, function() { //숫자는 롤링 진행되는 시간이다.
+				//첫번째 이미지를 마지막 끝에 복사(이동이 아니라 복사)해서 추가한다.
+				$(".logo_set").append("<li>" + $(".logo_set").find("li:first").html() + "</li>");
+				//뒤로 복사된 첫번재 이미지는 필요 없으니 삭제한다.
+				$(".logo_set").find("li:first").remove();
+				//다음 움직임을 위해서 배너 좌측의 위치값을 초기화 한다.
+				$(".logo_set").css("left", 0);
+				//이 과정을 반복하면서 계속 롤링하는 배너를 만들 수 있다.
+			});
+		}
+	}); 
+
+	function next_chk(){
+		$(".logo_set").append("<li>" + $(".logo_set").find("li:first").html() + "</li>");
+		$(".logo_set").find("li:first").remove();
+		$(".logo_set").css("left", 0);
+	}
+</script><style>
+#sns_home {margin:20px 0 15px 0;}
+#sns_home ul{height:25px; font-size:17px; margin:0; padding:0; list-style:none;}
+#sns_home li{float:left;}
+#sns_home li:nth-child(1){font-size:35px;line-height:25px;padding:0 0 0 15px;}
+#sns_home li:nth-child(3){font-size:35px;line-height:25px;}
+#sns_home img{padding:8px 0 0 5px;}
+
+</style>
+<div id="sns_home">
+<ul>
+<li>“</li>
+<li>&#160;<b>SNS</b>에서도 <b>보안뉴스</b>를 받아보세요!!&#160;</li>
+<li>”</li>
+</ul>
+<a href="https://www.facebook.com/boannews" target="_blank"><img src="/images/new/facebook.png" width="40"/></a>
+<a href="https://twitter.com/boannews" target="_blank"><img src="/images/new/twitter.png" width="40"/></a>
+<a href="http://blog.naver.com/boannews6931" target="_blank"><img src="/images/new/naver.png" width="40"/></a>
+<a href="https://www.youtube.com/channel/UCCSHdGfRK0iPIAhwhLK8zfA" target="_blank"><img src="/images/new/youtube.png" width="40"/></a>
+<a href="https://pf.kakao.com/_nLKAxd" target="_blank"><img src="/images/new/kakao.png" width="40"/></a>
+<a href="https://www.instagram.com/boannews" target="_blank"><img src="/images/new/instagram.png" width="40"/></a>
+</div>
+<!--[if gte IE 10]><!--
+    <script type="text/javascript" src="http://cdnprism.pandora.tv/_adv_img/prism_ad/prismSDK/prismADP/js/PrismADP_1.3.1.min.js?lan=173144717" charset="utf-8"></script>
+    <script type="text/javascript">
+      /************************************************
+                    Prism 광고
+      ************************************************/
+      _PrismADP = new PrismSDK(); 
+
+      function Prism_PlayerSetting(){
+        var channel = "";
+        var category = "";
+        var IP = "";
+        var country = "";
+        var clientBrowser = "";
+        var ad_options =
+        {
+          adType: 'display_basic',
+          adWidth:$("#mainPlayer").width(), 
+          muted:true, //true : 사운드OFF, false:사운드ON / displayVideo상품은 true가 디폴트 
+          RolloverControll :true, //사운드 마운스 컨트롤 / displayVideo상품은 true가 디폴트 
+          isAutoPlay:true,
+          autoSkipOnpause:false, //모바일 환경에서 onPause 이벤트발생시 자동으로 스킵 할지의 여부 설정 / displayVideo일경우 무조건 **false** (true : 
+          isAdFinishShowPoster:true,
+          adTag: 'http://prism.pandora.tv/boannews_pc/news/basic/?filetype=xml&channel='+channel+'&category='+category+'&IP='+IP+'&country='+country+'&browser='+clientBrowser
+        };
+        _PrismADP.adPlayer('prismADP').setup(ad_options); 
+        $("#mainPlayer").height($("#mainPlayer").width()*9/16) 
+      };
+
+
+
+      // 광고 정보 텍스트
+      function responseAdparamData(_data, _skipTrackURI, _deviceInfo){
+        var data = JSON.parse(_data);
+        setPlayData(data);
+      }
+
+      
+      $(document).ready(function(){
+
+          /*******************************************
+            resize Event
+          *******************************************/
+          $(window).resize(function(){
+              // 가로 기준으로 mainPlayer 사이즈에 맞게 광고 영상영역 자동 리사이징
+            $("#prismADP").width($("#mainPlayer").width());
+            _PrismADP.resizePlayer($("#prismADP").width(),'prismADP');
+            $("#mainPlayer").height($("#prismADP").height());
+          });
+
+        prism_displayVideo = _PrismADP.Prism_PauseAndResume('prism_displayAD','prismADP');
+        if(prism_displayVideo === true){
+          Prism_PlayerSetting();
+        };
+
+
+
+
+      });
+
+      /*******************************************
+        광고 정보 텍스트 노출 (클라이언트 커스터 마이징 하는 부분)
+      *******************************************/
+      function setPlayData(data){
+        /******************************************
+          data.logoURL: 로고이미지
+          data.text0: 광고사
+          data.text1: 광고 제목
+          data.text2: 광고 멘트
+        ******************************************/
+        $("#adlogoimg").attr("src", data.logoURL);
+        $("#adText0").text(data.text0);
+        $("#adText1").text(data.text1);
+        $("#adText2").text(data.text2);
+      }
+
+
+
+      /************************************************
+         광고에 대한 상태값에 대한 이벤트 수신
+         개발자 comment : 기존 Prism_onPauseEventHandler 이벤트를 대체한다. 
+      ************************************************/      
+      window.addEventListener('Prism_onState', Prism_onStateEventHandler, false);
+      function Prism_onStateEventHandler(e){
+          e.preventDefault();
+          console.log("[ PRISM ] : onStateEvent = "+e.state);
+          switch(e.state){
+            case 'START_AD' :
+            // START_AD : 광고 시작 상태 
+              break;
+            case 'ONPAUSE' :
+            // 모바일 환경에서 슬립모드, 백그라운드모드, 랜딩페이지 스위칭등의 onPause 이벤트 발생시 호출
+            // PrismNativeListSetting() 초기 옵션에서 autoSkipOnpause:false 일 경우에만 호출되며 이 경우 광고는 일시정지 상태가 된다. 기존의 'SKIP_AD' 는 호출하지 않는다.
+             // pause 이벤트시 광고 종료 여부를 매체사에서 제어 가능하다. 수동 종료 하지 않을 경우 일시정지되었던 광고를 재생버튼을 눌러 이어서 재생 가능하다. 
+            // ONPAUSE_SKIP : PAUSE 이벤트 이후 매체사에서 종료할 경우 이후 동작을 커스터마이징 할수 있다. 
+            // onForceStopHandler ("ONPAUSE_SKIP");
+              break;
+            
+            default:
+              break;
+          }
+      }
+
+
+
+
+      /************************************************
+        광고 정상 종료, 스킵 또는 오류로 인한 강제 종료시에 대한 처리
+      ************************************************/      
+      window.addEventListener('Prism_onfinishedAD', Prism_finishEventHandler, false);
+      function Prism_finishEventHandler(e){
+        e.preventDefault();
+        switch (e.endType){          
+          case 'ERROR_AD_LOAD':
+          case 'ERROR_AD_PARSE':
+          case 'ERROR_AD_PLAY':
+          case 'NOT_SUPPORT':
+          case 'AD_NO':
+            jQuery("#prism_displayAD , #adTextArea").hide();
+            break;
+          case 'SKIP_AD':
+            break;
+          case 'END_AD':
+            // END_AD : 광고 정상 재생후 종료.
+            break;
+          case 'CLICK_SKIP':
+            // CLICK_SKIP : 광고 클릭 이벤트에 의한 종료
+            // Display Video 상품은 CLICK_SKIP이 발생되지 않음
+            break;
+          case 'ONPAUSE_SKIP':
+            // CLICK_SKIP : 광고 클릭 이벤트에 의한 종료 
+            // Display Video 상품은 CLICK_SKIP이 발생되지 않음
+            break;
+          default:
+            break;
+        }
+      };
+
+
+
+      /************************************************
+         광고영역에 접근시( prism_displayVideo 리턴값이 true일 경우 ) 광고 player 세팅요청 
+      ************************************************/
+      window.onscroll = function() {
+        prism_displayVideo = _PrismADP.Prism_PauseAndResume('prism_displayAD','prismADP');
+        if(prism_displayVideo === true){
+            Prism_PlayerSetting();
+        }
+      };
+    </script>
+<!--<![endif]-->
+<!-- 프리즘 네이티브 광고 플레이어 영역 시작
+    <div id="prism_displayAD" style="width:100%;">
+    <div id="mainPlayer" style="top: 0px; left: 0px; width: 100%; position: relative; height: 563px; background-color: black;">
+      <div id="prismADP" style="position: absolute; top: 50%; width: 100%; height: 563px; margin-top: -281.5px;">
+        <video src="" autobuffer style="display:none"></video>
+        <img class="btn_prism" style="display:none;">
+        <span class="non_skip" style="display:none;"></span>
+        <span class="prism_etcUI" style="display:block;width:81px;padding:5px 0 4px;background:rgba(0,0,0,0.7);font-size: 12px;line-height: 12px; color: #fff;text-align: center;position: absolute;left: 0;bottom: 0;">SPONSORED</span>
+      </div>
+    </div>
+    <!-- 프리즘 네이티브 광고 플레이어 영역 끝 
+
+    <!-- 프리즘 네이티브 광고 텍스트 영역 시작 
+    <div id="adTextArea" style="width: 98%; height: auto;text-align: left; padding:5px 0 0;">
+      <div style="height:30px;padding:10px 0 0 41px;position:relative;">
+        <img id="adlogoimg" src="" alt="" style="display:block;width:30px;height:30px;position:absolute;left:0;top:0;border-radius:30px;margin-left:15px;">
+        <span id="adText0" style="display:block;font-size:12px;color:#555;line-height:16px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;margin-left:10px;"></span>
+      </div>
+      <strong id="adText1" style="display:block;font-size:16px;color:#010101;line-height:18px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;margin-left:15px;"></strong>
+      <span id="adText2" style="display:block;font-size:12px;color:#555;line-height:16px;margin:6px 0 10px 17px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;"></span>
+    </div>
+    </div>
+    <!-- 프리즘 네이티브 광고 텍스트 영역   -->
+<script type="text/javascript">
+//if(navigator.userAgent.indexOf('MSIE 9.0') > -1 || navigator.userAgent.indexOf('MSIE 8.0') > -1 || navigator.userAgent.indexOf('iPhone') > -1 || navigator.userAgent.indexOf('Android') > -1) {
+//	document.getElementById("prism_title").style.display="none";
+//	document.getElementById("prism_displayAD").style.display="none";
+//	document.getElementById("adTextArea").style.display="none";
+//}
+</script>
+<div id="powerbiz_area">
+<div id="powerbiz">
+<a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=1027" onfocus="this.blur();" target="_blank"><img alt=" 하이젠 파워비즈 23년 11월 16일~2024년 11월 15일까지" border="0" height="95" src="/images/banner/300X95.gif" width="300"/></a>
+<a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=962" onfocus="this.blur();" target="_blank"><img alt="아스트론시큐리티 파워비즈 2023년2월23일 시작" border="0" height="95" src="/images/banner/ast_20230311_335x100.jpg" width="300"/></a>
+<a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=694" onfocus="this.blur();" target="_blank"><img alt="넷앤드 파워비즈 진행 2020년1월8일 시작~2021년 1월8일까지" border="0" height="95" src="/images/banner/pbb.gif" width="300"/></a>
+<a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=437" onfocus="this.blur();" target="_blank"><img alt="" border="0" height="95" src="/images/banner/ciso.gif" width="300"/></a>
+<a class="AD_Click" href="/custom/banner_advertising_link_count.asp?idx=578" onfocus="this.blur();" target="_blank"><img alt="위즈디엔에스 2018" border="0" height="95" src="/images/banner/보안뉴스배너_300x95.gif" width="300"/></a>
+</div>
+</div>
+<div id="main_clipping_area">
+<div id="main_clipping_title" onclick="location.href='/media/s_list.asp?skind=5';"><span>취약점 경고 및 보안 업데이트</span></div>
+<div id="main_clipping">
+<ul>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <b>[2024-08-14]</b> <a href="/media/view.asp?idx=132043">2024년 2분기 피싱 메일 ...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <b>[2024-08-13]</b> <a href="/media/view.asp?idx=132021">카카오페이, 中 알리페이에 4...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <b>[2024-08-13]</b> <a href="/media/view.asp?idx=132018">라온시큐어 키보드 보안 솔루션...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <b>[2024-08-13]</b> <a href="/media/view.asp?idx=132016">해킹으로 인한 가상화폐 피해 ...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <b>[2024-08-12]</b> <a href="/media/view.asp?idx=131984">숙박결제 인증샷 주의... ‘...</a></li>
+</ul>
+</div></div>
+<div id="main_clipping_area">
+<div id="main_clipping_title" onclick="location.href='/media/s_list.asp?skind=i';"><span>보안ㆍIT산업 동향</span></div>
+<div id="main_clipping">
+<ul>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <a href="/media/view.asp?idx=132092">전주시 방범용 CCTV, 범죄 예방 ‘일등공...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <a href="/media/view.asp?idx=132091">하남시, ‘미사 한강 모랫길’에 재난용 CC...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <a href="/media/view.asp?idx=132090">부산진해경제자유구역청, 생성형 AI로 업무 ...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <a href="/media/view.asp?idx=132089">한동대-지엠디소프트, AI 영상처리 기술로 ...</a></li>
+<li><img src="/search/images/directory/directory_dot02.gif"/> <a href="/media/view.asp?idx=132088">경기도, 14개 지방정부 협의체 DETA와 ...</a></li>
+</ul>
+</div></div>
+<script type="text/javascript">
+jQuery(function(jQuery){
+	jQuery(".tab-newslist").hide();
+	jQuery(".tab-newslist").eq(0).show();
+	
+	jQuery(".tab-newstit li").each(function(index){
+		$(this).click(function(){
+			jQuery(".tab-newstit li span").removeClass("on");
+			var idx = jQuery(this).index();
+			jQuery(".tab-newstit li").eq(index).find("span").addClass("on");
+			jQuery(".tab-newslist").hide();
+			jQuery(".tab-newslist").eq(idx).show();
+		});
+	});
+});
+</script>
+<style>
+#seq{width:328px;margin:10px 0 0 0;}
+#seq .tab-newstit{border:1px solid #EEEEEE; margin:0; padding:0; background:#fff; list-style:none;}
+#seq .tab-newstit:after{clear:both; display:block; content:""}
+#seq .tab-newstit li{float:left; width:33.333333%;}
+#seq .tab-newstit li span{display:block; height:28px; padding-top:10px ;font-size:14px; font-weight:500; color:#999999; text-align:center;cursor:pointer;}
+#seq .tab-newstit li span.on{color:#000000; background:#EEEEEE;cursor:pointer;}
+
+#seq .tab-newslist{margin:0; padding:0; background:#fff; list-style:none;}
+#seq .tab-newslist li:first-child{border-top:0;}
+#seq .tab-newslist li:after{clear:both;display:block;content:""}
+#seq .tab-newslist li p{width:40px; font-family: 'Noto Sans KR'; font-size:22px; color:#000; font-weight:300; float:left;}
+#seq .tab-newslist li a{display:block; text-align:left; color:#000; font-weight:bold; font-size:15px; line-height:24px;}
+#seq .tab-newslist li a span img {width:92px; height:60px; border:1px solid #ddd; margin-top:7px;}
+#seq .tab-newslist li a span:nth-child(1){float:left;display:inline-block;margin:0 10px 0 0;}
+#seq .tab-newslist li a span:nth-child(2){display:table-cell;vertical-align:middle;padding:14px 10px 10px 0;}
+</style>
+<div id="seq">
+<ul class="tab-newstit">
+<li><span class="on" href="#sec1" id="sec1">조회순</span></li>
+<li><span href="#sec2" id="sec2">추천순</span></li>
+<li><span href="#sec3" id="sec2">스크랩순</span></li>
+</ul>
+<ul class="tab-newslist"><!-- 조회순 -->
+<li><p class="news_count" style="color:#B71E1E;">1</p>
+<a href="/media/view.asp?idx=132094"><span><img alt="" src="/media/upFiles2/2024/08/t_news.jpg"/></span>
+<span style="font-weight:400;">133만 구독자 보유한 ‘뉴스타파’ 유튜브 ...</span></a>
+</li>
+<li><p class="news_count" style="color:#B71E1E;">2</p>
+<a href="/media/view.asp?idx=132078"><span><img alt="" src="/media/upFiles2/2024/08/20240816moasisransum2sum.jpg"/></span>
+<span style="font-weight:400;">랜섬웨어 감염으로 출판 주문·배송 마비시킨 ...</span></a>
+</li>
+<li><p class="news_count" style="color:#B71E1E;">3</p>
+<a href="/media/view.asp?idx=132095"><span><img alt="" src="/media/upFiles2/2024/08/t_asec.jpg"/></span>
+<span style="font-weight:400;">명령 스크립트 파일로 압축해 유포되는 다운로...</span></a>
+</li>
+<li><p class="news_count">4</p>
+<a href="/media/view.asp?idx=132052"><span><img alt="" src="/media/upFiles2/2024/08/GettyImages-1445013735_copy_295x190.jpg"/></span>
+<span style="font-weight:400;">[한 주를 관통하는 보안 소식] 2024년 ...</span></a>
+</li>
+<li><p class="news_count">5</p>
+<a href="/media/view.asp?idx=132054"><span><img alt="" src="/media/upFiles2/2024/08/20240814etmgs3090ipsite1sum.jpg"/></span>
+<span style="font-weight:400;">[유경동의 IP 인사이트] 검은 혁신, 아람...</span></a>
+</li>
+</ul>
+<ul class="tab-newslist"><!-- 추천순 -->
+<li><p class="news_count" style="color:#B71E1E;">1</p>
+<a href="/media/view.asp?idx=131989"><span><img alt="" src="/media/upFiles2/2024/08/GettyImages-1313416903_copy_295x190.jpg"/></span>
+<span style="font-weight:400;">UN 사이버 범죄에 관한 협약문, 5년 만에...</span></a>
+</li>
+<li><p class="news_count" style="color:#B71E1E;">2</p>
+<a href="/media/view.asp?idx=131988"><span><img alt="" src="/media/upFiles2/2024/08/GettyImages-1410771575_copy_295x190.jpg"/></span>
+<span style="font-weight:400;">최근 공격자들이 가장 좋아하는 파일 유출 도...</span></a>
+</li>
+<li><p class="news_count" style="color:#B71E1E;">3</p>
+<a href="/media/view.asp?idx=132021"><span><img alt="" src="/media/upFiles2/2024/08/t_pay.jpg"/></span>
+<span style="font-weight:400;">카카오페이, 中 알리페이에 4,045만명 신...</span></a>
+</li>
+<li><p class="news_count">4</p>
+<a href="/media/view.asp?idx=132061"><span><img alt="" src="/media/upFiles2/2024/08/20240815educatoryuchul1sum.jpg"/></span>
+<span style="font-weight:400;">한국교육학술정보원 지식샘터 홈페이지, 교원 ...</span></a>
+</li>
+<li><p class="news_count">5</p>
+<a href="/media/view.asp?idx=132073"><span><img alt="" src="/media/upFiles2/2024/08/20240815hanonsistemhack1sum.jpg"/></span>
+<span style="font-weight:400;">한온시스템, 헌터스 인터내셔널 랜섬웨어에 해...</span></a>
+</li>
+</ul>
+<ul class="tab-newslist"><!-- 스크랩순 -->
+<li><p class="news_count" style="color:#B71E1E;">1</p>
+<a href="/media/view.asp?idx=132053"><span><img alt="" src="/media/upFiles2/2024/08/20240817co.jpg"/></span>
+<span style="font-weight:400;">[보안&amp;영화] 영화 ‘코코’가 상상하는 사후...</span></a>
+</li>
+<li><p class="news_count" style="color:#B71E1E;">2</p>
+<a href="/media/view.asp?idx=132060"><span><img alt="" src="/media/upFiles2/2024/08/t_hauri.jpg"/></span>
+<span style="font-weight:400;">[긴급] 하우리 바이로봇 취약점 발견... ...</span></a>
+</li>
+<li><p class="news_count" style="color:#B71E1E;">3</p>
+<a href="/media/view.asp?idx=131819"><span><img alt="" src="/media/upFiles2/2024/08/t_cctv.jpg"/></span>
+<span style="font-weight:400;">또 다시 불거진 IP 카메라 해킹, 사생활 ...</span></a>
+</li>
+</ul>
+</div><script type="text/JavaScript">
+function fncChkSurvey() {
+var check=0;
+for(i=0;i<poll.poll_chek.length;i++) {
+if(poll.poll_chek[i].checked) {check=1;}
+}
+if(check<1) {alert('투표할 메뉴를 선택하세요'); return false;}
+return true;
+}
+</script>
+<div id="poll_title"><span>설문조사</span></div>
+<form action="/media/poll_ok.asp?idx=215" method="post" name="poll" onsubmit="return fncChkSurvey()">
+<table id="poll_table">
+<tr><td class="poll_q" colspan="2"><b>최근 발생한 크라우드 스트라이크의 보안 SW 업데이트 오류 사태처럼 SW 공급망에 보안이슈가 발생할 경우 관련된 각종 시스템 및 IT 인프라 마비가 일어날 수 있다는 게 드러났습니다. 이러한 공급망 보안을 위협하는 가장 큰 요인은 무엇이라고 생각하시나요?</b></td></tr>
+<tr><td><input name="poll_chek" type="radio" value="1"/></td>
+<td class="poll_item">랜섬웨어, 피싱 등의 사이버 공격</td></tr>
+<tr><td><input name="poll_chek" type="radio" value="2"/></td>
+<td class="poll_item">SW 업데이트 및 SW 교체 과정에서의 오류</td></tr>
+<tr><td><input name="poll_chek" type="radio" value="3"/></td>
+<td class="poll_item">SW 자체에 존재하는 보안 취약점 </td></tr>
+<tr><td><input name="poll_chek" type="radio" value="4"/></td>
+<td class="poll_item">시스템 관리자의 운영상 실수 및 관리 미흡 </td></tr>
+<tr><td><input name="poll_chek" type="radio" value="5"/></td>
+<td class="poll_item">기타(댓글로)</td></tr>
+<tr><td colspan="2">
+<input alt="투표하기" src="/media/images/right/poll_btn01.gif" type="image">&#160;&#160;&#160;&#160;&#160;&#160;<a href="/media/poll_02.asp?idx=215"><img alt="" src="/media/images/right/poll_btn02.gif"/></a></input></td></tr>
+</table>
+</form>
+<div id="media_right_bn_area"><iframe frameborder="0" height="300" id="media_right_bn" name="media_right_bn" src="/media/include/media_right_banner.asp" width="300"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="bottom">
+<div id="main_news">
+<ul>
+<li><a href="/media/view.asp?idx=132097&amp;kind=26"><img alt="" height="160" src="/media/upFiles2/2024/08/mi-c.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132097&amp;kind=26"><font color="#282828">[이슈칼럼] ‘캠프 데이비드 1년’과 한미일 사이버 안...</font></a></p></li>
+<li><a href="/media/view.asp?idx=132099&amp;kind=1"><img alt="" height="160" src="/media/upFiles2/2024/08/IRAN-C.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132099&amp;kind=1"><font color="#282828">이란 해커조직 APT42, 미국 대선 관계자들 겨냥해 ...</font></a></p></li>
+<li><a href="/media/view.asp?idx=131943&amp;kind=3"><img alt="" height="160" src="/media/upFiles2/2024/08/20240809etygs99536mulcl1sum.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=131943&amp;kind=3"><font color="#282828">최근 부각되고 있는 ‘멀티 클라우드’의 장단점 비교해보...</font></a></p></li>
+<li><a href="/media/view.asp?idx=132095&amp;kind=1"><img alt="" height="160" src="/media/upFiles2/2024/08/t_asec.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132095&amp;kind=1"><font color="#282828">명령 스크립트 파일로 압축해 유포되는 다운로더 악성코드...</font></a></p></li>
+</ul>
+</div>
+<div id="main_news">
+<ul>
+<li><a href="/media/view.asp?idx=132094&amp;kind=1"><img alt="" height="160" src="/media/upFiles2/2024/08/t_news.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132094&amp;kind=1"><font color="#282828">133만 구독자 보유한 ‘뉴스타파’ 유튜브 채널, 해킹...</font></a></p></li>
+<li><a href="/media/view.asp?idx=132052&amp;kind=14"><img alt="" height="160" src="/media/upFiles2/2024/08/GettyImages-1445013735_copy_295x190.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132052&amp;kind=14"><font color="#282828">[한 주를 관통하는 보안 소식] 2024년 8월 3주차...</font></a></p></li>
+<li><a href="/media/view.asp?idx=132054&amp;kind=36"><img alt="" height="160" src="/media/upFiles2/2024/08/20240814etmgs3090ipsite1sum.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132054&amp;kind=36"><font color="#282828">[유경동의 IP 인사이트] 검은 혁신, 아람코</font></a></p></li>
+<li><a href="/media/view.asp?idx=132080&amp;kind=2"><img alt="" height="160" src="/media/upFiles2/2024/08/20240816daetonryungsil6sum.jpg" width="250"/></a>
+<p><a href="/media/view.asp?idx=132080&amp;kind=2"><font color="#282828">국가안보실, 중소 방산협력업체 사이버 보안 실태 긴급 ...</font></a></p></li>
+</ul>
+</div>
+</div>
+<div id="copyright">
+<ul>
+<li><a href="http://www.thebn.co.kr" target="_blank">회사소개</a><span>|</span></li>
+<li><a href="/custom/ad_info01.asp?kind=9">광고안내</a><span>|</span></li>
+<li><a href="/ad_info/ad_info02.asp?kind=02">이용약관</a><span>|</span></li>
+<li class="bottom_menu1"><a href="/ad_info/ad_info03.asp?kind=03">개인정보 처리방침</a><span>|</span></li>
+<li><a href="/ad_info/ad_info04.asp?kind=04">청소년 보호정책</a><span>|</span></li>
+<li><a href="/custom/customer_center.asp?kind=8">고객센터</a><span>|</span></li>
+<li><a href="/custom/company_info05.asp?kind=10">제휴안내</a><span>|</span></li>
+<li><a href="http://www.infothebooks.com" target="_blank">관련서적</a><span>|</span></li>
+<li><img alt="" src="/images/new/rss.gif"> <a href="/custom/news_rss.asp" onfocus="this.blur();">RSS 서비스</a><span>|</span></img></li>
+<li><font color="#5f5f5f">&#160;&#160;발행인: 최정식&#160;&#160;|&#160;&#160;편집인: 최정식&#160;&#160;|&#160;&#160;청소년보호책임자: 최소영</font></li>
+<!--<li><img src="/images/bottom/bottom_icon01.gif" alt="" /> <a href="/search/direc_record.asp">기업 등록하기</a></li>-->
+</ul>
+<div id="address1">
+<span style="font-size:12px;">등록번호 : 서울 아00181 | 등록/발행연월일 : 2006년 3월 17일 | 상호 : (주)더비엔 | 사업자등록번호 : 407-86-00506 | 대표 : 최정식, 최소영&#160;&#160;&#160;<img alt="" height="20" id="inc" src="/images/new/inc.jpg"><img alt="" height="20" id="kina" src="/images/new/kina02.jpg"> &#160;&#160; <a href="http://www.securityaward.co.kr" target="_blank"><img alt="" border="0" height="20" id="security awards" src="/images/new/securityaward2.png"/></a><br/>
+	주소 : 서울시 마포구 마포대로 25 (마포동, 신한디엠빌딩 13층) (우. 04167) | 전화 : 02-719-6931 | 팩스 : 02-715-8245 | E-mail : <a href="mailto:helpdesk@boannews.com">helpdesk@boannews.com</a></img></img></span>
+<p style="width:100%; padding:10px; background-color:#EFEFEF;"><b>「열린보도원칙」</b> <font color="#009AE8">당 매체는 독자와 취재원 등 뉴스이용자의 권리 보장을 위해 반론이나 정정보도, 추후보도를 요청할 수 있는 창구를 열어두고 있음을 알려드립니다.</font><br/>
+<b>고충처리인 권 준</b>(<a href="mailto:editor@boannews.com">editor@boannews.com</a>)</p>
+</div>
+<div id="address2">
+<span style="padding:20px;">Copyright ⓒ <a href="http://www.thebn.co.kr" target="_blank"><b>thebn Co., Ltd.</b></a> All rights reserved.</span>
+</div>
+</div>
+<div id="scroll_banner1" style="top:344px;left:50%;margin-left:-660px;width:100px;height:2000px;position:absolute;z-index:200">
+<iframe frameborder="0" height="2000" id="main_side1" name="main_side1" src="/main_files/main_side1.asp" width="100"></iframe>
+</div>
+<div id="scroll_banner2" style="top:344px;left:50%;margin-left:560px;width:200px;height:2000px;position:absolute;z-index:200">
+<iframe frameborder="0" height="2000" id="main_side2" name="main_side2" src="/main_files/main_side2.asp" width="220"></iframe>
+</div>
+<!--
+시큐리티월드 광고주 배너광고 리스트
+<div id="scroll_banner2" style="top:0px;left:50%;margin-left:560px;width:270px;position:absolute;background-color:#EFEFEF;border-radius:0px 0px 5px 5px;z-index:200;">
+<table width='270' border='0' cellspacing='0' cellpadding='0' style="margin:13px 0 3px 0;"><tr><td align='center'><a href='/securityworld/'><img src='/securityworld/img/sw_partner.png'></a></td></tr></table>
+
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="90" align="center" style="font-size:11px;line-height:16px; letter-spacing:-2px;"><a href="/securityworld/ad_view.asp?idx="><img src="/pds/product/" width="80" height="35" border="0" style='border:1px solid #cccccc;'></a><br><b></b><br><font color="#999999"></font></td>
+						</tr>
+						<tr><td height="10"></td></tr>
+					</table>
+	
+<div>-->
+<script type="text/javascript">
+jQuery(document).ready(
+	function(){
+		onScrollDirection();
+		onScrollAdjustEndLine("#media-right-scroll-start", "#wrap", "#media-right-scroll-in");
+	}
+);
+</script>
+</link></body>
+</html>

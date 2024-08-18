@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<!-- CUSTOM TAGS -->
+<!-- canonical -->
+<link href="http://www.oss.kr/event" rel="canonical"/>
+<!-- META -->
+<meta charset="utf-8"/>
+<meta content="XpressEngine 3" name="Generator"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="공개SW 포털" name="keywords"/>
+<meta content="공개SW 포털" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="http://www.oss.kr/event" property="og:url"/>
+<meta content="공개SW 포털" property="og:site_name"/>
+<meta content="공개SW 포털 - 공개SW 포털" property="og:title"/>
+<meta content="공개SW 포털" property="og:description"/>
+<meta content="width=device-width" name="viewport"/>
+<meta content="-HGM00-m4VaEjERJ-ahXDb7m1p5gCMen6w_rfZQw-K8" name="google-site-verification"/>
+<!-- TITLE -->
+<title>공개SW 행사 안내 - 공개SW 포털</title>
+<!-- ICON -->
+<link href="https://www.oss.kr/storage/app/public/favicon/default/24/06/local" rel="shortcut icon" type="image/x-icon"/>
+<!-- CSS -->
+<link href="https://www.oss.kr/assets/core/common/css/xe-common.css?1573799923" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/assets/core/xe-ui-component/xe-ui-component.css?1637824731" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/assets/vendor/jqueryui/jquery-ui.min.css?1529999836" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281078" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611663" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick.css?1635139724" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686556394" media="all" rel="stylesheet" type="text/css"/>
+<!-- JS at head.prepend -->
+<script>
+        var xeBaseURL = 'http://www.oss.kr'; // @DEPRECATED
+    </script>
+<script src="https://www.oss.kr/assets/vendor.js?1574048360"></script>
+<script src="https://www.oss.kr/assets/common.js?1574048362"></script>
+<script src="https://www.oss.kr/assets/core/common/js/xe.bundle.js?1574048364"></script>
+<script>
+        if (window.XE) {
+            XE.setup({
+                baseURL: 'http://www.oss.kr',
+                assetsURL: 'http://www.oss.kr',
+                userToken: 'zI5FaNR7OsUwPrdGokP2nIusxvbBW0ecuw9kA5sB',
+                loginUserId: '', // @DEPRECATED
+                useXeSpinner: true, // @DEPRECATED
+                locale: 'ko',
+                defaultLocale: 'ko',
+                fixedPrefix: 'plugin',
+                                routes: [],
+                ruleSet: [],
+                translation: {"locales":[{"code":"ko","nativeName":"\ud55c\uad6d\uc5b4"},{"code":"en","nativeName":"English"}],"terms":{"board::selectPost":"\uc120\ud0dd\ub41c \uac8c\uc2dc\ubb3c\uc774 \uc5c6\uc2b5\ub2c8\ub2e4.","board::selectBoard":"\uac8c\uc2dc\ud310\uc744 \uc120\ud0dd\ud574 \uc8fc\uc138\uc694.","board::msgDeleteConfirm":"\uc0ad\uc81c\ub41c \uac8c\uc2dc\ubb3c\uc740 \ubcf5\uad6c\ud560 \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \uacc4\uc18d\ud558\uc2dc\uaca0\uc2b5\ub2c8\uae4c?"}}
+            });
+        }
+        $(function () {
+          $('.btn-fold > button').bind('click', function () {
+              $('.faq-list li').removeClass('on').find('');
+              $('.faq-list li .faq-content').hide();
+          });
+          $('.faq-list li > a').bind('click', function (event) {
+              event.preventDefault();
+              $('.faq-list li').removeClass('on');
+              $('.faq-list li .faq-content').hide();
+  
+              $(this).closest('.faq-item').addClass('on').find('.faq-content').show();
+          });
+        });
+    </script>
+<!-- JS at head.append -->
+<!-- CUSTOM TAGS -->
+</head>
+<body class="desktop">
+<!-- JS at body.prepend -->
+<!-- CUSTOM TAGS -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" integrity="sha256-8NOioA6lBuB2He/Jwn4F/wh8D5MuFfvF5dYcM6eMK5k=" rel="stylesheet"/>
+<div id="warp">
+<p class="skip">
+<a href="#contents" onclick="document.getElementById('contents').tabIndex = -1;document.getElementById('contents').focus();return false;">본문 바로가기</a>
+</p>
+<!-- header -->
+<header>
+<!-- area_inhead -->
+<div class="area_inhead">
+<div class="area_logo">
+<div class="area_link">
+<a href="http://www.oss.kr/auth/login">로그인</a>
+<a href="http://www.oss.kr/auth/register">회원가입</a>
+</div>
+<a href="http://www.oss.kr" title="OSS OPEN SOURCE SOFTWARE">
+<img alt="공개SW 포털(OSS OPEN SOURCE SOFTWARE) 홈으로 이동" height="55" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/logo_oss.gif" width="210"/>
+</a>
+<div class="area_search" role="search">
+<form action="http://www.oss.kr/search" id="g_search_form">
+<fieldset>
+<legend>검색</legend>
+<div class="searchbox">
+<label for="oss_search"></label>
+<input autocomplete="off" id="oss_search" name="search_query" placeholder="데이타허브 검색을 지금 바로 이용해 보세요 " style="ime-mode:active" title="검색어를 입력하세요" type="text" value=""/>
+</div>
+<button type="submit">검색</button>
+<div class="sr_research">
+<input name="search_in_words" type="hidden" value=""/>
+<input name="search_check" type="hidden" value=""/>
+</div>
+</fieldset>
+</form>
+</div>
+<a href="http://www.oss.kr/open_up_intro">
+<img alt="OPENUP 오픈소스 소프트웨어 통합지원센터(Open Source Software Support Center)  홈으로 이동" height="67" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/top_logo_openup.png" width="146"/>
+</a>
+</div>
+<div class="m_nav">
+<a>전체메뉴 열기</a>
+</div>
+</div>
+<!-- // area_inhead -->
+<!-- nav -->
+<nav class="pc">
+<span></span>
+<ul class="gnb-menu-list">
+<li class="gnb-menu gnb01">
+<a class="gnb" href="http://www.oss.kr/oss_intro" target="_self">공개SW 소개</a>
+<ul>
+<li><a href="http://www.oss.kr/oss_intro" target="_self">공개SW 개요</a></li>
+<li><a href="http://www.oss.kr/oss_importance" target="_self">공개SW 중요성</a></li>
+<li><a href="http://www.oss.kr/oss_trend" target="_self">공개SW 동향</a></li>
+<li><a href="http://www.oss.kr/oss_use_tech" target="_self">공개SW 활용</a></li>
+<li><a href="http://www.oss.kr/oss_license" target="_self">공개SW 라이선스</a></li>
+<li><a href="http://www.oss.kr/oss_faq" target="_self">공개SW에 대한 진실</a></li>
+</ul>
+</li>
+<li class="gnb-menu gnb02">
+<a class="gnb" href="http://www.oss.kr/plaza_intro" target="_self">공개SW 사업</a>
+<ul>
+<li><a href="http://www.oss.kr/plaza_intro" target="_self">공개SW 활용 지원</a></li>
+<li><a href="http://www.oss.kr/developer_support" target="_self">공개SW 개발자 지원</a></li>
+<li><a href="http://www.oss.kr/dev_competition" target="_self">공개SW 개발자대회</a></li>
+<li><a href="http://www.oss.kr/contribution_academy" target="_self">컨트리뷰션 아카데미</a></li>
+</ul>
+</li>
+<li class="gnb-menu gnb03">
+<a class="gnb" href="http://www.oss.kr/solution_guide" target="_self">정보마당</a>
+<ul>
+<li><a href="http://www.oss.kr/solution_guide" target="_self">공개SW 활용 가이드</a></li>
+<li><a href="http://www.oss.kr/info_sec" target="_self">공개SW 보안취약점</a></li>
+<li><a href="http://www.oss.kr/oss_case" target="_self">공개SW 활용 성공사례</a></li>
+<li><a href="http://www.oss.kr/sw_certificate" target="_self">공개SW 확인서발급</a></li>
+<li><a href="http://www.oss.kr/rnd_hub" target="_self">공개SW 프로젝트 허브</a></li>
+<li><a href="http://www.oss.kr/oss_data" target="_self">자료실</a></li>
+</ul>
+</li>
+<li class="gnb-menu gnb04">
+<a class="gnb" href="http://www.oss.kr/notice" target="_self">열린마당</a>
+<ul>
+<li><a href="http://www.oss.kr/notice" target="_self">공지사항</a></li>
+<li><a href="http://www.oss.kr/news" target="_self">공개SW 소식</a></li>
+<li><a href="http://www.oss.kr/event" target="_self">공개SW 행사 안내</a></li>
+<li><a href="http://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의</a></li>
+<li><a href="http://www.oss.kr/news_letter" target="_self">공개SW 뉴스레터</a></li>
+</ul>
+</li>
+<li class="gnb-menu gnb05">
+<a class="gnb" href="http://www.oss.kr/open_up_intro" target="_self">Open UP</a>
+<ul>
+<li><a href="http://www.oss.kr/open_up_intro" target="_self">Open UP 소개</a></li>
+<li><a href="http://www.oss.kr/open_up_history" target="_self">연혁</a></li>
+<li><a href="http://www.oss.kr/open_up_bi" target="_self">BI</a></li>
+<li><a href="http://www.oss.kr/open_up_task" target="_self">주요업무</a></li>
+<li><a href="http://www.oss.kr/open_up_facility" target="_self">시설소개</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<!-- nav -->
+<!-- nav -->
+<nav class="mobile">
+<div>
+<span class="bg"></span>
+<div class="clr">
+<a href="http://www.oss.kr/auth/login">로그인</a>
+<a href="http://www.oss.kr/auth/register">회원 가입</a>
+</div>
+<span></span>
+<ul id="_oss_mobile-menu" style="background: #444; min-height: 100vh;">
+<li class="gnb01">
+<a class="gnb" href="#">                    공개SW 소개
+                </a>
+<ul>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_intro" target="_self">공개SW 개요</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_importance" target="_self">공개SW 중요성</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_trend" target="_self">공개SW 동향</a>
+</li>
+<li class="inner-item">
+<a href="#">공개SW 활용</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/oss_use_tech" target="_self">공개SW 활용(기술별)</a></li>
+<li><a href="http://www.oss.kr/oss_use" target="_self">공개SW 활용(분야별)</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_license" target="_self">공개SW 라이선스</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_faq" target="_self">공개SW에 대한 진실</a>
+</li>
+</ul>
+</li>
+<li class="gnb02">
+<a class="gnb" href="#">                    공개SW 사업
+                </a>
+<ul>
+<li class="inner-item">
+<a href="#">공개SW 활용 지원</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/plaza_intro" target="_self">사업 소개</a></li>
+<li><a href="http://www.oss.kr/license_verify" target="_self">공개SW 라이선스/ 보안 검증</a></li>
+<li><a href="http://www.oss.kr/license_education" target="_self">공개SW 라이선스 교육</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="#">공개SW 개발자 지원</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/developer_support" target="_self">사업 소개</a></li>
+<li><a href="http://www.oss.kr/developer_support_project" target="_self">전문개발자 프로젝트</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="#">공개SW 개발자대회</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/dev_competition" target="_self">대회 소개</a></li>
+<li><a href="http://www.oss.kr/dev_competition/registration" target="_self">참가 접수</a></li>
+<li><a href="http://www.oss.kr/dev_competition/onlineStudy" target="_self">온라인 교육</a></li>
+<li><a href="http://www.oss.kr/dev_competition_notice" target="_self">공지사항</a></li>
+<li><a href="http://www.oss.kr/dev_competition_activities" target="_self">수상작 소개</a></li>
+<li><a href="http://www.oss.kr/dev_competition_qna" target="_self">Q&amp;A</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="#">컨트리뷰션 아카데미</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/contribution_academy" target="_self">컨트리뷰션 아카데미 소개</a></li>
+<li><a href="http://www.oss.kr/ossca_24_projects_1" target="_self">체험형 프로젝트 소개</a></li>
+<li><a href="http://www.oss.kr/ossca_24_projects_2" target="_self">참여형 프로젝트 소개</a></li>
+<li><a href="http://www.oss.kr/ossca_23_projects" target="_self">지난 컨트리뷰톤</a></li>
+<li><a href="http://www.oss.kr/ossca_23_projects" target="_self">  2023년 프로젝트</a></li>
+<li><a href="http://www.oss.kr/ossca_22_projects" target="_self">  2022년 프로젝트</a></li>
+<li><a href="http://www.oss.kr/ossca_21_projects" target="_self">  2021년 프로젝트</a></li>
+<li><a href="http://www.oss.kr/contributhon_20_projects" target="_self">  2020년 프로젝트</a></li>
+<li><a href="http://www.oss.kr/contributhon_19-16_projects?category_item_id=376" target="_self">  2019~2016년 프로젝트</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="gnb03">
+<a class="gnb" href="#">                    정보마당
+                </a>
+<ul>
+<li class="inner-item">
+<a href="#">공개SW 활용 가이드</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/solution_guide" target="_self">공개SW 솔루션 가이드</a></li>
+<li><a href="http://www.oss.kr/info_sp" target="_self">공개SW 솔루션 프로파일</a></li>
+<li><a href="http://www.oss.kr/oss_guide" target="_self">공개SW 가이드/보고서</a></li>
+<li><a href="http://www.oss.kr/info_techtip" target="_self">공개SW 기술팁</a></li>
+<li><a href="http://www.oss.kr/info_test" target="_self">공개SW 테스트</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/info_sec" target="_self">공개SW 보안취약점</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_case" target="_self">공개SW 활용 성공사례</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/sw_certificate" target="_self">공개SW 확인서발급</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/data_hub" target="_self">공개SW  R&amp;D허브</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/rnd_hub" target="_self">공개SW 프로젝트 허브</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/oss_data" target="_self">자료실</a>
+</li>
+</ul>
+</li>
+<li class="gnb04">
+<a class="gnb" href="#">                    열린마당
+                </a>
+<ul class="on">
+<li class="inner-item">
+<a href="http://www.oss.kr/notice" target="_self">공지사항</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/news" target="_self">공개SW 소식</a>
+</li>
+<li class="inner-item d_on">
+<a href="#">공개SW 행사 안내</a>
+<ul class="clr on">
+<li><a href="http://www.oss.kr/event" target="_self">공개SW 행사 안내</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="#">공개SW 라이선스 문의</a>
+<ul class="clr">
+<li><a href="http://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의하기</a></li>
+</ul>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/news_letter" target="_self">공개SW 뉴스레터</a>
+</li>
+</ul>
+</li>
+<li class="gnb05">
+<a class="gnb" href="#">                    Open UP
+                </a>
+<ul>
+<li class="inner-item">
+<a href="http://www.oss.kr/open_up_intro" target="_self">Open UP 소개</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/open_up_history" target="_self">연혁</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/open_up_bi" target="_self">BI</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/open_up_task" target="_self">주요업무</a>
+</li>
+<li class="inner-item">
+<a href="http://www.oss.kr/open_up_facility" target="_self">시설소개</a>
+</li>
+</ul>
+</li>
+</ul>
+<!-- aside -->
+<aside>
+<div class="section-main-carousel">
+<div class="section-main-carousel-list">
+<div class="xf-carousel-item">
+<a class="base-a" href="http://www.msit.go.kr" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="과학기술정보통신부" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/68/bc/2018062509571272009797d1db06c756cb2a9eaeaa72d9804643d9.jpg"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="http://www.nipa.kr/" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="정보통신산업진흥원" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/82/5f/201806250957193b3008f87bf6f0f4bd602679759241fb82a4cfe7.jpg"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="http://www.oss.kr/kopf_background" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="한국 공개 SW 활성화 포럼" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/24/6b/20180625095850d505b7b5c71df2ba96a355c96672fc4997f5820f.jpg"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="https://www.kossa.kr/" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="한국공개소프트웨어협회" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/fe/92/2020092815251185df8911eb7fddd3b3b045ced472dc7de39b97e4.png"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="http://ossf.org/" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="오픈소스소프트웨어재단" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/14/ad/20200928151146386cea11dfba851fa1ccfe5b24023cf4b2d71d65.png"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="http://www.software.kr/" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="SW중심사회" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/f9/3e/20180625095928a4c222808ef5024497dc39a7eaf246a8da3ebf1f.jpg"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="https://www.swbank.kr/" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="소프트웨어자산뱅크" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/80/ad/20180625095916450527f7c0a84375133ff00d1707b4505a3d6c66.jpg"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="https://www.software.kr/um/um03/um0305/um030501/um03050101/um0305010101.do" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="SW중심사회 초중등 교재" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/57/49/20180625095936a5e0f7e612f517e35ccdad24acf1858ace18a454.jpg"/></a>
+</div>
+<div class="xf-carousel-item">
+<a class="base-a" href="https://olc.kr/main/index.jsp" rel="noopener noreferrer" target="_blank" title="새 창 열림"><img alt="공개SW 전문가를 위한 개방형 소프트웨어교육센터" src="http://www.oss.kr/storage/app/public/plugin/banner/37db9275-1411-41e0-af2e-994751e85dbe/34/06/201806250958597327d64312bcc102f5e73195686cd4eb8d3a371b.jpg"/></a>
+</div>
+</div>
+<div class="section-main-carousel-arrow">
+</div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.section-main-carousel-list').each(function() {
+            $(this).not('.slick-initialized').slick({
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                // autoplay: true,
+                autoplaySpeed: 3000,
+                infinite: false,
+                appendArrows: $(this).closest('.section-main-carousel').find('.section-main-carousel-arrow'),
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 5
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 5
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            });
+        });
+    });
+</script>
+</aside>
+<!-- // aside -->
+</div>
+</nav>
+<!-- nav -->
+</header>
+<!-- // header -->
+<!--[D] 컨텐츠 가운데 고정형 옵션 선택의 경우 클래스 .xe-container 로 교체  -->
+<!--[D] 컨텐츠 가운데 고정형 옵션 선택의 경우 클래스 .xe-container 로 교체  -->
+<!-- main -->
+<main>
+<!-- container -->
+<div id="container">
+<!-- nav_sub -->
+<div id="nav_sub">
+<!-- gnb 에 노출되는 메뉴 url -->
+<h2 class="open">
+                    열린마당<br/>
+</h2>
+<ul class="sub_snb">
+<li>
+<a class="snb" href="http://www.oss.kr/notice" target="_self">공지사항</a>
+</li>
+<li>
+<a class="snb" href="http://www.oss.kr/news" target="_self">공개SW 소식</a>
+</li>
+<li class="on">
+<a class="snb" href="http://www.oss.kr/event" target="_self">공개SW 행사 안내</a>
+<ul>
+<li class="on"><a href="http://www.oss.kr/event" target="_self">공개SW 행사 안내</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="snb" href="http://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의</a>
+<ul>
+<li><a href="http://www.oss.kr/oss_license_qna" target="_self">공개SW 라이선스 문의하기</a>
+</li>
+</ul>
+</li>
+<li>
+<a class="snb" href="http://www.oss.kr/news_letter" target="_self">공개SW 뉴스레터</a>
+</li>
+</ul>
+<p><a href="http://www.msit.go.kr" target="_self"><img alt="과학기술정보통신부" height="58" src="http://www.oss.kr/storage/app/public/plugin/banner/4e3451d0-c9ce-4611-99dd-eb33105729f0/51/78/201712191140421fa229eb192d15d50bdb7db7f4df4324178924e9.gif" width="225"/></a></p>
+<p><a href="http://www.nipa.kr/" target="_self"><img alt="정보통신산업진흥원" height="58" src="http://www.oss.kr/storage/app/public/plugin/banner/4e3451d0-c9ce-4611-99dd-eb33105729f0/1a/8f/20171219114144baf6d3fc4cbd5973f00eef2d3dfc3b7d60b8e8f2.gif" width="225"/></a></p>
+<p><a href="http://www.oss.kr/kopf_background" rel="noopener noreferrer" target="_blank"><img alt="KOPF 한국공개SW 활성화포럼" height="58" src="http://www.oss.kr/storage/app/public/plugin/banner/4e3451d0-c9ce-4611-99dd-eb33105729f0/fe/08/20180326173457d82856264efe8f3e832b3e34218f1d4f537ecd71.gif" width="225"/></a></p>
+<!-- p><a href="/kopf_backgound" target="_blank" rel="noopener noreferrer"><img src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/banner_kopf.gif" width="225" height="58" alt="공개활설화 포럼"></a></p -->
+</div>
+<!-- // nav_sub -->
+<div class="sub_contant" id="contents">
+<!-- section -->
+<section class="sub">
+<div class="title">
+<div>
+<a href="http://www.oss.kr">Home</a>
+<span>&gt;</span> <a href="http://www.oss.kr/notice">열린마당</a>
+<span>&gt;</span> <a href="http://www.oss.kr/event">공개SW 행사 안내</a>
+<span>&gt;</span> <a href="http://www.oss.kr/event">공개SW 행사 안내</a>
+<h3>공개SW 행사 안내</h3>
+<input id="menutitletest" type="hidden" value="공개SW 행사 안내"/>
+</div>
+</div>
+<div class="area_content">
+<style>
+    .bd_function .bd_like.voted{color:#FE381E}
+</style>
+<!-- BOARD -->
+<div class="board">
+<!-- 웹접근성 문제로 제거 2022-12-05
+<div class="event_cbtn">
+
+        <a href="/event?listStyle=calendar" class="view_calendar">달력 <span class="bd_hidden">선택됨</span></a>
+    
+    <a href="/event?listStyle=list" class="view_list">리스트</a>
+</div>
+-->
+<div class="bd_oss">
+<div class="board_header">
+<!-- 모바일뷰에서 노출되는 정렬 버튼 -->
+<div class="bd_manage_area xe-visible-xs">
+<!-- [D] 클릭시 클래스 on 추가 및 bd_align 영역 노출 -->
+<a class="btn_mng bd_sorting __xe-bd-mobile-sorting" href="#"><i class="xi-filter"></i> <span class="xe-sr-only">정렬</span></a>
+</div>
+<!-- /모바일뷰에서 노출되는 정렬 버튼 -->
+<div class="bd_btn_area">
+<ul>
+<!-- [D] 클릭시 클래스 on 및 추가 bd_search_area 영역 활성화 -->
+<!--<li><a href="#" class="bd_search __xe-bd-search"><span class="xe-sr-only">검색</span><i class="xi-search"></i></a></li>-->
+</ul>
+</div>
+<div class="xe-form-inline xe-hidden-xs board-sorting-area __xe-forms">
+<script>
+        jQuery(function($) {
+            $('.__xe-dropdown-form .xe-dropdown-menu a').on('click', function(event) {
+                event.preventDefault();
+                var $target = $(event.target),
+                    $container = $target.closest('.__xe-dropdown-form'),
+                    name = $target.closest('.xe-dropdown-menu').data('name'),
+                    $input = $container.find('[name="'+name+'"]');
+
+                $input.val($target.data('value'));
+                $container.find('button').text($target.text());
+
+                // event trigger for third parties
+                $input.trigger( "change" );
+            });
+        });
+    </script>
+<div class="xe-dropdown __xe-dropdown-form">
+<label for="i_title_slug" style="display:none;">분류</label>
+<input data-valid-name="분류" name="category_item_id" type="hidden" value="">
+<button aria-expanded="false" class="xe-btn" data-toggle="xe-dropdown" type="button">분류</button>
+<ul class="xe-dropdown-menu" data-name="category_item_id">
+<li class="on">
+<a href="#">분류</a>
+<ul class="xe-dropdown-menu__sub">
+<li>
+<a data-value="525" href="#">2024 (1)</a>
+</li>
+<li>
+<a data-value="516" href="#">2023 (4)</a>
+</li>
+<li>
+<a data-value="497" href="#">2022 (4)</a>
+</li>
+<li>
+<a data-value="470" href="#">2021 (3)</a>
+</li>
+<li>
+<a data-value="463" href="#">2020 (7)</a>
+</li>
+</ul>
+</li>
+</ul>
+</input></div>
+<style>
+.xe-dropdown-menu li.on a {
+    color: unset;
+}
+.xe-select-label .label-input ul,
+.xe-select-label .label-list ul {
+    margin: 0;
+    padding: 0
+}
+
+.xe-select-label .label-input ul li,
+.xe-select-label .label-list ul li {
+    list-style: none
+}
+
+.xe-select-label .label-list li {
+    list-style: none
+}
+
+.xe-select-label .label-list li a {
+    text-decoration: none
+}
+
+.xe-dropdown-menu,
+.xe-dropdown-menu ul {
+    margin: 0;
+    padding: 0
+}
+
+.xe-dropdown-menu li,
+.xe-dropdown-menu ul li {
+    list-style: none
+}
+
+.xe-dropdown-menu li a,
+.xe-dropdown-menu ul li a {
+    text-decoration: none
+}
+
+.xe-dropdown,
+.xe-dropup {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    white-space: nowrap;
+    vertical-align: middle
+}
+
+.xe-dropdown>.xe-btn,
+.xe-dropup>.xe-btn,
+.xe-select-box.xe-btn {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-right: 37px;
+    text-align: left;
+    white-space: nowrap;
+    outline: none
+}
+
+.xe-dropdown>.xe-btn:focus,
+.xe-dropdown>.xe-btn.focus,
+.xe-dropdown>.xe-btn:active,
+.xe-dropdown>.xe-btn.active,
+.xe-dropup>.xe-btn:focus,
+.xe-dropup>.xe-btn.focus,
+.xe-dropup>.xe-btn:active,
+.xe-dropup>.xe-btn.active,
+.xe-select-box.xe-btn:focus,
+.xe-select-box.xe-btn.focus,
+.xe-select-box.xe-btn:active,
+.xe-select-box.xe-btn.active {
+    background-color: #fff
+}
+
+.xe-dropdown>.xe-btn:hover,
+.xe-dropup>.xe-btn:hover,
+.xe-select-box.xe-btn:hover {
+    background-color: #fff
+}
+
+.xe-dropdown>.xe-btn:active:focus,
+.xe-dropup>.xe-btn:active:focus,
+.xe-select-box.xe-btn:active:focus {
+    background-color: #fff;
+    outline: none
+}
+
+.xe-dropdown.outline-off>.xe-btn,
+.xe-dropup.outline-off>.xe-btn,
+.xe-select-box.outline-off.xe-btn {
+    border: none
+}
+
+.xe-dropdown>.xe-btn::after,
+.xe-dropup>.xe-btn::after,
+.xe-select-box.xe-btn::after,
+.xe-select-label .label-input::after {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    margin-top: -2px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #656973 transparent transparent transparent;
+    content: ""
+}
+
+.xe-dropup .xe-dropdown-menu {
+    margin-top: auto;
+    margin-bottom: -1px;
+    top: auto;
+    bottom: 100%
+}
+
+.xe-dropdown-menu {
+    display: none;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    max-height: 366px;
+    margin-top: -1px !important;
+    border: 1px solid #51586b;
+    border-radius: 0 0 2px 2px;
+    background-color: #fff;
+    z-index: 10
+}
+
+.open .xe-dropdown-menu {
+    display: block;
+    min-width: 100%
+}
+
+.xe-dropdown-menu ul li>a {
+    position: relative
+}
+
+.xe-dropdown-menu ul li>a~ul {
+    padding-left: 15px
+}
+
+.xe-dropdown-menu ul .xe-dropdown-menu__sub li>a::before {
+    content: '⌞';
+    position: absolute;
+    top: 0px;
+    font-size: 1.3em;
+    -webkit-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px)
+}
+
+.xe-dropdown-menu li>a {
+    display: block;
+    position: relative;
+    padding: 8px 15px;
+    color: #2c2e37;
+    text-align: left;
+    line-height: 1.42857
+}
+
+.xe-dropdown-menu li>a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: #2c8beb !important
+}
+
+.xe-dropdown-menu li.on>a {
+    color: #2c8beb
+}
+
+.xe-select-box {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: nowrap
+}
+
+.xe-select-box select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-appearance: menulist-button
+}
+
+.xe-select-label {
+    position: relative
+}
+
+.xe-select-label .label-input {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 37px 0 10px;
+    background-color: #f6f7f9;
+    border: 1px solid #dbdadf;
+    border-radius: 2px
+}
+
+.xe-select-label .label-input ul li {
+    float: left
+}
+
+.xe-select-label .label-input ul li:first-child .label-choice {
+    margin-left: 0
+}
+
+.xe-select-label .label-input ul li .label-choice {
+    display: block;
+    position: relative;
+    margin: 5px 2px;
+    padding: 1px 28px 1px 8px;
+    color: #fff;
+    font-size: 13px;
+    background-color: #b5b8bd;
+    border: 1px solid #dbdadf;
+    border-radius: 4px;
+    line-height: 1.42857
+}
+
+.xe-select-label .label-input ul li .label-choice button {
+    position: absolute;
+    right: 3px;
+    top: 1px;
+    background-color: transparent;
+    border: transparent;
+    outline: none;
+    font-size: 11px;
+    color: #fff;
+    cursor: pointer
+}
+
+.xe-select-label .label-input ul li .search-label {
+    height: 21px;
+    margin: 5px 2px;
+    border-color: transparent;
+    background-color: transparent
+}
+
+.xe-select-label .label-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #8dc5ff;
+    background-color: #fff;
+    z-index: 100
+}
+
+.xe-select-label.open .label-list {
+    display: block
+}
+
+.xe-select-label .label-list .label-division {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    text-align: left
+}
+
+.xe-select-label .label-list .label-division+.label-division {
+    border-top: 1px solid #dbdbdd
+}
+
+.xe-select-label .label-list .label-division strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #333
+}
+
+.xe-select-label .label-list .label-division a {
+    display: block;
+    padding: 0 10px;
+    color: #696e7a;
+    line-height: 24px;
+    border-radius: 4px
+}
+
+.xe-select-label .label-list .label-division a:hover {
+    background-color: #2992fb;
+    color: #fff
+}
+</style>
+<div class="xe-dropdown __xe-dropdown-form">
+<label for="i_title_slug" style="display:none;">말머리</label>
+<input data-valid-name="말머리" name="title_head" type="hidden" value="">
+<button aria-expanded="false" class="xe-btn" data-toggle="xe-dropdown" type="button">말머리</button>
+<ul class="xe-dropdown-menu" data-name="title_head">
+<li class="on">
+<a href="#">말머리</a>
+<ul class="xe-dropdown-menu__sub">
+<li>
+<a data-value="라이선스검증" href="#">라이선스검증 (0)</a>
+</li>
+<li>
+<a data-value=" 도입컨설팅" href="#"> 도입컨설팅 (0)</a>
+</li>
+<li>
+<a data-value=" 개발지원" href="#"> 개발지원 (0)</a>
+</li>
+<li>
+<a data-value=" 개발자" href="#"> 개발자 (0)</a>
+</li>
+<li>
+<a data-value=" 커뮤니티" href="#"> 커뮤니티 (0)</a>
+</li>
+<li>
+<a data-value=" 창업기업" href="#"> 창업기업 (0)</a>
+</li>
+<li>
+<a data-value=" 군장병교육" href="#"> 군장병교육 (0)</a>
+</li>
+<li>
+<a data-value=" 체험교육" href="#"> 체험교육 (0)</a>
+</li>
+<li>
+<a data-value=" 전문교육" href="#"> 전문교육 (0)</a>
+</li>
+<li>
+<a data-value=" 개발자대회" href="#"> 개발자대회 (0)</a>
+</li>
+<li>
+<a data-value=" 컨트리뷰톤" href="#"> 컨트리뷰톤 (0)</a>
+</li>
+<li>
+<a data-value=" 국제협력" href="#"> 국제협력 (0)</a>
+</li>
+<li>
+<a data-value=" 개방형OS" href="#"> 개방형OS (0)</a>
+</li>
+<li>
+<a data-value=" 행사" href="#"> 행사 (0)</a>
+</li>
+<li>
+<a data-value=" 기타" href="#"> 기타 (0)</a>
+</li>
+</ul>
+</li>
+</ul>
+</input></div>
+<div class="xe-dropdown __xe-dropdown-form">
+<label for="i_title_slug" style="display:none;">정렬</label>
+<input data-valid-name="정렬" name="order_type" type="hidden" value="">
+<button aria-expanded="false" class="xe-btn" data-toggle="xe-dropdown" type="button">정렬</button>
+<ul class="xe-dropdown-menu" data-name="order_type">
+<li class="on">
+<a href="#">정렬</a>
+<ul class="xe-dropdown-menu__sub">
+<li>
+<a data-value="assent_count" href="#">추천순</a>
+</li>
+<li>
+<a data-value="recently_created" href="#">최신순</a>
+</li>
+<li>
+<a data-value="recently_updated" href="#">최근 수정순</a>
+</li>
+</ul>
+</li>
+</ul>
+</input></div>
+</div>
+<!-- 게시글 관리 -->
+<!-- /게시글 관리 -->
+<!-- 검색영역 -->
+<div class="bd_search_area">
+<form action="http://www.oss.kr/event" class="__xe_simple_search" method="get">
+<div class="bd_search_box">
+<input class="bd_search_input" name="title_pure_content" placeholder="검색어를 입력하세요" title="게시판 검색" type="text" value=""/>
+<!-- [D] 클릭시 클래스 on 및 추가 bd_search_detail 영역 활성화 -->
+<a class="bd_btn_detail" href="#" title="게시판 상세 검색">상세 검색</a>
+</div>
+</form>
+<form action="http://www.oss.kr/event" class="__xe_search" method="get">
+<input name="order_type" type="hidden" value="">
+<div class="bd_search_detail">
+<div class="bd_search_detail_option">
+<div class="xe-row">
+<div class="xe-col-sm-6">
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">분류</label>
+</div>
+<div class="xe-col-sm-9">
+<div class="xe-dropdown __xe-dropdown-form">
+<label for="i_title_slug" style="display:none;">분류</label>
+<input data-valid-name="분류" name="category_item_id" type="hidden" value="">
+<button aria-expanded="false" class="xe-btn" data-toggle="xe-dropdown" type="button">분류</button>
+<ul class="xe-dropdown-menu" data-name="category_item_id">
+<li class="on">
+<a href="#">분류</a>
+<ul class="xe-dropdown-menu__sub">
+<li>
+<a data-value="525" href="#">2024 (1)</a>
+</li>
+<li>
+<a data-value="516" href="#">2023 (4)</a>
+</li>
+<li>
+<a data-value="497" href="#">2022 (4)</a>
+</li>
+<li>
+<a data-value="470" href="#">2021 (3)</a>
+</li>
+<li>
+<a data-value="463" href="#">2020 (7)</a>
+</li>
+</ul>
+</li>
+</ul>
+</input></div>
+</div>
+</div>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-6">
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">말머리</label>
+</div>
+<div class="xe-col-sm-9">
+<div class="xe-dropdown __xe-dropdown-form">
+<label for="i_title_slug" style="display:none;">말머리</label>
+<input data-valid-name="말머리" name="title_head" type="hidden" value=""/>
+<button aria-expanded="false" class="xe-btn" data-toggle="xe-dropdown" type="button">말머리</button>
+<ul class="xe-dropdown-menu" data-name="title_head">
+<li class="on">
+<a href="#">말머리</a>
+<ul class="xe-dropdown-menu__sub">
+<li>
+<a data-value="라이선스검증" href="#">라이선스검증 (0)</a>
+</li>
+<li>
+<a data-value=" 도입컨설팅" href="#"> 도입컨설팅 (0)</a>
+</li>
+<li>
+<a data-value=" 개발지원" href="#"> 개발지원 (0)</a>
+</li>
+<li>
+<a data-value=" 개발자" href="#"> 개발자 (0)</a>
+</li>
+<li>
+<a data-value=" 커뮤니티" href="#"> 커뮤니티 (0)</a>
+</li>
+<li>
+<a data-value=" 창업기업" href="#"> 창업기업 (0)</a>
+</li>
+<li>
+<a data-value=" 군장병교육" href="#"> 군장병교육 (0)</a>
+</li>
+<li>
+<a data-value=" 체험교육" href="#"> 체험교육 (0)</a>
+</li>
+<li>
+<a data-value=" 전문교육" href="#"> 전문교육 (0)</a>
+</li>
+<li>
+<a data-value=" 개발자대회" href="#"> 개발자대회 (0)</a>
+</li>
+<li>
+<a data-value=" 컨트리뷰톤" href="#"> 컨트리뷰톤 (0)</a>
+</li>
+<li>
+<a data-value=" 국제협력" href="#"> 국제협력 (0)</a>
+</li>
+<li>
+<a data-value=" 개방형OS" href="#"> 개방형OS (0)</a>
+</li>
+<li>
+<a data-value=" 행사" href="#"> 행사 (0)</a>
+</li>
+<li>
+<a data-value=" 기타" href="#"> 기타 (0)</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="xe-col-sm-6">
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">제목+내용</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control" name="title_pure_content" title="제목+내용" type="text" value=""/>
+</div>
+</div>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-6">
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">글쓴이</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control" name="writer" title="글쓴이" type="text" value=""/>
+</div>
+</div>
+</div>
+<div class="xe-col-sm-6">
+<div class="xe-row __xe-period">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">기간</label>
+</div>
+<div class="xe-col-sm-9">
+<div class="xe-form-group">
+<div class="xe-dropdown __xe-dropdown-form">
+<label for="i_title_slug" style="display:none;">선택</label>
+<input data-valid-name="선택" name="period" type="hidden" value="">
+<button aria-expanded="false" class="xe-btn" data-toggle="xe-dropdown" type="button">선택</button>
+<ul class="xe-dropdown-menu" data-name="period">
+<li class="on">
+<a href="#">선택</a>
+<ul class="xe-dropdown-menu__sub">
+<li>
+<a data-value="1week" href="#">1주</a>
+</li>
+<li>
+<a data-value="2week" href="#">2주</a>
+</li>
+<li>
+<a data-value="1month" href="#">1개월</a>
+</li>
+<li>
+<a data-value="3month" href="#">3개월</a>
+</li>
+<li>
+<a data-value="6month" href="#">6개월</a>
+</li>
+<li>
+<a data-value="1year" href="#">1년</a>
+</li>
+</ul>
+</li>
+</ul>
+</input></div>
+</div>
+<div class="xe-form-inline">
+<input class="xe-form-control" name="start_created_at" title="시작 날짜" type="text" value=""/> - <input class="xe-form-control" name="end_created_at" title="끝 날짜" type="text" value=""/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 확장 필드 검색 -->
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">배경색상</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_color" data-valid-name="배경색상" name="ext_plan_color_text" placeholder="배경색상" value="">
+</input></div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">반복주기</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_cycle" data-valid-name="반복주기" name="ext_plan_cycle_text" placeholder="반복주기" value="">
+</input></div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">일정종료</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_end" data-valid-name="일정종료" name="ext_plan_end_text" placeholder="일정종료" value="">
+</input></div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">공개그룹</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_group" data-valid-name="공개그룹" name="ext_plan_group_text" placeholder="공개그룹" value=""/>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">일정확인</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_icon" data-valid-name="일정확인" name="ext_plan_icon_text" placeholder="일정확인" value=""/>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">일정시작</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_start" data-valid-name="일정시작" name="ext_plan_start_text" placeholder="일정시작" value=""/>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">선택시간</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_time" data-valid-name="선택시간" name="ext_plan_time_text" placeholder="선택시간" value=""/>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">반복단위</label>
+</div>
+<div class="xe-col-sm-9">
+<input class="xe-form-control form-control __xe_df __xe_df_text __xe_df_text_ext_plan_unit" data-valid-name="반복단위" name="ext_plan_unit_text" placeholder="반복단위" value=""/>
+</div>
+</div>
+<div class="xe-row">
+<div class="xe-col-sm-3">
+<label class="xe-control-label">세미나</label>
+</div>
+<div class="xe-col-sm-9">
+</div>
+</div>
+<!-- /확장 필드 검색 -->
+</div>
+<div class="bd_search_footer">
+<div class="xe-pull-right">
+<button class="xe-btn xe-btn-primary-outline bd_btn_search" type="submit">검색</button>
+<button class="xe-btn xe-btn-secondary bd_btn_cancel" type="button">취소</button>
+</div>
+</div>
+</div>
+</input></form>
+</div>
+<!-- /검색영역 -->
+</div>
+<div class="oss-board_list board_list">
+<table summary="">
+<caption>
+<span class="blind">공개SW 행사 안내 - 번호, 제목, 세미나</span>
+</caption>
+<!-- [D] 모바일뷰에서 숨겨할 요소 클래스 xe-hidden-xs 추가 -->
+<thead class="xe-hidden-xs">
+<!-- LIST HEADER -->
+<tr>
+<th scope="col"><span>번호</span></th>
+<th class="title column-th-title" scope="col"><span>제목</span></th>
+<th class="column-th-read_count" scope="col"><span>조회수</span></th>
+<th class="column-th-seminar" scope="col"><span>세미나</span></th>
+</tr>
+<!-- /LIST HEADER -->
+</thead>
+<tbody>
+<!-- NOTICE -->
+<!-- /NOTICE -->
+<!-- LIST -->
+<tr>
+<td>385</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/dc24f9cf-6ce1-4293-9387-19f0c4afe6c0" id="title_dc24f9cf-6ce1-4293-9387-19f0c4afe6c0"><span class="title-head title-head-행사">[행사]</span>2024년 정보통신산업진흥원 통합 사업설명회 개최</a>
+</td>
+<td class="read_num xe-hidden-xs">4330</td>
+<td class="xe-hidden-xs column-seminar">2024-01-08 ~ 2024-01-26</td>
+</tr>
+<tr>
+<td>384</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/7212436c-6bf5-4767-95f8-51cc9d13c7ef" id="title_7212436c-6bf5-4767-95f8-51cc9d13c7ef"><span class="title-head title-head-행사">[행사]</span>2023 공개SW 페스티벌</a>
+<span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
+</td>
+<td class="read_num xe-hidden-xs">2141</td>
+<td class="xe-hidden-xs column-seminar">2023-11-10 ~ 2023-12-01</td>
+</tr>
+<tr>
+<td>383</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/281ce22a-8db2-473d-82ef-12991d91a2be" id="title_281ce22a-8db2-473d-82ef-12991d91a2be"><span class="title-head title-head-행사">[행사]</span>ETRI Open Source Tech Day 2023 (EOST 2023) 행사 안내</a>
+</td>
+<td class="read_num xe-hidden-xs">5572</td>
+<td class="xe-hidden-xs column-seminar">2023-09-18 ~ 2023-10-11</td>
+</tr>
+<tr>
+<td>382</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/82e470dc-669d-42b8-a9bd-d4f0735e241f" id="title_82e470dc-669d-42b8-a9bd-d4f0735e241f"><span class="title-head title-head-행사">[행사]</span>Ceph Days Korea 2023</a>
+<span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
+</td>
+<td class="read_num xe-hidden-xs">2921</td>
+<td class="xe-hidden-xs column-seminar">2023-03-28 ~ 2023-06-14</td>
+</tr>
+<tr>
+<td>381</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/901cdfc9-4c2b-4d34-8a39-972394389db8" id="title_901cdfc9-4c2b-4d34-8a39-972394389db8"><span class="title-head title-head-행사">[행사]</span>2023년 정보통신산업진흥원 통합 사업설명회 안내</a>
+</td>
+<td class="read_num xe-hidden-xs">12755</td>
+<td class="xe-hidden-xs column-seminar">2023-01-04 ~ 2023-01-18</td>
+</tr>
+<tr>
+<td>380</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/cfa6755e-2ce5-45c8-82cb-9ac5ef69013d" id="title_cfa6755e-2ce5-45c8-82cb-9ac5ef69013d"><span class="title-head title-head-행사">[행사]</span>ETRI Open Source Tech Day 2022 행사 안내</a>
+</td>
+<td class="read_num xe-hidden-xs">13251</td>
+<td class="xe-hidden-xs column-seminar">2022-10-18 ~ 2022-11-08</td>
+</tr>
+<tr>
+<td>379</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/510d35af-c3da-4c77-ad06-f63a32514f9d" id="title_510d35af-c3da-4c77-ad06-f63a32514f9d"><span class="title-head title-head-행사">[행사]</span>제6회 개방형 클라우드 플랫폼 기반 서비스 개발 아이디어 공모전</a>
+</td>
+<td class="read_num xe-hidden-xs">2529</td>
+<td class="xe-hidden-xs column-seminar">2022-08-16 ~ 2022-09-30</td>
+</tr>
+<tr>
+<td>378</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/0430c5ba-faea-4056-81a0-f49c127666eb" id="title_0430c5ba-faea-4056-81a0-f49c127666eb"><span class="title-head title-head-행사">[행사]</span>공개SW 활용방안 세미나 : "음성인식 대화 관리 서비스" (행사장소: 충북대학교, 진행: Tebah soft)</a>
+</td>
+<td class="read_num xe-hidden-xs">2705</td>
+<td class="xe-hidden-xs column-seminar">2022-06-24 ~ 2022-06-29</td>
+</tr>
+<tr>
+<td>377</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/87753861-bb96-497f-94ce-2d5362252386" id="title_87753861-bb96-497f-94ce-2d5362252386"><span class="title-head title-head-행사">[행사]</span>오픈소스로 만들어가는 멀티클라우드 생태계 (클라우드바리스타 커뮤니티 제6차 컨퍼런스)</a>
+<span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
+</td>
+<td class="read_num xe-hidden-xs">5115</td>
+<td class="xe-hidden-xs column-seminar">2022-06-09 ~ 2022-06-22</td>
+</tr>
+<tr>
+<td>376</td>
+<td class="title column-title">
+<a class="title_text" href="http://www.oss.kr/event/show/f44e68b5-c8e3-48f1-8ec7-cdfc94e3b1e3" id="title_f44e68b5-c8e3-48f1-8ec7-cdfc94e3b1e3"><span class="title-head title-head-국제협력">[국제협력]</span>제19차 동북아 공개SW활성화포럼</a>
+</td>
+<td class="read_num xe-hidden-xs">8939</td>
+<td class="xe-hidden-xs column-seminar">2021-12-03 ~ 2021-12-04</td>
+</tr>
+<!-- /LIST -->
+</tbody>
+</table>
+</div>
+<div class="board_footer">
+<!-- PAGINATAION PC-->
+<div class="bd_paginate xe-hidden-xs">
+<span class="btn_pg btn_prev"><i class="xi-angle-left"><span class="bd_hidden">전 페이지로 이동 </span></i></span>
+<strong>1</strong>
+<a href="http://www.oss.kr/event?page=2">2</a>
+<a href="http://www.oss.kr/event?page=3">3</a>
+<a href="http://www.oss.kr/event?page=4">4</a>
+<a href="http://www.oss.kr/event?page=5">5</a>
+<a href="http://www.oss.kr/event?page=6">6</a>
+<a href="http://www.oss.kr/event?page=7">7</a>
+<a href="http://www.oss.kr/event?page=8">8</a>
+<span>...</span>
+<a href="http://www.oss.kr/event?page=38">38</a>
+<a href="http://www.oss.kr/event?page=39">39</a>
+<a class="btn_pg btn_next" href="http://www.oss.kr/event?page=2"><i class="xi-angle-right"><span class="bd_hidden">다음 페이지로 이동</span></i></a>
+</div>
+<!-- /PAGINATION PC-->
+<!-- PAGINATAION Mobile -->
+<div class="bd_paginate v2 xe-visible-xs">
+<span class="btn_pg btn_prev"><i class="xi-angle-left"><span class="bd_hidden">«</span></i></span>
+<span class="pg_box"><strong>1</strong> / <span>39</span></span>
+<a class="btn_pg btn_next" href="http://www.oss.kr/event?page=2"><i class="xi-angle-right"><span class="bd_hidden">»</span></i></a>
+</div>
+<!-- /PAGINATION Mobile -->
+</div>
+<div class="bd_dimmed"></div>
+<div class="bd_search_area_bottom">
+<form action="http://www.oss.kr/event" method="get">
+<input name="listStyle" type="hidden" value="list"/>
+<div class="bd_search_box">
+<select name="search_target" title="게시물 검색항목 옵션 선택(제목, 내용, 제목 + 내용, 작성자)">
+<option value="">검색 항목</option>
+<option value="title">제목</option>
+<option value="pure_content">내용</option>
+<option value="title_pure_content">제목 + 내용</option>
+<option value="writer">작성자</option>
+</select>
+<input class="bd_search_input" name="search_keyword" placeholder="검색어를 입력하세요" title="게시판 검색" type="text" value=""/>
+<!-- [D] 클릭시 클래스 on 및 추가 bd_search_detail 영역 활성화 -->
+<button class="oss_search_btn" typoe="submit">검색</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- /BOARD -->
+</div>
+<div class="area_up pc">
+<a href="#"><img alt="맨 위로" height="40" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/btn_up.gif" width="40"/></a>
+</div>
+<div class="area_up mobile">
+<a href="#"><img alt="맨 위로" height="40" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/btn_scroll_top.png" width="40"/></a>
+</div>
+</section>
+<!-- // section -->
+</div>
+</div>
+<!-- container -->
+</main>
+<!-- // main -->
+<!-- footer -->
+<footer>
+<div class="area_infooter">
+<h2><img alt="nipa 정보통신산업진흥원, 과학기술정보통신부 WA WEB 접근성" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/nipa_mark.png" width="200"/></h2>
+<div class="footer_md">
+<div class="area_policy">
+<a href="http://www.oss.kr/email_refusal" target="_self">이메일무단수집거부</a>
+<a href="http://www.oss.kr/customerCenter" target="_self">이용약관</a>
+<a href="http://www.oss.kr/private" style="color:#1A53E8;" target="_self">개인정보 처리방침</a>
+<a href="http://www.oss.kr/sitemap" target="_self">사이트맵</a>
+<a href="http://www.oss.kr/directions" target="_self">찾아오시는 길</a>
+<a href="http://www.oss.kr/contact_us" target="_self">Contact Us</a>
+</div>
+<div class="area_info_company">
+<p>
+                            [27872] 충청북도 진천군 덕산읍 정통로 10 정보통신산업진흥원
+                        </p>
+<p>
+<a href="tel:02-6241-6507">(TEL) 라이선스 문의 : 02-6241-6507</a> ｜ 
+							<a href="tel:02-6241-6510">컨설팅 : 02-6241-6510</a>
+</p>
+<p>
+<a href="tel:043-931-5379">(TEL) 사이트문의 : 043-931-5379</a>
+</p>
+<p class="copyright">COPYRIGHT(C) 2017 OSS.KR. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+<div class="area_sns">
+<!--<a href="https://www.facebook.com/OpenUP_OSS/" target="_blank" rel="noopener noreferrer" class="" title="공개SW역량프라자 페이스북 페이지"><img
+                    src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/ft_facebook_icon.png" width="27" height="27"
+                    alt="공개SW역량프라자 페이스북 페이지"></a>-->
+<a class="ft_nipa" href="https://www.nipa.kr/home/3-8-3" rel="noopener noreferrer" target="_blank" title="정보통신산업진흥원과 함께하는 청렴韓세상 새 창 열림"><img alt="정보통신산업진흥원과 함께하는 청렴韓세상" height="27" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/ft_nipa.png" width="100"/></a>
+<a class="" href="https://www.youtube.com/c/OpenUP_OSS" rel="noopener noreferrer" target="_blank" title="오픈소스소프트웨어 통합지원센터 유튜브 새 창 열림"><img alt="오픈소스소프트웨어 통합지원센터 유튜브" height="27" src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/images/ft_youtube_icon.png" width="34"/></a>
+</div>
+</div>
+</footer>
+<!-- //footer -->
+</div>
+<!-- // warp -->
+<!--[if lt IE 9]>
+<script src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/js/html5shiv.min.js"></script>
+<![endif]-->
+<!-- JS at body.append -->
+<script src="http://www.oss.kr/assets/vendor/jqueryui/jquery-ui.min.js?1562226292"></script>
+<script src="http://www.oss.kr/assets/core/xe-ui-component/js/xe-page.js?1574048364"></script>
+<script src="http://www.oss.kr/plugins/board/assets/js/board.js?1573800362"></script>
+<script src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/js/theme.js?1635139742"></script>
+<script src="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/js/slick.js?1635139742"></script>
+<script src="http://www.oss.kr/plugins/oss/components/Skins/OSS/Common/assets/js/search.js?1635139756"></script>
+<!-- CUSTOM TAGS -->
+<!-- ga:tracking -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-38030815-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- oss::toast.custom -->
+<div class="xe-modal fade" id="_oss_toast-modal">
+<div class="xe-modal-dialog">
+<div class="xe-modal-content">
+<div class="xe-modal-header">
+<button aria-label="Close" class="btn-close" data-dismiss="xe-modal" type="button"><i class="xi-close"></i></button>
+<strong class="xe-modal-title"><i class="xi-error"></i></strong>
+</div>
+<div class="xe-modal-body">
+<p>
+</p>
+</div>
+<div class="xe-modal-footer">
+<button class="xe-btn xe-btn-secondary" data-dismiss="xe-modal" type="button">닫기</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+   (function ($, XE) {
+	   // 메시지 처리 개선 2022-12-05
+	    var oss_form = {
+        constructor: this,
+        options: {
+            selectors: {
+                elementGroup: ".sbshp-form-group",
+                errorText: ".__xe_error_text"
+            },
+            classes: {
+                message: ["error-text", "__xe_error_text", "text_caution"]
+            },
+            tags: {
+                message: "p"
+            }
+        },
+        getGroup: function ($element) {
+            return $element.closest(this.options.selectors.elementGroup)
+        },
+
+        putByElement: function ($element, message) {
+			console.log($element);
+            this.put(this.getGroup($element), message, $element)
+        },
+
+        put: function ($group, message, $element) {
+            // $group 이 1 보다 클땐 어찌 될지 모르겠음...
+            if ($group.length == 1) {
+				alert(message);
+				/*
+                $group.removeClass("focus");
+                $group.addClass("fail");
+                $group.append(
+                    $("<" + this.options.tags.message + ">")
+                        .addClass(this.options.classes.message.join(" "))
+                        .text(message)
+                )
+				*/
+            } else if ($group.length == 0) {
+                // 그룹이 없으면 alert
+                alert(message);
+                // $element.after(
+                //     $("<" + this.options.tags.message + ">")
+                //         .addClass(this.options.classes.message.join(" "))
+                //         .text(message)
+                // )
+            }
+        },
+
+        clear: function ($form) {
+            $form.find(this.options.tags.message + this.options.selectors.errorText).remove()
+        }
+    };
+	
+	   XE.Validator.extendAlertType("toast", function ($element, message) {
+        //hscrollToElement($element);
+        oss_form.putByElement($element, message);
+        is_submitted = false;
+    });
+	
+	   // 메시지 처리 개선 end
+	   
+        XE.toast = function (type, message) {
+if (message == "이메일이 전송되었습니다.") {
+alert(message);
+} else {
+alert(message);
+//            $("#_oss_toast-modal .xe-modal-body > p").html(message);
+  //          $("#_oss_toast-modal").xeModal("show");
+//$("#_oss_toast-modal").find("button.xe-btn-secondary").focus();
+}
+        };
+        XE.toastByStatus = function (status, message) {
+            var type = status >= 400 && status < 500 ? "warning" : "danger";
+            XE.toast(type, message);
+        };
+        XE.Validator.extendAlertType("modal", function ($el, message) {
+            XE.toast("warning", message);
+        });
+   })(jQuery, XE);
+   
+   
+   
+</script>
+<!-- oss:tab_script -->
+<script>
+    $(function () {
+        $('._oss_tab').each(function () {
+            var $container = $(this);
+            var filter = function () {
+                return $container[0] === $(this).parents('._oss_tab')[0];
+            };
+            var choose = function (to) {
+                $('._oss_tab-item', $container).filter(filter).eq(to).show();
+                $('._oss_tab-item', $container).filter(filter).not(':eq('+to+')').hide();
+            };
+
+            $('._oss_tab-indicators', this).filter(filter).each(function () {
+                var indicators = this;
+                $('[data-tab-to]', this).click(function (e) {
+                    e.preventDefault();
+
+                    var to = $(this).data('tabTo');
+                    choose(to);
+
+                    $(this).addClass('on');
+                    $('[data-tab-to]', indicators).not(this).removeClass('on');
+                });
+            });
+
+            $('._oss_tab-indicators', this).filter(filter).find('[data-tab-to="0"]').triggerHandler('click');
+
+        });
+    });
+    
+</script>
+<!-- oss::mobile_menu_script -->
+<script>
+    $(function () {
+        $('li>a', '#_oss_mobile-menu').filter('[href="#"]').click(function (e) {
+            e.preventDefault();
+            $(this).closest('li').children('ul').show();
+            if ($(this).closest('li').hasClass('inner-item')) {
+                $(this).closest('li').addClass('d_on');
+            }
+            $(this).closest('li').siblings().removeClass('d_on').find('ul').hide();
+            $(this).closest('li[class^=gnb0]').siblings().find('.d_on').removeClass('d_on');
+        });
+        $('#_oss_mobile-menu ul').not('.on').hide();
+    });
+</script>
+<!-- oss:mobile_menu -->
+<script>
+    $(function () {
+        $('.m_nav, nav.mobile .bg').click(function (e) {
+            e.preventDefault();
+            $('nav.mobile').toggleClass('on');
+        });
+    });
+</script>
+</body>
+</html>
