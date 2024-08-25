@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "PjNu-gh3hH484OIC6wFHEvCCNVrX05HJnafcCFlBd0EDjxUJ-4AnW17p9kKN7hT5seadT6rAfeuZ1dLi7hnzs8dK0BrFGC8tvmE9ZKisluepr7aPMmMnugaNHN_XSbW7r9aFag2",
+                UserId: "4Pv7dioajTDMmuUxj7m6psQhB7SVQAg-PzzH3oXDgu5qVvenuViqnVwyJqI_p5xtorHS0IDfO0gOoXwKs1XzU5hlKr4oXeGScFTLQ92s-YO0w5xT6CZLb2n9tca1xLPflClxhA2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "PjNu-gh3hH484OIC6wFHEvCCNVrX05HJnafcCFlBd0EDjxUJ-4AnW17p9kKN7hT5seadT6rAfeuZ1dLi7hnzs8dK0BrFGC8tvmE9ZKisluepr7aPMmMnugaNHN_XSbW7r9aFag2" === "PjNu-gh3hH484OIC6wFHEvCCNVrX05HJnafcCFlBd0EDjxUJ-4AnW17p9kKN7hT5seadT6rAfeuZ1dLi7hnzs8dK0BrFGC8tvmE9ZKisluepr7aPMmMnugaNHN_XSbW7r9aFag2" ? "Anonymous" : "User",
+                UserType: "4Pv7dioajTDMmuUxj7m6psQhB7SVQAg-PzzH3oXDgu5qVvenuViqnVwyJqI_p5xtorHS0IDfO0gOoXwKs1XzU5hlKr4oXeGScFTLQ92s-YO0w5xT6CZLb2n9tca1xLPflClxhA2" === "4Pv7dioajTDMmuUxj7m6psQhB7SVQAg-PzzH3oXDgu5qVvenuViqnVwyJqI_p5xtorHS0IDfO0gOoXwKs1XzU5hlKr4oXeGScFTLQ92s-YO0w5xT6CZLb2n9tca1xLPflClxhA2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'PjNu-gh3hH484OIC6wFHEvCCNVrX05HJnafcCFlBd0EDjxUJ-4AnW17p9kKN7hT5seadT6rAfeuZ1dLi7hnzs8dK0BrFGC8tvmE9ZKisluepr7aPMmMnugaNHN_XSbW7r9aFag2'
+            'user_id': '4Pv7dioajTDMmuUxj7m6psQhB7SVQAg-PzzH3oXDgu5qVvenuViqnVwyJqI_p5xtorHS0IDfO0gOoXwKs1XzU5hlKr4oXeGScFTLQ92s-YO0w5xT6CZLb2n9tca1xLPflClxhA2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'PjNu-gh3hH484OIC6wFHEvCCNVrX05HJnafcCFlBd0EDjxUJ-4AnW17p9kKN7hT5seadT6rAfeuZ1dLi7hnzs8dK0BrFGC8tvmE9ZKisluepr7aPMmMnugaNHN_XSbW7r9aFag2'
+            'crm_id': '4Pv7dioajTDMmuUxj7m6psQhB7SVQAg-PzzH3oXDgu5qVvenuViqnVwyJqI_p5xtorHS0IDfO0gOoXwKs1XzU5hlKr4oXeGScFTLQ92s-YO0w5xT6CZLb2n9tca1xLPflClxhA2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?45a5f1f36d0edcb3"></script><style>body {
+<script src="/Content/dist/js/preload.js?52c22b778140c047"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?45a5f1f36d0edcb3"></script><script defer="defer" src="/Content/dist/js/default.js?45a5f1f36d0edcb3"></script><link href="/Content/dist/css/default.css?45a5f1f36d0edcb3" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?52c22b778140c047"></script><script defer="defer" src="/Content/dist/js/default.js?52c22b778140c047"></script><link href="/Content/dist/css/default.css?52c22b778140c047" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2642,7 +2642,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="soaWCAyIuIvktZgJXGkG7K8MS3JPk_qRHJtbf-vJln6QnQyHIrL_STh5F5EDL_wtOCRHicNbsSezasp_8U3BnW8_Ugs1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="QoPoNCWzQGH77GE-snOFnmG15V4FP0S7bURocU_2GTkimoCVEM0ldOu1KBNpfaeKs6Wgem85QZJRboDC60ZHBfwVU6o1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3955,7 +3955,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'PjNu-gh3hH484OIC6wFHEvCCNVrX05HJnafcCFlBd0EDjxUJ-4AnW17p9kKN7hT5seadT6rAfeuZ1dLi7hnzs8dK0BrFGC8tvmE9ZKisluepr7aPMmMnugaNHN_XSbW7r9aFag2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', '4Pv7dioajTDMmuUxj7m6psQhB7SVQAg-PzzH3oXDgu5qVvenuViqnVwyJqI_p5xtorHS0IDfO0gOoXwKs1XzU5hlKr4oXeGScFTLQ92s-YO0w5xT6CZLb2n9tca1xLPflClxhA2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4007,7 +4007,7 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[{\"Id\":4784,\"New_Start_Date\":\"2024-08-06T00:00:00\",\"New_End_Date\":\"2024-08-21T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-05T19:14:28.3019374\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c7d6223cc4c04d0b862932885a206733.jpg\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d17dcca1ca774d1c905064f4208237d7.png\",\"Click_Url\":\"https://event-us.kr/wellbing/event/88623\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"쿠팡 자동화수익 프로세스 최초공개\",\"BannerDescription\":\"쿠팡으로 월300 자동화 수익만들기\",\"BannerDate\":\"2024. 08. 24.(토) 14:00\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":4789,\"New_Start_Date\":\"2024-08-19T00:00:00\",\"New_End_Date\":\"2024-08-25T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-06T17:41:55.4882589\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0ff6de0637ae49f18af106b3d306b1b3.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f63cfd1f809c460abeadf6547abb9b32.png\",\"Click_Url\":\"https://bit.ly/46Eh5X2\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"MWC 2025 참여 기업 모집\",\"BannerDescription\":\"글로벌 비즈니스 기회를 창출하세요\",\"BannerDate\":\"2024. 08. 05.(월) ~ 2024. 08. 26.(월)\",\"BannerPlace\":\"온라인 접수\"}]';
+    const bannerDataRaw = '[{\"Id\":4814,\"New_Start_Date\":\"2024-08-21T00:00:00\",\"New_End_Date\":\"2024-08-27T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-16T10:43:36.2126094\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0b1ede9d72c3488dbc0377c4d13ae696.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e7396bc78eb84e06afac0618017953f9.png\",\"Click_Url\":\"https://event-us.kr/aipr/event/87572\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"홍보/마케팅팀이라면 꼭 알아야 할\",\"BannerDescription\":\"AI 기반의 PR \u0026 마케팅 실무\",\"BannerDate\":\"2024. 08. 08.(목) ~ 2024. 10. 24.(목)\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":4828,\"New_Start_Date\":\"2024-08-26T00:00:00\",\"New_End_Date\":\"2024-08-30T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-19T16:47:58.8500272\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/bdcf304144d54ad9ae007271008f66bd.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/5939c33965f24564b5a9af98bf3f9b69.png\",\"Click_Url\":\"https://event-us.kr/pnp/event/89715\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"PLUGANDPLAY EXPO\",\"BannerDescription\":\"플러그앤플레이코리아 엑스포\",\"BannerDate\":\"2024. 10. 23.(수) 10:00\",\"BannerPlace\":\"오프라인 행사\"}]';
     const searchDataRaw = '';
     const priceConstants = {
         min: 0,

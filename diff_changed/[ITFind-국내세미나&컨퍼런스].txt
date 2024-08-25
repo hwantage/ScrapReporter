@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2024-08-19"></script>
+<script src="/contents/js/func.js?ver=2024-08-26"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -475,8 +475,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>2849건</strong></span>
-<span>현재페이지 : <strong>1/285.0</strong></span>
+<span>총 게시물 : <strong>2853건</strong></span>
+<span>현재페이지 : <strong>1/286.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -506,7 +506,15 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">2849</th>
+<th data-cell-header="번호" scope="row">2853</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13816&amp;boardParam1=ko&amp;searchTarget2=">국내//[10.31] ESS 시장 확대를 위한 기술 고도화 및 화재 대비 안전성 확보 방안 / 한국</a></td>
+<td data-cell-header="행사기간">2024-10-31~2024-10-31</td>
+<td data-cell-header="접수기간">2024-08-21~2024-10-29</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2852</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13756&amp;boardParam1=ko&amp;searchTarget2=">국내//[10/11]“전기차강국 중국 핵심 기술 및 시장 대응 전략 인사이트콘서트 Ⅱ” / 한국</a></td>
@@ -514,7 +522,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-06-10~2024-10-10</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2848</th>
+<th data-cell-header="번호" scope="row">2851</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13793&amp;boardParam1=ko&amp;searchTarget2=">국내//[09.27] 실무자를 위한 LFP 배터리 핵심 기술 및 효율적 운용 방안 교육 / 한국</a></td>
@@ -522,7 +530,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-24~2024-09-26</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2847</th>
+<th data-cell-header="번호" scope="row">2850</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13797&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.26] 탄소중립을 위한 재생에너지 정책변화 및 기업의 대응전략 세미나 / 한국</a></td>
@@ -530,7 +538,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-01~2024-09-25</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2846</th>
+<th data-cell-header="번호" scope="row">2849</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13784&amp;boardParam1=ko&amp;searchTarget2=">국내//[09.26] 재생에너지 시장 참여를 통한 전력중개거래사업(VPP, PPA) 비지니스 모델 창출 방안 / 한국</a></td>
@@ -538,7 +546,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-22~2024-09-25</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2845</th>
+<th data-cell-header="번호" scope="row">2848</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13796&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.25] 분산법 시행에 따른 전력시장 변화와 신사업전략 세미나 / 한국</a></td>
@@ -546,7 +554,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-01~2024-09-24</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2844</th>
+<th data-cell-header="번호" scope="row">2847</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13795&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.11] 실무자를 위한 전고체전지 집중교육 세미나 / 한국</a></td>
@@ -554,7 +562,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-01~2024-09-11</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2843</th>
+<th data-cell-header="번호" scope="row">2846</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13817&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.11] 생성형 AI 구축을 위한 활용 방안과 신(新)사업 이슈 및 신(新)상업화 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2024-09-11~2024-09-11</td>
+<td data-cell-header="접수기간">2024-08-22~2024-09-10</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2845</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13794&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.10] 실무자를 위한 이차전지 핵심소재 및 셀 설계 집중교육 세미나 / 한국</a></td>
@@ -562,28 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-07-01~2024-09-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2842</th>
+<th data-cell-header="번호" scope="row">2844</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13685&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.10~11] 2024 첨단 모빌리티 산업 트렌드 및 핵심기술 세미나 / 한국</a></td>
 <td data-cell-header="행사기간">2024-09-10~2024-09-11</td>
 <td data-cell-header="접수기간">2024-03-01~2024-09-09</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">2841</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13734&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.6] 탄소중립 재생합성연료(e-Fuel) 생산 및 활용기술 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2024-09-06~2024-09-06</td>
-<td data-cell-header="접수기간">2024-05-01~2024-09-05</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">2840</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13661&amp;boardParam1=ko&amp;searchTarget2=">국내//[9.4] 탄소중립을 위한 CCUS 기술 동향 및 사업전략 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2024-09-04~2024-09-04</td>
-<td data-cell-header="접수기간">2024-02-01~2024-09-03</td>
 </tr>
 </tbody>
 </table>
@@ -611,7 +611,7 @@ function fnMvOrgan(){
 <!-- footer start  -->
 <footer>
 <ul class="Footmenu">
-<li><a href="/ccenter/personalInformationPolicy2023.do">개인정보처리방침</a></li>
+<li><a href="/ccenter/personalInformationPolicy2024.do">개인정보처리방침</a></li>
 <li><a href="/ccenter/siteAgreement.do">이용약관</a></li>
 <li><a href="/introduce/loadmap.do">찾아오시는길</a></li>
 </ul>

@@ -290,10 +290,8 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <div data-search_box="">
 <form action="/event/main" class="search_form" data-gtm_submit='{"event" : "clickKeywordSearchButton", "keyword" : ""}' method="GET">
 <label for="searchInput">검색할 이벤트를 입력해주세요.</label>
-<input autocomplete="off" class="search_input" data-event="303802" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
-<span class="ofm_keyword_value" data-creative_name="PC_메인_검색창광고" data-creative_slot="1" data-event_no="303802" data-event_title="2024년 학생선수 e-School 운영 우수사례 공모전">
-                                      학생선수 e-School 운영 우수사례 공모전                                  </span>
-<input data-gtag_dto_key="_GTAG_DTO_KEY_1001" data-search_btn="" title="검색" type="submit" value="검색"/>
+<input autocomplete="off" class="search_input" data-event="" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
+<input data-gtag_dto_key="_GTAG_DTO_KEY_1000" data-search_btn="" title="검색" type="submit" value="검색"/>
 </form>
 </div>
 </div>
@@ -729,7 +727,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <li data-keyword_row="">
 <a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI&amp;ChatGPT</a>
 <a href="/event/main?search_type=evt_tag&amp;s=창업">창업</a>
-<a href="/event/main?s=스타트업">스타트업</a>
+<a href="/event/main?s=문화 예술">문화・예술</a>
 </li>
 <li>
 <a class="link_item event" data-c="b09b92021" href="/ch/event">무료로 초대해요</a>
@@ -752,8 +750,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
                 <a href="http://pf.kakao.com/_xoWIcE/chat" title="상담톡" target="_blank">톡상담</a>
             </div> -->
 <script>
-            var _GTAG_DTO_KEY_1001 = {"event":"clickEvent","eventID":"303802","eventName":"2024년 학생선수 e-School 운영 우수사례 공모전","eventType":"일반","categoryID":"105","categoryName":"공모전/대회/지원사업","eventFeeType":["무료"],"applicationType":"외부","recommendFieldID":["A0113"],"recommendFieldName":["운동/건강/웰빙"],"recommendJobID":[],"recommendJobName":[],"keyword":"","pageIndex":0,"sequenceNumber":0,"clickPoint":"검색창","adCode":"PM20","sectionNumber":"","ai":"n"};
-            </script>
+</script>
 </header>
 <main class="event_search" id="content">
 <div class="content_wrapping wide_max_width_area">
@@ -1113,6 +1110,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <section class="event_main_area">
 <div class="title_bar" style="display:none">
 <ul class="sort_menu">
+<li><a class="relevance">관련순</a></li>
 <li>
 <a class="popularity active">추천순</a>
 <span data-bubble="">
@@ -1169,7 +1167,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <h1 class="notice_title">
 <a href="https://corp.onoffmix.com/48ef220a-533e-40b1-9bac-075b9e9189f0" target="_blank">공지사항</a>
 </h1>
-<a href="https://marsh-lavender-bc3.notion.site/8-22-741938dca19749c99591ccdde62f9c28/" target="_blank" title="서버 점검으로 인한 서비스 이용불가 안내(8/22)">서버 점검으로 인한 서비스 이용불가 안내(8/22)</a>
+<a href="https://corp.onoffmix.com/2d95f09f-fd11-43b9-8c09-273b28fe577a/" target="_blank" title="[약관] 고객센터 이메일 변경에 따른 일부 약관 개정 안내">[약관] 고객센터 이메일 변경에 따른 일부 약관 개정 안내</a>
 </div>
 <div data-link_box="">
 <a href="https://blog.naver.com/onoffmix" target="_blank" title="온오프믹스 네이버블로그"></a>
