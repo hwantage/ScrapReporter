@@ -26,10 +26,10 @@
 <link href="https://www.oss.kr/assets/core/common/css/xe-common.css?1573799923" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/assets/core/xe-ui-component/xe-ui-component.css?1637824731" media="all" rel="stylesheet" type="text/css"/>
 <link href="http://www.oss.kr/assets/vendor/jqueryui/jquery-ui.min.css?1529999836" media="all" rel="stylesheet" type="text/css"/>
-<link href="http://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281078" media="all" rel="stylesheet" type="text/css"/>
-<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611663" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281073" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1711611669" media="all" rel="stylesheet" type="text/css"/>
 <link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick.css?1635139724" media="all" rel="stylesheet" type="text/css"/>
-<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686556394" media="all" rel="stylesheet" type="text/css"/>
+<link href="http://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686555729" media="all" rel="stylesheet" type="text/css"/>
 <!-- JS at head.prepend -->
 <script>
         var xeBaseURL = 'http://www.oss.kr'; // @DEPRECATED
@@ -42,7 +42,7 @@
             XE.setup({
                 baseURL: 'http://www.oss.kr',
                 assetsURL: 'http://www.oss.kr',
-                userToken: 'blQHlpofA5FZkiMMmjzgotp1MExKak2SIDoip4Vs',
+                userToken: 'rgWAbryPDLL0VQKfXtPn9qSSiJWBTQyIvXnNQP9s',
                 loginUserId: '', // @DEPRECATED
                 useXeSpinner: true, // @DEPRECATED
                 locale: 'ko',
@@ -142,7 +142,7 @@
 <li class="gnb-menu gnb03">
 <a class="gnb" href="http://www.oss.kr/solution_guide" target="_self">정보마당</a>
 <ul>
-<li><a href="http://www.oss.kr/solution_guide" target="_self">공개SW 활용 가이드</a></li>
+<li><a href="http://www.oss.kr/oss_guide" target="_self">공개SW 활용 가이드</a></li>
 <li><a href="http://www.oss.kr/info_sec" target="_self">공개SW 보안취약점</a></li>
 <li><a href="http://www.oss.kr/oss_case" target="_self">공개SW 활용 성공사례</a></li>
 <li><a href="http://www.oss.kr/sw_certificate" target="_self">공개SW 확인서발급</a></li>
@@ -265,9 +265,7 @@
 <a href="#">공개SW 활용 가이드</a>
 <ul class="clr">
 <li><a href="http://www.oss.kr/solution_guide" target="_self">공개SW 솔루션 가이드</a></li>
-<li><a href="http://www.oss.kr/info_sp" target="_self">공개SW 솔루션 프로파일</a></li>
 <li><a href="http://www.oss.kr/oss_guide" target="_self">공개SW 가이드/보고서</a></li>
-<li><a href="http://www.oss.kr/info_techtip" target="_self">공개SW 기술팁</a></li>
 <li><a href="http://www.oss.kr/info_test" target="_self">공개SW 테스트</a></li>
 </ul>
 </li>
@@ -1223,7 +1221,7 @@
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/dc24f9cf-6ce1-4293-9387-19f0c4afe6c0" id="title_dc24f9cf-6ce1-4293-9387-19f0c4afe6c0"><span class="title-head title-head-행사">[행사]</span>2024년 정보통신산업진흥원 통합 사업설명회 개최</a>
 </td>
-<td class="read_num xe-hidden-xs">4387</td>
+<td class="read_num xe-hidden-xs">4427</td>
 <td class="xe-hidden-xs column-seminar">2024-01-08 ~ 2024-01-26</td>
 </tr>
 <tr>
@@ -1232,7 +1230,7 @@
 <a class="title_text" href="http://www.oss.kr/event/show/7212436c-6bf5-4767-95f8-51cc9d13c7ef" id="title_7212436c-6bf5-4767-95f8-51cc9d13c7ef"><span class="title-head title-head-행사">[행사]</span>2023 공개SW 페스티벌</a>
 <span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
 </td>
-<td class="read_num xe-hidden-xs">2183</td>
+<td class="read_num xe-hidden-xs">2226</td>
 <td class="xe-hidden-xs column-seminar">2023-11-10 ~ 2023-12-01</td>
 </tr>
 <tr>
@@ -1240,7 +1238,7 @@
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/281ce22a-8db2-473d-82ef-12991d91a2be" id="title_281ce22a-8db2-473d-82ef-12991d91a2be"><span class="title-head title-head-행사">[행사]</span>ETRI Open Source Tech Day 2023 (EOST 2023) 행사 안내</a>
 </td>
-<td class="read_num xe-hidden-xs">5626</td>
+<td class="read_num xe-hidden-xs">5661</td>
 <td class="xe-hidden-xs column-seminar">2023-09-18 ~ 2023-10-11</td>
 </tr>
 <tr>
@@ -1249,7 +1247,7 @@
 <a class="title_text" href="http://www.oss.kr/event/show/82e470dc-669d-42b8-a9bd-d4f0735e241f" id="title_82e470dc-669d-42b8-a9bd-d4f0735e241f"><span class="title-head title-head-행사">[행사]</span>Ceph Days Korea 2023</a>
 <span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
 </td>
-<td class="read_num xe-hidden-xs">2950</td>
+<td class="read_num xe-hidden-xs">2974</td>
 <td class="xe-hidden-xs column-seminar">2023-03-28 ~ 2023-06-14</td>
 </tr>
 <tr>
@@ -1257,7 +1255,7 @@
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/901cdfc9-4c2b-4d34-8a39-972394389db8" id="title_901cdfc9-4c2b-4d34-8a39-972394389db8"><span class="title-head title-head-행사">[행사]</span>2023년 정보통신산업진흥원 통합 사업설명회 안내</a>
 </td>
-<td class="read_num xe-hidden-xs">12763</td>
+<td class="read_num xe-hidden-xs">12768</td>
 <td class="xe-hidden-xs column-seminar">2023-01-04 ~ 2023-01-18</td>
 </tr>
 <tr>
@@ -1265,7 +1263,7 @@
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/cfa6755e-2ce5-45c8-82cb-9ac5ef69013d" id="title_cfa6755e-2ce5-45c8-82cb-9ac5ef69013d"><span class="title-head title-head-행사">[행사]</span>ETRI Open Source Tech Day 2022 행사 안내</a>
 </td>
-<td class="read_num xe-hidden-xs">13259</td>
+<td class="read_num xe-hidden-xs">13262</td>
 <td class="xe-hidden-xs column-seminar">2022-10-18 ~ 2022-11-08</td>
 </tr>
 <tr>
@@ -1273,7 +1271,7 @@
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/510d35af-c3da-4c77-ad06-f63a32514f9d" id="title_510d35af-c3da-4c77-ad06-f63a32514f9d"><span class="title-head title-head-행사">[행사]</span>제6회 개방형 클라우드 플랫폼 기반 서비스 개발 아이디어 공모전</a>
 </td>
-<td class="read_num xe-hidden-xs">2533</td>
+<td class="read_num xe-hidden-xs">2534</td>
 <td class="xe-hidden-xs column-seminar">2022-08-16 ~ 2022-09-30</td>
 </tr>
 <tr>
@@ -1290,7 +1288,7 @@
 <a class="title_text" href="http://www.oss.kr/event/show/87753861-bb96-497f-94ce-2d5362252386" id="title_87753861-bb96-497f-94ce-2d5362252386"><span class="title-head title-head-행사">[행사]</span>오픈소스로 만들어가는 멀티클라우드 생태계 (클라우드바리스타 커뮤니티 제6차 컨퍼런스)</a>
 <span class="bd_ico_file"><i class="xi-paperclip"></i><span class="xe-sr-only">file</span></span>
 </td>
-<td class="read_num xe-hidden-xs">5119</td>
+<td class="read_num xe-hidden-xs">5120</td>
 <td class="xe-hidden-xs column-seminar">2022-06-09 ~ 2022-06-22</td>
 </tr>
 <tr>
@@ -1298,7 +1296,7 @@
 <td class="title column-title">
 <a class="title_text" href="http://www.oss.kr/event/show/f44e68b5-c8e3-48f1-8ec7-cdfc94e3b1e3" id="title_f44e68b5-c8e3-48f1-8ec7-cdfc94e3b1e3"><span class="title-head title-head-국제협력">[국제협력]</span>제19차 동북아 공개SW활성화포럼</a>
 </td>
-<td class="read_num xe-hidden-xs">8943</td>
+<td class="read_num xe-hidden-xs">8944</td>
 <td class="xe-hidden-xs column-seminar">2021-12-03 ~ 2021-12-04</td>
 </tr>
 <!-- /LIST -->
