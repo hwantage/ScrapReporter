@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "n-ZL4hvsWFpTPa0Ytk3Rsys7qYUKk0P_cnSD-LvQd9P2-oZrvYE9jvihHlSLREHvhjCpod4hF4t6ZJMt8sCp2Zl_pqvL4M2PJ2Uwn2xBkucLoXyJIxl-fjz_NbD4sV0NCPB-9Q2",
+                UserId: "ldgpeLX5dIPLMywYW9MWyEKbugpZQn1O9nRKTFRHIJor_RfcwxtglD2SrIXS6gerI2_NK6Tq5donwj_JYRmxkwEDpYipceLHulrDr5ohD2AofUfTY29GHd0OgFWCQ3VSEA5dFg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "n-ZL4hvsWFpTPa0Ytk3Rsys7qYUKk0P_cnSD-LvQd9P2-oZrvYE9jvihHlSLREHvhjCpod4hF4t6ZJMt8sCp2Zl_pqvL4M2PJ2Uwn2xBkucLoXyJIxl-fjz_NbD4sV0NCPB-9Q2" === "n-ZL4hvsWFpTPa0Ytk3Rsys7qYUKk0P_cnSD-LvQd9P2-oZrvYE9jvihHlSLREHvhjCpod4hF4t6ZJMt8sCp2Zl_pqvL4M2PJ2Uwn2xBkucLoXyJIxl-fjz_NbD4sV0NCPB-9Q2" ? "Anonymous" : "User",
+                UserType: "ldgpeLX5dIPLMywYW9MWyEKbugpZQn1O9nRKTFRHIJor_RfcwxtglD2SrIXS6gerI2_NK6Tq5donwj_JYRmxkwEDpYipceLHulrDr5ohD2AofUfTY29GHd0OgFWCQ3VSEA5dFg2" === "ldgpeLX5dIPLMywYW9MWyEKbugpZQn1O9nRKTFRHIJor_RfcwxtglD2SrIXS6gerI2_NK6Tq5donwj_JYRmxkwEDpYipceLHulrDr5ohD2AofUfTY29GHd0OgFWCQ3VSEA5dFg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'n-ZL4hvsWFpTPa0Ytk3Rsys7qYUKk0P_cnSD-LvQd9P2-oZrvYE9jvihHlSLREHvhjCpod4hF4t6ZJMt8sCp2Zl_pqvL4M2PJ2Uwn2xBkucLoXyJIxl-fjz_NbD4sV0NCPB-9Q2'
+            'user_id': 'ldgpeLX5dIPLMywYW9MWyEKbugpZQn1O9nRKTFRHIJor_RfcwxtglD2SrIXS6gerI2_NK6Tq5donwj_JYRmxkwEDpYipceLHulrDr5ohD2AofUfTY29GHd0OgFWCQ3VSEA5dFg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'n-ZL4hvsWFpTPa0Ytk3Rsys7qYUKk0P_cnSD-LvQd9P2-oZrvYE9jvihHlSLREHvhjCpod4hF4t6ZJMt8sCp2Zl_pqvL4M2PJ2Uwn2xBkucLoXyJIxl-fjz_NbD4sV0NCPB-9Q2'
+            'crm_id': 'ldgpeLX5dIPLMywYW9MWyEKbugpZQn1O9nRKTFRHIJor_RfcwxtglD2SrIXS6gerI2_NK6Tq5donwj_JYRmxkwEDpYipceLHulrDr5ohD2AofUfTY29GHd0OgFWCQ3VSEA5dFg2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?52c22b778140c047"></script><style>body {
+<script src="/Content/dist/js/preload.js?6348735ef25e8a4c"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?52c22b778140c047"></script><script defer="defer" src="/Content/dist/js/default.js?52c22b778140c047"></script><link href="/Content/dist/css/default.css?52c22b778140c047" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?6348735ef25e8a4c"></script><script defer="defer" src="/Content/dist/js/default.js?6348735ef25e8a4c"></script><link href="/Content/dist/css/default.css?6348735ef25e8a4c" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -1173,7 +1173,7 @@
 </a>
 <div class="text-gray-200">|</div>
 <div class="text-primary-400 font-bold">
-<a @click="track('홈 행사개설 클릭')" href="/hostcenter/channel">
+<a @click="track('홈 행사개설 클릭')" href="/hostcenter/eventcreate">
 <span v-if="language === 'ko'">무료행사개설</span>
 <span v-else="">Host your event for free</span>
 </a>
@@ -2387,7 +2387,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">광고 상품 가격 변경 등 사전 안내</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2024년 9월, 10월 이벤터스 휴무일 안내 : 9/5(목), 9/16(월)~18(수), 10/1(화), 10/3(목), 10/9(수)</a>
 </div>
 </div>
 </div>
@@ -2410,10 +2410,6 @@
 <a href="https://event-us-hostguide.oopy.io/348a2604-a70a-4a16-a970-73985c2c304d?v=17eb172f4a6643e688abc7149cc8d949" target="_blank">
 <span v-if="language === 'ko'">자주 묻는 질문</span>
 <span v-else="">FAQ</span>
-</a>
-<a href="https://event-us.career.greetinghr.com/" target="_blank">
-<span v-if="language === 'ko'">채용</span>
-<span v-else="">About Us</span>
 </a>
 <ui-popover class="!ml-0 relative flex" v-slot="{ open }">
 <ui-popover-button @click="channelActive='channel'">
@@ -2546,7 +2542,7 @@
 <span v-else="">CPO Lee Jung Soo</span>
 </div>
 <div>
-<span v-if="language === 'ko'">서울특별시 마포구 마포대로 122, 프론트원 16F</span>
+<span v-if="language === 'ko'">서울특별시 마포구 마포대로 122, 프론트원 17F</span>
 <span v-else="">16F, FrontOne, 122 Mapo-daero, Mapo-gu, Seoul, Korea</span>
 </div>
 </div>
@@ -2642,7 +2638,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="C8ez6gzHtcYKq_vWrjb8TW80TGTW3SxSzFuRmfANWLu2ONVCkLlfPyjZ5ovXcChi0scCM1xSAQo-F-yu_Wr1viqcOsI1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="q6atekM-puVOYJ9U7FTWGA8hf1CpvfGB5JnXwuN_JcMrJVzf7IReyj1HP3Jn241NNRta8myJ6LBTLhp8ozn0gQ1O_7Q1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -2709,6 +2705,7 @@
                 /*title: '부가서비스',*/
                 menus: [
                     { text: '명찰 출력', enText: 'Name Tag Printing', link: '/hostcenter/service/nametag' },
+                    { text: '스탬프 투어', enText: 'Name Tag Printing', link: '/hostcenter/service/stamptour' },
                     { text: 'VOD', enText: 'VOD', link: '/hostcenter/service/vod' },
                     { text: '광고', enText: 'Ads', link: '/adcenter' },
                 ],
@@ -3955,7 +3952,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'n-ZL4hvsWFpTPa0Ytk3Rsys7qYUKk0P_cnSD-LvQd9P2-oZrvYE9jvihHlSLREHvhjCpod4hF4t6ZJMt8sCp2Zl_pqvL4M2PJ2Uwn2xBkucLoXyJIxl-fjz_NbD4sV0NCPB-9Q2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'ldgpeLX5dIPLMywYW9MWyEKbugpZQn1O9nRKTFRHIJor_RfcwxtglD2SrIXS6gerI2_NK6Tq5donwj_JYRmxkwEDpYipceLHulrDr5ohD2AofUfTY29GHd0OgFWCQ3VSEA5dFg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4007,7 +4004,7 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[{\"Id\":4829,\"New_Start_Date\":\"2024-09-02T00:00:00\",\"New_End_Date\":\"2024-09-06T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-19T16:48:27.2293791\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a8d4255e0a6c4b888abbee485aabf019.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/17357896554741439c664e5071bf04e4.png\",\"Click_Url\":\"https://event-us.kr/pnp/event/89715\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"PLUGANDPLAY EXPO\",\"BannerDescription\":\"플러그앤플레이코리아 엑스포\",\"BannerDate\":\"2024. 10. 23.(수) 10:00\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":5864,\"New_Start_Date\":\"2024-09-02T00:00:00\",\"New_End_Date\":\"2024-09-06T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-29T15:30:33.4455061\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/2f05a82da7264a01be65508310afd420.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/8b582fbf49ac4cc6872c3170cb39ef85.png\",\"Click_Url\":\"https://event-us.kr/dreamplusasia/event/89803\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#000000\\\",\\\"description\\\":\\\"#000000\\\",\\\"date\\\":\\\"#000000\\\",\\\"place\\\":\\\"#000000\\\"}}\",\"BannerTitle\":\"  초기 스타트업 투자 유치 연결\",\"BannerDescription\":\"  드림 네트워킹 서밋\",\"BannerDate\":\"2024. 09. 26.(목) 16:00\",\"BannerPlace\":\"오프라인 행사\"}]';
+    const bannerDataRaw = '[{\"Id\":5865,\"New_Start_Date\":\"2024-09-09T00:00:00\",\"New_End_Date\":\"2024-09-13T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-29T15:31:49.7172297\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/3d5e6c9056fe4adabf52aa952eeb5967.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/5f0c8ba7600c45beae9e93a913041063.png\",\"Click_Url\":\"https://event-us.kr/dreamplusasia/event/89803\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#000000\\\",\\\"description\\\":\\\"#000000\\\",\\\"date\\\":\\\"#000000\\\",\\\"place\\\":\\\"#000000\\\"}}\",\"BannerTitle\":\"초기 스타트업 투자 유치 연결\",\"BannerDescription\":\"드림 네트워킹 서밋\",\"BannerDate\":\"2024. 09. 26.(목) 16:00\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":4830,\"New_Start_Date\":\"2024-09-09T00:00:00\",\"New_End_Date\":\"2024-09-13T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-19T16:48:52.4143585\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/aceab412a6f84192affc9eb60741eb6a.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c74ba9d5886b4863921a4dbfb754f687.png\",\"Click_Url\":\"https://event-us.kr/pnp/event/89715\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"PLUGANDPLAY EXPO\",\"BannerDescription\":\"플러그앤플레이코리아 엑스포\",\"BannerDate\":\"2024. 10. 23.(수) 10:00\",\"BannerPlace\":\"오프라인 행사\"}]';
     const searchDataRaw = '';
     const priceConstants = {
         min: 0,

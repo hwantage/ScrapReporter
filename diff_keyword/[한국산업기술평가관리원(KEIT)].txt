@@ -1293,11 +1293,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">산업기술알키미스트플러스[미래 판기술 프로젝트]  테마 기획을 위한 기술수요조사 공고<i class="blank"></i></a><span class="date">2024.09.03</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년 소재부품기술개발사업 기술수요조사<i class="blank"></i></a><span class="date">2024.08.30</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">'재난안전산업 기술사업화지원사업' 2025년 신규 과제 기획을 위한 기술수요조사 공고<i class="blank"></i></a><span class="date">2024.08.29</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">(가칭) 바이오제조 혁신사업 신규 예타 사업 기획을 위한 기술수요조사<i class="blank"></i></a><span class="date">2024.08.28</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">미래모빌리티 기술고도화 및 테스트베드 구축 사업(가칭) 기술수요조사<i class="blank"></i></a><span class="date">2024.08.22</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">「디자인테크 핵심기술개발」 로드맵 수립을 위한 기술수요조사<i class="blank"></i></a><span class="date">2024.08.21</span></li>
 </ul>
 </div>
 </div>
@@ -1918,7 +1918,7 @@ function f_openPopupIdvd(){
 <div class="wrap clearfix">
 <div class="sitelink_cont first">
 <h3>
-<button onclick="f_utlzClus(); return false;">이용약관</button>
+<button onclick="window.open('https://www.keit.re.kr/menu.es?mid=a10703000000'); return false;">이용약관</button>
 </h3>
 </div>
 <div class="sitelink_cont">
