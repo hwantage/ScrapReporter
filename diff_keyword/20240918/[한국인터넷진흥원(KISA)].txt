@@ -257,7 +257,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3329&amp;page=1">2024 전자문서 유공 포상 계획 공고 안내(~9.26 14:00 마감)</a>
 </td>
 <td class="date">2024-08-28</td>
-<td class="count">6569</td>
+<td class="count">6570</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3329', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -361,7 +361,7 @@ function oneDepMenu() {
 <dd>2024-09-13</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="1d8346e8-d689-4bda-847a-c53524c46b89">
+<input name="_csrf" type="hidden" value="6d620f81-ba8f-449f-ac66-597821e386e8">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -384,7 +384,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "1d8346e8-d689-4bda-847a-c53524c46b89");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "6d620f81-ba8f-449f-ac66-597821e386e8");
             },			
 			success: function(data) {
 				alert(data.message)
