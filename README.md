@@ -7,21 +7,6 @@
 
 https://www.boannews.com 의 보안 카테고리 뉴스 수집
 
-## GIT 연동
-```shell
-git init
-
-git add ./diff_changed/scrap.py
-git add ./diff_changed/db.txt
-git add ./diff_keyword/scrap.py
-git add ./diff_keyword/db.txt
-
-git commit -m 'First Commit'
-
-git remote add origin https://github.com/hwantage/ScrapRepoter.git
-
-git push -u origin master
-```
 
 ## 실행 방법
 ```shell
