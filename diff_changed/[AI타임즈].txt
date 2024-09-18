@@ -79,7 +79,7 @@
 
 	// 도메인
 	var SITE_DOMAIN = 'https://www.aitimes.com'
-	,CDN_DOMAIN = "https://cdn.aitimes.com",___currentTime	= 1725837847;
+	,CDN_DOMAIN = "https://cdn.aitimes.com",___currentTime	= 1726643573;
 
 	// 즐겨찾기 스크립트
 	function bookmark() {
@@ -353,7 +353,7 @@ wcs_do();
 <!-- 메뉴바 //-->
 <nav id="user-nav">
 <div class="top-box">
-<div class="date">2024년 09월 09일 (월)</div>
+<div class="date">2024년 09월 18일 (수)</div>
 <div class="right-box">
 <!-- 로그인 // -->
 <ul class="user-logbox" id="userLogin">
@@ -672,14 +672,14 @@ $(document).ready(function(){
 <strong>
     				정책                    <span class="show-for-sr">목록</span>
 </strong>
-<small>( <span class="show-for-sr">총 : </span>738건)</small>
+<small>( <span class="show-for-sr">총 : </span>741건)</small>
 </h3>
 <div class="view-type">
 <h3 class="show-for-sr">기사목록 보기 형태</h3>
 <div class="button-group tiny">
-<a class="button user-bg" href="/news/articleList.html?page=1&amp;total=738&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=li" title="제목형:제목과 간략정보만 보실 수 있습니다."><i class="icon-th-list"></i><span class="show-for-medium"> 제목형</span></a>
-<a class="button nd-white" href="/news/articleList.html?page=1&amp;total=738&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."><i class="icon-th"></i><span class="show-for-medium"> 요약형</span></a>
-<a class="button nd-white" href="/news/articleList.html?page=1&amp;total=738&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."><i class="icon-th-large"></i><span class="show-for-medium"> 포토형</span></a>
+<a class="button user-bg" href="/news/articleList.html?page=1&amp;total=741&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=li" title="제목형:제목과 간략정보만 보실 수 있습니다."><i class="icon-th-list"></i><span class="show-for-medium"> 제목형</span></a>
+<a class="button nd-white" href="/news/articleList.html?page=1&amp;total=741&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."><i class="icon-th"></i><span class="show-for-medium"> 요약형</span></a>
+<a class="button nd-white" href="/news/articleList.html?page=1&amp;total=741&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."><i class="icon-th-large"></i><span class="show-for-medium"> 포토형</span></a>
 </div>
 </div>
 </header>
@@ -716,15 +716,14 @@ $(document).ready(function(){
 </style>
 <div class="auto-article" id="skin-31">
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163143" target="_top"><span class="frame for-middle">
-<i class="icon-play"></i>
-<em class="auto-images height-200 line" style="background-image:url(https://cdn.aitimes.com/news/photo/202409/163143_176821_3242.jpg)"></em>
+<a class="auto-valign" href="/news/articleView.html?idxno=163329" target="_top"><span class="frame for-middle">
+<em class="auto-images height-200 line" style="background-image:url(https://cdn.aitimes.com/news/photo/202409/163329_177075_550.jpeg)"></em>
 </span><span class="content for-top">
-<span class="auto-titles size-27 line-5x1 auto-fontA onload">'AI 책임 있는 군사적 이용' 고위급회의 9일 개최</span>
-<span class="auto-sums mary-10 size-15 auto-fontK">외교부(장관 조태열)는 국방부 공동 주관으로 9~10일 서울 롯데 및 웨스틴조선 호텔에서 ‘2024 인공지능의 책임 있는 군사적 이용에 관한 고위급회의(2024 REAIM 고위급회의)’를 개최한다고 밝혔다.REAIM 고위급회의는 AI의 군사적 이용이 국제평화와 안보에 미치는 영향에 대해 정부, 산업계, 학계, 국제기구 등이 함께 논의하는 1.5트랙 국제 다...</span>
+<span class="auto-titles size-27 line-5x1 auto-fontA onload">KAIST, '혁신창업상'에 메티스엑스 등 6개 기업 선정</span>
+<span class="auto-sums mary-10 size-15 auto-fontK">한국과학기술원(KAIST, 총장 이광형)은 딥테크 스타트업의 우수 사례를 발굴하는 ‘2024 대한민국 혁신창업상’ 수상 기업을 11일 발표했다. 대한민국 혁신창업상은 KAIST와 서울대, 중앙홀딩스가 협력하고 과학기술정보통신부가 후원해 혁신 기술을 가진 스타트업을 선정하는 상이다. 시상식은 11일 서울대학교에서 개최된 ‘혁신창업국가 대한민국 국제심포지엄 2...</span>
 <span class="auto-user size-13 line-4x1 auto-fontK">
 <em>박수빈 기자</em>
-<em>2024.09.05 16:40</em>
+<em>2024.09.11 17:24</em>
 </span>
 </span>
 </a>
@@ -737,6 +736,24 @@ $(document).ready(function(){
 <!-- 리스트형 //-->
 <section id="section-list">
 <ul class="type1">
+<li>
+<h4 class="titles"><a href="/news/articleView.html?idxno=163327" target="_top">AICA, AI 헬스케어 기업·의료·실증기관 만남의 날 행사 개최</a></h4>
+<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
+<em class="info name">박수빈 기자</em>
+<em class="info dated">09.11 16:35</em>
+</li>
+<li>
+<h4 class="titles"><a href="/news/articleView.html?idxno=163294" target="_top">REAIM 고위급회의, 군사 분야 AI 이용에 필요한 청사진 채택</a></h4>
+<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
+<em class="info name">박수빈 기자</em>
+<em class="info dated">09.11 13:35</em>
+</li>
+<li>
+<h4 class="titles"><a href="/news/articleView.html?idxno=163143" target="_top">'AI 책임 있는 군사적 이용' 고위급회의 9일 개최</a></h4>
+<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
+<em class="info name">박수빈 기자</em>
+<em class="info dated">09.05 16:40</em>
+</li>
 <li>
 <h4 class="titles"><a href="/news/articleView.html?idxno=162916" target="_top">정부 "딥 페이크 성범죄 근절을 위해 총력"</a></h4>
 <i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
@@ -833,24 +850,6 @@ $(document).ready(function(){
 <em class="info name">임대준 기자</em>
 <em class="info dated">07.30 15:08</em>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=162064" target="_top">과기정통부, '국가인공지능위원회의 설치 및 운영에 관한 규정' 국무회의 통과</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">장세민 기자</em>
-<em class="info dated">07.30 13:45</em>
-</li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=162032" target="_top">NIA, 'EU AI 법 제정에 따른 국내 법적 과제' 세미나 개최</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">장세민 기자</em>
-<em class="info dated">07.29 17:21</em>
-</li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=161893" target="_top">NIA, 지능정보화 컨설팅 사업 착수보고회 대구서 개최</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">07.24 16:30</em>
-</li>
 </ul>
 </section>
 <!--// 리스트형 -->
@@ -865,7 +864,7 @@ $(document).ready(function(){
 <em class="info dated"></em>
 </li>
 <!-- // 샘플 -->
-<nav aria-label="Pagination"><ul class="pagination"><li class="pagination-start"><a href="/news/articleList.html?page=1&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1" title="처음"><i class="icon-angle-double-left"><span class="show-for-sr">처음</span></i></a></li><li class="current user-bg">1</li><li><a href="/news/articleList.html?page=2&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">2</a></li><li><a href="/news/articleList.html?page=3&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">3</a></li><li><a href="/news/articleList.html?page=4&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">4</a></li><li><a href="/news/articleList.html?page=5&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">5</a></li><li><a href="/news/articleList.html?page=6&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">6</a></li><li><a href="/news/articleList.html?page=7&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">7</a></li><li><a href="/news/articleList.html?page=8&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">8</a></li><li><a href="/news/articleList.html?page=9&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">9</a></li><li><a href="/news/articleList.html?page=10&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1">10</a></li><li class="pagination-onenext"><a href="/news/articleList.html?page=2&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1" title="다음"><span class="show-static-small-only">다음</span><i class="icon-angle-right-min"><span class="show-for-sr">다음</span></i></a></li><li class="pagination-next"><a href="/news/articleList.html?page=11&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1" title="다음"><i class="icon-angle-right-min"><span class="show-for-sr">다음</span></i></a></li><li class="pagination-end"><a href="/news/articleList.html?page=37&amp;total=738&amp;box_idxno=&amp;sc_section_code=S1N1" title="끝"><i class="icon-angle-double-right"><span class="show-for-sr">끝</span></i></a></li></ul></nav> </section>
+<nav aria-label="Pagination"><ul class="pagination"><li class="pagination-start"><a href="/news/articleList.html?page=1&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1" title="처음"><i class="icon-angle-double-left"><span class="show-for-sr">처음</span></i></a></li><li class="current user-bg">1</li><li><a href="/news/articleList.html?page=2&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">2</a></li><li><a href="/news/articleList.html?page=3&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">3</a></li><li><a href="/news/articleList.html?page=4&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">4</a></li><li><a href="/news/articleList.html?page=5&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">5</a></li><li><a href="/news/articleList.html?page=6&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">6</a></li><li><a href="/news/articleList.html?page=7&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">7</a></li><li><a href="/news/articleList.html?page=8&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">8</a></li><li><a href="/news/articleList.html?page=9&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">9</a></li><li><a href="/news/articleList.html?page=10&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1">10</a></li><li class="pagination-onenext"><a href="/news/articleList.html?page=2&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1" title="다음"><span class="show-static-small-only">다음</span><i class="icon-angle-right-min"><span class="show-for-sr">다음</span></i></a></li><li class="pagination-next"><a href="/news/articleList.html?page=11&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1" title="다음"><i class="icon-angle-right-min"><span class="show-for-sr">다음</span></i></a></li><li class="pagination-end"><a href="/news/articleList.html?page=38&amp;total=741&amp;box_idxno=&amp;sc_section_code=S1N1" title="끝"><i class="icon-angle-double-right"><span class="show-for-sr">끝</span></i></a></li></ul></nav> </section>
 </div>
 <!--// 기사리스트 예시 -->
 <!-- 편집패널 //-->
@@ -887,63 +886,63 @@ $(document).ready(function(){
 #skin-200 .auto-titles {width:calc(100% - 22px);padding-left:12px}
 </style>
 <div class="auto-article" id="skin-200"><div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163129" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163388" target="_top">
 <em class="number for-middle size-12 auto-fontF user-bg">1</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">AI로 수십억곡 재생해 160억 스트리밍 수익 올린 음악가 체포</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">오픈AI, '스트로베리' 정식 출시...챗GPT에 새 모델 '오픈AI o1' 탑재</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163053" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163421" target="_top">
 <em class="number for-middle size-12 auto-fontF user-bg">2</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">GPT-4 토큰 가격 18개월 동안 240배 하락..."GPT-5 성공 못 하면 사용료 0으로 떨어질 것"</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">'AI 대모'의 스타트업 공식 출범..."언어모델 뛰어넘는 '세계모델' 개발할 것"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163101" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163400" target="_top">
 <em class="number for-middle size-12 auto-fontF user-bg">3</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">구글, 크롬 브라우저에 '제미나이' 통합...크롬에서 바로 채팅 가능</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">[9월2주] '오픈AI o1'이 불러올 것들...프롬프트 엔지니어링 없어지나</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163161" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163422" target="_top">
 <em class="number for-middle size-12 auto-fontB">4</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">하이퍼라이트 "세계 최강 오픈 소스 모델 '리플렉션' 출시"</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">알트먼, 'o1' 지나친 기대 경계... "o1은 AGI가 아니라 시작일뿐"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163155" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163405" target="_top">
 <em class="number for-middle size-12 auto-fontB">5</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">오픈AI, '챗GPT' 사용 기업 100만곳 돌파...'GPT-5' 가격 인상 검토 중</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">구글, 신발 끈 매는 정교한 로봇 손기술 공개..."확산 모델 도입으로 차별화"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163162" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163375" target="_top">
 <em class="number for-middle size-12 auto-fontB">6</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">CNBC "삼성의 AI 도입은 별 효과 없어...애플이 이를 바꿀 것"</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">실시간 음성 대화 가능한 오픈 소스 모델 등장..."GPT-4o보다 대답 빨라"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163062" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163434" target="_top">
 <em class="number for-middle size-12 auto-fontB">7</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">데이터베이스와 LLM 지식 통합하는 '테이블 증강 생성' 기술 등장</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">머스크·앨리슨, 젠슨 황에게 GPU 애원..."제발 내 돈을 받아 줘"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163163" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163402" target="_top">
 <em class="number for-middle size-12 auto-fontB">8</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">퀄컴 CEO "삼성전자·구글과 MR 안경 개발 중"</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">"챗GPT는 SF 상황극에 약해...탈옥으로 폭탄 제조법 알아내"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163165" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163424" target="_top">
 <em class="number for-middle size-12 auto-fontB">9</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">수츠케버 "10년간 AI 주도한 스케일링 법칙 넘을 것...안전한 초지능 개발이 목표"</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">오픈AI 투자에 타이거 글로벌 합류..."챗GPT 유료 사용자 1100만명 돌파"</span>
 </a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=163089" target="_top">
+<a class="auto-valign" href="/news/articleView.html?idxno=163406" target="_top">
 <em class="number for-middle size-12 auto-fontB">10</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">SKT "퍼플렉시티 제휴로 AI 검색 우위 차지할 것...서치에서 앤서로 진화"</span>
+<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">구글, 통계 데이터 응답 정확도 높인 모델 ‘데이터젬마’ 공개</span>
 </a>
 </div>
 </div></section>
@@ -958,7 +957,7 @@ $(document).ready(function(){
 </style>
 <div class="auto-article" id="skin-196"><div class="item">
 <a href="/news/articleView.html?idxno=162781" target="_top">
-<span class="frame marbtm-12 movie-icon"><em class="auto-images" style="background-image:url(https://cdn.aitimes.com/news/photo/image/p1/162781_176350_258_1724396578_400.jpg)"></em></span>
+<span class="frame marbtm-12 movie-icon"><em class="auto-images" style="background-image:url(https://cdn.aitimes.com/news/photo/image/p3/162781_176350_258_1724396578_400.jpg)"></em></span>
 <strong class="auto-titles size-17 weight-500 line-4x2 auto-fontA onload">보스턴 다이내믹스, 로봇 팔굽혀펴기 영상 공개..."12초 동안 8번"</strong>
 </a>
 </div>
@@ -980,15 +979,15 @@ $(document).ready(function(){
 </a>
 </div>
 <div class="item">
-<a class="flex" href="/news/articleView.html?idxno=163028" target="_top"><span class="frame">
-<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202409/163028_176662_1530_v150.jpg)"></em>
-</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">TRAIN, 공공 AI 실무자 대상 전국 순회세미나 개최</span>
+<a class="flex" href="/news/articleView.html?idxno=163220" target="_top"><span class="frame">
+<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202409/163220_176924_5110_v150.jpg)"></em>
+</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">패스트캠퍼스, AI 개발자를 위한 ‘GENCON AI 컨퍼런스’ 개최</span>
 </a>
 </div>
 <div class="item">
-<a class="flex" href="/news/articleView.html?idxno=162929" target="_top"><span class="frame">
-<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202408/162929_176525_584_v150.jpg)"></em>
-</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">삼성전자, ‘개발자 컨퍼런스’ 미국서 10월3일 개최</span>
+<a class="flex" href="/news/articleView.html?idxno=163028" target="_top"><span class="frame">
+<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202409/163028_176662_1530_v150.jpg)"></em>
+</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">TRAIN, 공공 AI 실무자 대상 전국 순회세미나 개최</span>
 </a>
 </div>
 </div><a class="dis-block martop-18 size-13 line-3x1 auto-fontA text-center" href="/news/articleList.html?box_idxno=194&amp;view_type=sm" target="_top">더보기<i class="icon-plus marleft-6"></i></a>
