@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "rUYFKCFAQMsVik4RYl5w-r0tq_L3asrJ5C6MYHF0iJgNkemaEw-Mdc_s_8L2jZ61a29FcL7wpbIfi-qXAnYn3fY98tDUuXH0Pc4PQu56SX4DLVTwaeI9T6tQln3cN8mGwYPVgQ2",
+                UserId: "QNkI52tR_BXjXicHiq-bJw9ft6Mr9gSwjLakMtFdQbHd4jFA2ZOQ28eo5r46WVcadh42cnoFr_6BRe06l-QUza1TkEHyvfASMCd4jKnkRst1PcZHI-QoP4wQsMu_Bpk-fiXrwg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "rUYFKCFAQMsVik4RYl5w-r0tq_L3asrJ5C6MYHF0iJgNkemaEw-Mdc_s_8L2jZ61a29FcL7wpbIfi-qXAnYn3fY98tDUuXH0Pc4PQu56SX4DLVTwaeI9T6tQln3cN8mGwYPVgQ2" === "rUYFKCFAQMsVik4RYl5w-r0tq_L3asrJ5C6MYHF0iJgNkemaEw-Mdc_s_8L2jZ61a29FcL7wpbIfi-qXAnYn3fY98tDUuXH0Pc4PQu56SX4DLVTwaeI9T6tQln3cN8mGwYPVgQ2" ? "Anonymous" : "User",
+                UserType: "QNkI52tR_BXjXicHiq-bJw9ft6Mr9gSwjLakMtFdQbHd4jFA2ZOQ28eo5r46WVcadh42cnoFr_6BRe06l-QUza1TkEHyvfASMCd4jKnkRst1PcZHI-QoP4wQsMu_Bpk-fiXrwg2" === "QNkI52tR_BXjXicHiq-bJw9ft6Mr9gSwjLakMtFdQbHd4jFA2ZOQ28eo5r46WVcadh42cnoFr_6BRe06l-QUza1TkEHyvfASMCd4jKnkRst1PcZHI-QoP4wQsMu_Bpk-fiXrwg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'rUYFKCFAQMsVik4RYl5w-r0tq_L3asrJ5C6MYHF0iJgNkemaEw-Mdc_s_8L2jZ61a29FcL7wpbIfi-qXAnYn3fY98tDUuXH0Pc4PQu56SX4DLVTwaeI9T6tQln3cN8mGwYPVgQ2'
+            'user_id': 'QNkI52tR_BXjXicHiq-bJw9ft6Mr9gSwjLakMtFdQbHd4jFA2ZOQ28eo5r46WVcadh42cnoFr_6BRe06l-QUza1TkEHyvfASMCd4jKnkRst1PcZHI-QoP4wQsMu_Bpk-fiXrwg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'rUYFKCFAQMsVik4RYl5w-r0tq_L3asrJ5C6MYHF0iJgNkemaEw-Mdc_s_8L2jZ61a29FcL7wpbIfi-qXAnYn3fY98tDUuXH0Pc4PQu56SX4DLVTwaeI9T6tQln3cN8mGwYPVgQ2'
+            'crm_id': 'QNkI52tR_BXjXicHiq-bJw9ft6Mr9gSwjLakMtFdQbHd4jFA2ZOQ28eo5r46WVcadh42cnoFr_6BRe06l-QUza1TkEHyvfASMCd4jKnkRst1PcZHI-QoP4wQsMu_Bpk-fiXrwg2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?6348735ef25e8a4c"></script><style>body {
+<script src="/Content/dist/js/preload.js?739d02fa11f59752"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?6348735ef25e8a4c"></script><script defer="defer" src="/Content/dist/js/default.js?6348735ef25e8a4c"></script><link href="/Content/dist/css/default.css?6348735ef25e8a4c" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?739d02fa11f59752"></script><script defer="defer" src="/Content/dist/js/default.js?739d02fa11f59752"></script><link href="/Content/dist/css/default.css?739d02fa11f59752" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2075,7 +2075,7 @@
 </div>
 <div class="grid grid-cols-2 gap-4 sm:grid-cols-3" v-show="eventList.length">
 <div :key="item.Id" class="mt-4" v-for="item in eventList">
-<ev-event-card :favorites="userFavoriteEvents" :item="item" :utm="{ source: 'eventus', medium: 'organic', campaign: 'search-result', term: searchViewModel.query }" @on-click="eventClick">
+<ev-event-card :favorites="userFavoriteEvents" :item="item" :utm="{ source: 'eventus', medium: item.pitId ? 'banner' : 'organic', campaign: 'search-result', term: searchViewModel.query }" @on-click="eventClick">
 </ev-event-card>
 </div>
 </div>
@@ -2407,7 +2407,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a href="https://event-us-hostguide.oopy.io/348a2604-a70a-4a16-a970-73985c2c304d?v=17eb172f4a6643e688abc7149cc8d949" target="_blank">
+<a href="https://eventwithus.notion.site/348a2604a70a4a16a97073985c2c304d" target="_blank">
 <span v-if="language === 'ko'">자주 묻는 질문</span>
 <span v-else="">FAQ</span>
 </a>
@@ -2638,7 +2638,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="rA_dASWXOFNral1lREgDTfkV2DA_GoVWZyKUhIQEjDP27YDrSxldfjfakNyT7KfwV66hbr7N2kysbLzwCeAau_X3ZZc1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="3yGFRTuQXSJymNGG7mxQqppodYwzYVx5BRi-dUedCjuC2_ku73KJX9oFnrpeFJ73c2pz9wCYtSnlwoEzIqcC2gZnuzg1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -2982,7 +2982,6 @@
                         channelActive: 'channel',
                         channelFilter: 'order',
                         searchInput: '',
-                        showPriceModal: false,
                         language: 'ko',
                         demo: {
                             Title: '무료로 솔루션을 체험해 보세요.',
@@ -3952,7 +3951,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'rUYFKCFAQMsVik4RYl5w-r0tq_L3asrJ5C6MYHF0iJgNkemaEw-Mdc_s_8L2jZ61a29FcL7wpbIfi-qXAnYn3fY98tDUuXH0Pc4PQu56SX4DLVTwaeI9T6tQln3cN8mGwYPVgQ2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'QNkI52tR_BXjXicHiq-bJw9ft6Mr9gSwjLakMtFdQbHd4jFA2ZOQ28eo5r46WVcadh42cnoFr_6BRe06l-QUza1TkEHyvfASMCd4jKnkRst1PcZHI-QoP4wQsMu_Bpk-fiXrwg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -3994,7 +3993,7 @@ docReady(() => {
             }
         }
     }
-    
+
 
     function iOSSafari(userAgent) {
         return (
@@ -4004,8 +4003,6 @@ docReady(() => {
         );
     }
 
-    const bannerDataRaw = '[{\"Id\":4831,\"New_Start_Date\":\"2024-09-16T00:00:00\",\"New_End_Date\":\"2024-09-20T23:59:59\",\"Status\":\"ADVERTISING\",\"ApplyDate\":\"2024-08-19T16:49:21.2952079\",\"Support\":false,\"Position\":\"searchpage\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b9514a27f9374b668c28516ba8693886.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/71e9418f75944f2c85efc7740b586a88.png\",\"Click_Url\":\"https://event-us.kr/pnp/event/89715\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"PLUGANDPLAY EXPO\",\"BannerDescription\":\"플러그앤플레이코리아 엑스포\",\"BannerDate\":\"2024. 10. 23.(수) 10:00\",\"BannerPlace\":\"오프라인 행사\"},{\"Id\":1228,\"New_Start_Date\":\"2023-02-19T00:00:00\",\"New_End_Date\":\"2023-02-19T23:59:59\",\"Status\":\"CANCEL\",\"ApplyDate\":\"2022-11-21T18:50:30.9875727\",\"Support\":null,\"Position\":\"search\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png\",\"Click_Url\":\"https://event-us.kr/hostcenter\",\"Banner\":{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#FFFFFF\\\",\\\"description\\\":\\\"#FFFFFF\\\",\\\"date\\\":\\\"#FFFFFF\\\",\\\"place\\\":\\\"#FFFFFF\\\"}}\",\"BannerTitle\":\"이벤터스에선 누구나 가능한 호스트\",\"BannerDescription\":\"원하는 행사가 없다면 직접 열어보세요\",\"BannerDate\":null,\"BannerPlace\":null},{\"Id\":1158,\"New_Start_Date\":\"2023-02-19T00:00:00\",\"New_End_Date\":\"2023-02-19T23:59:59\",\"Status\":\"CANCEL\",\"ApplyDate\":\"2022-11-21T18:43:59.0500939\",\"Support\":null,\"Position\":\"search\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png\",\"Click_Url\":\"https://pf.kakao.com/_xfxhGxcl\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#000000\\\",\\\"description\\\":\\\"#000000\\\",\\\"date\\\":\\\"#000000\\\",\\\"place\\\":\\\"#000000\\\"}}\",\"BannerTitle\":\"카카오 플러스 친구가 되어주세요!\",\"BannerDescription\":\"이벤터스가 추천하는 행사가 궁금하다면\",\"BannerDate\":null,\"BannerPlace\":null},{\"Id\":1169,\"New_Start_Date\":\"2023-02-19T00:00:00\",\"New_End_Date\":\"2023-02-19T23:59:59\",\"Status\":\"CANCEL\",\"ApplyDate\":\"2022-11-21T18:46:36.7216886\",\"Support\":null,\"Position\":\"search\",\"ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png\",\"M_ImageUrl\":\"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png\",\"Click_Url\":\"https://page.stibee.com/subscriptions/3818\",\"Banner\":{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}},\"BannerJson\":\"{\\\"color\\\":{\\\"title\\\":\\\"#000000\\\",\\\"description\\\":\\\"#000000\\\",\\\"date\\\":\\\"#000000\\\",\\\"place\\\":\\\"#000000\\\"}}\",\"BannerTitle\":\"이벤트레터 구독으로 누구보다 빠르게!\",\"BannerDescription\":\"이번 주 놓쳐서는 안 되는 행사 확인!\",\"BannerDate\":null,\"BannerPlace\":null}]';
-    const searchDataRaw = '';
     const priceConstants = {
         min: 0,
         max: 100,
@@ -4046,799 +4043,885 @@ docReady(() => {
         };
     }
     window.searchApp = ui.createApp({
-        data() {
-            return {
-                inited: false,
-                blobUrl: asp.blobUrl,
-                user: asp.user,
-                searchTriggerModel: getSearchTriggerModel(),
-                showFilter: false,
-                banners: JSON.parse(bannerDataRaw),
-                eventList: [],
-                eventCount: 0,
-                metaData: {
-                    page: {
-                        total_pages: 1,
+            data() {
+                return {
+                    inited: false,
+                    blobUrl: asp.blobUrl,
+                    user: asp.user,
+                    searchTriggerModel: getSearchTriggerModel(),
+                    showFilter: false,
+                    searchDataRaw: null,
+                    banners: [{"Id":4832,"New_Start_Date":"2024-09-23T00:00:00","New_End_Date":"2024-09-27T23:59:59","Status":"ADVERTISING","ApplyDate":"2024-08-19T16:49:47.8226972","Support":false,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4d7f516a6dc44ff796e37410909cac29.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d1a1c8ac06f842d4a0aa64a8a9a7f371.png","Click_Url":"https://event-us.kr/pnp/event/89715","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"PLUGANDPLAY EXPO","BannerDescription":"플러그앤플레이코리아 엑스포","BannerDate":"2024. 10. 23.(수) 10:00","BannerPlace":"오프라인 행사"},{"Id":5942,"New_Start_Date":"2024-09-20T00:00:00","New_End_Date":"2024-09-25T23:59:59","Status":"ADVERTISING","ApplyDate":"2024-09-20T14:48:51.095963","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ef98924041c64c92a9ef9c18e243b55d.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/6c731f5a88ad4109aa9b6332040faaaf.png","Click_Url":"https://event-us.kr/m/90797/22449","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"9월 D•DAY 오픈이노베이션 ","BannerDescription":"주목받고 있는 스타트업을 만나보세요!","BannerDate":"2024. 09. 26.(목) 15:00","BannerPlace":"오프라인 행사"}],
+                    searchResultBanners: [{"Id":"90990","CoverImageUrl":"/Image/eduprivacykisa/90990/ProjectInfo/Cover/54a257d808874dd6a95604736648237a.jpg","Title":"개인정보보호교육 신기술분야 보호조치과정","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/eduprivacykisa/TopLogoImage/839db95e597b4f57b04873289e244c9e.png","EventType":"강연/세미나","Category":"기타","Category2":null,"StartDate":"2024-09-26T13:00:00","CloseDate":"2024-09-26T16:00:00","RegisterStartDate":"2024-09-06T00:00:00","RegisterDueDate":"2024-09-25T23:30:00","ViewCount":38,"AppSubDomain":"eduprivacykisa","IsSuper":false,"AppTitle":"2024 KISA 개인정보보호교육","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2024-09-06T11:26:48.2505442","EventSystemType":"online","OnlineEventType":"other","ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":5944,"IsAdCheck":true,"IsSupportAd":false,"IsAdMark":true,"Url":null,"CorrectionValue":0.0}],
+                    isSearchResultBannerShown: false,
+                    eventList: [],
+                    eventCount: 0,
+                    metaData: {
+                        page: {
+                            total_pages: 1,
+                        },
                     },
+                    pickedTime: [],
+                    channelList: [],
+                    channelCount: 0,
+                    isSearching: false,
+                    userFavoriteEvents: [],
+                    userSubscribeChannels: [],
+                    categoryOpen: false,
+                    eventtypeOpen: false,
+                    categories: {
+                        '창업': false,
+                        'IT/프로그래밍': false,
+                        '라이프': false,
+                        '경제/금융': false,
+                        '경영': false,
+                        '인문/사회': false,
+                        '예술': false,
+                        '마케팅': false,
+                        '커리어': false,
+                        '과학기술': false,
+                        '디자인/영상': false,
+                        '의료/의학': false,
+                        '행사 기획': false,
+                        '관광/여행': false,
+                        '기타': false,
+                    },
+                    eventtypes: {
+                        '북 콘서트': false,
+                        '체험 프로그램': false,
+                        '강연/세미나': false,
+                        '모임/커뮤니티': false,
+                        '멘토링/대외활동': false,
+                        '대회/공모전': false,
+                        '데모데이': false,
+                        '워크샵/클리닉': false,
+                        '박람회/페어': false,
+                        '관광/투어': false,
+                        '콘테스트/콩쿠르': false,
+                        '회의/컨벤션': false,
+                        '축제/공연/전시': false,
+                        '기타': false,
+                    },
+                    areaItem: [
+                        '서울/경기/인천',
+                        '부산/울산/경남',
+                        '대구/경북',
+                        '충청/대전/세종',
+                        '전라/광주',
+                        '강원',
+                        '제주',
+                    ],
+                    bannerOptions: {
+                        loop: true,
+                        autoplay: true,
+                        speed: 1000,
+                        navigation: {
+                            nextEl: '.next',
+                            prevEl: '.prev',
+                        },
+                    },
+                    sliderOption: {
+                        showTooltip: 'slide',
+                        format(value) {
+                            if (value === priceConstants.max) {
+                                return '무제한';
+                            }
+
+                            return `${util.numberWithCommas(value * priceConstants.multiple)}원`;
+                        },
+                    },
+                    boosts: {
+                        complate_score: {
+                            type: 'functional',
+                            function: 'linear',
+                            operation: 'add',
+                            factor: 0.3,
+                        },
+                        popular_score: {
+                            type: 'functional',
+                            function: 'linear',
+                            operation: 'add',
+                            factor: 0.2,
+                        },
+                        click_score: {
+                            type: 'functional',
+                            function: 'logarithmic',
+                            operation: 'add',
+                            factor: 0.1,
+                        },
+                        submit_score: {
+                            type: 'functional',
+                            function: 'logarithmic',
+                            operation: 'add',
+                            factor: 1,
+                        },
+                        date: {
+                            type: 'proximity',
+                            function: 'linear',
+                            center: 'now',
+                            factor: 0,
+                        },
+                    },
+                    isUseQueryState: true,
+                    beforeQuery: null,
+                    language: 'ko',
+                    transEn: {
+                        '서울/경기/인천': 'Seoul/Gyeonggi/Incheon',
+                        '부산/울산/경남': 'Busan/Ulsan/Gyeongnam',
+                        '대구/경북': 'Daegu/Gyeongbuk',
+                        '충청/대전/세종': 'Chungcheong/Daejeon/Sejong',
+                        '전라/광주': 'Jeolla/Gwangju',
+                        '강원': 'Gangwon',
+                        '제주': 'Jeju',
+
+                        '창업': 'Start-up',
+                        'IT/프로그래밍': 'IT/Programming',
+                        '라이프': 'Life',
+                        '경제/금융': 'Economics/Finance',
+                        '경영': 'Management',
+                        '인문/사회': 'Humanities/Social Sciences',
+                        '예술': 'Art',
+                        '마케팅': 'Marketing',
+                        '커리어': 'Career',
+                        '과학기술': 'Science and Technology',
+                        '디자인/영상': 'Design/Video',
+                        '의료/의학': 'Medical/Healthcare',
+                        '행사 기획': 'Event Planning',
+                        '관광/여행': 'Tourism/Travel',
+                        '기타': 'Others',
+
+                        '강연/세미나': 'Lecture/Seminar',
+                        '모임/커뮤니티': 'Gathering/Community',
+                        '멘토링/대외활동': 'Mentoring/Activities',
+                        '대회/공모전': 'Competition/Contest',
+                        '데모데이': 'Demo Day',
+                        '워크샵/클리닉': 'Workshops/Clinics',
+                        '박람회/페어': 'Exhibition/Fair',
+                        '관광/투어': 'Sightseeing/Tour',
+                        '콘테스트/콩쿠르': 'Contest/Concours',
+                        '회의/컨벤션': 'Conference/Convention',
+                        '축제/공연/전시': 'Festival/Performance/Exhibition',
+
+                        '오늘': 'Today',
+                        '이번주': 'This Week',
+                        '이번달': 'This Month',
+                        '기간선택': 'Select Period',
+
+                        '모집 종료 행사 포함': 'Closed events included',
+                        '온라인': 'Online',
+                        '오프라인': 'Offline',
+                        '무료': 'Free',
+                        '유료': 'Paid',
+                    },
+                };
+            },
+            computed: {
+                searchViewModel() {
+                    return getSearchModel(this.searchTriggerModel);
                 },
-                pickedTime: [],
-                channelList: [],
-                channelCount: 0,
-                isSearching: false,
-                userFavoriteEvents: [],
-                userSubscribeChannels: [],
-                categoryOpen: false,
-                eventtypeOpen: false,
+                filtedCategories() {
+                    const keys = Object.keys(this.categories);
+
+                    return this.categoryOpen ? keys : keys.slice(0, 5);
+                },
+                filtedEventtypes() {
+                    const keys = Object.keys(this.eventtypes);
+
+                    return this.eventtypeOpen ? keys : keys.slice(0, 5);
+                },
+                priceText() {
+                const min = this.toNumberWithCommas(this.searchTriggerModel.priceValue[0] * priceConstants.multiple);
+                const max = this.toNumberWithCommas(this.searchTriggerModel.priceValue[1] * priceConstants.multiple);
+                    const over = this.searchTriggerModel.priceValue[1] === this.searchTriggerModel.priceMax ? '+' : '';
+                    const won = this.language === 'ko' ? '원' : 'KRW';
+
+                    return `${min} ~ ${max}${won}${over}`;
+                },
+                dateRange() {
+                    const self = this;
+                    const result = {
+                        start: moment(null),
+                        end: moment(null),
+                    };
+                    switch (self.searchTriggerModel.date) {
+                        case '모든날':
+                            break;
+                        case '오늘':
+                            {
+                                result.start = moment().startOf('day');
+                                result.end = moment().endOf('day');
+                            }
+                            break;
+                        case '이번주':
+                            {
+                                result.start = moment().startOf('week');
+                                result.end = moment().endOf('week');
+                            }
+                            break;
+                        case '이번달':
+                            {
+                                result.start = moment().startOf('month');
+                                result.end = moment().endOf('month');
+                            }
+                            break;
+                        case '기간선택':
+                            {
+                                result.start = moment(self.pickedTime[0] ?? null).startOf('day');
+                                result.end = moment(self.pickedTime[1] ?? null).endOf('day');
+                            }
+                            break;
+                    }
+
+                    return result;
+                },
+                searchMax() {
+                    const max = this.metaData.page.total_pages;
+
+                    return max > 100 ? 100 : max;
+                },
+                searchTriggerWatchModel() {
+                    return getSearchTriggerModel(this.searchTriggerModel);
+                },
+                filterBadges() {
+                    const self = this;
+                    const badges = [];
+                    if (self.searchTriggerModel.query) {
+                        badges.push({
+                            title: '검색어: ' + self.searchTriggerModel.query,
+                            onCancel: function () {
+                                window.setLayoutSearchInput(null);
+                                window.setQuery(null);
+                            },
+                        });
+                    }
+                    if (self.searchTriggerModel.date !== '모든날') {
+                        badges.push({
+                            title: self.searchTriggerModel.date,
+                            onCancel: function () {
+                                self.searchTriggerModel.date = '모든날';
+                            },
+                        });
+                    }
+                    if (self.searchTriggerModel.includeEnd === true) {
+                        badges.push({
+                            title: '모집 종료 행사 포함',
+                            onCancel: function () {
+                                self.searchTriggerModel.includeEnd = false;
+                            },
+                        });
+                    }
+                    Object.keys(self.categories).forEach((x) => {
+                        if (self.categories[x]) {
+                            badges.push({
+                                title: x,
+                                onCancel: function () {
+                                    self.categories[x] = false;
+                                },
+                            });
+                        }
+                    });
+                    Object.keys(self.eventtypes).forEach((x) => {
+                        if (self.eventtypes[x]) {
+                            badges.push({
+                                title: x,
+                                onCancel: function () {
+                                    self.eventtypes[x] = false;
+                                },
+                            });
+                        }
+                    });
+                    if (self.searchTriggerModel.eventsystemtype && self.searchTriggerModel.eventsystemtype !== 'all') {
+                        badges.push({
+                            title: self.searchTriggerModel.eventsystemtype,
+                            onCancel: function () {
+                                self.searchTriggerModel.eventsystemtype = 'all';
+                            },
+                        });
+                    }
+                    if (self.searchTriggerModel.costmin && self.searchTriggerModel.costmin !== 'all') {
+                        badges.push({
+                            title: self.searchTriggerModel.costmin,
+                            onCancel: function () {
+                                self.searchTriggerModel.costmin = 'all';
+                            },
+                        });
+                    }
+                    if (self.searchTriggerModel.area) {
+                        badges.push({
+                            title: self.searchTriggerModel.area,
+                            onCancel: function () {
+                                self.searchTriggerModel.area = '';
+                            },
+                        });
+                    }
+
+                    return badges;
+                },
+                isSearchResultBannerCondition() {
+                    return this.searchResultBanners.length > 0 && this.searchViewModel.order === 'score';
+                },
+                isSearchResultBannerVisible() {
+                    return this.isSearchResultBannerCondition && this.metaData.page.current === 1;
+                },
+            },
+            watch: {
+                searchTriggerWatchModel(n, o) {
+                    if (n.page === o.page) {
+                        this.searchTriggerModel.page = 1;
+                    }
+                    this.getList();
+                },
                 categories: {
-                    '창업': false,
-                    'IT/프로그래밍': false,
-                    '라이프': false,
-                    '경제/금융': false,
-                    '경영': false,
-                    '인문/사회': false,
-                    '예술': false,
-                    '마케팅': false,
-                    '커리어': false,
-                    '과학기술': false,
-                    '디자인/영상': false,
-                    '의료/의학': false,
-                    '행사 기획': false,
-                    '관광/여행': false,
-                    '기타': false,
+                    deep: true,
+                    handler(newValue) {
+                        this.searchTriggerModel.category = Object.keys(newValue)
+                            .filter((x) => newValue[x])
+                            .join(',');
+                    },
                 },
                 eventtypes: {
-                    '북 콘서트': false,
-                    '체험 프로그램': false,
-                    '강연/세미나': false,
-                    '모임/커뮤니티': false,
-                    '멘토링/대외활동': false,
-                    '대회/공모전': false,
-                    '데모데이': false,
-                    '워크샵/클리닉': false,
-                    '박람회/페어': false,
-                    '관광/투어': false,
-                    '콘테스트/콩쿠르': false,
-                    '회의/컨벤션': false,
-                    '축제/공연/전시': false,
-                    '기타': false,
-                },
-                areaItem: [
-                    '서울/경기/인천',
-                    '부산/울산/경남',
-                    '대구/경북',
-                    '충청/대전/세종',
-                    '전라/광주',
-                    '강원',
-                    '제주',
-                ],
-                bannerOptions: {
-                    loop: true,
-                    autoplay: true,
-                    speed: 1000,
-                    navigation: {
-                        nextEl: '.next',
-                        prevEl: '.prev',
-                    },
-                },
-                sliderOption: {
-                    showTooltip: 'slide',
-                    format(value) {
-                        if (value === priceConstants.max) {
-                            return '무제한';
-                        }
-
-                        return `${util.numberWithCommas(value * priceConstants.multiple)}원`;
+                    deep: true,
+                    handler(newValue) {
+                        this.searchTriggerModel.eventtype = Object.keys(newValue)
+                            .filter((x) => newValue[x])
+                            .join(',');
                     },
                 },
                 boosts: {
-                    complate_score: {
-                        type: 'functional',
-                        function: 'linear',
-                        operation: 'add',
-                        factor: 0.3,
-                    },
-                    popular_score: {
-                        type: 'functional',
-                        function: 'linear',
-                        operation: 'add',
-                        factor: 0.2,
-                    },
-                    click_score: {
-                        type: 'functional',
-                        function: 'logarithmic',
-                        operation: 'add',
-                        factor: 0.1,
-                    },
-                    submit_score: {
-                        type: 'functional',
-                        function: 'logarithmic',
-                        operation: 'add',
-                        factor: 1,
-                    },
-                    date: {
-                        type: 'proximity',
-                        function: 'linear',
-                        center: 'now',
-                        factor: 0,
+                    deep: true,
+                    handler() {
+                        this.getList();
                     },
                 },
-                isUseQueryState: true,
-                beforeQuery: null,
-                language: 'ko',
-                transEn: {
-                    '서울/경기/인천': 'Seoul/Gyeonggi/Incheon',
-                    '부산/울산/경남': 'Busan/Ulsan/Gyeongnam',
-                    '대구/경북': 'Daegu/Gyeongbuk',
-                    '충청/대전/세종': 'Chungcheong/Daejeon/Sejong',
-                    '전라/광주': 'Jeolla/Gwangju',
-                    '강원': 'Gangwon',
-                    '제주': 'Jeju',
-
-                    '창업': 'Start-up',
-                    'IT/프로그래밍': 'IT/Programming',
-                    '라이프': 'Life',
-                    '경제/금융': 'Economics/Finance',
-                    '경영': 'Management',
-                    '인문/사회': 'Humanities/Social Sciences',
-                    '예술': 'Art',
-                    '마케팅': 'Marketing',
-                    '커리어': 'Career',
-                    '과학기술': 'Science and Technology',
-                    '디자인/영상': 'Design/Video',
-                    '의료/의학': 'Medical/Healthcare',
-                    '행사 기획': 'Event Planning',
-                    '관광/여행': 'Tourism/Travel',
-                    '기타': 'Others',
-
-                    '강연/세미나': 'Lecture/Seminar',
-                    '모임/커뮤니티': 'Gathering/Community',
-                    '멘토링/대외활동': 'Mentoring/Activities',
-                    '대회/공모전': 'Competition/Contest',
-                    '데모데이': 'Demo Day',
-                    '워크샵/클리닉': 'Workshops/Clinics',
-                    '박람회/페어': 'Exhibition/Fair',
-                    '관광/투어': 'Sightseeing/Tour',
-                    '콘테스트/콩쿠르': 'Contest/Concours',
-                    '회의/컨벤션': 'Conference/Convention',
-                    '축제/공연/전시': 'Festival/Performance/Exhibition',
-
-                    '오늘': 'Today',
-                    '이번주': 'This Week',
-                    '이번달': 'This Month',
-                    '기간선택': 'Select Period',
-
-                    '모집 종료 행사 포함': 'Closed events included',
-                    '온라인': 'Online',
-                    '오프라인': 'Offline',
-                    '무료': 'Free',
-                    '유료': 'Paid',
-                },
-            };
-        },
-        computed: {
-            searchViewModel() {
-                return getSearchModel(this.searchTriggerModel);
-            },
-            filtedCategories() {
-                const keys = Object.keys(this.categories);
-
-                return this.categoryOpen ? keys : keys.slice(0, 5);
-            },
-            filtedEventtypes() {
-                const keys = Object.keys(this.eventtypes);
-
-                return this.eventtypeOpen ? keys : keys.slice(0, 5);
-            },
-            priceText() {
-                const min = this.toNumberWithCommas(this.searchTriggerModel.priceValue[0] * priceConstants.multiple);
-                const max = this.toNumberWithCommas(this.searchTriggerModel.priceValue[1] * priceConstants.multiple);
-                const over = this.searchTriggerModel.priceValue[1] === this.searchTriggerModel.priceMax ? '+' : '';
-                const won = this.language === 'ko' ? '원' : 'KRW';
-
-                return `${min} ~ ${max}${won}${over}`;
-            },
-            dateRange() {
-                const self = this;
-                const result = {
-                    start: moment(null),
-                    end: moment(null),
-                };
-                switch (self.searchTriggerModel.date) {
-                    case '모든날':
-                        break;
-                    case '오늘':
-                        {
-                            result.start = moment().startOf('day');
-                            result.end = moment().endOf('day');
-                        }
-                        break;
-                    case '이번주':
-                        {
-                            result.start = moment().startOf('week');
-                            result.end = moment().endOf('week');
-                        }
-                        break;
-                    case '이번달':
-                        {
-                            result.start = moment().startOf('month');
-                            result.end = moment().endOf('month');
-                        }
-                        break;
-                    case '기간선택':
-                        {
-                            result.start = moment(self.pickedTime[0] ?? null).startOf('day');
-                            result.end = moment(self.pickedTime[1] ?? null).endOf('day');
-                        }
-                        break;
-                }
-
-                return result;
-            },
-            searchMax() {
-                const max = this.metaData.page.total_pages;
-
-                return max > 100 ? 100 : max;
-            },
-            searchTriggerWatchModel() {
-                return getSearchTriggerModel(this.searchTriggerModel);
-            },
-            filterBadges() {
-                const self = this;
-                const badges = [];
-                if (self.searchTriggerModel.query) {
-                    badges.push({
-                        title: '검색어: ' + self.searchTriggerModel.query,
-                        onCancel: function () {
-                            window.setLayoutSearchInput(null);
-                            window.setQuery(null);
-                        },
-                    });
-                }
-                if (self.searchTriggerModel.date !== '모든날') {
-                    badges.push({
-                        title: self.searchTriggerModel.date,
-                        onCancel: function () {
-                            self.searchTriggerModel.date = '모든날';
-                        },
-                    });
-                }
-                if (self.searchTriggerModel.includeEnd === true) {
-                    badges.push({
-                        title: '모집 종료 행사 포함',
-                        onCancel: function () {
-                            self.searchTriggerModel.includeEnd = false;
-                        },
-                    });
-                }
-                Object.keys(self.categories).forEach((x) => {
-                    if (self.categories[x]) {
-                        badges.push({
-                            title: x,
-                            onCancel: function () {
-                                self.categories[x] = false;
-                            },
-                        });
+                showFilter(n) {
+                    if (n) {
+                        window.history.pushState(null, '', location.href);
                     }
-                });
-                Object.keys(self.eventtypes).forEach((x) => {
-                    if (self.eventtypes[x]) {
-                        badges.push({
-                            title: x,
-                            onCancel: function () {
-                                self.eventtypes[x] = false;
-                            },
-                        });
+                },
+                pickedTime(n) {
+                    const dateModel = getSearchTriggerModel(this.searchTriggerModel);
+                    dateModel.dateStart = n[0] ?? '';
+                    dateModel.dateEnd = n[1] ?? '';
+                    this.setTriggerModel(dateModel);
+                },
+                eventList() {
+                    if (!this.isSearchResultBannerShown && this.isSearchResultBannerVisible) {
+                        this.isSearchResultBannerShown = true;
+                        this.onSearchResultBannerShow();
                     }
+                },
+            },
+            created() {
+                const self = this;
+                self.setTriggerModel(getSearchTriggerModel(queryString.parse(location.search)));
+                self.getChannelList();
+                axios.post('/home/getuserfavoriteevents').then(function (result) {
+                    self.userFavoriteEvents = result.data;
                 });
-                if (self.searchTriggerModel.eventsystemtype && self.searchTriggerModel.eventsystemtype !== 'all') {
-                    badges.push({
-                        title: self.searchTriggerModel.eventsystemtype,
-                        onCancel: function () {
-                            self.searchTriggerModel.eventsystemtype = 'all';
-                        },
-                    });
-                }
-                if (self.searchTriggerModel.costmin && self.searchTriggerModel.costmin !== 'all') {
-                    badges.push({
-                        title: self.searchTriggerModel.costmin,
-                        onCancel: function () {
-                            self.searchTriggerModel.costmin = 'all';
-                        },
-                    });
-                }
-                if (self.searchTriggerModel.area) {
-                    badges.push({
-                        title: self.searchTriggerModel.area,
-                        onCancel: function () {
-                            self.searchTriggerModel.area = '';
-                        },
-                    });
-                }
+                axios.post('/useraction/getusersubscribeapps').then(function (result) {
+                    self.userSubscribeChannels = result.data;
+                });
 
-                return badges;
-            },
-        },
-        watch: {
-            searchTriggerWatchModel(n, o) {
-                if (n.page === o.page) {
-                    this.searchTriggerModel.page = 1;
-                }
-                this.getList();
-            },
-            categories: {
-                deep: true,
-                handler(newValue) {
-                    this.searchTriggerModel.category = Object.keys(newValue)
-                        .filter((x) => newValue[x])
-                        .join(',');
-                },
-            },
-            eventtypes: {
-                deep: true,
-                handler(newValue) {
-                    this.searchTriggerModel.eventtype = Object.keys(newValue)
-                        .filter((x) => newValue[x])
-                        .join(',');
-                },
-            },
-            boosts: {
-                deep: true,
-                handler() {
-                    this.getList();
-                },
-            },
-            showFilter(n) {
-                if (n) {
-                    window.history.pushState(null, '', location.href);
-                }
-            },
-            pickedTime(n) {
-                const dateModel = getSearchTriggerModel(this.searchTriggerModel);
-                dateModel.dateStart = n[0] ?? '';
-                dateModel.dateEnd = n[1] ?? '';
-                this.setTriggerModel(dateModel);
-            },
-        },
-        created() {
-            const self = this;
-            self.setTriggerModel(getSearchTriggerModel(queryString.parse(location.search)));
-            self.getChannelList();
-            axios.post('/home/getuserfavoriteevents').then(function (result) {
-                self.userFavoriteEvents = result.data;
-            });
-            axios.post('/useraction/getusersubscribeapps').then(function (result) {
-                self.userSubscribeChannels = result.data;
-            });
-
-            window.onpopstate = function (e) {
-                self.isUseQueryState = false;
-                self.showFilter = false;
-                self.setTriggerModel(
-                    e.state?.searchTriggerModelJson
-                        ? JSON.parse(e.state.searchTriggerModelJson)
-                        : getSearchTriggerModel(queryString.parse(location.search)),
-                );
-            };
-
-            window.setQuery = function (query) {
-                self.setTriggerModel(getSearchTriggerModel({ query }));
-            };
-            document.addEventListener('languageChanged', (e) => {
-                this.language = e.detail.language;
-            });
-        },
-        methods: {
-            setTriggerModel(model) {
-                const self = this;
-                if (self.inited && util.isSameModel(model, self.searchTriggerModel)) return;
-
-                const categories = model.category.split(',');
-                Object.keys(self.categories).forEach((x) => (self.categories[x] = categories.includes(x)));
-
-                const eventtypes = model.eventtype.split(',');
-                Object.keys(self.eventtypes).forEach((x) => (self.eventtypes[x] = eventtypes.includes(x)));
-
-                if (!['모든날', '오늘', '이번주', '이번달', '기간선택'].includes(model.date)) {
-                    const parsing = model.date.split(',')[0].split('~');
-                    model.date = '기간선택';
-                    model.dateStart = parsing[0] ?? null;
-                    model.dateEnd = parsing[1];
-                    self.pickedTime = [
-                        moment(model.dateStart).format('yyyy/MM/DD'),
-                        moment(model.dateEnd).format('yyyy/MM/DD'),
-                    ];
-                }
-
-                self.searchTriggerModel = model;
-            },
-            moment(time) {
-                return moment(time);
-            },
-            toNumberWithCommas(num) {
-                return util.numberWithCommas(num);
-            },
-            bannerColor(banner) {
-                return banner.Banner.color;
-            },
-            replaceEnter(e) {
-                return e.replace(/(?:\r\n|\r|\n)/g, '<br />');
-            },
-            setQueryState() {
-                const self = this;
-                const model = self.searchViewModel;
-                const title = ' 행사 - 이벤터스 행사 검색';
-                const metaChange = {
-                    title(value) {
-                        document.title = value;
-                        document.querySelector('meta[property="og:title"]').setAttribute('content', value);
-                    },
-                    description(value) {
-                        document.querySelector('meta[name="description"]').setAttribute('content', value);
-                        document.querySelector('meta[property="og:description"]').setAttribute('content', value);
-                    },
-                    keywords(value) {
-                        document.querySelector('meta[name="keywords"]').setAttribute('content', value);
-                    },
-                    url(value) {
-                        document.querySelector('link[rel="canonical"]').href = value;
-                        document
-                            .querySelector('meta[property="og:url"]')
-                            .setAttribute('content', 'https://event-us.kr' + value);
-                    },
-                };
-                const searchKeywords = '추천 행사,온라인 행사,사업 행사,창업 행사,마케팅 행사,홍보 행사,문화 행사,예술 행사,커뮤니티 행사,IT 행사,개발 행사,인문 행사,사회 행사,경제 행사,과학 행사,기술 행사,데모데이,세미나,참가자 모집,스타트업 행사,해커톤,연말 행사,연말정산 행사,어워드 행사,재직자 과정,프로그램 모집,온라인 설명회,온라인 전시장,대기업 행사,메타버스,컨퍼런스,포럼,IR,실무 교육,밋업,써밋,마케팅 써밋,온라인 해돋이,페스티벌,페스타';
-                if (util.isSameModel(model, getSearchModel())) {
-                    metaChange.title(
-                        `지금 신청할 수 있는 ${self.eventCount}개 행사 - 이벤터스 행사 검색`,
+                window.onpopstate = function (e) {
+                    self.isUseQueryState = false;
+                    self.showFilter = false;
+                    self.setTriggerModel(
+                        e.state?.searchTriggerModelJson
+                            ? JSON.parse(e.state.searchTriggerModelJson)
+                            : getSearchTriggerModel(queryString.parse(location.search)),
                     );
-                    metaChange.description('지금 이벤터스에서 새로운 행사를 찾아보세요!');
-                    metaChange.keywords('행사모집,행사 플랫폼,모임 플랫폼,행사운영,모임,이벤트,하이브리드 이벤트,추천 행사,온라인 행사,웨비나');
-                } else {
-                    if (model.eventsystemtype && model.eventsystemtype === '전체') {
-                        model.eventsystemtype = '';
-                    }
-                    const filterType = [
-                        model.date,
-                        model.category,
-                        model.eventtype,
-                        model.eventsystemtype,
-                        model.costmin,
-                        model.area,
-                    ]
-                        .filter((x) => x && typeof x === 'string' && x !== 'all')
-                        .join(',');
-                    if (model.query) {
-                        metaChange.title(model.query + ' - 이벤터스 행사 검색');
-                        metaChange.description(model.query + ' 행사 | 지금 이벤터스에서 찾아보세요!');
-                        metaChange.keywords(model.query + ',' + searchKeywords);
-                    } else {
-                        metaChange.title(filterType + title);
-                        metaChange.description(filterType + ' 행사 | 지금 이벤터스에서 찾아보세요!');
-                        metaChange.keywords(filterType + ',' + searchKeywords);
-                    }
-                }
-                metaChange.url(location.pathname + location.search);
-                const queryStringFromURL = queryString.parse(location.search);
-                const queryModel = getSearchModel(model);
-
-                Object.keys(queryModel)
-                    .filter((x) => queryModel[x] === 'all')
-                    .forEach((x) => (queryModel[x] = ''));
-
-                if (queryModel.date === '기간선택') {
-                    const dateStringModel = {
-                        result: '',
-                        isStartValid: self.dateRange.start.isValid(),
-                        isEndValid: self.dateRange.end.isValid(),
-                        startDiff: 'null',
-                        endDiff: 'null',
-                    };
-                    if (dateStringModel.isStartValid) {
-                        dateStringModel.result += self.dateRange.start.format('yyyy-MM-DD');
-                        dateStringModel.startDiff = self.dateRange.start.diff(moment().startOf('day'), 'days');
-                    }
-                    dateStringModel.result += '~';
-                    if (dateStringModel.isEndValid) {
-                        dateStringModel.result += self.dateRange.end.format('yyyy-MM-DD');
-                        dateStringModel.endDiff = self.dateRange.end.diff(
-                            dateStringModel.isStartValid ? self.dateRange.start : moment().startOf('day'),
-                            'days',
-                        );
-                    }
-                    dateStringModel.result += `,${dateStringModel.startDiff},${dateStringModel.endDiff}`;
-
-                    if (dateStringModel.isStartValid || dateStringModel.isEndValid) {
-                        queryModel.date = dateStringModel.result;
-                    }
-                }
-                if (!self.inited) {
-                    for (const [key, value] of Object.entries(queryStringFromURL)) {
-                        if (key.includes('utm_')) {
-                            queryModel[key] = value;
-                        }
-                    }
-
-                    return;
-                }
-                if (!self.isUseQueryState) {
-                    self.isUseQueryState = true;
-
-                    return;
-                }
-
-                const query = queryString.stringify(queryModel, {
-                    skipNull: true,
-                    skipEmptyString: true,
-                    sort: false,
-                    encode: false,
-                });
-                window.history.pushState(
-                    { searchTriggerModelJson: JSON.stringify(self.searchTriggerModel) },
-                    '',
-                    `?${query}`,
-                );
-            },
-            searchViewModelToEngineModel() {
-                const self = this;
-                const searchViewModel = self.searchViewModel;
-                const data = {
-                    query: searchViewModel.query ?? '',
-                    page: { current: parseInt(searchViewModel.page), size: 12 },
-                    filters: {
-                        all: [{ state: 'Start' }, { disclosure_status: 'open' }, { is_ignore: 'false' }],
-                    },
-                    boosts: self.boosts,
-                    sort: [],
                 };
 
-                if (searchViewModel.area && searchViewModel.area !== '전체') {
-                    data.filters.all.push({ area: searchViewModel.area });
-                }
-                if (searchViewModel.category) {
-                    data.filters.all.push({ category: searchViewModel.category.split(',') });
-                }
-                if (searchViewModel.eventtype) {
-                    const eventTypes = searchViewModel.eventtype.split(',');
-                    let combineEventTypesIndex = eventTypes.indexOf('회의/컨벤션');
-                    if (combineEventTypesIndex !== -1) {
-                        eventTypes.splice(combineEventTypesIndex, 1);
-                        eventTypes.push(...['기업회의', '학술회의', '정부회의', '컨벤션']);
-                    }
-
-                    combineEventTypesIndex = eventTypes.indexOf('축제/공연/전시');
-                    if (combineEventTypesIndex !== -1) {
-                        eventTypes.splice(combineEventTypesIndex, 1);
-                        eventTypes.push(...['축제', '공연/전시']);
-                    }
-                    data.filters.all.push({ event_type: eventTypes });
-                }
-                if (searchViewModel.costmin && searchViewModel.costmin !== 'all') {
-                    if (searchViewModel.costmin === '유료') {
-                        const min_money = {
-                            from: self.searchTriggerModel.priceValue[0] * priceConstants.multiple,
-                        };
-                        if (self.searchTriggerModel.priceValue[1] !== self.searchTriggerModel.priceMax) {
-                            min_money.to = self.searchTriggerModel.priceValue[1] * priceConstants.multiple + 1;
-                        }
-                        data.filters.all.push({ payway: 'true' });
-                        data.filters.all.push({ min_money: min_money });
-                    } else if (searchViewModel.costmin === '무료') {
-                        data.filters.all.push({ payway: 'false' });
-                    }
-                }
-                if (searchViewModel.eventsystemtype && searchViewModel.eventsystemtype !== 'all') {
-                    const est =
-                        searchViewModel.eventsystemtype === '온라인' || searchViewModel.eventsystemtype === 'online'
-                            ? 'online'
-                            : 'offline';
-                    data.filters.all.push({ event_system_type: [est, 'hybrid'] });
-                }
-                if (searchViewModel.tag) data.filters.all.push({ tags: searchViewModel.tag });
-                if (!self.searchTriggerModel.includeEnd) {
-                    data.filters.all.push({
-                        register_due_date: { from: moment().format('yyyy-MM-DDTHH:mm:ssZ') },
-                    });
-                }
-                if (searchViewModel.date !== '모든날') {
-                    const start_date = {};
-                    if (self.dateRange.start.isValid()) {
-                        start_date.from = self.dateRange.start.format('yyyy-MM-DDTHH:mm:ssZ');
-                    }
-                    if (self.dateRange.end.isValid()) {
-                        start_date.to = self.dateRange.end.format('yyyy-MM-DDTHH:mm:ssZ');
-                    }
-                    if (Object.keys(start_date).length !== 0) {
-                        data.filters.all.push({ start_date });
-                    }
-                }
-
-                switch (searchViewModel.order) {
-                    case 'score':
-                        data.sort.push({ _score: 'desc' });
-                        break;
-                    case 'duedate':
-                        data.sort.push({ register_due_date: 'asc' });
-                        break;
-                    case 'created':
-                        data.sort.push({ date: 'desc' });
-                        break;
-                }
-                data.sort.push({ id: 'desc' });
-
-                return data;
-            },
-            eventClick(item) {
-                const self = this;
-                const userAgent = navigator.userAgent.toLowerCase();
-                let browser = '';
-                if (userAgent.indexOf('edge') > -1) {
-                    browser = 'edge';
-                } else if (userAgent.indexOf('whale') > -1) {
-                    browser = 'whale';
-                } else if (userAgent.indexOf('chrome') > -1) {
-                    browser = 'chrome';
-                } else if (userAgent.indexOf('firefox') > -1) {
-                    browser = 'firefox';
-                } else {
-                    browser = 'else';
-                }
-                //mixpanel.track("search_view", {
-                //    page_no: 3(검색 3번째 페이지에서 클릭시),
-                //    item_category: "{행사 분야}",
-                //    item_category3: "{행사 유형}",
-                //    date_category: "{일시}",
-                //    region_category: "{지역}",
-                //    method_category: "{참여 방법}",
-                //    price_category: "{가격}",
-                //    search_term: "검색어 (ex. 스타트업)"
-                //});
-                axios.post('https://api.event-us.kr/api/v1/engine/click', {
-                    query: self.searchViewModel.query,
-                    request_id: self.metaData.request_id,
-                    document_id: item.Id,
-                    tags: [
-                        'searchpage',
-                        navigator.platform,
-                        `browser-${browser}`,
-                        'mobile-False',
-                        'login-False',
-                        `${self.searchViewModel.page}page`,
-                    ],
+                window.setQuery = function (query) {
+                    self.setTriggerModel(getSearchTriggerModel({ query }));
+                };
+                document.addEventListener('languageChanged', (e) => {
+                    this.language = e.detail.language;
                 });
             },
-            getList() {
-                const self = this;
-                if (self.isSearching) {
-                    return;
-                }
-                self.isSearching = true;
-                function initList(data) {
-                    if (data.errors) {
+            methods: {
+                setTriggerModel(model) {
+                    const self = this;
+                    if (self.inited && util.isSameModel(model, self.searchTriggerModel)) return;
+
+                    const categories = model.category.split(',');
+                    Object.keys(self.categories).forEach((x) => (self.categories[x] = categories.includes(x)));
+
+                    const eventtypes = model.eventtype.split(',');
+                    Object.keys(self.eventtypes).forEach((x) => (self.eventtypes[x] = eventtypes.includes(x)));
+
+                    if (!['모든날', '오늘', '이번주', '이번달', '기간선택'].includes(model.date)) {
+                        const parsing = model.date.split(',')[0].split('~');
+                        model.date = '기간선택';
+                        model.dateStart = parsing[0] ?? null;
+                        model.dateEnd = parsing[1];
+                        self.pickedTime = [
+                            moment(model.dateStart).format('yyyy/MM/DD'),
+                            moment(model.dateEnd).format('yyyy/MM/DD'),
+                        ];
+                    }
+
+                    self.searchTriggerModel = model;
+                },
+                moment(time) {
+                    return moment(time);
+                },
+                toNumberWithCommas(num) {
+                    return util.numberWithCommas(num);
+                },
+                bannerColor(banner) {
+                    return banner.Banner.color;
+                },
+                replaceEnter(e) {
+                    return e.replace(/(?:\r\n|\r|\n)/g, '<br />');
+                },
+                setQueryState() {
+                    const self = this;
+                    const model = self.searchViewModel;
+                    const title = ' 행사 - 이벤터스 행사 검색';
+                    const metaChange = {
+                        title(value) {
+                            document.title = value;
+                            document.querySelector('meta[property="og:title"]').setAttribute('content', value);
+                        },
+                        description(value) {
+                            document.querySelector('meta[name="description"]').setAttribute('content', value);
+                            document.querySelector('meta[property="og:description"]').setAttribute('content', value);
+                        },
+                        keywords(value) {
+                            document.querySelector('meta[name="keywords"]').setAttribute('content', value);
+                        },
+                        url(value) {
+                            document.querySelector('link[rel="canonical"]').href = value;
+                            document
+                                .querySelector('meta[property="og:url"]')
+                                .setAttribute('content', 'https://event-us.kr' + value);
+                        },
+                    };
+                    const searchKeywords = '추천 행사,온라인 행사,사업 행사,창업 행사,마케팅 행사,홍보 행사,문화 행사,예술 행사,커뮤니티 행사,IT 행사,개발 행사,인문 행사,사회 행사,경제 행사,과학 행사,기술 행사,데모데이,세미나,참가자 모집,스타트업 행사,해커톤,연말 행사,연말정산 행사,어워드 행사,재직자 과정,프로그램 모집,온라인 설명회,온라인 전시장,대기업 행사,메타버스,컨퍼런스,포럼,IR,실무 교육,밋업,써밋,마케팅 써밋,온라인 해돋이,페스티벌,페스타';
+                    if (util.isSameModel(model, getSearchModel())) {
+                        metaChange.title(
+                            `지금 신청할 수 있는 ${self.eventCount}개 행사 - 이벤터스 행사 검색`,
+                        );
+                        metaChange.description('지금 이벤터스에서 새로운 행사를 찾아보세요!');
+                        metaChange.keywords('행사모집,행사 플랫폼,모임 플랫폼,행사운영,모임,이벤트,하이브리드 이벤트,추천 행사,온라인 행사,웨비나');
+                    } else {
+                        if (model.eventsystemtype && model.eventsystemtype === '전체') {
+                            model.eventsystemtype = '';
+                        }
+                        const filterType = [
+                            model.date,
+                            model.category,
+                            model.eventtype,
+                            model.eventsystemtype,
+                            model.costmin,
+                            model.area,
+                        ]
+                            .filter((x) => x && typeof x === 'string' && x !== 'all')
+                            .join(',');
+                        if (model.query) {
+                            metaChange.title(model.query + ' - 이벤터스 행사 검색');
+                            metaChange.description(model.query + ' 행사 | 지금 이벤터스에서 찾아보세요!');
+                            metaChange.keywords(model.query + ',' + searchKeywords);
+                        } else {
+                            metaChange.title(filterType + title);
+                            metaChange.description(filterType + ' 행사 | 지금 이벤터스에서 찾아보세요!');
+                            metaChange.keywords(filterType + ',' + searchKeywords);
+                        }
+                    }
+                    metaChange.url(location.pathname + location.search);
+                    const queryStringFromURL = queryString.parse(location.search);
+                    const queryModel = getSearchModel(model);
+
+                    Object.keys(queryModel)
+                        .filter((x) => queryModel[x] === 'all')
+                        .forEach((x) => (queryModel[x] = ''));
+
+                    if (queryModel.date === '기간선택') {
+                        const dateStringModel = {
+                            result: '',
+                            isStartValid: self.dateRange.start.isValid(),
+                            isEndValid: self.dateRange.end.isValid(),
+                            startDiff: 'null',
+                            endDiff: 'null',
+                        };
+                        if (dateStringModel.isStartValid) {
+                            dateStringModel.result += self.dateRange.start.format('yyyy-MM-DD');
+                            dateStringModel.startDiff = self.dateRange.start.diff(moment().startOf('day'), 'days');
+                        }
+                        dateStringModel.result += '~';
+                        if (dateStringModel.isEndValid) {
+                            dateStringModel.result += self.dateRange.end.format('yyyy-MM-DD');
+                            dateStringModel.endDiff = self.dateRange.end.diff(
+                                dateStringModel.isStartValid ? self.dateRange.start : moment().startOf('day'),
+                                'days',
+                            );
+                        }
+                        dateStringModel.result += `,${dateStringModel.startDiff},${dateStringModel.endDiff}`;
+
+                        if (dateStringModel.isStartValid || dateStringModel.isEndValid) {
+                            queryModel.date = dateStringModel.result;
+                        }
+                    }
+                    if (!self.inited) {
+                        for (const [key, value] of Object.entries(queryStringFromURL)) {
+                            if (key.includes('utm_')) {
+                                queryModel[key] = value;
+                            }
+                        }
+
                         return;
                     }
-                    if (data.meta.page.total_results === 0) {
-                        if (!self.searchTriggerModel.includeEnd && self.beforeQuery !== self.searchViewModel.query) {
-                            self.beforeQuery = self.searchViewModel.query;
-                            self.isSearching = false;
-                            self.searchTriggerModel.includeEnd = true;
+                    if (!self.isUseQueryState) {
+                        self.isUseQueryState = true;
 
-                            return;
+                        return;
+                    }
+
+                    const query = queryString.stringify(queryModel, {
+                        skipNull: true,
+                        skipEmptyString: true,
+                        sort: false,
+                        encode: false,
+                    });
+                    window.history.pushState(
+                        { searchTriggerModelJson: JSON.stringify(self.searchTriggerModel) },
+                        '',
+                        `?${query}`,
+                    );
+                },
+                searchViewModelToEngineModel() {
+                    const self = this;
+                    const searchViewModel = self.searchViewModel;
+                    const data = {
+                        query: searchViewModel.query ?? '',
+                        page: { current: parseInt(searchViewModel.page), size: 12 },
+                        filters: {
+                            all: [{ state: 'Start' }, { disclosure_status: 'open' }, { is_ignore: 'false' }],
+                        },
+                        boosts: self.boosts,
+                        sort: [],
+                    };
+
+                    if (searchViewModel.area && searchViewModel.area !== '전체') {
+                        data.filters.all.push({ area: searchViewModel.area });
+                    }
+                    if (searchViewModel.category) {
+                        data.filters.all.push({ category: searchViewModel.category.split(',') });
+                    }
+                    if (searchViewModel.eventtype) {
+                        const eventTypes = searchViewModel.eventtype.split(',');
+                        let combineEventTypesIndex = eventTypes.indexOf('회의/컨벤션');
+                        if (combineEventTypesIndex !== -1) {
+                            eventTypes.splice(combineEventTypesIndex, 1);
+                            eventTypes.push(...['기업회의', '학술회의', '정부회의', '컨벤션']);
+                        }
+
+                        combineEventTypesIndex = eventTypes.indexOf('축제/공연/전시');
+                        if (combineEventTypesIndex !== -1) {
+                            eventTypes.splice(combineEventTypesIndex, 1);
+                            eventTypes.push(...['축제', '공연/전시']);
+                        }
+                        data.filters.all.push({ event_type: eventTypes });
+                    }
+                    if (searchViewModel.costmin && searchViewModel.costmin !== 'all') {
+                        if (searchViewModel.costmin === '유료') {
+                            const min_money = {
+                                from: self.searchTriggerModel.priceValue[0] * priceConstants.multiple,
+                            };
+                            if (self.searchTriggerModel.priceValue[1] !== self.searchTriggerModel.priceMax) {
+                                min_money.to = self.searchTriggerModel.priceValue[1] * priceConstants.multiple + 1;
+                            }
+                            data.filters.all.push({ payway: 'true' });
+                            data.filters.all.push({ min_money: min_money });
+                        } else if (searchViewModel.costmin === '무료') {
+                            data.filters.all.push({ payway: 'false' });
+                        }
+                    }
+                    if (searchViewModel.eventsystemtype && searchViewModel.eventsystemtype !== 'all') {
+                        const est =
+                            searchViewModel.eventsystemtype === '온라인' || searchViewModel.eventsystemtype === 'online'
+                                ? 'online'
+                                : 'offline';
+                        data.filters.all.push({ event_system_type: [est, 'hybrid'] });
+                    }
+                    if (searchViewModel.tag) data.filters.all.push({ tags: searchViewModel.tag });
+                    if (!self.searchTriggerModel.includeEnd) {
+                        data.filters.all.push({
+                            register_due_date: { from: moment().format('yyyy-MM-DDTHH:mm:ssZ') },
+                        });
+                    }
+                    if (searchViewModel.date !== '모든날') {
+                        const start_date = {};
+                        if (self.dateRange.start.isValid()) {
+                            start_date.from = self.dateRange.start.format('yyyy-MM-DDTHH:mm:ssZ');
+                        }
+                        if (self.dateRange.end.isValid()) {
+                            start_date.to = self.dateRange.end.format('yyyy-MM-DDTHH:mm:ssZ');
+                        }
+                        if (Object.keys(start_date).length !== 0) {
+                            data.filters.all.push({ start_date });
                         }
                     }
 
-                    self.metaData = data.meta;
-                    self.eventCount = data.meta.page.total_results;
-                    self.eventList = data.results.map(function (x) {
-                        return engineResultToItem(x);
-                    });
-                    self.isSearching = false;
-                    if (!self.inited) {
-                        self.inited = true;
+                    switch (searchViewModel.order) {
+                        case 'score':
+                            data.sort.push({ _score: 'desc' });
+                            break;
+                        case 'duedate':
+                            data.sort.push({ register_due_date: 'asc' });
+                            break;
+                        case 'created':
+                            data.sort.push({ date: 'desc' });
+                            break;
                     }
-                }
+                    data.sort.push({ id: 'desc' });
 
-                if (!self.inited && searchDataRaw) {
-                    initList(JSON.parse(searchDataRaw));
+                    return data;
+                },
+                eventClick(item) {
+                    const self = this;
+                    const userAgent = navigator.userAgent.toLowerCase();
+                    let browser = '';
+                    if (userAgent.indexOf('edge') > -1) {
+                        browser = 'edge';
+                    } else if (userAgent.indexOf('whale') > -1) {
+                        browser = 'whale';
+                    } else if (userAgent.indexOf('chrome') > -1) {
+                        browser = 'chrome';
+                    } else if (userAgent.indexOf('firefox') > -1) {
+                        browser = 'firefox';
+                    } else {
+                        browser = 'else';
+                    }
+                    //mixpanel.track("search_view", {
+                    //    page_no: 3(검색 3번째 페이지에서 클릭시),
+                    //    item_category: "{행사 분야}",
+                    //    item_category3: "{행사 유형}",
+                    //    date_category: "{일시}",
+                    //    region_category: "{지역}",
+                    //    method_category: "{참여 방법}",
+                    //    price_category: "{가격}",
+                    //    search_term: "검색어 (ex. 스타트업)"
+                    //});
+                    axios.post('https://api.event-us.kr/api/v1/engine/click', {
+                        query: self.searchViewModel.query,
+                        request_id: self.metaData.request_id,
+                        document_id: item.Id,
+                        tags: [
+                            'searchpage',
+                            navigator.platform,
+                            `browser-${browser}`,
+                            'mobile-False',
+                            'login-False',
+                            `${self.searchViewModel.page}page`,
+                        ],
+                    });
+                },
+                async getList() {
+                    const self = this;
+                    if (self.isSearching) {
+                        return;
+                    }
+                    self.isSearching = true;
+                    function initList(searchData) {
+                        const data = searchData.current;
+                        if (data.errors) {
+                            return;
+                        }
+                        if (data.meta.page.total_results === 0) {
+                            if (!self.searchTriggerModel.includeEnd && self.beforeQuery !== self.searchViewModel.query) {
+                                self.beforeQuery = self.searchViewModel.query;
+                                self.isSearching = false;
+                                self.searchTriggerModel.includeEnd = true;
 
-                    return;
-                }
-                
-                axios
-                    .post('https://api.event-us.kr/api/v1/engine/search', self.searchViewModelToEngineModel())
-                    .then((response) => {
-                        initList(response.data);
-                        self.setQueryState();
-                    });
-            },
-            getChannelList() {
-                const self = this;
-                axios
-                    .post('/home/getmainrecommandsasync', {
-                        idsjson: sessionStorage.getItem('todayRecommandEventsIds'),
-                    })
-                    .then(function ({ data }) {
-                        self.channelCount = data.channelCount;
-                        self.channelList = util.shuffleArray(data.recommandationChannels).slice(0, 8);
-                        sessionStorage.setItem('todayRecommandEventsIds', data.idsJson);
-                    });
-            },
-            resetModel() {
-                const self = this;
-                self.setTriggerModel(getSearchTriggerModel({ query: self.searchViewModel.query }));
-            },
-            blobImageUrl(url) {
-                return url.charAt(0) === '/' ? asp.blobUrl + url : url;
-            },
-            categoryToggle() {
-                this.categoryOpen = !this.categoryOpen;
-            },
-            eventtypeToggle() {
-                this.eventtypeOpen = !this.eventtypeOpen;
-            },
-            filterCount() {
-                return Object.keys(queryString.parse(location.search)).length - 1;
-            },
-            onBannerClick(page, id, url) {
-                if (url != '') {
+                                return;
+                            }
+                        }
+
+                        self.metaData = { ...data.meta };
+                        self.metaData.page = { ...data.meta.page };
+                        self.eventCount = data.meta.page.total_results;
+                        self.eventList = data.results.map((x) => engineResultToItem(x));
+
+                        if (self.isSearchResultBannerCondition) {
+                            const duplicateCount = searchData.first.results.filter((item) => self.searchResultBanners.some((x) => x.Id === item.id.raw)).length; // 첫 페이지 결과에서만 중복 제거
+                            const overflowCount = data.meta.page.total_results + self.searchResultBanners.length - duplicateCount > data.meta.page.size ? self.searchResultBanners.length - duplicateCount : 0;
+                            if (overflowCount > 0 && data.meta.page.size - (data.meta.page.total_results % data.meta.page.size) + overflowCount > data.meta.page.size) {
+                                self.metaData.page.total_pages += 1;
+                            }
+                            if (data.meta.page.current === 1) {
+                                // 첫 페이지 (검색 결과 광고 삽입)
+                                const newEventList = [...self.searchResultBanners];
+                                self.eventList.map((item) => {
+                                    if (newEventList.length >= data.meta.page.size) return;
+                                    if (self.searchResultBanners.some((x) => x.Id === item.Id)) return;
+                                    newEventList.push(item);
+                                });
+                                self.eventList = newEventList;
+                            } else if (
+                                data.meta.page.total_pages < self.metaData.page.total_pages &&
+                                data.meta.page.current === self.metaData.page.total_pages
+                            ) {
+                                // 광고 삽입으로 인해 추가된 마지막 페이지
+                                const prevResults = searchData.prev.results;
+                                const lastPageOverflowCount = (data.meta.page.total_results + overflowCount) % data.meta.page.size;
+                                const overflowList = prevResults.slice(prevResults.length - lastPageOverflowCount).map((x) => engineResultToItem(x));
+                                const newEventList = [...overflowList];
+                                self.eventList = newEventList;
+                            } else {
+                                const prevResults = searchData.prev.results;
+                                const overflowList = prevResults.slice(prevResults.length - overflowCount).map((x) => engineResultToItem(x));
+                                const newEventList = [...overflowList];
+                                self.eventList.map((item) => {
+                                    if (newEventList.length >= data.meta.page.size) return;
+                                    newEventList.push(item);
+                                });
+                                self.eventList = newEventList;
+                            }
+                        }
+
+                        self.isSearching = false;
+                        if (!self.inited) {
+                            self.inited = true;
+                        }
+                    }
+
+                    const searchData = {
+                        first: null,
+                        prev: null,
+                        current: null,
+                    };
+
+                    if (!self.inited && self.searchDataRaw) {
+                        searchData.current = self.searchDataRaw;
+                        searchData.first = searchData.current;
+                        initList(searchData);
+
+                        return;
+                    }
+
+                    const engineModel = self.searchViewModelToEngineModel();
+                    searchData.current = (await axios.post('https://api.event-us.kr/api/v1/engine/search', engineModel)).data;
+                    if (self.isSearchResultBannerCondition) {
+                        if (engineModel.page.current === 1) {
+                            searchData.first = searchData.current;
+                        } else if (engineModel.page.current === 2) {
+                            engineModel.page.current -= 1;
+                            searchData.prev = (await axios.post('https://api.event-us.kr/api/v1/engine/search', engineModel)).data;
+                            engineModel.page.current += 1;
+                            searchData.first = searchData.prev;
+                        } else {
+                            const currentPage = engineModel.page.current;
+                            engineModel.page.current = 1;
+                            searchData.first = (await axios.post('https://api.event-us.kr/api/v1/engine/search', engineModel)).data;
+                            engineModel.page.current = currentPage - 1;
+                            searchData.prev = (await axios.post('https://api.event-us.kr/api/v1/engine/search', engineModel)).data;
+                            engineModel.page.current = currentPage;
+                        }
+                    }
+                    initList(searchData);
+                    self.setQueryState();
+                },
+                getChannelList() {
+                    const self = this;
+                    axios
+                        .post('/home/getmainrecommandsasync', {
+                            idsjson: sessionStorage.getItem('todayRecommandEventsIds'),
+                        })
+                        .then(function ({ data }) {
+                            self.channelCount = data.channelCount;
+                            self.channelList = util.shuffleArray(data.recommandationChannels).slice(0, 8);
+                            sessionStorage.setItem('todayRecommandEventsIds', data.idsJson);
+                        });
+                },
+                resetModel() {
+                    const self = this;
+                    self.setTriggerModel(getSearchTriggerModel({ query: self.searchViewModel.query }));
+                },
+                blobImageUrl(url) {
+                    return url.charAt(0) === '/' ? asp.blobUrl + url : url;
+                },
+                categoryToggle() {
+                    this.categoryOpen = !this.categoryOpen;
+                },
+                eventtypeToggle() {
+                    this.eventtypeOpen = !this.eventtypeOpen;
+                },
+                filterCount() {
+                    return Object.keys(queryString.parse(location.search)).length - 1;
+                },
+                onBannerClick(page, id, url) {
+                    if (url != '') {
 
                     mixpanel.track("ad_bannersearch2", { "click_url": url });
 
-                    //ad_searchrecommend
-                    gtag('event', 'ad_bannersearch2', {
-                        click_url: url,
-                        items: [
-                            {
-                                index: 'ad_bannersearch2',
-                            },
-                        ],
+                        //ad_searchrecommend
+                        gtag('event', 'ad_bannersearch2', {
+                            click_url: url,
+                            items: [
+                                {
+                                    index: 'ad_bannersearch2',
+                                },
+                            ],
+                        });
+                    }
+                    if (location.host === 'event-us.kr') {
+                        axios.post('/userhelpers/targetclick', { targetid: id });
+                    }
+                },
+                async onSearchResultBannerShow() {
+                    const pitIds = [];
+                    this.searchResultBanners.forEach((e) => {
+                        if (e.pitId) pitIds.push(e.pitId);
                     });
-                }
-                if (location.host === 'event-us.kr') {
-                    axios.post('/userhelpers/targetclick', { targetid: id });
-                }
+                    await axios.post('/UserHelpers/TargetRollingList', {
+                        targetIds: pitIds,
+                        position: 'searchresult',
+                    });
+                },
+                onCalendarClick() {
+                    mixpanel.track("search_event_calendar");
+                },
+                getSearchpageBannerUtm(item) {
+                    const url = new URL(item.Click_Url);
+                    if (!url.hostname.includes('event-us.kr')) {
+                        return item.Click_Url;
+                    }
+                    const utm = {
+                        source: 'eventus',
+                        medium: 'banner',
+                        campaign: 'search-main',
+                        term: this.searchViewModel.query,
+                    };
+                    if (!url.searchParams.has('utm_source')) {
+                        url.searchParams.set('utm_source', utm.source);
+                    }
+                    if (!url.searchParams.has('utm_medium')) {
+                        url.searchParams.set('utm_medium', utm.medium);
+                    }
+                    if (!url.searchParams.has('utm_campaign')) {
+                        url.searchParams.set('utm_campaign', utm.campaign);
+                    }
+                    if (!url.searchParams.has('utm_term')) {
+                        url.searchParams.set('utm_term', utm.term);
+                    }
+                    if (item.Id) {
+                        url.searchParams.set('pit_id', item.Id);
+                    }
+                    return url.href;
+                },
+                focusEventSection() {
+                    document.getElementById('eventSection')?.scrollIntoView({ behavior: 'smooth' });
+                },
+                Iphone_message_close() {
+                    document.getElementById('Iphone_message').style.display = 'none';
+                },
+                Iphone_message_disabled() {
+                    util.setCookie('Iphone_message_disabled', 'true', '3');
+                    document.getElementById('Iphone_message').style.display = 'none';
+                },
             },
-            onCalendarClick() {
-                mixpanel.track("search_event_calendar");
-            },
-            getSearchpageBannerUtm(item) {
-                const url = new URL(item.Click_Url);
-                if (!url.hostname.includes('event-us.kr')) {
-                    return item.Click_Url;
-                }
-                const utm = {
-                    source: 'eventus',
-                    medium: 'banner',
-                    campaign: 'search-main',
-                    term: this.searchViewModel.query,
-                };
-                if (!url.searchParams.has('utm_source')) {
-                    url.searchParams.set('utm_source', utm.source);
-                }
-                if (!url.searchParams.has('utm_medium')) {
-                    url.searchParams.set('utm_medium', utm.medium);
-                }
-                if (!url.searchParams.has('utm_campaign')) {
-                    url.searchParams.set('utm_campaign', utm.campaign);
-                }
-                if (!url.searchParams.has('utm_term')) {
-                    url.searchParams.set('utm_term', utm.term);
-                }
-                if (item.Id) {
-                    url.searchParams.set('pit_id', item.Id);
-                }
-                return url.href;
-            },
-            focusEventSection() {
-                document.getElementById('eventSection')?.scrollIntoView({ behavior: 'smooth' });
-            },
-            Iphone_message_close() {
-                document.getElementById('Iphone_message').style.display = 'none';
-            },
-            Iphone_message_disabled() {
-                util.setCookie('Iphone_message_disabled', 'true', '3');
-                document.getElementById('Iphone_message').style.display = 'none';
-            },
-        },
     }).mount('#app');
 });
     </script>

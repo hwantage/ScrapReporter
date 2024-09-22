@@ -33,7 +33,7 @@
 	<script src="/resources/plugin/html5shiv.js"></script>
 	<link rel="stylesheet" href="/resources/css/ie.css" />
 <![endif]-->
-<link href="/resources/main_css/common.css" rel="stylesheet"/>
+<link href="/resources/main_css/common.css?ver=240919" rel="stylesheet"/>
 <link href="/resources/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet">
 <script src="/resources/main_js/core.min.js"></script>
 <script src="/resources/main_js/easings.min.js"></script>
@@ -263,7 +263,7 @@
 <a href="/kr/1/communication/publicRelationsB.it"> 
 																		
 																		
-																		브로슈어</a>
+																		리플렛</a>
 </li>
 <li>
 <a href="/kr/1/communication/publicRelationsA.it"> 
@@ -364,30 +364,12 @@
 </ul>
 </li>
 <li>
-<!--  board -->
-<div class="fw700 s-nav-title">
-<a href="/kr/1/notice/contractStatus.it"> 
-															
-															
-															계약현황</a>
-</div>
-</li>
-<li>
 <!--  system -->
 <div class="fw700 s-nav-title">
 <a href="/kr/1/notice/cbpa.it"> 
 															
 															
 															공시송달</a>
-</div>
-</li>
-<li>
-<!--  board -->
-<div class="fw700 s-nav-title">
-<a href="/kr/1/notice/relateOrgan.it"> 
-															
-															
-															유관기관 소식</a>
 </div>
 </li>
 </ul></div></li>
@@ -1277,26 +1259,26 @@
 <tr>
 <td class="text-center">470</td>
 <td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/01/form.tab?PMS_DMSY_PBNC_ID=DSP2024009" target="_blank" title="새창으로 열림">정보통신방송 연구개발사업 기술수요조사 안내(2024년)</a>
+</td>
+<td class="text-center">2024.05.24~2024.12.31</td>
+<td class="text-center">강명진</td>
+</tr>
+<tr>
+<td class="text-center">469</td>
+<td class="no-space comment-group0">
 <a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202400000074" target="_blank" title="새창으로 열림">2024년 디지털인재 리더스 클럽(중소특화트랙) 신규선정 연장공고</a>
 </td>
 <td class="text-center">2024.09.05~2024.09.19</td>
 <td class="text-center">고세욱</td>
 </tr>
 <tr>
-<td class="text-center">469</td>
+<td class="text-center">468</td>
 <td class="no-space comment-group0">
 <a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202400000072" target="_blank" title="새창으로 열림">2024년도 디지털혁신인재단기집중역량강화사업  (글로벌 교육) 신규지원 대상 공고</a>
 </td>
 <td class="text-center">2024.09.02~2024.09.19</td>
 <td class="text-center">김한</td>
-</tr>
-<tr>
-<td class="text-center">468</td>
-<td class="no-space comment-group0">
-<a href="http://ezone.iitp.kr/common/anno/01/form.tab?PMS_DMSY_PBNC_ID=DSP2024009" target="_blank" title="새창으로 열림">정보통신방송 연구개발사업 기술수요조사 안내(2024년)</a>
-</td>
-<td class="text-center">2024.05.24~2024.12.31</td>
-<td class="text-center">강명진</td>
 </tr>
 <tr>
 <td class="text-center">467</td>
@@ -1929,7 +1911,7 @@
 <ul class="list-inline-box">
 <li class="list-inline-item"><a href="/etc/email.it">이메일 무단 수집 거부</a></li>
 <li class="list-inline-item"><a href="/kr/1/introduce/map.it">찾아오시는길</a></li>
-<li class="list-inline-item"><a href="/etc/person.it">개인정보처리방침</a></li>
+<li class="list-inline-item" style="color: #ff7200;"><a href="/etc/person.it">개인정보처리방침</a></li>
 <li class="list-inline-item"><a href="/etc/rules.it">이용약관</a></li>
 <li class="list-inline-item"><a href="/etc/copyright.it">저작권보호 정책</a></li>
 <li class="list-inline-item"><a href="/etc/imageProcessorMg.it">영상정보처리기기 운영·관리 방침</a></li>
