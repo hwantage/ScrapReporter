@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1144; // 전체 조회 건수
+	var totalNum = 1150; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -190,7 +190,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1144</b>건
+<span>총 <b>1150</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -230,10 +230,22 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3353&amp;page=1">2024 전자문서 유공 포상 재공고 안내(~10.10 14:00 마감)</a>
+</td>
+<td class="date">2024-09-29</td>
+<td class="count">498</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3353', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3344&amp;page=1">2024년 KISA-SK증권 ICT기업 오픈이노베이션 프로그램 모집 공고(~9.24, 16:00까지)</a>
 </td>
 <td class="date">2024-09-10</td>
-<td class="count">5609</td>
+<td class="count">8317</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3344', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -245,7 +257,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3336&amp;page=1">2024년 암호모듈검증 전문교육 심화과정 신청·접수 안내(~9.27(금) 17시, 선착순 230명)</a>
 </td>
 <td class="date">2024-09-03</td>
-<td class="count">7952</td>
+<td class="count">10684</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3336', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -254,22 +266,10 @@ function oneDepMenu() {
 </tr>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3329&amp;page=1">2024 전자문서 유공 포상 계획 공고 안내(~9.26 14:00 마감)</a>
-</td>
-<td class="date">2024-08-28</td>
-<td class="count">8348</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3329', 1, 'KO');">
-<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
-</a>
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3328&amp;page=1"> [재공고] 「2024년 블록체인 기업 국내·외 투자유치 지원 사업」 참여기업 모집 공고(~9.11)</a>
 </td>
 <td class="date">2024-08-27</td>
-<td class="count">10050</td>
+<td class="count">12680</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3328', 1, 'KO');">
 <img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
@@ -281,7 +281,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3323&amp;page=1">2024년도 공공기관 동반성장 체감도 조사 관련 개인정보 제3자 제공 알림</a>
 </td>
 <td class="date">2024-08-23</td>
-<td class="count">10346</td>
+<td class="count">12903</td>
 <td class="attach">
 </td>
 </tr>
@@ -290,7 +290,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
 </td>
 <td class="date">2024-08-12</td>
-<td class="count">24554</td>
+<td class="count">26347</td>
 <td class="attach">
 </td>
 </tr>
@@ -299,7 +299,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3299&amp;page=1">2024년 제11회 소프트웨어 개발보안 경진대회 개최</a>
 </td>
 <td class="date">2024-07-01</td>
-<td class="count">34054</td>
+<td class="count">34709</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3299', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -307,30 +307,36 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1137</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3347&amp;page=1">2024년도 클라우드 서비스 보안인증(CSAP) 신규 평가원 교육 운영 안내</a>
+<td class="num">1143</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3352&amp;page=1">"제 5회 호남 사이버보안 콘퍼런스"</a>
 </td>
-<td class="date">2024-09-13</td>
-<td class="count">1636</td>
+<td class="date">2024-09-24</td>
+<td class="count">730</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1136</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3346&amp;page=1">'2024 블록체인 밋업데이(Blockchain Meetup Day)' 안내</a>
+<td class="num">1142</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3351&amp;page=1">한국인터넷진흥원 ESG 주간동향 보고서(4회차)</a>
 </td>
-<td class="date">2024-09-13</td>
-<td class="count">2666</td>
+<td class="date">2024-09-23</td>
+<td class="count">601</td>
 <td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3351', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
 </td>
 </tr>
 <tr>
-<td class="num">1135</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3345&amp;page=1">2024년 클라우드서비스 보안인증(CSAP) 수요기업 교육 안내</a>
+<td class="num">1141</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3350&amp;page=1">2026년도 개인정보 기술 표준화 추진을 위한 신규 아이템 제안 수요조사 공고</a>
 </td>
-<td class="date">2024-09-12</td>
-<td class="count">1187</td>
+<td class="date">2024-09-23</td>
+<td class="count">587</td>
 <td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3350', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
 </td>
 </tr>
 </tbody>
@@ -358,10 +364,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2024-09-20</dd>
+<dd>2024-09-29</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="2d163f93-4a24-434b-a1e8-fe168ba10c4d">
+<input name="_csrf" type="hidden" value="e56b6042-ec93-4432-92d7-21b911d08d75">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -384,7 +390,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "2d163f93-4a24-434b-a1e8-fe168ba10c4d");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "e56b6042-ec93-4432-92d7-21b911d08d75");
             },			
 			success: function(data) {
 				alert(data.message)
