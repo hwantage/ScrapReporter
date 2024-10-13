@@ -279,20 +279,20 @@ var menuList = {
 					 }
 				   , { menuId : '07000000' , title : '연구과제수행', menuArr : [ { menuId : '07010000' , title : '과제수행 현황' , menuArr : [ { menuId : '07010100' , url : '/sbjtexe/mySbjtExeSituView.do' , title : '나의 과제수행 현황'} //과제수행 - 과제수행 현황 - 나의 과제수행현황
 																		                    ,{ menuId : '07010200' , url : '/sbjtexe/orgnSbjtExeSituView.do' , title : '기관 과제수행 현황'} //기관 과제수행현황
-																		                    ,{ menuId : '07010300' , url : '/sbjtexe/retrieveRndScaleupObjtListView.do' , title : '이차보전 사업 확인서 출력'} //이차보전 사업 확인서 출력
+																		                    /*,{ menuId : '07010300' , url : '/sbjtexe/retrieveRndScaleupObjtListView.do' , title : '이차보전 사업 확인서 출력'} //이차보전 사업 확인서 출력*/
 																		                   ]
 														 }
 													   , { menuId : '07030000' , title : '과제접수' , menuArr : [ { menuId : '07030100' , url : '/sbjtexe/bfhdPrertMttrInfo.do' , title : '신청안내'} //과제접수 - 신청안내
-													                                        ,{ menuId : '07030200' , url : '/sbjtexe/newSbjtRqstListView.do' , title : '신규과제 신청'} //신규과제신청
-													                                        ,{ menuId : '07030300' , url : '/sbjtexe/nextStepSbjtRqstView.do' , title : '차단계 과제신청'} //차단계과제신청 (개발기간및목표 테스트를 위해 임의지정- 변경되어야함)
-													                                        ,{ menuId : '07030400' , url : '/sbjtexe/sbjtRcve/retrieveOnlSbjtDiscPlfList.do' , title : '온라인 과제 발굴 플랫폼'} //온라인 과제 발굴 플랫폼
-													                                        ,{ menuId : '07030500' , url : '/sbjtexe/newMoisSbjtRqstListView.do' , title : '재난안전 R&amp;D 과제신청'} //
-													                                        ,{ menuId : '07030600' , url : '/sbjtexe/retrieveFrutPuseOrgnList.do' , title : '성과활용 우수기관 조회'} 
+													                                        /*,{ menuId : '07030200' , url : '/sbjtexe/newSbjtRqstListView.do' , title : '신규과제 신청'} //신규과제신청*/
+													                                        /*,{ menuId : '07030300' , url : '/sbjtexe/nextStepSbjtRqstView.do' , title : '차단계 과제신청'} //차단계과제신청 (개발기간및목표 테스트를 위해 임의지정- 변경되어야함)*/
+													                                        /*,{ menuId : '07030400' , url : '/sbjtexe/sbjtRcve/retrieveOnlSbjtDiscPlfList.do' , title : '온라인 과제 발굴 플랫폼'} //온라인 과제 발굴 플랫폼*/
+													                                        /*,{ menuId : '07030500' , url : '/sbjtexe/newMoisSbjtRqstListView.do' , title : '재난안전 R&amp;D 과제신청'} //*/
+													                                        /*,{ menuId : '07030600' , url : '/sbjtexe/retrieveFrutPuseOrgnList.do' , title : '성과활용 우수기관 조회'}*/ 
 																			               ]
 													 	 }
 													   , { menuId : '07040000' , title : '평가', menuArr : [ /*{ menuId : '07040100' , url : '/sbjtexe/retrieveEcmitSayDataView.do' , title : '평가위원회 발표자료'} //평가 - 평가위원회 발표자료*/
-													                                                       /*,*/{ menuId : '07040200' , url : '/sbjtexe/retrieveSbjtEvalRsltView.do' , title : '과제평가 결과'} //과제평가결과
-													                                        ,{ menuId : '07040400' , url : '/sbjtexe/retrieveOnlEvalRsltView.do' , title : '서면검토의견조회'} //서면검토의견조회
+													                                                       /*,{ menuId : '07040200' , url : '/sbjtexe/retrieveSbjtEvalRsltView.do' , title : '과제평가 결과'} //과제평가결과*/
+													                                        /*,{ menuId : '07040400' , url : '/sbjtexe/retrieveOnlEvalRsltView.do' , title : '서면검토의견조회'} //서면검토의견조회*/
 													                                        /*,{ menuId : '07040300' , url : '/sbjtexe/onlNwsgrpView.do' , title : '온라인 토론방'} //온라인토론방*/
 													                                        /*,{ menuId : '07040500' , url : '/joinrnd/retrieveEcmsnInqrListView.do' , title : '평가위원회 Q&A'} //평가위원회 Q&A*/
 													                                        /*,{ menuId : '07040600' , url : '/joinrnd/retrieveConvVideoEvalListView.do' , title : '대화형 및 화상평가'} //대화형 및 화상평가*/
@@ -302,26 +302,26 @@ var menuList = {
 													   , { menuId : '07060000' , title : '협약', menuArr : [ { menuId : '07060100' , url : '/sbjtexe/agrtGuid.do' , title : '협약안내'} //협약 - 협약안내
 													                                        ,{ menuId : '07060200' , url : '/sbjtexe/modfSbjtRqstListView.do' , title : '수정연구개발계획서'} //수정연구개발계획서
 													                                        ,{ menuId : '07060300' , url : '/sbjtexe/retrieveAgrtRqstListView.do' , title : '협약신청'} //협약신청
-													                                        ,{ menuId : '07060400' , url : '/sbjtexe/retrieveShmPaymListView.do' , title : '부담금납부조회'} //부담금납부조회
+													                                        /*,{ menuId : '07060400' , url : '/sbjtexe/retrieveShmPaymListView.do' , title : '부담금납부조회'} //부담금납부조회*/
 													                                        ,{ menuId : '07060500' , url : '/sbjtexe/retrieveAnnlChngListView.do' , title : '협약변경(연차)'} //협약변경(연차)
 													                                        ,{ menuId : '07060600' , url : '/sbjtexe/agrtChngListView.do' , title : '협약변경(통보/승인/중단요청)'} //협약변경
 																			               ]
 														 }
 													   , { menuId : '07070000' , title : '사업운영', menuArr : [ { menuId : '07070100' , url : '/sbjtexe/retrieveRptpSbmtView.do' , title : '보고서 제출'} //사업운영 - 보고서제출
-																		                    ,{ menuId : '07070200' , url : '/sbjtexe/retrieveEtubListView.do' , title : '연구장비관리'} //연구장비관리
-																		                    ,{ menuId : '07070300' , url : '/sbjtexe/retrieveRptpBexpPfmcList.do' , title : '사용실적보고서 제출'} //사용실적보고서 제출
-																		                    ,{ menuId : '07070500' , url : '/sbjtexe/retrieveRndSprtList.do' , title : 'R&D 서포터즈'} //R&D 서포터즈
+																		                    /*,{ menuId : '07070200' , url : '/sbjtexe/retrieveEtubListView.do' , title : '연구장비관리'} //연구장비관리*/
+																		                    /*,{ menuId : '07070300' , url : '/sbjtexe/retrieveRptpBexpPfmcList.do' , title : '사용실적보고서 제출'} //사용실적보고서 제출*/
+																		                    /*,{ menuId : '07070500' , url : '/sbjtexe/retrieveRndSprtList.do' , title : 'R&D 서포터즈'} //R&D 서포터즈*/
 																		                    ,{ menuId : '07070600' , url : '/sbjtexe/retrieveSftyMngListView.do' , title : '안전관리 유형 분류 조사'} //안전관리 유형 분류 조사
 // 																		                    ,{ menuId : '07070400' , url : '/sbjtexe/retrieveRndSprtSttSrvySbjtListView.do' , title : 'R&D지원현황 조사'} //
 																		                   ]
 														 }
-													   , { menuId : '07080000' , title : '연구비관리', menuArr : [ { menuId : '07080100' , url : '/sbjtexe/retrieveRechctListView.do' , title : '연구비관리'} //연구비관리 
-									                   										]
-					 								     }
+													   /*, { menuId : '07080000' , title : '연구비관리', menuArr : [ { menuId : '07080100' , url : '/sbjtexe/retrieveRechctListView.do' , title : '연구비관리'} //연구비관리*/ 
+// 									                   										]
+// 					 								     }
 													   , { menuId : '07090000' , title : 'R&D자율성 트랙', 
 														   menuArr : [ 
 														                   { menuId : '07090100' , url : '/sbjtexe/retriveSdbxRegGuidView.do' , title : '신청안내'} 
-									                                      ,{ menuId : '07090200' , url : '/sbjtexe/retriveSdbxFrutCreSbjtListView.do' , title : '우수성과 이력조회'} 
+									                                      /*,{ menuId : '07090200' , url : '/sbjtexe/retriveSdbxFrutCreSbjtListView.do' , title : '우수성과 이력조회'}*/ 
 									                                      ,{ menuId : '07090300' , url : '/sbjtexe/retriveSdbxRndRqstList.do' , title : 'R&D자율성 트랙 신청'} 
 									                                     ]
 					                                      }												   
@@ -346,6 +346,7 @@ var menuList = {
                                                                         { menuId : '08060100' , url : '/pao/retrieveRtfeeSalePfmcList.do' , title : '경상기술료 매출실적'} // 
                                                                       ]
                                                          }
+				                                       /*
 													   , { menuId : '08040000' , title : '성과조사'
 			                                                           , menuArr : [
 			                                                                        { menuId : '08040100' , url : '/pao/frutExam/retrieveFrutExamList.do?frutClctRang=GNRL' , title : '성과조사(집중성과)'} // 성과조사
@@ -354,20 +355,21 @@ var menuList = {
 			                                                                       ,{ menuId : '08040200' , url : '/pao/frutExam/retrieveFrutExamOtpt.do' , title : '성과조사출력'} // 성과조사출력
 			                                                                      ]
 														   } 			//성과조사
+														   */
 													   
 													   //, { menuId : '08050000' , url : '/08050000.do' }  					 				//성과실시기관 변경신청 - 협약변경 메뉴로 이동
-													   , { menuId : '08030000' , title : '업무 연락방'
-														                   , menuArr : [ 
-														                                     { menuId : '08030100' , url : '/pao/dutyCntc/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
-																		                    ,{ menuId : '08030200' , url : '/08030200.do' , title : "담당자 찾기"} //담당자 찾기
-																		                    /* ,{ menuId : '08030300' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=VOC00006' , title : '1:1 전문상담'} //1:1 상담(Q&amp;A) */
-																		                    ,{ menuId : '08030400' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=S0000056' , title : '특별민원 피해신고'} //1:1 상담(Q&amp;A)
-																		                    ,{ menuId : '08030500' , url : '/custsprt/rspdrnd/retrieveCnslResvList.do?blbdId=S0000077' , title : '상담예약'} //상담예약
+// 													   , { menuId : '08030000' , title : '업무 연락방'
+// 														                   , menuArr : [ 
+// 														                                     { menuId : '08030100' , url : '/pao/dutyCntc/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
+// 																		                    ,{ menuId : '08030200' , url : '/08030200.do' , title : "담당자 찾기"} //담당자 찾기
+// 																		                    /* ,{ menuId : '08030300' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=VOC00006' , title : '1:1 전문상담'} //1:1 상담(Q&amp;A) */
+// 																		                    ,{ menuId : '08030400' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=S0000056' , title : '특별민원 피해신고'} //1:1 상담(Q&amp;A)
+// 																		                    ,{ menuId : '08030500' , url : '/custsprt/rspdrnd/retrieveCnslResvList.do?blbdId=S0000077' , title : '상담예약'} //상담예약
 																		                    
-																		                    
-																		                    ,{ menuId : '08030900' , url : '/pao/dutyCntc/mobile/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
-																			               ]
-														 }
+
+// 																		                    ,{ menuId : '08030900' , url : '/pao/dutyCntc/mobile/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
+// 																			               ]
+// 														 }
 													   ]
 					 }
 				   , { menuId : '09000000' , title : '마이페이지' , menuArr : [ { menuId : '09010000' , url : '/mypg/retrieveIdvdPgInfo.do' , title : '개인화페이지'} 									//마이페이지 - 개인화페이지
@@ -434,6 +436,10 @@ var menuList = {
 <!-- 자동완성 관련js -->
 <script src="/js/keit/rnd/search/ark/js/beta.fix.js" type="text/javascript"></script>
 <script type="text/javascript">
+
+if(document.location.hash.replace(/#/g,'') == "00010000" || document.location.hash.replace(/#/g,'') == '') {
+	document.location.href = 'https://srome.keit.re.kr/srome/biz/perform/retrievePrfrmHmeView.do?prgmId=XPG200000000';
+}
 
 /* 
  * 외부 링크를 통해 접속 시 해당 화면으로 바로 이동시키시 위한 처리
@@ -970,15 +976,18 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a href="#07010100">과제수행현황</a>
 <span class="depth3">
 <a href="#07010100">나의 과제수행현황</a>
-<a href="javascript:;" onclick="alert('기업로그인(범용사업자인증서) 하신 뒤 이용 부탁드립니다.'); return false;">이차보전 사업<br/>확인서 출력</a>
+<!-- 
+	                	<a href="javascript:;" onclick="alert('기업로그인(범용사업자인증서) 하신 뒤 이용 부탁드립니다.'); return false;">이차보전 사업<br>확인서 출력</a>
+	                		
+	                	 -->
 </span>
 </li>
 <li>
 <a href="#07030100">과제접수</a>
 <span class="depth3">
 <a href="#07030100">신청안내</a>
-<a href="#07030200">신규과제 신청</a>
-<a href="#07030300">차단계 과제신청</a>
+<!--                         <a href="#07030200">신규과제 신청</a> -->
+<!--                         <a href="#07030300">차단계 과제신청</a> -->
 <!-- IRIS를 통해 개념평가 수행됨, 해당기능은 P-ROME 브레밍스토밍으로 대체가능 20240422 김영훈 -->
 <!-- 
                         <a href="#07030400">온라인 과제 발굴<br/> 플랫폼</a>
@@ -987,14 +996,14 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <!-- 
                         <a href="#07030500">재난안전 R&amp;D <br/> 과제신청</a>
                          -->
-<a href="#07030600">성과활용<br>우수기관 조회</br></a>
+<!--                         <a href="#07030600">성과활용<br/>우수기관 조회</a> -->
 </span>
 </li>
-<li>
-<a href="#07040100">평가</a>
-<span class="depth3">
+<!--                     <li> -->
+<!--                     <a href="#07040100">평가</a> -->
+<!--                       <span class="depth3"> -->
 <!--                         <a href="#07040100">평가위원회 발표자료</a> -->
-<a href="#07040200">과제평가 결과</a>
+<!--                         <a href="#07040200">과제평가 결과</a> -->
 <!-- 스텔라 이전 전자평가시스템에서 사용한 기능으로 현재 활용하지 않음 20240422 김영훈 -->
 <!-- 
                         <a href="#07040400">서면검토의견조회</a>
@@ -1002,9 +1011,12 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <!--                         <a href="#07040300">온라인 토론방</a> -->
 <!--                         <a href="#07040500">평가위원회 Q&A</a> -->
 <!--                         <a href="#07040600">대화형 및 화상평가</a> -->
-<a href="#07040700" onclick="window.open('https://stella.keit.re.kr/'); return false;" target="_blank" title="새창으로 열림">평가시스템 바로가기<i class="blank"></i></a>
-</span>
-</li>
+<!-- 
+<a href="#07040700" onclick="window.open('https://stella.keit.re.kr/'); return false;" title="새창으로 열림"  target="_blank">평가시스템 바로가기<i class="blank"></i></a>
+
+ -->
+<!--                       </span> -->
+<!--                     </li> -->
 <li>
 <a href="#07050000">이의신청</a>
 <span class="depth3">
@@ -1017,7 +1029,7 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a href="#07060100">협약안내</a>
 <a href="#07060200">수정연구개발계획서</a>
 <a href="#07060300">협약신청</a>
-<a href="#07060400">부담금 납부조회</a>
+<!--                         <a href="#07060400">부담금 납부조회</a> -->
 <a href="#07060500">협약변경(연차)</a>
 <a href="#07060600">협약변경<br/>(통보/승인/중단요청)</a>
 </span>
@@ -1034,22 +1046,24 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <!-- 
                         <a href="#07070200">연구장비 관리</a>
                          -->
-<a href="#07070500">R&amp;D 서포터즈</a>
+<!--                         <a href="#07070500">R&amp;D 서포터즈</a>  -->
 <a href="#07070600">안전관리 유형 분류 조사</a>
 <!--                         <a href="#07070400">R&amp;D지원현황 조사</a> -->
 </span>
 </li>
-<li>
-<a href="#07080100">연구비관리</a>
-<span class="depth3">
-<a href="#07080100">연구비관리</a>
-</span>
-</li>
+<!-- 
+                    <li>
+                      <a href="#07080100">연구비관리</a>
+                         <span class="depth3">
+                            <a href="#07080100">연구비관리</a>
+                        </span>
+                    </li>
+                     -->
 <li>
 <a href="#07090100">R&amp;D자율성트랙</a>
 <span class="depth3">
 <a href="#07090100">신청안내</a>
-<a href="#07090200">우수성과 이력조회</a>
+<!--                         <a href="#07090200">우수성과 이력조회</a> -->
 <a href="#07090300">R&amp;D자율성트랙 신청<br>(과거 R&amp;D샌드박스)</br></a>
 </span>
 </li>
@@ -1090,33 +1104,33 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a href="#08060100">경상기술료 매출실적</a>
 </span>
 </li>
-<li style="width: 200px; !important">
-<a href="#08040000">성과조사</a>
-<span class="depth3">
-<a href="#08040100">성과조사(집중성과)</a>
-<a href="#08040400">성과조사(상시성과)</a> <!-- 2021/04/02 김영찬 추가 -->
-<!-- WPM 사업 성과조사가 완료되어 현재 미활용 20240422 김영훈 -->
-<!-- 
+<!--                       <a href="#08040000">성과조사</a> -->
+<!--                         <span class="depth3"> -->
+<!--                             <a href="#08040100">성과조사(집중성과)</a> -->
+<!--                             <a href="#08040400">성과조사(상시성과)</a> 2021/04/02 김영찬 추가 -->
+<!--WPM 사업 성과조사가 완료되어 현재 미활용 20240422 김영훈 -->
+<!--
                             <a href="#08040300">성과조사(WPM 사업)</a>
-                             -->
-<a href="#08040200">성과조사출력</a>
-</span>
-</li>
+					        -->
+<!--                             <a href="#08040200">성과조사출력</a> -->
+<!--                         </span> -->
+<!--                     </li> -->
 <!-- <li class="wid220">
                       <a href="#08050000">성과실시기관 변경신청</a>
                         <span class="depth3">
                             <a href="#08050000">성과실시기관 변경신청</a>
                         </span>
                     </li> --> <!-- 협약변경 메뉴로 이동 -->
-<li style="width: 200px; !important">
-<a href="#08030100">업무 연락방</a>
-<span class="depth3">
-<a href="#08030100">전자알림,전자공문 조회</a>
-<a href="#" onclick="window.open('https://www.keit.re.kr/org-map?mid=a10107030100'); return false;">담당자찾기 <i class="blank"></i></a>
-<!-- <a href="#08030300">1:1 전문상담</a> -->
-<!--RND상담예약 db등록 인력만 / 인력추가: KEIT_TEMP.MG_SBC19741(WORK_ID = '2023090601') -->
-</span>
-</li>
+<!--                       <a href="#08030100">업무 연락방</a> -->
+<!--                         <span class="depth3"> -->
+<!--                             <a href="#08030100">전자알림,전자공문 조회</a> -->
+<!--                             <a href="#" onclick="window.open('https://www.keit.re.kr/org-map?mid=a10107030100'); return false;">담당자찾기 <i class="blank"></i></a> -->
+<!--                             <a href="#08030300">1:1 전문상담</a> -->
+<!--                             <a href="#08030400">특별민원신고센터</a> -->
+<!--                             RND상담예약 db등록 인력만 / 인력추가: KEIT_TEMP.MG_SBC19741(WORK_ID = '2023090601') -->
+<!--                             <a href="#08030500">R&amp;D 상담예약</a> -->
+<!--                         </span> -->
+<!--                     </li> -->
 </ul>
 </dd>
 </dl>
@@ -1190,7 +1204,10 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <li id="userlink4"><a class="img_tab10" href="#" onclick="f_chgPage('07060300'); return false;"><span>협약신청</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
 <li id="userlink5"><a class="img_tab11" href="https://www.rcms.go.kr" target="_blank"><span>연구비관리 (RCMS) <img alt="새창이동" src="img/common/icon_blank_w.png"/></span></a></li>
 <li id="userlink6"><a class="img_tab12" href="#" onclick="f_chgPage('08010100'); return false;"><span>기술실시 보고서</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
-<li id="userlink7"><a class="img_tab13" href="#" onclick="f_chgPage('08030100'); return false;"><span>전자알림,전자공문조회</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
+<!-- 
+                         <li id="userlink7"><a href="#" onclick="f_chgPage('08030100'); return false;" class="img_tab13"><span>전자알림,전자공문조회</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
+                         
+                          -->
 <li id="userlink8"><a class="img_tab14" href="#" onclick="f_gotoManualPage(); return false;"><span>이용매뉴얼</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
 <li class="last"><img alt=" " src="img/main/slide_rightbg.png"/></li>
 </ul>
@@ -1293,11 +1310,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">혁신적 R&amp;D 품목 발굴을 위한  디자인 아이디어 공모전<i class="blank"></i></a><span class="date">2024.10.11</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 산업기술 R&amp;D사업(화학공정, 청정생산 분야) 기술수요조사<i class="blank"></i></a><span class="date">2024.09.25</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">(가칭) 바이오제조 혁신사업 신규 예타 사업 기획을 위한 기술수요조사(2차)<i class="blank"></i></a><span class="date">2024.09.24</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 디자인산업기술개발사업(디자인-제조융합기술개발) 기술수요조사 공고 <i class="blank"></i></a><span class="date">2024.09.13</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 산업기술 R&amp;D사업(스마트제조, 디스플레이, 스마트전자, 배터리 분야) 추가 기술수요조사 공고<i class="blank"></i></a><span class="date">2024.09.10</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 바이오헬스분야 산업기술 R&amp;D사업 추가 기술수요조사 공고<i class="blank"></i></a><span class="date">2024.09.09</span></li>
 </ul>
 </div>
 </div>
@@ -1337,11 +1354,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_notice_list">
 <ul>
+<li><a href="#" onclick="f_gotoDetailPage('C', '134955'); return false;">ITECH+(산업기술 R&amp;D 정보포털) 서비스 종료 안내</a> <span class="date">2024.10.07</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '134647'); return false;">2024년도 해양경찰청 우수연구개발 혁신제품 지정 신청 재공고</a> <span class="date">2024.09.30</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '133564'); return false;">2024년 10월 산업기술 R&amp;D 교육 실무과정 교육 안내</a> <span class="date">2024.09.23</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '133552'); return false;">2024년 4분기 행정안전부 혁신제품 지정기간 1차 연장 신청 공고</a> <span class="date">2024.09.19</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '133551'); return false;">2024년 하반기 행정안전부 재난안전 혁신제품 추가등록 신청 공고</a> <span class="date">2024.09.19</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '131946'); return false;">2024년도 소재부품기술개발사업(9차) 신규지원 대상과제 공고</a> <span class="date">2024.08.30</span> </li>
 </ul>
 </div>
 </div>
@@ -1534,6 +1551,14 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a class="rollingPrevNext" href="#"><img alt="다음보기" src="img/main/arrNext_icon.png"/></a>
 <a class="rollingStop" href="#"><img alt="정지" src="img/main/stop_icon.png"/></a>
 </div>
+<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2024/10/08/90652DD8-BE53-2E78-4467-7D285334E58A_W435.png"/></a>
+<!-- 텍스트 영역 -->
+<dl>
+<dt>[이달의 신기술]</dt>
+<dd>테크 포커스 2024년 9월호 (Vol.11)</dd>
+</dl>
+<!--// 텍스트 영역 -->
+</div>
 <div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2024/08/13/DC93D2E9-5BF1-A75D-4779-0DB6081C36D1_W435.png"/></a>
 <!-- 텍스트 영역 -->
 <dl>
@@ -1563,14 +1588,6 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <dl>
 <dt>[이달의 신기술]</dt>
 <dd>테크 포커스 2024년 5월호 (Vol.7)</dd>
-</dl>
-<!--// 텍스트 영역 -->
-</div>
-<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2024/07/18/D5DEFE27-09C2-A55D-E2B9-8DE9F5929FC9_W435.png"/></a>
-<!-- 텍스트 영역 -->
-<dl>
-<dt>[이달의 신기술]</dt>
-<dd>테크 포커스 2024년 4월호 (Vol.6)</dd>
 </dl>
 <!--// 텍스트 영역 -->
 </div>
@@ -2307,8 +2324,8 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
 <div> <a class="m_snb" href="#">과제접수</a>
 <ul class="gnb_submenu">
 <li><a href="#07030100">신청안내</a></li>
-<li><a href="#07030200">신규과제신청</a></li>
-<li><a href="#07030300">차단계과제신청</a></li>
+<!--                       <li><a href="#07030200">신규과제신청</a></li> -->
+<!--                       <li><a href="#07030300">차단계과제신청</a></li> -->
 <!-- IRIS를 통해 개념평가 수행됨, 해당기능은 P-ROME 브레밍스토밍으로 대체가능 20240422 김영훈 -->
 <!-- 
                       <li><a href="#07030400">온라인 과제 발굴 플랫폼</a></li>
@@ -2317,15 +2334,15 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
 <!-- 
                       <li><a href="#07030500">재난안전 R&amp;D 과제신청</a></li>
                        -->
-<li><a href="#07030600">성과활용 우수기관 조회</a></li>
+<!--                       <li><a href="#07030600">성과활용 우수기관 조회</a></li> -->
 </ul>
 </div>
-<div><a class="m_snb" href="#">평가</a>
-<ul class="gnb_submenu">
+<!--                   <div><a href="#" class="m_snb">평가</a> -->
+<!--                     <ul class="gnb_submenu"> -->
 <!-- 
                       <li><a href="#07040100">평가위원회 발표자료</a></li>
                        -->
-<li><a href="#07040200">과제평가결과</a></li>
+<!--                       <li><a href="#07040200">과제평가결과</a></li> -->
 <!-- 스텔라 이전 전자평가시스템에서 사용한 기능으로 현재 활용하지 않음 20240422 김영훈 -->
 <!-- 
                       <li><a href="#07040400">서면검토의견조회</a></li>
@@ -2335,16 +2352,19 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
                       <li><a href="#07040500">평가위원회 Q&A</a></li>
                       <li><a href="#07040600">대화형 및 화상평가</a></li>
                        -->
-<li><a href="#07040700" onclick="window.open('https://stella.keit.re.kr/'); return false;" target="_blank" title="새창으로 열림">평가시스템 바로가기<i class="blank"></i></a></li>
-</ul>
-</div>
+<!-- 
+<li><a href="#07040700" onclick="window.open('https://stella.keit.re.kr/'); return false;" title="새창으로 열림"  target="_blank">평가시스템 바로가기<i class="blank"></i></a></li>
+
+ -->
+<!--                     </ul> -->
+<!--                   </div> -->
 <div><a class="line_none" href="#07050000">이의신청</a></div>
 <div><a class="m_snb" href="#">협약</a>
 <ul class="gnb_submenu">
 <li><a href="#07060100">협약안내</a></li>
 <li><a href="#07060200">수정연구개발계획서</a></li>
 <li><a href="#07060300">협약신청</a></li>
-<li><a href="#07060400">부담금납부조회</a></li>
+<!--                       <li><a href="#07060400">부담금납부조회</a></li> -->
 <li><a href="#07060500">협약변경(연차)</a></li>
 <li><a href="#07060600">협약변경(통보/승인/중단요청)</a></li>
 </ul>
@@ -2359,15 +2379,17 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
 <!--                       <li><a href="#07070400">R&amp;D지원현황조사</a></li> -->
 </ul>
 </div>
-<div><a class="m_snb" href="#">연구비관리</a>
-<ul class="gnb_submenu">
-<li><a href="#07080100">연구비관리</a></li>
-</ul>
-</div>
+<!-- 
+                  <div><a href="#" class="m_snb">연구비관리</a>
+                    <ul class="gnb_submenu">
+                      <li><a href="#07080100">연구비관리</a></li>
+                    </ul>
+                  </div>
+                   -->
 <div><a class="m_snb" href="#">R&amp;D자율성트랙</a>
 <ul class="gnb_submenu">
 <li><a href="#07090100">신청안내</a></li>
-<li><a href="#07090200">우수성과 이력조회</a></li>
+<!--                       <li><a href="#07090200">우수성과 이력조회</a></li> -->
 <li><a href="#07090300">R&amp;D 자율성트랙 신청</a></li>
 </ul>
 </div>
@@ -2385,25 +2407,27 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
 </div>
 <div><a class="line_none" href="#08020000">납부현황</a></div>
 <div><a class="line_none" href="#08060000">경상기술료</a></div>
-<div><a class="line_none" href="#08040000">성과조사</a>
-<ul class="gnb_submenu">
-<li><a href="#08040100">성과조사(집중성과)</a></li>
-<li><a href="#08040400">성과조사(상시성과)</a></li> <!-- 2021/04/02 김영찬 추가 -->
-<!-- WPM 사업 성과조사가 완료되어 현재 미활용 20240422 김영훈 -->
-<!--
-                      <li><a href="#08040300">성과조사(WPM  사업)</a></li>
-                       -->
-<li><a href="#08040200">성과조사출력</a></li>
-</ul>
-</div>
+<!--                   <div><a href="#08040000" class="line_none">성과조사</a> -->
+<!-- 					<ul class="gnb_submenu"> -->
+<!--                       <li><a href="#08040100">성과조사(집중성과)</a></li> -->
+<!--                       <li><a href="#08040400">성과조사(상시성과)</a></li> 2021/04/02 김영찬 추가 -->
+<!--                       WPM 사업 성과조사가 완료되어 현재 미활용 20240422 김영훈 -->
+<!--                      
+<!--                       <li><a href="#08040300">성과조사(WPM  사업)</a></li> -->
+<!-- --> --&gt;
+<!--                       <li><a href="#08040200">성과조사출력</a></li> -->
+<!--                     </ul> -->
+<!--                   </div> -->
 <!-- <div><a href="#08050000" class="line_none">성과실시기관 변경신청</a></div> --> <!-- 협약변경 메뉴로 이동 -->
-<div><a class="m_snb" href="#">업무연락방</a>
-<ul class="gnb_submenu">
-<li><a href="#08030100">전자알림,전자공문 조회</a></li>
-<li><a href="#08030200">담당자찾기</a></li>
-<li><a href="#08030300">1:1 전문상담</a></li>
-</ul>
-</div>
+<!-- 
+                  <div><a href="#" class="m_snb">업무연락방</a>
+                    <ul class="gnb_submenu">
+                      <li><a href="#08030100">전자알림,전자공문 조회</a></li>
+                      <li><a href="#08030200">담당자찾기</a></li>
+                      <li><a href="#08030300">1:1 전문상담</a></li>
+                    </ul>
+                  </div>
+                   -->
 </li>
 </li></ul>
 </div>
