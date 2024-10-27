@@ -1355,11 +1355,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_notice_list">
 <ul>
+<li><a href="#" onclick="f_gotoDetailPage('C', '138056'); return false;">2024년 11월 산업기술 R&amp;D 교육 실무과정 교육 안내</a> <span class="date">2024.10.22</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '134955'); return false;">ITECH+(산업기술 R&amp;D 정보포털) 서비스 종료 안내</a> <span class="date">2024.10.07</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '134647'); return false;">2024년도 해양경찰청 우수연구개발 혁신제품 지정 신청 재공고</a> <span class="date">2024.09.30</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '133564'); return false;">2024년 10월 산업기술 R&amp;D 교육 실무과정 교육 안내</a> <span class="date">2024.09.23</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '133552'); return false;">2024년 4분기 행정안전부 혁신제품 지정기간 1차 연장 신청 공고</a> <span class="date">2024.09.19</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '133551'); return false;">2024년 하반기 행정안전부 재난안전 혁신제품 추가등록 신청 공고</a> <span class="date">2024.09.19</span> </li>
 </ul>
 </div>
 </div>
@@ -1552,6 +1552,14 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a class="rollingPrevNext" href="#"><img alt="다음보기" src="img/main/arrNext_icon.png"/></a>
 <a class="rollingStop" href="#"><img alt="정지" src="img/main/stop_icon.png"/></a>
 </div>
+<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2024/10/23/41D6103F-B2FB-30C0-9982-03179A26386B_W435.png"/></a>
+<!-- 텍스트 영역 -->
+<dl>
+<dt>[이달의 신기술]</dt>
+<dd>테크 포커스 2024년 10월호 (Vol.12)</dd>
+</dl>
+<!--// 텍스트 영역 -->
+</div>
 <div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2024/10/08/90652DD8-BE53-2E78-4467-7D285334E58A_W435.png"/></a>
 <!-- 텍스트 영역 -->
 <dl>
@@ -1581,14 +1589,6 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <dl>
 <dt>[이달의 신기술]</dt>
 <dd>테크 포커스 2024년 6월호 (Vol.8)</dd>
-</dl>
-<!--// 텍스트 영역 -->
-</div>
-<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2024/07/18/EA57C177-A670-59E8-13F3-4F6A48E64B3C_W435.png"/></a>
-<!-- 텍스트 영역 -->
-<dl>
-<dt>[이달의 신기술]</dt>
-<dd>테크 포커스 2024년 5월호 (Vol.7)</dd>
 </dl>
 <!--// 텍스트 영역 -->
 </div>
@@ -1657,11 +1657,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <div class="title">진행중인 교육과정 <a class="more" href="#" onclick="f_chgPage('05020000'); return false;">더보기</a></div>
 <ul class="edu_list" id="edu_list">
 <li><span class="zone">지역</span><span class="edu">교육과정명</span><span class="day">날짜</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000027'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">11.05~11.05</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000026'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">10.29~10.29</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000024'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">10.15~10.15</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000023'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">10.08~10.08</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000022'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">09.24~09.24</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000021'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">09.10~09.10</span></li>
 </ul>
 </div>
 <!--  // edu_box -->
