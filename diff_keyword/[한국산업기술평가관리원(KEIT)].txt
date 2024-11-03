@@ -358,18 +358,18 @@ var menuList = {
 														   */
 													   
 													   //, { menuId : '08050000' , url : '/08050000.do' }  					 				//성과실시기관 변경신청 - 협약변경 메뉴로 이동
-// 													   , { menuId : '08030000' , title : '업무 연락방'
-// 														                   , menuArr : [ 
-// 														                                     { menuId : '08030100' , url : '/pao/dutyCntc/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
+													   , { menuId : '08030000' , title : '업무 연락방'
+														                   , menuArr : [ 
+														                                     { menuId : '08030100' , url : '/pao/dutyCntc/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
 // 																		                    ,{ menuId : '08030200' , url : '/08030200.do' , title : "담당자 찾기"} //담당자 찾기
-// 																		                    /* ,{ menuId : '08030300' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=VOC00006' , title : '1:1 전문상담'} //1:1 상담(Q&amp;A) */
+																		                    /* ,{ menuId : '08030300' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=VOC00006' , title : '1:1 전문상담'} //1:1 상담(Q&amp;A) */
 // 																		                    ,{ menuId : '08030400' , url : '/custsprt/rspdrnd/retrieveInqrList.do?blbdId=S0000056' , title : '특별민원 피해신고'} //1:1 상담(Q&amp;A)
 // 																		                    ,{ menuId : '08030500' , url : '/custsprt/rspdrnd/retrieveCnslResvList.do?blbdId=S0000077' , title : '상담예약'} //상담예약
 																		                    
 
 // 																		                    ,{ menuId : '08030900' , url : '/pao/dutyCntc/mobile/retrieveElecNtcList.do' , title : '전자알림,전자공문 조회'} //업무 연락방 - 전자알림
-// 																			               ]
-// 														 }
+																			               ]
+														 }
 													   ]
 					 }
 				   , { menuId : '09000000' , title : '마이페이지' , menuArr : [ { menuId : '09010000' , url : '/mypg/retrieveIdvdPgInfo.do' , title : '개인화페이지'} 									//마이페이지 - 개인화페이지
@@ -1205,10 +1205,9 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <li id="userlink4"><a class="img_tab10" href="#" onclick="f_chgPage('07060300'); return false;"><span>협약신청</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
 <li id="userlink5"><a class="img_tab11" href="https://www.rcms.go.kr" target="_blank"><span>연구비관리 (RCMS) <img alt="새창이동" src="img/common/icon_blank_w.png"/></span></a></li>
 <li id="userlink6"><a class="img_tab12" href="#" onclick="f_chgPage('08010100'); return false;"><span>기술실시 보고서</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
-<!-- 
-                         <li id="userlink7"><a href="#" onclick="f_chgPage('08030100'); return false;" class="img_tab13"><span>전자알림,전자공문조회</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
-                         
-                          -->
+<!--
+-->
+<li id="userlink7"><a class="img_tab13" href="#" onclick="f_chgPage('08030100'); return false;"><span>전자알림,전자공문조회</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
 <li id="userlink8"><a class="img_tab14" href="#" onclick="f_gotoManualPage(); return false;"><span>이용매뉴얼</span></a><p class="Ncount" style="display: none;"><span>54</span></p></li>
 <li class="last"><img alt=" " src="img/main/slide_rightbg.png"/></li>
 </ul>
@@ -1311,11 +1310,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">공급망 산업원천소재기술개발(3R) 신규 예타 사업 기획을 위한 기술 수요조사<i class="blank"></i></a><span class="date">2024.10.17</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">공급망 산업원천소재기술개발(3R) 신규 예타 사업 기획을 위한 기술 수요조사(공고연장)<i class="blank"></i></a><span class="date">2024.10.17</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">혁신적 R&amp;D 품목 발굴을 위한  디자인 아이디어 공모전<i class="blank"></i></a><span class="date">2024.10.11</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 산업기술 R&amp;D사업(화학공정, 청정생산 분야) 기술수요조사<i class="blank"></i></a><span class="date">2024.09.25</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">(가칭) 바이오제조 혁신사업 신규 예타 사업 기획을 위한 기술수요조사(2차)<i class="blank"></i></a><span class="date">2024.09.24</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 디자인산업기술개발사업(디자인-제조융합기술개발) 기술수요조사 공고 <i class="blank"></i></a><span class="date">2024.09.13</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년 미래모빌리티(자동차) 분야 기술 상시수요조사<i class="blank"></i></a><span class="date">2024.09.23</span></li>
 </ul>
 </div>
 </div>
@@ -1657,11 +1656,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <div class="title">진행중인 교육과정 <a class="more" href="#" onclick="f_chgPage('05020000'); return false;">더보기</a></div>
 <ul class="edu_list" id="edu_list">
 <li><span class="zone">지역</span><span class="edu">교육과정명</span><span class="day">날짜</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000029'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">11.19~11.19</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000028'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">11.12~11.12</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000027'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">11.05~11.05</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000026'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">10.29~10.29</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000024'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">10.15~10.15</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000023'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">10.08~10.08</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2024000022'); return false;">2024년 산업기술 R&amp;D 교육(실무과정)</a></span><span class="day1">09.24~09.24</span></li>
 </ul>
 </div>
 <!--  // edu_box -->
@@ -2420,15 +2419,15 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
 <!--                     </ul> -->
 <!--                   </div> -->
 <!-- <div><a href="#08050000" class="line_none">성과실시기관 변경신청</a></div> --> <!-- 협약변경 메뉴로 이동 -->
+<div><a class="m_snb" href="#">업무연락방</a>
+<ul class="gnb_submenu">
+<li><a href="#08030100">전자알림,전자공문 조회</a></li>
 <!-- 
-                  <div><a href="#" class="m_snb">업무연락방</a>
-                    <ul class="gnb_submenu">
-                      <li><a href="#08030100">전자알림,전자공문 조회</a></li>
                       <li><a href="#08030200">담당자찾기</a></li>
                       <li><a href="#08030300">1:1 전문상담</a></li>
-                    </ul>
-                  </div>
                    -->
+</ul>
+</div>
 </li>
 </li></ul>
 </div>

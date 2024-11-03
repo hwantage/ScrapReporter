@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1173; // 전체 조회 건수
+	var totalNum = 1181; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -190,7 +190,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1173</b>건
+<span>총 <b>1181</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -230,20 +230,23 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3362&amp;page=1">2024 KISA ESG경영 이해관계자 설문조사</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3384&amp;page=1">2024 미래 융합보안 세미나 개최 안내(11.7, 코엑스)</a>
 </td>
-<td class="date">2024-10-07</td>
-<td class="count">10239</td>
+<td class="date">2024-11-01</td>
+<td class="count">1432</td>
 <td class="attach">
 </td>
 </tr>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3323&amp;page=1">2024년도 공공기관 동반성장 체감도 조사 관련 개인정보 제3자 제공 알림</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3379&amp;page=1">2024년 KISA 대국민 ESG 아이디어 공모전 개최 안내</a>
 </td>
-<td class="date">2024-08-23</td>
-<td class="count">22847</td>
+<td class="date">2024-10-30</td>
+<td class="count">3600</td>
 <td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3379', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
 </td>
 </tr>
 <tr class="notice">
@@ -251,87 +254,84 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
 </td>
 <td class="date">2024-08-12</td>
-<td class="count">33777</td>
+<td class="count">36675</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1170</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3376&amp;page=1">2025년 블록체인 융복합 타운 조성 사업 모집 공고</a>
+<td class="num">1178</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3383&amp;page=1">「2024년 한국인터넷진흥원 영문 슬로건 공모」 수상작 선정 결과 안내</a>
 </td>
-<td class="date">2024-10-25</td>
-<td class="count">944</td>
+<td class="date">2024-10-31</td>
+<td class="count">1451</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3376', 1, 'KO');">
+</td>
+</tr>
+<tr>
+<td class="num">1177</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3382&amp;page=1">「개인정보 기술포럼」제3기 신규위원 모집 안내(11.1.~11.29.)</a>
+</td>
+<td class="date">2024-10-31</td>
+<td class="count">1404</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3382', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
 </a>
 </td>
 </tr>
 <tr>
-<td class="num">1169</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3375&amp;page=1">2025년 블록체인 특화 클러스터 조성 사업 모집 공고</a>
+<td class="num">1176</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3381&amp;page=1">"2024 블록체인 진흥주간 x 웹3.0 컨퍼런스" 개최 안내(11/27~28, 서울 세종대학교 컨벤션센터)</a>
 </td>
-<td class="date">2024-10-25</td>
-<td class="count">950</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3375', 1, 'KO');">
-<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1168</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3374&amp;page=1">[재공고] 「2024년 블록체인 기업 성장 지원 사업」 참여기업 모집 공고(~10.31)</a>
-</td>
-<td class="date">2024-10-23</td>
-<td class="count">1687</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3374', 1, 'KO');">
-<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1167</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3373&amp;page=1">제14회 소프트웨어 개발보안 컨퍼런스 개최 안내(24.11.6(수), 강남섬유센터)</a>
-</td>
-<td class="date">2024-10-21</td>
-<td class="count">2177</td>
+<td class="date">2024-10-30</td>
+<td class="count">1838</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1166</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3372&amp;page=1">사이버위협 공동대응 플랫폼 구축(SIEM&amp;SOAR 지원)을 위한 소규모 기업 모집안내</a>
+<td class="num">1175</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3380&amp;page=1">2024년 출판콘텐츠 기술개발 지원 사업 재공고</a>
 </td>
-<td class="date">2024-10-21</td>
-<td class="count">2012</td>
+<td class="date">2024-10-30</td>
+<td class="count">1256</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3372', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3380', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
 <tr>
-<td class="num">1165</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3371&amp;page=1">한국인터넷진흥원 ESG 주간동향 보고서(8회차)</a>
+<td class="num">1174</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3378&amp;page=1">한국인터넷진흥원 ESG 주간동향 보고서(9회차)</a>
 </td>
-<td class="date">2024-10-21</td>
-<td class="count">1508</td>
+<td class="date">2024-10-29</td>
+<td class="count">1447</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3371', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3378', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
 </a>
 </td>
 </tr>
 <tr>
-<td class="num">1164</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3370&amp;page=1">2025년 블록체인 공공분야 집중사업 수요조사 안내</a>
+<td class="num">1173</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3377&amp;page=1">2024년 6차 정보보호 인증제품 조달청 벤처나라 추천 희망기업 모집 공고(12월 지정심사) (~11.15(금) 18시까지)</a>
 </td>
-<td class="date">2024-10-21</td>
-<td class="count">1560</td>
+<td class="date">2024-10-28</td>
+<td class="count">1635</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3370', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3377', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1172</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3376&amp;page=1">2025년 블록체인 융복합 타운 조성 사업 모집 공고</a>
+</td>
+<td class="date">2024-10-25</td>
+<td class="count">2710</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3376', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
 </a>
 </td>
@@ -361,10 +361,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2024-10-25</dd>
+<dd>2024-11-01</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="fd772b27-bc6f-4c84-9771-b6e7a8ae7fbc">
+<input name="_csrf" type="hidden" value="44caf5c9-4f50-45a5-9565-30d3cc1b59f5">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -387,7 +387,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "fd772b27-bc6f-4c84-9771-b6e7a8ae7fbc");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "44caf5c9-4f50-45a5-9565-30d3cc1b59f5");
             },			
 			success: function(data) {
 				alert(data.message)

@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "080mbAr3Mxqt5u6d2Ca8Csf_3UF8Y7coS5xLyqK1Rf9Oy30CZ6aP-3E_Hax_m0zYtiCsoJJyCtO5mqdrfmwFapjDRzKvK5h-6T7RIewDmEnMPoUVFtj7xiKUwxxN_txdrG9i9g2",
+                UserId: "8elMitsLl_Xyn5a-gD_VJ-JYbcAUeRDJ2AY4-pcnkuS1fCcdF9-J-kqEzyrLORV-iSWEOeyXHz4Q0bNJwbdIZt8vDlZgCkYft0bGElpaqTSl4VlkvlaIZCPO4jG6r-YCayXTrg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "080mbAr3Mxqt5u6d2Ca8Csf_3UF8Y7coS5xLyqK1Rf9Oy30CZ6aP-3E_Hax_m0zYtiCsoJJyCtO5mqdrfmwFapjDRzKvK5h-6T7RIewDmEnMPoUVFtj7xiKUwxxN_txdrG9i9g2" === "080mbAr3Mxqt5u6d2Ca8Csf_3UF8Y7coS5xLyqK1Rf9Oy30CZ6aP-3E_Hax_m0zYtiCsoJJyCtO5mqdrfmwFapjDRzKvK5h-6T7RIewDmEnMPoUVFtj7xiKUwxxN_txdrG9i9g2" ? "Anonymous" : "User",
+                UserType: "8elMitsLl_Xyn5a-gD_VJ-JYbcAUeRDJ2AY4-pcnkuS1fCcdF9-J-kqEzyrLORV-iSWEOeyXHz4Q0bNJwbdIZt8vDlZgCkYft0bGElpaqTSl4VlkvlaIZCPO4jG6r-YCayXTrg2" === "8elMitsLl_Xyn5a-gD_VJ-JYbcAUeRDJ2AY4-pcnkuS1fCcdF9-J-kqEzyrLORV-iSWEOeyXHz4Q0bNJwbdIZt8vDlZgCkYft0bGElpaqTSl4VlkvlaIZCPO4jG6r-YCayXTrg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': '080mbAr3Mxqt5u6d2Ca8Csf_3UF8Y7coS5xLyqK1Rf9Oy30CZ6aP-3E_Hax_m0zYtiCsoJJyCtO5mqdrfmwFapjDRzKvK5h-6T7RIewDmEnMPoUVFtj7xiKUwxxN_txdrG9i9g2'
+            'user_id': '8elMitsLl_Xyn5a-gD_VJ-JYbcAUeRDJ2AY4-pcnkuS1fCcdF9-J-kqEzyrLORV-iSWEOeyXHz4Q0bNJwbdIZt8vDlZgCkYft0bGElpaqTSl4VlkvlaIZCPO4jG6r-YCayXTrg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': '080mbAr3Mxqt5u6d2Ca8Csf_3UF8Y7coS5xLyqK1Rf9Oy30CZ6aP-3E_Hax_m0zYtiCsoJJyCtO5mqdrfmwFapjDRzKvK5h-6T7RIewDmEnMPoUVFtj7xiKUwxxN_txdrG9i9g2'
+            'crm_id': '8elMitsLl_Xyn5a-gD_VJ-JYbcAUeRDJ2AY4-pcnkuS1fCcdF9-J-kqEzyrLORV-iSWEOeyXHz4Q0bNJwbdIZt8vDlZgCkYft0bGElpaqTSl4VlkvlaIZCPO4jG6r-YCayXTrg2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?9fb4778891e4cc47"></script><style>body {
+<script src="/Content/dist/js/preload.js?4dd5d7cbee9994a7"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?9fb4778891e4cc47"></script><script defer="defer" src="/Content/dist/js/default.js?9fb4778891e4cc47"></script><link href="/Content/dist/css/default.css?9fb4778891e4cc47" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?4dd5d7cbee9994a7"></script><script defer="defer" src="/Content/dist/js/default.js?4dd5d7cbee9994a7"></script><link href="/Content/dist/css/default.css?4dd5d7cbee9994a7" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2580,7 +2580,7 @@
 </div>
 </div>
 <div class="space-y-2 sm:flex sm:justify-between">
-<div class="flex space-x-2 sm:order-2">
+<div class="flex space-x-2 sm:order-2" v-if="isPersonalLayout!='isUse'">
 <a @click="outlinkClick($event)" href="/hostcenter/blog" target="_blank">
 <svg class="w-8" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 0h32v32H0z" fill="transparent"></path>
@@ -2639,7 +2639,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="jcSskKbnDrBvJ91CSoovU26p0Fm5irUB4U7nakmJ2HAvpUemxt89C85FZE5sdsT0M1exoHQRebVyuQGlaPifciTVmEE1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="D3x16ncfqfAliOhrz3T9cuP82Z0_mu-HB8ImPm78AoQiI-yQXvta-Eu7Kp9ONZkyvtvbY4Sr2Y1NO-_o5MLEwoc55Y81"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3651,6 +3651,7 @@
                     },
                     menus: dropDownMenus,
                     hostceterNav: !!'',
+                    isPersonalLayout:'',
                     serviceModel: {
                         name: '',
                         email: '',
@@ -3956,7 +3957,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', '080mbAr3Mxqt5u6d2Ca8Csf_3UF8Y7coS5xLyqK1Rf9Oy30CZ6aP-3E_Hax_m0zYtiCsoJJyCtO5mqdrfmwFapjDRzKvK5h-6T7RIewDmEnMPoUVFtj7xiKUwxxN_txdrG9i9g2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', '8elMitsLl_Xyn5a-gD_VJ-JYbcAUeRDJ2AY4-pcnkuS1fCcdF9-J-kqEzyrLORV-iSWEOeyXHz4Q0bNJwbdIZt8vDlZgCkYft0bGElpaqTSl4VlkvlaIZCPO4jG6r-YCayXTrg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4056,7 +4057,7 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":6079,"New_Start_Date":"2024-10-28T00:00:00","New_End_Date":"2024-10-28T23:59:59","Status":"ADVERTISING","ApplyDate":"2024-10-23T10:51:39.1702763","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/1817c5cab1aa4453a3693a598418eb63.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c50d47f6a42d4b2a8766ace251d01849.jpg","Click_Url":"https://event-us.kr/dtoday/event/92702","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"생성형 AI 도입을 위한 인사이트","BannerDescription":"AX 기업 혁신을 말한다","BannerDate":"2024. 10. 30.(수) 13:30","BannerPlace":"오프라인 행사"},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null}],
+                    banners: [{"Id":6099,"New_Start_Date":"2024-11-04T00:00:00","New_End_Date":"2024-11-08T23:59:59","Status":"ADVERTISING","ApplyDate":"2024-10-28T18:43:41.2647298","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b4da6f15d46b4e949ae577922c05249f.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/2fc65ac645fb40088dfebf2a754d8643.png","Click_Url":"https://event-us.kr/thinkingdata/event/90468","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"데이터가 만드는 게임의 미래","BannerDescription":"TDS Korea 2024","BannerDate":"2024. 11. 12.(화) 14:00","BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null}],
                     searchResultBanners: [],
                     isSearchResultBannerShown: false,
                     eventList: [],
