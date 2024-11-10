@@ -283,8 +283,8 @@ var menuList = {
 																		                   ]
 														 }
 													   , { menuId : '07030000' , title : '과제접수' , menuArr : [ { menuId : '07030100' , url : '/sbjtexe/bfhdPrertMttrInfo.do' , title : '신청안내'} //과제접수 - 신청안내
-													                                        /*,{ menuId : '07030200' , url : '/sbjtexe/newSbjtRqstListView.do' , title : '신규과제 신청'} //신규과제신청*/
-													                                        /*,{ menuId : '07030300' , url : '/sbjtexe/nextStepSbjtRqstView.do' , title : '차단계 과제신청'} //차단계과제신청 (개발기간및목표 테스트를 위해 임의지정- 변경되어야함)*/
+													                                        ,{ menuId : '07030200' , url : '/sbjtexe/newSbjtRqstListView.do' , title : '신규과제 신청'} //신규과제신청
+													                                        ,{ menuId : '07030300' , url : '/sbjtexe/nextStepSbjtRqstView.do' , title : '차단계 과제신청'} //차단계과제신청 (개발기간및목표 테스트를 위해 임의지정- 변경되어야함)
 													                                        /*,{ menuId : '07030400' , url : '/sbjtexe/sbjtRcve/retrieveOnlSbjtDiscPlfList.do' , title : '온라인 과제 발굴 플랫폼'} //온라인 과제 발굴 플랫폼*/
 													                                        /*,{ menuId : '07030500' , url : '/sbjtexe/newMoisSbjtRqstListView.do' , title : '재난안전 R&amp;D 과제신청'} //*/
 													                                        /*,{ menuId : '07030600' , url : '/sbjtexe/retrieveFrutPuseOrgnList.do' , title : '성과활용 우수기관 조회'}*/ 
@@ -986,8 +986,8 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a href="#07030100">과제접수</a>
 <span class="depth3">
 <a href="#07030100">신청안내</a>
-<!--                         <a href="#07030200">신규과제 신청</a> -->
-<!--                         <a href="#07030300">차단계 과제신청</a> -->
+<a href="#07030200">신규과제 신청</a>
+<a href="#07030300">차단계 과제신청</a>
 <!-- IRIS를 통해 개념평가 수행됨, 해당기능은 P-ROME 브레밍스토밍으로 대체가능 20240422 김영훈 -->
 <!-- 
                         <a href="#07030400">온라인 과제 발굴<br/> 플랫폼</a>
@@ -1310,11 +1310,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년 재난안전산업 진흥시설 조성지원사업 신규 과제 기획을 위한 기술수요조사<i class="blank"></i></a><span class="date">2024.11.07</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년 국가표준기술력향상사업 기술수요조사 공고<i class="blank"></i></a><span class="date">2024.11.07</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 AI + R&amp;DI 통합기술수요조사 공고<i class="blank"></i></a><span class="date">2024.11.06</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 국제표준화협력사업 기술수요조사 공고<i class="blank"></i></a><span class="date">2024.11.06</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">공급망 산업원천소재기술개발(3R) 신규 예타 사업 기획을 위한 기술 수요조사(공고연장)<i class="blank"></i></a><span class="date">2024.10.17</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">혁신적 R&amp;D 품목 발굴을 위한  디자인 아이디어 공모전<i class="blank"></i></a><span class="date">2024.10.11</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 산업기술 R&amp;D사업(화학공정, 청정생산 분야) 기술수요조사<i class="blank"></i></a><span class="date">2024.09.25</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">(가칭) 바이오제조 혁신사업 신규 예타 사업 기획을 위한 기술수요조사(2차)<i class="blank"></i></a><span class="date">2024.09.24</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년 미래모빌리티(자동차) 분야 기술 상시수요조사<i class="blank"></i></a><span class="date">2024.09.23</span></li>
 </ul>
 </div>
 </div>
@@ -1354,11 +1354,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_notice_list">
 <ul>
+<li><a href="#" onclick="f_gotoDetailPage('C', '138946'); return false;">전산센터 정기검사에 따른 서비스 일시 중지 안내</a> <span class="date">2024.11.04</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '138056'); return false;">2024년 11월 산업기술 R&amp;D 교육 실무과정 교육 안내</a> <span class="date">2024.10.22</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '134955'); return false;">ITECH+(산업기술 R&amp;D 정보포털) 서비스 종료 안내</a> <span class="date">2024.10.07</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '134647'); return false;">2024년도 해양경찰청 우수연구개발 혁신제품 지정 신청 재공고</a> <span class="date">2024.09.30</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '133564'); return false;">2024년 10월 산업기술 R&amp;D 교육 실무과정 교육 안내</a> <span class="date">2024.09.23</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '133552'); return false;">2024년 4분기 행정안전부 혁신제품 지정기간 1차 연장 신청 공고</a> <span class="date">2024.09.19</span> </li>
 </ul>
 </div>
 </div>
@@ -2325,7 +2325,7 @@ ITECH 사이트 하단 '페이스북'과 '유튜브' 아이콘 클릭시 연결�
 <ul class="gnb_submenu">
 <li><a href="#07030100">신청안내</a></li>
 <!--                       <li><a href="#07030200">신규과제신청</a></li> -->
-<!--                       <li><a href="#07030300">차단계과제신청</a></li> -->
+<li><a href="#07030300">차단계과제신청</a></li>
 <!-- IRIS를 통해 개념평가 수행됨, 해당기능은 P-ROME 브레밍스토밍으로 대체가능 20240422 김영훈 -->
 <!-- 
                       <li><a href="#07030400">온라인 과제 발굴 플랫폼</a></li>

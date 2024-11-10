@@ -51,7 +51,7 @@
 <script async="async" data-turbolinks-track="false" defer="defer" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/application-d696e851b7ccf914b3752f2927f5d87d474b4c6376443f4af2fa3df6ed401325.js"></script>
 <script data-turbolinks-track="false" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/controllers/seminars-07263be6dab85106e76160b1fe1cd524c0164649ba40806c403a1f82c0c57061.js"></script>
 <meta content="authenticity_token" name="csrf-param">
-<meta content="+pvrXh4LNbRG4Z6tvXrdqKNHoT3wIRxD4VvDy9UflX9/OvkGOoLVKp+R4vlnGa/8Q0fmVYmZ1r159c3R7sSnBw==" name="csrf-token">
+<meta content="3hYtCcRrlBgIgRzdebBuE8tuPBwzcn1MBk/grA4PBDyAXJJdd8vVo79OE8oCCaJ9FlMmq61me8nrB35ihyLVLA==" name="csrf-token">
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   var googletag = googletag || {};
@@ -162,7 +162,7 @@ ga("send","pageview");
 <li class="linkedin"><a href="https://www.linkedin.com/in/sharedit2014/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 <ul class="list-inline hidden-xs">
-<li><a href="/cdn-cgi/l/email-protection#2449455750415664574c455641404d500a474b0a4f56"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="dab7bba9aebfa89aa9b2bba8bfbeb3aef4b9b5f4b1a8">[email protected]</span></a></li>
+<li><a href="/cdn-cgi/l/email-protection#ec818d9f98899eac9f848d9e89888598c28f83c2879e"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="fb969a888f9e89bb88939a899e9f928fd59894d59089">[email protected]</span></a></li>
 <li><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"><i class="fa fa-youtube-play pr-5 pl-10" title="SHAREDIT CLASS / SHAREDIT LIVE"></i></a><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"> YouTube</a></li>
 <li><a href="http://www.podbbang.com/ch/15150" target="_blank"><i class="fa fa-podcast pr-5 pl-10" title="팟빵 - 쌤팍의 전산쟁이 이야기"></i></a><a href="https://www.sharedit.co.kr/posts/1236" target="_blank"> 팟캐스트</a></li>
 </ul>
@@ -182,7 +182,7 @@ ga("send","pageview");
 <button class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" type="button"><i class="fa fa-lock pr-5"></i> 로그인</button>
 <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 <li>
-<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="+v5hBkC5D7NhwXulQhLtQUY4DpXAKhjeY7JagvHoJV1/X3NeZDDvLbixB/GYcZ8VpjhJ/bmS0iD7HFSYyjMXJQ=="/>
+<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="5aDPx/OvZpjBvLksQKr0jKWCVHwIH63sDINsygAXGQu76nCTQA8nI3Zztjs7EzjieL9Oy5YLq2nhy/IEiTrIGw=="/>
 <div class="form-group has-feedback">
 <label class="control-label">이메일 주소</label>
 <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="" type="email" value=""/>
@@ -438,8 +438,8 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/jirandata/products">
-<i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
+<a href="/companies/jiransoft/products">
+<i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
 </a> </li>
 <li class="col-lg-6">
 <a href="/companies/synapsoft/products">
@@ -451,12 +451,12 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/bellins/products">
-<i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
+<a href="/companies/jirandata/products">
+<i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
 </a> </li>
 <li class="col-lg-6">
-<a href="/companies/jiransoft/products">
-<i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
+<a href="/companies/bellins/products">
+<i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
 </a> </li>
 </ul>
 </div>
@@ -681,12 +681,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul class="list" style="min-height: 700px;">
 <div class="tags-cloud2 mb-10" style="color: #000000; margin-top: -20px;">
 <div class="tag">
-<a href="/seminars/2074" title="Bespin Global | Google Cloud - 요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기">06일 (수)</a>
-</div>
-<div class="tag">
-<a href="/seminars/2076" title="SAP - 2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!">07일 (목)</a>
-</div>
-<div class="tag">
 <a href="/seminars/2065" title="엠클라우드브리지 - [웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">13일 (수)</a>
 </div>
 <div class="tag">
@@ -699,6 +693,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/seminars/2077" title="Bespin Global | Google Cloud - 게임사 임직원이라면 주목! G-star 2024 사전 알림신청 이벤트 참여하고 선물 받아가세요!">15일 (금)</a>
 </div>
 <div class="tag">
+<a href="/seminars/2080" title="한국정보산업연합회 - AX 시대의 양면성, AI 리스크와 딥페이크 대응 전략 세미나">19일 (화)</a>
+</div>
+<div class="tag">
 <a href="/seminars/2070" title="엠클라우드브리지 - [Microsoft 무료 교육] 11월 Azure OpenAI &amp; ChatGPT 무료 체험 교육 오픈_우리 기업 맞춤 AI 플랫폼 도입 방안">20일 (수)</a>
 </div>
 <div class="tag">
@@ -708,9 +705,69 @@ document.addEventListener('DOMContentLoaded', function() {
 <a href="/seminars/2072" title="엠클라우드브리지 - AI 시대, 데이터 통합 분석 플랫폼 _ 11월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!">22일 (금)</a>
 </div>
 <div class="tag">
+<a href="/seminars/2082" title="AWS - 개발자 주목! 클라우드 스킬 향상을 위한 AWS TechCamp 온라인 세미나에 참석하세요! / 11월 26일(화)~28일(목)">26일 (화)</a>
+</div>
+<div class="tag">
 <a href="/seminars/2075" title="엠클라우드브리지 - [Microsoft 무료 교육] 11월 Copilot Studio 무료 체험 교육 오픈 _ 기업 정보 학습을 통한 우리 회사만의 맞춤 AI Chat Bot 생성">28일 (목)</a>
 </div>
+<div class="tag">
+<a href="/seminars/2079" title="한국 마이크로소프트 &amp; 씨앤토트 - 마이크로소프트가 보여드리는 AI 시대로의 준비 세미나 초청 (점심 제공)">28일 (목)</a>
 </div>
+</div>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2079/low_cn.png');"></figure>
+<header>
+<span class="sponsor">
+               	    한국 마이크로소프트 &amp; 씨앤토트
+               </span>
+<span class="category">세미나</span>
+<strong>
+<a href="/seminars/2079" title="마이크로소프트가 보여드리는 AI 시대로의 준비 세미나 초청 (점심 제공)">마이크로소프트가 보여드리는 AI 시대로의 준비 세미나 초청 (점심 제공)</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-11-28(목) 09:30 ~ 12:30</dd>
+<dt>장소</dt>
+<dd>서울 종로구 종로1길 50 더케이트윈타워 A동 13층 한국마이크로소프트 </dd>
+<dt>댓글</dt>
+<dd>1개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2082/low_aws.png');"></figure>
+<header>
+<span class="sponsor">
+               	    AWS
+               </span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/2082" title="개발자 주목! 클라우드 스킬 향상을 위한 AWS TechCamp 온라인 세미나에 참석하세요! / 11월 26일(화)~28일(목)">개발자 주목! 클라우드 스킬 향상을 위한 AWS TechCamp 온라인 세미나에 참석하세요! / 11월 26일(화)~28일(목)</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-11-26(화) 09:00 ~ 17:00</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2080/low_crm.png');"></figure>
+<header>
+<span class="sponsor">
+               	    한국정보산업연합회
+               </span>
+<span class="category">세미나</span>
+<strong>
+<a href="/seminars/2080" title="AX 시대의 양면성, AI 리스크와 딥페이크 대응 전략 세미나">AX 시대의 양면성, AI 리스크와 딥페이크 대응 전략 세미나</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-11-19(화) 16:00 ~ 17:50</dd>
+<dt>장소</dt>
+<dd>서울 강남구 테헤란로 305 한국기술센터 16층 국제회의실</dd>
+</dl>
+</li>
 <li>
 <figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2077/low_bes.png');"></figure>
 <header>
@@ -763,44 +820,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <dl class="info">
 <dt>일시</dt>
 <dd>2024-11-13(수) 14:00 ~ 15:30</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2076/low_sap.png');"></figure>
-<header>
-<span class="sponsor">
-               	    SAP
-               </span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/2076" title="2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!">2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-07(목) 14:00 ~ 15:00</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2074/low_bes.png');"></figure>
-<header>
-<span class="sponsor">
-               	    Bespin Global | Google Cloud
-               </span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2074" title="요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기">요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-06(수) 13:00 ~ 04:30</dd>
-<dt>장소</dt>
-<dd>서울 강남구 영동대로 417 오토웨이 타워 지하2층 구글 스타트업 캠퍼스</dd>
 <dt>댓글</dt>
 <dd>1개의 댓글이 있습니다.</dd>
 </dl>
@@ -906,6 +925,44 @@ document.addEventListener('DOMContentLoaded', function() {
 </dl>
 </li>
 <li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2076/low_sap.png');opacity: .2;"></figure>
+<header>
+<span class="sponsor">
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/2076" title="2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!">2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-11-07(목) 14:00 ~ 15:00</dd>
+<dt>댓글</dt>
+<dd>2개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2074/low_bes.png');opacity: .2;"></figure>
+<header>
+<span class="sponsor">
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
+<span class="category">세미나</span>
+<strong>
+<a href="/seminars/2074" title="요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기">요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-11-06(수) 13:00 ~ 04:30</dd>
+<dt>장소</dt>
+<dd>서울 강남구 영동대로 417 오토웨이 타워 지하2층 구글 스타트업 캠퍼스</dd>
+<dt>댓글</dt>
+<dd>2개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
 <figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1880/low_%ED%96%89%EC%82%AC_%ED%83%80%EC%9D%B4%ED%8B%80%EB%B0%B0%EB%84%88.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
@@ -992,10 +1049,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1735" title=" [오늘의 퀴즈] 상품 이벤트!"> [오늘의 퀴즈] 상품  (기타)<span>D-16</span></a>
+<a ,="" href="/promotions/1740" title=".NEXT On Tour Seoul 2024를 놓치셨다면 지금 들어오세요. 기간 한정 선물 증정!">.NEXT On Tour (설문조사)<span>D-50</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1733" title="[콤텍시스템 설문이벤트] 하이브리드 클라우드 비즈니스를 위한 굿파트너 IBM Storage FlashSystem">[콤텍시스템 설문이벤트] (설문조사)<span>D-16</span></a>
+<a ,="" href="/promotions/1735" title=" [오늘의 퀴즈] 상품 이벤트!"> [오늘의 퀴즈] 상품  (기타)<span>D-9</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1739" title="엔터프라이즈 하이브리드 클라우드 인프라 서버 - 간단 설문하면 선물이!">엔터프라이즈 하이브리드  (설문조사)<span>D-23</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1733" title="[콤텍시스템 설문이벤트] 하이브리드 클라우드 비즈니스를 위한 굿파트너 IBM Storage FlashSystem">[콤텍시스템 설문이벤트] (설문조사)<span>D-9</span></a>
 </li>
 </ul>
 </div>
@@ -1004,29 +1067,35 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/seminars/1880" title="온라인 특강] 11.4 (월) 14:00ChatGPT 기초부터 자동화까지 생성형 AI 활용의 모든것(초급)">온라인 특강] 11.4  (웨비나)	<span>D-0</span></a>
-</li>
-<li>
-<a ,="" href="/seminars/2073" title="[11/21(목) Ai 365세미나 초청] 중견·중소기업 리더 대상 즉시 도입 가능한 OpenAI 기반 AI 챗봇 및 경영 업무 플랫폼을 만나보세요! ">[11/21(목) Ai  (세미나)	<span>D-17</span></a>
-</li>
-<li>
-<a ,="" href="/promotions/1732" title="클라우드 500만 원 상당 웰컴 패키지">클라우드 500만 원 상 (할인혜택)<span>D-57
+<a ,="" href="/promotions/1681" title="벨아이앤에스X퓨처링 GPU서버 특별 기획전, 최신 GPU서버가 한자리에 100만원 상당 상품권 혜택까지!">벨아이앤에스X퓨처링 GP (상담요청)<span>D-50
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2074" title="요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기">요즘 뜨는 마케팅의 비밀 (세미나)	<span>D-2</span></a>
-</li>
-<li>
-<a ,="" href="/seminars/2072" title="AI 시대, 데이터 통합 분석 플랫폼 _ 11월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!">AI 시대, 데이터 통합 (교육)	<span>D-18</span></a>
-</li>
-<li>
-<a ,="" href="/promotions/1681" title="벨아이앤에스X퓨처링 GPU서버 특별 기획전, 최신 GPU서버가 한자리에 100만원 상당 상품권 혜택까지!">벨아이앤에스X퓨처링 GP (상담요청)<span>D-57
+<a ,="" href="/promotions/1682" title=".my도메인 88% 할인">.my도메인 88% 할인 (할인혜택)<span>D-50
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2076" title="2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!">2시 데이트 – S/4H (웨비나)	<span>D-3</span></a>
+<a ,="" href="/promotions/1730" title="[AHTID] 지니언스 EDR 2개월 무료 보안진단 서비스 프로모션">[AHTID] 지니언스  (상담요청)<span>D-17
+									
+								</span></a>
+</li>
+<li>
+<a ,="" href="/seminars/2078" title="클라우드섹 코리아 2024 ">클라우드섹 코리아 202 (세미나)	<span>D-3</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1734" title="진화하는 사이버 공격 SASE로 보안 체크하고, 이벤트에 참여하세요!">진화하는 사이버 공격 S (견적요청)<span>D-4
+									
+								</span></a>
+</li>
+<li>
+<a ,="" href="/seminars/2075" title="[Microsoft 무료 교육] 11월 Copilot Studio 무료 체험 교육 오픈 _ 기업 정보 학습을 통한 우리 회사만의 맞춤 AI Chat Bot 생성">[Microsoft 무료 (교육)	<span>D-17</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1735" title=" [오늘의 퀴즈] 상품 이벤트!"> [오늘의 퀴즈] 상품  (기타)<span>D-9
+									
+								</span></a>
 </li>
 </ul>
 </div>
@@ -1045,21 +1114,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <div class="overlay-container overlay-visible" style="width: 100%; border: 1px solid #eee; height:220px; display:table-cell;vertical-align:middle;">
 <div class="sponsor-ad-box" style="width:260px;">
-<img alt="Medium %ec%95%84%ed%81%ac%ec%84%9c%eb%b8%8c %ec%8d%b8%eb%84%a4%ec%9d%bc" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","532",null);' src="//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/532/medium_%EC%95%84%ED%81%AC%EC%84%9C%EB%B8%8C-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg"/>
+<img alt="Medium dl380 gen10 4%eb%8c%80 %ed%88%ac%eb%aa%85 %ec%a0%84%eb%a9%b4" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","753",null);' src="//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/753/medium_DL380_GEN10_4%EB%8C%80_%ED%88%AC%EB%AA%85_%EC%A0%84%EB%A9%B4.png"/>
 </div>
-<a class="overlay-link" href="/evaluations/products/532">
+<a class="overlay-link" href="/evaluations/products/753">
 <i class="fa fa-link"></i>
 </a>
 <div class="overlay-bottom hidden-xs" style="padding: 10px;">
 <div class="text">
-<p class="lead margin-clear text-left" style="font-size: 16px;">차세대 통합 백업, 아크서브 arcserve</p>
+<p class="lead margin-clear text-left" style="font-size: 16px;">DL360/380 GEN10 2.5 8bay 중고</p>
 </div>
 </div>
 </div>
 <script>
     ;(function($){
       $(function(){
-        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","532",null);
+        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","753",null);
       });
     })(jQuery);
   </script>
@@ -1081,25 +1150,357 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav>
 <ul class="nav product-brands-list">
 <li>
-<a href="/seminars/2058" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
+<a href="/seminars/2076" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/seminars/2071" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
+<a href="/seminars/2074" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/seminars/2069" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
+<a href="/board/solutions/3232" rel="nofollow" target="_self">식수 관리 시스템 견적 요청 드<span>상담실</span></a>
 </li>
 <li>
-<a href="/seminars/1934" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
+<a href="/board/solutions/3229" rel="nofollow" target="_self">사무실 랜선 정리<span>상담실</span></a>
 </li>
 <li>
-<a href="/seminars/2061" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
+<a href="/board/solutions/3231" rel="nofollow" target="_self">macOS 용 MDM,DLP 견<span>상담실</span></a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <!-- sidebar slide ad -->
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<div class="bottom-right-fixed-banner hidden-xs hidden-sm">
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<!-- AD area start -->
+<!-- /78172804/sidebar_fixed  -->
+<div id="div-gpt-ad-1524370771285-0">
+<script>
+	      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524370771285-0'); });
+	    </script>
+</div>
+<!-- AD area end -->
+</div>
+<script>
+	  $(function () {
+	
+	    $('.bottom-right-fixed-banner').delay(500).animate(
+	      { right: '+=325px' }, 
+	      1500, 
+	      'easeOutBack', 
+	      function () {
+	        $(this).delay(5000).animate(
+	          { right: '-=325px' }, 
+	          1500, 
+	          'easeOutBack', 
+	          function () {
+	        });
+	    });
+	
+	    $('.bottom-right-fixed-banner > button.close').on('click', function(e){
+	      e.preventDefault();
+	      $('.bottom-right-fixed-banner').hide();
+	    });
+	  });
+	</script>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
 <!-- // sidebar slide ad -->
 <script>
   ;(function($){
@@ -1123,7 +1524,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h4 class="modal-title" id="myModalLabel">알림</h4>
 </div>
 <div class="modal-body">
-<p><a href="/cdn-cgi/l/email-protection#4a272b393e2f380a39222b382f2e233e642925642138"><span class="__cf_email__" data-cfemail="305d51434455427043585142555459441e535f1e5b42">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
+<p><a href="/cdn-cgi/l/email-protection#610c00121504132112090013040508154f020e4f0a13"><span class="__cf_email__" data-cfemail="204d41535445526053484152454449540e434f0e4b52">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
 <a href="/memberships">멤버십</a>에 가입하신 후 직접 업로드를 하실 수 있습니다.</p>
 </div>
 </div>
@@ -1144,7 +1545,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 class="title">IT 세미나/교육/프로모션 정보 구독 신청</h3>
 <p>새로운 세미나/교육/프로모션 정보를 메일로 편하게 받아 보세요. 정기적으로 보내 드립니다.</p>
 <div class="separator"></div>
-<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="94QVlhAxnexUgF9qcdvmBXqK/rtnBBvHCBG+/tpOqq1yJQfONLh9co3wIz6ruJRRmoq50x680TmQv7Dk4ZWY1Q=="/>
+<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="X8sCwXLMkfJ+JWwY1TJsQ3jnBE2B99TDOvIqB+bwWU8Bgb2VwWzQScnqYw+ui6Atpdoe+h/j0kbXurTJb92IXw=="/>
 <div class="form-group has-feedback">
 <label class="sr-only" for="subscribe2">Email address</label>
 <input class="form-control" id="email" name="email" placeholder="Enter email" required="required" type="text"/>
@@ -1187,7 +1588,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><i class="text-default fa fa-id-card-o pr-5"></i>사업자 등록번호 : 144-81-29382</li>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>통신판매업신고 : 2017-용인수지-0227</li><br/>
 <li><i class="text-default fa fa-map-marker pr-5"></i>(주) 쉐어드커뮤니케이션</li>
-<li><a class="link-dark" href="/cdn-cgi/l/email-protection#462b273532233406352e273423222f32682529682d34"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="d7bab6a4a3b2a597a4bfb6a5b2b3bea3f9b4b8f9bca5">[email protected]</span></a></li>
+<li><a class="link-dark" href="/cdn-cgi/l/email-protection#8be6eaf8ffeef9cbf8e3eaf9eeefe2ffa5e8e4a5e0f9"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="88e5e9fbfcedfac8fbe0e9faedece1fca6ebe7a6e3fa">[email protected]</span></a></li>
 </ul>
 <ul class="list-inline small" style="margin-top: -9px">
 <li><i class="text-default fa fa-lock pr-5"></i><strong> <a class="link-dark" href="/welcome/terms_of_service" style="color: #777777;" target="_blank">이용약관</a> | <a class="link-dark" href="/welcome/personal_information" style="text-decoration: underline!important;" target="_blank">개인정보처리방침</a></strong></li>
@@ -1276,5 +1677,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8dd01d377bc2d6d0',t:'MTczMDY3NjIyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e09c7194d1f3b86',t:'MTczMTI4MDg3Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>

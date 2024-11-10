@@ -304,8 +304,10 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <div data-search_box="">
 <form action="/event/main" class="search_form" data-gtm_submit='{"event" : "clickKeywordSearchButton", "keyword" : ""}' method="GET">
 <label for="searchInput">검색할 이벤트를 입력해주세요.</label>
-<input autocomplete="off" class="search_input" data-event="" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
-<input data-gtag_dto_key="_GTAG_DTO_KEY_1000" data-search_btn="" title="검색" type="submit" value="검색"/>
+<input autocomplete="off" class="search_input" data-event="312529" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
+<span class="ofm_keyword_value" data-creative_name="PC_메인_검색창광고" data-creative_slot="1" data-event_no="312529" data-event_title="박위 당신의 삶이 기적인 이유" data-href="/cs/a/94932?url=%2Fevent%2F312529">
+</span>
+<input data-gtag_dto_key="_GTAG_DTO_KEY_1001" data-search_btn="" title="검색" type="submit" value="검색"/>
 </form>
 </div>
 </div>
@@ -741,7 +743,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <li data-keyword_row="">
 <a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI&amp;ChatGPT</a>
 <a href="/event/main?search_type=evt_tag&amp;s=창업">창업</a>
-<a href="/event/main?s=게임">게임</a>
+<a href="/event/main?s=해커톤 공모전">해커톤</a>
 </li>
 <li>
 <a class="link_item channel" data-c="b09b92041" href="/ch">채널</a>
@@ -762,7 +764,8 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
                 <a href="http://pf.kakao.com/_xoWIcE/chat" title="상담톡" target="_blank">톡상담</a>
             </div> -->
 <script>
-</script>
+            var _GTAG_DTO_KEY_1001 = {"event":"clickEvent","eventID":"312529","eventName":"박위 \"당신의 삶이 기적인 이유\"","eventType":"일반","categoryID":"102","categoryName":"강연/세미나","eventFeeType":["무료"],"applicationType":"내부","recommendFieldID":["A0105","A0107","A0108"],"recommendFieldName":["자기계발/학습/독서","인문/심리","문화/예술/디자인"],"recommendJobID":[],"recommendJobName":[],"keyword":"","pageIndex":0,"sequenceNumber":0,"clickPoint":"검색창","adCode":"PM20","sectionNumber":"","ai":"n"};
+            </script>
 </header>
 <main class="event_search" id="content">
 <div class="content_wrapping wide_max_width_area">
