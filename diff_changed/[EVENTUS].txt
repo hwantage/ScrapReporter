@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "I1D2FnWea6TgB-FUkW9uUvL3LpvEQwskQvLyeaKhoMobBwoPfp7WyKfVieKcZ7w5WBtCBHDoDMeeSyuY-L7zoXOw5UU_e0o43Vio0K7QCmk0TmMrGPoMZR5zxN-DjZryKfVrQA2",
+                UserId: "C-Cy4X2Qt0XIzqGvb2ywWKKizhL5R5Q1FjyZyRjw7FL_KAzjJlCDvEqml5iYn9uJpAMl0jEoOh-hUoP1WpR1QdjWyLizBm_Y5kyLPcYlDBUiU6yegwrH58WatSCAFeEhT-HxOw2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "I1D2FnWea6TgB-FUkW9uUvL3LpvEQwskQvLyeaKhoMobBwoPfp7WyKfVieKcZ7w5WBtCBHDoDMeeSyuY-L7zoXOw5UU_e0o43Vio0K7QCmk0TmMrGPoMZR5zxN-DjZryKfVrQA2" === "I1D2FnWea6TgB-FUkW9uUvL3LpvEQwskQvLyeaKhoMobBwoPfp7WyKfVieKcZ7w5WBtCBHDoDMeeSyuY-L7zoXOw5UU_e0o43Vio0K7QCmk0TmMrGPoMZR5zxN-DjZryKfVrQA2" ? "Anonymous" : "User",
+                UserType: "C-Cy4X2Qt0XIzqGvb2ywWKKizhL5R5Q1FjyZyRjw7FL_KAzjJlCDvEqml5iYn9uJpAMl0jEoOh-hUoP1WpR1QdjWyLizBm_Y5kyLPcYlDBUiU6yegwrH58WatSCAFeEhT-HxOw2" === "C-Cy4X2Qt0XIzqGvb2ywWKKizhL5R5Q1FjyZyRjw7FL_KAzjJlCDvEqml5iYn9uJpAMl0jEoOh-hUoP1WpR1QdjWyLizBm_Y5kyLPcYlDBUiU6yegwrH58WatSCAFeEhT-HxOw2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'I1D2FnWea6TgB-FUkW9uUvL3LpvEQwskQvLyeaKhoMobBwoPfp7WyKfVieKcZ7w5WBtCBHDoDMeeSyuY-L7zoXOw5UU_e0o43Vio0K7QCmk0TmMrGPoMZR5zxN-DjZryKfVrQA2'
+            'user_id': 'C-Cy4X2Qt0XIzqGvb2ywWKKizhL5R5Q1FjyZyRjw7FL_KAzjJlCDvEqml5iYn9uJpAMl0jEoOh-hUoP1WpR1QdjWyLizBm_Y5kyLPcYlDBUiU6yegwrH58WatSCAFeEhT-HxOw2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'I1D2FnWea6TgB-FUkW9uUvL3LpvEQwskQvLyeaKhoMobBwoPfp7WyKfVieKcZ7w5WBtCBHDoDMeeSyuY-L7zoXOw5UU_e0o43Vio0K7QCmk0TmMrGPoMZR5zxN-DjZryKfVrQA2'
+            'crm_id': 'C-Cy4X2Qt0XIzqGvb2ywWKKizhL5R5Q1FjyZyRjw7FL_KAzjJlCDvEqml5iYn9uJpAMl0jEoOh-hUoP1WpR1QdjWyLizBm_Y5kyLPcYlDBUiU6yegwrH58WatSCAFeEhT-HxOw2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?4dd5d7cbee9994a7"></script><style>body {
+<script src="/Content/dist/js/preload.js?eaacd51c8c81562b"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?4dd5d7cbee9994a7"></script><script defer="defer" src="/Content/dist/js/default.js?4dd5d7cbee9994a7"></script><link href="/Content/dist/css/default.css?4dd5d7cbee9994a7" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?eaacd51c8c81562b"></script><script defer="defer" src="/Content/dist/js/default.js?eaacd51c8c81562b"></script><link href="/Content/dist/css/default.css?eaacd51c8c81562b" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -374,15 +374,11 @@
                         })
                         .then(function ({ data }) {
                             if (data.Message === 'NeedLogin') {
-                                ui.alert({
-                                    title: '로그인이 필요합니다.',
-                                    description: '로그인 할까요?',
-                                    onConfirm() {
-                                        util.newTab('/account/login?afterAction');
-                                        window._loginCallBack = function () {
-                                            ui.favorite(id, callback);
-                                        };
-                                    },
+                                ui.needLoginAlert(function () {
+                                    util.newTab('/account/login?afterAction');
+                                    window._loginCallBack = function () {
+                                        ui.favorite(id, callback);
+                                    };
                                 });
 
                                 return;
@@ -407,18 +403,11 @@
                 ui.subscribe = function (subdomain, callback) {
                     axios.post('/useraction/usersubscribe', { subdomain }).then(({ data }) => {
                         if (data.Message === 'NeedLogin') {
-                            ui.alert({
-                                title: '로그인이 필요한 서비스입니다.',
-                                description:
-                                    '바로 로그인하고, 채널을 구독하세요.\n새롭게 개설되는 행사 안내를 받을 수 있습니다.',
-                                confirmTitle: '로그인 하기',
-                                closeTitle: '취소',
-                                onConfirm() {
-                                    util.newTab('/account/login?afterAction');
-                                    window._loginCallBack = function () {
-                                        ui.subscribe(subdomain, callback);
-                                    };
-                                },
+                            ui.needLoginAlert(function () {
+                                util.newTab('/account/login?afterAction');
+                                window._loginCallBack = function () {
+                                    ui.subscribe(subdomain, callback);
+                                };
                             });
 
                             return;
@@ -470,18 +459,11 @@
                 ui.subscribeAlert = function (subdomain, callback) {
                     axios.post('/useraction/toggleusersubscribealert', { subdomain }).then(({ data }) => {
                         if (data.Message === 'NeedLogin') {
-                            ui.alert({
-                                title: '로그인이 필요한 서비스입니다.',
-                                description:
-                                    '바로 로그인하고, 채널을 구독하세요.\n새롭게 개설되는 행사 안내를 받을 수 있습니다.',
-                                confirmTitle: '로그인 하기',
-                                closeTitle: '취소',
-                                onConfirm() {
-                                    util.newTab('/account/login?afterAction');
-                                    window._loginCallBack = function () {
-                                        ui.subscribe(subdomain, callback);
-                                    };
-                                },
+                            ui.needLoginAlert(function () {
+                                util.newTab('/account/login?afterAction');
+                                window._loginCallBack = function () {
+                                    ui.subscribeAlert(subdomain, callback);
+                                };
                             });
 
                             return;
@@ -509,6 +491,14 @@
                                 callback(data.Message === 'Added');
                             }
                         }
+                    });
+                };
+                ui.needLoginAlert = function (onConfirm) {
+                    ui.alert({
+                        title: '로그인이 필요한 서비스입니다.',
+                        description: '로그인 페이지로 이동하시겠습니까?',
+                        closeTitle: '취소',
+                        onConfirm: onConfirm,
                     });
                 };
             },
@@ -2332,13 +2322,90 @@
 </ui-dialog>
 </ui-transition-root>
 </div>
+<div>
+<div id="subscribeform">
+<div>
+<section class="bg-info-50">
+<div class="container justify-center">
+<img class="absolute left-0 right-0 mx-auto -mt-6 bg-cover md:h-[490px]" src="/Content/neweventus/image/main_newsletter_03.svg"/>
+<div class="relative z-0 flex-1 text-center mt-9">
+<h2 class="text-xl">
+                        관심 분야의 최신 행사 정보,<br>
+                        매주 월요일 8시에 받아 보세요
+                    </br></h2>
+<div class="flex text-info-400 space-x-2 place-content-center justify-center mt-6 text-xs md:text-sm">
+<div>주목할 만한 행사</div>
+<div>|</div>
+<div>1분 만에 행사 보기</div>
+<div>|</div>
+<div>이주의 추천 채널·축제</div>
+</div>
+<form @submit.prevent="handleNewsletterSubscribe" class="flex place-content-center mt-5" id="stb_subscribe_form">
+<div class="flex-1 max-w-xs z-0">
+<div class="space-y-3">
+<ev-input class="text-gray-500 text-sm" id="stb_email" name="email" placeholder="이메일 주소를 입력하세요" required="" type="email">
+</ev-input>
+<ev-input class="text-gray-500 text-sm" id="stb_name" name="name" placeholder="이름 또는 닉네임(선택)" type="text">
+</ev-input>
+<div class="text-sm">
+<ev-checkbox id="stb_ad_agreement" required="">
+<div class="space-x-1">
+<span>[필수]</span>
+<a class="underline" href="https://app.catchsecu.com/document/C/c9c84880434f374" target="_blank">마케팅 정보 수신</a>
+<span>에 동의합니다</span>
+</div>
+</ev-checkbox>
+<div class="flex text-xs mt-1">
+<div class="stb_form_msg_error text-danger-500" id="stb_ad_agreement_error">
+</div>
+</div>
+</div>
+</div>
+<div class="w-full mt-6">
+<ev-button class="bg-info-500 text-white" id="stb_form_submit_button" type="submit">
+                                    구독하기
+                                </ev-button>
+</div>
+</div>
+</form>
+<div class="mt-5 mb-7">
+<a class="text-gray-500 underline" href="https://page.stibee.com/archives/3818" target="_blank">
+                            지난 뉴스레터 구경하기
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<ev-modal :open="isNewsLetterModalShow" class="text-center">
+<template #title="">
+<div class="flex justify-center items-center mx-auto mb-2 w-12 h-12 rounded-full bg-success-50" v-if="isNewsLetterResponseSuccess">
+<svg class="w-6 h-6 text-success-500" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div class="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-danger-50" v-else="">
+<svg aria-hidden="true" class="w-6 h-6 text-danger-500" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div class="mt-5">{{ newsLetterModalTitle }}</div>
+</template>
+<template #description="">
+<div v-dompurify-html="newsLetterModalDescription"></div>
+</template>
+<ev-button @click="isNewsLetterModalShow = false" class="bg-primary-500" small="" v-if="isNewsLetterResponseSuccess">확인</ev-button>
+<ev-button @click="isNewsLetterModalShow = false" class="bg-danger-500" small="" v-else="">확인</ev-button>
+</ev-modal>
+</div>
+</div>
 <div class="hidden" id="Iphone_message">
 <div class="fixed bottom-5 z-50 w-full">
 <div class="relative w-72 my-0 mx-auto p-4 border-x-0 rounded-md bg-black/75">
 <div class="flex justify-between">
 <div class="w-9 h-9">
-<img src="https://eventusstorage.blob.core.windows.net/evs/images/main/eventus-icon.png"/>
-</div>
+<img src="https://eventusstorage.blob.core.windows.net/evs/images/main/eventus-icon.png">
+</img></div>
 <div class="text-xs text-white">
 <div class="flex">
 <span class="pr-1">아래에 있는</span>
@@ -2639,7 +2706,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="orJorGeHtsdX0OEV0y2TgpMSqDCvNZbT7lee_EV82RH-z2xuyQLEAkTKV4Yw_tQY0CvHtrq-w9AroZyXmU-R-EQ3IPI1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="U4UQSXwt0gHmzLkqv_LGgZGQJ5ObIH1H2ZXnVScZiBKafhIDXz-mz1o9RDkj2cWGq_q3yc_aP5d_VVaHQT0IYxSLxHc1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3064,15 +3131,17 @@
                         }
                     },
                     openAside: function (val) {
+                        const chPluginEntry = document.getElementById("ch-plugin-entry");
+                        if(chPluginEntry){
+                            chPluginEntry.style.display = val ? "none" : "block";
+                        }
                         if (val) {
                             if(!this.asideMenu){
                                 this.asideMenu = 'solution';
-                            }
-                            document.getElementById("ch-plugin-entry").style.display="none"
+                            }                            
                         }else{
                             this.myMenu = false;
-                            this.myChannelBtn = false;
-                            document.getElementById("ch-plugin-entry").style.display="block"
+                            this.myChannelBtn = false;                            
                         }
                     },
                     openSearch: function (val) {
@@ -3676,7 +3745,10 @@
                 this.$nextTick(() => {
                     this.checkIsPwaInstalled().then((isPwaInstalled) => {
                         if (isPwaInstalled) {
-                            document.getElementById('pwa-prompt-button').style.display = 'none';
+                            const pwaPromptButton = document.getElementById('pwa-prompt-button');
+                            if (pwaPromptButton) {
+                                pwaPromptButton.style.display = 'none';
+                            }                            
                         }
                     });
                 });
@@ -3957,7 +4029,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'I1D2FnWea6TgB-FUkW9uUvL3LpvEQwskQvLyeaKhoMobBwoPfp7WyKfVieKcZ7w5WBtCBHDoDMeeSyuY-L7zoXOw5UU_e0o43Vio0K7QCmk0TmMrGPoMZR5zxN-DjZryKfVrQA2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'C-Cy4X2Qt0XIzqGvb2ywWKKizhL5R5Q1FjyZyRjw7FL_KAzjJlCDvEqml5iYn9uJpAMl0jEoOh-hUoP1WpR1QdjWyLizBm_Y5kyLPcYlDBUiU6yegwrH58WatSCAFeEhT-HxOw2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4057,8 +4129,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null}],
-                    searchResultBanners: [{"Id":"94530","CoverImageUrl":"/Image/startyours/94530/ProjectInfo/Cover/b4831a43ec0b40b6963ed1e0b1a5b73d.png","Title":"2024 해양수산 액셀러레이터 통합 데모데이","State":"Start","AppTopLogoImageUrl":null,"EventType":"데모데이","Category":"창업","Category2":"스타트업","StartDate":"2024-11-12T13:00:00","CloseDate":"2024-11-12T18:00:00","RegisterStartDate":"2024-11-04T00:00:00","RegisterDueDate":"2024-11-11T23:30:00","ViewCount":374,"AppSubDomain":"startyours","IsSuper":false,"AppTitle":"스타트유어스","AppThemeColor":"eventus-purple","ProjectInfoArea":"제주","ProjectInfoArea_Detail":"제주특별자치도 제주시","EventAddress":"제주특별자치도 제주시 노연로 80","EventAddressTitle":"2층 제이드홀","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2024-11-04T15:54:45.3165667","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":89292,"ProjectId":"94530","ProjectSubDomain":"startyours","TagId":469,"Date":"2024-11-04T15:56:58.472578","Sort":0,"Project":null,"Tag":null},{"Id":89293,"ProjectId":"94530","ProjectSubDomain":"startyours","TagId":147,"Date":"2024-11-04T15:56:58.472578","Sort":1,"Project":null,"Tag":null},{"Id":89294,"ProjectId":"94530","ProjectSubDomain":"startyours","TagId":59,"Date":"2024-11-04T15:56:58.472578","Sort":2,"Project":null,"Tag":null},{"Id":89295,"ProjectId":"94530","ProjectSubDomain":"startyours","TagId":5464,"Date":"2024-11-04T15:56:58.472578","Sort":3,"Project":null,"Tag":null},{"Id":89296,"ProjectId":"94530","ProjectSubDomain":"startyours","TagId":217,"Date":"2024-11-04T15:56:58.472578","Sort":4,"Project":null,"Tag":null}],"pitId":6115,"IsAdCheck":true,"IsSupportAd":false,"IsAdMark":true,"Url":null,"CorrectionValue":0.0}],
+                    banners: [{"Id":6170,"New_Start_Date":"2024-11-14T00:00:00","New_End_Date":"2024-11-27T23:59:59","Status":"ADVERTISING","ApplyDate":"2024-11-14T10:35:24.0443685","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/32b961741cfc456ea6b03d1b136f8460.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/78ba6fb4e2924330835e7d1ef1d48af4.png","Click_Url":"https://event-us.kr/webinar/event/95046?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=3wal8tdagy&utm_term=_","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"98%의 고객이 떠나는 이유","BannerDescription":"고객을 붙잡는 온라인 커머스 성공전략","BannerDate":"2024. 11. 28.(목) 14:00","BannerPlace":"온라인 행사"},{"Id":6163,"New_Start_Date":"2024-11-13T00:00:00","New_End_Date":"2024-11-21T23:59:59","Status":"ADVERTISING","ApplyDate":"2024-11-13T15:21:15.997414","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/775b1b22644f4a82846102a286006b02.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b32896b4e2724b7785f1b38af408ad3e.png","Click_Url":"https://event-us.kr/dday2023/event/93975","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"온/오프라인 청중을 모집합니다","BannerDescription":"11월 디데이 X 현대차그룹 청중모집","BannerDate":"2024. 11. 28.(목) 16:00","BannerPlace":"온·오프라인 행사"}],
+                    searchResultBanners: [{"Id":"94844","CoverImageUrl":"/Image/seouldesign/94844/ProjectInfo/Cover/5c5fcd9a180d4679ba6544048156727e.jpg","Title":"[서울디자인재단] 2024 디자인창업포럼에 여러분을 초대합니다!","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/seouldesign/TopLogoImage/24a45bcaabd144f8bd1f2dc16d208cde.png","EventType":"강연/세미나","Category":"디자인/영상","Category2":"디자인","StartDate":"2024-11-22T16:00:00","CloseDate":"2024-11-22T18:00:00","RegisterStartDate":"2024-11-08T00:00:00","RegisterDueDate":"2024-11-22T13:00:00","ViewCount":489,"AppSubDomain":"seouldesign","IsSuper":false,"AppTitle":"서울디자인재단","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":"동대문디자인플라자(DDP) 디자인랩 3층 디자인홀","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":true,"CreatedDate":"2024-11-08T10:14:10.7511707","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":90155,"ProjectId":"94844","ProjectSubDomain":"seouldesign","TagId":4053,"Date":"2024-11-08T10:29:00.8255005","Sort":0,"Project":null,"Tag":null},{"Id":90156,"ProjectId":"94844","ProjectSubDomain":"seouldesign","TagId":541,"Date":"2024-11-08T10:29:00.8255005","Sort":1,"Project":null,"Tag":null},{"Id":90157,"ProjectId":"94844","ProjectSubDomain":"seouldesign","TagId":59,"Date":"2024-11-08T10:29:00.8255005","Sort":2,"Project":null,"Tag":null},{"Id":90158,"ProjectId":"94844","ProjectSubDomain":"seouldesign","TagId":89,"Date":"2024-11-08T10:29:00.8255005","Sort":3,"Project":null,"Tag":null},{"Id":90159,"ProjectId":"94844","ProjectSubDomain":"seouldesign","TagId":1957,"Date":"2024-11-08T10:29:00.8255005","Sort":4,"Project":null,"Tag":null}],"pitId":6138,"IsAdCheck":true,"IsSupportAd":false,"IsAdMark":true,"Url":null,"CorrectionValue":0.0},{"Id":"95227","CoverImageUrl":"/Image/growthup/95227/ProjectInfo/Cover/4072bac9e4ab44b2a89940074258720d.jpg","Title":"경기스타트업 IR컨설팅 지원사업 참여기업 모집","State":"Start","AppTopLogoImageUrl":"/Image/growthup/60908edc06ac48bda414720c75b21277.jpg","EventType":"멘토링/대외활동","Category":"창업","Category2":"스타트업","StartDate":"2024-11-14T01:00:00","CloseDate":"2024-11-21T05:00:00","RegisterStartDate":"2024-11-14T00:00:00","RegisterDueDate":"2024-11-21T05:00:00","ViewCount":66,"AppSubDomain":"growthup","IsSuper":false,"AppTitle":"(주)업라이트컨설팅","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2024-11-14T11:23:22.7389764","EventSystemType":"online","OnlineEventType":"other","ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":6173,"IsAdCheck":true,"IsSupportAd":false,"IsAdMark":true,"Url":null,"CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
@@ -4219,6 +4291,10 @@ docReady(() => {
                         '무료': 'Free',
                         '유료': 'Paid',
                     },
+                    newsLetterModalTitle: '',
+                    newsLetterModalDescription: '',
+                    isNewsLetterModalShow: false,
+                    isNewsLetterResponseSuccess: true,
                 };
             },
             computed: {
@@ -4723,6 +4799,43 @@ docReady(() => {
                             `${self.searchViewModel.page}page`,
                         ],
                     });
+                },
+                async handleNewsletterSubscribe(event) {
+                    const form = event.target;
+                    const submitButton = form.querySelector('#stb_form_submit_button');
+                    submitButton.disabled = true;
+                    const email = form.querySelector('#stb_email').value;
+                    const name = form.querySelector('#stb_name').value.length
+                        ? form.querySelector('#stb_name').value
+                        : email.split('@')[0];
+                    const model = {
+                        email: email,
+                        name: name,
+                    };
+                    const response = await axios.post('/Account/HomepageNewsletterSubscribe', model);
+                    if (response.data.success) {
+                        mixpanel.track("user_subscribe", { position: "attendresut",click_text: "구독하기 클릭"})
+                        this.isNewsLetterResponseSuccess = true;
+                        this.newsLetterModalTitle = '구독 성공';
+                        this.newsLetterModalDescription =
+                            '구독해 주셔서 감사합니다.<br>앞으로 유익한 행사 소식을 전달해 드릴게요!';
+                        await axios.post('/account/newslettercheck', {
+                            email: email,
+                            location: 'main',
+                        });
+                    } else {
+                        this.isNewsLetterResponseSuccess = false;
+                        this.newsLetterModalTitle = '구독 실패';
+                        if (response.data.message === 'existEmail') {
+                            this.newsLetterModalDescription = '이 이메일 주소는 이미 구독중입니다.';
+                        } else if (response.data.message === 'wrongEmail') {
+                            this.newsLetterModalDescription = '잘못된 이메일 형식입니다.';
+                        } else {
+                            this.newsLetterModalDescription = response.data.message;
+                        }
+                    }
+                    this.isNewsLetterModalShow = true;
+                    submitButton.disabled = false;
                 },
                 async getList() {
                     const self = this;
