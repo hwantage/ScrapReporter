@@ -221,13 +221,14 @@ function ignore(e){
 <a href="/site/nia_kor/main.do"><span class="top_logo img01">한국지능정보사회진흥원</span></a>
 </h1>
 <h1 class="h_mobile"><a href="/site/nia_kor/main.do"><span class="top_logo img01m">한국지능정보사회진흥원</span></a></h1>
-<h1 class="h_gov" style="position:absolute;right:5px;top:17px;">
+<h1 class="h_gov" style="position:absolute;right:20px;top:17px;">
 <a href="/govindex.jsp" target="_blank" title="2022국정과제 바로가기 - 새창"><img alt="다시 도약하는 대한민국, 함께 잘사는 국민의 나라" src="/img/nia_kor/gov_2022.png"/></a>
 </h1>
 <ul class="globalSet">
 <li><a href="https://post.naver.com/withnia" target="_blank" title="한국지능정보사회진흥원 네이버포스트 새창 바로가기"><img alt="naver post" src="/images/nia_kor/img/naver_small.png"/><span class="hiddenTxt">네이버포스트</span></a></li>
 <li><a href="https://www.facebook.com/ITKOREANIA" target="_blank" title="NIA 한국지능정보사회진흥원 페이스북으로 새창 바로가기"><i class="ion-social-facebook"></i><span class="hiddenTxt">페이스북</span></a></li>
 <li><a href="http://www.youtube.com/channel/UCoezsjw8NsN8BFsEE7fWyUw" target="_blank" title="NIA 한국지능정보사회진흥원 유투브로 새창 바로가기"><i class="ion-social-youtube"></i><span class="hiddenTxt">유투브</span></a></li>
+<li><a href="https://www.instagram.com/withnia1114/" target="_blank" title="한국지능정보사회진흥원 인스타그램 새창 바로가기"><img alt="instagram" src="/images/nia_kor/img/instagram.svg" style="width:20px; height:20px;"/><span class="hiddenTxt">인스타그랩</span></a></li>
 <li><a href="http://eng.nia.or.kr/site/nia_eng/main.do" title="NIA 한국지능정보사회진흥원 영문사이트로 이동">ENGLISH</a></li>
 </ul>
 </div>
@@ -245,7 +246,20 @@ function ignore(e){
 <div id="c0">
 <ul class="full_menu">
 <li>
-<div class="titleArea"><span class="icon img01"></span><em>주요사업</em></div>
+<div class="titleArea"><span class="icon img01"></span><em>인공지능</em></div>
+<ul class="sub_menuArea"> <li class="sub_menu1dep">
+<span class="tit"><a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99952">AI국가전략</a></span>
+</li>
+<li class="sub_menu1dep">
+<span class="tit"><a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99953">AI활용사례</a></span>
+</li>
+<li class="sub_menu1dep">
+<span class="tit"><a href="/site/nia_kor/01/10103000000002024110801.jsp">AI전문자료</a></span>
+</li>
+</ul>
+</li>
+<li>
+<div class="titleArea"><span class="icon img02"></span><em>주요사업</em></div>
 <ul class="sub_menuArea"> <li class="sub_menu1dep">
 <span class="tit"><a href="/site/nia_kor/ex/bbs/ListBusiness.do?businessMnCd=23000600">디지털플랫폼정부본부</a></span>
 </li>
@@ -273,7 +287,7 @@ function ignore(e){
 </ul>
 </li>
 <li>
-<div class="titleArea"><span class="icon img02"></span><em>지식정보</em></div>
+<div class="titleArea"><span class="icon img03"></span><em>지식정보</em></div>
 <ul class="sub_menuArea"> <li class="sub_menu">
 <span class="tit"><a href="/site/nia_kor/ex/bbs/List.do?cbIdx=44086">간행물</a></span>
 <ul>
@@ -381,7 +395,7 @@ function ignore(e){
 </ul>
 </li>
 <li>
-<div class="titleArea"><span class="icon img03"></span><em>알림마당</em></div>
+<div class="titleArea"><span class="icon img04"></span><em>알림마당</em></div>
 <ul class="sub_menuArea"> <li class="sub_menu">
 <span class="tit"><a class="active" href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835">NIA 알림</a></span>
 <ul>
@@ -449,7 +463,7 @@ function ignore(e){
 </ul>
 </li>
 <li>
-<div class="titleArea"><span class="icon img04"></span><em>기관소개</em></div>
+<div class="titleArea"><span class="icon img05"></span><em>기관소개</em></div>
 <ul class="sub_menuArea"> <li class="sub_menu">
 <span class="tit"><a href="/site/nia_kor/04/10401010000002016082201.jsp">NIA 소개</a></span>
 <ul>
@@ -520,7 +534,7 @@ function ignore(e){
 </ul>
 </li>
 <li>
-<div class="titleArea"><span class="icon img05"></span><em>정보공개</em></div>
+<div class="titleArea"><span class="icon img06"></span><em>정보공개</em></div>
 <ul class="sub_menuArea"> <li class="sub_menu1dep">
 <span class="tit"><a href="/site/nia_kor/03/10303010000002016082201.jsp">정보공개 제도안내</a></span>
 </li>
@@ -568,9 +582,26 @@ function ignore(e){
 <div class="oe_overlay" id="oe_overlay"></div>
 <ul class="gnb_menu" id="gnb_menu">
 <li>
-<a href="/site/nia_kor/ex/bbs/ListBusiness.do?businessMnCd=23000200">주요사업</a>
+<a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99952">인공지능</a>
 <div class="sub_menuArea">
 <div class="sub_list set01">
+<ul>
+<li class="sub_title"><a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99952"><span>AI국가전략
+
+                            </span></a>
+<li class="sub_title"><a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99953"><span>AI활용사례
+
+                            </span></a>
+<li class="sub_title"><a href="/site/nia_kor/01/10103000000002024110801.jsp"><span>AI전문자료
+
+                            </span></a>
+</li></li></li></ul>
+</div>
+</div>
+</li> <li>
+<a href="/site/nia_kor/ex/bbs/ListBusiness.do?businessMnCd=23000600">주요사업</a>
+<div class="sub_menuArea">
+<div class="sub_list set02">
 <ul>
 <li class="sub_title"><a href="/site/nia_kor/ex/bbs/ListBusiness.do?businessMnCd=23000600"><span>디지털플랫폼정부본부
 
@@ -602,7 +633,7 @@ function ignore(e){
 </li> <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=44086">지식정보</a>
 <div class="sub_menuArea">
-<div class="sub_list set02">
+<div class="sub_list set03">
 <ul>
 <li class="sub_title"><a href="/site/nia_kor/ex/bbs/List.do?cbIdx=44086"><span>간행물
 
@@ -660,7 +691,7 @@ function ignore(e){
 </li> <li>
 <a class="active selectedP" href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835">알림마당</a>
 <div class="sub_menuArea">
-<div class="sub_list set03">
+<div class="sub_list set04">
 <ul>
 <li class="sub_title"><a class="active selectedP" href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835"><span>NIA 알림
 
@@ -696,7 +727,7 @@ function ignore(e){
 </li> <li>
 <a href="/site/nia_kor/04/10401010000002016082201.jsp">기관소개</a>
 <div class="sub_menuArea">
-<div class="sub_list set04">
+<div class="sub_list set05">
 <ul>
 <li class="sub_title"><a href="/site/nia_kor/04/10401010000002016082201.jsp"><span>NIA 소개
 
@@ -735,7 +766,7 @@ function ignore(e){
 </li> <li>
 <a href="/site/nia_kor/03/10303010000002016082201.jsp">정보공개</a>
 <div class="sub_menuArea">
-<div class="sub_list set05">
+<div class="sub_list set06">
 <ul>
 <li class="sub_title"><a href="/site/nia_kor/03/10303010000002016082201.jsp"><span>정보공개 제도안내
 
@@ -785,6 +816,17 @@ function ignore(e){
 <div class="scroll_content mCustomScrollbar">
 <nav class="mainNav">
 <ul>
+<li>
+<em aria-hidden="true">인공지능</em>
+<!--                                 </a> -->
+<ul>
+<li>
+<a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99952" title="AI국가전략">AI국가전략</a> </li>
+<li>
+<a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99953" title="AI활용사례">AI활용사례</a> </li>
+<li>
+<a href="/site/nia_kor/01/10103000000002024110801.jsp" title="AI전문자료">AI전문자료</a> </li> </ul>
+</li>
 <li>
 <em aria-hidden="true">주요사업</em>
 <!--                                 </a> -->
@@ -1035,6 +1077,7 @@ function ignore(e){
 <li><a href="https://post.naver.com/withnia" target="_blank" title="네이버포스트- 새창"><img alt="naver post" src="/images/nia_kor/img/naver.png"/><span class="hiddenTxt">네이버포스트</span></a></li>
 <li><a href="https://www.facebook.com/ITKOREANIA" target="_blank" title="페이스북 - 새창"><i class="ion-social-facebook"></i><span class="hiddenTxt">페이스북</span></a></li>
 <li><a href="http://www.youtube.com/channel/UCoezsjw8NsN8BFsEE7fWyUw" target="_blank" title="유투브 - 새창"><i class="ion-social-youtube"></i><span class="hiddenTxt">유투브</span></a></li>
+<li><a href="https://www.instagram.com/withnia1114/" target="_blank" title="인스타그램- 새창"><img alt="instagram" class="mCS_img_loaded" src="/images/nia_kor/img/instagram.svg" style="width:40px; height:40px; margin-top:10px;"/><span class="hiddenTxt">인스타그램</span></a></li>
 </ul>
 <div class="eng_page"><a href="http://eng.nia.or.kr/" title="영문사이트로 이동">ENGLISH</a></div>
 </div>
@@ -1042,7 +1085,7 @@ function ignore(e){
 <button class="ion-ios-close-empty c-menu__close" title="좌측메뉴 닫기"><span class="hiddenTxt">좌측메뉴 닫기</span></button>
 <form id="snsLogForm" method="post" name="snsLogForm">
 <input id="slSiteCd" name="slSiteCd" type="hidden" value="nia_kor">
-<input id="slSortOrder" name="slSortOrder" type="hidden" value="1030101000000"/>
+<input id="slSortOrder" name="slSortOrder" type="hidden" value="1100101000000"/>
 <input id="slType" name="slType" type="hidden"/>
 </input></form>
 </nav>
@@ -1243,8 +1286,8 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,719</em>건
-            (1페이지 / 172페이지)</span>
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,721</em>건
+            (1페이지 / 173페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
 <span class="bar"></span>
@@ -1330,7 +1373,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.08.22</em>
-<em>조회수 3958</em>
+<em>조회수 4034</em>
 </span>
 <span class="writer">
 <em>박준영</em>
@@ -1407,7 +1450,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2023.12.29</em>
-<em>조회수 2766</em>
+<em>조회수 2814</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1416,7 +1459,163 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','27430','16010100','27430');return false;" title="2024 디지털정부 글로벌 컨설턴트 합동 세미나(새 글)-첨부파일 없음">
+<a href="#view" onclick="doBbsFView('99835','27439','16010100','27439');return false;" title="민간투자형 SW사업 제도 및 추진 가이드 2.0 설명회(12.3) 안내(새 글)-첨부파일 없음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             민간투자형 SW사업 제도 및 추진 가이드 2.0 설명회(12.3) 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                        <em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.11.18</em>
+<em>조회수 368</em>
+</span>
+<span class="writer">
+<em>김승준</em>
+<em>디지털투자성과센터</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','27438','16010100','27438');return false;" title="개방형 양자 테스트베드 설명회 개최 안내(새 글)-첨부파일 없음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             개방형 양자 테스트베드 설명회 개최 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                        <em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2024.11.18</em>
+<em>조회수 210</em>
+</span>
+<span class="writer">
+<em>안호찬</em>
+<em>AI-양자기술활용팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','27430','16010100','27430');return false;" title="2024 디지털정부 글로벌 컨설턴트 합동 세미나-첨부파일 없음">
 <span class="subject searchItem">
                     
                         
@@ -1481,11 +1680,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     
-                        <em class="list_new">new</em>
-</span>
+                    </span>
 <span class="src">
 <em>2024.11.12</em>
-<em>조회수 337</em>
+<em>조회수 672</em>
 </span>
 <span class="writer">
 <em>박준영</em>
@@ -1494,7 +1692,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','27420','16010100','27420');return false;" title="2025년 초거대AI 데이터 수요조사 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','27420','16010100','27420');return false;" title="2025년 초거대AI 데이터 수요조사 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1557,11 +1755,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2024.11.11</em>
-<em>조회수 490</em>
+<em>조회수 949</em>
 </span>
 <span class="writer">
 <em>주정훈</em>
@@ -1638,7 +1835,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.11.04</em>
-<em>조회수 305</em>
+<em>조회수 372</em>
 </span>
 <span class="writer">
 <em>허수정</em>
@@ -1713,7 +1910,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2024.11.01</em>
-<em>조회수 177</em>
+<em>조회수 209</em>
 </span>
 <span class="writer">
 <em>장유환</em>
@@ -1790,7 +1987,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.10.31</em>
-<em>조회수 236</em>
+<em>조회수 273</em>
 </span>
 <span class="writer">
 <em>노규택</em>
@@ -1867,7 +2064,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.10.28</em>
-<em>조회수 298</em>
+<em>조회수 355</em>
 </span>
 <span class="writer">
 <em>박경실</em>
@@ -1875,164 +2072,10 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 </a>
 </li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','27331','16010100','27331');return false;" title="2024년도 3/4분기 한국지능정보사회진흥원 신규채용자와 재직 임직원과의 친인척 현황 공개-첨부파일 없음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2024년도 3/4분기 한국지능정보사회진흥원 신규채용자와 재직 임직원과의 친인척 현황 공개
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    </span>
-<span class="src">
-<em>2024.10.25</em>
-<em>조회수 416</em>
-</span>
-<span class="writer">
-<em>박연홍</em>
-<em>인사총무팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','27321','16010100','27321');return false;" title="[안내] DPG AI NoCode Hackathon(@광주) 2024 개최 안내-첨부파일 없음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             [안내] DPG AI NoCode Hackathon(@광주) 2024 개최 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    </span>
-<span class="src">
-<em>2024.10.22</em>
-<em>조회수 490</em>
-</span>
-<span class="writer">
-<em>정다빈</em>
-<em>플랫폼혁신팀</em>
-</span>
-</a>
-</li>
 </ul>
 </div>
 <div class="pageNation">
-<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=172" onclick="doBbsFPag(172);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
+<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=173" onclick="doBbsFPag(173);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
 </div>
 </section>
 <!-- 0926수정 top버튼추가 --><!-- 0928 -->

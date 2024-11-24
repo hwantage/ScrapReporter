@@ -26,9 +26,9 @@
 <script src="/resources/plugin/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="/resources/js/common.js"></script>
 <link href="/resources/plugin/bootstrap/3.2.0/css/bootstrap.css?ver=221114" rel="stylesheet"/>
-<link href="/resources/css/common.css?ver=20241014" rel="stylesheet">
-<link href="/resources/css/layout.css?ver=20240911" rel="stylesheet"/>
-<link href="/resources/css/style.css?ver=20240911" rel="stylesheet"/>
+<link href="/resources/css/common.css?ver=20241118" rel="stylesheet">
+<link href="/resources/css/layout.css?ver=20241118" rel="stylesheet"/>
+<link href="/resources/css/style.css?ver=20241118" rel="stylesheet"/>
 <!--[if lt IE 9]>
 	<script src="/resources/plugin/html5shiv.js"></script>
 	<link rel="stylesheet" href="/resources/css/ie.css" />
@@ -37,7 +37,7 @@
 <link href="/resources/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet">
 <script src="/resources/main_js/core.min.js"></script>
 <script src="/resources/main_js/easings.min.js"></script>
-<script src="/resources/main_vendors/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script src="/resources/main_vendors/slick-1.8.1/slick-1.8.1/slick/slick.min.js?ver=20241118"></script>
 <script src="/resources/main_vendors/swiper-11.0.7/package/swiper-bundle.min.js"></script>
 <script src="/resources/main_vendors/rd-navbar-2.1.8/dist/js/jquery.rd-navbar.min.js"></script>
 <!-- 호환성보기 깨지는 문제로 위치 변경 케릭터셋 및 IE버전관련 상단으로 -->
@@ -61,7 +61,7 @@
 <body>
 <!-- Accessibility -->
 <dl id="accessibility">
-<dt>바로가기 및 건너띄기 링크</dt>
+<dt>바로가기 및 건너뛰기</dt>
 <dd><a href="#conArea">본문 바로가기</a></dd>
 <dd><a href="#depth11">주메뉴 바로가기</a></dd>
 <!-- 2021.11.29 WA관련 서브메뉴가 존재하지 않을 때 서브메뉴 바로가기 비활성화(ex:본인인증 페이지) -->
@@ -70,7 +70,7 @@
 <!-- Accessibility // -->
 <div id="wrap">
 <header class="rd-navbar-wrap">
-<nav class="rd-navbar" data-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" style="position:static;">
+<nav class="rd-navbar" data-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static">
 <div class="rd-navbar-inner">
 <!-- RD Navbar Panel -->
 <div class="rd-navbar-panel">
@@ -82,64 +82,22 @@
 <div class="rd-navbar-brand">
 <h1><a class="brand" href="/main.it">정보통신기획평가원</a></h1>
 </div>
-<div class="auros-nav-sidemenu">
-<div class="change-language">
-<span class="language-icon"></span>
-<ul class="language-panel">
-<li><a href="/en/main.it" title="영문 홈페이지로 이동">ENG</a></li>
-</ul>
-</div>
-<script>
-		                       $('.change-language').click(function() {
-		                        $('.change-language').toggleClass('active');
-		                      });
-		                   </script>
-<!-- 검색 클릭시 나오는 내용 하단에 있음 -->
-<div class="rd-navbar-search-wrap">
-<div class="nav-search">
-<div class="search-icon">검색</div>
-</div>
-</div>
-<div class="open-navigation">
-<button onclick="location.href='/etc/sitemap.it'" type="button"><span aria-label="사이트맵버튼" class="sitemap-icon" title="사이트맵버튼">사이트맵</span></button>
-</div>
-</div>
-<!--검색 버튼 클릭시 나오는 검색창 -->
-<form action="/search.it" class="searchHeaderFrm" data-language="kr">
-<div class="search-toggle">
-<div class="form-group">
-<input class="form-control" data-null="false" data-placement="bottom" id="rd-navbar-search-input" name="keywords" placeholder="검색어를 입력해주세요" title="통합검색" type="text"/>
-</div>
-<button aria-label="검색버튼" class="material-icons-search" id="searchButton" title="검색버튼" type="submit"></button>
-<span class="close_btn"></span>
-</div>
-</form>
-<script>
-		                   $(function(){
-		                       $('.nav-search').click(function(){
-		                           $('.search-toggle').slideToggle(300);
-		                       });
-		                       $('.search-toggle .close_btn').click(function(){
-		                           $('.search-toggle').slideUp(300);
-		                       });
-		                   })
-		               </script>
 </div>
 <div class="rd-navbar-outer">
 <div class="rd-navbar-inner">
 <div class="rd-navbar-subpanel">
 <div class="rd-navbar-nav-wrap">
-<script>
-									$(function() {
+<script>	
+									$(function() {										
 										$(".rd-navbar-nav").hover(function(e) {
 											$(".rd-navbar").addClass("nav-bg")
 										}, function(e) {
 											$(".rd-navbar").removeClass("nav-bg")
-										});
+										});								
 									});
 								</script>
 <!-- RD Navbar Nav -->
-<ul class="rd-navbar-nav">
+<ul class="rd-navbar-nav" id="depth11">
 <!--메뉴 시작-->
 <li>
 <a href="/kr/1/introduce/intro.it" target="_self">
@@ -150,7 +108,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">introduce</div>  -->
 <div class="fs24 fw900 nb-title">IITP 소개</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="IITP 소개 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -247,7 +205,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">communication</div>  -->
 <div class="fs24 fw900 nb-title">소통마당</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="소통마당 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -319,7 +277,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">notice</div>  -->
 <div class="fs24 fw900 nb-title">알림·공지</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="알림·공지 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -382,7 +340,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">business</div>  -->
 <div class="fs24 fw900 nb-title">주요사업</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="주요사업 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -482,7 +440,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">knowledge</div>  -->
 <div class="fs24 fw900 nb-title">지식정보</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="지식정보 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -571,7 +529,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">government</div>  -->
 <div class="fs24 fw900 nb-title">정보공개</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="정보공개 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -700,7 +658,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">participate</div>  -->
 <div class="fs24 fw900 nb-title">고객마당</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="고객마당 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -828,7 +786,7 @@
 <div class="s-nav-blue">
 <!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">ethia</div>  -->
 <div class="fs24 fw900 nb-title">ESG경영</div>
-<img class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png" title="ESG경영 영문이미지"/>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
 </div>
 <ul class="s-nav-box">
 <li>
@@ -988,6 +946,59 @@
 </div>
 </div>
 </div>
+<div class="auros-nav-sidemenu">
+<div class="change-language" style="float:left">
+<button aria-label="펼치기" class="language-icon" title="펼치기"></button>
+<ul class="language-panel">
+<li><a href="/en/main.it" title="영문 홈페이지로 이동">ENG</a></li>
+</ul>
+</div>
+<script>
+		                       $('.change-language').mouseenter(function() {
+		                        $('.change-language').toggleClass('active');
+		                      });
+		                       $('.change-language').mouseleave(function() {
+		                        $('.change-language').toggleClass('active');
+		                      });
+		                       document.querySelectorAll('.change-language').forEach(element => {
+		                    	   element.addEventListener('keydown', (event) => {
+		                    	     if (event.key === 'Enter') {
+		                    	    	 $('.change-language').toggleClass('active');
+		                    	     }
+		                    	   });
+		                    	 });                       
+		                   </script>
+<!-- 검색 클릭시 나오는 내용 하단에 있음 -->
+<div class="rd-navbar-search-wrap" style="float:left">
+<div class="nav-search">
+<button class="search-icon" id="search-icon-button">검색</button>
+</div>
+<form action="/search.it" class="searchHeaderFrm" data-language="kr">
+<div class="search-toggle">
+<div class="form-group">
+<input class="form-control" data-null="false" data-placement="bottom" id="rd-navbar-search-input" name="keywords" placeholder="검색어를 입력해주세요" title="통합검색" type="text"/>
+</div>
+<button aria-label="검색" class="material-icons-search" id="searchButton" title="검색" type="submit"></button>
+<button aria-label="검색 닫기" class="close_btn" title="검색 닫기" type="button"></button>
+</div>
+</form>
+</div>
+<!--검색 버튼 클릭시 나오는 검색창 -->
+<script>
+		                   $(function(){
+		                       $('.nav-search').click(function(){
+		                           $('.search-toggle').slideToggle(300);
+		                       });
+		                       $('.search-toggle .close_btn').click(function(){
+		                           $('.search-toggle').slideUp(300);
+		                           document.getElementById('search-icon-button').focus();
+		                       });
+		                   })
+		               </script>
+<div class="open-navigation" style="float:right">
+<button onclick="location.href='/etc/sitemap.it'" type="button"><span aria-label="사이트맵" class="sitemap-icon" title="사이트맵">사이트맵</span></button>
+</div>
+</div>
 </nav>
 </header>
 <script>
@@ -998,10 +1009,10 @@
 				$('.rd-navbar-brand a').addClass("brand2")
 				$('.logout span').removeClass("logout-icon")
 				$('.logout span').addClass("sub-logout-icon")
-				$('.change-language span').removeClass("language-icon")
-				$('.change-language span').addClass("sub-language-icon")
-				$('.nav-search div').removeClass("search-icon")
-				$('.nav-search div').addClass("sub-search-icon")
+				$('.change-language button').removeClass("language-icon")
+				$('.change-language button').addClass("sub-language-icon")
+				$('.nav-search button').removeClass("search-icon")
+				$('.nav-search button').addClass("sub-search-icon")
 				$('.open-navigation span').removeClass("sitemap-icon")
 				$('.open-navigation span').addClass("sub-sitemap-icon")
 				$('.rd-navbar-outer').css("color","#222")
@@ -1077,16 +1088,16 @@
 			$('#side-new > div').css('background-size','110% 134px' );
 		}
 		if(url.indexOf('notice') != -1 && lang == 'kr'){
-			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_알림공지_2024.jpg") no-repeat' );
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_알림공지_2024.png") no-repeat' );
 		}
 		if(url.indexOf('knowledge') != -1 && lang == 'kr'){
-			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_지식정보_2024.jpg") no-repeat' );
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_지식정보_2024.png") no-repeat' );
 		}
 		if(url.indexOf('participate') != -1 && lang == 'kr'){
 			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_고객마당_2024.jpg") no-repeat' );
 		}
 		if(url.indexOf('introduce') != -1 && lang == 'kr'){
-			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_소개_2024.jpg") no-repeat' );
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_IITP소개_2024.png") no-repeat' );
 		}
 		if(url.indexOf('government') != -1 && lang == 'kr'){
 			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_정보공개_2024.jpg") no-repeat' );
@@ -1109,7 +1120,7 @@
 				주요사업<br/>
 <span>BUSINESS</span>
 </h2>
-<ul class="nav bs-sidenav">
+<ul class="nav bs-sidenav" id="side">
 <li class="li1">
 <a href="/kr/1/business/businessMap.it"> 
 			
@@ -1221,7 +1232,8 @@
 			</a>
 </li>
 </ul>
-</div></div>
+</div>
+</div>
 <div class="col-md-9 col-sm-9 col-xs-12 conArea pull-right" id="conArea">
 <div id="subLocation2-new">
 <h3 class="stitle">(현)사업공고</h3>
@@ -1366,12 +1378,12 @@
 <ul class="pagination">
 <li class="">
 <a class="pre_end arrow" href="/kr/1/business/businessApiView.it?pageIndex=0&amp;pageSize=10" onclick="return false;">
-<img alt="처음 페이지로 이동" src="/resources/images/common/pre_end.png">
+<img alt="처음 페이지로 이동" src="/resources/images/common/pre_end_2024.png">
 </img></a>
 </li>
 <li class="">
 <a class="pre arrow" href="/kr/1/business/businessApiView.it?pageIndex=1&amp;pageSize=10" onclick="return false;">
-<img alt="이전 페이지로 이동" src="/resources/images/common/pre.png"/>
+<img alt="이전 페이지로 이동" src="/resources/images/common/pre_2024.png"/>
 </a>
 </li>
 <li class="active"><a>1</a></li>
@@ -1386,12 +1398,12 @@
 <li><a href="/kr/1/business/businessApiView.it?pageIndex=9&amp;pageSize=10">10</a></li>
 <li class="">
 <a class="next arrow" href="/kr/1/business/businessApiView.it?pageIndex=1&amp;pageSize=10">
-<img alt="다음 페이지로 이동" src="/resources/images/common/next.png">
+<img alt="다음 페이지로 이동" src="/resources/images/common/next_2024.png">
 </img></a>
 </li>
 <li class="">
 <a class="next_end arrow" href="/kr/1/business/businessApiView.it?pageIndex=47&amp;pageSize=10">
-<img alt="마지막 페이지로 이동" src="/resources/images/common/next_end.png">
+<img alt="마지막 페이지로 이동" src="/resources/images/common/next_end_2024.png">
 </img></a>
 </li>
 </ul>

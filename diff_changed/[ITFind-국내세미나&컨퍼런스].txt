@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2024-11-18"></script>
+<script src="/contents/js/func.js?ver=2024-11-25"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -475,8 +475,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>2929건</strong></span>
-<span>현재페이지 : <strong>1/293.0</strong></span>
+<span>총 게시물 : <strong>2935건</strong></span>
+<span>현재페이지 : <strong>1/294.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -506,7 +506,15 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">2929</th>
+<th data-cell-header="번호" scope="row">2935</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13928&amp;boardParam1=ko&amp;searchTarget2=">국내//[01.16] 2025 전력 시장의 변화와 산업 전망 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-16~2025-01-16</td>
+<td data-cell-header="접수기간">2024-11-20~2025-01-15</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2934</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13923&amp;boardParam1=ko&amp;searchTarget2=">국내//[1/16] “2025 변화에 도전하는 K반도체 AI 핵심기술 및 산업 트렌드 세미나” / 한국</a></td>
@@ -514,7 +522,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-11-15~2025-01-15</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2928</th>
+<th data-cell-header="번호" scope="row">2933</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13857&amp;boardParam1=ko&amp;searchTarget2=">국내//[01.16] 실무자를 위한 사용후 배터리 재활용/재사용 산업 집중 교육 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-16~2025-01-16</td>
+<td data-cell-header="접수기간">2024-10-01~2025-01-15</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2932</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13843&amp;boardParam1=ko&amp;searchTarget2=">국내//[일정연기] 수소 연료전지 기반 발전 및 어플리케이션별 활용시장 세미나 / 한국</a></td>
@@ -522,7 +538,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-09-01~2025-01-14</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2927</th>
+<th data-cell-header="번호" scope="row">2931</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13866&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.18] 수소발전용 암모니아 크래킹 기술 분야 전주기 핵심기술 세미나 / 한국</a></td>
@@ -530,7 +546,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-10-01~2024-12-17</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2926</th>
+<th data-cell-header="번호" scope="row">2930</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13796&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.18] 분산법 시행에 따른 전력시장 변화와 신사업전략 세미나 / 한국</a></td>
@@ -538,7 +554,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-09-01~2024-12-17</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2925</th>
+<th data-cell-header="번호" scope="row">2929</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13865&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.17] 청정수소ㆍ암모니아 발전(혼소,전소)기술 및 입찰동향과 실증현황 세미나 / 한국</a></td>
@@ -546,7 +562,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-10-01~2024-12-16</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2924</th>
+<th data-cell-header="번호" scope="row">2928</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13797&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.17] 탄소중립을 위한 재생에너지 정책변화 및 기업의 대응전략 세미나 / 한국</a></td>
@@ -554,7 +570,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-09-01~2024-12-16</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2923</th>
+<th data-cell-header="번호" scope="row">2927</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13921&amp;boardParam1=ko&amp;searchTarget2=">국내//배터리 어플리케이션 최적 운용을 위한 BMS 설계 및 AI-BMS 전문가 과정 세미나 / 한국</a></td>
@@ -562,28 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-11-12~2024-12-12</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2922</th>
+<th data-cell-header="번호" scope="row">2926</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13913&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.11] 탄소중립을 위한 지능형 도심 에너지 기술 포럼 / 한국</a></td>
 <td data-cell-header="행사기간">2024-12-11~2024-12-11</td>
 <td data-cell-header="접수기간">2024-11-01~2024-12-10</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">2921</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13867&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.11] 2025년 사용후 배터리 산업 확대를 위한 주요 정책·규제 및 신기술 이슈 / 한국</a></td>
-<td data-cell-header="행사기간">2024-12-11~2024-12-11</td>
-<td data-cell-header="접수기간">2024-10-18~2024-12-10</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">2920</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13917&amp;boardParam1=ko&amp;searchTarget2=">국내//[12.04] 프로바이오틱스 &amp; 마이크로바이옴 연구개발 현주소, 미래 전망과 상용화 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2024-12-04~2024-12-04</td>
-<td data-cell-header="접수기간">2024-11-11~2024-12-03</td>
 </tr>
 </tbody>
 </table>

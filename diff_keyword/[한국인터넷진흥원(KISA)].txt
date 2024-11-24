@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1193; // 전체 조회 건수
+	var totalNum = 1197; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -190,7 +190,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1193</b>건
+<span>총 <b>1197</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -230,10 +230,22 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3398&amp;page=1">2024년 한국인터넷진흥원 지역공부방 봉사 대학생 모집(~11.27, 수)</a>
+</td>
+<td class="date">2024-11-19</td>
+<td class="count">2779</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3398', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3394&amp;page=1">2024 CVC 워크숍 접수 안내(~11.19(화) 까지)</a>
 </td>
 <td class="date">2024-11-11</td>
-<td class="count">3490</td>
+<td class="count">6686</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3394', 1, 'KO');">
 <img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
@@ -245,7 +257,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3379&amp;page=1">2024년 KISA 대국민 ESG 아이디어 공모전 개최 안내</a>
 </td>
 <td class="date">2024-10-30</td>
-<td class="count">13128</td>
+<td class="count">17705</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3379', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -257,8 +269,38 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
 </td>
 <td class="date">2024-08-12</td>
-<td class="count">42774</td>
+<td class="count">45874</td>
 <td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1193</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3400&amp;page=1">중소기업 기술마켓 활용 안내(11월 카드뉴스)</a>
+</td>
+<td class="date">2024-11-22</td>
+<td class="count">1072</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1192</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3399&amp;page=1">전자문서산업 실태조사 통계 이용자 만족도 조사</a>
+</td>
+<td class="date">2024-11-20</td>
+<td class="count">1697</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1191</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3397&amp;page=1">한국인터넷진흥원 ESG 주간동향 보고서(12회차)</a>
+</td>
+<td class="date">2024-11-18</td>
+<td class="count">1787</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3397', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
 </td>
 </tr>
 <tr>
@@ -266,7 +308,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3381&amp;page=1">"2024 블록체인 진흥주간 x 웹3.0 컨퍼런스" 개최 안내(11/27~28, 서울 세종대학교 컨벤션센터)</a>
 </td>
 <td class="date">2024-11-15</td>
-<td class="count">5284</td>
+<td class="count">7616</td>
 <td class="attach">
 </td>
 </tr>
@@ -275,7 +317,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3396&amp;page=1">「2024 전자문서 산업인의 날 컨퍼런스」개최 안내 ('24.11.25(월), 서울 피스앤파크컨벤션)</a>
 </td>
 <td class="date">2024-11-14</td>
-<td class="count">1426</td>
+<td class="count">2537</td>
 <td class="attach">
 </td>
 </tr>
@@ -284,49 +326,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3395&amp;page=1">2024년 전자문서산업 실태조사 공표예정일 공지</a>
 </td>
 <td class="date">2024-11-14</td>
-<td class="count">1316</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1187</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3393&amp;page=1">한국인터넷진흥원 ESG 주간동향 보고서(11회차)</a>
-</td>
-<td class="date">2024-11-11</td>
-<td class="count">1810</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3393', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1186</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3368&amp;page=1">｢2024 블록체인 진흥주간 x 웹 3.0 컨퍼런스｣ 취업컨설팅 지원자 모집 공고(~11.15) 기간연장</a>
-</td>
-<td class="date">2024-11-11</td>
-<td class="count">5551</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3368', 1, 'KO');">
-<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1185</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3392&amp;page=1">2024년 하반기 침해사고 정보공유 세미나 개최(11/18, 전쟁기념관 로얄파크 컨벤션)</a>
-</td>
-<td class="date">2024-11-08</td>
-<td class="count">2784</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1184</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3391&amp;page=1">2024년도 위치정보 보호조치 비대면 이론교육(6차) 안내</a>
-</td>
-<td class="date">2024-11-08</td>
-<td class="count">2013</td>
+<td class="count">2057</td>
 <td class="attach">
 </td>
 </tr>
@@ -355,10 +355,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2024-11-15</dd>
+<dd>2024-11-22</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="4d7e2462-bc08-4110-8e8c-512a3d2aaa12">
+<input name="_csrf" type="hidden" value="d4909d91-7b0a-436e-9910-a057db58b32a">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -381,7 +381,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "4d7e2462-bc08-4110-8e8c-512a3d2aaa12");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "d4909d91-7b0a-436e-9910-a057db58b32a");
             },			
 			success: function(data) {
 				alert(data.message)
