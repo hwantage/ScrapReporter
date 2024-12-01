@@ -26,14 +26,14 @@
 <script src="/resources/plugin/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="/resources/js/common.js"></script>
 <link href="/resources/plugin/bootstrap/3.2.0/css/bootstrap.css?ver=221114" rel="stylesheet"/>
-<link href="/resources/css/common.css?ver=20241118" rel="stylesheet">
-<link href="/resources/css/layout.css?ver=20241118" rel="stylesheet"/>
+<link href="/resources/css/common.css?ver=20241125" rel="stylesheet">
+<link href="/resources/css/layout.css?ver=20241127_2" rel="stylesheet"/>
 <link href="/resources/css/style.css?ver=20241118" rel="stylesheet"/>
 <!--[if lt IE 9]>
 	<script src="/resources/plugin/html5shiv.js"></script>
 	<link rel="stylesheet" href="/resources/css/ie.css" />
 <![endif]-->
-<link href="/resources/main_css/common.css?ver=241010" rel="stylesheet"/>
+<link href="/resources/main_css/common.css?ver=241127" rel="stylesheet"/>
 <link href="/resources/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet">
 <script src="/resources/main_js/core.min.js"></script>
 <script src="/resources/main_js/easings.min.js"></script>
@@ -519,6 +519,15 @@
 															공개자료실</a>
 </div>
 </li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/knowledge/ICTRNDTech.it"> 
+															
+															
+															기술예고</a>
+</div>
+</li>
 </ul></div></li>
 <li>
 <a href="/kr/1/government/explain.it" target="_self">
@@ -948,7 +957,7 @@
 </div>
 <div class="auros-nav-sidemenu">
 <div class="change-language" style="float:left">
-<button aria-label="펼치기" class="language-icon" title="펼치기"></button>
+<button aria-label="영문 페이지 이동 ENG 메뉴 펼치기" class="language-icon" title="영문 페이지 이동 ENG 메뉴 펼치기"></button>
 <ul class="language-panel">
 <li><a href="/en/main.it" title="영문 홈페이지로 이동">ENG</a></li>
 </ul>
@@ -956,17 +965,27 @@
 <script>
 		                       $('.change-language').mouseenter(function() {
 		                        $('.change-language').toggleClass('active');
+		                        togleTitle();
 		                      });
 		                       $('.change-language').mouseleave(function() {
 		                        $('.change-language').toggleClass('active');
+		                        togleTitle();
 		                      });
 		                       document.querySelectorAll('.change-language').forEach(element => {
 		                    	   element.addEventListener('keydown', (event) => {
 		                    	     if (event.key === 'Enter') {
 		                    	    	 $('.change-language').toggleClass('active');
+		                    	    	 togleTitle();
 		                    	     }
 		                    	   });
-		                    	 });                       
+		                    	 });
+		                       function togleTitle(){
+	                    	    	 if (document.querySelector('.change-language').classList.contains('active')) {
+		                    	    	 document.querySelector('.language-icon').title = '영문 페이지 이동 ENG 메뉴 접기';		                    		    
+		                    	     } else {
+		                    	    	 document.querySelector('.language-icon').title = '영문 페이지 이동 ENG 메뉴 펼치기';
+		                    	     }	
+			                   }
 		                   </script>
 <!-- 검색 클릭시 나오는 내용 하단에 있음 -->
 <div class="rd-navbar-search-wrap" style="float:left">
@@ -1020,6 +1039,28 @@
 					
 				
 			});
+		</script>
+<script>
+		function isMobile() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+		if (isMobile()) {
+			$(document).on("focus",".rd-navbar--has-dropdown",function(){
+				$(".rd-navbar").addClass("nav-bg");
+				$(".rd-navbar--has-dropdown").removeClass("opened");
+				$(this).addClass("opened");
+			});
+		} 
+		else {
+			$(document).on("focus",".rd-navbar--has-dropdown",function(){
+				$(".rd-navbar").addClass("nav-bg");
+				$(this).addClass("focus");
+			});
+			$(document).on("focusout",".rd-navbar--has-dropdown",function(){
+				$(".rd-navbar").removeClass("focus");
+				$(".rd-navbar--has-dropdown").removeClass("focus");
+			});
+		}
 		</script>
 <div class="iitp-sub-visual hidden-xs">
 <div class="container-location">
@@ -1115,12 +1156,11 @@
 	});
 
 </script>
-<div class="bs-sidebar hidden-print affix-top nav-subnavi">
+<div class="bs-sidebar hidden-print affix-top nav-subnavi" id="side">
 <h2 class="hidden-xs">
-				주요사업<br/>
-<span>BUSINESS</span>
+				주요사업<!-- <br/> -->
 </h2>
-<ul class="nav bs-sidenav" id="side">
+<ul class="nav bs-sidenav">
 <li class="li1">
 <a href="/kr/1/business/businessMap.it"> 
 			

@@ -51,7 +51,7 @@
 <script async="async" data-turbolinks-track="false" defer="defer" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/application-d696e851b7ccf914b3752f2927f5d87d474b4c6376443f4af2fa3df6ed401325.js"></script>
 <script data-turbolinks-track="false" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/controllers/seminars-07263be6dab85106e76160b1fe1cd524c0164649ba40806c403a1f82c0c57061.js"></script>
 <meta content="authenticity_token" name="csrf-param">
-<meta content="jSQq9xPJlXHR7pGCMuwhYw614bZc/fs7FW7fxPkLJjf78qkZ2JewU2Jm+Yr5iKsCtAhXKLAYmIFxhVh+srVlZA==" name="csrf-token">
+<meta content="ajKAYyUK9IA/qzOzzzpJuErVYU5Wu5GLmuqYKO+/uOUW4THMZjn/c3CiQ+xX7nngjanMrjsFhMtuYrgqoqYEhQ==" name="csrf-token">
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   var googletag = googletag || {};
@@ -162,7 +162,7 @@ ga("send","pageview");
 <li class="linkedin"><a href="https://www.linkedin.com/in/sharedit2014/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 <ul class="list-inline hidden-xs">
-<li><a href="/cdn-cgi/l/email-protection#5b363a282f3e291b28333a293e3f322f753834753029"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="ef828e9c9b8a9daf9c878e9d8a8b869bc18c80c1849d">[email protected]</span></a></li>
+<li><a href="/cdn-cgi/l/email-protection#a8c5c9dbdccddae8dbc0c9dacdccc1dc86cbc786c3da"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="6f020e1c1b0a1d2f1c070e1d0a0b061b410c0041041d">[email protected]</span></a></li>
 <li><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"><i class="fa fa-youtube-play pr-5 pl-10" title="SHAREDIT CLASS / SHAREDIT LIVE"></i></a><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"> YouTube</a></li>
 <li><a href="http://www.podbbang.com/ch/15150" target="_blank"><i class="fa fa-podcast pr-5 pl-10" title="팟빵 - 쌤팍의 전산쟁이 이야기"></i></a><a href="https://www.sharedit.co.kr/posts/1236" target="_blank"> 팟캐스트</a></li>
 </ul>
@@ -182,7 +182,7 @@ ga("send","pageview");
 <button class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" type="button"><i class="fa fa-lock pr-5"></i> 로그인</button>
 <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 <li>
-<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="0V3zSw6n4OP/fe8UBFdvUwNVKm8ohbjINzAd6J3RSH+ni3ClxfnFwUz1hxzPM+Uyueic8cRg23JT25pS1m8LLA=="/>
+<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="vfFfsSO4k6mp+UGLYctoi2ulS2cctl/RbOGEogNYQdTBIu4eYIuYWubwMdT5H1jTrNnmh3EISpGYaaSgTkH9tA=="/>
 <div class="form-group has-feedback">
 <label class="control-label">이메일 주소</label>
 <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="" type="email" value=""/>
@@ -438,12 +438,12 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/jirandata/products">
-<i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
-</a> </li>
-<li class="col-lg-6">
 <a href="/companies/jiransoft/products">
 <i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
+</a> </li>
+<li class="col-lg-6">
+<a href="/companies/synapsoft/products">
+<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
 </a> </li>
 </ul>
 </div>
@@ -455,8 +455,8 @@ ga("send","pageview");
 <i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
 </a> </li>
 <li class="col-lg-6">
-<a href="/companies/synapsoft/products">
-<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
+<a href="/companies/jirandata/products">
+<i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
 </a> </li>
 </ul>
 </div>
@@ -681,363 +681,229 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul class="list" style="min-height: 700px;">
 <div class="tags-cloud2 mb-10" style="color: #000000; margin-top: -20px;">
 <div class="tag">
-<a href="/seminars/2082" title="AWS - 개발자 주목! 클라우드 스킬 향상을 위한 AWS TechCamp 온라인 세미나에 참석하세요! / 11월 26일(화)~28일(목)">26일 (화)</a>
+<a href="/seminars/2081" title="엠클라우드브리지 - [Microsoft 무료 교육] Copilot 도입 고려중이신가요?! 필수 보안 환경 할인 혜택과 1주 안에 적용 가능한 도입 지원 프로그램을 12월 Microsoft 365 보안 교육에서 확인하세요!">04일 (수)</a>
 </div>
 <div class="tag">
-<a href="/seminars/2084" title="지란지교소프트 - 30년차 보안 회사의 보안 인증 마스터 클래스">27일 (수)</a>
+<a href="/seminars/2093" title="SAP &amp; 젠컨설팅 -  SAP S/4HANA Cloud Public Edition, 중소기업을 위한 디지털 혁신을 경험하세요!">04일 (수)</a>
 </div>
 <div class="tag">
-<a href="/seminars/2075" title="엠클라우드브리지 - [Microsoft 무료 교육] 11월 Copilot Studio 무료 체험 교육 오픈 _ 기업 정보 학습을 통한 우리 회사만의 맞춤 AI Chat Bot 생성">28일 (목)</a>
+<a href="/seminars/2083" title="엠클라우드브리지 - [Microsoft 무료 교육] 12월 Copilot for Microsoft 365 사용 교육 _ 코파일럿 적용을 통한 생성형 AI 업무 활용 방안">05일 (목)</a>
 </div>
 <div class="tag">
-<a href="/seminars/2079" title="한국 마이크로소프트 &amp; 씨앤토트 - 마이크로소프트가 보여드리는 AI 시대로의 준비 세미나 초청 (점심 제공)">28일 (목)</a>
+<a href="/seminars/2090" title="Bespin Global | Google WorkSpace | 모두싸인 - [무료 웨비나] 12월 5일 단 하루, 한 단계 더 도약하고 싶은 스타트업이라면 주목! 새 창으로 메일 보기">05일 (목)</a>
 </div>
 <div class="tag">
-<a href="/seminars/2092" title="SAP -  SAP 도입을 통한 기업공개(IPO) 전략, 2시 데이트에서 소개드립니다!">29일 (금)</a>
+<a href="/seminars/2085" title="엠클라우드브리지 - [무료교육] 12월 Microsoft 업무자동화(RPA) Hands on _ Power Automate 활용으로 단순 반복 업무를 제거하고 생산성을 높이세요!">06일 (금)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2091" title="소프트웨이브 &amp; 벨아이앤에스 - 소프트웨이브 2024, 벨아이앤에스 부스에 초대합니다! 이벤트 참여하고, 상품 받아가세요! ">06일 (금)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2086" title="엠클라우드브리지 - [12월 Ai 365 웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">11일 (수)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2004" title="IGM세계경영연구원 - [무료교육] 매치업 클라우드 전문가 양성과정 수강생 모집">15일 (일)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2088" title="엠클라우드브리지 - [Microsoft 무료 교육] 12월 Copilot Studio 무료 체험 교육 _ 맞춤형 AI Chatbot 로우 코드 개발을 통한 우리 회사만의 맞춤 AI 챗봇 생성">17일 (화)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2089" title="엠클라우드브리지 - [Microsoft 무료 교육] 12월 Azure OpenAI &amp; ChatGPT 무료 체험 교육_업무 생산성을 극대화할 수 있는 우리 회사 맞춤 생성형 AI 도입 방안">18일 (수)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2094" title="엠클라우드브리지 - AI 시대, 데이터 통합 분석 플랫폼 _ 12월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!">20일 (금)</a>
 </div>
 </div>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2092/low_sap.png');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2091/low_bell.png');"></figure>
 <header>
 <span class="sponsor">
-               	    SAP
-               </span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/2092" title=" SAP 도입을 통한 기업공개(IPO) 전략, 2시 데이트에서 소개드립니다!"> SAP 도입을 통한 기업공개(IPO) 전략, 2시 데이트에서 소개드립니다!</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-29(금) 14:00 ~ 15:00</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2079/low_cn.png');"></figure>
-<header>
-<span class="sponsor">
-               	    한국 마이크로소프트 &amp; 씨앤토트
-               </span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2079" title="마이크로소프트가 보여드리는 AI 시대로의 준비 세미나 초청 (점심 제공)">마이크로소프트가 보여드리는 AI 시대로의 준비 세미나 초청 (점심 제공)</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-28(목) 09:30 ~ 12:30</dd>
-<dt>장소</dt>
-<dd>서울 종로구 종로1길 50 더케이트윈타워 A동 13층 한국마이크로소프트 </dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2084/low_%EC%89%90%EC%96%B4%EB%93%9CIT%EC%8D%B8%EB%84%A4%EC%9D%BC_220x170.png');"></figure>
-<header>
-<span class="sponsor">
-               	    지란지교소프트
+               	    소프트웨이브 &amp; 벨아이앤에스
                </span>
 <span class="category">세미나</span>
 <strong>
-<a href="/seminars/2084" title="30년차 보안 회사의 보안 인증 마스터 클래스">30년차 보안 회사의 보안 인증 마스터 클래스</a>
+<a href="/seminars/2091" title="소프트웨이브 2024, 벨아이앤에스 부스에 초대합니다! 이벤트 참여하고, 상품 받아가세요! ">소프트웨이브 2024, 벨아이앤에스 부스에 초대합니다! 이벤트 참여하고, 상품 받아가세요! </a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-27(수) 13:30 ~ 17:00</dd>
+<dd>2024-12-06(금) 09:00 ~ 17:00</dd>
 <dt>장소</dt>
-<dd>서울 강남구 테헤란로 134 포스코타워 역삼 3F 이벤트홀</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>서울 강남구 봉은사로 524 인터컨티넨탈 서울 코엑스, 1층 A홀 G16</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2082/low_aws.png');"></figure>
-<header>
-<span class="sponsor">
-               	    AWS
-               </span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/2082" title="개발자 주목! 클라우드 스킬 향상을 위한 AWS TechCamp 온라인 세미나에 참석하세요! / 11월 26일(화)~28일(목)">개발자 주목! 클라우드 스킬 향상을 위한 AWS TechCamp 온라인 세미나에 참석하세요! / 11월 26일(화)~28일(목)</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-26(화) 09:00 ~ 17:00</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2075/low__MCloudBridge__2024%EB%85%84_11%EC%9B%94_Copilot_Studio%EB%AC%B4%EB%A3%8C_%EA%B5%90%EC%9C%A1_%EC%B4%88%EC%B2%AD_SNS_%EB%8C%80%EC%A7%80_8.png');"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2083/low__MCloudBridge__2024%EB%85%84_12%EC%9B%94_Copilot_for_M365_%EC%82%AC%EC%9A%A9_%EB%AC%B4%EB%A3%8C_%EA%B5%90%EC%9C%A1_%EC%B4%88%EC%B2%AD_SNS_%EB%8C%80%EC%A7%80_8.png');"></figure>
 <header>
 <span class="sponsor">
                	    엠클라우드브리지
                </span>
 <span class="category">교육</span>
 <strong>
-<a href="/seminars/2075" title="[Microsoft 무료 교육] 11월 Copilot Studio 무료 체험 교육 오픈 _ 기업 정보 학습을 통한 우리 회사만의 맞춤 AI Chat Bot 생성">[Microsoft 무료 교육] 11월 Copilot Studio 무료 체험 교육 오픈 _ 기업 정보 학습을 통한 우리 회사만의 맞춤 AI Chat Bot 생성</a>
+<a href="/seminars/2083" title="[Microsoft 무료 교육] 12월 Copilot for Microsoft 365 사용 교육 _ 코파일럿 적용을 통한 생성형 AI 업무 활용 방안">[Microsoft 무료 교육] 12월 Copilot for Microsoft 365 사용 교육 _ 코파일럿 적용을 통한 생성형 AI 업무 활용 방안</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-28(목) 13:10 ~ 17:30</dd>
+<dd>2024-12-05(목) 13:10 ~ 17:30</dd>
 <dt>장소</dt>
 <dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2072/low__MCloudBridge_-2024%EB%85%84-11%EC%9B%94-Microsoft-Fabric-%EA%B8%B0%EB%B0%98-%EA%B2%BD%EC%98%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-BI-%EA%B5%90%EC%9C%A1_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2090/low_bes.png');"></figure>
 <header>
 <span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
+               	    Bespin Global | Google WorkSpace | 모두싸인
+               </span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/2090" title="[무료 웨비나] 12월 5일 단 하루, 한 단계 더 도약하고 싶은 스타트업이라면 주목! 새 창으로 메일 보기">[무료 웨비나] 12월 5일 단 하루, 한 단계 더 도약하고 싶은 스타트업이라면 주목! 새 창으로 메일 보기</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-12-05(목) 14:00 ~ 15:10</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2081/low__MCloudBridge_-2024%EB%85%84-12%EC%9B%94-Microsoft-365-%EB%B3%B4%EC%95%88-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');"></figure>
+<header>
+<span class="sponsor">
+               	    엠클라우드브리지
+               </span>
 <span class="category">교육</span>
 <strong>
-<a href="/seminars/2072" title="AI 시대, 데이터 통합 분석 플랫폼 _ 11월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!">AI 시대, 데이터 통합 분석 플랫폼 _ 11월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!</a>
+<a href="/seminars/2081" title="[Microsoft 무료 교육] Copilot 도입 고려중이신가요?! 필수 보안 환경 할인 혜택과 1주 안에 적용 가능한 도입 지원 프로그램을 12월 Microsoft 365 보안 교육에서 확인하세요!">[Microsoft 무료 교육] Copilot 도입 고려중이신가요?! 필수 보안 환경 할인 혜택과 1주 안에 적용 가능한 도입 지원 프로그램을 12월 Microsoft 365 보안 교육에서 확인하세요!</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-22(금) 13:10 ~ 17:30</dd>
-<dt>장소</dt>
-<dd>wework 삼성2호점 11층 컨퍼런스룸 (서울 강남구 테헤란로 518, 10층)</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2073/low_11%EC%9B%94-C%EB%A0%88%EB%B2%A8-%EC%84%B8%EB%AF%B8%EB%82%98_SNS_SharedIT%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2073" title="[11/21(목) Ai 365세미나 초청] 중견·중소기업 리더 대상 즉시 도입 가능한 OpenAI 기반 AI 챗봇 및 경영 업무 플랫폼을 만나보세요! ">[11/21(목) Ai 365세미나 초청] 중견·중소기업 리더 대상 즉시 도입 가능한 OpenAI 기반 AI 챗봇 및 경영 업무 플랫폼을 만나보세요! </a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-21(목) 13:30 ~ 17:00</dd>
-<dt>장소</dt>
-<dd>서울시 서초구 서초대로 398(서초동) BNK디지털타워 8층(강남역 8번출구)</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2070/low__MCloudBridge_-2024%EB%85%84-11%EC%9B%94-Microsoft-AOAI_ChatGPT-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SNS.png');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">교육</span>
-<strong>
-<a href="/seminars/2070" title="[Microsoft 무료 교육] 11월 Azure OpenAI &amp; ChatGPT 무료 체험 교육 오픈_우리 기업 맞춤 AI 플랫폼 도입 방안">[Microsoft 무료 교육] 11월 Azure OpenAI &amp; ChatGPT 무료 체험 교육 오픈_우리 기업 맞춤 AI 플랫폼 도입 방안</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-20(수) 13:10 ~ 17:30</dd>
+<dd>2024-12-04(수) 13:10 ~ 17:30</dd>
 <dt>장소</dt>
 <dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2087/low_istn.png');opacity: .2;"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2093/low_sap.png');"></figure>
 <header>
 <span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
+               	    SAP &amp; 젠컨설팅
+               </span>
 <span class="category">웨비나</span>
 <strong>
-<a href="/seminars/2087" title="ISTN's Move Innovation Day: RISE with SAP 웨비나에 초대합니다.">ISTN's Move Innovation Day: RISE with SAP 웨비나에 초대합니다.</a>
+<a href="/seminars/2093" title=" SAP S/4HANA Cloud Public Edition, 중소기업을 위한 디지털 혁신을 경험하세요!"> SAP S/4HANA Cloud Public Edition, 중소기업을 위한 디지털 혁신을 경험하세요!</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-20(수) 13:30 ~ 15:00</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>2024-12-04(수) 14:00 ~ 15:00</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2080/low_crm.png');opacity: .2;"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2094/low__MCloudBridge_-2024%EB%85%84-12%EC%9B%94-Microsoft-Fabric-%EA%B8%B0%EB%B0%98-%EA%B2%BD%EC%98%81-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%84%9D-BI-%EA%B5%90%EC%9C%A1_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');"></figure>
 <header>
 <span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2080" title="AX 시대의 양면성, AI 리스크와 딥페이크 대응 전략 세미나">AX 시대의 양면성, AI 리스크와 딥페이크 대응 전략 세미나</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-19(화) 16:00 ~ 17:50</dd>
-<dt>장소</dt>
-<dd>서울 강남구 테헤란로 305 한국기술센터 16층 국제회의실</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2067/low__MCloudBridge_-2024%EB%85%84-11%EC%9B%94-Microsoft-RPA-Hands-On-Lab-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SharedIT%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
+               	    엠클라우드브리지
+               </span>
 <span class="category">교육</span>
 <strong>
-<a href="/seminars/2067" title="[무료교육] 11월 Microsoft 업무자동화(RPA) Hands on _ Power Automate 활용으로 단순 반복 업무를 제거하고 생산성을 높이세요!">[무료교육] 11월 Microsoft 업무자동화(RPA) Hands on _ Power Automate 활용으로 단순 반복 업무를 제거하고 생산성을 높이세요!</a>
+<a href="/seminars/2094" title="AI 시대, 데이터 통합 분석 플랫폼 _ 12월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!">AI 시대, 데이터 통합 분석 플랫폼 _ 12월 Microsoft Fabric 기반 경영 데이터 분석 BI 무료교육을 통해 확인하세요!</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-15(금) 13:10 ~ 17:30</dd>
+<dd>2024-12-20(금) 13:10 ~ 17:30</dd>
 <dt>장소</dt>
 <dd>wework 삼성2호점 11층 컨퍼런스룸 (서울 강남구 테헤란로 518, 10층)</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2077/low_bes.png');opacity: .2;"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2089/low__MCloudBridge__2024%EB%85%84_12%EC%9B%94_Microsoft_AOAI_ChatGPT_%EB%AC%B4%EB%A3%8C_%EA%B5%90%EC%9C%A1_%EC%B4%88%EC%B2%AD_SNS_%EB%8C%80%EC%A7%80_8.png');"></figure>
 <header>
 <span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">세미나</span>
+               	    엠클라우드브리지
+               </span>
+<span class="category">교육</span>
 <strong>
-<a href="/seminars/2077" title="게임사 임직원이라면 주목! G-star 2024 사전 알림신청 이벤트 참여하고 선물 받아가세요!">게임사 임직원이라면 주목! G-star 2024 사전 알림신청 이벤트 참여하고 선물 받아가세요!</a>
+<a href="/seminars/2089" title="[Microsoft 무료 교육] 12월 Azure OpenAI &amp; ChatGPT 무료 체험 교육_업무 생산성을 극대화할 수 있는 우리 회사 맞춤 생성형 AI 도입 방안">[Microsoft 무료 교육] 12월 Azure OpenAI &amp; ChatGPT 무료 체험 교육_업무 생산성을 극대화할 수 있는 우리 회사 맞춤 생성형 AI 도입 방안</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-15(금) 19:00 ~ 23:59</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2078/low_tr.png');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2078" title="클라우드섹 코리아 2024 ">클라우드섹 코리아 2024 </a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-14(목) 09:30 ~ 16:00</dd>
+<dd>2024-12-18(수) 13:30 ~ 17:30</dd>
 <dt>장소</dt>
-<dd>서울 강남구 테헤란로 231 센터필드타워 웨스트동 조선 팰리스 호텔, 그레이트홀 전관(3F)</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2065/low__MCloudBridge_-2024%EB%85%84-11%EC%9B%94-Ai-365-%EC%9B%A8%EB%B9%84%EB%82%98-%EC%B4%88%EC%B2%AD_SNS_SharedIT%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2088/low__MCloudBridge__2024%EB%85%84_12%EC%9B%94_Copilot_Studio%EB%AC%B4%EB%A3%8C_%EA%B5%90%EC%9C%A1_%EC%B4%88%EC%B2%AD_SNS_%EB%8C%80%EC%A7%80_8.png');"></figure>
 <header>
 <span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
+               	    엠클라우드브리지
+               </span>
+<span class="category">교육</span>
+<strong>
+<a href="/seminars/2088" title="[Microsoft 무료 교육] 12월 Copilot Studio 무료 체험 교육 _ 맞춤형 AI Chatbot 로우 코드 개발을 통한 우리 회사만의 맞춤 AI 챗봇 생성">[Microsoft 무료 교육] 12월 Copilot Studio 무료 체험 교육 _ 맞춤형 AI Chatbot 로우 코드 개발을 통한 우리 회사만의 맞춤 AI 챗봇 생성</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-12-17(화) 13:10 ~ 17:30</dd>
+<dt>장소</dt>
+<dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2004/low_231205_%EB%A7%A4%EC%B9%98%EC%97%85%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%B9%B4%EB%93%9C%EB%89%B4%EC%8A%A403.jpg');"></figure>
+<header>
+<span class="sponsor">
+               	    IGM세계경영연구원
+               </span>
+<span class="category">교육</span>
+<strong>
+<a href="/seminars/2004" title="[무료교육] 매치업 클라우드 전문가 양성과정 수강생 모집">[무료교육] 매치업 클라우드 전문가 양성과정 수강생 모집</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2024-12-15(일) 00:00 ~ 23:59</dd>
+<dt>장소</dt>
+<dd>(기초) K-MOOC 사이트  |  (심화) IGM세계경영연구원</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2086/low__MCloudBridge_-2024%EB%85%84-12%EC%9B%94-Ai-365-%EC%9B%A8%EB%B9%84%EB%82%98-%EC%B4%88%EC%B2%AD_SNS_SharedIT.jpg');"></figure>
+<header>
+<span class="sponsor">
+               	    엠클라우드브리지
+               </span>
 <span class="category">웨비나</span>
 <strong>
-<a href="/seminars/2065" title="[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!</a>
+<a href="/seminars/2086" title="[12월 Ai 365 웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[12월 Ai 365 웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-13(수) 14:00 ~ 15:30</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>2024-12-11(수) 14:00 ~ 15:30</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2076/low_sap.png');opacity: .2;"></figure>
+<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2085/low__MCloudBridge_-2024%EB%85%84-12%EC%9B%94-Microsoft-RPA-Hands-On-Lab-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');"></figure>
 <header>
 <span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">웨비나</span>
+               	    엠클라우드브리지
+               </span>
+<span class="category">교육</span>
 <strong>
-<a href="/seminars/2076" title="2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!">2시 데이트 – S/4HANA Cloud로 비즈니스 프로세스 지능형 자동화를 실현하세요!</a>
+<a href="/seminars/2085" title="[무료교육] 12월 Microsoft 업무자동화(RPA) Hands on _ Power Automate 활용으로 단순 반복 업무를 제거하고 생산성을 높이세요!">[무료교육] 12월 Microsoft 업무자동화(RPA) Hands on _ Power Automate 활용으로 단순 반복 업무를 제거하고 생산성을 높이세요!</a>
 </strong>
 </header>
 <dl class="info">
 <dt>일시</dt>
-<dd>2024-11-07(목) 14:00 ~ 15:00</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2074/low_bes.png');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2074" title="요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기">요즘 뜨는 마케팅의 비밀! 구글 클라우드 생성형 AI 활용 방법 확인하기</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-06(수) 13:00 ~ 04:30</dd>
+<dd>2024-12-06(금) 13:10 ~ 17:30</dd>
 <dt>장소</dt>
-<dd>서울 강남구 영동대로 417 오토웨이 타워 지하2층 구글 스타트업 캠퍼스</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/1880/low_%ED%96%89%EC%82%AC_%ED%83%80%EC%9D%B4%ED%8B%80%EB%B0%B0%EB%84%88.png');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/1880" title="온라인 특강] 11.4 (월) 14:00ChatGPT 기초부터 자동화까지 생성형 AI 활용의 모든것(초급)">온라인 특강] 11.4 (월) 14:00ChatGPT 기초부터 자동화까지 생성형 AI 활용의 모든것(초급)</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-04(월) 14:00 ~ 16:00</dd>
-<dt>댓글</dt>
-<dd>5개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2058/low_arm.png');opacity: .2;"></figure>
-<header>
-<span class="sponsor">
-<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
-</span>
-<span class="category">세미나</span>
-<strong>
-<a href="/seminars/2058" title="최신 Arm 기술의 집약, Arm Tech Symposia 2024 Seoul">최신 Arm 기술의 집약, Arm Tech Symposia 2024 Seoul</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2024-11-01(금) 09:00 ~ 17:30</dd>
-<dt>장소</dt>
-<dd>서울 용산구 소월로 322 그랜드 하얏트 서울 그랜드볼룸</dd>
-<dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>wework 삼성2호점 11층 컨퍼런스룸 (서울 강남구 테헤란로 518, 10층)</dd>
 </dl>
 </li>
 </ul>
@@ -1055,13 +921,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <header>
 <nav>
 <div class="pull-left" style="margin-top: 7px;  margin-left: 20px;">
-<a class="prev" data-remote="true" href="/seminars/navi_prev?month_value=11&amp;year_value=2024"><img alt="1prev s" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/1prev-s-a59e528fbfdee9be1506f502f656aebe332a8d3bbe703ad2ecb7ce58c1fb35ce.png" title="이전 달"/></a>
+<a class="prev" data-remote="true" href="/seminars/navi_prev?month_value=12&amp;year_value=2024"><img alt="1prev s" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/1prev-s-a59e528fbfdee9be1506f502f656aebe332a8d3bbe703ad2ecb7ce58c1fb35ce.png" title="이전 달"/></a>
 </div>
 <span class="year" style="margin-left: 10px;">
               2024
             </span>
 <div class="pull-right" style="margin-top: 7px;margin-left: 10px;">
-<a class="next" data-remote="true" href="/seminars/navi_next?month_value=11&amp;year_value=2024"><img alt="1next s" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/1next-s-5823b0d66b7c9f437ab42c7f88cb079b196106f85fd6aa5a7b5859767438f1b8.png" title="다음 달"/></a>
+<a class="next" data-remote="true" href="/seminars/navi_next?month_value=12&amp;year_value=2024"><img alt="1next s" src="//shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/1next-s-5823b0d66b7c9f437ab42c7f88cb079b196106f85fd6aa5a7b5859767438f1b8.png" title="다음 달"/></a>
 </div>
 </nav>
 <span class="all" style="margin: auto;">
@@ -1079,8 +945,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <li class=""><a data-remote="true" href="/seminars/month?month_value=8&amp;year_value=2024" rel="nofollow">8월</a></li>
 <li class=""><a data-remote="true" href="/seminars/month?month_value=9&amp;year_value=2024" rel="nofollow">9월</a></li>
 <li class=""><a data-remote="true" href="/seminars/month?month_value=10&amp;year_value=2024" rel="nofollow">10월</a></li>
-<li class="on"><a data-remote="true" href="/seminars/month?month_value=11&amp;year_value=2024" rel="nofollow">11월</a></li>
-<li class=""><a data-remote="true" href="/seminars/month?month_value=12&amp;year_value=2024" rel="nofollow">12월</a></li>
+<li class=""><a data-remote="true" href="/seminars/month?month_value=11&amp;year_value=2024" rel="nofollow">11월</a></li>
+<li class="on"><a data-remote="true" href="/seminars/month?month_value=12&amp;year_value=2024" rel="nofollow">12월</a></li>
 </ul>
 </section>
 </div>
@@ -1089,19 +955,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1740" title=".NEXT On Tour Seoul 2024를 놓치셨다면 지금 들어오세요. 기간 한정 선물 증정!">.NEXT On Tour (설문조사)<span>D-36</span></a>
+<a ,="" href="/promotions/1760" title="[선착순 설문 이벤트 100명] 백서 보고 설문 이벤트 참여하면 네모탭 USB 전원 증정!">[선착순 설문 이벤트 1 (설문조사)<span>D-3</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1739" title="엔터프라이즈 하이브리드 클라우드 인프라 서버 - 간단 설문하면 선물이!">엔터프라이즈 하이브리드  (설문조사)<span>D-9</span></a>
+<a ,="" href="/promotions/1756" title="한국IBM-Simplekey 협업 AICC 모델, 간단 설문하면 선물이!">한국IBM-Simplek (설문조사)<span>D-18</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1754" title="[선착순 커피 쿠폰 증정] 업무용 PC 및 워크스테이션 사용 현황 설문조사">[선착순 커피 쿠폰 증정 (설문조사)<span>D-4</span></a>
+<a ,="" href="/promotions/1739" title="엔터프라이즈 하이브리드 클라우드 인프라 서버 - 간단 설문하면 선물이!">엔터프라이즈 하이브리드  (설문조사)<span>D-2</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1756" title="한국IBM-Simplekey 협업 AICC 모델, 간단 설문하면 선물이!">한국IBM-Simplek (설문조사)<span>D-25</span></a>
+<a ,="" href="/promotions/1740" title=".NEXT On Tour Seoul 2024를 놓치셨다면 지금 들어오세요. 기간 한정 선물 증정!">.NEXT On Tour (설문조사)<span>D-29</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1752" title="백서다운로드, 2024년 주요 데이터 관리의 우선순위, 스마트한 데이터관리의 모든것을 확인하십시오!">백서다운로드, 2024년 (설문조사)<span>D-25</span></a>
+<a ,="" href="/promotions/1752" title="백서다운로드, 2024년 주요 데이터 관리의 우선순위, 스마트한 데이터관리의 모든것을 확인하십시오!">백서다운로드, 2024년 (설문조사)<span>D-18</span></a>
 </li>
 </ul>
 </div>
@@ -1110,32 +976,34 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1739" title="엔터프라이즈 하이브리드 클라우드 인프라 서버 - 간단 설문하면 선물이!">엔터프라이즈 하이브리드  (설문조사)<span>D-9
+<a ,="" href="/promotions/1695" title='"배포형" Ai 365 ChatGPT 출시 _ Microsoft AI와 ChatGPT를 우리 기업에 즉시 도입해 보세요!'>"배포형" Ai 365  (견적요청)<span>D-29
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1754" title="[선착순 커피 쿠폰 증정] 업무용 PC 및 워크스테이션 사용 현황 설문조사">[선착순 커피 쿠폰 증정 (설문조사)<span>D-4
+<a ,="" href="/seminars/2086" title="[12월 Ai 365 웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[12월 Ai 365 웨 (웨비나)	<span>D-9</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1743" title="도메인 가입이 쉬워진다! art.Deploy 솔루션">도메인 가입이 쉬워진다! (기타)<span>D-3
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1632" title="AI GPU 서버/고전력랙 국내 최저가 이벤트">AI GPU 서버/고전력 (할인혜택)<span>D-36
+<a ,="" href="/promotions/1718" title="시스원 IDC 이벤트, 데이터센터 입주(코로케이션)">시스원 IDC 이벤트,  (할인혜택)<span>D-29
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1732" title="클라우드 500만 원 상당 웰컴 패키지">클라우드 500만 원 상 (할인혜택)<span>D-36
+<a ,="" href="/promotions/1751" title="서피스 기업고객을 위한 연말 프로모션">서피스 기업고객을 위한  (할인혜택)<span>D-17
 									
 								</span></a>
 </li>
 <li>
+<a ,="" href="/promotions/1758" title="Gabia 창업지원센터 2025년 상반기 입주자 모집">Gabia 창업지원센터  (기타)<span>D-6
+									
+								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2086" title="[12월 Ai 365 웨비나] AI시대,OpenAI 기반 Microsoft 365 업무 및 보안 플랫폼을 통한 기업 업무 생산성 극대화 방안을 확인하세요!">[12월 Ai 365 웨 (웨비나)	<span>D-16</span></a>
-</li>
-<li>
-<a ,="" href="/seminars/2084" title="30년차 보안 회사의 보안 인증 마스터 클래스">30년차 보안 회사의 보 (세미나)	<span>D-2</span></a>
 </li>
 </ul>
 </div>
@@ -1154,21 +1022,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <div class="overlay-container overlay-visible" style="width: 100%; border: 1px solid #eee; height:220px; display:table-cell;vertical-align:middle;">
 <div class="sponsor-ad-box" style="width:260px;">
-<img alt="Medium hiwork bi new" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","85",null);' src="//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/85/medium_hiwork_bi_new.jpg"/>
+<img alt="Medium solution stc" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","522",null);' src="//shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/522/medium_Solution_stc.png"/>
 </div>
-<a class="overlay-link" href="/evaluations/products/85">
+<a class="overlay-link" href="/evaluations/products/522">
 <i class="fa fa-link"></i>
 </a>
 <div class="overlay-bottom hidden-xs" style="padding: 10px;">
 <div class="text">
-<p class="lead margin-clear text-left" style="font-size: 16px;">하이웍스</p>
+<p class="lead margin-clear text-left" style="font-size: 16px;">스토리지 토탈 케어, IT 주치의 프로그램</p>
 </div>
 </div>
 </div>
 <script>
     ;(function($){
       $(function(){
-        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","85",null);
+        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","522",null);
       });
     })(jQuery);
   </script>
@@ -1190,19 +1058,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav>
 <ul class="nav product-brands-list">
 <li>
-<a href="/posts/31792" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2082" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/31793" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2084" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/31926" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2079" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/31927" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2075" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/31928" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2092" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>세미나</span></a>
 </li>
 </ul>
 </nav>
@@ -1564,7 +1432,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h4 class="modal-title" id="myModalLabel">알림</h4>
 </div>
 <div class="modal-body">
-<p><a href="/cdn-cgi/l/email-protection#b4d9d5c7c0d1c6f4c7dcd5c6d1d0ddc09ad7db9adfc6"><span class="__cf_email__" data-cfemail="85e8e4f6f1e0f7c5f6ede4f7e0e1ecf1abe6eaabeef7">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
+<p><a href="/cdn-cgi/l/email-protection#2d404c5e59485f6d5e454c5f48494459034e4203465f"><span class="__cf_email__" data-cfemail="c3aea2b0b7a6b183b0aba2b1a6a7aab7eda0aceda8b1">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
 <a href="/memberships">멤버십</a>에 가입하신 후 직접 업로드를 하실 수 있습니다.</p>
 </div>
 </div>
@@ -1585,7 +1453,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 class="title">IT 세미나/교육/프로모션 정보 구독 신청</h3>
 <p>새로운 세미나/교육/프로모션 정보를 메일로 편하게 받아 보세요. 정기적으로 보내 드립니다.</p>
 <div class="separator"></div>
-<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="TAbjGJ6tnzUD54JitJRD+N8eD/YW3orPh2n65ZG82jk60GD2VfO6F7Bv6mp/8MmZZaO5aPo76XXjgn1f2gKZag=="/>
+<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="XWmoZ8D8/MfNBMJsEM2T/H+METO4HRP0CjSO9KWc3AkhuhnIg8/3NIINsjOIGaOkuPC809WjBrT+vK726IVgaQ=="/>
 <div class="form-group has-feedback">
 <label class="sr-only" for="subscribe2">Email address</label>
 <input class="form-control" id="email" name="email" placeholder="Enter email" required="required" type="text"/>
@@ -1628,7 +1496,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><i class="text-default fa fa-id-card-o pr-5"></i>사업자 등록번호 : 144-81-29382</li>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>통신판매업신고 : 2017-용인수지-0227</li><br/>
 <li><i class="text-default fa fa-map-marker pr-5"></i>(주) 쉐어드커뮤니케이션</li>
-<li><a class="link-dark" href="/cdn-cgi/l/email-protection#b0ddd1c3c4d5c2f0c3d8d1c2d5d4d9c49ed3df9edbc2"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="375a564443524577445f564552535e43195458195c45">[email protected]</span></a></li>
+<li><a class="link-dark" href="/cdn-cgi/l/email-protection#c0ada1b3b4a5b280b3a8a1b2a5a4a9b4eea3afeeabb2"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="731e120007160133001b120116171a075d101c5d1801">[email protected]</span></a></li>
 </ul>
 <ul class="list-inline small" style="margin-top: -9px">
 <li><i class="text-default fa fa-lock pr-5"></i><strong> <a class="link-dark" href="/welcome/terms_of_service" style="color: #777777;" target="_blank">이용약관</a> | <a class="link-dark" href="/welcome/personal_information" style="text-decoration: underline!important;" target="_blank">개인정보처리방침</a></strong></li>
@@ -1717,5 +1585,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8e7d25cb6ce31049',t:'MTczMjQ5MDYxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8eb6d5a71bd52b50',t:'MTczMzA5NTUwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
