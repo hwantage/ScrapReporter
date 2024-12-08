@@ -3,7 +3,7 @@
 
 <html class="ko" lang="ko">
 <head>
-<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="c17e7430-e068-4fa0-b9e9-80816bccffd6" name="_csrf"/>
+<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="50d0c559-a7a2-4881-a615-aa454c70841d" name="_csrf"/>
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
@@ -26,6 +26,12 @@
 <script src="/exportcenter/smes/js/slick.min.js"></script>
 <script src="/exportcenter/smes/js/common.js"></script>
 <script src="/exportcenter/smes/js/control.js"></script>
+<style>
+        .out-link {
+            background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='24' height='24' viewBox='0 0 24 24'><path style='fill:rgb(167,167,167);' d='M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z' /></svg>") no-repeat 220px center;
+            background-size: 16px;
+        }
+    </style>
 </head>
 <body class="homepage" id="body">
 <div class="wrapper sub">
@@ -101,71 +107,60 @@
 <button class="sitemenu_close_btn">중소기업 수출지원센터 전체 메뉴 닫기</button>
 <ul>
 <li class="">
-<button class="menu_depth1" type="button">주요수출지원사업</button>
-<a class="menu_depth1" href="/exportcenter/business/global-sme-1000/guide.do">주요수출지원사업</a>
+<button class="menu_depth1" type="button">지원정보</button>
+<a class="menu_depth1" href="/exportcenter/business/government-assistance/global-sme-1000/guide.do">지원정보</a>
 <ul class="depth2_wrap">
 <li>
-<button class="menu_depth2" type="button">글로벌강소기업 1000+</button>
+<button class="menu_depth2" type="button">정부지원정보</button>
 <ul class="depth3_wrap">
-<li><a class="menu_depth3" href="/exportcenter/business/global-sme-1000/guide.do">사업안내</a></li>
-</ul>
-</li>
-<li>
-<button class="menu_depth2" type="button">중소기업해외진출</button>
-<ul class="depth3_wrap">
+<li><a class="menu_depth3" href="/exportcenter/business/government-assistance/global-sme-1000/guide.do">글로벌강소기업</a></li>
 <li><a class="menu_depth3 out-link" href="https://www.win-win.or.kr/kr/contents/busi_coex_5/view.do" target="_blank">대중소동반진출</a></li>
 <li><a class="menu_depth3 out-link" href="https://www.smes.go.kr/sme-expo/site/main/content/fr02_0002.do" target="_blank">수출컨소시엄</a></li>
-<li><a class="menu_depth3 out-link" href="https://fanfandaero.kr/portal/preSprtBizPbancDetail.do?sprtBizCd=202305010000" target="_blank">브랜드K</a></li>
+<li><a class="menu_depth3 out-link" href="https://www.exportvoucher.com/portal/bizinfo/voucher_01?active_menu_cd=EZ001001000" target="_blank">수출바우처</a></li>
+<li><a class="menu_depth3 out-link" href="https://kr.gobizkorea.com/support/ebsns/supporteBsnsInfo.do?svc=e24" target="_blank">온라인수출패키지</a></li>
+<li><a class="menu_depth3 out-link" href="https://kr.gobizkorea.com/support/ebsns/supporteBsnsInfo.do?svc=e20" target="_blank">절충교역</a></li>
+<!-- 국제전화요금할인 -->
+<li class="">
+<button class="menu_depth2" type="button">국제전화요금할인</button>
+<ul>
+<li class="">
+<a href="/exportcenter/business/government-assistance/intercall-discount/guide.do">사업안내</a>
+</li>
 </ul>
 </li>
-<li>
-<button class="menu_depth2" type="button">스타트업해외진출</button>
-<ul class="depth3_wrap">
+<!-- 국제특송지원사업 -->
+<li class="">
+<button class="menu_depth2" type="button">국제특송지원사업</button>
+<ul>
+<li class="">
+<a href="/exportcenter/business/government-assistance/express-support/fedex.do">FedEx물류비 할인 지원사업</a>
+</li>
+<li class="">
+<a href="/exportcenter/business/government-assistance/express-support/dhl.do">DHL 물류비 할인 지원사업</a>
+</li>
+<li class="">
+<a href="/exportcenter/business/government-assistance/express-support/ems.do">우체국 국제특송(EMS)</a>
+</li>
+</ul>
+</li>
+<li><a class="menu_depth3 out-link" href="https://www.smes.go.kr/globalcerti/info/standard/standardSearch.do" target="_blank">해외규격인증정보</a></li>
+<li><a class="menu_depth3 out-link" href="https://www.smes.go.kr/globalcerti/info/ktrInfo.do?key=9093" target="_blank">해외규격인증획득지원사업</a></li>
 <li><a class="menu_depth3 out-link" href="https://www.k-startup.go.kr/web/contents/webGLOBAL.do?id=157238&amp;schM=view" target="_blank">K-스타트업 센터</a></li>
-<li><a class="menu_depth3 out-link" href="http://k-startupcenter.org/kor/CMS/Contents/Contents.do?mCode=MN041" target="_blank">글로벌 엑셀러레이팅</a></li>
 <li><a class="menu_depth3 out-link" href="http://www.kosmes.or.kr/nsh/SH/REI/SHREI101M0.do" target="_blank">글로벌비즈니스센터</a></li>
 </ul>
 </li>
 <li>
-<button class="menu_depth2" type="button">온라인 수출지원</button>
+<button class="menu_depth2" type="button">민간지원정보</button>
 <ul class="depth3_wrap">
-<li><a class="menu_depth3 out-link" href="https://kr.gobizkorea.com/support/ebsns/supporteBsnsInfo.do?svc=e24" target="_blank">온라인수출패키지</a></li>
-<li><a class="menu_depth3 out-link" href="https://kr.gobizkorea.com/support/ebsns/supporteBsnsInfo.do?svc=e20" target="_blank">절충교역</a></li>
+<li><a class="menu_depth3 out-link" href="https://spot.wooribank.com/pot/Dream?withyou=FXFXG0076" target="_blank">글로벌투자 WON 센터</a></li>
+<li><a class="menu_depth3 out-link" href="https://www.shinhanglobal.com" target="_blank">신한은행 글로벌 포털</a></li>
+<li><a class="menu_depth3 out-link" href="https://www.pwc.com/kr/ko/services/overseas-business.html" target="_blank">해외비즈니스 Platform</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<button class="menu_depth2" type="button">해외 마케팅 지원</button>
-<ul class="depth3_wrap">
-<li><a class="menu_depth3 out-link" href="https://www.exportvoucher.com/portal/bizinfo/voucher_01?active_menu_cd=EZ001001000" target="_blank">수출바우처</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="">
-<button class="menu_depth1" type="button">수출관련서비스</button>
-<a class="menu_depth1" href="/exportcenter/service/intercall-discount/guide.do">수출관련서비스</a>
-<ul class="depth2_wrap">
-<li>
-<a class="menu_depth2 out-link" href="https://www.smes.go.kr/globalcerti/info/standard/standardSearch.do" target="_blank">해외규격인증정보</a>
-</li>
-<li>
-<button class="menu_depth2" type="button">국제전화요금할인</button>
-<ul class="depth3_wrap">
-<li><a class="menu_depth3" href="/exportcenter/service/intercall-discount/guide.do">사업안내</a></li>
-</ul>
-</li>
-<li>
-<button class="menu_depth2" type="button">국제특송지원사업</button>
-<ul class="depth3_wrap">
-<li><a class="menu_depth3" href="/exportcenter/service/express-support/fedex.do">FedEx물류비 할인 지원사업</a></li>
-<li><a class="menu_depth3" href="/exportcenter/service/express-support/dhl.do">DHL 물류비 할인 지원사업</a></li>
-<li><a class="menu_depth3" href="/exportcenter/service/express-support/ems.do">우체국 국제특송(EMS)</a></li>
-</ul>
-</li>
-<li>
-<a class="menu_depth2" href="/exportcenter/service/sme-expo/guide.do">해외전시포탈</a>
-</li>
-</ul>
+<a class="menu_depth1" href="https://www.kosi.re.kr/front/functionDisplay?menuFrontNo=267989822481270264224035381078867845110&amp;menuFrontURL=front/globalCenterView" target="_blank">글로벌 동향</a>
 </li>
 <li class="">
 <a class="menu_depth1" href="/exportcenter/consulting/export-consulting/list.do">온라인 상담실</a>
@@ -233,7 +228,7 @@
 </div>
 </div>
 <div>
-<input name="_csrf" type="hidden" value="c17e7430-e068-4fa0-b9e9-80816bccffd6"/>
+<input name="_csrf" type="hidden" value="50d0c559-a7a2-4881-a615-aa454c70841d"/>
 </div></input></form>
 <p class="table-counter">
 <strong>2229</strong>건의 게시물이 등록되어 있습니다.
@@ -271,7 +266,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-10-26</td>
-<td>168</td>
+<td>198</td>
 </tr>
 <tr>
 <td>2</td>
@@ -284,7 +279,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-10-14</td>
-<td>312</td>
+<td>374</td>
 </tr>
 <tr>
 <td>3</td>
@@ -297,7 +292,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-10-14</td>
-<td>223</td>
+<td>245</td>
 </tr>
 <tr>
 <td>4</td>
@@ -310,7 +305,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-10-07</td>
-<td>203</td>
+<td>222</td>
 </tr>
 <tr>
 <td>5</td>
@@ -323,7 +318,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-10-07</td>
-<td>362</td>
+<td>407</td>
 </tr>
 <tr>
 <td>6</td>
@@ -336,7 +331,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-09-03</td>
-<td>474</td>
+<td>489</td>
 </tr>
 <tr>
 <td>7</td>
@@ -349,7 +344,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-07-31</td>
-<td>700</td>
+<td>715</td>
 </tr>
 <tr>
 <td>8</td>
@@ -362,7 +357,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-07-31</td>
-<td>420</td>
+<td>431</td>
 </tr>
 <tr>
 <td>9</td>
@@ -375,7 +370,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-06-26</td>
-<td>1090</td>
+<td>1103</td>
 </tr>
 <tr>
 <td>10</td>
@@ -388,7 +383,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-06-14</td>
-<td>897</td>
+<td>918</td>
 </tr>
 <tr>
 <td>11</td>
@@ -401,7 +396,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-05-10</td>
-<td>686</td>
+<td>695</td>
 </tr>
 <tr>
 <td>12</td>
@@ -414,7 +409,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-05-07</td>
-<td>917</td>
+<td>934</td>
 </tr>
 <tr>
 <td>13</td>
@@ -427,7 +422,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-03-29</td>
-<td>1013</td>
+<td>1023</td>
 </tr>
 <tr>
 <td>14</td>
@@ -440,7 +435,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-03-29</td>
-<td>905</td>
+<td>915</td>
 </tr>
 <tr>
 <td>15</td>
@@ -453,7 +448,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-03-29</td>
-<td>852</td>
+<td>863</td>
 </tr>
 <tr>
 <td>16</td>
@@ -466,7 +461,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-02-29</td>
-<td>1400</td>
+<td>1413</td>
 </tr>
 <tr>
 <td>17</td>
@@ -479,7 +474,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-02-29</td>
-<td>1100</td>
+<td>1121</td>
 </tr>
 <tr>
 <td>18</td>
@@ -492,7 +487,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-02-29</td>
-<td>1008</td>
+<td>1019</td>
 </tr>
 <tr>
 <td>19</td>
@@ -505,7 +500,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-02-29</td>
-<td>796</td>
+<td>808</td>
 </tr>
 <tr>
 <td>20</td>
@@ -518,7 +513,7 @@
 <span class="att_file">첨부파일 있음</span>
 </td>
 <td>2024-01-24</td>
-<td>2253</td>
+<td>2276</td>
 </tr>
 </tbody>
 </table>

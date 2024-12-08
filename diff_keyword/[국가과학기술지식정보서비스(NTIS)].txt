@@ -1414,10 +1414,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="73666">
+<input id="totalCount" name="totalCount" type="hidden" value="73667">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>73,666건</span></h3>
+<h3 class="t_head">검색결과 <span>73,667건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1470,9 +1470,106 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2025년도「유럽핵입자물리연구소(CERN) 협력사업」 파견 대학생 선발 공고" type="checkbox" value="1196973"/></td>
+<td><input name="selectCheckList" title="2024년도 원자력 분야 정책연구용역과제(고온가스로) 공고" type="checkbox" value="1197255"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73667
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1197255&amp;flag=rndList" onclick="javascript:fn_view('1197255'); return false;" title="2024년도 원자력 분야 정책연구용역과제(고온가스로) 공고"> 2024년도 원자력 분야 정책연구용역과제(고온가스로) 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.12.06</td>
+<td data-title="마감일">2024.12.12</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 4</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2024년도 하반기 원자력분야 정책연구용역(위탁)과제 공모_'탄소중립 선도 다목적형 고온가스로(HTGR) 기술개발사업' 예비타당성 조사 기획 연구" type="checkbox" value="1197254"/></td>
 <td data-title="순번" id="mo_disnone_td1">
                             73666
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1197254&amp;flag=rndList" onclick="javascript:fn_view('1197254'); return false;" title="2024년도 하반기 원자력분야 정책연구용역(위탁)과제 공모_'탄소중립 선도 다목적형 고온가스로(HTGR) 기술개발사업' 예비타당성 조사 기획 연구"> 2024년도 하반기 원자력분야 정책연구용역(위탁)과제 공모_'탄소중립 선도 다목적형 고온가스로(HTGR) 기술개발사업' 예비타당성 조사 기획 연구
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2024.12.06</td>
+<td data-title="마감일">2024.12.12</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 4</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="(공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 공고" type="checkbox" value="1197253"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73665
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1197253&amp;flag=rndList" onclick="javascript:fn_view('1197253'); return false;" title="(공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 공고"> (공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">국토교통부</td>
+<td data-title="접수일">2024.12.13</td>
+<td data-title="마감일">2025.01.09</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-32
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="(재공고-국-제13호) 2024년 국토교통연구기획사업 제2차 시행 재공고" type="checkbox" value="1196975"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73664
+                        </td>
+<td data-title="현황">
+<span>마감</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1196975&amp;flag=rndList" onclick="javascript:fn_view('1196975'); return false;" title="(재공고-국-제13호) 2024년 국토교통연구기획사업 제2차 시행 재공고"> (재공고-국-제13호) 2024년 국토교통연구기획사업 제2차 시행 재공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">국토교통부</td>
+<td data-title="접수일">2024.11.29</td>
+<td data-title="마감일">2024.12.06</td>
+<td class="end" data-title="D-day">
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년도「유럽핵입자물리연구소(CERN) 협력사업」 파견 대학생 선발 공고" type="checkbox" value="1196973"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            73663
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1499,42 +1596,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-40
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2025년도 융복합신기술제품안전기술지원사업 기술수요조사 공고" type="checkbox" value="1196892"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73665
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1196892&amp;flag=rndList" onclick="javascript:fn_view('1196892'); return false;" title="2025년도 융복합신기술제품안전기술지원사업 기술수요조사 공고"> 2025년도 융복합신기술제품안전기술지원사업 기술수요조사 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2024.11.29</td>
-<td data-title="마감일">2024.12.19</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-18
+                                    D-33
                                 
 
                             </td>
@@ -1542,7 +1604,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="25년 국가전략기준물질개발사업 기술수요조사" type="checkbox" value="1196893"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73664
+                            73662
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1569,7 +1631,9 @@ $(function(){
                                     
                                     
                                     
-                                    D-15
+                                        D - 8
+                                    
+                                    
                                 
 
                             </td>
@@ -1577,7 +1641,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2025년 글로벌산업기술협력센터 사업  공동연구 과제기획을 위한 기술수요조사 공고" type="checkbox" value="1196940"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73663
+                            73661
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1604,7 +1668,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-19
+                                    D-12
                                 
 
                             </td>
@@ -1612,7 +1676,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2024년도 제5차 과학기술분야 연구기획과제 공모" type="checkbox" value="1196896"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73662
+                            73660
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1627,27 +1691,13 @@ $(function(){
 <td data-title="접수일">2024.11.27</td>
 <td data-title="마감일">2024.12.11</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
+<span style="color: red">D - 3</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2024년도 제5차 과학기술분야 연구기획과제 공모" type="checkbox" value="1196895"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73661
+                            73659
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1662,29 +1712,13 @@ $(function(){
 <td data-title="접수일">2024.11.27</td>
 <td data-title="마감일">2024.12.10</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                        D - 9
-                                    
-                                    
-                                
-
-                            </td>
+<span style="color: red">D - 2</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2024년도 제5차 과학기술분야 연구기획과제 공모" type="checkbox" value="1196894"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            73660
+                            73658
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1699,116 +1733,7 @@ $(function(){
 <td data-title="접수일">2024.11.27</td>
 <td data-title="마감일">2024.12.11</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년 제5차 과학기술분야 연구기획과제 주관연구책임자 공모" type="checkbox" value="1196891"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73659
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1196891&amp;flag=rndList" onclick="javascript:fn_view('1196891'); return false;" title="2024년 제5차 과학기술분야 연구기획과제 주관연구책임자 공모"> 2024년 제5차 과학기술분야 연구기획과제 주관연구책임자 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.11.27</td>
-<td data-title="마감일">2024.12.10</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                        D - 9
-                                    
-                                    
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2024년 제5차 과학기술분야 연구기획과제 주관연구책임자 공모" type="checkbox" value="1196890"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73658
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1196890&amp;flag=rndList" onclick="javascript:fn_view('1196890'); return false;" title="2024년 제5차 과학기술분야 연구기획과제 주관연구책임자 공모"> 2024년 제5차 과학기술분야 연구기획과제 주관연구책임자 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2024.11.27</td>
-<td data-title="마감일">2024.12.10</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                        D - 9
-                                    
-                                    
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="'신진연구자 주도 도전혁신형 산업기술 RD사업'  기술수요 및 참여의향 조사" type="checkbox" value="1196889"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            73657
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1196889&amp;flag=rndList" onclick="javascript:fn_view('1196889'); return false;" title="'신진연구자 주도 도전혁신형 산업기술 RD사업'  기술수요 및 참여의향 조사"> '신진연구자 주도 도전혁신형 산업기술 RD사업'  기술수요 및 참여의향 조사
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2024.11.27</td>
-<td data-title="마감일">2024.12.06</td>
-<td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
+<span style="color: red">D - 3</span>
 </td>
 </tr>
 </tbody>
