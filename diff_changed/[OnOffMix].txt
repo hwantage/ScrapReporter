@@ -176,6 +176,43 @@
     color: #333;
 }
 </style>
+<script>
+    function googleTranslateElementInit(){
+        new google.translate.TranslateElement({
+            pageLanguage: "ko",
+            includedLanguages: "ko,en",
+            autoDisplay: false,
+        }, "header");
+    }
+    const cookie = document.cookie.split('; ').find(row => row.startsWith('googtrans'));
+    if (cookie && cookie.split('=')[1] === "/ko/en") {
+        setTimeout(() => {
+            document.querySelector('[data-translation_btn]').textContent = "KO";
+        }, 500);
+    }
+    document.addEventListener("click", ( event )=>{
+        const target = event.target;
+        if(target.dataset["translation_btn"] === "" || target.closest("[data-translation_btn]")){
+            const select_element = document.querySelector('.goog-te-combo');
+            select_element.value = select_element.value === "en" ?
+                "ko" : select_element.value === "ko" ? "en" : "en";
+            select_element.dispatchEvent( new Event("change", {
+                "bubbles": true
+            }) );
+        }
+    });
+    document.addEventListener("change", ( event )=>{
+        const target = event.target;
+        if( !target.classList.contains("goog-te-combo") ) return;
+        if(target.value !== ""){
+            document.querySelector('[data-translation_btn]').textContent = target.value === "en" ? "KO" : "EN";
+            return;
+        }
+        target.value = "en";
+        target.dispatchEvent( new Event("change", {"bubbles": true}) );
+    }); 
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script defer="" type="module">(()=>{
 const channelIOSetting = ()=>{
     const channelIO_obj = {"pluginKey": "e0130bb5-d745-41a9-88af-b10790bbf1f7"};
@@ -304,9 +341,9 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <div data-search_box="">
 <form action="/event/main" class="search_form" data-gtm_submit='{"event" : "clickKeywordSearchButton", "keyword" : ""}' method="GET">
 <label for="searchInput">검색할 이벤트를 입력해주세요.</label>
-<input autocomplete="off" class="search_input" data-event="314234" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
-<span class="ofm_keyword_value" data-creative_name="PC_메인_검색창광고" data-creative_slot="1" data-event_no="314234" data-event_title="[한국콘텐츠진흥원] 2024년 NCA 장기과정 2기 &lt;글로벌 인재&gt; 분야 교육생 모집(11.19~12.17)" data-href="/cs/a/95144?url=%2Fevent%2F314234">
-                                      뉴콘텐츠아카데미 장기과정 2기 모집                                </span>
+<input autocomplete="off" class="search_input" data-event="314454" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
+<span class="ofm_keyword_value" data-creative_name="PC_메인_검색창광고" data-creative_slot="1" data-event_no="314454" data-event_title="온오프믹스와 함께 하는 뮤지컬 클래스 2025 Season 5" data-href="/cs/a/95236?url=%2Fevent%2F314454">
+                                      뮤지컬 배우들과 함께하는 뮤지컬 클래스 Season 5                                </span>
 <input data-gtag_dto_key="_GTAG_DTO_KEY_1001" data-search_btn="" title="검색" type="submit" value="검색"/>
 </form>
 </div>
@@ -322,6 +359,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <li data-header-list_box="outline">
 <a href="/event/manage">개설내역</a>
 </li>
+<li><button class="notranslate" data-translation_btn="" type="button">EN</button></li>
 </ul>
 </div>
 </div>
@@ -741,7 +779,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 </div>
 <ul data-link_box="">
 <li data-keyword_row="">
-<a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI / 인공지능</a>
+<a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI 인공지능</a>
 <a href="/event/main?s=창업">창업</a>
 <a href="/event/main?s=게임">게임</a>
 </li>
@@ -764,7 +802,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
                 <a href="http://pf.kakao.com/_xoWIcE/chat" title="상담톡" target="_blank">톡상담</a>
             </div> -->
 <script>
-            var _GTAG_DTO_KEY_1001 = {"event":"clickEvent","eventID":"314234","eventName":"[한국콘텐츠진흥원] 2024년 NCA 장기과정 2기 &lt;글로벌 인재&gt; 분야 교육생 모집(11.19~12.17)","eventType":"일반","categoryID":"101","categoryName":"교육/워크숍","eventFeeType":["무료"],"applicationType":"외부","recommendFieldID":["A0103","A0108","A0110"],"recommendFieldName":["과학/IT/AI","문화/예술/디자인","게임"],"recommendJobID":[],"recommendJobName":[],"keyword":"","pageIndex":0,"sequenceNumber":0,"clickPoint":"검색창","adCode":"PM20","sectionNumber":"","ai":"n"};
+            var _GTAG_DTO_KEY_1001 = {"event":"clickEvent","eventID":"314454","eventName":"온오프믹스와 함께 하는 뮤지컬 클래스 2025 Season 5","eventType":"일반","categoryID":"110","categoryName":"공연/방송","eventFeeType":["유료"],"applicationType":"내부","recommendFieldID":["A0105","A0108","A0109"],"recommendFieldName":["자기계발/학습/독서","문화/예술/디자인","영화/드라마/미디어"],"recommendJobID":[],"recommendJobName":[],"keyword":"","pageIndex":0,"sequenceNumber":0,"clickPoint":"검색창","adCode":"PM20","sectionNumber":"","ai":"n"};
             </script>
 </header>
 <main class="event_search" id="content">
@@ -1202,7 +1240,6 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <ul>
 <li><a href="https://corp.onoffmix.com/ad" target="_blank">광고상품 안내</a></li>
 <li><a href="/newsletter" target="_blank">뉴스레터 구독</a></li>
-<!-- <li><button type="button" class="notranslate" data-translation_btn>영문으로 번역하기</button></li> -->
 </ul>
 <ul>
 <li><a href="https://corp.onoffmix.com/" target="_blank">회사소개</a></li>
@@ -1272,43 +1309,6 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <script src="https://static.onoffmix.com/js/pc/dist/main/sliderRotate.js"></script>
 <!-- <script src="https://static.onoffmix.com/js/pc/dist/main/main.js"></script> -->
 <script src="https://static.onoffmix.com/js/pc/dist/common/today-seen.js"></script>
-<script defer="">
-        function googleTranslateElementInit(){
-            new google.translate.TranslateElement({
-                pageLanguage: "ko",
-                includedLanguages: "ko,en",
-                autoDisplay: false,
-            }, "footer");
-        }
-
-        const cookie = document.cookie.split('; ').find(row => row.startsWith('googtrans='));
-        if (cookie && cookie.split('=')[1] === "/ko/en") {
-            document.querySelector('[data-translation_btn]').textContent = "Korean Translate";
-        }
-
-        document.addEventListener("click", ( event )=>{
-            const target = event.target;
-            if(target.dataset["translation_btn"] === "" || target.closest("[data-translation_btn]")){
-                const select_element = document.querySelector('.goog-te-combo');
-                select_element.value = select_element.value === "en" ?
-                    "ko" : select_element.value === "ko" ? "en" : "en";
-                select_element.dispatchEvent( new Event("change", {
-                    "bubbles": true
-                }) );
-            }
-        });
-        document.addEventListener("change", ( event )=>{
-            const target = event.target;
-            if( !target.classList.contains("goog-te-combo") ) return;
-            if(target.value !== ""){
-                document.querySelector('[data-translation_btn]').textContent = target.value === "en" ? "Korean Translate" : "영문으로 번역하기";
-                return;
-            }
-            target.value = "en";
-            target.dispatchEvent( new Event("change", {"bubbles": true}) );
-        }); 
-    </script>
-<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <!-- PC Common Script -->
 <!-- <script src="https://static.onoffmix.com/js/pc/dist/common/common.js"></script>
     <script src="https://static.onoffmix.com/js/pc/dist/common/header.js"></script> -->
