@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<!-- <meta charset="UTF-8" /> -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="-1" http-equiv="expires"/>
+<!-- <meta http-equiv="Content-Script-Type" content="text/javascript" /> -->
+<!-- <meta http-equiv="Content-Style-Type" content="text/css" /> -->
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="default-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com ssl.daumcdn.net t1.daumcdn.net stats.g.doubleclick.net; style-src 'self'  'unsafe-inline' 'unsafe-eval' t1.daumcdn.net; img-src * " http-equiv="Content-Security-Policy"/>
+<!-- <meta http-equiv="Content-Security-Policy" content="default-src http:; script-src http: 'unsafe-inline' 'unsafe-eval'; style-src http: 'unsafe-inline' " /> -->
+<!-- <meta http-equiv="Content-Security-Policy-Report-Only" content="default-src https:" /> -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="/contents/css/ie/v8.css" /><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
+<script src="/contents/js/jquery-3.6.0.js"></script>
+<script src="/contents/js/common.js"></script>
+<script src="/contents/js/func.js?ver=2024-12-23"></script>
+<script src="/contents/js/jquery-3.6.0.min.js"></script>
+<script src="/contents/js/action.js"></script>
+<link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
+<script src="/contents/js/google_analytics.js"></script><title>ITFIND - 세미나&amp;컨퍼런스</title>
+<!-- <meta charset="UTF-8"> -->
+<!-- // 현재 페이지의 유효일자를 지정
+<meta http-equiv="expires" content="mon, 22 jul 2002 11:12:01 gmt">
+-->
+<meta content="no-cache" http-equiv="pragma"/>
+<meta content="no-cache" http-equiv="cache-control"/>
+<!-- <meta name="robots" content="all"> -->
+<!-- // 색인 페이지로 허용-->
+<meta content="index" name="robots"/>
+<!-- // 색인 페이지로 사용 금지
+    <meta name="robots" content="noindex">
+     -->
+<!-- // 현재 페이지의 link들의 탐색 허용-->
+<meta content="follow" name="robots"/>
+<!-- // 현재 페이지의 link들의 탐색 금지
+    <meta name="robots" content="nofollow">
+     -->
+<!-- // 현재 페이지의 색인/탐색 금지
+    <meta name="robots" content="none">
+     -->
+<meta content="" name="description">
+<meta content="" name="keywords">
+<script type="text/javascript">
+function fnAlertLogin(){
+	alert("로그인 후 이용해 주십시오.");
+	return;
+}
+</script>
+</meta></meta></head>
+<body>
+<a class="SkipNav" href="#Cont">콘텐츠 바로가기</a>
+<div class="Topmenu">
+<!-- D:로그인 전과 후의 메뉴 구분처리 -->
+<a href="/mypage/login.do">로그인</a>
+<a href="/ccenter/userRegist/join.do">회원가입</a><!-- 회원가입 주소 매핑해야함 -->
+<a href="/ccenter/faq.do">고객센터</a>
+</div>
+<div class="Wrapper">
+<!-- header start -->
+<header>
+<h1><a href="/main.do">IT지식포털-ITFIND</a></h1>
+<!-- D: 메뉴관리 필요 [주요메뉴, 메뉴전체보기, <div class="location_wrap">] 총 세 부분 -->
+<!-- D: 선택된 메뉴의 2Depth li에 class="M_on" 추가 -->
+<!-- 주요메뉴 S -->
+<nav class="GNB">
+<ul>
+<li><a href="/trend/news/ictNews/list.do">동향정보</a>
+<ul>
+<li class=""><a href="/trend/news/ictNews/list.do">ICT 뉴스</a></li>
+<li class=""><a href="/trend/trend/hotIssue/list.do">동향정보</a></li>
+<li class=""><a href="/trend/patent/scienceOn.do">특허</a></li>
+<li class=""><a href="/trend/thesis/list_s.do">학술논문</a></li>
+<li class=""><a href="/trend/standard/list_c.do">표준정보</a></li>
+</ul>
+</li>
+<li><a href="/data/seminar/list.do">정보센터</a>
+<ul>
+<li class="M_on"><a href="/data/seminar/list.do">세미나/컨퍼런스</a></li>
+<li class=""><a href="/data/notice/list.do">공지사항</a></li>
+<li class=""><a href="/data/related/organ/list.do">관련사이트</a></li>
+<li class=""><a href="/data/openapi/intro/list.do">OPEN API</a></li>
+<li class=""><a href="/data/rss/list.do">ITFIND RSS</a></li>
+<li class=""><a href="/data/media/iitpYouTube/ictGood/list.do">미디어관</a></li>
+</ul>
+</li>
+<li><a href="/report/analysis/list.do">보고서</a>
+<ul>
+<li class=""><a href="/report/analysis/list.do">분석보고서</a></li>
+<li class=""><a href="/report/research/list.do">연구결과보고서</a></li>
+<li class=""><a href="/report/rndorgan/list.do">ICT R&amp;D관련 국내외기관</a></li>
+</ul>
+</li>
+<li><a href="/publication/regular/weeklytrend/weekly/list.do">간행물</a>
+<ul>
+<li class=""><a href="/publication/regular/weeklytrend/weekly/list.do">주간기술동향</a></li>
+<li class=""><a href="/publication/mailzine/list_c.do">ITFIND 메일진</a></li>
+<li class=""><a href="/publication/regular/periodicalJoin/subscrib.do">메일진 구독신청</a></li>
+<li class=""><a href="/publication/regular/periodical/list.do">정기간행물</a></li>
+<li class=""><a href="/publication/statistics/list.do">통계간행물</a></li>
+<li class=""><a href="/publication/whiteandyear/list.do">백서/연차보고서</a></li>
+</ul>
+</li>
+<li><a href="/introduce/greeting.do">ITFIND소개</a>
+<ul>
+<li class=""><a href="/introduce/greeting.do">인사말</a></li>
+<li class=""><a href="/introduce/introItfind.do">ITFIND란?</a></li>
+<li class=""><a href="/introduce/introPeriodical.do">발간자료안내</a></li>
+<li class=""><a href="/introduce/loadmap.do">찾아오시는길</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<!-- 주요메뉴 E -->
+<!-- 상단 검색 S -->
+<form method="post" name="myform">
+<input id="colType" name="colType" type="hidden"/>
+<fieldset class="HeaderSearch">
+<legend class="Hidden">통합검색</legend>
+<label class="Hidden" for="all_search">검색어입력</label>
+<select class="menuModal" id="menuModal" name="menuModal" onchange="fncSelect(this);return false;" title="검색분류 선택">
+<option value="">통합검색</option>
+<option value="trend">동향정보</option>
+<option value="data">정보센터</option>
+<option value="report">보고서</option>
+<option value="publication">간행물</option>
+</select>
+<input autocomplete="off" class="inp" id="all_search" name="keywords" placeholder="검색어를 입력해주세요" type="text"/>
+<button class="BtnSearch" onclick="doSearch();return false;" style="vertical-align:middle;" type="button">통합검색</button>
+</fieldset>
+</form>
+<div class="MenuAll">
+<a class="MenuBtn" href="#">
+<span>메뉴열기</span>
+</a><!-- D: 메뉴열기 a태그 선택시 아래 <nav class="Menu">에 class="open" 추가 되어있음 -->
+<nav class="Menu">
+<ul>
+<li><a href="#" style="cursor:default;">동향정보</a>
+<ul class="">
+<li><a href="/trend/news/ictNews/list.do">ICT 뉴스</a>
+<ul>
+<li><a href="/trend/news/ictNews/list.do">오늘의 ICT뉴스</a></li>
+<li><a href="/trend/news/organNews/list.do">유관기관 새소식</a></li>
+<li><a href="/trend/news/jobNews/list.do">일자리 창출 정보</a></li>
+</ul>
+</li>
+<li><a href="/trend/trend/hotIssue/list.do">동향정보</a>
+<ul>
+<li><a href="/trend/trend/hotIssue/list.do">Hot Issue</a></li>
+<li><a href="/trend/trend/organScrap/list.do">유관기관 스크랩</a></li>
+<li><a href="/trend/trend/focus/list.do">브레이킹 이슈</a></li>
+<li><a href="/trend/trend/bestData/list.do">추천자료</a></li>
+</ul>
+</li>
+<li><a href="/trend/patent/scienceOn.do">특허</a>
+<ul>
+<li><a href="/trend/patent/scienceOn.do">특허검색</a></li>
+<li><a href="/trend/patent/lecture/content_01.do">특허강좌</a></li>
+<li><a href="/trend/patent/useful/content_1.do">특허실용</a></li>
+</ul>
+</li>
+<li><a href="/trend/thesis/list_s.do">학술논문</a></li>
+<li><a href="/trend/standard/list_c.do">표준정보</a></li>
+</ul>
+</li>
+<li><a href="#" style="cursor:default;">정보센터</a>
+<ul class="open">
+<li><a href="/data/seminar/list.do">세미나/컨퍼런스</a></li>
+<li><a href="/data/notice/list.do">공지사항</a></li>
+<li><a href="/data/related/organ/list.do">관련사이트</a>
+<ul>
+<li><a href="/data/related/organ/list.do">유관기관</a></li>
+<li><a href="/data/related/affiliated/list.do">연계기관</a></li>
+</ul>
+</li>
+<li><a href="#">OPEN API</a>
+<ul>
+<li><a href="/data/openapi/intro/list.do">OPEN API 소개</a></li>
+<li><a href="/data/openapi/guide/list.do">개발가이드</a></li>
+</ul>
+</li>
+<li><a href="/data/rss/list.do">ITFIND RSS</a></li>
+<li><a href="/data/media/iitpYouTube/ictGood/list.do">미디어관</a>
+<ul>
+<li><a href="/data/media/iitpYouTube/ictGood/list.do">ICT가좋다!</a></li>
+<li><a href="/data/media/iitpYouTube/iitpAcademy/list.do">IITP 아카데미</a></li>
+</ul>
+<!--  
+                              <ul>
+                                  <li><a href="/data/media/conference/conference2018.do">IITP 주관행사</a></li>
+                                  <li><a href="/data/media/forum/forumSeoul.do">컨퍼런스/포럼</a></li>
+                                  <li><a href="/data/media/seminar/seminarIt.do">세미나/학회</a></li>
+                                  <li><a href="/data/media/edu/eduMeetings.do">IT교육자료/기타</a></li>
+                              </ul>
+                          -->
+</li>
+</ul>
+</li>
+<li><a href="#" style="cursor:default;">보고서</a>
+<ul class="">
+<li><a href="/report/analysis/list.do">분석보고서</a>
+<ul>
+<li><a href="/report/analysis/list.do">전체</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_07_02&amp;selectedGroupId=E_14_07">ICT 정책</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_01&amp;selectedGroupId=E_14">유무선통신</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_03&amp;selectedGroupId=E_14">전파방송위성</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_02&amp;selectedGroupId=E_14">전자정보디바이스</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_04&amp;selectedGroupId=E_14">SW/콘텐츠</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_08&amp;selectedGroupId=E_14">정보가전</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_09&amp;selectedGroupId=E_14">정보보호</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_10&amp;selectedGroupId=E_14">인터넷</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_05&amp;selectedGroupId=E_14">ICT 융합</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_06&amp;selectedGroupId=E_14">Green IT</a></li>
+<!--  <li><a href="/report/analysis/list.do?selectedCategory=E_14_05_02_01&selectedGroupId=E_14_05_02">DTV</a></li> -->
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_05_02&amp;selectedGroupId=E_14_05">방송통신융합</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_13&amp;selectedGroupId=E_14">특허</a></li>
+<li><a href="/report/analysis/list.do?selectedCategory=E_14_99&amp;selectedGroupId=E_14">ICT종합/기타</a></li>
+</ul>
+</li>
+<li><a href="/report/research/list.do?formType=ResearchReport">연구결과보고서</a></li>
+<li><a href="/report/rndorgan/list.do">ICT R&amp;D 관련 국내외기관</a></li>
+</ul>
+</li>
+<li><a href="#" style="cursor:default;">간행물</a>
+<ul class="">
+<li><a href="/publication/regular/weeklytrend/weekly/list.do">주간기술동향</a>
+<ul>
+<li><a href="/publication/regular/weeklytrend/weekly/list.do">주간기술동향</a></li>
+<li><a href="/publication/regular/weeklytrend/pastList/list.do?selectedCategory=B_ITA_01">주간기술동향 목록보기</a></li>
+<li><a href="/publication/regular/weeklytrend/recruit/list.do">주간기술동향 원고 모집</a></li>
+<li><a href="/publication/regular/weeklytrend/weeklymailzine/list.do">주간기술동향 메일진</a></li>
+</ul>
+</li>
+<li><a href="/publication/mailzine/list_c.do">ITFIND 메일진</a>
+<ul>
+<li><a href="/publication/mailzine/list_c.do">ITFIND 메일진</a></li>
+<li><a href="/publication/mailzine/more.do?groupcode=03&amp;sendid=">ITFIND 메일진 더보기</a></li>
+</ul>
+</li>
+<li><a href="/publication/regular/periodicalJoin/subscrib.do">메일진 구독신청</a></li>
+<li><a href="/publication/regular/periodical/list.do">정기간행물</a>
+<ul>
+<li><a href="/publication/regular/periodical/list.do">전체</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_36&amp;selectedGroupId=B_ITA">IITP 디지털 아웃룩</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_21&amp;selectedGroupId=B_ITA">월간 ICT 산업동향</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_16&amp;selectedGroupId=B_ITA">ICT Brief</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_17&amp;selectedGroupId=B_ITA">ICT SPOT Issue</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_24&amp;selectedGroupId=B_ITA">해외 ICT R&amp;D 정책동향</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_02&amp;selectedGroupId=B_ITA">ICT Insight</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_UGN_301&amp;selectedGroupId=E_06_03">월간 SW중심사회</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_UGN_302&amp;selectedGroupId=B_UGN">SPRI 이슈리포트</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_35&amp;selectedGroupId=B_ITA">ICT Policy Issue</a></li>
+</ul>
+</li>
+<li><a href="/publication/statistics/list.do">통계간행물</a>
+<ul>
+<li><a href="/publication/statistics/list.do">전체</a></li>
+<li><a href="/publication/statistics/list.do?selectedCategory=B_STA_42&amp;selectedGroupId=B_STA">ICT R&amp;D 통계</a></li>
+</ul>
+</li>
+<li><a href="/publication/whiteandyear/list.do">백서/연차보고서</a>
+<ul>
+<li><a href="/publication/whiteandyear/list.do">전체</a></li>
+<!--                                   <li><a href="http://annualreport.itfind.or.kr/ver2.rpt">정보통신산업진흥연차보고서</a></li> -->
+<li><a href="/publication/whiteandyear/annualReportList.do?selectedCategory=ANNL">정보통신산업진흥연차보고서</a></li>
+<!--
+                                  <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_34&selectedGroupId=B_WPD">소프트웨어산업연간보고서</a></li>
+                                  <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_37&selectedGroupId=B_WPD">지식서비스산업백서</a></li>
+                                  <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_20&selectedGroupId=B_WPD">e-비지니스백서</a></li>
+                                  <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_01&selectedGroupId=B_WPD">경제백서</a></li>
+                                  -->
+<li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_14&amp;selectedGroupId=B_WPD">국가정보화백서</a></li>
+<li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_18&amp;selectedGroupId=B_WPD">한국인터넷백서</a></li>
+<!--
+                                  <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_26&selectedGroupId=B_WPD">표준화백서</a></li>
+                                  -->
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#" style="cursor:default;">ITFIND소개</a>
+<ul class="">
+<li><a href="/introduce/greeting.do">인사말</a></li>
+<li><a href="/introduce/introItfind.do">ITFIND란?</a></li>
+<li><a href="/introduce/introPeriodical.do">발간자료 안내</a></li>
+<li><a href="/introduce/loadmap.do">찾아오시는 길</a></li>
+</ul>
+</li>
+<li><a href="#" style="cursor:default;">고객센터</a>
+<ul class="">
+<li><a href="/ccenter/faq.do">자주하는질문</a></li>
+<li><a href="#">헬프 데스크</a>
+<ul>
+<li><a href="/ccenter/helpdesk/qna/list_n.do">문의하기</a></li>
+<li><a href="/ccenter/helpdesk/error/list_n.do">에러신고</a></li>
+</ul>
+</li>
+</ul>
+<br/>
+<article class="serviceClose">
+<a href="#" style="cursor:default;">서비스종료</a>
+<ul>
+<li><a href="/serviceClose/easyIT/life/list.do">알기쉬운 ICT</a>
+<ul>
+<li><a href="/serviceClose/easyIT/life/list.do">생활속 ICT</a></li>
+<li><a href="/serviceClose/easyIT/movie/list.do">영화속 ICT</a></li>
+<li><a href="/serviceClose/easyIT/dic/list_c.do">열린 ICT 사전</a></li>
+</ul>
+</li>
+<li><a href="/serviceClose/media/conference/conference2018.do">(구)미디어관</a>
+<ul>
+<li><a href="/serviceClose/media/conference/conference2018.do">IITP 주관행사</a></li>
+<li><a href="/serviceClose/media/forum/forumSeoul.do">컨퍼런스/포럼</a></li>
+<li><a href="/serviceClose/media/seminar/seminarIt.do">세미나/학회</a></li>
+<li><a href="/serviceClose/media/edu/eduMeetings.do">IT교육자료/기타</a></li>
+</ul>
+</li>
+<li><a href="/serviceClose/rnddata/list.do">R&amp;D 연구결과보고서</a></li>
+<li><a href="/serviceClose/regular/periodical/list.do?selectedCategory=B_ITA_22&amp;selectedGroupId=B_ITA">정기간행물</a>
+<ul>
+<li><a href="/serviceClose/regular/periodical/list.do?selectedCategory=B_ITA_22&amp;selectedGroupId=B_ITA">스마트 디바이스 트랜드 매거진</a></li>
+<li><a href="/serviceClose/regular/periodical/list.do?selectedCategory=B_UGN_304&amp;selectedGroupId=B_UGN">NIPA 이슈리포트</a></li>
+</ul>
+</li>
+<li><a href="/serviceClose/whiteandyear/list.do?selectedCategory=B_WPD_34&amp;selectedGroupId=B_WPD">백서/연차보고서</a>
+<ul>
+<li><a href="/serviceClose/whiteandyear/list.do?selectedCategory=B_WPD_34&amp;selectedGroupId=B_WPD">소프트웨어산업연간보고서</a></li>
+<li><a href="/serviceClose/whiteandyear/list.do?selectedCategory=B_WPD_37&amp;selectedGroupId=B_WPD">지식서비스산업백서</a></li>
+<li><a href="/serviceClose/whiteandyear/list.do?selectedCategory=B_WPD_20&amp;selectedGroupId=B_WPD">e-비지니스백서</a></li>
+<li><a href="/serviceClose/whiteandyear/list.do?selectedCategory=B_WPD_01&amp;selectedGroupId=B_WPD">경제백서</a></li>
+<li><a href="/serviceClose/whiteandyear/list.do?selectedCategory=B_WPD_26&amp;selectedGroupId=B_WPD">표준화백서</a></li>
+</ul>
+</li>
+</ul>
+</article>
+</li>
+</ul>
+</nav>
+</div>
+<!-- 메뉴전체보기 E -->
+<!-- //header end -->
+</header>
+<script>
+
+function doSearch(word) {
+	
+	if(word == undefined){
+	}else{
+		$("#all_search").val(word);
+	}
+	
+    var colType = $("#colType").val();
+    
+    if(colType == 'publication'){
+    	document.myform.action='/search/searchPublication.do';
+    }else if(colType == 'trend'){
+    	document.myform.action='/search/searchTrend.do';
+    }else if(colType == 'report'){
+    	document.myform.action='/search/searchReport.do';
+    }else if(colType == 'data'){
+    	document.myform.action='/search/searchData.do';
+    }else{
+    	document.myform.action='/search/search.do';
+    }
+    
+    document.myform.submit();
+    //$("form[action^='/search/search.do']").submit();
+        
+}
+
+$(document).ready(function() {
+    
+    $(window).keydown(function(event){
+        if(event.keyCode == 13) {
+          event.preventDefault();
+          return false;
+        }
+      });
+    
+    $("#all_search").keydown(function(event){
+        if(event.keyCode == 13) {
+          doSearch();
+        }
+      });
+});
+
+function fncSelect(obj){
+	$("#colType").val($(obj).val());
+}
+
+</script> <div class="SubLayout">
+<article class="LeftArea">
+<h3 class="Hidden">정보센터</h3>
+<div class="location_wrap">
+<div class="home"><a href="/main.do">홈</a></div>
+<div class="dep1 dep-mnlist dep_opmn">
+<button class="depmenu-btn" title="하위메뉴 펼치기" type="button">정보센터</button>
+<ul class="locamenu">
+<li><a href="/trend/news/ictNews/list.do">동향정보</a></li>
+<li class="current"><a href="/data/seminar/list.do">정보센터</a></li>
+<li><a href="/report/analysis/list.do">보고서</a></li>
+<li><a href="/publication/regular/weeklytrend/weekly/list.do">간행물</a></li>
+<li><a href="/introduce/greeting.do">ITFIND 소개</a></li>
+</ul>
+</div>
+<div class="dep2 dep-mnlist dep_opmn">
+<button class="depmenu-btn" title="하위메뉴 펼치기" type="button">세미나&amp;컨퍼런스</button>
+<ul class="locamenu">
+<li class="current"><a href="/data/seminar/list.do">세미나&amp;컨퍼런스</a></li>
+<li class=""><a href="/data/notice/list.do">공지사항</a></li>
+<li class=""><a href="/data/related/organ/list.do">관련사이트</a></li>
+<li class=""><a href="/data/openapi/intro/list.do">OPEN API</a></li>
+<li class=""><a href="/data/rss/list.do">ITFIND RSS</a></li>
+<li class=""><a href="/data/media/iitpYouTube/ictGood/list.do">미디어관</a></li>
+</ul>
+</div>
+</div>
+</article>
+<article class="Cont" id="Cont">
+<h4>세미나&amp;컨퍼런스</h4>
+<div class="ContArea">
+<ul class="TabMenu"><!-- Tab menu -->
+<li class=""><a href="/data/seminar/list.do">전체 세미나&amp;컨퍼런스</a></li>
+<li class="M_on"><a href="/data/seminar/list.do?boardParam1=ko">국내 세미나&amp;컨퍼런스</a></li>
+<li class=""><a href="/data/seminar/list.do?boardParam1=etc">국외 세미나&amp;컨퍼런스</a></li>
+</ul>
+<form action="/data/seminar/list.do?boardParam1=ko&amp;pageIndex=0&amp;pageSize=10" method="post" name="searchForm"><div class="tablestyle01">
+<table>
+<caption>통합 검색</caption>
+<colgroup>
+<col style="width:20%"/>
+<col style="width:80%"/>
+</colgroup>
+<tbody>
+<tr>
+<th scope="row">검색</th>
+<td class="searchList">
+<select name="searchTarget" title="검색옵션1">
+<option value="all">전체</option>
+<option value="00">기타</option>
+<option value="01">기술</option>
+<option value="02">시장</option>
+<option value="03">경영</option>
+<option value="04">정책</option>
+<option value="05">통계</option>
+<option value="99">보고서</option>
+</select>
+<select name="searchTarget2" title="검색옵션2">
+<option value="all">전체</option>
+<option value="01">유무선통신</option>
+<option value="04">방송/TV</option>
+<option value="05">인터넷</option>
+<option value="08">하드웨어</option>
+<option value="09">소프트웨어/컨텐츠</option>
+<option value="10">반도체/부품</option>
+<option value="16">원천기술</option>
+<option value="17">정보보호</option>
+<option value="18">전자상거래</option>
+</select>
+<label class="Hidden" for="searchText">검색어입력</label>
+<input class="searchtext w60p" id="searchText" name="searchText" placeholder="검색어 입력" type="text" value=""/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="btngruopR">
+<button class="btnstyle01" type="submit">검색</button>
+</div>
+</form><div class="BoardHeader">
+<div class="BoardCount">
+<span>총 게시물 : <strong>2953건</strong></span>
+<span>현재페이지 : <strong>1/296.0</strong></span>
+<select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
+<option selected="selected" value="10">10개씩 보기</option>
+<option value="20">20개씩 보기</option>
+<option value="30">30개씩 보기</option>
+<option value="40">40개씩 보기</option>
+<option value="50">50개씩 보기</option>
+</select>
+</div>
+</div>
+<table class="BoardList">
+<caption class="Hidden">전체 세미나&amp;컨퍼런스 목록-번호, 구분, 제목, 행사기간, 접수기간 제공</caption>
+<colgroup>
+<col style="width:100px;"/>
+<col style="width:100px;"/>
+<col style="width:auto;"/>
+<col style="width:220px;"/>
+<col style="width:220px;"/>
+</colgroup>
+<thead>
+<tr>
+<th scope="col">번호</th>
+<th scope="col">구분</th>
+<th scope="col">제목</th>
+<th scope="col">행사기간</th>
+<th scope="col">접수기간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th data-cell-header="번호" scope="row">2953</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13940&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.21] 정유,화학 업계의 미래성장동력 -  액침냉각유 및 지속가능항공유(SAF) 신사업 전략 / 한국</a></td>
+<td data-cell-header="행사기간">2025-02-21~2025-02-21</td>
+<td data-cell-header="접수기간">2024-12-05~2025-02-20</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2952</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13945&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.14] 전력시장 변화에 따른 전력시장 참여방법과 신사업 추진 방안 / 한국</a></td>
+<td data-cell-header="행사기간">2025-02-14~2025-02-14</td>
+<td data-cell-header="접수기간">2024-12-13~2025-02-13</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2951</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13935&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.06-07] 실무 프로젝트 기반 생성형 AI (LLM) 마스터 로드맵 / 한국</a></td>
+<td data-cell-header="행사기간">2025-02-06~2025-02-07</td>
+<td data-cell-header="접수기간">2024-11-27~2025-02-05</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2950</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13930&amp;boardParam1=ko&amp;searchTarget2=">국내//[01.17] 2025 친환경 플라스틱 시장 현황 및 산업 전망 / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-17~2025-01-17</td>
+<td data-cell-header="접수기간">2024-11-25~2025-01-16</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2949</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13928&amp;boardParam1=ko&amp;searchTarget2=">국내//[01.16] 2025 전력 시장의 변화와 산업 전망 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-16~2025-01-16</td>
+<td data-cell-header="접수기간">2024-11-20~2025-01-15</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2948</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13923&amp;boardParam1=ko&amp;searchTarget2=">국내//[1/16] “2025 변화에 도전하는 K반도체 AI 핵심기술 및 산업 트렌드 세미나” / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-16~2025-01-16</td>
+<td data-cell-header="접수기간">2024-11-15~2025-01-15</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2947</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13857&amp;boardParam1=ko&amp;searchTarget2=">국내//[01.16] 실무자를 위한 사용후 배터리 재활용/재사용 산업 집중 교육 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-16~2025-01-16</td>
+<td data-cell-header="접수기간">2024-10-01~2025-01-15</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2946</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13843&amp;boardParam1=ko&amp;searchTarget2=">국내//[일정연기] 수소 연료전지 기반 발전 및 어플리케이션별 활용시장 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-01-15~2025-01-15</td>
+<td data-cell-header="접수기간">2024-09-01~2025-01-14</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2945</th>
+<td data-cell-header="구분">진행</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13948&amp;boardParam1=ko&amp;searchTarget2=">국내//[우리금융그룹] 디노랩 부산 1기 모집(~01/12) / 한국</a></td>
+<td data-cell-header="행사기간">2024-12-17~2025-01-12</td>
+<td data-cell-header="접수기간">2024-12-17~2025-01-12</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2944</th>
+<td data-cell-header="구분">종료</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13947&amp;boardParam1=ko&amp;searchTarget2=">국내//국회 디지털경제3.0포럼 디지털자산 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2024-12-20~2024-12-20</td>
+<td data-cell-header="접수기간">2024-11-19~2024-12-19</td>
+</tr>
+</tbody>
+</table>
+<div class="btngruopR">
+<button class="btnstyle01" onclick="fnAlertLogin();return false" type="button">등록</button>
+</div>
+<div id="paging">
+<!--     <a href="#" class="first" title="처음페이지로 이동"><span>처음</span></a> -->
+<div class="Paging">
+<a class="BtnFirst off">이전</a>
+<a class="BtnForward off">이전</a>
+<div class="No_PC">
+</div>
+<!--     <a href="#2" class="last" title="마지막페이지로 이동"><span>마지막</span></a> -->
+</div>
+</div>
+</div></article>
+</div>
+<!-- //wrap end -->
+<script type="text/javascript">
+function fnMvOrgan(){
+	location.href="/data/related/organ/list.do";
+}
+</script>
+<!-- footer start  -->
+<footer>
+<ul class="Footmenu">
+<li><a href="/ccenter/personalInformationPolicy2024.do">개인정보처리방침</a></li>
+<li><a href="/ccenter/siteAgreement.do">이용약관</a></li>
+<li><a href="/introduce/loadmap.do">찾아오시는길</a></li>
+</ul>
+<section class="GoSite">
+<h5 class="Hidden">사이트바로가기</h5>
+<div><!-- 내부사이트 바로가기 -->
+<button type="button">내부사이트 바로가기</button>
+<ul>
+<li><a href="http://www.iitp.kr" rel="noopener noreferrer" target="_blank">정보통신기획평가원</a></li>
+<li><a href="http://annualreport.itfind.or.kr/ver2.rpt" rel="noopener noreferrer" target="_blank">정보통신연차보고서</a></li>
+</ul>
+</div>
+<div><!-- 유관기관 바로가기 -->
+<button onclick="fnMvOrgan();" type="button">유관기관 바로가기</button>
+<!--                 	<ul> -->
+<!-- 	                    <li><a href="http://www.nipa.kr" target="_blank" rel="noopener noreferrer">정보통신산업진흥원</a></li> -->
+<!-- 	                    <li><a href="http://www.hanium.or.kr" target="_blank" rel="noopener noreferrer">한이음(IT인력양성)</a></li> -->
+<!-- 	                    <li><a href="http://www.oss.kr" target="_blank" rel="noopener noreferrer">공개소프트웨어포털</a></li> -->
+<!-- 	                    <li><a href="http://www.ecmc.or.kr" target="_blank" rel="noopener noreferrer">전자거래분쟁조정위원회</a></li> -->
+<!-- 	                    <li><a href="http://www.etrust.or.kr" target="_blank" rel="noopener noreferrer">eTrust 인증 홈페이지</a></li> -->
+<!-- 	                    <li><a href="http://www.swit.or.kr/IS/web/index.jsp" target="_blank" rel="noopener noreferrer">SW산업정보종합시스템</a></li> -->
+<!-- 	                    <li><a href="http://www.npost.kr" target="_blank" rel="noopener noreferrer">공인전자주소(ePost)</a></li> -->
+<!-- 	                    <li><a href="http://www.goodlearn.kr/nipa/" target="_blank" rel="noopener noreferrer">이러닝종합정보시스템</a></li> -->
+<!-- 	                    <li><a href="http://www.g4b.go.kr/" target="_blank" rel="noopener noreferrer">기업지원플러스 G4B</a></li> -->
+<!-- 	                    <li><a href="http://www.software.kr" target="_blank" rel="noopener noreferrer">SW공학센터홈페이지</a></li> -->
+<!-- 	                    <li><a href="http://www.swmaestro.kr/" target="_blank" rel="noopener noreferrer">SW마에스트로</a></li> -->
+<!-- 	                    <li><a href="http://quickpass.or.kr/" target="_blank" rel="noopener noreferrer">신속처리 임시허가제도</a></li> -->
+<!-- 						<li><a href="http://www.itstat.go.kr" target="_blank" rel="noopener noreferrer">IT통계포털</a></li> -->
+<!--                 	</ul> -->
+</div>
+</section>
+<address>
+	            대전광역시 유성구 유성대로 1548 (정보통신기획평가원) <span> </span>    
+	            
+	            동향분석팀 담당자 E-mail : <a href="key@iitp.kr"> key@iitp.kr</a> All rights reserved ⓒ 정보통신기획평가원
+        </address>
+<p class="Logo">
+<a href="https://www.msit.go.kr/index.do" target="_blank"><img alt="과학기술정보통신부" src="/contents/images/common/footer_logo_msit.png"/></a>
+<a href="http://www.iitp.kr" target="_blank"><img alt="iitp정보통신기획평가원" src="/contents/images/common/footer_logo_iitp.png"/></a>
+</p>
+<p class="SNS">
+<a href="https://www.facebook.com/iitpkr" target="_blank"><img alt="페이스북" src="/contents/images/common/footer_sns_facebook.png"/></a>
+<a href="/data/rss/list.do" target="_blank"><img alt="RSS" src="/contents/images/common/footer_rss.png"/></a>
+</p>
+</footer>
+<script>
+	$(document).ready(function() { 
+	    
+	});   
+ </script>
+<!-- _global_hidden start -->
+<div class="hide" id="_global_hidden">
+</div>
+<!-- _global_hidden end -->
+<script>
+
+
+$(document).click(function(e){
+
+    if($(e.target).is('A')) {
+//          if( makeHiddenPost(e.target.href, e.target.target) ) {
+//              return true;    //이벤트 return!
+//          }else{
+//              return false;   //이벤트 Hook!    
+//          }
+    }else{
+        //처리없음.
+    }      
+  });
+
+function makeHiddenPost( targetURL , targetWin) {
+    
+    if(targetURL == null || typeof(targetURL) == 'undefined')
+        return true;
+   
+    targetURL = targetURL.trim();
+    
+    if(targetURL == "" || targetURL == "#")
+        return true;
+    
+    
+    var arURL = targetURL.split("?");
+    
+    if(arURL.length <= 1)
+        return true;    //파라미터가 없다면...
+    
+
+        
+    var postForm = "<form  name='global_hidden_form' method='post' action='"+arURL[0]+"'";
+    
+    if(targetWin != null && targetWin.trim() != "") {
+        targetWin = targetWin.trim();
+        postForm += " target='"+targetWin+"' ";
+    }
+    postForm += ">";
+    
+    
+    var postParam = "";
+    var arParam = arURL[1].split("&"); 
+    for(var i=0; i < arParam.length; i++) {
+        var arValue = arParam[i].split("=");
+        
+        postParam += "<input type='hidden' name='"+arValue[0]+"' value='"+ decodeURIComponent(arValue[1]) +"'>";
+    }
+    
+    postParam += "<input type='hidden' name='form.move' value='true'>";
+    postForm += postParam + "</form>";
+    
+    //alert(postForm);
+    
+    $("#_global_hidden").append(postForm);
+    global_hidden_form.submit();
+    
+    return false;
+}
+
+</script>
+</div>
+</body>
+</html>
