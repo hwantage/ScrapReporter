@@ -25,7 +25,7 @@
 <meta content="343" property="og:image:height">
 <meta content="https://event-us.kr/search?Query=&amp;EventType=&amp;Category=IT/%EA%B0%9C%EB%B0%9C&amp;Area=&amp;CostMin=&amp;Order=" property="og:url"/>
 <meta content="136314230510204" property="fb:app_id">
-<link href="/search?query=&amp;eventtype=&amp;category=it/%ea%b0%9c%eb%b0%9c&amp;area=&amp;costmin=&amp;order=" rel="canonical"/>
+<link href="https://event-us.kr/search?query=&amp;eventtype=&amp;category=it/%ea%b0%9c%eb%b0%9c&amp;area=&amp;costmin=&amp;order=" rel="canonical"/>
 <!-- GrowthFit Google Tag Manager -->
 <meta content="3704d95cf4764b65ca1cfea40f2d1af2d21572f2" name="naver-site-verification">
 <meta content="vpzujpK-hobMlPNOk1yRN5aj31iVrls2qq-r9sAQtS0" name="google-site-verification"/>
@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "Z4R826_U0hmKNaARli80LWCpM2cgWu9zz90H63m9crDKi_pk_2SbElaeTg_muftdcZzYv0p_4Yx2it5OKdHZIs5YrHGDCxWLjAD9MsKBHUYQwHTngepf7QpO13n50xl0A6rStw2",
+                UserId: "Ue00ezJikNIovgzIPHduTJANfdANKkHPRRHhfo5O3OJtHGCWYe879XIYv4viTr5ejomkf-7l4JOiyO7_R8YUqBVFiZB9V9LDB1KXXIe5LawaIwl92NNWW6zbcA8ToDqqS9NDfg2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "Z4R826_U0hmKNaARli80LWCpM2cgWu9zz90H63m9crDKi_pk_2SbElaeTg_muftdcZzYv0p_4Yx2it5OKdHZIs5YrHGDCxWLjAD9MsKBHUYQwHTngepf7QpO13n50xl0A6rStw2" === "Z4R826_U0hmKNaARli80LWCpM2cgWu9zz90H63m9crDKi_pk_2SbElaeTg_muftdcZzYv0p_4Yx2it5OKdHZIs5YrHGDCxWLjAD9MsKBHUYQwHTngepf7QpO13n50xl0A6rStw2" ? "Anonymous" : "User",
+                UserType: "Ue00ezJikNIovgzIPHduTJANfdANKkHPRRHhfo5O3OJtHGCWYe879XIYv4viTr5ejomkf-7l4JOiyO7_R8YUqBVFiZB9V9LDB1KXXIe5LawaIwl92NNWW6zbcA8ToDqqS9NDfg2" === "Ue00ezJikNIovgzIPHduTJANfdANKkHPRRHhfo5O3OJtHGCWYe879XIYv4viTr5ejomkf-7l4JOiyO7_R8YUqBVFiZB9V9LDB1KXXIe5LawaIwl92NNWW6zbcA8ToDqqS9NDfg2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'Z4R826_U0hmKNaARli80LWCpM2cgWu9zz90H63m9crDKi_pk_2SbElaeTg_muftdcZzYv0p_4Yx2it5OKdHZIs5YrHGDCxWLjAD9MsKBHUYQwHTngepf7QpO13n50xl0A6rStw2'
+            'user_id': 'Ue00ezJikNIovgzIPHduTJANfdANKkHPRRHhfo5O3OJtHGCWYe879XIYv4viTr5ejomkf-7l4JOiyO7_R8YUqBVFiZB9V9LDB1KXXIe5LawaIwl92NNWW6zbcA8ToDqqS9NDfg2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'Z4R826_U0hmKNaARli80LWCpM2cgWu9zz90H63m9crDKi_pk_2SbElaeTg_muftdcZzYv0p_4Yx2it5OKdHZIs5YrHGDCxWLjAD9MsKBHUYQwHTngepf7QpO13n50xl0A6rStw2'
+            'crm_id': 'Ue00ezJikNIovgzIPHduTJANfdANKkHPRRHhfo5O3OJtHGCWYe879XIYv4viTr5ejomkf-7l4JOiyO7_R8YUqBVFiZB9V9LDB1KXXIe5LawaIwl92NNWW6zbcA8ToDqqS9NDfg2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?1bdad022266f2f38"></script><style>body {
+<script src="/Content/dist/js/preload.js?0949e3a7dc4e7dac"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?1bdad022266f2f38"></script><script defer="defer" src="/Content/dist/js/default.js?1bdad022266f2f38"></script><link href="/Content/dist/css/default.css?1bdad022266f2f38" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?0949e3a7dc4e7dac"></script><script defer="defer" src="/Content/dist/js/default.js?0949e3a7dc4e7dac"></script><link href="/Content/dist/css/default.css?0949e3a7dc4e7dac" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2706,7 +2706,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="dkyArbfl-LvGhYKw47HfWRHpEOXbcsPGSAPSfpb0wt-Z6A8rfoO1RcUeckGJc_AIHJolAN0LttmkSr9HcU84J9B1acc1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="WZC0etnzRfjg8YUPugiD4lbxBGSYwvkgAJm_pPNixnrCMs2OuPYaVu5GNMe2ZiQLnWLm7DuhjeZUoWL2x97BF7tqW2g1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4058,7 +4058,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'Z4R826_U0hmKNaARli80LWCpM2cgWu9zz90H63m9crDKi_pk_2SbElaeTg_muftdcZzYv0p_4Yx2it5OKdHZIs5YrHGDCxWLjAD9MsKBHUYQwHTngepf7QpO13n50xl0A6rStw2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'Ue00ezJikNIovgzIPHduTJANfdANKkHPRRHhfo5O3OJtHGCWYe879XIYv4viTr5ejomkf-7l4JOiyO7_R8YUqBVFiZB9V9LDB1KXXIe5LawaIwl92NNWW6zbcA8ToDqqS9NDfg2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4158,7 +4158,7 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null}],
+                    banners: [{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null}],
                     searchResultBanners: [],
                     isSearchResultBannerShown: false,
                     eventList: [],
@@ -5197,7 +5197,6 @@ docReady(() => {
 <script crossorigin="anonymous" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script src="/Content/neweventus/lib/html2/1.3.2/html2canvas.min.js"></script>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-<script defer="defer" onload="mobRf()" src="https://cdn.megadata.co.kr/js/en_script/3.5/enliple_min3.5.js"></script>
 <script>
         // SDK
         Kakao.init('2b4978da5d2625e633561e5eacc9be14');
@@ -5230,13 +5229,6 @@ docReady(() => {
             t.src = v; s = b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t, s)
         })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-
-        function mobRf() {
-            var rf = new EN();
-            rf.setData("userid", "withitsoft");
-            rf.setSSL(true);
-            rf.sendRf();
-        }
     </script>
 <script src="https://wcs.naver.net/wcslog.js" type="text/javascript"></script>
 <!-- Start of Hubspot Embed Code -->

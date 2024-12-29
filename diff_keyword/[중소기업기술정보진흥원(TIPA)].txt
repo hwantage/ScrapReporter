@@ -608,14 +608,15 @@ function fn_MenuMrfnPageMove(url){
 </div>
 </div>
 </div>
-<div id="subheader">
+<!-- 	<div id='subheader'> -->
+<div>
 <!-- maintop -->
 <!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
 <div class="maintopN8">
 <div class="maintopN8" id="coronaDiv" style="height:102px; border-bottom:0px solid #ccc; text-align:center; width:100%; background:#02244a;">
 <img alt="2024년 중소기업기술개발지원사업 통합공고 안내" src="/front/images/coronaTop-8.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/>
 <map name="imgmap">
-<area alt="24년 통합공고문 보러 가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=487174&amp;pageIndex=1&amp;noPage=yes" onfocus="blur()" shape="rect" target="_self" title="24년 통합공고문 보러 가기"/>
+<area alt="24년 통합공고문 보러 가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=487174&amp;pageIndex=1&amp;noPage=yes" shape="rect" target="_self" title="24년 통합공고문 보러 가기"/>
 </map>
 </div>
 <div class="gnbNaviN8">
@@ -630,7 +631,9 @@ function fn_MenuMrfnPageMove(url){
 <li><a href="/front/log/member.do">회원가입</a></li>
 <li><a href="/front/log/Info_Correction_Request.do">개인정보정정요청</a></li>
 <li><a href="/front/pdo/pd/publicData02.do">공공데이터제공</a></li>
-<li id="ssoT" style="display:inline-block;"><a href="#" onclick="fn_ssoInterPop(); return;">통합로그인</a></li>
+<li id="ssoT" style="display:inline-block;">
+<button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444">통합로그인</button>
+</li>
 </ul>
 </div>
 <!--// gnb -->
@@ -639,7 +642,7 @@ function fn_MenuMrfnPageMove(url){
 <!-- // maintop -->
 <!-- mainNavi -->
 <!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
-<div class="mainNaviN8" style="z-index:7777; margin-top:102px;">
+<div class="mainNaviN8" id="subheader" style="z-index:7777; margin-top:102px;">
 <!--<div class="mainNaviN8" style="z-index:7777;">-->
 <!-- inb -->
 <div class="inbN8">
@@ -1328,40 +1331,6 @@ $(document).ready(function () {
 <tbody>
 <tr>
 <td class="ac">1</td>
-<td class="ac">시군구연고산업육성(제주)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02768&amp;buclCd=S801C&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 시군구 연고산업 육성사업 공고(제주)</a></td>
-<td class="ac">
-
-	                       	2024. 12. 16 ~ 2024. 12. 27
-	                  	</td>
-<td class="ac">
-	                    	2024-12-11
-
-	                    </td>
-<td class="ac ll">
-<!--12 12 12 23-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">2</td>
-<td class="ac">시군구연고산업육성(세종)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02767&amp;buclCd=S801D&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 시군구 연고산업 육성사업 공고(세종)</a></td>
-<td class="ac">
-
-	                       	2024. 12. 16 ~ 2024. 12. 27
-	                  	</td>
-<td class="ac">
-	                    	2024-12-11
-
-	                    </td>
-<td class="ac ll">
-<!--12 12 12 23-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">3</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02701&amp;buclCd=S6041&amp;dtlAncmSn=13&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2024년 중소기업 연구인력지원사업(파견) 12월 공고</a></td>
 <td class="ac">
@@ -1373,12 +1342,29 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--12 12 12 23-->
+<!--12 12 12 30-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">4</td>
+<td class="ac">2</td>
+<td class="ac">시군구연고산업육성(제주)</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02768&amp;buclCd=S801C&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 시군구 연고산업 육성사업 공고(제주)</a></td>
+<td class="ac">
+
+	                       	2024. 12. 16 ~ 2024. 12. 27
+	                  	</td>
+<td class="ac">
+	                    	2024-12-11
+
+	                    </td>
+<td class="ac ll">
+<!--12 12 12 30-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">3</td>
 <td class="ac">시군구연고산업육성</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02766&amp;buclCd=S801B&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 시군구 연고산업육성 협업프로젝트 공고(2차)</a></td>
 <td class="ac">
@@ -1390,7 +1376,24 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--12 12 12 23-->
+<!--12 12 12 30-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">4</td>
+<td class="ac">시군구연고산업육성(세종)</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02767&amp;buclCd=S801D&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 시군구 연고산업 육성사업 공고(세종)</a></td>
+<td class="ac">
+
+	                       	2024. 12. 16 ~ 2024. 12. 27
+	                  	</td>
+<td class="ac">
+	                    	2024-12-11
+
+	                    </td>
+<td class="ac ll">
+<!--12 12 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1407,7 +1410,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 12 12 23-->
+<!--11 12 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1424,7 +1427,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 12 23-->
+<!--11 11 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1441,7 +1444,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 12 23-->
+<!--11 11 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1458,7 +1461,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 12 23-->
+<!--11 11 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1475,7 +1478,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 12 23-->
+<!--11 11 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1492,7 +1495,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--10 10 12 23-->
+<!--10 10 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1509,7 +1512,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--10 10 12 23-->
+<!--10 10 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1526,7 +1529,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 12 23-->
+<!--9 10 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1543,7 +1546,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 9 12 23-->
+<!--9 9 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1560,7 +1563,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 9 12 23-->
+<!--9 9 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1577,7 +1580,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--8 9 12 23-->
+<!--8 9 12 30-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>

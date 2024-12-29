@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1214; // 전체 조회 건수
+	var totalNum = 1215; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -190,7 +190,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1214</b>건
+<span>총 <b>1215</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -230,11 +230,14 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3416&amp;page=1">2024 AI+Security 성과공유회 개최 안내(12.20, 드리움 역삼점)</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3418&amp;page=1">[기한 연장] 제3회 협력기업·기관 대상 일자리 창출 콘테스트 개최 안내(~12.26, 목)</a>
 </td>
-<td class="date">2024-12-16</td>
-<td class="count">4181</td>
+<td class="date">2024-12-23</td>
+<td class="count">3996</td>
 <td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3418', 1, 'KO');">
+<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
+</a>
 </td>
 </tr>
 <tr class="notice">
@@ -242,7 +245,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3413&amp;page=1">한국인터넷진흥원 비상임이사 모집 공고</a>
 </td>
 <td class="date">2024-12-09</td>
-<td class="count">8154</td>
+<td class="count">12104</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3413', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -251,40 +254,19 @@ function oneDepMenu() {
 </tr>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3412&amp;page=1">2024년 대국민 KISA 이메일 지우개 캠페인 개최(~12. 15, 일)</a>
-</td>
-<td class="date">2024-12-06</td>
-<td class="count">9298</td>
-<td class="attach">
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3394&amp;page=1">2024 CVC 워크숍 접수 안내(~11.19(화) 까지)</a>
-</td>
-<td class="date">2024-11-11</td>
-<td class="count">19614</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3394', 1, 'KO');">
-<img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
-</a>
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3303&amp;page=1">보안 전문가가 알려주는 5가지 보안 수칙</a>
 </td>
 <td class="date">2024-08-12</td>
-<td class="count">58104</td>
+<td class="count">62033</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1209</td>
+<td class="num">1212</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3417&amp;page=1">2024년 KISA 사이버보안 성과 발표회(12.11.수) 자료집</a>
 </td>
 <td class="date">2024-12-18</td>
-<td class="count">1487</td>
+<td class="count">4236</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3417', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -292,11 +274,20 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1208</td>
+<td class="num">1211</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3416&amp;page=1">2024 AI+Security 성과공유회 개최 안내(12.20, 드리움 역삼점)</a>
+</td>
+<td class="date">2024-12-16</td>
+<td class="count">7017</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1210</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3415&amp;page=1">제3회 협력기업·기관 대상 일자리 창출 콘테스트 개최 안내(~12.19, 목)</a>
 </td>
 <td class="date">2024-12-11</td>
-<td class="count">5708</td>
+<td class="count">7977</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3415', 1, 'KO');">
 <img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
@@ -304,20 +295,29 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1207</td>
+<td class="num">1209</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3414&amp;page=1">한국인터넷진흥원 중장기 경영목표 및 전략체계 사후 유효성 진단 실시</a>
 </td>
 <td class="date">2024-12-11</td>
-<td class="count">3057</td>
+<td class="count">3718</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1206</td>
+<td class="num">1208</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3412&amp;page=1">2024년 대국민 KISA 이메일 지우개 캠페인 개최(~12. 15, 일)</a>
+</td>
+<td class="date">2024-12-06</td>
+<td class="count">9940</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1207</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3411&amp;page=1">2026년도 개인정보 보호·활용 기술 R&amp;D사업 기술수요조사(~24년 12월 20일까지)</a>
 </td>
 <td class="date">2024-12-05</td>
-<td class="count">3101</td>
+<td class="count">3396</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3411', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -325,11 +325,11 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1205</td>
+<td class="num">1206</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3410&amp;page=1">2024 KOREA LBS DAY</a>
 </td>
 <td class="date">2024-12-05</td>
-<td class="count">3413</td>
+<td class="count">3683</td>
 <td class="attach">
 </td>
 </tr>
@@ -358,10 +358,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2024-12-20</dd>
+<dd>2024-12-24</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="ebb86fa1-76ca-44ab-b52f-68dca3ecafc0">
+<input name="_csrf" type="hidden" value="24770b96-e0bd-4eff-b3c8-08a00ae4c610">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -384,7 +384,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "ebb86fa1-76ca-44ab-b52f-68dca3ecafc0");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "24770b96-e0bd-4eff-b3c8-08a00ae4c610");
             },			
 			success: function(data) {
 				alert(data.message)
