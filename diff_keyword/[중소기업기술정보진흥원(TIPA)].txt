@@ -632,7 +632,7 @@ function fn_MenuMrfnPageMove(url){
 <li><a href="/front/log/Info_Correction_Request.do">개인정보정정요청</a></li>
 <li><a href="/front/pdo/pd/publicData02.do">공공데이터제공</a></li>
 <li id="ssoT" style="display:inline-block;">
-<button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444">통합로그인</button>
+<button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444" title="새창으로 열림">통합로그인</button>
 </li>
 </ul>
 </div>
@@ -955,7 +955,7 @@ function fn_MenuMrfnPageMove(url){
 <ul class="siteinfo">
 <li><a href="/front/log/login.do?returnUrl=%2ffront%2fifg%2fno%2fnotice02_list.do">로그인</a></li>
 <li><a href="/front/log/member.do">회원가입</a></li>
-<li><a href="https://www.tipa.or.kr/s0801" onclick="window.open(this.href,'_blank','scrollbars=yes, width=800, height=600'); return false;">개인정보처리방침</a></li>
+<li><a href="https://www.tipa.or.kr/s0801" onclick="window.open(this.href,'_blank','scrollbars=yes, width=800, height=600'); return false;" title="새창으로 열림">개인정보처리방침</a></li>
 <li><a href="/front/etc/guide.do">사이트이용약관</a></li>
 <li><a href="/front/etc/rejection.do">이메일무단수집거부</a></li>
 </ul>
@@ -1342,7 +1342,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--12 12 1 6-->
+<!--12 12 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1359,7 +1359,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--12 12 1 6-->
+<!--12 12 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1376,7 +1376,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--12 12 1 6-->
+<!--12 12 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1393,7 +1393,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--12 12 1 6-->
+<!--12 12 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1410,7 +1410,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 12 1 6-->
+<!--11 12 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1427,7 +1427,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 1 6-->
+<!--11 11 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1444,7 +1444,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 1 6-->
+<!--11 11 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1461,7 +1461,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 1 6-->
+<!--11 11 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1478,7 +1478,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--11 11 1 6-->
+<!--11 11 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1495,7 +1495,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--10 10 1 6-->
+<!--10 10 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1512,7 +1512,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--10 10 1 6-->
+<!--10 10 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1529,7 +1529,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 1 6-->
+<!--9 10 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1546,7 +1546,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 9 1 6-->
+<!--9 9 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1563,7 +1563,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 9 1 6-->
+<!--9 9 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1580,7 +1580,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--8 9 1 6-->
+<!--8 9 1 13-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1610,19 +1610,18 @@ $(document).ready(function () {
 <style>
 	#pipp:hover{
 		text-decoration: underline;
-		font-weight: bolder;
-		font-size: larger;
+		font-size: 1.09rem;
 	}
 </style>
 <div class="cb"></div>
 <!-- footer -->
 <div id="footer">
-<div class="footer_conN8">
-<ul class="etcN8">
+<div class="footer_conN8" style="text-align: center;">
+<ul class="etcN8" style="display: inline-flex;">
 <!-- 501226_이호승_[SMTECH 홈페이지 개선] 기관 개인정보처리방침 개정에 따른 연계 방식 변경 요청
                     <li style="background-color: #777;"><a href="/front/etc/care.do" style="color: #FFE400"><b>개인정보처리방침</b></a></li> -->
 <li style="background-color: #777;">
-<a href="https://www.tipa.or.kr/s0801" id="pipp" onclick="window.open(this.href,'_blank','scrollbars=yes, width=800, height=600'); return false;" style="color: #FFE400"><b>개인정보처리방침</b></a>
+<a href="https://www.tipa.or.kr/s0801" id="pipp" onclick="window.open(this.href,'_blank','scrollbars=yes, width=800, height=600'); return false;" style="color: #FFE400" title="새창으로 열림"><b>개인정보처리방침</b></a>
 </li>
 <li><a href="/front/etc/guide.do">이용약관</a></li>
 <li><a href="/front/etc/rejection.do">이메일 무단수집거부</a></li>

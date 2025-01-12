@@ -45,9 +45,9 @@
         var InstallWay = "Browser";
         window.addEventListener('appinstalled', async (evt) => {
             await axios.post("/home/postpwainstallstate", {
-                UserId: "3LRrQwYaxW34esi1WD9E8eaaCb0O1dX2HZ4ub2AQ3m6frYx6kdJHEnR1C06x8hBdceZdiAD6wNaVP-zbnoMv7REst_8fzjBu2DiQY4l6uh0Nim2f5cQ_RPytSgD25jjpZTTt_g2",
+                UserId: "zGyBqSqDu8zciSBT9Inlz8MVybXSpjOCuABQB4D60VQ23cDYzd-qxfElVPGOONqUPJuGxTVdsmfpPLXL04eeIXvPUkJh7X8O_SR2vcpb8EIF1gUe7OpnFLswsRlRNmyh4PQ5pA2",
                 Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "3LRrQwYaxW34esi1WD9E8eaaCb0O1dX2HZ4ub2AQ3m6frYx6kdJHEnR1C06x8hBdceZdiAD6wNaVP-zbnoMv7REst_8fzjBu2DiQY4l6uh0Nim2f5cQ_RPytSgD25jjpZTTt_g2" === "3LRrQwYaxW34esi1WD9E8eaaCb0O1dX2HZ4ub2AQ3m6frYx6kdJHEnR1C06x8hBdceZdiAD6wNaVP-zbnoMv7REst_8fzjBu2DiQY4l6uh0Nim2f5cQ_RPytSgD25jjpZTTt_g2" ? "Anonymous" : "User",
+                UserType: "zGyBqSqDu8zciSBT9Inlz8MVybXSpjOCuABQB4D60VQ23cDYzd-qxfElVPGOONqUPJuGxTVdsmfpPLXL04eeIXvPUkJh7X8O_SR2vcpb8EIF1gUe7OpnFLswsRlRNmyh4PQ5pA2" === "zGyBqSqDu8zciSBT9Inlz8MVybXSpjOCuABQB4D60VQ23cDYzd-qxfElVPGOONqUPJuGxTVdsmfpPLXL04eeIXvPUkJh7X8O_SR2vcpb8EIF1gUe7OpnFLswsRlRNmyh4PQ5pA2" ? "Anonymous" : "User",
                 UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
                 InstallWay: InstallWay
             });
@@ -84,10 +84,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': '3LRrQwYaxW34esi1WD9E8eaaCb0O1dX2HZ4ub2AQ3m6frYx6kdJHEnR1C06x8hBdceZdiAD6wNaVP-zbnoMv7REst_8fzjBu2DiQY4l6uh0Nim2f5cQ_RPytSgD25jjpZTTt_g2'
+            'user_id': 'zGyBqSqDu8zciSBT9Inlz8MVybXSpjOCuABQB4D60VQ23cDYzd-qxfElVPGOONqUPJuGxTVdsmfpPLXL04eeIXvPUkJh7X8O_SR2vcpb8EIF1gUe7OpnFLswsRlRNmyh4PQ5pA2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': '3LRrQwYaxW34esi1WD9E8eaaCb0O1dX2HZ4ub2AQ3m6frYx6kdJHEnR1C06x8hBdceZdiAD6wNaVP-zbnoMv7REst_8fzjBu2DiQY4l6uh0Nim2f5cQ_RPytSgD25jjpZTTt_g2'
+            'crm_id': 'zGyBqSqDu8zciSBT9Inlz8MVybXSpjOCuABQB4D60VQ23cDYzd-qxfElVPGOONqUPJuGxTVdsmfpPLXL04eeIXvPUkJh7X8O_SR2vcpb8EIF1gUe7OpnFLswsRlRNmyh4PQ5pA2'
         });
     </script>
 <script>
@@ -154,7 +154,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?0949e3a7dc4e7dac"></script><style>body {
+<script src="/Content/dist/js/preload.js?fa1fdd09dbf2f146"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +168,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?0949e3a7dc4e7dac"></script><script defer="defer" src="/Content/dist/js/default.js?0949e3a7dc4e7dac"></script><link href="/Content/dist/css/default.css?0949e3a7dc4e7dac" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?fa1fdd09dbf2f146"></script><script defer="defer" src="/Content/dist/js/default.js?fa1fdd09dbf2f146"></script><link href="/Content/dist/css/default.css?fa1fdd09dbf2f146" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2455,7 +2455,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">광고 상품 변경 사전 안내</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 1월 이벤터스 휴무일 안내 : 1/10(금), 1/27(월)~31(금)</a>
 </div>
 </div>
 </div>
@@ -2706,7 +2706,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="FIFOsibQCoaZkN9j10qgktfa1d-CuNB_wLrea_F3KdZik0q_RR-ulyLYQ5sk1cumXN5EYQaYjmRO7mCjnHW7Ev_ZoTg1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="IC5uG4gCGXFySlPT0KLmwJ8czN517JS7BqpZLypufl_h5JcomsNlxrKzvHl0qGVD2XhwjvhIKrSqAuxR-k_c_uiz2T81"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3648,6 +3648,24 @@
                             }
                         };
                     })(),
+                    adProductClick() {
+                        const anchor = event.target.closest('a');
+                        let clickText = anchor.innerText;
+                        gtag('event', 'ad_download', {
+                            'page_path': location.href,
+                            'click_url': anchor.href.split('?')[0],
+                            'click_text': clickText,
+                        });
+                    },
+                    adInquiryClick() {
+                        const anchor = event.target.closest('a');
+                        let clickText = anchor.innerText;
+                        gtag('event', 'click_consult', {
+                            'page_path': location.href,
+                            'click_url': anchor.href.split('?')[0],
+                            'click_text': clickText,
+                        });
+                    },
                     onClickAdProposal(e, position) {
                         const anchor = event.target.closest('a');
                         let clickText = anchor.innerText;
@@ -4058,7 +4076,7 @@
                     this.setPwaCookie();
                 },
                 setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', '3LRrQwYaxW34esi1WD9E8eaaCb0O1dX2HZ4ub2AQ3m6frYx6kdJHEnR1C06x8hBdceZdiAD6wNaVP-zbnoMv7REst_8fzjBu2DiQY4l6uh0Nim2f5cQ_RPytSgD25jjpZTTt_g2', expiredDaysFromToday ?? 1);
+                    util.setCookie('PwaModalClose', 'zGyBqSqDu8zciSBT9Inlz8MVybXSpjOCuABQB4D60VQ23cDYzd-qxfElVPGOONqUPJuGxTVdsmfpPLXL04eeIXvPUkJh7X8O_SR2vcpb8EIF1gUe7OpnFLswsRlRNmyh4PQ5pA2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#pwa-prompt-popup');
@@ -4158,8 +4176,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":6311,"New_Start_Date":"2025-01-01T00:00:00","New_End_Date":"2025-01-14T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-01T13:31:30.210015","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/3eba620d048b4dc29a78f87095a19a43.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/351f12b70af9480b8ab51c01e8bbb8ea.png","Click_Url":"https://event-us.kr/webinar/event/97266?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=cmmtycmbnc","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"실제 개인정보 유출사례로 알아보는","BannerDescription":"개인정보 보호 필수 대응 전략","BannerDate":"2025. 01. 14.(화) 15:00","BannerPlace":"온라인 행사"},{"Id":6342,"New_Start_Date":"2025-01-04T00:00:00","New_End_Date":"2025-01-16T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-04T12:48:26.8126834","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/bfa120b2e4ef44a983eb92e7ab7f1c45.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ce7ee16a15944a03aeee5da63d0699ea.png","Click_Url":"https://event-us.kr/m/97375/29039","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"수백 건의 앱 배포로 알게 된","BannerDescription":"성공적인 앱 개발 A-Z","BannerDate":"2025. 01. 16.(목) 14:00","BannerPlace":"온라인 행사"}],
-                    searchResultBanners: [{"Id":"97375","CoverImageUrl":"/Image/webinar/97375/ProjectInfo/Cover/ac4c5677c6b54d48b4044048ec5e0762.png","Title":"수백 건의 앱 배포로 알게 된 성공적인 앱 개발 A-Z","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"IT/프로그래밍","Category2":"프로그래밍","StartDate":"2025-01-16T14:00:00","CloseDate":"2025-01-16T15:00:00","RegisterStartDate":"2025-01-03T12:30:00","RegisterDueDate":"2025-01-16T12:30:00","ViewCount":148,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-01-03T14:49:52.5726146","EventSystemType":"online","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":258,"ProjectTags":[{"Id":97526,"ProjectId":"97375","ProjectSubDomain":"webinar","TagId":388,"Date":"2025-01-03T14:49:52.6194918","Sort":4,"Project":null,"Tag":null},{"Id":97540,"ProjectId":"97375","ProjectSubDomain":"webinar","TagId":3067,"Date":"2025-01-03T15:22:41.45323","Sort":0,"Project":null,"Tag":null},{"Id":97541,"ProjectId":"97375","ProjectSubDomain":"webinar","TagId":1125,"Date":"2025-01-03T15:22:41.45323","Sort":1,"Project":null,"Tag":null},{"Id":97542,"ProjectId":"97375","ProjectSubDomain":"webinar","TagId":21361,"Date":"2025-01-03T15:22:41.45323","Sort":2,"Project":null,"Tag":null},{"Id":97543,"ProjectId":"97375","ProjectSubDomain":"webinar","TagId":21362,"Date":"2025-01-03T15:22:41.45323","Sort":3,"Project":null,"Tag":null}],"pitId":6341,"IsAdCheck":true,"IsSupportAd":true,"IsAdMark":true,"Url":"https://event-us.kr/m/97375/29038","CorrectionValue":0.0},{"Id":"97266","CoverImageUrl":"/Image/webinar/97266/ProjectInfo/Cover/d908dafacd8d4cbf9abfaff7e7c5da0f.png","Title":"실제 개인정보 유출 사례로 알아보는 개인정보 보호 필수 대응 전략","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"IT/프로그래밍","Category2":"IT","StartDate":"2025-01-14T15:00:00","CloseDate":"2025-01-14T16:00:00","RegisterStartDate":"2025-01-01T12:30:00","RegisterDueDate":"2025-01-14T12:30:00","ViewCount":503,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-01-01T12:02:56.118671","EventSystemType":"online","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":258,"ProjectTags":[{"Id":97161,"ProjectId":"97266","ProjectSubDomain":"webinar","TagId":388,"Date":"2025-01-01T12:02:56.1499214","Sort":4,"Project":null,"Tag":null},{"Id":97165,"ProjectId":"97266","ProjectSubDomain":"webinar","TagId":3386,"Date":"2025-01-01T12:45:22.0598542","Sort":0,"Project":null,"Tag":null},{"Id":97166,"ProjectId":"97266","ProjectSubDomain":"webinar","TagId":21301,"Date":"2025-01-01T12:45:22.0598542","Sort":1,"Project":null,"Tag":null},{"Id":97167,"ProjectId":"97266","ProjectSubDomain":"webinar","TagId":759,"Date":"2025-01-01T12:45:22.0598542","Sort":2,"Project":null,"Tag":null},{"Id":97168,"ProjectId":"97266","ProjectSubDomain":"webinar","TagId":21302,"Date":"2025-01-01T12:45:22.0598542","Sort":3,"Project":null,"Tag":null}],"pitId":6312,"IsAdCheck":true,"IsSupportAd":true,"IsAdMark":true,"Url":"https://event-us.kr/m/97266/28875","CorrectionValue":0.0}],
+                    banners: [{"Id":6342,"New_Start_Date":"2025-01-04T00:00:00","New_End_Date":"2025-01-16T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-04T12:48:26.8126834","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/bfa120b2e4ef44a983eb92e7ab7f1c45.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ce7ee16a15944a03aeee5da63d0699ea.png","Click_Url":"https://event-us.kr/webinar/event/97375?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=axskac8nkc","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"수백 건의 앱 배포로 알게 된","BannerDescription":"성공적인 앱 개발 A-Z","BannerDate":"2025. 01. 16.(목) 14:00","BannerPlace":"온라인 행사"},{"Id":6345,"New_Start_Date":"2025-01-09T00:00:00","New_End_Date":"2025-01-15T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-08T21:15:43.7663011","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e0cdb3ec81194188af049984d143bd7d.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/670b96839efb4597bb857c8922f23ef4.png","Click_Url":"https://event-us.kr/spartabuilders/event/96918","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"국내 유수 기업 실전 사례로 보는","BannerDescription":"성공적인 IT 아웃소싱 전략","BannerDate":"2025. 01. 24.(금) 12:00","BannerPlace":"오프라인 행사"},{"Id":6355,"New_Start_Date":"2025-01-08T00:00:00","New_End_Date":"2025-01-21T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-08T21:56:49.9359351","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4e42c9d5753f4214883c5075ff193873.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a935b516324548ce82ff2cb1ea002966.png","Click_Url":"https://event-us.kr/webinar/event/97591?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=ncacwemnnk","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"사업 계획부터 성공 판정까지","BannerDescription":"25년 정부지원사업 합격 전략 A-Z","BannerDate":"2025. 01. 21.(화) 14:00","BannerPlace":"온라인 행사"},{"Id":6311,"New_Start_Date":"2025-01-01T00:00:00","New_End_Date":"2025-01-14T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-01T13:31:30.210015","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/3eba620d048b4dc29a78f87095a19a43.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/351f12b70af9480b8ab51c01e8bbb8ea.png","Click_Url":"https://event-us.kr/webinar/event/97266?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=cmmtycmbnc","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"실제 개인정보 유출사례로 알아보는","BannerDescription":"개인정보 보호 필수 대응 전략","BannerDate":"2025. 01. 14.(화) 15:00","BannerPlace":"온라인 행사"}],
+                    searchResultBanners: [{"Id":"97591","CoverImageUrl":"/Image/webinar/97591/ProjectInfo/Cover/7fddd3f36565478483ef7e1f1aac7e3f.png","Title":"2025 정부지원사업 합격 전략 A-Z : 사업 계획부터 성공 판정까지","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"창업","Category2":"정부지원사업","StartDate":"2025-01-21T14:00:00","CloseDate":"2025-01-21T15:00:00","RegisterStartDate":"2025-01-08T16:00:00","RegisterDueDate":"2025-01-21T12:30:00","ViewCount":363,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-01-08T15:01:01.6529662","EventSystemType":"online","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":258,"ProjectTags":[{"Id":98125,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":388,"Date":"2025-01-08T15:01:01.6998425","Sort":4,"Project":null,"Tag":null},{"Id":98166,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":12204,"Date":"2025-01-08T16:07:30.6412987","Sort":0,"Project":null,"Tag":null},{"Id":98167,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":5491,"Date":"2025-01-08T16:07:30.6412987","Sort":1,"Project":null,"Tag":null},{"Id":98168,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":134,"Date":"2025-01-08T16:07:30.6412987","Sort":2,"Project":null,"Tag":null},{"Id":98169,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":21482,"Date":"2025-01-08T16:07:30.6412987","Sort":3,"Project":null,"Tag":null}],"pitId":6351,"IsAdCheck":true,"IsSupportAd":true,"IsAdMark":true,"Url":"https://event-us.kr/m/97591/29266","CorrectionValue":0.0},{"Id":"97346","CoverImageUrl":"/Image/dcampprogram/97346/ProjectInfo/Cover/71b3353e344b4a288e58d44726c94e52.png","Title":"투자로 가는 가장 빠른 방법, 1월 d·camp officehours","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dcampprogram/TopLogoImage/ba6cc428bacb4fc68563fbcc803c8bbc.png","EventType":"멘토링/대외활동","Category":"창업","Category2":"스타트업","StartDate":"2025-02-03T09:00:00","CloseDate":"2025-02-07T17:00:00","RegisterStartDate":"2025-01-03T09:00:00","RegisterDueDate":"2025-01-19T23:30:00","ViewCount":506,"AppSubDomain":"dcampprogram","IsSuper":false,"AppTitle":"디캠프 성장팀","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 선릉로 551","EventAddressTitle":"디캠프","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-01-03T09:35:10.3893027","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":97434,"ProjectId":"97346","ProjectSubDomain":"dcampprogram","TagId":59,"Date":"2025-01-03T09:45:11.9832444","Sort":0,"Project":null,"Tag":null},{"Id":97435,"ProjectId":"97346","ProjectSubDomain":"dcampprogram","TagId":178,"Date":"2025-01-03T09:45:11.9832444","Sort":1,"Project":null,"Tag":null},{"Id":97436,"ProjectId":"97346","ProjectSubDomain":"dcampprogram","TagId":1121,"Date":"2025-01-03T09:45:11.9832444","Sort":2,"Project":null,"Tag":null},{"Id":97437,"ProjectId":"97346","ProjectSubDomain":"dcampprogram","TagId":2372,"Date":"2025-01-03T09:45:11.9832444","Sort":3,"Project":null,"Tag":null},{"Id":97438,"ProjectId":"97346","ProjectSubDomain":"dcampprogram","TagId":136,"Date":"2025-01-03T09:45:11.9832444","Sort":4,"Project":null,"Tag":null}],"pitId":6323,"IsAdCheck":true,"IsSupportAd":true,"IsAdMark":true,"Url":null,"CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
