@@ -128,8 +128,8 @@ function fnAnnoView(key){
 </script>
 </head>
 <body>
-<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhn7Gvbe7HBsbEHq/2+VArLsbWfEYUWZ+YCpxm4QxnZeJ+picTgEX9kUlVdDAA6W1kKHAAQDDeUIp+agE/NhvkFKCyEIgCV47s50S48LxkIfk9HvD4AzgTSR1LgN9MXpm8FkyxtIjOlnzBlLOEF5m7maLN6tlHl83w95mqcynR95PN5+FD52VzP2pdjGxzP7DcA=="/>
-<input name="csSignature" type="hidden" value="1keuN+7DRH3Nmg2fqpMKCQ=="/>
+<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsGRAydsNEEwGrSBdDjuPGgRjxaJABVv48L7I40xFvSRUWV7/mr7y35VrTrrQmim3eIfiNbrxNQCvcFFCNiKtL/UCD7PH9+bYtgqfBbH23L7t20AONkdsbdNSZB8pUe4qL0DNO0ZvTCulxuF7wNuE//me08XK5uvp1LAvVAjdsjcK7ien5PZiCQ0cIzEpdvHtw=="/>
+<input name="csSignature" type="hidden" value="9CZUN/ZFmsHWR/RPUPDVsQ=="/>
 <input id="returnURL" name="returnURL" type="hidden" value=""/>
 <input id="userId" name="userId" type="hidden" value="">
 <input id="loginType" name="loginType" type="hidden" value=""/>
@@ -218,8 +218,8 @@ function fnAnnoView(key){
 <div class="table_set">
 <h3 class="txt_coop_001">공동연구공고 검색</h3>
 <div class="search">
-<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhn7Gvbe7HBsbEHq/2+VArLsu7XZi3H/HC5edcvDt16XslYpT2XYimB97agxRsIe/xMvaR7AbhWmnCnwbO00iPm76Xu2UJSlQDJD3WDO0tjpAFSOFX1UTZNc/djigIYHrEa4nKFjWExLvj3rFl3a+DjNosswiNmiY75ZfMJfh3Qv5"/>
-<input name="csSignature" type="hidden" value="1keuN+7DRH3Nmg2fqpMKCQ=="/>
+<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsGRAydsNEEwGrSBdDjuPGhEro+T3M7gfWtaV7DYKm2I/E7BfUXjQQQ3OtlaSbAlKBlW12hnDMdJJDgwDg8Z2e3xtRIiI4h9g4QUzE+8SaK9ZB9NfUX83VZKhiSpQJMN1cDXFTtxL9MWp/MZ0pCE+p5UuF+5R23SvRktyGQFGzDJ"/>
+<input name="csSignature" type="hidden" value="9CZUN/ZFmsHWR/RPUPDVsQ=="/>
 <script type="text/javascript">
 $(document).ready(function(){
     $('#searchStartDate').focus(function(){
@@ -276,8 +276,8 @@ $(document).ready(function(){
 <div class="table_set">
 <div class="total_page">
 <ul>
-<li><strong>Total</strong> : <span>2881</span></li>
-<li class="ml10"><strong>Page</strong> : <span>1/289</span></li>
+<li><strong>Total</strong> : <span>2894</span></li>
+<li class="ml10"><strong>Page</strong> : <span>1/290</span></li>
 </ul>
 <div class="txt_n">
 <span class="fc_d71010">*</span> 공고명을 클릭하시면 상세 정보를 볼수 있습니다.
@@ -308,17 +308,35 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    3011-2025-00001
+                                    7211-2025-00001
                                         
                                     
                                     </td>
-<td title="(재공고) 차세대 V2X용 무선 connectivity 제공을 위한 광대역 전송 기술 연구">
+<td title="호남권 지역산업 기반 ICT 융합기술 개발 공동연구">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('3011-2025-00001')">(재공고) 차세대 V2X용 무선 connectivity 제공을 위한 광대역 전송 기술 연구</a>
+<a href="javascript:fnAnnoView('7211-2025-00001')">호남권 지역산업 기반 ICT 융합기술 개발 공동연구</a>
 </div>
 </td>
-<td>2025-01-03</td>
-<td>2025-01-09</td>
+<td>2025-01-14</td>
+<td>2025-01-20</td>
+<td>공모접수중</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7111-2025-00002
+                                        
+                                    
+                                    </td>
+<td title="생체신호 기반 수면 모니터링 및 환경 관리 솔루션 개발">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7111-2025-00002')">생체신호 기반 수면 모니터링 및 환경 관리 솔루션 개발</a>
+</div>
+</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -326,17 +344,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    7111-2024-00037
+                                    7111-2025-00003
                                         
                                     
                                     </td>
-<td title="친환경 탄소중립 스마트 가든 데이터 관제 기술 개발">
+<td title="수술보조로봇을 위한 이종 센서 데이터 기반 내시경 카메라 제어 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2024-00037')">친환경 탄소중립 스마트 가든 데이터 관제 기술 개발</a>
+<a href="javascript:fnAnnoView('7111-2025-00003')">수술보조로봇을 위한 이종 센서 데이터 기반 내시경 카메라 제어 기술 개발</a>
 </div>
 </td>
-<td>2024-12-27</td>
-<td>2025-01-03</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -344,17 +362,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    7111-2024-00040
+                                    7111-2025-00004
                                         
                                     
                                     </td>
-<td title="산업 진동 환경 대응형 지진 감지 및 실시간 경보 장치 개발">
+<td title="약품 조제 포장 검수 자동화를 위한 인공지능 기반 요소기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2024-00040')">산업 진동 환경 대응형 지진 감지 및 실시간 경보 장치 개발</a>
+<a href="javascript:fnAnnoView('7111-2025-00004')">약품 조제 포장 검수 자동화를 위한 인공지능 기반 요소기술 개발</a>
 </div>
 </td>
-<td>2024-12-27</td>
-<td>2025-01-03</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -362,17 +380,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    7111-2024-00038
+                                    7111-2025-00001
                                         
                                     
                                     </td>
-<td title="디지털 미래농업을 위한 생체정보 수집 센서 요소기술 개발">
+<td title="난임시술 및 일상생활 데이터 기반 가임력 증진 및 임신 성공률 예측을 위한 핵심 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2024-00038')">디지털 미래농업을 위한 생체정보 수집 센서 요소기술 개발</a>
+<a href="javascript:fnAnnoView('7111-2025-00001')">난임시술 및 일상생활 데이터 기반 가임력 증진 및 임신 성공률 예측을 위한 핵심 기술 개발</a>
 </div>
 </td>
-<td>2024-12-27</td>
-<td>2025-01-03</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -380,17 +398,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    7111-2024-00039
+                                    7111-2025-00012
                                         
                                     
                                     </td>
-<td title="친환경 방재를 위한 이동형 UV방제 기술(제품)개발">
+<td title="AI 기반 물고기 영상 분석을 통한 스마트 양식 시스템 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2024-00039')">친환경 방재를 위한 이동형 UV방제 기술(제품)개발</a>
+<a href="javascript:fnAnnoView('7111-2025-00012')">AI 기반 물고기 영상 분석을 통한 스마트 양식 시스템 기술 개발</a>
 </div>
 </td>
-<td>2024-12-27</td>
-<td>2025-01-03</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -398,17 +416,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    7111-2024-00041
+                                    7111-2025-00008
                                         
                                     
                                     </td>
-<td title="무인 수상 로봇을 이용한 수질 환경 데이터 수집 및 분석을 통한 녹조 예측 시스템 ">
+<td title="주차장 경로 안내 기술 기반 AI 최적 주차 위치 안내 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2024-00041')">무인 수상 로봇을 이용한 수질 환경 데이터 수집 및 분석을 통한 녹조 예측 시스템 </a>
+<a href="javascript:fnAnnoView('7111-2025-00008')">주차장 경로 안내 기술 기반 AI 최적 주차 위치 안내 기술 개발</a>
 </div>
 </td>
-<td>2024-12-27</td>
-<td>2025-01-03</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -416,17 +434,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    7111-2024-00042
+                                    7111-2025-00005
                                         
                                     
                                     </td>
-<td title="지능형 쓰레기감시 솔루션 개발">
+<td title="온디바이스AI 기반 제조 공정 모니터링 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2024-00042')">지능형 쓰레기감시 솔루션 개발</a>
+<a href="javascript:fnAnnoView('7111-2025-00005')">온디바이스AI 기반 제조 공정 모니터링 기술 개발</a>
 </div>
 </td>
-<td>2024-12-27</td>
-<td>2025-01-03</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -434,17 +452,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    3011-2024-00001
+                                    7111-2025-00007
                                         
                                     
                                     </td>
-<td title="차세대 V2X용 무선 connectivity 제공을 위한 광대역 전송 기술 연구">
+<td title="AIoT기반 건설 현장 안전 모니터링 시스템 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('3011-2024-00001')">차세대 V2X용 무선 connectivity 제공을 위한 광대역 전송 기술 연구</a>
+<a href="javascript:fnAnnoView('7111-2025-00007')">AIoT기반 건설 현장 안전 모니터링 시스템 기술 개발</a>
 </div>
 </td>
-<td>2024-12-05</td>
-<td>2024-12-11</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 <tr>
@@ -452,35 +470,17 @@ $(document).ready(function(){
                                     
                                         
                                         
-                                    5011-2024-00006
+                                    7111-2025-00006
                                         
                                     
                                     </td>
-<td title="VTOL 기반 AAM 참조기체 2기 제작 및 자율비행 기술 통합">
+<td title="경량 고속 AI기반 교차로 이상상황 검지 시스템 기술 개발">
 <div class="text_one_line">
-<a href="javascript:fnAnnoView('5011-2024-00006')">VTOL 기반 AAM 참조기체 2기 제작 및 자율비행 기술 통합</a>
+<a href="javascript:fnAnnoView('7111-2025-00006')">경량 고속 AI기반 교차로 이상상황 검지 시스템 기술 개발</a>
 </div>
 </td>
-<td>2024-11-06</td>
-<td>2024-11-12</td>
-<td>마감</td>
-</tr>
-<tr>
-<td>
-                                    
-                                        
-                                        
-                                    5011-2024-00005
-                                        
-                                    
-                                    </td>
-<td title="MEMS 기반 비침습 혈당 측정 센서 성능 고도화 및 개발 및 임상 평가 시험">
-<div class="text_one_line">
-<a href="javascript:fnAnnoView('5011-2024-00005')">MEMS 기반 비침습 혈당 측정 센서 성능 고도화 및 개발 및 임상 평가 시험</a>
-</div>
-</td>
-<td>2024-09-24</td>
-<td>2024-09-30</td>
+<td>2025-01-13</td>
+<td>2025-01-16</td>
 <td>마감</td>
 </tr>
 </tbody>
@@ -501,7 +501,7 @@ $(document).ready(function(){
 <a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
 <a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
 <a class="direction last" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
-<a class="direction" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=289"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
+<a class="direction" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=290"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
 </div>
 </div>
 </div>
@@ -525,8 +525,8 @@ $(document).ready(function(){
 <div class="spot_2">
 <ul>
 <li>
-<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhn7Gvbe7HBsbEHq/2+VArLvp8zAO61BTTnFAQ2/5VTg9">
-<input name="csSignature" type="hidden" value="1keuN+7DRH3Nmg2fqpMKCQ==">
+<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsGRAydsNEEwGrSBdDjuPGgoAELxJax37QQorpOLtqlv">
+<input name="csSignature" type="hidden" value="9CZUN/ZFmsHWR/RPUPDVsQ==">
 <fieldset>
 <legend>ETRI 직할부서 바로가기</legend>
 <label class="hidden" for="etri_siteurl">ETRI 직할부서 바로가기</label>
@@ -551,8 +551,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhn7Gvbe7HBsbEHq/2+VArLvp8zAO61BTTnFAQ2/5VTg9">
-<input name="csSignature" type="hidden" value="1keuN+7DRH3Nmg2fqpMKCQ==">
+<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsGRAydsNEEwGrSBdDjuPGgoAELxJax37QQorpOLtqlv">
+<input name="csSignature" type="hidden" value="9CZUN/ZFmsHWR/RPUPDVsQ==">
 <fieldset>
 <legend>ETRI SERVICE 바로가기</legend>
 <label class="hidden" for="etri_siteur2">ETRI SERVICE 바로가기</label>
@@ -575,8 +575,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhn7Gvbe7HBsbEHq/2+VArLvp8zAO61BTTnFAQ2/5VTg9"/>
-<input name="csSignature" type="hidden" value="1keuN+7DRH3Nmg2fqpMKCQ=="/>
+<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhsGRAydsNEEwGrSBdDjuPGgoAELxJax37QQorpOLtqlv"/>
+<input name="csSignature" type="hidden" value="9CZUN/ZFmsHWR/RPUPDVsQ=="/>
 <fieldset>
 <legend>ETRI 유관기관 바로가기</legend>
 <label class="hidden" for="etri_siteur3">ETRI 유관기관 바로가기</label>
