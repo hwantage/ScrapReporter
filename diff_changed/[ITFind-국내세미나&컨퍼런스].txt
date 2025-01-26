@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-01-20"></script>
+<script src="/contents/js/func.js?ver=2025-01-27"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -475,7 +475,7 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>2982건</strong></span>
+<span>총 게시물 : <strong>2989건</strong></span>
 <span>현재페이지 : <strong>1/299.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
@@ -506,7 +506,15 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">2982</th>
+<th data-cell-header="번호" scope="row">2989</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13986&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.27] 바이오가스 기반의 친환경 에너지 산업 활성화 방안 / 한국</a></td>
+<td data-cell-header="행사기간">2025-03-27~2025-03-27</td>
+<td data-cell-header="접수기간">2025-01-21~2025-03-26</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">2988</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13978&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.19~20] 수소 연료전지 기반 발전 및 어플리케이션별 활용시장 세미나 / 한국</a></td>
@@ -514,7 +522,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-01~2025-03-18</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2981</th>
+<th data-cell-header="번호" scope="row">2987</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13971&amp;boardParam1=ko&amp;searchTarget2=">국내//[인터배터리 2025] 고성능 LFP 배터리 기술 개발 현황과 시장 확보 전략 [03.07] / 한국</a></td>
@@ -522,7 +530,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-10~2025-03-06</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2980</th>
+<th data-cell-header="번호" scope="row">2986</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13950&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.27] 실무자를 위한 이차전지 핵심소재(양극재,음극재,전해질) 집중 교육 세미나 / 한국</a></td>
@@ -530,7 +538,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-11-01~2025-02-26</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2979</th>
+<th data-cell-header="번호" scope="row">2985</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13866&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.27] 수소 연료전지 기반 발전 및 어플리케이션별 활용시장 세미나 / 한국</a></td>
@@ -538,7 +546,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-10-01~2025-02-26</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2978</th>
+<th data-cell-header="번호" scope="row">2984</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13865&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.26] 청정수소·암모니아 발전(혼소,전소)기술 및 입찰동향과 실증현황 세미나 / 한국</a></td>
@@ -546,7 +554,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-10-01~2025-02-25</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2977</th>
+<th data-cell-header="번호" scope="row">2983</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13857&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.26] 실무자를 위한 폐배터리 재활용/재사용 산업 집중 교육 세미나 / 한국</a></td>
@@ -554,7 +562,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-10-01~2025-02-25</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2976</th>
+<th data-cell-header="번호" scope="row">2982</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13940&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.21] 정유,화학 업계의 미래성장동력 -  액침냉각유 및 지속가능항공유(SAF) 신사업 전략 / 한국</a></td>
@@ -562,7 +570,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-12-05~2025-02-20</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2975</th>
+<th data-cell-header="번호" scope="row">2981</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13979&amp;boardParam1=ko&amp;searchTarget2=">국내//세미콘 코리아 2025 / 한국</a></td>
@@ -570,20 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-15~2025-02-18</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">2974</th>
+<th data-cell-header="번호" scope="row">2980</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13945&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.14] 전력시장 변화에 따른 전력시장 참여방법과 신사업 추진 방안 / 한국</a></td>
 <td data-cell-header="행사기간">2025-02-14~2025-02-14</td>
 <td data-cell-header="접수기간">2024-12-13~2025-02-13</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">2973</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13961&amp;boardParam1=ko&amp;searchTarget2=">국내//AI 시대의 디스플레이 전략 기술 세미나(2025 DOS) / 한국</a></td>
-<td data-cell-header="행사기간">2025-02-13~2025-02-13</td>
-<td data-cell-header="접수기간">2025-01-06~2025-02-12</td>
 </tr>
 </tbody>
 </table>
@@ -621,7 +621,7 @@ function fnMvOrgan(){
 <button type="button">내부사이트 바로가기</button>
 <ul>
 <li><a href="http://www.iitp.kr" rel="noopener noreferrer" target="_blank">정보통신기획평가원</a></li>
-<li><a href="http://annualreport.itfind.or.kr/ver2.rpt" rel="noopener noreferrer" target="_blank">정보통신연차보고서</a></li>
+<li><a href="/publication/whiteandyear/annualReportList.do?selectedCategory=ANNL" target="_blank" title="새창으로 열림">정보통신연차보고서</a></li>
 </ul>
 </div>
 <div><!-- 유관기관 바로가기 -->

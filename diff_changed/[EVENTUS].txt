@@ -6,8 +6,6 @@
 <!-- Ver 2.0 -->
 <title>이벤터스 :: 행사와 함께하는 모든 순간</title>
 <link href="/images/eventus-icon_iphone.png?220325" rel="apple-touch-icon"/>
-<link href="/manifest.json?2023020202" rel="manifest">
-<script src="/Content/neweventus/script/pwa.js?v01"></script>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="telephone=no" name="format-detection"/>
 <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" name="viewport"/>
@@ -42,19 +40,7 @@
 <script charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
 <script>
-        var InstallWay = "Browser";
-        window.addEventListener('appinstalled', async (evt) => {
-            await axios.post("/home/postpwainstallstate", {
-                UserId: "srs6k2KY9XGclfMG0kyFq9OtlK_QQxYUIC7F-_xWQdFh4nwOhBrjB9tNMDLZNHrlAhr57WFGy59cmfaRfrXUqd24IYVFtty0pshYun_PnDzPV1kc1pWFUYgnksUScGw6B8mlIQ2",
-                Device: "False" === "True" ? "Mobile" : "PC",
-                UserType: "srs6k2KY9XGclfMG0kyFq9OtlK_QQxYUIC7F-_xWQdFh4nwOhBrjB9tNMDLZNHrlAhr57WFGy59cmfaRfrXUqd24IYVFtty0pshYun_PnDzPV1kc1pWFUYgnksUScGw6B8mlIQ2" === "srs6k2KY9XGclfMG0kyFq9OtlK_QQxYUIC7F-_xWQdFh4nwOhBrjB9tNMDLZNHrlAhr57WFGy59cmfaRfrXUqd24IYVFtty0pshYun_PnDzPV1kc1pWFUYgnksUScGw6B8mlIQ2" ? "Anonymous" : "User",
-                UserAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
-                InstallWay: InstallWay
-            });
-        });
-        
-
-    </script>
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-75736254-1"></script>
 <script>
@@ -84,10 +70,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'srs6k2KY9XGclfMG0kyFq9OtlK_QQxYUIC7F-_xWQdFh4nwOhBrjB9tNMDLZNHrlAhr57WFGy59cmfaRfrXUqd24IYVFtty0pshYun_PnDzPV1kc1pWFUYgnksUScGw6B8mlIQ2'
+            'user_id': 'WGc3sjLOpSwVvh1e0tRb2i9ULik1M1NkVYwTZMhaWibdOUJC_WTg5EiFEaqI95wE7wX9rtvgvnlsl-IQw6CIVL6kTcrpNzp566VtAkj8mz20sqaGfOPpx8FG1Eb65PivKdNz9g2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'srs6k2KY9XGclfMG0kyFq9OtlK_QQxYUIC7F-_xWQdFh4nwOhBrjB9tNMDLZNHrlAhr57WFGy59cmfaRfrXUqd24IYVFtty0pshYun_PnDzPV1kc1pWFUYgnksUScGw6B8mlIQ2'
+            'crm_id': 'WGc3sjLOpSwVvh1e0tRb2i9ULik1M1NkVYwTZMhaWibdOUJC_WTg5EiFEaqI95wE7wX9rtvgvnlsl-IQw6CIVL6kTcrpNzp566VtAkj8mz20sqaGfOPpx8FG1Eb65PivKdNz9g2'
         });
     </script>
 <script>
@@ -154,7 +140,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?fa1fdd09dbf2f146"></script><style>body {
+<script src="/Content/dist/js/preload.js?c2e450078de80be5"></script><style>body {
         opacity: 0;
       }
 
@@ -168,7 +154,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?fa1fdd09dbf2f146"></script><script defer="defer" src="/Content/dist/js/default.js?fa1fdd09dbf2f146"></script><link href="/Content/dist/css/default.css?fa1fdd09dbf2f146" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?c2e450078de80be5"></script><script defer="defer" src="/Content/dist/js/default.js?c2e450078de80be5"></script><link href="/Content/dist/css/default.css?c2e450078de80be5" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -235,7 +221,7 @@
 <img alt="" height="1" src="https://px.ads.linkedin.com/collect/?pid=4074420&amp;fmt=gif" style="display: none;" width="1"/>
 </noscript>
 <script defer="" src="/contents/js/log.es5.min.js"></script>
-</meta></meta></meta></meta></meta></meta></meta></meta></link></head>
+</meta></meta></meta></meta></meta></meta></meta></meta></head>
 <body class="">
 <!-- GrowthFit Google Tag Manager (noscript) -->
 <noscript>
@@ -1571,81 +1557,7 @@
 </ui-transition-root>
 </header>
 <main class="min-h-screen" id="main">
-<div id="pwa-prompt-popup">
-<ev-modal :open="pwa.isOpened" class="w-full fixed bottom-0 my-0 rounded-b-none rounded-t-2xl">
-<div class="flex flex-col items-center">
-<img class="mb-6" src="/Content/neweventus/image/pwa-prompt-mobile-button.png"/>
-<div class="text-xl">
-                웹 어플리케이션을 설치하고
-            </div>
-<div class="text-xl font-bold mb-4">
-                더 편하게 이벤터스를 이용해보세요.
-            </div>
-<ev-button @click="onClickPwaButton('Popup')" class="border-transparent bg-primary-50 text-primary-500 text-sm mb-6">
-<div class="h-[15px] flex items-center" v-if="pwa.isDownloading">
-<div class="dot-flashing"></div>
-</div>
-<div v-else="">
-                    이벤터스 설치하기
-                </div>
-</ev-button>
-<div @click="onClosePwaPopup" class="text-gray-500 underline">오늘은 그냥 볼게요</div>
-</div>
-</ev-modal>
-</div>
-<style>
-    .dot-flashing {
-        position: relative;
-        width: 10px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: #9880ff;
-        color: #9880ff;
-        animation: dotFlashing 1s infinite linear alternate;
-        animation-delay: .5s;
-    }
-
-    .dot-flashing::before,
-    .dot-flashing::after {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        top: 0;
-    }
-
-    .dot-flashing::before {
-        left: -15px;
-        width: 10px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: #9880ff;
-        color: #9880ff;
-        animation: dotFlashing 1s infinite alternate;
-        animation-delay: 0s;
-    }
-
-    .dot-flashing::after {
-        left: 15px;
-        width: 10px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: #9880ff;
-        color: #9880ff;
-        animation: dotFlashing 1s infinite alternate;
-        animation-delay: 1s;
-    }
-
-    @keyframes dotFlashing {
-        0% {
-            background-color: #9880ff;
-        }
-
-        50%,
-        100% {
-            background-color: #ebe6ff;
-        }
-    }
-</style><div id="loginpopupApp">
+<div id="loginpopupApp">
 <ev-modal :open="isOpen" @close="isOpen = false" class="mx-8 md:max-w-[354px] !p-0">
 <div class="">
 <a :href="getUtm(data.Click_Url)" @click="targetClick(data)" class="cursor-pointer">
@@ -2699,6 +2611,20 @@
 </svg>
 </a>
 </div>
+<div v-if="isAndroid">
+<ev-button @click="appDownload()" href="https://play.google.com/store/apps/details?id=com.DHYSenjtpL.sjXrVtojDn" small="" target="_blank">
+<div class="flex items-center">
+<div class="mr-2.5">
+<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9199 0.959961L14.3149 11.28L17.1649 8.42996L4.5649 1.15496C4.3549 1.03309 4.1299 0.965586 3.9199 0.959961ZM3.0499 1.43996C2.95615 1.60684 2.8999 1.80371 2.8999 2.02496V22.08C2.8999 22.2412 2.93365 22.3856 2.9899 22.515L13.6249 11.955L3.0499 1.43996ZM18.0349 8.92496L14.9899 11.955L18.0349 14.97L21.7549 12.84C22.2837 12.5343 22.3587 12.1462 22.3549 11.94C22.3493 11.5987 22.1337 11.28 21.7699 11.085C21.453 10.9143 19.0999 9.54371 18.0349 8.92496ZM14.3149 12.63L3.8299 23.025C4.00428 23.0156 4.19365 22.9781 4.3699 22.875C4.78053 22.6368 13.0849 17.835 13.0849 17.835L17.1799 15.48L14.3149 12.63Z" fill="#878D91"></path>
+</svg>
+</div>
+<div>
+                    Google Play
+                </div>
+</div>
+</ev-button>
+</div>
 <div class="text-xs text-gray-500 sm:order-1 sm:text-sm notranslate">
         Copyright ⓒ EVENTUS Co.,Ltd. All Rights Reserved.
     </div>
@@ -2706,7 +2632,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="TB2ITJAgc2OrQ5lyDU9O4vxCO1yBYhZ6XefqNSRz_wx_DEaULXK1YyDLVDW6lenRT_IkkWM3usBNHQWKMBODaQ4FXYk1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="nA6BDuYJI1b4J52R62P7UUZ1ghW9VIJj1XsCYugQYRSQxSwu7KkEL3JnFe4h9SzCJUT_r_WpkhNfIEGhULoH1Brlud41"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3780,6 +3706,7 @@
                         marketing: false,
                         submitbtn: true,
                     },
+                    isAndroid:false,
                     language: 'ko',
                 };
             },
@@ -3789,16 +3716,21 @@
                 });
             },
             mounted() {
-                this.$nextTick(() => {
-                    this.checkIsPwaInstalled().then((isPwaInstalled) => {
-                        if (isPwaInstalled) {
-                            const pwaPromptButton = document.getElementById('pwa-prompt-button');
-                            if (pwaPromptButton) {
-                                pwaPromptButton.style.display = 'none';
-                            }                            
-                        }
-                    });
-                });
+                //this.$nextTick(() => {
+                //    this.checkIsPwaInstalled().then((isPwaInstalled) => {
+                //        if (isPwaInstalled) {
+                //            const pwaPromptButton = document.getElementById('pwa-prompt-button');
+                //            if (pwaPromptButton) {
+                //                pwaPromptButton.style.display = 'none';
+                //            }
+                //        }
+                //    });
+                //});
+                if (/android/i.test(navigator.userAgent)) {
+                    // 안드로이드일 경우, 다운로드 배너를 표시하는 코드
+                    this.isAndroid = true;
+                    
+                }
             },
             methods: {
                 leng(language) {
@@ -3850,6 +3782,9 @@
                             stamp: (new Date().getTime() * 10000 + 621356292000000000).toString(),
                         });
                     }
+                },
+                appDownload() {
+                    mixpanel.track('app_download', { click_text: 'GooglePlay' });
                 },
                 commitAnswer() {
                     const self = this;
@@ -3967,11 +3902,11 @@
                     self.brochure.marketingUnchecked = false;
                     self.serviceModel.submitbtn = true;
                 },
-                async checkIsPwaInstalled() {
-                    const apps = await navigator.getInstalledRelatedApps();
+                //async checkIsPwaInstalled() {
+                //    const apps = await navigator.getInstalledRelatedApps();
 
-                    return apps.length !== 0 || window.innerHeight / window.screen.height > 0.9;
-                },
+                //    return apps.length !== 0 || window.innerHeight / window.screen.height > 0.9;
+                //},
                 handleBrochureCheckAll() {
                     const self = this;
 
@@ -4004,82 +3939,7 @@
                 },
             },
         }).mount('#footer');
-        ui.createApp({
-            data() {
-                return {
-                    pwa: {
-                        prompt: null,
-                        isOpened: false,
-                        isMobile: 'False',
-                        isDownloading: false,
-                    },
-                };
-            },
-            mounted() {
-                this.$nextTick(() => {
-                    this.checkIsPwaInstalled().then((isPwaInstalled) => {
-                        const pwaButton = document.getElementById('pwa-prompt-button');
-                        if (!isPwaInstalled) {
-                            this.initPwaPrompt();
-                            this.addAppInstalledEvent();
-
-                            if (pwaButton) {
-                                pwaButton.addEventListener('click', () => {
-                                    this.onClickPwaButton('Footer');
-                                });
-                            }
-                        }
-
-                        if ('getInstalledRelatedApps' in navigator && this.pwa.isMobile === 'True') {
-                            this.checkPwaPopupState(isPwaInstalled);
-                        }
-                    });
-                });
-            },
-            methods: {
-                async checkIsPwaInstalled() {
-                    const apps = await navigator.getInstalledRelatedApps();
-
-                    return apps.length !== 0 || window.innerHeight / window.screen.height > 0.9;
-                },
-                initPwaPrompt() {
-                    window.addEventListener('beforeinstallprompt', (event) => {
-                        event.preventDefault();
-                        this.pwa.prompt = event;
-                    });
-                },
-                addAppInstalledEvent() {
-                    window.addEventListener('appinstalled', async () => {
-                        this.pwa.isDownloading = false;
-                        this.pwa.isOpened = false;
-                        this.setPwaCookie(365);
-                    });
-                },
-                checkPwaPopupState(isPwaInstalled) {
-                    if (util.getCookie('PwaModalClose')) {
-                        this.pwa.isOpened = false;
-                    } else if (!isPwaInstalled) {
-                        this.pwa.isOpened = true;
-                    }
-                },
-                async onClickPwaButton(way) {
-                    window.InstallWay = way;
-                    this.pwa.prompt.prompt();
-                    const choice = await this.pwa.prompt.userChoice;
-                    if (choice.outcome === 'accepted') {
-                        this.pwa.isDownloading = true;
-                    }
-                    this.pwa.prompt = null;
-                },
-                onClosePwaPopup() {
-                    this.pwa.isOpened = false;
-                    this.setPwaCookie();
-                },
-                setPwaCookie(expiredDaysFromToday) {
-                    util.setCookie('PwaModalClose', 'srs6k2KY9XGclfMG0kyFq9OtlK_QQxYUIC7F-_xWQdFh4nwOhBrjB9tNMDLZNHrlAhr57WFGy59cmfaRfrXUqd24IYVFtty0pshYun_PnDzPV1kc1pWFUYgnksUScGw6B8mlIQ2', expiredDaysFromToday ?? 1);
-                },
-            },
-        }).mount('#pwa-prompt-popup');
+        
     });
     </script>
 <script>
@@ -4176,8 +4036,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":6360,"New_Start_Date":"2025-01-16T00:00:00","New_End_Date":"2025-01-22T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-15T10:33:00.9021588","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0593525d3aec45c4bfde69bdb2fbe25a.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/2d78598e54714537be2e5b101b6e55b4.jpg","Click_Url":"https://event-us.kr/demo/event/92662","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"2025 암호화폐 시장 대전망!","BannerDescription":"2025 크립토 인사이트 컨퍼런스","BannerDate":"2025. 01. 23.(목) 14:00","BannerPlace":"오프라인 행사"},{"Id":6355,"New_Start_Date":"2025-01-08T00:00:00","New_End_Date":"2025-01-21T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-01-08T21:56:49.9359351","Support":true,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4e42c9d5753f4214883c5075ff193873.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a935b516324548ce82ff2cb1ea002966.png","Click_Url":"https://event-us.kr/webinar/event/97591?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=ncacwemnnk","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"사업 계획부터 성공 판정까지","BannerDescription":"25년 정부지원사업 합격 전략 A-Z","BannerDate":"2025. 01. 21.(화) 14:00","BannerPlace":"온라인 행사"}],
-                    searchResultBanners: [{"Id":"97591","CoverImageUrl":"/Image/webinar/97591/ProjectInfo/Cover/7fddd3f36565478483ef7e1f1aac7e3f.png","Title":"2025 정부지원사업 합격 전략 A-Z : 사업 계획부터 성공 판정까지","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"창업","Category2":"정부지원사업","StartDate":"2025-01-21T14:00:00","CloseDate":"2025-01-21T15:00:00","RegisterStartDate":"2025-01-08T16:00:00","RegisterDueDate":"2025-01-21T12:30:00","ViewCount":2699,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-01-08T15:01:00","EventSystemType":"online","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":258,"ProjectTags":[{"Id":98125,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":388,"Date":"2025-01-08T15:01:01.6998425","Sort":4,"Project":null,"Tag":null},{"Id":98166,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":12204,"Date":"2025-01-08T16:07:30.6412987","Sort":0,"Project":null,"Tag":null},{"Id":98167,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":5491,"Date":"2025-01-08T16:07:30.6412987","Sort":1,"Project":null,"Tag":null},{"Id":98168,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":134,"Date":"2025-01-08T16:07:30.6412987","Sort":2,"Project":null,"Tag":null},{"Id":98169,"ProjectId":"97591","ProjectSubDomain":"webinar","TagId":21482,"Date":"2025-01-08T16:07:30.6412987","Sort":3,"Project":null,"Tag":null}],"pitId":6351,"IsAdCheck":true,"IsSupportAd":true,"IsAdMark":true,"Url":"https://event-us.kr/m/97591/29266","CorrectionValue":0.0}],
+                    banners: [{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null}],
+                    searchResultBanners: [],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
