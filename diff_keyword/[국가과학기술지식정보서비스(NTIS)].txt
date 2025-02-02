@@ -1414,10 +1414,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="74022">
+<input id="totalCount" name="totalCount" type="hidden" value="74077">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>74,022건</span></h3>
+<h3 class="t_head">검색결과 <span>74,077건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1470,22 +1470,22 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2025년도 (탄소융복합소재부품) 장비국산화 지원사업  신규지원 대상과제 공고_(2025)장비국산화지원사업" type="checkbox" value="1199595"/></td>
+<td><input name="selectCheckList" title="2025년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 재공고_(2025)2025년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 재공고" type="checkbox" value="1199915"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            74022
+                            74077
                         </td>
 <td data-title="현황">
-<span style="color: blue;">접수예정</span>
+<span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199595&amp;flag=rndList" onclick="javascript:fn_view('1199595'); return false;" title="2025년도 (탄소융복합소재부품) 장비국산화 지원사업  신규지원 대상과제 공고_(2025)장비국산화지원사업"> 2025년도 (탄소융복합소재부품) 장비국산화 지원사업  신규지원 대상과제 공고_(2025)장비국산화지원사업
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199915&amp;flag=rndList" onclick="javascript:fn_view('1199915'); return false;" title="2025년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 재공고_(2025)2025년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 재공고"> 2025년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 재공고_(2025)2025년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 재공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2025.02.10</td>
-<td data-title="마감일">2025.02.25</td>
+<td data-title="부처명">보건복지부</td>
+<td data-title="접수일">2025.01.31</td>
+<td data-title="마감일">2025.02.10</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1499,26 +1499,98 @@ $(function(){
                                     
                                     
                                     
-                                    D-30
+                                        D - 8
+                                    
+                                    
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2025년도 개인기초연구(글로벌 매칭형-독일) 신규과제 공모_(2025)2025년도 과학기술정보통신부 기초연구사업 신규과제 공모" type="checkbox" value="1199525"/></td>
+<td><input name="selectCheckList" title="2025년도 한-독 2+2 산학연 공동연구사업 신규과제 공모_(2025)2025년도 한-독 2+2 산학연 공동연구사업 신규과제 공모" type="checkbox" value="1199882"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            74021
+                            74076
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199882&amp;flag=rndList" onclick="javascript:fn_view('1199882'); return false;" title="2025년도 한-독 2+2 산학연 공동연구사업 신규과제 공모_(2025)2025년도 한-독 2+2 산학연 공동연구사업 신규과제 공모"> 2025년도 한-독 2+2 산학연 공동연구사업 신규과제 공모_(2025)2025년도 한-독 2+2 산학연 공동연구사업 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2025.03.03</td>
+<td data-title="마감일">2025.03.25</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-51
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년 자치경찰수요기반 지역문제해결사업 신규과제 선정계획 공고" type="checkbox" value="1199900"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            74075
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199900&amp;flag=rndList" onclick="javascript:fn_view('1199900'); return false;" title="2025년 자치경찰수요기반 지역문제해결사업 신규과제 선정계획 공고"> 2025년 자치경찰수요기반 지역문제해결사업 신규과제 선정계획 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">경찰청</td>
+<td data-title="접수일">2025.02.04</td>
+<td data-title="마감일">2025.02.24</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-22
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년도 (6대탄소소재) 국내외 인증지원사업_(2025)25년 국내외 인증지원" type="checkbox" value="1199850"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            74074
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199525&amp;flag=rndList" onclick="javascript:fn_view('1199525'); return false;" title="2025년도 개인기초연구(글로벌 매칭형-독일) 신규과제 공모_(2025)2025년도 과학기술정보통신부 기초연구사업 신규과제 공모"> 2025년도 개인기초연구(글로벌 매칭형-독일) 신규과제 공모_(2025)2025년도 과학기술정보통신부 기초연구사업 신규과제 공모
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199850&amp;flag=rndList" onclick="javascript:fn_view('1199850'); return false;" title="2025년도 (6대탄소소재) 국내외 인증지원사업_(2025)25년 국내외 인증지원"> 2025년도 (6대탄소소재) 국내외 인증지원사업_(2025)25년 국내외 인증지원
                                 </a>
 </div>
 </td>
-<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="부처명">산업통상자원부</td>
 <td data-title="접수일">2025.01.24</td>
 <td data-title="마감일">2025.02.28</td>
 <td class="end" data-title="D-day">
@@ -1534,63 +1606,28 @@ $(function(){
                                     
                                     
                                     
-                                    D-33
+                                    D-26
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2025년 문화체육관광 연구개발사업 신규과제(지정공모) 통합공고_(2025)2025년 문화체육관광 연구개발사업 신규과제(지정공모) 통합공고" type="checkbox" value="1199620"/></td>
+<td><input name="selectCheckList" title="AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고_(2025)AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고" type="checkbox" value="1199845"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            74020
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199620&amp;flag=rndList" onclick="javascript:fn_view('1199620'); return false;" title="2025년 문화체육관광 연구개발사업 신규과제(지정공모) 통합공고_(2025)2025년 문화체육관광 연구개발사업 신규과제(지정공모) 통합공고"> 2025년 문화체육관광 연구개발사업 신규과제(지정공모) 통합공고_(2025)2025년 문화체육관광 연구개발사업 신규과제(지정공모) 통합공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">문화체육관광부</td>
-<td data-title="접수일">2025.01.23</td>
-<td data-title="마감일">2025.02.27</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-32
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2025년도 폴리에스터 혼방섬유의 F2F(Fiber To Fiber) 리사이클 핵심 기술개발 사업 신규지원 대상과제 공고_(2025)폴리에스터 혼밤섬유의 F2F(Fiber to Fiber) 리사이클 핵심 기술개발사업" type="checkbox" value="1199618"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            74019
+                            74073
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199618&amp;flag=rndList" onclick="javascript:fn_view('1199618'); return false;" title="2025년도 폴리에스터 혼방섬유의 F2F(Fiber To Fiber) 리사이클 핵심 기술개발 사업 신규지원 대상과제 공고_(2025)폴리에스터 혼밤섬유의 F2F(Fiber to Fiber) 리사이클 핵심 기술개발사업"> 2025년도 폴리에스터 혼방섬유의 F2F(Fiber To Fiber) 리사이클 핵심 기술개발 사업 신규지원 대상과제 공고_(2025)폴리에스터 혼밤섬유의 F2F(Fiber to Fiber) 리사이클 핵심 기술개발사업
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199845&amp;flag=rndList" onclick="javascript:fn_view('1199845'); return false;" title="AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고_(2025)AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고"> AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고_(2025)AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2025.02.10</td>
-<td data-title="마감일">2025.02.27</td>
+<td data-title="부처명">해양경찰청</td>
+<td data-title="접수일">2025.02.12</td>
+<td data-title="마감일">2025.02.26</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1604,27 +1641,62 @@ $(function(){
                                     
                                     
                                     
-                                    D-32
+                                    D-24
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="(재공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 재공고_재공고_(2025)(재공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 재공고" type="checkbox" value="1199606"/></td>
+<td><input name="selectCheckList" title="AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고_(2025)AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고" type="checkbox" value="1199844"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            74018
+                            74072
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199606&amp;flag=rndList" onclick="javascript:fn_view('1199606'); return false;" title="(재공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 재공고_재공고_(2025)(재공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 재공고"> (재공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 재공고_재공고_(2025)(재공고-국-제14호) 2025년 협력거점형 국토교통 국제협력 연구개발 사업(한-캐나다 양자협력형) 시행 재공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199844&amp;flag=rndList" onclick="javascript:fn_view('1199844'); return false;" title="AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고_(2025)AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고"> AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고_(2025)AI기반 해양재난 대응체계 CDX 기술개발사업 신규과제 선정계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">국토교통부</td>
-<td data-title="접수일">2025.01.23</td>
+<td data-title="부처명">해양경찰청</td>
+<td data-title="접수일">2025.02.12</td>
+<td data-title="마감일">2025.02.26</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-24
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년도 대학기술경영촉진 신규과제 공고" type="checkbox" value="1199828"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            74071
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199828&amp;flag=rndList" onclick="javascript:fn_view('1199828'); return false;" title="2025년도 대학기술경영촉진 신규과제 공고"> 2025년도 대학기술경영촉진 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2025.02.19</td>
 <td data-title="마감일">2025.02.25</td>
 <td class="end" data-title="D-day">
                                 
@@ -1639,28 +1711,70 @@ $(function(){
                                     
                                     
                                     
-                                    D-30
+                                    D-23
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2025년도 차세대CCU기술고도화사업 신규과제 공모_(2025)2025년도 차세대CCU기술고도화사업 신규과제 공모" type="checkbox" value="1199605"/></td>
+<td><input name="selectCheckList" title="2025년도 한미암공동연구사업 신규과제 재공모_(2025)2025년도 한미암공동연구사업(외부) 신규과제 재공모(자유공모)" type="checkbox" value="1199823"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            74017
+                            74070
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199605&amp;flag=rndList" onclick="javascript:fn_view('1199605'); return false;" title="2025년도 차세대CCU기술고도화사업 신규과제 공모_(2025)2025년도 차세대CCU기술고도화사업 신규과제 공모"> 2025년도 차세대CCU기술고도화사업 신규과제 공모_(2025)2025년도 차세대CCU기술고도화사업 신규과제 공모
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199823&amp;flag=rndList" onclick="javascript:fn_view('1199823'); return false;" title="2025년도 한미암공동연구사업 신규과제 재공모_(2025)2025년도 한미암공동연구사업(외부) 신규과제 재공모(자유공모)"> 2025년도 한미암공동연구사업 신규과제 재공모_(2025)2025년도 한미암공동연구사업(외부) 신규과제 재공모(자유공모)
+                                </a>
+</div>
+</td>
+<td data-title="부처명">보건복지부</td>
+<td data-title="접수일">2025.01.24</td>
+<td data-title="마감일">2025.02.04</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 2</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년도 한미암공동연구사업 신규과제 재공모_(2025)2025년도 한미암공동연구사업(외부) 신규과제 재공모(품목지정)" type="checkbox" value="1199822"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            74069
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199822&amp;flag=rndList" onclick="javascript:fn_view('1199822'); return false;" title="2025년도 한미암공동연구사업 신규과제 재공모_(2025)2025년도 한미암공동연구사업(외부) 신규과제 재공모(품목지정)"> 2025년도 한미암공동연구사업 신규과제 재공모_(2025)2025년도 한미암공동연구사업(외부) 신규과제 재공모(품목지정)
+                                </a>
+</div>
+</td>
+<td data-title="부처명">보건복지부</td>
+<td data-title="접수일">2025.01.24</td>
+<td data-title="마감일">2025.02.04</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 2</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년도 해외대형연구시설활용연구지원사업 신규과제 공모_(2025)2025년도 해외대형연구시설활용연구지원사업 신규과제 공모" type="checkbox" value="1199816"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            74068
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199816&amp;flag=rndList" onclick="javascript:fn_view('1199816'); return false;" title="2025년도 해외대형연구시설활용연구지원사업 신규과제 공모_(2025)2025년도 해외대형연구시설활용연구지원사업 신규과제 공모"> 2025년도 해외대형연구시설활용연구지원사업 신규과제 공모_(2025)2025년도 해외대형연구시설활용연구지원사업 신규과제 공모
                                 </a>
 </div>
 </td>
 <td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2025.01.23</td>
-<td data-title="마감일">2025.02.26</td>
+<td data-title="접수일">2025.01.30</td>
+<td data-title="마감일">2025.03.06</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1674,147 +1788,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-31
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2025년도 AI기반미래기후기술개발원천연구사업 신규과제 공모_(2025)2025년도 AI기반미래기후기술개발원천연구사업 신규과제 공모" type="checkbox" value="1199601"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            74016
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199601&amp;flag=rndList" onclick="javascript:fn_view('1199601'); return false;" title="2025년도 AI기반미래기후기술개발원천연구사업 신규과제 공모_(2025)2025년도 AI기반미래기후기술개발원천연구사업 신규과제 공모"> 2025년도 AI기반미래기후기술개발원천연구사업 신규과제 공모_(2025)2025년도 AI기반미래기후기술개발원천연구사업 신규과제 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2025.01.23</td>
-<td data-title="마감일">2025.02.26</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-31
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2025년도 무탄소에너지핵심기술개발사업 신규과제 공모_(2025)2025년도 무탄소에너지핵심기술개발사업 신규과제 공모" type="checkbox" value="1199597"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            74015
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199597&amp;flag=rndList" onclick="javascript:fn_view('1199597'); return false;" title="2025년도 무탄소에너지핵심기술개발사업 신규과제 공모_(2025)2025년도 무탄소에너지핵심기술개발사업 신규과제 공모"> 2025년도 무탄소에너지핵심기술개발사업 신규과제 공모_(2025)2025년도 무탄소에너지핵심기술개발사업 신규과제 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2025.01.23</td>
-<td data-title="마감일">2025.02.26</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-31
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2025년도 글로벌 연수지원 사업 추진일정 공고" type="checkbox" value="1199592"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            74014
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199592&amp;flag=rndList" onclick="javascript:fn_view('1199592'); return false;" title="2025년도 글로벌 연수지원 사업 추진일정 공고"> 2025년도 글로벌 연수지원 사업 추진일정 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2025.01.23</td>
-<td data-title="마감일">2025.12.31</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-339
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2025년도 개인기초연구(글로벌 매칭형-영국) 신규과제 공모_(2025)2025년도 개인기초연구사업(글로벌 매칭형-영국) 신규과제 공모" type="checkbox" value="1199535"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            74013
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1199535&amp;flag=rndList" onclick="javascript:fn_view('1199535'); return false;" title="2025년도 개인기초연구(글로벌 매칭형-영국) 신규과제 공모_(2025)2025년도 개인기초연구사업(글로벌 매칭형-영국) 신규과제 공모"> 2025년도 개인기초연구(글로벌 매칭형-영국) 신규과제 공모_(2025)2025년도 개인기초연구사업(글로벌 매칭형-영국) 신규과제 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2025.01.23</td>
-<td data-title="마감일">2025.03.31</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-64
+                                    D-32
                                 
 
                             </td>
@@ -1830,7 +1804,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7403" onclick="fn_search(7403);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7408" onclick="fn_search(7408);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
