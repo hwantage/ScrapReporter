@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-02-17"></script>
+<script src="/contents/js/func.js?ver=2025-02-24"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -268,7 +268,7 @@ function fnAlertLogin(){
 <ul>
 <li><a href="/publication/whiteandyear/list.do">전체</a></li>
 <!--                                   <li><a href="http://annualreport.itfind.or.kr/ver2.rpt">정보통신산업진흥연차보고서</a></li> -->
-<li><a href="/publication/whiteandyear/annualReportList.do?selectedCategory=ANNL">정보통신산업진흥연차보고서</a></li>
+<li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_71&amp;selectedGroupId=B_WPD">정보통신산업진흥연차보고서</a></li>
 <!--
                                   <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_34&selectedGroupId=B_WPD">소프트웨어산업연간보고서</a></li>
                                   <li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_37&selectedGroupId=B_WPD">지식서비스산업백서</a></li>
@@ -475,8 +475,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>3013건</strong></span>
-<span>현재페이지 : <strong>1/302.0</strong></span>
+<span>총 게시물 : <strong>3026건</strong></span>
+<span>현재페이지 : <strong>1/303.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -506,7 +506,7 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">3013</th>
+<th data-cell-header="번호" scope="row">3026</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13992&amp;boardParam1=ko&amp;searchTarget2=">국내//디지털 마케팅 서밋 (Digital Marketing Summit) 2025 / 한국</a></td>
@@ -514,7 +514,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-16~2025-04-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3012</th>
+<th data-cell-header="번호" scope="row">3025</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13986&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.27] 바이오가스 기반의 친환경 에너지 산업 활성화 방안 / 한국</a></td>
@@ -522,7 +522,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-21~2025-03-26</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3011</th>
+<th data-cell-header="번호" scope="row">3024</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14000&amp;boardParam1=ko&amp;searchTarget2=">국내//[3/20] “2025 트럼프정부 출범 후- 급변하는 변화에 대응하는 국내 핵심기술들의 생존 전략 세미나” / 한국</a></td>
@@ -530,7 +530,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-02-06~2025-03-19</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3010</th>
+<th data-cell-header="번호" scope="row">3023</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13993&amp;boardParam1=ko&amp;searchTarget2=">국내//제24회 세계 보안 엑스포 (SECON 2025) / 한국</a></td>
@@ -538,7 +538,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2024-10-31~2025-03-18</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3009</th>
+<th data-cell-header="번호" scope="row">3022</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13978&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.19~20] 수소 연료전지 기반 발전 및 어플리케이션별 활용시장 세미나 / 한국</a></td>
@@ -546,7 +546,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-01~2025-03-18</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3008</th>
+<th data-cell-header="번호" scope="row">3021</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14025&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 인터넷서비스 트렌드 컨퍼런스_(03.12~13) 트렌드를 경험하다! / 한국</a></td>
+<td data-cell-header="행사기간">2025-03-12~2025-03-13</td>
+<td data-cell-header="접수기간">2025-02-01~2025-03-11</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3020</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13971&amp;boardParam1=ko&amp;searchTarget2=">국내//[인터배터리 2025] 고성능 LFP 배터리 기술 개발 현황과 시장 확보 전략 [03.07] / 한국</a></td>
@@ -554,7 +562,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-10~2025-03-06</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3007</th>
+<th data-cell-header="번호" scope="row">3019</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14024&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.27] 최근 챗 GPT 프롬프트 엔지니어링의 핵심 실무 기법- 심층분석 4차 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-02-27~2025-02-27</td>
+<td data-cell-header="접수기간">2025-02-18~2025-02-26</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3018</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14001&amp;boardParam1=ko&amp;searchTarget2=">국내//CIO 서밋 2025 / 한국</a></td>
@@ -562,28 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-01-26~2025-02-26</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3006</th>
+<th data-cell-header="번호" scope="row">3017</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13950&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.27] 실무자를 위한 이차전지 핵심소재(양극재,음극재,전해질) 집중 교육 세미나 / 한국</a></td>
 <td data-cell-header="행사기간">2025-02-27~2025-02-27</td>
 <td data-cell-header="접수기간">2024-11-01~2025-02-26</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3005</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13866&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.27] 수소 연료전지 기반 발전 및 어플리케이션별 활용시장 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-02-27~2025-02-27</td>
-<td data-cell-header="접수기간">2024-10-01~2025-02-26</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3004</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13865&amp;boardParam1=ko&amp;searchTarget2=">국내//[02.26] 청정수소·암모니아 발전(혼소,전소)기술 및 입찰동향과 실증현황 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-02-26~2025-02-26</td>
-<td data-cell-header="접수기간">2024-10-01~2025-02-25</td>
 </tr>
 </tbody>
 </table>
@@ -621,7 +621,7 @@ function fnMvOrgan(){
 <button type="button">내부사이트 바로가기</button>
 <ul>
 <li><a href="http://www.iitp.kr" rel="noopener noreferrer" target="_blank">정보통신기획평가원</a></li>
-<li><a href="/publication/whiteandyear/annualReportList.do?selectedCategory=ANNL" target="_blank" title="새창으로 열림">정보통신연차보고서</a></li>
+<li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_71&amp;selectedGroupId=B_WPD" target="_blank" title="새창으로 열림">정보통신연차보고서</a></li>
 </ul>
 </div>
 <div><!-- 유관기관 바로가기 -->
