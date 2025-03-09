@@ -128,8 +128,8 @@ function fnAnnoView(key){
 </script>
 </head>
 <body>
-<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoEwbcdYLiKpTKeYtZ5IaKr0X00HqxAEY2n/FVR4tb7uMel1Uoe9R2bOMd6cwoChavh4jQh5ZCvcxzpQTF5NqfVKhuR9szXbf9VpfZ5Ad6gsDYFX+TYWWqZb775O34ocVvNzFYYFyt5RFEwLncdKACxxIyH9X3noSU66/OC8sj1vKAx9Vpq1szT0slIgMkXLng=="/>
-<input name="csSignature" type="hidden" value="wAdGfLeXS4zGTOgZc1m5ow=="/>
+<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoJANCA0EXguc46Ttng7gd1Mr9Wxtd+OGTU3hDZ6UD6vQDttiGqo6baZnDEbk9AAQxoIzYd/1Xz/pYm7W7u8kyemL3C4ED9WQGVIquCjZbuVrqT2HOjyYPqZ2REx/801o/ZEjqdSMkdYCijT1k6c1Q9/X1ebMnv9958fDG6jN1rS3FSr/do/ZsC8KBIkqKwYZA=="/>
+<input name="csSignature" type="hidden" value="WO2Th4/mFtKiiGgWB8ptyg=="/>
 <input id="returnURL" name="returnURL" type="hidden" value=""/>
 <input id="userId" name="userId" type="hidden" value="">
 <input id="loginType" name="loginType" type="hidden" value=""/>
@@ -218,8 +218,8 @@ function fnAnnoView(key){
 <div class="table_set">
 <h3 class="txt_coop_001">공동연구공고 검색</h3>
 <div class="search">
-<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoEwbcdYLiKpTKeYtZ5IaKoM69blQaz9NFi8ysTUh+CL4o5osP5FcjtiYkPueNgve8wOMoFa9NlD88kX6jJN6PLY3JzMWma99WSyRM0LgV3E73Hbb4R2cxQls2QhS2SdLPOTL0Jb6OX/SyH+dSWZwvAHAPbn3/yJeDs6rkzKVNiV"/>
-<input name="csSignature" type="hidden" value="wAdGfLeXS4zGTOgZc1m5ow=="/>
+<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoJANCA0EXguc46Ttng7gd3/viHh7wt5s55DalsrX8Nw6KhRvVe7PUfpjSjSCmqiRL3NtnOjpt2jM/120bf60SXcLtgHKCWexAbybGpwnn5QeOpQmpMsqNYbEdJntgNA9nqtc6jFu/ZVkX2TvEBHN2YQe+/BywNd3HaItOSXlIGA"/>
+<input name="csSignature" type="hidden" value="WO2Th4/mFtKiiGgWB8ptyg=="/>
 <script type="text/javascript">
 $(document).ready(function(){
     $('#searchStartDate').focus(function(){
@@ -276,8 +276,8 @@ $(document).ready(function(){
 <div class="table_set">
 <div class="total_page">
 <ul>
-<li><strong>Total</strong> : <span>2899</span></li>
-<li class="ml10"><strong>Page</strong> : <span>1/290</span></li>
+<li><strong>Total</strong> : <span>2901</span></li>
+<li class="ml10"><strong>Page</strong> : <span>1/291</span></li>
 </ul>
 <div class="txt_n">
 <span class="fc_d71010">*</span> 공고명을 클릭하시면 상세 정보를 볼수 있습니다.
@@ -303,6 +303,42 @@ $(document).ready(function(){
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    4011-2025-00001
+                                        
+                                    
+                                    </td>
+<td title="초다시점 광학계 집적 OLED-on-Glass 마이크로 디스플레이 및 입체영상 모듈 원천기술 개발">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('4011-2025-00001')">초다시점 광학계 집적 OLED-on-Glass 마이크로 디스플레이 및 입체영상 모듈 원천기술 개발</a>
+</div>
+</td>
+<td>2025-03-06</td>
+<td>2025-03-12</td>
+<td>공모접수중</td>
+</tr>
+<tr>
+<td>
+                                    
+                                        
+                                        
+                                    7211-2025-00003
+                                        
+                                    
+                                    </td>
+<td title="호남권 지역산업 기반 ICT 융합기술 개발 공동연구">
+<div class="text_one_line">
+<a href="javascript:fnAnnoView('7211-2025-00003')">호남권 지역산업 기반 ICT 융합기술 개발 공동연구</a>
+</div>
+</td>
+<td>2025-03-05</td>
+<td>2025-03-11</td>
+<td>공모접수중</td>
+</tr>
 <tr>
 <td>
                                     
@@ -447,42 +483,6 @@ $(document).ready(function(){
 <td>2025-01-16</td>
 <td>마감</td>
 </tr>
-<tr>
-<td>
-                                    
-                                        
-                                        
-                                    7111-2025-00010
-                                        
-                                    
-                                    </td>
-<td title="산업용 다중 AMR 통합 관제를 위한 스케쥴링 시스템 개발">
-<div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2025-00010')">산업용 다중 AMR 통합 관제를 위한 스케쥴링 시스템 개발</a>
-</div>
-</td>
-<td>2025-01-13</td>
-<td>2025-01-16</td>
-<td>마감</td>
-</tr>
-<tr>
-<td>
-                                    
-                                        
-                                        
-                                    7111-2025-00011
-                                        
-                                    
-                                    </td>
-<td title="자율주행 축사 관리 로봇의 관제 시스템 개발">
-<div class="text_one_line">
-<a href="javascript:fnAnnoView('7111-2025-00011')">자율주행 축사 관리 로봇의 관제 시스템 개발</a>
-</div>
-</td>
-<td>2025-01-13</td>
-<td>2025-01-16</td>
-<td>마감</td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -501,7 +501,7 @@ $(document).ready(function(){
 <a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
 <a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
 <a class="direction last" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
-<a class="direction" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=290"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
+<a class="direction" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=291"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
 </div>
 </div>
 </div>
@@ -525,8 +525,8 @@ $(document).ready(function(){
 <div class="spot_2">
 <ul>
 <li>
-<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoEwbcdYLiKpTKeYtZ5IaKp534KTLaQijLRNPumGzk9f">
-<input name="csSignature" type="hidden" value="wAdGfLeXS4zGTOgZc1m5ow==">
+<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoJANCA0EXguc46Ttng7gd0RH7BqUuSi/DKjoZFhsff9">
+<input name="csSignature" type="hidden" value="WO2Th4/mFtKiiGgWB8ptyg==">
 <fieldset>
 <legend>ETRI 직할부서 바로가기</legend>
 <label class="hidden" for="etri_siteurl">ETRI 직할부서 바로가기</label>
@@ -551,8 +551,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoEwbcdYLiKpTKeYtZ5IaKp534KTLaQijLRNPumGzk9f">
-<input name="csSignature" type="hidden" value="wAdGfLeXS4zGTOgZc1m5ow==">
+<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoJANCA0EXguc46Ttng7gd0RH7BqUuSi/DKjoZFhsff9">
+<input name="csSignature" type="hidden" value="WO2Th4/mFtKiiGgWB8ptyg==">
 <fieldset>
 <legend>ETRI SERVICE 바로가기</legend>
 <label class="hidden" for="etri_siteur2">ETRI SERVICE 바로가기</label>
@@ -575,8 +575,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoEwbcdYLiKpTKeYtZ5IaKp534KTLaQijLRNPumGzk9f"/>
-<input name="csSignature" type="hidden" value="wAdGfLeXS4zGTOgZc1m5ow=="/>
+<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="lZdViL452qSu8v+T5quuhoJANCA0EXguc46Ttng7gd0RH7BqUuSi/DKjoZFhsff9"/>
+<input name="csSignature" type="hidden" value="WO2Th4/mFtKiiGgWB8ptyg=="/>
 <fieldset>
 <legend>ETRI 유관기관 바로가기</legend>
 <label class="hidden" for="etri_siteur3">ETRI 유관기관 바로가기</label>
