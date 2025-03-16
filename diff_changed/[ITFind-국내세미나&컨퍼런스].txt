@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-03-10"></script>
+<script src="/contents/js/func.js?ver=2025-03-17"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -475,8 +475,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>3054건</strong></span>
-<span>현재페이지 : <strong>1/306.0</strong></span>
+<span>총 게시물 : <strong>3078건</strong></span>
+<span>현재페이지 : <strong>1/308.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -506,7 +506,7 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">3054</th>
+<th data-cell-header="번호" scope="row">3078</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14042&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 인공지능 &amp; 빅데이터쇼(AI &amp; Big Data Show 2025) / 한국</a></td>
@@ -514,7 +514,23 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-05-10~2025-06-10</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3053</th>
+<th data-cell-header="번호" scope="row">3077</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14077&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.28] 2025 분산에너지를 활용한 신사업 창출방안 및 전력망 이슈 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-05-28~2025-05-28</td>
+<td data-cell-header="접수기간">2025-02-01~2025-05-27</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3076</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14076&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.27] 전기차 배터리 화재 대응을 위한 대책방안 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-05-27~2025-05-27</td>
+<td data-cell-header="접수기간">2025-02-01~2025-05-26</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3075</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14037&amp;boardParam1=ko&amp;searchTarget2=">국내//G-STAR 2025 / 한국</a></td>
@@ -522,7 +538,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-02-24~2025-04-30</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3052</th>
+<th data-cell-header="번호" scope="row">3074</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14074&amp;boardParam1=ko&amp;searchTarget2=">국내//[04.25] 첨단 AI 반도체 패키징 및 열관리 테크 / 한국</a></td>
+<td data-cell-header="행사기간">2025-04-25~2025-04-25</td>
+<td data-cell-header="접수기간">2025-03-12~2025-04-24</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3073</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14040&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 월드IT쇼(World IT Show 2025) / 한국</a></td>
@@ -530,7 +554,23 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-02-01~2025-04-23</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3051</th>
+<th data-cell-header="번호" scope="row">3072</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14075&amp;boardParam1=ko&amp;searchTarget2=">국내//[04. 22] 2025 에너지산업 변화와 전력시장의 대응방안 세미나 / 한국</a></td>
+<td data-cell-header="행사기간">2025-04-22~2025-04-22</td>
+<td data-cell-header="접수기간">2025-02-01~2025-04-21</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3071</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14073&amp;boardParam1=ko&amp;searchTarget2=">국내//[4/18, 세미나+전시회] "2025 미래 먹거리 AI 대전환 모빌리티 생태계의 현재와 미래" / 한국</a></td>
+<td data-cell-header="행사기간">2025-04-18~2025-04-18</td>
+<td data-cell-header="접수기간">2025-03-10~2025-04-17</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3070</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14043&amp;boardParam1=ko&amp;searchTarget2=">국내//[04.18] EIS(임피던스분광법) 기반의 전기차 배터리팩 분석 및 BMS 접목 기술 / 한국</a></td>
@@ -538,52 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-02-28~2025-04-17</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3050</th>
+<th data-cell-header="번호" scope="row">3069</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14032&amp;boardParam1=ko&amp;searchTarget2=">국내//[한국전자제조산업전] AI/XR 기반의 디지털 트윈 최신 기술과 제조 공정별 구축 방안 [04.16] / 한국</a></td>
-<td data-cell-header="행사기간">2025-04-16~2025-04-16</td>
-<td data-cell-header="접수기간">2025-02-24~2025-04-15</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3049</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13992&amp;boardParam1=ko&amp;searchTarget2=">국내//디지털 마케팅 서밋 (Digital Marketing Summit) 2025 / 한국</a></td>
-<td data-cell-header="행사기간">2025-04-10~2025-04-11</td>
-<td data-cell-header="접수기간">2025-01-16~2025-04-09</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3048</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14031&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.28] Advanced Battery 소재 및 공정 개발 현황과 양산 기술 / 한국</a></td>
-<td data-cell-header="행사기간">2025-03-28~2025-03-28</td>
-<td data-cell-header="접수기간">2025-02-24~2025-03-27</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3047</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=13986&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.27] 바이오가스 기반의 친환경 에너지 산업 활성화 방안 / 한국</a></td>
-<td data-cell-header="행사기간">2025-03-27~2025-03-27</td>
-<td data-cell-header="접수기간">2025-01-21~2025-03-26</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3046</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14054&amp;boardParam1=ko&amp;searchTarget2=">국내//[03.21] 데이터센터ㆍ분산전원 확산- 관련산업 연계한 기술개발 및 운영 전략 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-03-21~2025-03-21</td>
-<td data-cell-header="접수기간">2025-03-06~2025-03-20</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3045</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14050&amp;boardParam1=ko&amp;searchTarget2=">국내//HCI &amp; UX 코리아 서밋 2025 - Spring / 한국</a></td>
-<td data-cell-header="행사기간">2025-03-21~2025-03-21</td>
-<td data-cell-header="접수기간">2025-02-20~2025-03-20</td>
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14072&amp;boardParam1=ko&amp;searchTarget2=">국내//[4/17 세미나+전시회] "2025 LFP 배터리의 현재와 미래-안정성, 효율성, 사업성 전략 컨퍼런스” / 한국</a></td>
+<td data-cell-header="행사기간">2025-04-17~2025-04-17</td>
+<td data-cell-header="접수기간">2025-03-10~2025-04-16</td>
 </tr>
 </tbody>
 </table>
