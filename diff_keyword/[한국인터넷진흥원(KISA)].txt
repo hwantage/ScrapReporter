@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1241; // 전체 조회 건수
+	var totalNum = 1245; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -190,7 +190,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1241</b>건
+<span>총 <b>1245</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -229,11 +229,56 @@ function oneDepMenu() {
 </thead>
 <tbody>
 <tr>
+<td class="num">1245</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3449&amp;page=1">2025년 SW 공급망 보안 체계 진단 서비스 안내</a>
+</td>
+<td class="date">2025-03-27</td>
+<td class="count">2251</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3449', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1244</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3448&amp;page=1">2025년 지역 거점 정보보호 클러스터 구축 사업 공고</a>
+</td>
+<td class="date">2025-03-25</td>
+<td class="count">2483</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3448', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1243</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3447&amp;page=1">개인정보관리 전문기관 지정 심사 설명회 개최(3월 28일(금), 역삼 포스코타워)</a>
+</td>
+<td class="date">2025-03-24</td>
+<td class="count">2948</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1242</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3446&amp;page=1">“2025 블록체인 밋업 컨퍼런스(2025 BCMC)” 개최</a>
+</td>
+<td class="date">2025-03-24</td>
+<td class="count">3160</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3446', 1, 'KO');">
+<img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
+</a>
+</td>
+</tr>
+<tr>
 <td class="num">1241</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3445&amp;page=1">2025년도 암호모듈검증 제출물 개발 컨설팅 참가기업 모집(3.25~4.11)</a>
 </td>
-<td class="date">2025-03-21</td>
-<td class="count">1587</td>
+<td class="date">2025-03-24</td>
+<td class="count">4279</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3445', 1, 'KO');">
 <img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
@@ -245,7 +290,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3444&amp;page=1">2025년 CBPR 인증제도 기업설명회 사전접수 안내</a>
 </td>
 <td class="date">2025-03-17</td>
-<td class="count">3104</td>
+<td class="count">5796</td>
 <td class="attach">
 </td>
 </tr>
@@ -254,7 +299,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3443&amp;page=1">SBOM 기반 공급망 보안 모델 구축 지원사업 공고</a>
 </td>
 <td class="date">2025-03-17</td>
-<td class="count">3183</td>
+<td class="count">4867</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3443', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -266,7 +311,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3442&amp;page=1">범정부 마이데이터 서비스 명칭 짓기 이벤트 안내</a>
 </td>
 <td class="date">2025-03-13</td>
-<td class="count">4482</td>
+<td class="count">5435</td>
 <td class="attach">
 </td>
 </tr>
@@ -275,7 +320,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3441&amp;page=1">전분야 마이데이터 제도 시행 설명회 개최(3.18, 화)</a>
 </td>
 <td class="date">2025-03-12</td>
-<td class="count">5589</td>
+<td class="count">6365</td>
 <td class="attach">
 </td>
 </tr>
@@ -284,58 +329,10 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3440&amp;page=1">2025년도 SW 공급망 보안 사업설명회 개최 안내(3.13.)</a>
 </td>
 <td class="date">2025-03-11</td>
-<td class="count">6428</td>
+<td class="count">7068</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3440', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1235</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3439&amp;page=1">딥테크 신기술(AI, ZT, 통합보안) 보안 지원사업 통합 설명회 개최 안내(3.14 10:00)</a>
-</td>
-<td class="date">2025-03-10</td>
-<td class="count">7674</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3439', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1234</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3438&amp;page=1">2025년 1차 정보보호 인증제품 조달청 벤처나라 추천 희망기업 모집 공고(4월 지정심사) (~3.14(금) 18시까지)</a>
-</td>
-<td class="date">2025-03-05</td>
-<td class="count">6177</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3438', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1233</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3437&amp;page=1">2025년 글로벌 인터넷거버넌스포럼(IGF) 참석자 모집</a>
-</td>
-<td class="date">2025-03-04</td>
-<td class="count">5116</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3437', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1232</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3436&amp;page=1">국민참여예산 아디이어 공모전 개최</a>
-</td>
-<td class="date">2025-02-27</td>
-<td class="count">7187</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3436', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
 </td>
 </tr>
@@ -364,10 +361,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2025-03-21</dd>
+<dd>2025-03-28</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="21987c40-59e3-482f-ad74-9db33579ae8a">
+<input name="_csrf" type="hidden" value="986b60e7-d310-4827-b92d-6943df45441b">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -390,7 +387,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "21987c40-59e3-482f-ad74-9db33579ae8a");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "986b60e7-d310-4827-b92d-6943df45441b");
             },			
 			success: function(data) {
 				alert(data.message)
@@ -492,9 +489,9 @@ function oneDepMenu() {
 </ul>
 </div>
 <div>
-<span><a href="https://www.innovation.go.kr/" target="_blank" title="새창열림"><span class="blind">일 잘하는 정부 더 편안한 국민</span><img alt="일 잘하는 정부 더 편안한 국민" src="/resource/kor/images/common/img_ft_goverment_2025.jpg" style="width:91px;"/></a></span>
+<span><a href="https://www.innovation.go.kr/" target="_blank" title="새창열림"><span class="blind">일 잘하는 정부 더 편안한 국민</span><img alt="" src="/resource/kor/images/common/img_ft_goverment_2025.jpg" style="width:91px;"/></a></span>
 <!--<span><a href="/webaccess" onclick="window.open(this.href,'wa','left=100px, top=100px, width=533,height=750,scrollbars=no');return false;" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img src="/resource/kor/images/common/wa_web_2024.png" alt="웹접근성 인증 마크" style="height:62px;"></a></span>-->
-<span><a href="http://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=https://www.kisa.or.kr&amp;BoardID=0006" target="_blank" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img alt="웹접근성 인증 마크" src="/resource/kor/images/common/wa_web_2024.png" style="height:62px;"/></a></span>-
+<span><a href="http://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=https://www.kisa.or.kr&amp;BoardID=0006" target="_blank" title="새창열림"><span class="blind">웹접근성 인증 마크</span><img alt="" src="/resource/kor/images/common/wa_web_2024.png" style="height:62px;"/></a></span>-
                 </div>
 </div>
 </div>
