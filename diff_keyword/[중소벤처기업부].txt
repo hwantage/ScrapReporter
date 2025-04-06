@@ -190,7 +190,7 @@
 <body>
 <div id="skip-nav">
 <ul>
-<li><a href="#main" onclick="document.getElementById('container').tabIndex = -1;document.getElementById('container').focus();return false;">본문
+<li><a href="#container" onclick="document.getElementById('container').tabIndex = -1;document.getElementById('container').focus();return false;">본문
             바로가기</a></li>
 <li><a href="" onclick="document.querySelector('.gnb &gt; .li:first-child &gt; a').focus();return false;">주메뉴 바로가기</a>
 </li>
@@ -382,7 +382,7 @@
 <script data-context-path="" data-site-id="" id="menu-html-generator" src="/js/menuHTMLGenerator.js"></script>
 <nav class="head-gnb">
 <div class="inner">
-<ul class="gnb"><li class="li"><a class="mn selected" href="#">주요정책</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>주요정책</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1" target="_self">업무계획</a><ul class="depth02"><li><a href="/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1" target="_self">업무계획</a></li><li><a href="/site/smba/contents/view.do?menuCd=20101020000002024122907&amp;siteCd=smba" target="_self">중소기업 육성 종합계획</a></li></ul></li><li><a href="/site/smba/submain/submain03.do" target="_self">정책자료</a><ul class="depth02"><li><a href="/site/smba/submain/submain03.do" target="_self">정책자료</a></li><li><a href="/site/smba/contents/view.do?menuCd=20102070000002025032744&amp;siteCd=smba" target="_self">정책소개</a></li><li><a href="/site/smba/foffice/ex/linkage/linkageList.do?target=R001" target="_self">정책연구</a></li><li><a href="/site/smba/foffice/ex/linkage/linkageList.do?target=T001" target="_self">경제동향ㆍ통계</a></li><li><a href="/site/smba/foffice/ex/linkage/linkageList.do?target=P001" target="_self">홍보자료</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=599" target="_self">글로벌정책매거진</a></li><li><a href="/site/smba/foffice/ex/policyBbs/policyBbsList.do?type=T" target="_self">정책게시판</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20103010000002024122811&amp;siteCd=smba" target="_self">법령정보</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20103010000002024122811&amp;siteCd=smba" target="_self">소관법률</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=125&amp;ext6=Y" target="_self">훈령/예규/고시/공고</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=126&amp;searchRltnYn=Y" target="_self">입법/행정예고</a></li><li><a href="/site/smba/contents/view.do?menuCd=20103040000002024122824&amp;siteCd=smba" target="_self">중소기업범위기준</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=147" target="_self">중소기업·조세지원 해설</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="#">알림소식</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>알림소식</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=310" target="_self">사업공고</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=81" target="_self">공지사항</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=86" target="_self">보도자료</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=86" target="_self">보도자료</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=87" target="_self">보도정정 요청자료</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=82" target="_self">인사·채용</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=82" target="_self">인사동정</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=83" target="_self">채용정보</a></li></ul></li><li><a href="/site/smba/brdcststnVod/brdcststnVodList.do?ctgr_code=C01" target="_self">홍보자료</a><ul class="depth02"><li><a href="/site/smba/brdcststnVod/brdcststnVodList.do?ctgr_code=C01" target="_self">현장속으로</a></li><li><a href="/site/smba/brdcststnVod/brdcststnVodList.do?ctgr_code=C03" target="_self">홍보영상</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=288" target="_self">카드뉴스</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=95" target="_self">중기부소식지</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="#">통계자료</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>통계자료</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/submain/submain04.do" target="_self">통계안내</a><ul class="depth02"><li><a href="/site/smba/submain/submain04.do" target="_self">통계안내</a></li><li><a href="/site/smba/foffice/ex/statDB/ptScheduleList.do" target="_self">통계발표자료</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20302010101002024122811&amp;siteCd=smba" target="_self">통계DB검색</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20302010101002024122811&amp;siteCd=smba" target="_self">주제별 통계</a></li><li><a href="/site/smba/contents/view.do?menuCd=20302020101002024122811&amp;siteCd=smba" target="_self">조사별 통계</a></li></ul></li><li><a href="/site/smba/foffice/ex/statDB/stReportRoList.do?gb=1&amp;nodeId=&amp;roCode=" target="_self">조사보고서</a><ul class="depth02"><li><a href="/site/smba/foffice/ex/statDB/stReportRoList.do?gb=1&amp;nodeId=&amp;roCode=" target="_self">기관별 조회</a></li><li><a href="/site/smba/foffice/ex/statDB/stReportRcList.do?gb=2&amp;nodeId=&amp;rcCode=" target="_self">주제별 조회</a></li></ul></li><li><a href="/site/smba/foffice/ex/statDB/MainSubOtherSummary.do" target="_self">지표</a><ul class="depth02"><li><a href="/site/smba/foffice/ex/statDB/MainSubOtherSummary.do" target="_self">지표</a></li><li><a href="/site/smba/foffice/ex/statDB/MainStat.do?target=1" target="_self">주요통계</a></li><li><a href="/site/smba/contents/view.do?menuCd=20304030100002024122852&amp;siteCd=smba" target="_self">중소기업위상</a></li><li><a href="/site/smba/contents/view.do?menuCd=20304040100002024122816&amp;siteCd=smba" target="_self">지역별 통계</a></li><li><a href="https://www.index.go.kr/unity/potal/eNara/main/EnaraMain.do" target="_blank">e-나라지표</a></li></ul></li><li><a href="/site/smba/statNews/statNewsList.do?searchMenu=1&amp;searchAreaDivCd=" target="_self">자료실</a><ul class="depth02"><li><a href="/site/smba/statNews/statNewsList.do?searchMenu=1&amp;searchAreaDivCd=" target="_self">지역별 뉴스</a></li><li><a href="/site/smba/statNews/statNewsList.do?searchMenu=2&amp;searchCtgrCd=" target="_self">주제별 뉴스</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="#">민원참여</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>민원참여</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/contents/view.do?menuCd=20401010000002024122914&amp;siteCd=smba" target="_self">민원이용안내</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20401010000002024122914&amp;siteCd=smba" target="_self">이용안내</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401020000002024122951&amp;siteCd=smba" target="_self">민원참여</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401030000002024122908&amp;siteCd=smba" target="_self">확인서 발급 신청안내</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401040100002024122902&amp;siteCd=smba" target="_self">민원행정서비스헌장</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401050000002024122900&amp;siteCd=smba" target="_self">중소기업통합콜센터</a></li></ul></li><li><a href="https://www.smes.go.kr/bizlink/problem/problemList.do" target="_blank">민원신청</a><ul class="depth02"><li><a href="https://www.smes.go.kr/bizlink/problem/problemList.do" target="_blank">기업애로상담</a></li><li><a href="/site/smba/contents/view.do?menuCd=20402020000002024122926&amp;siteCd=smba" target="_self">전자민원</a></li><li><a href="/site/smba/contents/view.do?menuCd=20402030000002024122943&amp;siteCd=smba" target="_self">나의민원보기</a></li><li><a href="https://www.clean.go.kr/menu.es?mid=a10602060000" target="_blank">공익신고상담</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20403010100002024122934&amp;siteCd=smba" target="_self">신고센터</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20403010100002024122934&amp;siteCd=smba" target="_self">예산낭비신고</a></li><li><a href="/site/smba/contents/view.do?menuCd=20403020000002024122936&amp;siteCd=smba" target="_self">불공정거래신고</a></li><li><a href="https://ncp.clean.go.kr/cmn/secCtfcKMC.do?menuCode=acs&amp;mapAcs=Y&amp;insttCd=1421000" target="_blank">부패·공익신고</a></li><li><a href="https://ncp.clean.go.kr/cmn/secCtfcKMC.do?menuCode=acs&amp;mapAcs=Y&amp;insttCd=1421000" target="_blank">보조금 부조리 신고</a></li><li><a href="/site/smba/technologyReport/technologyReportMain.do" target="_self">기술침해행위신고</a></li><li><a href="/site/smba/unfairReport/unfairReportMain.do" target="_self">벤처투자 부당행위 신고</a></li><li><a href="https://www.safetyreport.go.kr/api?apiKey=14200000XY022UGD797MPMB6961" target="_blank">안전신고</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20404010100002024122910&amp;siteCd=smba" target="_self">국민참여</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20404010100002024122910&amp;siteCd=smba" target="_self">국민제안</a></li><li><a href="/site/smba/businessRec/businessRecMainList.do" target="_self">국민추천</a></li><li><a href="/site/smba/recommend/managerAppliMain.do" target="_self">정책인재 pool 신청</a></li><li><a href="https://www.sbiz.or.kr/hdst/main/mainPage.do" target="_blank">백년가게</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20405010000002024122901&amp;siteCd=smba" target="_self">규제개혁</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20405010000002024122901&amp;siteCd=smba" target="_self">규제신문고</a></li><li><a href="/site/smba/contents/view.do?menuCd=20405020100002024122922&amp;siteCd=smba" target="_self">규제혁신과제</a></li><li><a href="/site/smba/contents/view.do?menuCd=20405030000002024122942&amp;siteCd=smba" target="_self">규제입증요청</a></li><li><a href="https://www.osmb.go.kr/main" target="_blank">옴부즈만</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20406010100002024122906&amp;siteCd=smba" target="_self">적극행정</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20406010100002024122906&amp;siteCd=smba" target="_self">제도소개</a></li><li><a href="https://www.mpm.go.kr/proactivePublicService/recommand/intro/" target="_blank">공무원ㆍ정책 국민추천</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=307" target="_self">카드뉴스 웹툰</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=306" target="_self">알림소식</a></li></ul></li><li><a href="/site/smba/reservationMain/PesMain_List.do" target="_self">통합예약</a><ul class="depth02"><li><a href="/site/smba/reservationMain/PesMain_List.do" target="_self">예약신청</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="#">정보공개</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>정보공개</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/contents/view.do?menuCd=20701010000002024122949&amp;siteCd=smba" target="_self">정보공개안내</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20701010000002024122949&amp;siteCd=smba" target="_self">정보공개안내</a></li><li><a href="https://www.open.go.kr/com/main/mainView.do?mainBgGubun=search" target="_blank">정보공개청구</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=513" target="_self">사전정보공표</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=513" target="_self">사전정보공표목록</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=128" target="_self">예산 및 업무계획</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=131" target="_self">사업평가 및 감사결과</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=239" target="_self">주요 행정정보</a></li><li><a href="/site/smba/contents/view.do?menuCd=20702050000002024122924&amp;siteCd=smba" target="_self">비공개 세부기준</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=235" target="_self">정부포상추천검증</a></li><li><a href="/site/smba/04/budGetOprtn.jsp?path=VWFORM" target="_self">세입·세출 현황</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20705010000002024122920&amp;siteCd=smba" target="_self">공공데이터개방</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20705010000002024122920&amp;siteCd=smba" target="_self">공공데이터개방</a></li><li><a href="/site/smba/contents/view.do?menuCd=20705020000002024122935&amp;siteCd=smba" target="_self">공공데이터오류신고</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20706010000002024122915&amp;siteCd=smba" target="_self">정책실명제</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20706010000002024122915&amp;siteCd=smba" target="_self">정책실명제</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=16" target="_self">사업내역서</a></li><li><a href="/site/smba/contents/view.do?menuCd=20706030000002024122904&amp;siteCd=smba" target="_self">국민신청실명제</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=605" target="_self">표준약정서</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=605" target="_self">표준약정서</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=606" target="_self">표준계약서</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=12" target="_self">정보목록</a></li><li><a href="https://www.coop.go.kr/home/disclosure/DisclosureList.do?menu_no=2037" target="_blank">협동조합 경영공시</a></li></ul></div></div></div></li><li class="li"><a class="mn" href="#">기관소개</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>기관소개</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/contents/view.do?menuCd=20801010000002024122932&amp;siteCd=smba" target="_self">기관소개</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20801010000002024122932&amp;siteCd=smba" target="_self">주요업무</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801020100002024122913&amp;siteCd=smba" target="_self">연혁</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801030000002024122947&amp;siteCd=smba" target="_self">MI소개</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801040100002024122935&amp;siteCd=smba" target="_self">역대장차관</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20801050101002024122937&amp;siteCd=smba" target="_self">열린장관실</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20801050101002024122937&amp;siteCd=smba" target="_self">장관소개</a></li><li><a href="/site/smba/schdule/schduleList.do?searchPosId=0086200" target="_self">장관일정</a></li><li><a href="/site/smba/submain/submain08.do?searchPosId=0086200" target="_self">현장앨범</a></li><li><a href="/site/smba/foffice/ex/siteSgstn/siteSgstnList.do" target="_self">우문현답</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801050500002024122902&amp;siteCd=smba" target="_self">장관과의 대화</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20803010000002024122946&amp;siteCd=smba" target="_self">차관실</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20803010000002024122946&amp;siteCd=smba" target="_self">차관소개</a></li><li><a href="/site/smba/schdule/schduleList.do?searchPosId=0085200" target="_self">차관일정</a></li><li><a href="/site/smba/submain/submain08.do?searchPosId=0085200" target="_self">현장앨범</a></li></ul></li><li><a href="/site/smba/ex/organchart/organchart_office_org.do?target=org" target="_self">조직안내</a><ul class="depth02"><li><a href="/site/smba/ex/organchart/organchart_office_org.do?target=org" target="_self">조직도</a></li><li><a href="/site/smba/ex/empdept/empList.do" target="_self">업무검색</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20805010000002024122939&amp;siteCd=smba" target="_self">청사안내</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20805010000002024122939&amp;siteCd=smba" target="_self">찾아오시는 길</a></li><li><a href="/site/smba/contents/view.do?menuCd=20805020000002024122905&amp;siteCd=smba" target="_self">층별안내</a></li><li><a href="/site/smba/contents/view.do?menuCd=20805030101002024122909&amp;siteCd=smba" target="_self">소속기관</a></li></ul></li></ul></div></div></div></li></ul>
+<ul class="gnb"><li class="li"><a class="mn selected" href="javascript:;">주요정책</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>주요정책</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1" target="_self">업무계획</a><ul class="depth02"><li><a href="/site/smba/foffice/ex/jobPlan/jobPlanList.do?target=1" target="_self">업무계획</a></li><li><a href="/site/smba/contents/view.do?menuCd=20101020000002024122907&amp;siteCd=smba" target="_self">중소기업 육성 종합계획</a></li></ul></li><li><a href="/site/smba/submain/submain03.do" target="_self">정책자료</a><ul class="depth02"><li><a href="/site/smba/submain/submain03.do" target="_self">정책자료</a></li><li><a href="/site/smba/contents/view.do?menuCd=20102070000002025032744&amp;siteCd=smba" target="_self">정책소개</a></li><li><a href="/site/smba/foffice/ex/linkage/linkageList.do?target=R001" target="_self">정책연구</a></li><li><a href="/site/smba/foffice/ex/linkage/linkageList.do?target=T001" target="_self">경제동향ㆍ통계</a></li><li><a href="/site/smba/foffice/ex/linkage/linkageList.do?target=P001" target="_self">홍보자료</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=599" target="_self">글로벌정책매거진</a></li><li><a href="/site/smba/foffice/ex/policyBbs/policyBbsList.do?type=T" target="_self">정책게시판</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20103010000002024122811&amp;siteCd=smba" target="_self">법령정보</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20103010000002024122811&amp;siteCd=smba" target="_self">소관법률</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=125&amp;ext6=Y" target="_self">훈령/예규/고시/공고</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=126&amp;searchRltnYn=Y" target="_self">입법/행정예고</a></li><li><a href="/site/smba/contents/view.do?menuCd=20103040000002024122824&amp;siteCd=smba" target="_self">중소기업범위기준</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=147" target="_self">중소기업·조세지원 해설</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="javascript:;">알림소식</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>알림소식</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=310" target="_self">사업공고</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=81" target="_self">공지사항</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=86" target="_self">보도자료</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=86" target="_self">보도자료</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=87" target="_self">보도정정 요청자료</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=82" target="_self">인사·채용</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=82" target="_self">인사동정</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=83" target="_self">채용정보</a></li></ul></li><li><a href="/site/smba/brdcststnVod/brdcststnVodList.do?ctgr_code=C01" target="_self">홍보자료</a><ul class="depth02"><li><a href="/site/smba/brdcststnVod/brdcststnVodList.do?ctgr_code=C01" target="_self">현장속으로</a></li><li><a href="/site/smba/brdcststnVod/brdcststnVodList.do?ctgr_code=C03" target="_self">홍보영상</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=288" target="_self">카드뉴스</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=95" target="_self">중기부소식지</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="javascript:;">통계자료</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>통계자료</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/submain/submain04.do" target="_self">통계안내</a><ul class="depth02"><li><a href="/site/smba/submain/submain04.do" target="_self">통계안내</a></li><li><a href="/site/smba/foffice/ex/statDB/ptScheduleList.do" target="_self">통계발표자료</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20302010101002024122811&amp;siteCd=smba" target="_self">통계DB검색</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20302010101002024122811&amp;siteCd=smba" target="_self">주제별 통계</a></li><li><a href="/site/smba/contents/view.do?menuCd=20302020101002024122811&amp;siteCd=smba" target="_self">조사별 통계</a></li></ul></li><li><a href="/site/smba/foffice/ex/statDB/stReportRoList.do?gb=1&amp;nodeId=&amp;roCode=" target="_self">조사보고서</a><ul class="depth02"><li><a href="/site/smba/foffice/ex/statDB/stReportRoList.do?gb=1&amp;nodeId=&amp;roCode=" target="_self">기관별 조회</a></li><li><a href="/site/smba/foffice/ex/statDB/stReportRcList.do?gb=2&amp;nodeId=&amp;rcCode=" target="_self">주제별 조회</a></li></ul></li><li><a href="/site/smba/foffice/ex/statDB/MainSubOtherSummary.do" target="_self">지표</a><ul class="depth02"><li><a href="/site/smba/foffice/ex/statDB/MainSubOtherSummary.do" target="_self">지표</a></li><li><a href="/site/smba/foffice/ex/statDB/MainStat.do?target=1" target="_self">주요통계</a></li><li><a href="/site/smba/contents/view.do?menuCd=20304030100002024122852&amp;siteCd=smba" target="_self">중소기업위상</a></li><li><a href="/site/smba/contents/view.do?menuCd=20304040100002024122816&amp;siteCd=smba" target="_self">지역별 통계</a></li><li><a href="https://www.index.go.kr/unity/potal/eNara/main/EnaraMain.do" target="_blank">e-나라지표</a></li></ul></li><li><a href="/site/smba/statNews/statNewsList.do?searchMenu=1&amp;searchAreaDivCd=" target="_self">자료실</a><ul class="depth02"><li><a href="/site/smba/statNews/statNewsList.do?searchMenu=1&amp;searchAreaDivCd=" target="_self">지역별 뉴스</a></li><li><a href="/site/smba/statNews/statNewsList.do?searchMenu=2&amp;searchCtgrCd=" target="_self">주제별 뉴스</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="javascript:;">민원참여</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>민원참여</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/contents/view.do?menuCd=20401010000002024122914&amp;siteCd=smba" target="_self">민원이용안내</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20401010000002024122914&amp;siteCd=smba" target="_self">이용안내</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401020000002024122951&amp;siteCd=smba" target="_self">민원참여</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401030000002024122908&amp;siteCd=smba" target="_self">확인서 발급 신청안내</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401040100002024122902&amp;siteCd=smba" target="_self">민원행정서비스헌장</a></li><li><a href="/site/smba/contents/view.do?menuCd=20401050000002024122900&amp;siteCd=smba" target="_self">중소기업통합콜센터</a></li></ul></li><li><a href="https://www.smes.go.kr/bizlink/problem/problemList.do" target="_blank">민원신청</a><ul class="depth02"><li><a href="https://www.smes.go.kr/bizlink/problem/problemList.do" target="_blank">기업애로상담</a></li><li><a href="/site/smba/contents/view.do?menuCd=20402020000002024122926&amp;siteCd=smba" target="_self">전자민원</a></li><li><a href="/site/smba/contents/view.do?menuCd=20402030000002024122943&amp;siteCd=smba" target="_self">나의민원보기</a></li><li><a href="https://www.clean.go.kr/menu.es?mid=a10602060000" target="_blank">공익신고상담</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20403010100002024122934&amp;siteCd=smba" target="_self">신고센터</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20403010100002024122934&amp;siteCd=smba" target="_self">예산낭비신고</a></li><li><a href="/site/smba/contents/view.do?menuCd=20403020000002024122936&amp;siteCd=smba" target="_self">불공정거래신고</a></li><li><a href="https://ncp.clean.go.kr/cmn/secCtfcKMC.do?menuCode=acs&amp;mapAcs=Y&amp;insttCd=1421000" target="_blank">부패·공익신고</a></li><li><a href="https://ncp.clean.go.kr/cmn/secCtfcKMC.do?menuCode=acs&amp;mapAcs=Y&amp;insttCd=1421000" target="_blank">보조금 부조리 신고</a></li><li><a href="/site/smba/technologyReport/technologyReportMain.do" target="_self">기술침해행위신고</a></li><li><a href="/site/smba/unfairReport/unfairReportMain.do" target="_self">벤처투자 부당행위 신고</a></li><li><a href="https://www.safetyreport.go.kr/api?apiKey=14200000XY022UGD797MPMB6961" target="_blank">안전신고</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20404010100002024122910&amp;siteCd=smba" target="_self">국민참여</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20404010100002024122910&amp;siteCd=smba" target="_self">국민제안</a></li><li><a href="/site/smba/businessRec/businessRecMainList.do" target="_self">국민추천</a></li><li><a href="/site/smba/recommend/managerAppliMain.do" target="_self">정책인재 pool 신청</a></li><li><a href="https://www.sbiz.or.kr/hdst/main/mainPage.do" target="_blank">백년가게</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20405010000002024122901&amp;siteCd=smba" target="_self">규제개혁</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20405010000002024122901&amp;siteCd=smba" target="_self">규제신문고</a></li><li><a href="/site/smba/contents/view.do?menuCd=20405020100002024122922&amp;siteCd=smba" target="_self">규제혁신과제</a></li><li><a href="/site/smba/contents/view.do?menuCd=20405030000002024122942&amp;siteCd=smba" target="_self">규제입증요청</a></li><li><a href="https://www.osmb.go.kr/main" target="_blank">옴부즈만</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20406010100002024122906&amp;siteCd=smba" target="_self">적극행정</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20406010100002024122906&amp;siteCd=smba" target="_self">제도소개</a></li><li><a href="https://www.mpm.go.kr/proactivePublicService/recommand/intro/" target="_blank">공무원ㆍ정책 국민추천</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=307" target="_self">카드뉴스 웹툰</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=306" target="_self">알림소식</a></li></ul></li><li><a href="/site/smba/reservationMain/PesMain_List.do" target="_self">통합예약</a><ul class="depth02"><li><a href="/site/smba/reservationMain/PesMain_List.do" target="_self">예약신청</a></li></ul></li></ul></div></div></div></li><li class="li"><a class="mn" href="javascript:;">정보공개</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>정보공개</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/contents/view.do?menuCd=20701010000002024122949&amp;siteCd=smba" target="_self">정보공개안내</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20701010000002024122949&amp;siteCd=smba" target="_self">정보공개안내</a></li><li><a href="https://www.open.go.kr/com/main/mainView.do?mainBgGubun=search" target="_blank">정보공개청구</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=513" target="_self">사전정보공표</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=513" target="_self">사전정보공표목록</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=128" target="_self">예산 및 업무계획</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=131" target="_self">사업평가 및 감사결과</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=239" target="_self">주요 행정정보</a></li><li><a href="/site/smba/contents/view.do?menuCd=20702050000002024122924&amp;siteCd=smba" target="_self">비공개 세부기준</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=235" target="_self">정부포상추천검증</a></li><li><a href="/site/smba/04/budGetOprtn.jsp?path=VWFORM" target="_self">세입·세출 현황</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20705010000002024122920&amp;siteCd=smba" target="_self">공공데이터개방</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20705010000002024122920&amp;siteCd=smba" target="_self">공공데이터개방</a></li><li><a href="/site/smba/contents/view.do?menuCd=20705020000002024122935&amp;siteCd=smba" target="_self">공공데이터오류신고</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20706010000002024122915&amp;siteCd=smba" target="_self">정책실명제</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20706010000002024122915&amp;siteCd=smba" target="_self">정책실명제</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=16" target="_self">사업내역서</a></li><li><a href="/site/smba/contents/view.do?menuCd=20706030000002024122904&amp;siteCd=smba" target="_self">국민신청실명제</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=605" target="_self">표준약정서</a><ul class="depth02"><li><a href="/site/smba/ex/bbs/List.do?cbIdx=605" target="_self">표준약정서</a></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=606" target="_self">표준계약서</a></li></ul></li><li><a href="/site/smba/ex/bbs/List.do?cbIdx=12" target="_self">정보목록</a></li><li><a href="https://www.coop.go.kr/home/disclosure/DisclosureList.do?menu_no=2037" target="_blank">협동조합 경영공시</a></li></ul></div></div></div></li><li class="li"><a class="mn" href="javascript:;">기관소개</a><div class="w-gnb-wrap depth_box"><div class="inner"><div class="depth_flex"><div class="depth_tit"><h2>기관소개</h2><p class="title_p">함께 뛰는 중소기업, 살맛나는 민생경제</p></div><ul class="depth"><li><a href="/site/smba/contents/view.do?menuCd=20801010000002024122932&amp;siteCd=smba" target="_self">기관소개</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20801010000002024122932&amp;siteCd=smba" target="_self">주요업무</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801020100002024122913&amp;siteCd=smba" target="_self">연혁</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801030000002024122947&amp;siteCd=smba" target="_self">MI소개</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801040100002024122935&amp;siteCd=smba" target="_self">역대장차관</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20801050101002024122937&amp;siteCd=smba" target="_self">열린장관실</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20801050101002024122937&amp;siteCd=smba" target="_self">장관소개</a></li><li><a href="/site/smba/schdule/schduleList.do?searchPosId=0086200" target="_self">장관일정</a></li><li><a href="/site/smba/submain/submain08.do?searchPosId=0086200" target="_self">현장앨범</a></li><li><a href="/site/smba/foffice/ex/siteSgstn/siteSgstnList.do" target="_self">우문현답</a></li><li><a href="/site/smba/contents/view.do?menuCd=20801050500002024122902&amp;siteCd=smba" target="_self">장관과의 대화</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20803010000002024122946&amp;siteCd=smba" target="_self">차관실</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20803010000002024122946&amp;siteCd=smba" target="_self">차관소개</a></li><li><a href="/site/smba/schdule/schduleList.do?searchPosId=0085200" target="_self">차관일정</a></li><li><a href="/site/smba/submain/submain08.do?searchPosId=0085200" target="_self">현장앨범</a></li></ul></li><li><a href="/site/smba/ex/organchart/organchart_office_org.do?target=org" target="_self">조직안내</a><ul class="depth02"><li><a href="/site/smba/ex/organchart/organchart_office_org.do?target=org" target="_self">조직도</a></li><li><a href="/site/smba/ex/empdept/empList.do" target="_self">업무검색</a></li></ul></li><li><a href="/site/smba/contents/view.do?menuCd=20805010000002024122939&amp;siteCd=smba" target="_self">청사안내</a><ul class="depth02"><li><a href="/site/smba/contents/view.do?menuCd=20805010000002024122939&amp;siteCd=smba" target="_self">찾아오시는 길</a></li><li><a href="/site/smba/contents/view.do?menuCd=20805020000002024122905&amp;siteCd=smba" target="_self">층별안내</a></li><li><a href="/site/smba/contents/view.do?menuCd=20805030101002024122909&amp;siteCd=smba" target="_self">소속기관</a></li></ul></li></ul></div></div></div></li></ul>
 </div>
 </nav>
 <div class="m-gnb-wrap" id="m-gnb">
@@ -428,11 +428,11 @@
 <div class="drop-menu">
 <div class="drop-in">
 <ul class="drop-list">
-<li><a class="item-link ico-go" href="http://blog.naver.com/bizinfo1357" target="_blank" title="중소벤처기업부 블로그 새창으로 열기">네이버</a></li>
+<li><a class="item-link ico-go" href="http://youtube.com/bizinfo1357" target="_blank" title="중소벤처기업부 유튜브 새창으로 열기">유튜브</a></li>
 <li><a class="item-link ico-go" href="http://facebook.com/mss1357" target="_blank" title="중소벤처기업부 페이스북 새창으로 열기">페이스북</a></li>
+<li><a class="item-link ico-go" href="http://blog.naver.com/bizinfo1357" target="_blank" title="중소벤처기업부 블로그 새창으로 열기">블로그</a></li>
 <li><a class="item-link ico-go" href="https://www.instagram.com/mss.go.kr" target="_blank" title="중소벤처기업부 인스타그램 새창으로 열기">인스타그램</a></li>
 <li><a class="item-link ico-go" href="https://twitter.com/bizinfo1357" target="_blank" title="중소벤처기업부 트위터 새창으로 열기">X</a></li>
-<li><a class="item-link ico-go" href="http://youtube.com/bizinfo1357" target="_blank" title="중소벤처기업부 유튜브 새창으로 열기">유튜브</a></li>
 </ul>
 </div>
 </div>
@@ -1282,7 +1282,7 @@ $(document).ready(function() {
 <input id="recordCountPerPage" name="recordCountPerPage" type="hidden" value="10"/>
 <input id="sort" name="sort" type="hidden" value=""/>
 <input id="ext6" name="ext6" type="hidden" value=""/>
-<input id="bcIdx" name="bcIdx" type="hidden" value="1057641"/>
+<input id="bcIdx" name="bcIdx" type="hidden" value="1057774"/>
 <input name="SearchFirstYn" type="hidden" value="N"/>
 <div id="contents_inner">
 <div class="search_box">
@@ -1554,10 +1554,8 @@ $(document).ready(function() {
 <option value="SUB_CONT">제목</option>
 <option value="CLOB_CONT">내용</option>
 <option value="CD_SUBJECT">담당부서</option>
-<option value="EXT1">구분</option>
 <option value="EXT2">공고번호</option>
-<option value="EXT3">최초제정일</option>
-<option value="EXT4">시행일</option>
+<option value="EXT3">등록일</option>
 </select>
 <!-- <select title="담당부서 선택" class="board-top-select" id="caCdidx"  name="caCdidx"  onchange="doBbsFPagCnt();return false;" style="display: none;"> -->
 <select class="board-top-select" id="caCdidx" name="caCdidx" style="display: none;" title="담당부서 선택">
@@ -2174,8 +2172,8 @@ $(document).ready(function() {
 <!-- 게시판 요약 정보 및 소팅 옵션 S -->
 <div class="board_support">
 <ul class="board_count">
-<li class="all_count">전체 : <span>5,618</span>건</li>
-<li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">562</span></li>
+<li class="all_count">전체 : <span>5,621</span>건</li>
+<li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">563</span></li>
 </ul>
 <!-- 목록 정렬순 버튼 -->
 </div>
@@ -2205,6 +2203,241 @@ $(document).ready(function() {
 <tbody>
 <tr class="">
 <td>
+										5621
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1057774','16010100','1057774');return false;" title="「경영지도사 및 기술지도사제도 운영지침」 제정(안) 행정예고">
+										
+										「경영지도사 및 기술지도사제도 운영지침」 제정(안) 행정예고
+								</a></td>
+<td class="cd_subject"><span>기업구조개선과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=50b01778-1e9d-44f6-9a55-52a7b6c6e87f.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=5a7622f9-454e-46bf-9508-beecf696aa18.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=27221088-226c-4377-860f-435d3cbfb8c3.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.04.02</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br>제2025-225호</br></span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1057774','16010100','1057774');return false;">
+<div class="subject">
+<span>「경영지도사 및 기술지도사제도 운영지침」 제정(안) 행정예고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>기업구조개선과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=50b01778-1e9d-44f6-9a55-52a7b6c6e87f.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=5a7622f9-454e-46bf-9508-beecf696aa18.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=27221088-226c-4377-860f-435d3cbfb8c3.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.04.02</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>2025-225</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
+										5620
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1057768','16010100','1057768');return false;" title="「중소기업 경영·기술 지도 지침」 일부개정(안) 행정예고">
+										
+										「중소기업 경영·기술 지도 지침」 일부개정(안) 행정예고
+								</a></td>
+<td class="cd_subject"><span>기업구조개선과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwp" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=397b139d-f9ef-4a3c-aeea-c96f7cc7ff30.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=16e31b3b-5901-406e-bab3-82843d7a790c.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.04.02</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-224호</span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1057768','16010100','1057768');return false;">
+<div class="subject">
+<span>「중소기업 경영·기술 지도 지침」 일부개정(안) 행정예고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>기업구조개선과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=397b139d-f9ef-4a3c-aeea-c96f7cc7ff30.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=16e31b3b-5901-406e-bab3-82843d7a790c.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.04.02</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>2025-224</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
+										5619
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1057697','16010100','1057697');return false;" title="「중소기업 인력지원 특별법 시행령」 일부개정령안 입법예고">
+										
+										「중소기업 인력지원 특별법 시행령」 일부개정령안 입법예고
+								</a></td>
+<td class="cd_subject"><span>인력정책과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=2cf0f453-b3e2-40f8-840b-c60fc584326c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=68db3178-53ae-4445-b97c-9a25dc15c8f4.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=684c06c9-d922-442b-bb05-92fd5602d5c2.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.04.01</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-212호</span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1057697','16010100','1057697');return false;">
+<div class="subject">
+<span>「중소기업 인력지원 특별법 시행령」 일부개정령안 입법예고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>인력정책과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=2cf0f453-b3e2-40f8-840b-c60fc584326c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=68db3178-53ae-4445-b97c-9a25dc15c8f4.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=684c06c9-d922-442b-bb05-92fd5602d5c2.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.04.01</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>2025-212</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
 										5618
 									</td>
 <td class="subject" style="text-align:left;">
@@ -2226,12 +2459,13 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="hwp" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="hwp" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057641&amp;cbIdx=126&amp;streFileNm=69856f6a-0935-4666-aade-b665a7d0e5e2.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.28</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br>제2025-216호</br></span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-216호</span></td>
 <!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
 <td class="mobile">
 <a href="#" onclick="doBbsFView('126','1057641','16010100','1057641');return false;">
@@ -2259,7 +2493,7 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057641&amp;cbIdx=126&amp;streFileNm=69856f6a-0935-4666-aade-b665a7d0e5e2.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
@@ -2300,9 +2534,12 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="pdf" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="pdf" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057596&amp;cbIdx=126&amp;streFileNm=0f7efaf0-54fa-429b-845e-36e280b17a31.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057596&amp;cbIdx=126&amp;streFileNm=6d15928d-b2a3-4a74-ad11-c3d6f802ff57.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057596&amp;cbIdx=126&amp;streFileNm=431ad67d-6fe7-4007-9a79-7379ec828b96.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.27</span></td>
 <td><span class="text2Line">중소벤처기업부공고<br/>제2025-206호</span></td>
@@ -2333,8 +2570,10 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057596&amp;cbIdx=126&amp;streFileNm=0f7efaf0-54fa-429b-845e-36e280b17a31.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057596&amp;cbIdx=126&amp;streFileNm=6d15928d-b2a3-4a74-ad11-c3d6f802ff57.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057596&amp;cbIdx=126&amp;streFileNm=431ad67d-6fe7-4007-9a79-7379ec828b96.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
 <li>
@@ -2374,9 +2613,12 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="pdf" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="pdf" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057595&amp;cbIdx=126&amp;streFileNm=61ed158c-c40a-47d0-a360-96f47c5a64fa.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057595&amp;cbIdx=126&amp;streFileNm=e8810e98-feed-42a4-b21e-a81bc1028440.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057595&amp;cbIdx=126&amp;streFileNm=0b33d6a0-eb5e-460b-add5-f0d98be4b1ef.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.27</span></td>
 <td><span class="text2Line">중소벤처기업부공고<br/>제2025-205호</span></td>
@@ -2407,8 +2649,10 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057595&amp;cbIdx=126&amp;streFileNm=61ed158c-c40a-47d0-a360-96f47c5a64fa.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057595&amp;cbIdx=126&amp;streFileNm=e8810e98-feed-42a4-b21e-a81bc1028440.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057595&amp;cbIdx=126&amp;streFileNm=0b33d6a0-eb5e-460b-add5-f0d98be4b1ef.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
 <li>
@@ -2448,8 +2692,9 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="pdf" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="pdf" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057579&amp;cbIdx=126&amp;streFileNm=d64b0eb5-fb51-4e8d-a5c3-37c3687241aa.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.27</span></td>
@@ -2481,7 +2726,7 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057579&amp;cbIdx=126&amp;streFileNm=d64b0eb5-fb51-4e8d-a5c3-37c3687241aa.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
@@ -2522,9 +2767,12 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="pdf" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="pdf" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057573&amp;cbIdx=126&amp;streFileNm=8233ee41-3555-423d-95da-77c03ac5a9a6.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057573&amp;cbIdx=126&amp;streFileNm=39bcc086-f8f4-4023-96a6-579bbfe2c89f.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057573&amp;cbIdx=126&amp;streFileNm=a1c948a3-8e4c-4f53-9406-b42332258e2c.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.27</span></td>
 <td><span class="text2Line">중소벤처기업부공고<br/>제2025-211호</span></td>
@@ -2555,8 +2803,10 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057573&amp;cbIdx=126&amp;streFileNm=8233ee41-3555-423d-95da-77c03ac5a9a6.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057573&amp;cbIdx=126&amp;streFileNm=39bcc086-f8f4-4023-96a6-579bbfe2c89f.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057573&amp;cbIdx=126&amp;streFileNm=a1c948a3-8e4c-4f53-9406-b42332258e2c.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
 <li>
@@ -2596,8 +2846,9 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="hwp" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="hwp" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057503&amp;cbIdx=126&amp;streFileNm=9b27220e-a06b-448d-bdda-8f0d8f2b608f.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.24</span></td>
@@ -2629,7 +2880,7 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057503&amp;cbIdx=126&amp;streFileNm=9b27220e-a06b-448d-bdda-8f0d8f2b608f.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
@@ -2670,9 +2921,11 @@ $(document).ready(function() {
 									document.body.removeChild(a);
 								}
 							})">
-<a class="attach-file pdf" data-file-type="hwpx" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057453&amp;cbIdx=126&amp;streFileNm=50b40e05-c6a5-45c8-ac5f-10323e5b6a1d.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057453&amp;cbIdx=126&amp;streFileNm=88819545-24a6-4d93-997e-dc7d16fc26d6.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.03.21</span></td>
 <td><span class="text2Line">중소벤처기업부공고<br/>제2025-200호</span></td>
@@ -2703,8 +2956,9 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1057453&amp;cbIdx=126&amp;streFileNm=50b40e05-c6a5-45c8-ac5f-10323e5b6a1d.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057453&amp;cbIdx=126&amp;streFileNm=88819545-24a6-4d93-997e-dc7d16fc26d6.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </span>
 </li>
 <li>
@@ -2721,228 +2975,6 @@ $(document).ready(function() {
 </td>
 <!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
 </tr>
-<tr class="">
-<td>
-										5611
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057328','16010100','1057328');return false;" title="창업기획자 신규 등록 공고">
-										
-										창업기획자 신규 등록 공고
-								</a></td>
-<td class="cd_subject"><span>투자관리감독과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwp" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057328&amp;cbIdx=126&amp;streFileNm=5fca901d-5ffe-401c-81be-663517301dca.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.03.17</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-186호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057328','16010100','1057328');return false;">
-<div class="subject">
-<span>창업기획자 신규 등록 공고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>투자관리감독과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057328&amp;cbIdx=126&amp;streFileNm=5fca901d-5ffe-401c-81be-663517301dca.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.03.17</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-186</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5610
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057318','16010100','1057318');return false;" title="창업기획자 등록 말소 공고">
-										
-										창업기획자 등록 말소 공고
-								</a></td>
-<td class="cd_subject"><span>투자관리감독과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwpx" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057318&amp;cbIdx=126&amp;streFileNm=e75c27be-3500-4189-9b1b-24f42261ea1d.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.03.14</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-187호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057318','16010100','1057318');return false;">
-<div class="subject">
-<span>창업기획자 등록 말소 공고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>투자관리감독과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057318&amp;cbIdx=126&amp;streFileNm=e75c27be-3500-4189-9b1b-24f42261ea1d.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.03.14</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-187</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5609
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057292','16010100','1057292');return false;" title="지역산업육성사업 운영요령 일부개정고시안 행정예고">
-										
-										지역산업육성사업 운영요령 일부개정고시안 행정예고
-								</a></td>
-<td class="cd_subject"><span>지역혁신정책과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwpx" href="#" title="모든 파일 내려받기">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/></a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057292&amp;cbIdx=126&amp;streFileNm=b265a316-c476-40da-8d56-cb0341324c24.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.03.13</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-182호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057292','16010100','1057292');return false;">
-<div class="subject">
-<span>지역산업육성사업 운영요령 일부개정고시안 행정예고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>지역혁신정책과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057292&amp;cbIdx=126&amp;streFileNm=b265a316-c476-40da-8d56-cb0341324c24.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.03.13</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-182</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
 </tbody>
 </table>
 </div>
@@ -2950,7 +2982,7 @@ $(document).ready(function() {
 </div>
 <!-- 게시판 페이징 S -->
 <!--// 게시판 페이징 E -->
-<div class="pagination w-page"><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(3);return false;">3</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(4);return false;">4</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(562);return false;">562</a></div><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="pagination m-page"><div class="page-navis"><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(562);return false;">562</a></div></div>
+<div class="pagination w-page"><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(3);return false;">3</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(4);return false;">4</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(563);return false;">563</a></div><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="pagination m-page"><div class="page-navis"><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(563);return false;">563</a></div></div>
 </div>
 </div>
 </input></input></form>
