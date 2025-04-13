@@ -651,7 +651,9 @@ function fn_MenuMrfnPageMove(url){
 <li class="RTline">
 <a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">과제신청</a>
 <ul class="depthM3">
-<li><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">과제 참여횟수 조사</a></li>
+<!-- 524661_자체개선_윤석현_과제신청 졸업제 화면 표시 임시 제외처리
+									<li><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">과제 참여횟수 조사</a></li>
+									-->
 <li><a href="/front/SBA/SA/ApplGuid_advnPrprMatrGuid.do">과제신청 안내</a></li>
 <li><a href="/front/SBA/SA/SbjtAppl_selectSbjtAncmList.do">과제신청</a></li>
 <li><a href="/front/SBA/SA/SbjtAppl_selectSbjtApplList.do">과제 신청내역 조회</a></li>
@@ -959,7 +961,9 @@ function fn_MenuMrfnPageMove(url){
 <dt><a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">과제기획</a></dt>
 <dd><a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">- 온라인수요조사 신청</a></dd>
 <dt><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">과제신청</a></dt>
-<dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">- 과제 참여횟수 조사</a></dd>
+<!-- 524661_자체개선_윤석현_과제신청 졸업제 화면 표시 임시 제외처리                                         	
+											<dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">- 과제 참여횟수 조사</a></dd>
+											-->
 <dd><a href="/front/SBA/SA/ApplGuid_advnPrprMatrGuid.do">- 과제신청 안내</a></dd>
 <dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtAncmList.do">- 과제신청</a></dd>
 <dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtApplList.do">- 과제 신청내역 조회</a></dd>
@@ -1325,6 +1329,23 @@ $(document).ready(function () {
 <tbody>
 <tr>
 <td class="ac">1</td>
+<td class="ac">전담은행 투자설명회(IR)</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02804&amp;buclCd=S9171&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 제2차 중소기업 R&amp;D 전담은행 투자지원 신청기업(우수성과 50선 분야) 모집 공고</a></td>
+<td class="ac">
+
+	                       	2025. 04. 11 ~ 2025. 05. 09
+	                  	</td>
+<td class="ac">
+	                    	2025-04-11
+
+	                    </td>
+<td class="ac ll">
+<!--4 5 4 14-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">2</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=3&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 4월 공고</a></td>
 <td class="ac">
@@ -1336,12 +1357,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 4 4 7-->
+<!--4 4 4 14-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">2</td>
+<td class="ac">3</td>
 <td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02803&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 제1차 혁신제품 지정기간 연장(1차 연장) 공고</a></td>
 <td class="ac">
@@ -1353,12 +1374,29 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 4 4 7-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+<!--4 4 4 14-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">3</td>
+<td class="ac">4</td>
+<td class="ac">(비R&amp;D)지역주력산업육성</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02805&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 지식산업센터 연계활용 지원사업 공고</a></td>
+<td class="ac">
+
+	                       	2025. 04. 09 ~ 2025. 04. 11
+	                  	</td>
+<td class="ac">
+	                    	2025-01-24
+
+	                    </td>
+<td class="ac ll">
+<!--4 4 4 14-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">5</td>
 <td class="ac">중소벤처기업부 혁신제품 지정사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02802&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 중소벤처기업부 혁신제품 추가등록 1차 안내문</a></td>
 <td class="ac">
@@ -1370,12 +1408,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--3 4 4 7-->
+<!--3 4 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">4</td>
+<td class="ac">6</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 3월 공고</a></td>
 <td class="ac">
@@ -1387,12 +1425,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--3 3 4 7-->
+<!--3 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">5</td>
+<td class="ac">7</td>
 <td class="ac">중소벤처기업부 혁신제품 지정사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02800&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 중소벤처기업부 혁신제품 지정제도 시행계획(상반기) 공고</a></td>
 <td class="ac">
@@ -1404,12 +1442,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 3 4 7-->
+<!--2 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">6</td>
+<td class="ac">8</td>
 <td class="ac">TIPA ValueUP 프로그램</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02799&amp;buclCd=S9141&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">TIPA ValueUP 프로그램 18기 참여기업 모집 공고</a></td>
 <td class="ac">
@@ -1421,12 +1459,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 3 4 7-->
+<!--2 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">7</td>
+<td class="ac">9</td>
 <td class="ac">산업기술단지거점기능강화</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02795&amp;buclCd=S8012&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 테크노파크 생산장비 고도화 지원사업</a></td>
 <td class="ac">
@@ -1438,12 +1476,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 3 4 7-->
+<!--2 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">8</td>
+<td class="ac">10</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 2월 공고</a></td>
 <td class="ac">
@@ -1455,12 +1493,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 2 4 7-->
+<!--2 2 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">9</td>
+<td class="ac">11</td>
 <td class="ac">신진연구인력채용지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02781&amp;buclCd=S6042&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(채용, 신진) 공고</a></td>
 <td class="ac">
@@ -1472,12 +1510,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--1 3 4 7-->
+<!--1 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">10</td>
+<td class="ac">12</td>
 <td class="ac">고경력연구인력채용지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02773&amp;buclCd=S6043&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(채용, 고경력) 공고</a></td>
 <td class="ac">
@@ -1489,12 +1527,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--1 3 4 7-->
+<!--1 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">11</td>
+<td class="ac">13</td>
 <td class="ac">주력산업 생태계 구축</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02777&amp;buclCd=S6581&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 지역혁신선도기업육성(R&amp;D)-주력산업 상태계 구축</a></td>
 <td class="ac">
@@ -1506,12 +1544,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 3 4 7-->
+<!--2 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">12</td>
+<td class="ac">14</td>
 <td class="ac">지역기업 역량강화</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02778&amp;buclCd=S6582&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 지역혁신선도기업육성(R&amp;D)-지역기업 역량강화</a></td>
 <td class="ac">
@@ -1523,12 +1561,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 3 4 7-->
+<!--2 3 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">13</td>
+<td class="ac">15</td>
 <td class="ac">(비R&amp;D)지역주력산업육성</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02789&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 지역특화 프로젝트 지원사업(지원) 공고</a></td>
 <td class="ac">
@@ -1540,41 +1578,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--1 2 4 7-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">14</td>
-<td class="ac">(비R&amp;D)지역주력산업육성(제주)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02790&amp;buclCd=S8019&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 지역특화 프로젝트 지원사업(제주) 공고</a></td>
-<td class="ac">
-
-	                       	2025. 01. 31 ~ 2025. 02. 05
-	                  	</td>
-<td class="ac">
-	                    	2025-01-24
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 4 7-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">15</td>
-<td class="ac">(비R&amp;D)지역주력산업육성(세종)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02791&amp;buclCd=S801A&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 지역특화 프로젝트 지원사업(세종) 공고</a></td>
-<td class="ac">
-
-	                       	2025. 01. 31 ~ 2025. 02. 05
-	                  	</td>
-<td class="ac">
-	                    	2025-01-24
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 4 7-->
+<!--1 2 4 14-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
