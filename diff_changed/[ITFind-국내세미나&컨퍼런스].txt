@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-04-14"></script>
+<script src="/contents/js/func.js?ver=2025-04-21"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -475,8 +475,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>3130건</strong></span>
-<span>현재페이지 : <strong>1/313.0</strong></span>
+<span>총 게시물 : <strong>3148건</strong></span>
+<span>현재페이지 : <strong>1/315.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -506,7 +506,15 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">3130</th>
+<th data-cell-header="번호" scope="row">3148</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14154&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.20] 바이오가스 기반의 청정에너지 생산기술과 사업화방안 / 한국</a></td>
+<td data-cell-header="행사기간">2025-06-20~2025-06-20</td>
+<td data-cell-header="접수기간">2025-04-17~2025-06-19</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3147</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14120&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.13] 2025 데이터센터 구축 전략 세미나 - 데이터센터 산업의 전방위 실전 전략 / 한국</a></td>
@@ -514,7 +522,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-04-01~2025-06-12</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3129</th>
+<th data-cell-header="번호" scope="row">3146</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14042&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 인공지능 &amp; 빅데이터쇼(AI &amp; Big Data Show 2025) / 한국</a></td>
@@ -522,7 +530,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-05-10~2025-06-10</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3128</th>
+<th data-cell-header="번호" scope="row">3145</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14119&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.10] 재생에너지 직접 구매와 PPA 현황 및 기업의 활용사례 세미나 -PPA 실무 완전정복- / 한국</a></td>
@@ -530,7 +538,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-04-01~2025-06-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3127</th>
+<th data-cell-header="번호" scope="row">3144</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14146&amp;boardParam1=ko&amp;searchTarget2=">국내//제14회 스마트테크 코리아(Smart Tech Korea 2025) / 한국</a></td>
+<td data-cell-header="행사기간">2025-06-11~2025-06-13</td>
+<td data-cell-header="접수기간">2025-03-01~2025-06-06</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3143</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14098&amp;boardParam1=ko&amp;searchTarget2=">국내//ISS 2025 / 한국</a></td>
@@ -538,7 +554,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-03-31~2025-06-04</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3126</th>
+<th data-cell-header="번호" scope="row">3142</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14115&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.30] BESS 산업 확대를 위한 국내·외 시장 분석 및 사업 다각화 방안 / 한국</a></td>
@@ -546,7 +562,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-04-01~2025-05-29</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3125</th>
+<th data-cell-header="번호" scope="row">3141</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14149&amp;boardParam1=ko&amp;searchTarget2=">국내//SECaaS Summit 2025 / 한국</a></td>
+<td data-cell-header="행사기간">2025-05-29~2025-05-29</td>
+<td data-cell-header="접수기간">2025-04-15~2025-05-28</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3140</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14130&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.29] ChatGPT 활용 마스터 : 입문부터 실무까지 / 한국</a></td>
@@ -554,36 +578,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-04-09~2025-05-28</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3124</th>
+<th data-cell-header="번호" scope="row">3139</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14077&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.28] 2025 분산에너지를 활용한 신사업 창출방안 및 전력망 이슈 세미나 / 한국</a></td>
 <td data-cell-header="행사기간">2025-05-28~2025-05-28</td>
 <td data-cell-header="접수기간">2025-02-01~2025-05-27</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3123</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14076&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.27] 전기차 배터리 화재 대응을 위한 대책방안 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-27~2025-05-27</td>
-<td data-cell-header="접수기간">2025-02-01~2025-05-26</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3122</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14075&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.27] 2025 에너지산업 변화와 전력시장의 대응방안 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-27~2025-05-27</td>
-<td data-cell-header="접수기간">2025-02-01~2025-05-26</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3121</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14114&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.23] 데이터 센터(DC) 냉각시스템 개발 및 구축 사례와 효율적 운영방안 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-23~2025-05-23</td>
-<td data-cell-header="접수기간">2025-04-01~2025-05-22</td>
 </tr>
 </tbody>
 </table>
