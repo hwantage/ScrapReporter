@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-04-21"></script>
+<script src="/contents/js/func.js?ver=2025-05-05"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -256,6 +256,7 @@ function fnAlertLogin(){
 <li><a href="/publication/regular/periodical/list.do?selectedCategory=B_UGN_301&amp;selectedGroupId=E_06_03">월간 SW중심사회</a></li>
 <li><a href="/publication/regular/periodical/list.do?selectedCategory=B_UGN_302&amp;selectedGroupId=B_UGN">SPRI 이슈리포트</a></li>
 <li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_35&amp;selectedGroupId=B_ITA">ICT Policy Issue</a></li>
+<li><a href="/publication/regular/periodical/list.do?selectedCategory=B_ITA_37&amp;selectedGroupId=B_ITA">IITP 미국 보호무역 동향 브리핑</a></li>
 </ul>
 </li>
 <li><a href="/publication/statistics/list.do">통계간행물</a>
@@ -475,8 +476,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>3148건</strong></span>
-<span>현재페이지 : <strong>1/315.0</strong></span>
+<span>총 게시물 : <strong>3163건</strong></span>
+<span>현재페이지 : <strong>1/317.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -506,84 +507,84 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">3148</th>
+<th data-cell-header="번호" scope="row">3163</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14171&amp;boardParam1=ko&amp;searchTarget2=">국내//스마트라이프위크(SLW, Smart Life Week) / 한국</a></td>
+<td data-cell-header="행사기간">2025-09-30 00:00:00.0~2025-10-02 00:00:00.0</td>
+<td data-cell-header="접수기간">2025-08-29~2025-09-29</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3162</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14162&amp;boardParam1=ko&amp;searchTarget2=">국내//NextRise 2025, Seoul / 한국</a></td>
+<td data-cell-header="행사기간">2025-06-26 00:00:00.0~2025-06-27 00:00:00.0</td>
+<td data-cell-header="접수기간">2025-05-26~2025-06-26</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3161</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14158&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.26] 효율적 열관리를 위한 히트펌프 요소기술 집중교육 / 한국</a></td>
+<td data-cell-header="행사기간">2025-06-26 00:00:00.0~2025-06-26 00:00:00.0</td>
+<td data-cell-header="접수기간">2025-04-23~2025-06-25</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3160</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14154&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.20] 바이오가스 기반의 청정에너지 생산기술과 사업화방안 / 한국</a></td>
-<td data-cell-header="행사기간">2025-06-20~2025-06-20</td>
+<td data-cell-header="행사기간">2025-06-20 00:00:00.0~2025-06-20 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-04-17~2025-06-19</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3147</th>
+<th data-cell-header="번호" scope="row">3159</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14120&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.13] 2025 데이터센터 구축 전략 세미나 - 데이터센터 산업의 전방위 실전 전략 / 한국</a></td>
-<td data-cell-header="행사기간">2025-06-13~2025-06-13</td>
+<td data-cell-header="행사기간">2025-06-13 00:00:00.0~2025-06-13 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-04-01~2025-06-12</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3146</th>
+<th data-cell-header="번호" scope="row">3158</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14042&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 인공지능 &amp; 빅데이터쇼(AI &amp; Big Data Show 2025) / 한국</a></td>
-<td data-cell-header="행사기간">2025-06-11~2025-06-13</td>
+<td data-cell-header="행사기간">2025-06-11 00:00:00.0~2025-06-13 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-05-10~2025-06-10</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3145</th>
+<th data-cell-header="번호" scope="row">3157</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14119&amp;boardParam1=ko&amp;searchTarget2=">국내//[06.10] 재생에너지 직접 구매와 PPA 현황 및 기업의 활용사례 세미나 -PPA 실무 완전정복- / 한국</a></td>
-<td data-cell-header="행사기간">2025-06-10~2025-06-10</td>
+<td data-cell-header="행사기간">2025-06-10 00:00:00.0~2025-06-10 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-04-01~2025-06-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3144</th>
+<th data-cell-header="번호" scope="row">3156</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14146&amp;boardParam1=ko&amp;searchTarget2=">국내//제14회 스마트테크 코리아(Smart Tech Korea 2025) / 한국</a></td>
-<td data-cell-header="행사기간">2025-06-11~2025-06-13</td>
+<td data-cell-header="행사기간">2025-06-11 00:00:00.0~2025-06-13 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-03-01~2025-06-06</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3143</th>
+<th data-cell-header="번호" scope="row">3155</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14098&amp;boardParam1=ko&amp;searchTarget2=">국내//ISS 2025 / 한국</a></td>
-<td data-cell-header="행사기간">2025-06-03~2025-06-05</td>
+<td data-cell-header="행사기간">2025-06-03 00:00:00.0~2025-06-05 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-03-31~2025-06-04</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3142</th>
+<th data-cell-header="번호" scope="row">3154</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14115&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.30] BESS 산업 확대를 위한 국내·외 시장 분석 및 사업 다각화 방안 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-30~2025-05-30</td>
-<td data-cell-header="접수기간">2025-04-01~2025-05-29</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3141</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14149&amp;boardParam1=ko&amp;searchTarget2=">국내//SECaaS Summit 2025 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-29~2025-05-29</td>
-<td data-cell-header="접수기간">2025-04-15~2025-05-28</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3140</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14130&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.29] ChatGPT 활용 마스터 : 입문부터 실무까지 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-29~2025-05-29</td>
-<td data-cell-header="접수기간">2025-04-09~2025-05-28</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3139</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14077&amp;boardParam1=ko&amp;searchTarget2=">국내//[05.28] 2025 분산에너지를 활용한 신사업 창출방안 및 전력망 이슈 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-05-28~2025-05-28</td>
-<td data-cell-header="접수기간">2025-02-01~2025-05-27</td>
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14161&amp;boardParam1=ko&amp;searchTarget2=">국내//ASK 2025 / 한국</a></td>
+<td data-cell-header="행사기간">2025-05-29 00:00:00.0~2025-05-31 00:00:00.0</td>
+<td data-cell-header="접수기간">2025-04-30~2025-05-30</td>
 </tr>
 </tbody>
 </table>
@@ -611,7 +612,7 @@ function fnMvOrgan(){
 <!-- footer start  -->
 <footer>
 <ul class="Footmenu">
-<li><a href="/ccenter/personalInformationPolicy2025.do">개인정보처리방침</a></li>
+<li><a href="/ccenter/personalInformationPolicy2025_v2.do">개인정보처리방침</a></li>
 <li><a href="/ccenter/siteAgreement.do">이용약관</a></li>
 <li><a href="/introduce/loadmap.do">찾아오시는길</a></li>
 </ul>
@@ -621,7 +622,7 @@ function fnMvOrgan(){
 <button type="button">내부사이트 바로가기</button>
 <ul>
 <li><a href="http://www.iitp.kr" rel="noopener noreferrer" target="_blank">정보통신기획평가원</a></li>
-<li><a href="http://annualreport.itfind.or.kr/ver2.rpt" rel="noopener noreferrer" target="_blank">정보통신연차보고서</a></li>
+<li><a href="/publication/whiteandyear/list.do?selectedCategory=B_WPD_71&amp;selectedGroupId=B_WPD" target="_blank" title="새창으로 열림">정보통신연차보고서</a></li>
 </ul>
 </div>
 <div><!-- 유관기관 바로가기 -->

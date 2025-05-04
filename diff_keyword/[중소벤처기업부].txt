@@ -1293,7 +1293,7 @@ $(document).ready(function() {
 <input id="recordCountPerPage" name="recordCountPerPage" type="hidden" value="10"/>
 <input id="sort" name="sort" type="hidden" value=""/>
 <input id="ext6" name="ext6" type="hidden" value=""/>
-<input id="bcIdx" name="bcIdx" type="hidden" value="1058236"/>
+<input id="bcIdx" name="bcIdx" type="hidden" value="1058615"/>
 <input name="SearchFirstYn" type="hidden" value="N"/>
 <div id="contents_inner">
 <div class="search_box">
@@ -2183,8 +2183,8 @@ $(document).ready(function() {
 <!-- 게시판 요약 정보 및 소팅 옵션 S -->
 <div class="board_support">
 <ul class="board_count">
-<li class="all_count">전체 : <span>5,627</span>건</li>
-<li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">563</span></li>
+<li class="all_count">전체 : <span>5,631</span>건</li>
+<li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">564</span></li>
 </ul>
 <!-- 목록 정렬순 버튼 -->
 </div>
@@ -2212,6 +2212,308 @@ $(document).ready(function() {
 </tr>
 </thead>
 <tbody>
+<tr class="">
+<td>
+										5631
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1058615','16010100','1058615');return false;" title="「상생결제 운영요령」 일부개정안 행정예고">
+										
+										「상생결제 운영요령」 일부개정안 행정예고
+								</a></td>
+<td class="cd_subject"><span>상생협력정책과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058615&amp;cbIdx=126&amp;streFileNm=53decf06-33b9-403b-b1a3-4f6c3af72682.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.05.01</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br>제2025-286호</br></span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1058615','16010100','1058615');return false;">
+<div class="subject">
+<span>「상생결제 운영요령」 일부개정안 행정예고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>상생협력정책과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058615&amp;cbIdx=126&amp;streFileNm=53decf06-33b9-403b-b1a3-4f6c3af72682.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.05.01</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>2025-286</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
+										5630
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1058572','16010100','1058572');return false;" title="소송비용액 확정 결정에 따른 소송비용액 납부 고지 공시송달 공고">
+										
+										소송비용액 확정 결정에 따른 소송비용액 납부 고지 공시송달 공고
+								</a></td>
+<td class="cd_subject"><span>벤처정책과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058572&amp;cbIdx=126&amp;streFileNm=7193c037-b4c5-471c-b562-d76a34c5a0e5.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.04.30</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제  2025 – 278호</span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1058572','16010100','1058572');return false;">
+<div class="subject">
+<span>소송비용액 확정 결정에 따른 소송비용액 납부 고지 공시송달 공고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>벤처정책과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058572&amp;cbIdx=126&amp;streFileNm=7193c037-b4c5-471c-b562-d76a34c5a0e5.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.04.30</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>  2025 – 278</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
+										5629
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1058305','16010100','1058305');return false;" title="창업기획자 신규 등록 공고">
+										
+										창업기획자 신규 등록 공고
+								</a></td>
+<td class="cd_subject"><span>투자관리감독과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwp" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058305&amp;cbIdx=126&amp;streFileNm=0abc604d-7aea-41c2-a327-7cc4e6f097ce.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.04.22</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-272호</span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1058305','16010100','1058305');return false;">
+<div class="subject">
+<span>창업기획자 신규 등록 공고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>투자관리감독과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058305&amp;cbIdx=126&amp;streFileNm=0abc604d-7aea-41c2-a327-7cc4e6f097ce.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.04.22</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>2025-272</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
+										5628
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1058258','16010100','1058258');return false;" title="「창업기업 공장설립계획 승인에 관한 통합업무처리지침」일부개정고시안 행정예고">
+										
+										「창업기업 공장설립계획 승인에 관한 통합업무처리지침」일부개정고시안 행정예고
+								</a></td>
+<td class="cd_subject"><span>기업구조개선과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+</a>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058258&amp;cbIdx=126&amp;streFileNm=701f8413-280b-4a57-8240-b86ed6d3fc40.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058258&amp;cbIdx=126&amp;streFileNm=82941c5b-20d9-4aac-b22d-210daccf84df.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</td>
+<td><span class="text2Line">2025.04.21</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-627호</span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1058258','16010100','1058258');return false;">
+<div class="subject">
+<span>「창업기업 공장설립계획 승인에 관한 통합업무처리지침」일부개정고시안 행정예고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>기업구조개선과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058258&amp;cbIdx=126&amp;streFileNm=701f8413-280b-4a57-8240-b86ed6d3fc40.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1058258&amp;cbIdx=126&amp;streFileNm=82941c5b-20d9-4aac-b22d-210daccf84df.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.04.21</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>2025-627</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
 <tr class="">
 <td>
 										5627
@@ -2242,7 +2544,7 @@ $(document).ready(function() {
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1058236&amp;cbIdx=126&amp;streFileNm=a1b7309a-7b24-4abf-95fb-ecd6cb9b8b6f.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
 </td>
 <td><span class="text2Line">2025.04.18</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br>제2025-261호</br></span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-261호</span></td>
 <!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
 <td class="mobile">
 <a href="#" onclick="doBbsFView('126','1058236','16010100','1058236');return false;">
@@ -2672,316 +2974,6 @@ $(document).ready(function() {
 </td>
 <!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
 </tr>
-<tr class="">
-<td>
-										5621
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057774','16010100','1057774');return false;" title="「경영지도사 및 기술지도사제도 운영지침」 제정(안) 행정예고">
-										
-										「경영지도사 및 기술지도사제도 운영지침」 제정(안) 행정예고
-								</a></td>
-<td class="cd_subject"><span>기업구조개선과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwpx" href="#">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
-</a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=50b01778-1e9d-44f6-9a55-52a7b6c6e87f.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=5a7622f9-454e-46bf-9508-beecf696aa18.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=27221088-226c-4377-860f-435d3cbfb8c3.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.04.02</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-225호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057774','16010100','1057774');return false;">
-<div class="subject">
-<span>「경영지도사 및 기술지도사제도 운영지침」 제정(안) 행정예고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>기업구조개선과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=50b01778-1e9d-44f6-9a55-52a7b6c6e87f.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=5a7622f9-454e-46bf-9508-beecf696aa18.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057774&amp;cbIdx=126&amp;streFileNm=27221088-226c-4377-860f-435d3cbfb8c3.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.04.02</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-225</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5620
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057768','16010100','1057768');return false;" title="「중소기업 경영·기술 지도 지침」 일부개정(안) 행정예고">
-										
-										「중소기업 경영·기술 지도 지침」 일부개정(안) 행정예고
-								</a></td>
-<td class="cd_subject"><span>기업구조개선과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwp" href="#">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
-</a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=397b139d-f9ef-4a3c-aeea-c96f7cc7ff30.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=16e31b3b-5901-406e-bab3-82843d7a790c.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.04.02</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-224호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057768','16010100','1057768');return false;">
-<div class="subject">
-<span>「중소기업 경영·기술 지도 지침」 일부개정(안) 행정예고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>기업구조개선과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=397b139d-f9ef-4a3c-aeea-c96f7cc7ff30.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057768&amp;cbIdx=126&amp;streFileNm=16e31b3b-5901-406e-bab3-82843d7a790c.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.04.02</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-224</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5619
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057697','16010100','1057697');return false;" title="「중소기업 인력지원 특별법 시행령」 일부개정령안 입법예고">
-										
-										「중소기업 인력지원 특별법 시행령」 일부개정령안 입법예고
-								</a></td>
-<td class="cd_subject"><span>인력정책과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwpx" href="#">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
-</a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=2cf0f453-b3e2-40f8-840b-c60fc584326c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=68db3178-53ae-4445-b97c-9a25dc15c8f4.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=684c06c9-d922-442b-bb05-92fd5602d5c2.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.04.01</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-212호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057697','16010100','1057697');return false;">
-<div class="subject">
-<span>「중소기업 인력지원 특별법 시행령」 일부개정령안 입법예고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>인력정책과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg" title="모든 파일 내려받기"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=2cf0f453-b3e2-40f8-840b-c60fc584326c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=68db3178-53ae-4445-b97c-9a25dc15c8f4.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057697&amp;cbIdx=126&amp;streFileNm=684c06c9-d922-442b-bb05-92fd5602d5c2.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.04.01</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-212</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5618
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1057641','16010100','1057641');return false;" title="창업기획자 신규 등록 공고">
-										
-										창업기획자 신규 등록 공고
-								</a></td>
-<td class="cd_subject"><span>투자관리감독과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwp" href="#">
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-</a>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057641&amp;cbIdx=126&amp;streFileNm=69856f6a-0935-4666-aade-b665a7d0e5e2.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</td>
-<td><span class="text2Line">2025.03.28</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-216호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1057641','16010100','1057641');return false;">
-<div class="subject">
-<span>창업기획자 신규 등록 공고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>투자관리감독과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 있음" class="attach-file-icon" src="/images/board/ico_file.svg" title="모든 파일 내려받기"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1057641&amp;cbIdx=126&amp;streFileNm=69856f6a-0935-4666-aade-b665a7d0e5e2.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.03.28</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>2025-216</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
 </tbody>
 </table>
 </div>
@@ -2989,7 +2981,7 @@ $(document).ready(function() {
 </div>
 <!-- 게시판 페이징 S -->
 <!--// 게시판 페이징 E -->
-<div class="pagination w-page"><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(3);return false;">3</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(4);return false;">4</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(563);return false;">563</a></div><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="pagination m-page"><div class="page-navis"><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(563);return false;">563</a></div></div>
+<div class="pagination w-page"><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(3);return false;">3</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(4);return false;">4</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(564);return false;">564</a></div><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="pagination m-page"><div class="page-navis"><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="page-links"><a class="page-link active" href="javascript:;">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(564);return false;">564</a></div></div>
 </div>
 </div>
 </input></input></form>
@@ -3028,8 +3020,23 @@ $(document).ready(function() {
             }
         });
     }
-
+	console.log("N" + " : " + "Y");
 </script>
+<div class="pageReview">
+<div class="pageReview-top pc">
+<h3>담당자 정보</h3>
+<div class="pageReview-top-cont">
+<dl>
+<dt>담당부서</dt>
+<dd>규제개혁법무담당관</dd>
+</dl>
+<dl>
+<dt>전화번호</dt>
+<dd>044-204-7360</dd>
+</dl>
+</div>
+</div>
+</div>
 <script>
                                 const refererInfo = document.referrer;
                                 if (refererInfo.indexOf('/site/smba/ex/organchart/organchart_office_org.do') > -1
