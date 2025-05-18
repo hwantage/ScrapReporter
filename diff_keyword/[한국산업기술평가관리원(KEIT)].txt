@@ -1283,11 +1283,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 제2차 자동차분야(스마트카) 기획후보과제 인터넷공시<i class="blank"></i></a><span class="date">2025.05.16</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 제2차 국가표준기술력향상사업 신규기획 대상과제 인터넷 공시<i class="blank"></i></a><span class="date">2025.05.16</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">배터리분야 고유임무형 계속사업 통합·재기획을 위한 기술수요조사 공고<i class="blank"></i></a><span class="date">2025.05.14</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">첨단항공엔진 핵심소재 기술개발사업 기획을 위한 기술수요조사 공고<i class="blank"></i></a><span class="date">2025.05.13</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 3차 디자인산업기술개발사업 기획과제 인터넷공시<i class="blank"></i></a><span class="date">2025.05.02</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 제2차 국제표준기반 시험장비 기술개발 및 고도화 지원사업<i class="blank"></i></a><span class="date">2025.04.30</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년도 글로벌재활용규제대응플라스틱밸류업을위한혁신기술개발사업 기획대상과제 인터넷공시<i class="blank"></i></a><span class="date">2025.04.25</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2025년 고성능차세대디스플레이로의전환을위한미래핵심기술개발 기획과제 인터넷공시<i class="blank"></i></a><span class="date">2025.04.23</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">(수정) 2025년도 제2차 조선해양 분야 기획대상과제 인터넷공시<i class="blank"></i></a><span class="date">2025.04.23</span></li>
 </ul>
 </div>
 </div>
@@ -1524,6 +1524,14 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a class="rollingPrevNext" href="#"><img alt="다음보기" src="img/main/arrNext_icon.png"/></a>
 <a class="rollingStop" href="#"><img alt="정지" src="img/main/stop_icon.png"/></a>
 </div>
+<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2025/05/12/8B164434-5590-2B98-351F-C6F392DABCA1_W435.png"/></a>
+<!-- 텍스트 영역 -->
+<dl>
+<dt>[이달의 신기술]</dt>
+<dd>테크 포커스 2025년 5월호 (Vol.19)</dd>
+</dl>
+<!--// 텍스트 영역 -->
+</div>
 <div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2025/04/14/22CF79BC-05A6-61EC-84F4-D42C33823138_W435.png"/></a>
 <!-- 텍스트 영역 -->
 <dl>
@@ -1553,14 +1561,6 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <dl>
 <dt>[이달의 신기술]</dt>
 <dd>테크 포커스 2025년 1월호 (Vol.15)</dd>
-</dl>
-<!--// 텍스트 영역 -->
-</div>
-<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2025/01/08/C255A670-0145-DB24-512E-F050091D0D72_W435.png"/></a>
-<!-- 텍스트 영역 -->
-<dl>
-<dt>[이달의 신기술]</dt>
-<dd>테크 포커스 2024년 12월호 (Vol.14)</dd>
 </dl>
 <!--// 텍스트 영역 -->
 </div>
@@ -1629,11 +1629,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <div class="title">진행중인 교육과정 <a class="more" href="#" onclick="f_chgPage('05020000'); return false;">더보기</a></div>
 <ul class="edu_list" id="edu_list">
 <li><span class="zone">지역</span><span class="edu">교육과정명</span><span class="day">날짜</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000007'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">05.28~05.28</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000006'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">05.20~05.20</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000003'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">04.29~04.29</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000005'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">04.22~04.22</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000004'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">04.08~04.08</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000002'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">03.25~03.25</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2025000001'); return false;">2025년 산업기술 R&amp;D 실무과정 교육</a></span><span class="day1">03.18~03.18</span></li>
 </ul>
 </div>
 <!--  // edu_box -->
