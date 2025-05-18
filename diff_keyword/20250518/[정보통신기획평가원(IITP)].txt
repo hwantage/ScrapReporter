@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control">
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="0" http-equiv="Expires"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" name="viewport"/>
+<script>
+	var iitpLanguage="kr";
+	function ssoPopup(){         
+		window.name ="Parent_window"; 
+		window.open('https://sso.nipa.kr:5443/sso/user/login.it', 'popupChk', 'width=500, height=550, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');
+		return false;
+	}
+</script>
+<script src="/resources/plugin/jquery/1.11.0/jquery-1.11.0.min.js"></script>
+<script src="/resources/plugin/jquery-ui/1.11.0/jquery-ui.min.js"></script>
+<script src="/resources/plugin/jquery.maphilight.min.js?ver=20201117"></script>
+<script src="/resources/js/getToPost.js"></script>
+<script>
+	var ctx = "";
+	$.widget.bridge('uibutton', $.ui.button);
+	$.widget.bridge('uitooltip', $.ui.tooltip);
+</script>
+<script src="/resources/plugin/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="/resources/js/common.js"></script>
+<link href="/resources/plugin/bootstrap/3.2.0/css/bootstrap.css?ver=221114" rel="stylesheet"/>
+<link href="/resources/css/common.css?ver=20241125" rel="stylesheet">
+<link href="/resources/css/layout.css?ver=20241127_2" rel="stylesheet"/>
+<link href="/resources/css/style.css?ver=20241118" rel="stylesheet"/>
+<!--[if lt IE 9]>
+	<script src="/resources/plugin/html5shiv.js"></script>
+	<link rel="stylesheet" href="/resources/css/ie.css" />
+<![endif]-->
+<link href="/resources/main_css/common.css?ver=241220" rel="stylesheet"/>
+<link href="/resources/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet">
+<script src="/resources/main_js/core.min.js"></script>
+<script src="/resources/main_js/easings.min.js"></script>
+<script src="/resources/main_vendors/slick-1.8.1/slick-1.8.1/slick/slick.min.js?ver=20241118"></script>
+<script src="/resources/main_vendors/swiper-11.0.7/package/swiper-bundle.min.js"></script>
+<script src="/resources/main_vendors/rd-navbar-2.1.8/dist/js/jquery.rd-navbar.min.js"></script>
+<!-- 호환성보기 깨지는 문제로 위치 변경 케릭터셋 및 IE버전관련 상단으로 -->
+<link href="/resources/images/iitp_Logo_ico_2024.ico" rel="shortcut icon" type="image/x-icon"/>
+<html lang="ko">
+<head>
+<script>
+		if (!Array.prototype.indexOf){Array.prototype.indexOf = function(elt){ var len = this.length >>> 0; var from = Number(arguments[1]) || 0; from = (from < 0)? Math.ceil(from): Math.floor(from); if (from < 0)from += len; for (; from < len; from++){ if (from in this && this[from] === elt) return from;} return -1;};}
+		</script>
+<title>
+			주요사업 
+									&gt;
+									사업공고 
+									&gt;
+									(현)사업공고
+					| IITP
+				</title>
+<script src="/resources/js/formValidation.js"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<!-- Accessibility -->
+<dl id="accessibility">
+<dt>바로가기 및 건너뛰기</dt>
+<dd><a href="#conArea">본문 바로가기</a></dd>
+<dd><a href="#depth11">주메뉴 바로가기</a></dd>
+<!-- 2021.11.29 WA관련 서브메뉴가 존재하지 않을 때 서브메뉴 바로가기 비활성화(ex:본인인증 페이지) -->
+<dd><a href="#side">서브메뉴 바로가기</a></dd>
+</dl>
+<!-- Accessibility // -->
+<div id="wrap">
+<header class="rd-navbar-wrap">
+<nav class="rd-navbar" data-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static">
+<div class="rd-navbar-inner">
+<!-- RD Navbar Panel -->
+<div class="rd-navbar-panel">
+<div class="rd-navbar-panel-canvas"></div>
+<!-- RD Navbar Toggle -->
+<button aria-label="메뉴열기" class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap" title="메뉴열기"><span></span></button>
+</div>
+<!-- RD Navbar Brand -->
+<div class="rd-navbar-brand">
+<h1><a class="brand" href="/main.it">정보통신기획평가원</a></h1>
+</div>
+</div>
+<div class="rd-navbar-outer">
+<div class="rd-navbar-inner">
+<div class="rd-navbar-subpanel">
+<div class="rd-navbar-nav-wrap">
+<script>	
+									$(function() {										
+										$(".rd-navbar-nav").hover(function(e) {
+											$(".rd-navbar").addClass("nav-bg")
+										}, function(e) {
+											$(".rd-navbar").removeClass("nav-bg")
+										});								
+									});
+								</script>
+<!-- RD Navbar Nav -->
+<ul class="rd-navbar-nav" id="depth11">
+<!--메뉴 시작-->
+<li>
+<a href="/kr/1/introduce/intro.it" target="_self">
+											
+											 
+											IITP 소개</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">introduce</div>  -->
+<div class="fs24 fw900 nb-title">IITP 소개</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/introduce/introMain.it"> 
+															
+															
+															기관장 소개</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/introduce/intro.it"> 
+																		
+																		
+																		인사말</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/introduce/introduceB.it"> 
+															
+															
+															기관 소개</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/introduce/mission.it"> 
+																		
+																		
+																		미션과 비전</a>
+</li>
+<li>
+<a href="/kr/1/introduce/purposebusiness.it"> 
+																		
+																		
+																		설립목적 및 주요업무</a>
+</li>
+<li>
+<a href="/kr/1/introduce/Institutionhistory.it"> 
+																		
+																		
+																		연혁</a>
+</li>
+<li>
+<a href="/kr/1/introduce/ci.it"> 
+																		
+																		
+																		CI 소개</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/introduce/organMain.it"> 
+															
+															
+															조직도 및 직원안내</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/introduce/iitpOrgan.it"> 
+																		
+																		
+																		조직도</a>
+</li>
+<li>
+<a href="/kr/1/introduce/organ.it"> 
+																		
+																		
+																		직원안내 </a>
+</li>
+</ul>
+</li>
+<li>
+<!--  system -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/introduce/map.it"> 
+															
+															
+															찾아오시는 길</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="/kr/1/communication/publicRelationsB.it" target="_self">
+											
+											 
+											소통마당</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">communication</div>  -->
+<div class="fs24 fw900 nb-title">소통마당</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="http://www.iitp.kr/kr/1/communication/publicRelationsB.it"> 
+															
+															
+															홍보자료</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/communication/publicRelationsB.it"> 
+																		
+																		
+																		리플렛</a>
+</li>
+<li>
+<a href="/kr/1/communication/publicRelationsA.it"> 
+																		
+																		
+																		홍보영상</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/communication/reportAndClarify.it"> 
+															
+															
+															보도자료</a>
+</div>
+</li>
+<li>
+<!--  system -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/communication/newsletter.it"> 
+															
+															
+															뉴스레터</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/communication/RNDperformance.it"> 
+															
+															
+															R&amp;D 성과</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/communication/iitpsns.it"> 
+															
+															
+															주요 SNS</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="/kr/1/notice/notify.it" target="_self">
+											
+											 
+											알림·공지</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">notice</div>  -->
+<div class="fs24 fw900 nb-title">알림·공지</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/notice/notify.it"> 
+															
+															
+															공지사항</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/notice/bid.it"> 
+															
+															
+															입찰공고</a>
+</div>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="http://www.iitp.kr/kr/1/notice/iitpPerson.it"> 
+															
+															
+															채용정보</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/notice/iitpPerson.it"> 
+																		
+																		
+																		인재상 및 채용제도</a>
+</li>
+<li>
+<a href="/kr/1/notice/hire.it"> 
+																		
+																		
+																		채용공고</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  system -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/notice/cbpa.it"> 
+															
+															
+															공시송달</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="/kr/1/business/businessMap.it" target="_self">
+											
+											 
+											주요사업</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">business</div>  -->
+<div class="fs24 fw900 nb-title">주요사업</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/business/businessMap.it"> 
+															
+															
+															사업분류</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/business/businessMap.it"> 
+																		
+																		
+																		전체사업 구조도</a>
+</li>
+<li>
+<a href="/kr/1/business/ctgrI.it"> 
+																		
+																		
+																		기술개발</a>
+</li>
+<li>
+<a href="/kr/1/business/ctgrH.it"> 
+																		
+																		
+																		국제공동연구 및 표준화</a>
+</li>
+<li>
+<a href="/kr/1/business/ctgrJ.it"> 
+																		
+																		
+																		기반조성·기술사업화</a>
+</li>
+<li>
+<a href="/kr/1/business/ctgrK.it"> 
+																		
+																		
+																		인재양성</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  system -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/business/businessApiList.it"> 
+															
+															
+															사업공고</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/business/businessApiView.it"> 
+																		
+																		
+																		(현)사업공고</a>
+</li>
+<li>
+<a href="/kr/1/business/businessNotify.it"> 
+																		
+																		
+																		(구)사업공고</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/business/rules.it"> 
+															
+															
+															법령 및 규정</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/business/FAQ.it"> 
+															
+															
+															FAQ</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="#" onclick="post_to_url('https://iitp.kr/kr/1/knowledge/policyDataListB.it?masterCode=publication&amp;searClassCode=B_ITA_16','post');" target="_self">
+											
+											지식정보</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">knowledge</div>  -->
+<div class="fs24 fw900 nb-title">지식정보</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="#" onclick="post_to_url( '/kr/1/knowledge/periodicalListA.it?masterCode=publication&amp;searClassCode=B_ITA_01','post');">
+															
+															정기간행물</a>
+</div>
+<ul>
+<li>
+<a href="#" onclick="post_to_url( 'https://iitp.kr/kr/1/knowledge/policyDataListB.it?masterCode=publication&amp;searClassCode=B_ITA_16','post');">
+																		
+																		ICT Brief</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( 'https://iitp.kr/kr/1/knowledge/policyDataListI.it?masterCode=publication&amp;searClassCode=B_ITA_37','post');">
+																		
+																		IITP 미국 보호 무역 동향 브리핑</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( 'https://www.iitp.kr/kr/1/knowledge/periodicalListA.it?masterCode=publication&amp;searClassCode=B_ITA_01','post');">
+																		
+																		주간기술동향</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( 'https://iitp.kr/kr/1/knowledge/periodicalListF.it?masterCode=publication&amp;searClassCode=B_ITA_36','post');">
+																		
+																		IITP 디지털 아웃룩</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( 'https://www.iitp.kr/kr/1/knowledge/policyDataListA.it?masterCode=publication&amp;searClassCode=B_ITA_17','post');">
+																		
+																		ICT SPOT Issue</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( '/kr/1/knowledge/periodicalListH.it?masterCode=publication&amp;searClassCode=B_ITA_02','post');">
+																		
+																		ICT Insight</a>
+</li>
+<li>
+<a href="/kr/1/knowledge/annualreport.it"> 
+																		
+																		
+																		정보통신 산업진흥 연차보고서</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( 'https://iitp.kr/kr/1/knowledge/periodicalListC.it?masterCode=publication&amp;searClassCode=B_ITA_21','post');">
+																		
+																		(구) 월간 ICT 산업동향</a>
+</li>
+<li>
+<a href="#" onclick="post_to_url( 'https://iitp.kr/kr/1/knowledge/periodicalListD.it?masterCode=publication&amp;searClassCode=B_ITA_24','post');">
+																		
+																		(구) 해외 ICT R&amp;D 정책동향</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="#" onclick="post_to_url( 'https://www.iitp.kr/kr/1/knowledge/organScrapList.it?masterCode=publication&amp;searClassCode=K_OGS_01','post');">
+															
+															ICT 동향정보</a>
+</div>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="#" onclick="post_to_url( 'https://iitp.kr/kr/1/knowledge/statisticsList.it?masterCode=publication&amp;searClassCode=K_STAT_01','post');">
+															
+															정책/통계자료</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/knowledge/openReference.it"> 
+															
+															
+															공개자료실</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/knowledge/ICTRNDTech.it"> 
+															
+															
+															기술예고</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="/kr/1/government/explain.it" target="_self">
+											
+											 
+											정보공개</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">government</div>  -->
+<div class="fs24 fw900 nb-title">정보공개</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="https://www.iitp.kr/kr/1/government/explain.it"> 
+															
+															
+															제도안내</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/government/explain.it"> 
+																		
+																		
+																		정보공개 제도안내</a>
+</li>
+<li>
+<a href="/kr/1/government/process.it"> 
+																		
+																		
+																		정보공개 처리절차</a>
+</li>
+<li>
+<a href="/kr/1/government/statute.it"> 
+																		
+																		
+																		관련법령 및 서식</a>
+</li>
+<li>
+<a href="/kr/1/government/closed.it"> 
+																		
+																		
+																		비공개정보</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/wonmun.it"> 
+															
+															
+															정보공개청구</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/InfoDocumentsList.it"> 
+															
+															
+															정보(문서)목록</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/businessBlindness.it"> 
+															
+															
+															사업실명제</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/publicDataOpen.it"> 
+															
+															
+															공공데이터개방</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/energy.it"> 
+															
+															
+															에너지사용량</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/PublicVehicleOpStat.it"> 
+															
+															
+															공용차량운영현황</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/relativeHire.it"> 
+															
+															
+															친인척채용현황</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/provisions.it"> 
+															
+															
+															기관 내부규정</a>
+</div>
+</li>
+<li>
+<!--  board -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/government/ruleRevision.it"> 
+															
+															
+															내부규정 개정 사전예고</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="/kr/1/participate/service.it" target="_self">
+											
+											 
+											고객마당</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">participate</div>  -->
+<div class="fs24 fw900 nb-title">고객마당</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/service.it"> 
+															
+															
+															서비스 안내</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/QNA.it"> 
+															
+															
+															R&amp;D Q&amp;A</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/participate/QNANTIS.it"> 
+																		
+																		
+																		혁신법 관련 Q&amp;A</a>
+</li>
+<li>
+<a href="/kr/1/participate/QNAO.it"> 
+																		
+																		
+																		기존 규정 관련 Q&amp;A</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/suggestion.it"> 
+															
+															
+															제안방</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/compliment.it"> 
+															
+															
+															칭찬격려</a>
+</div>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/Declaration.it"> 
+															
+															
+															신고센터</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/participate/Declaration.it"> 
+																		
+																		
+																		부패·갑질 신고센터</a>
+</li>
+<li>
+<a href="/kr/1/participate/sxlHrsm.it"> 
+																		
+																		
+																		성희롱 성폭력 신고센터</a>
+</li>
+<li>
+<a href="/kr/1/participate/humanViolations.it"> 
+																		
+																		
+																		인권침해 신고센터</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/sinmungo.it"> 
+															
+															
+															IITP 신문고</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/RNDsinmungo.it"> 
+															
+															
+															ICT R&amp;D 수나롭게</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/growth.it"> 
+															
+															
+															기업성장응답센터</a>
+</div>
+</li>
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/participate/equipInfo.it"> 
+															
+															
+															시설개방안내</a>
+</div>
+</li>
+</ul></div></li>
+<li>
+<a href="/kr/1/ethia/wOpenDataMain.it" target="_self">
+											
+											 
+											ESG경영</a>
+<div class="rd-navbar-dropdown">
+<div class="s-nav-blue">
+<!-- <div class="fs16 nb-eng" style="text-transform:uppercase;">ethia</div>  -->
+<div class="fs24 fw900 nb-title">ESG경영</div>
+<img alt="" class="nb-point" src="/resources/main_images/comm/nav-logo-point_2024.png"/>
+</div>
+<ul class="s-nav-box">
+<li>
+<!--  page -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/ethia/wOpenDataMain.it"> 
+															
+															
+															경영공시</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/ethia/wOpenDataInfo.it"> 
+																		
+																		
+																		경영공시 안내</a>
+</li>
+<li>
+<a href="/kr/1/ethia/wOpenData.it"> 
+																		
+																		
+																		알리오통합공시</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/ethia/ethics.it"> 
+															
+															
+															윤리경영</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/ethia/ethicB.it"> 
+																		
+																		
+																		추진조직</a>
+</li>
+<li>
+<a href="/kr/1/ethia/ethicC.it"> 
+																		
+																		
+																		청렴계약서</a>
+</li>
+<li>
+<a href="/kr/1/ethia/anticorruption.it"> 
+																		
+																		
+																		반부패/감사활동</a>
+</li>
+<li>
+<a href="/kr/1/ethia/audit.it"> 
+																		
+																		
+																		감사결과</a>
+</li>
+<li>
+<a href="/kr/1/ethia/ombudsman.it"> 
+																		
+																		
+																		청렴옴부즈만</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/ethia/humanRights.it"> 
+															
+															
+															인권경영</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/ethia/humanActive.it"> 
+																		
+																		
+																		인권경영활동</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/ethia/socialA.it"> 
+															
+															
+															사회공헌</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/ethia/socialA.it"> 
+																		
+																		
+																		사회공헌</a>
+</li>
+<li>
+<a href="/kr/1/ethia/socialB.it"> 
+																		
+																		
+																		사회공헌활동</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/ethia/customerCharter.it"> 
+															
+															
+															고객서비스</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/ethia/customerCharter.it"> 
+																		
+																		
+																		고객헌장 전문</a>
+</li>
+<li>
+<a href="/kr/1/ethia/serviceStandards.it"> 
+																		
+																		
+																		핵심서비스 이행표준</a>
+</li>
+<li>
+<a href="/kr/1/ethia/customerStandards.it"> 
+																		
+																		
+																		고객응대서비스 이행표준</a>
+</li>
+</ul>
+</li>
+<li>
+<!--  external -->
+<div class="fw700 s-nav-title">
+<a href="/kr/1/ethia/safetyReport.it"> 
+															
+															
+															안전경영</a>
+</div>
+<ul>
+<li>
+<a href="/kr/1/ethia/safetyReport.it"> 
+																		
+																		
+																		안전경영 책임보고서</a>
+</li>
+</ul>
+</li>
+</ul></div></li>
+<!--메뉴 끝-->
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="auros-nav-sidemenu">
+<div class="change-language" style="float:left">
+<button aria-label="영문 페이지 이동 ENG 메뉴 펼치기" class="language-icon" title="영문 페이지 이동 ENG 메뉴 펼치기"></button>
+<ul class="language-panel">
+<li><a href="/en/main.it" title="영문 홈페이지로 이동">ENG</a></li>
+</ul>
+</div>
+<script>
+		                       $('.change-language').mouseenter(function() {
+		                        $('.change-language').toggleClass('active');
+		                        togleTitle();
+		                      });
+		                       $('.change-language').mouseleave(function() {
+		                        $('.change-language').toggleClass('active');
+		                        togleTitle();
+		                      });
+		                       document.querySelectorAll('.change-language').forEach(element => {
+		                    	   element.addEventListener('keydown', (event) => {
+		                    	     if (event.key === 'Enter') {
+		                    	    	 $('.change-language').toggleClass('active');
+		                    	    	 togleTitle();
+		                    	     }
+		                    	   });
+		                    	 });
+		                       function togleTitle(){
+	                    	    	 if (document.querySelector('.change-language').classList.contains('active')) {
+		                    	    	 document.querySelector('.language-icon').title = '영문 페이지 이동 ENG 메뉴 접기';		                    		    
+		                    	     } else {
+		                    	    	 document.querySelector('.language-icon').title = '영문 페이지 이동 ENG 메뉴 펼치기';
+		                    	     }	
+			                   }
+		                   </script>
+<!-- 검색 클릭시 나오는 내용 하단에 있음 -->
+<div class="rd-navbar-search-wrap" style="float:left">
+<div class="nav-search">
+<button class="search-icon" id="search-icon-button">검색</button>
+</div>
+<form action="/search.it" class="searchHeaderFrm" data-language="kr">
+<div class="search-toggle">
+<div class="form-group">
+<input class="form-control" data-null="false" data-placement="bottom" id="rd-navbar-search-input" name="keywords" placeholder="검색어를 입력해주세요" title="통합검색" type="text"/>
+</div>
+<button aria-label="검색" class="material-icons-search" id="searchButton" title="검색" type="submit"></button>
+<button aria-label="검색 닫기" class="close_btn" title="검색 닫기" type="button"></button>
+</div>
+</form>
+</div>
+<!--검색 버튼 클릭시 나오는 검색창 -->
+<script>
+		                   $(function(){
+		                       $('.nav-search').click(function(){
+		                           $('.search-toggle').slideToggle(300);
+		                       });
+		                       $('.search-toggle .close_btn').click(function(){
+		                           $('.search-toggle').slideUp(300);
+		                           document.getElementById('search-icon-button').focus();
+		                       });
+		                   })
+		               </script>
+<div class="open-navigation" style="float:right">
+<button onclick="location.href='/etc/sitemap.it'" type="button"><span aria-label="사이트맵" class="sitemap-icon" title="사이트맵">사이트맵</span></button>
+</div>
+</div>
+</nav>
+</header>
+<script>
+			$(document).ready(function(){		
+				 
+				$('header').css("position","relative"); 
+				$('.rd-navbar-brand a').removeClass("brand")
+				$('.rd-navbar-brand a').addClass("brand2")
+				$('.logout span').removeClass("logout-icon")
+				$('.logout span').addClass("sub-logout-icon")
+				$('.change-language button').removeClass("language-icon")
+				$('.change-language button').addClass("sub-language-icon")
+				$('.nav-search button').removeClass("search-icon")
+				$('.nav-search button').addClass("sub-search-icon")
+				$('.open-navigation span').removeClass("sitemap-icon")
+				$('.open-navigation span').addClass("sub-sitemap-icon")
+				$('.rd-navbar-outer').css("color","#222")
+				$('.rd-navbar-nav').addClass("pl7")
+					
+				
+			});
+		</script>
+<script>
+		function isMobile() {
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+		if (isMobile()) {
+			$(document).on("focus",".rd-navbar--has-dropdown",function(){
+				$(".rd-navbar").addClass("nav-bg");
+				$(".rd-navbar--has-dropdown").removeClass("opened");
+				$(this).addClass("opened");
+			});
+		} 
+		else {
+			$(document).on("focus",".rd-navbar--has-dropdown",function(){
+				$(".rd-navbar").addClass("nav-bg");
+				$(this).addClass("focus");
+			});
+			$(document).on("focusout",".rd-navbar--has-dropdown",function(){
+				$(".rd-navbar").removeClass("focus");
+				$(".rd-navbar--has-dropdown").removeClass("focus");
+			});
+		}
+		</script>
+<div class="iitp-sub-visual hidden-xs">
+<div class="container-location">
+<script type="text/javascript">
+	var list1 = new Array();
+	
+		list1.push("543");
+		list1.push("542");
+		list1.push("(현)사업공고");
+		list1.push("businessApi/list");
+		list1.push("/kr/1/business/businessApiView.it");
+	
+		list1.push("543");
+		list1.push("542");
+		list1.push("(현)사업공고");
+		list1.push("businessApi/list");
+		list1.push("/kr/1/business/businessApiView.it");
+	
+		list1.push("543");
+		list1.push("542");
+		list1.push("(현)사업공고");
+		list1.push("businessApi/list");
+		list1.push("/kr/1/business/businessApiView.it");
+	
+
+</script>
+<div id="location-new">
+<div id="subLocation1-new">
+<ul>
+<li>
+<a href="/main.it"><img alt="HOME" src="/resources/images/sub/bg_home.png"/></a>
+</li>
+
+<li class="route">&gt; </li>
+<li>
+<a href="/kr/1/business/businessMap.it">
+											주요사업
+										</a>
+</li>
+<li class="route">&gt; </li>
+<li>
+<a href="/kr/1/business/businessApiList.it">
+											사업공고
+										</a>
+</li>
+<li class="route">&gt; </li>
+<li>
+<a href="/kr/1/business/businessApiView.it">
+											(현)사업공고
+										</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-new" id="content-new">
+<div class="sub-navi-new hidden-xs" id="side-new">
+<script>
+	$(function(){
+		var url = $(location).attr('href');
+		var lang = 'kr'; 
+		if(url.indexOf('business') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_주요사업_2024.jpg") no-repeat' );
+			$('#side-new > div').css('background-size','110% 134px' );
+		}
+		if(url.indexOf('notice') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_알림공지_2024.png") no-repeat' );
+		}
+		if(url.indexOf('knowledge') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_지식정보_2024.png") no-repeat' );
+		}
+		if(url.indexOf('participate') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_고객마당_2024.jpg") no-repeat' );
+		}
+		if(url.indexOf('introduce') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_IITP소개_2024.png") no-repeat' );
+		}
+		if(url.indexOf('government') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_정보공개_2024.jpg") no-repeat' );
+		}
+		if(url.indexOf('ethia') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_ESG경영_2024.jpg") no-repeat' );
+		}
+		if(url.indexOf('etc') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_기타서비스_2024.jpg") no-repeat' );
+		}
+		if(url.indexOf('communication') != -1 && lang == 'kr'){
+			$('#side-new > div').css('background','url("/resources/images/sub/sub_top_소통마당_2024.png") no-repeat' );
+		}
+		
+	});
+
+</script>
+<div class="bs-sidebar hidden-print affix-top nav-subnavi" id="side">
+<h2 class="hidden-xs">
+				주요사업<!-- <br/> -->
+</h2>
+<ul class="nav bs-sidenav">
+<li class="li1">
+<a href="/kr/1/business/businessMap.it"> 
+			
+			
+				사업분류 
+				
+			</a>
+<ul class="" style="">
+<li class="li1">
+<a href="/kr/1/business/businessMap.it"> 
+			
+			
+				전체사업 구조도 
+				
+			</a>
+</li>
+<li class="li2">
+<a href="/kr/1/business/ctgrI.it"> 
+			
+			
+				기술개발 
+				
+			</a>
+<ul class="" style="">
+</ul>
+</li>
+<li class="li3">
+<a href="/kr/1/business/ctgrH.it"> 
+			
+			
+				국제공동연구 및 표준화 
+				
+			</a>
+<ul class="" style="">
+</ul>
+</li>
+<li class="li4">
+<a href="/kr/1/business/ctgrJ.it"> 
+			
+			
+				기반조성·기술사업화 
+				
+			</a>
+<ul class="" style="">
+</ul>
+</li>
+<li class="li5">
+<a href="/kr/1/business/ctgrK.it"> 
+			
+			
+				인재양성 
+				
+			</a>
+<ul class="" style="">
+</ul>
+</li>
+</ul>
+</li>
+<li class="li2 active">
+<a href="/kr/1/business/businessApiList.it"> 
+			
+			
+				사업공고 
+				
+			</a>
+<ul class="" style="">
+<li class="li1 active">
+<a href="/kr/1/business/businessApiView.it"> 
+			
+			
+				(현)사업공고 
+				
+			</a>
+</li>
+<li class="li2">
+<a href="/kr/1/business/businessNotify.it"> 
+			
+			
+				(구)사업공고 
+				
+			</a>
+</li>
+</ul>
+</li>
+<li class="li3">
+<a href="/kr/1/business/rules.it"> 
+			
+			
+				법령 및 규정 
+				
+			</a>
+</li>
+<li class="li4">
+<a href="/kr/1/business/FAQ.it"> 
+			
+			
+				FAQ 
+				
+			</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12 conArea pull-right" id="conArea">
+<div id="subLocation2-new">
+<h3 class="stitle">(현)사업공고</h3>
+</div>
+<div class="search-group">
+<div class="pull-left area-search">
+<form action="/kr/1/business/businessApiList.it" class="form-inline" method="post" name="search">
+<input name="pageSize" type="hidden" value="10">
+<input name="pageIndex" type="hidden" value="0"/>
+<label class="sr-only" for="searchField">구분선택</label>
+<select class="form-control input-sm" id="findStep" name="findStep" style="width: 65px;" title="검색대분류">
+<option value="">전체</option>
+<option title="대기" value="StandBy">대기</option>
+<option title="공고" value="Announce">공고</option>
+<option title="접수" value="Receipt">접수</option>
+<option title="마감" value="ReceiptEnd">마감</option>
+<option title="완료" value="Complete">완료</option>
+</select>
+<select class="form-control input-sm" id="searchField" name="searchField" style="width: 85px;" title="검색소분류">
+<option title="전체" value="all">전체</option>
+<option title="공고명" value="subject">공고명</option>
+<option title="담당자명" value="charger">담당자명</option>
+</select>
+<label class="sr-only" for="searchText">키워드검색</label>
+<input class="form-control input-sm" id="searchText" name="searchText" placeholder="검색어를 입력하세요" style="border: 1px; width: 110px;" type="text" value=""/>
+<button class="btn btn-sm btn-primary" style="min-width:50px;" type="submit">검색</button>
+</input></form>
+</div>
+</div>
+<script>
+	function delayMsg() {
+	alert("사업공고를 불러옵니다. 3초 정도 소요됩니다...");
+	}</script>
+<div class="table-responsive">
+<div align="right" style="vertical-align: bottom;">
+		전체건수 : 503건
+	</div>
+<table class="table one-title ellipsis">
+<caption>사업공고 - 번호, 공고명, 공고기간, 접수기간, 담당자, 등록일을 나타낸 표</caption>
+<colgroup>
+<col width="10%"/>
+<col/>
+<col width="20%"/>
+<col width="10%"/>
+</colgroup>
+<thead>
+<tr>
+<th class="text-center">번호</th>
+<th class="text-center no-space">공고명</th>
+<th class="text-center">접수기간</th>
+<th class="text-center">담당자</th>
+<!-- <th class="text-center">등록일</th> -->
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center">503</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000049" target="_blank" title="새창으로 열림">2025년도 Horizon Europe 프로그램 Cluster 3, Cluster 4 과제참여 안내</a>
+</td>
+<td class="text-center">2025.06.02~2025.12.31</td>
+<td class="text-center">이태우</td>
+</tr>
+<tr>
+<td class="text-center">502</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000050" target="_blank" title="새창으로 열림">2025년도 AI스타펠로우십지원(AI최고급신진연구자지원) 사업 2차 공고</a>
+</td>
+<td class="text-center">2025.05.29~2025.06.11</td>
+<td class="text-center">신설희</td>
+</tr>
+<tr>
+<td class="text-center">501</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000051" target="_blank" title="새창으로 열림">2025년도 생성AI 선도인재양성 사업 공고</a>
+</td>
+<td class="text-center">2025.05.29~2025.06.11</td>
+<td class="text-center">신설희</td>
+</tr>
+<tr>
+<td class="text-center">500</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000039" target="_blank" title="새창으로 열림">2025년도 제3차 디지털혁신기술국제공동연구사업 신규지원 대상과제 공고</a>
+</td>
+<td class="text-center">2025.05.19~2025.06.02</td>
+<td class="text-center">윤종혁</td>
+</tr>
+<tr>
+<td class="text-center">499</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000040" target="_blank" title="새창으로 열림">2025년도 AI반도체글로벌역량강화 신규과제 선정 공고</a>
+</td>
+<td class="text-center">2025.05.14~2025.05.21</td>
+<td class="text-center">김용기</td>
+</tr>
+<tr>
+<td class="text-center">498</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000037" target="_blank" title="새창으로 열림">2025년도 정보보호핵심원천기술개발사업 2차 신규지원 대상과제 공고</a>
+</td>
+<td class="text-center">2025.05.13~2025.05.29</td>
+<td class="text-center">신동민</td>
+</tr>
+<tr>
+<td class="text-center">497</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000042" target="_blank" title="새창으로 열림">2025년도 제4차 디지털혁신기술국제공동연구사업 신규지원 대상과제 공고</a>
+</td>
+<td class="text-center">2025.05.06~2025.06.18</td>
+<td class="text-center">윤종혁</td>
+</tr>
+<tr>
+<td class="text-center">496</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000046" target="_blank" title="새창으로 열림">2025년도 ICT글로벌전문융합인재양성 사업 선정 공고</a>
+</td>
+<td class="text-center">2025.04.29~2025.05.20</td>
+<td class="text-center">황정아</td>
+</tr>
+<tr>
+<td class="text-center">495</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/02/form.tab?PMS_TSK_PBNC_ID=PBD202500000044" target="_blank" title="새창으로 열림">2025년「ICT 학점연계 프로젝트 인턴십」학점 비연계 트랙 모집 공고(접수마감일 6.4일로 변경)</a>
+</td>
+<td class="text-center">2025.04.28~2025.06.04</td>
+<td class="text-center">임양섭</td>
+</tr>
+<tr>
+<td class="text-center">494</td>
+<td class="no-space comment-group0">
+<a href="http://ezone.iitp.kr/common/anno/01/form.tab?PMS_DMSY_PBNC_ID=DSP2025001" target="_blank" title="새창으로 열림">정보통신·방송 연구개발사업 기술수요조사 안내(2025년)(IRIS접수)</a>
+</td>
+<td class="text-center">2025.03.05~2025.12.31</td>
+<td class="text-center">최준호</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="pagination-group text-center">
+<ul class="pagination">
+<li class="">
+<a class="pre_end arrow" href="/kr/1/business/businessApiView.it?pageIndex=0&amp;pageSize=10" onclick="return false;">
+<img alt="처음 페이지로 이동" src="/resources/images/common/pre_end_2024.png">
+</img></a>
+</li>
+<li class="">
+<a class="pre arrow" href="/kr/1/business/businessApiView.it?pageIndex=1&amp;pageSize=10" onclick="return false;">
+<img alt="이전 페이지로 이동" src="/resources/images/common/pre_2024.png"/>
+</a>
+</li>
+<li class="active"><a>1</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=1&amp;pageSize=10">2</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=2&amp;pageSize=10">3</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=3&amp;pageSize=10">4</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=4&amp;pageSize=10">5</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=5&amp;pageSize=10">6</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=6&amp;pageSize=10">7</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=7&amp;pageSize=10">8</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=8&amp;pageSize=10">9</a></li>
+<li><a href="/kr/1/business/businessApiView.it?pageIndex=9&amp;pageSize=10">10</a></li>
+<li class="">
+<a class="next arrow" href="/kr/1/business/businessApiView.it?pageIndex=1&amp;pageSize=10">
+<img alt="다음 페이지로 이동" src="/resources/images/common/next_2024.png">
+</img></a>
+</li>
+<li class="">
+<a class="next_end arrow" href="/kr/1/business/businessApiView.it?pageIndex=50&amp;pageSize=10">
+<img alt="마지막 페이지로 이동" src="/resources/images/common/next_end_2024.png">
+</img></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="text-center margin-bottom30" id="loading-text-group" style="display:none;">
+<img alt="로딩중입니다. " src="/resources/images/common/large-loading.gif">
+<p>잠시만 기다려 주시길 바랍니다.</p>
+</img></div>
+<script>
+	//인사노무팀 김진희 수석 요청  2017-11-16
+	$(function(){
+		//뷰, 지원하기 , 지원서작성
+		var pbnc = $('meta[name=pbnc]').attr('content');
+		// 지원양식작성화면
+		var pbnc2 = $('meta[name=pbnc2]').attr('content');
+		if(pbnc == '17018' || pbnc == '18007' || pbnc == '18014' || pbnc == '18037' || pbnc == '18043'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 김진희');
+			$('#chargeView ul:first-child li a span').text('042-612-8833');
+		}
+		if(pbnc == '18033'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 조병훈');
+			$('#chargeView ul:first-child li a span').text('042-612-8832');
+			$('#chargeView ul:first-child li:last-child').text('chobh@iitp.kr');
+		}
+		if(pbnc == '18034'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 이승우 수석');
+		}
+		
+		
+		if(pbnc2 == '17018'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 김진희');
+			$('#chargeView ul:first-child li a span').text('042-612-8833');
+		}
+		if(pbnc2 == '18033'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 조병훈');
+			$('#chargeView ul:first-child li a span').text('042-612-8832');
+			$('#chargeView ul:first-child li:last-child').text('chobh@iitp.kr');
+		}
+		
+		if(pbnc2 == '18034'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 이승우 수석');
+		}
+		if(pbnc2 == '18037'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 김진희');
+			$('#chargeView ul:first-child li a span').text('042-612-8833');
+		}
+		
+		if(pbnc2 == '18043'){
+			$('#chargeView ul:first-child li:first-child span').text('인사노무팀 김진희');
+			$('#chargeView ul:first-child li a span').text('042-612-8833');
+		}
+		
+	});
+</script>
+<style>
+#recaptcha_image { width:100% !important;}
+#recaptcha_image img{max-width:100%;}
+.solution{margin-top:30px;}
+.options a{font-size:20px;padding:20px;}
+</style>
+<script>
+
+	var onloadCallback = function() {
+		grecaptcha.render('html_element', {
+	          'sitekey' : '6Lf4TyYUAAAAANsGSjOoKYpe_0xK0ePSlzVqTq67',
+        	  'theme' : 'light'
+        });
+    };
+    
+	var RecaptchaOptions = {
+		theme : 'custom'
+	};
+	$(document).ready(function(){
+		$("#chaptcha").submit(function(){
+			if(typeof(grecaptcha) != 'undefined'){
+		    	if(grecaptcha.getResponse() == ""){
+		           alert("스팸방지코드를 확인해 주세요.");
+		           return false;
+		    	}
+		    else{
+		    	$.ajax({
+					url: $("#recaptcha-url").val(),
+					type:"POST",
+					data: $("#chaptcha").serialize(),
+					async: true,
+					dataType:"json",
+					success: function(data){
+						if(data.result){
+							if(data.division=="charge"){
+								$("#captcha-people-info span#captcha-name").text("kr"=="kr"?data.data.EMP_NM:data.data.ENG_EMP_NM);
+								if(data.data.CO_TEL_NO!=undefined){
+									$(".iitp-charge-phone").show();
+									$("#captcha-people-info span#captcha-phone").html('<a href="tel:'+data.data.CO_TEL_NO+'">'+data.data.CO_TEL_NO+'</a>');
+								}else{
+									$(".iitp-charge-phone").hide();
+								}
+								$("#captcha-people-info span#captcha-email").html('<a href="mailto:'+data.data.EMAL+'">'+data.data.EMAL+'</a>');
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+								$("#captcha-people-info").show();
+							}else if(data.division=="board"){
+								if(data.data == null || data.data == ""){
+									if(data.action == null ){
+										$("#captcha-modal").modal("hide");
+										reCaptchaClick();
+										return false;
+									}
+								}
+								if(data.data != null){
+									if(data.action == "delete" || data.action == "view"){
+										alert("이메일을 입력해주세요.");
+										$("#chaptcha-group,#re-chaptcha-submit").hide();
+										$("#chaptcha-brd-people-info").show();
+										return false;
+									}else if(data.action == "update"){
+										reCaptchaUpdate();
+										return false;
+									}else if(data.action == null || data.action == ""){
+										reCaptchaClick();
+										$("#chaptcha-group,#re-chaptcha-submit").hide();
+									}
+								}else{
+									alert("입력하신 문자가 다릅니다");
+								}
+							}else if(data.division=="page"){
+								pageAction();
+								$("#captcha-modal").modal("hide");
+							}
+						}else{
+							alert('입력하신 문자가 다릅니다');
+						}
+						return false;
+					},
+					error: function(data){
+						alert('네트워크 오류입니다 관리자에게 문의하세요');
+						return false;
+					}
+				});
+				return false;
+		    }	
+			
+			
+		 }
+			
+			
+		});
+		
+		
+		
+		
+		
+	});
+	
+	function checkUserId(){
+		$.ajax({
+			url: "/service/checkUser.it",
+			type:"POST",
+			data: $("#chaptcha").serialize(),
+			async: true,
+			dataType:"json",
+			success: function(data){
+				if(data.data == null || data.data == ""){
+					alert("정확한 이메일을 입력하세요.");
+				}else{
+					if(data.action == "view"){
+						$("#chaptchaBrdView input[name=ArticleIdx]").val(data.ArticleIdx);
+						$("#chaptchaBrdView input[name=REGIST_MEMBER_ID]").val(data.REGIST_MEMBER_ID);
+						$("#chaptchaBrdView").submit();
+					return false;
+				}else if(data.action == "delete"){
+						$("#delForm input[name=ARTICLE_IDX]").val(data.ArticleIdx);
+						$("#delForm input[name=BOARD_IDX]").val(data.BOARD_IDX);
+						$("#delForm input[name=REGIST_MEMBER_ID]").val(data.REGIST_MEMBER_ID);
+						delAticle();
+					return false;
+				}else if(data.action == "update"){
+					$("#post-form input[name=BOARD_IDX]").val(data.BOARD_IDX);
+					regChk();
+					return false;
+				}
+			}
+				return false;
+			},
+			error: function(data){
+				alert('네트워크 오류입니다 관리자에게 문의하세요');
+				return false;
+			}
+		});
+	}
+	
+	function initCaptcha(url){
+		$("#recaptcha-url").val(url);
+// 		Recaptcha.reload_internal("recaptcha_response_field");
+		$("#chaptcha input[name=uniq]").val("");
+		$("#chaptcha input[name=ArticleIdx]").val("");
+		$("#chaptcha input[name=action]").val("");
+		$('#chaptcha input[name=BOARD_IDX]').val("");
+		$("#captcha-people-info span").text("");
+		$("#captcha-people-info").hide();
+		$("#chaptcha-brd-people-info").hide();
+// 		$("#chaptcha-group,#re-chaptcha-submit").show();
+	}
+
+	
+	/*
+	function checkEmail(uniq){
+		var uniq = uniq;
+		$.ajax({
+			url: "/ajax/chaptcha.it",
+			type:"POST",
+			data: {uniq:uniq},
+			async: true,
+			dataType:"json",
+			success: function(data){
+				if(data.result){
+					if(data.division=="charge"){
+// 						alert('test');
+						$("#captcha-people-info span#captcha-name").text("kr"=="kr"?data.data.EMP_NM:data.data.ENG_EMP_NM);
+						if(data.data.CO_TEL_NO!=undefined){
+							$(".iitp-charge-phone").show();
+							$("#captcha-people-info span#captcha-phone").html('<a href="tel:'+data.data.CO_TEL_NO+'">'+data.data.CO_TEL_NO+'</a>');
+						}else{
+							$(".iitp-charge-phone").hide();
+						}
+						$("#captcha-people-info span#captcha-email").html('<a href="mailto:'+data.data.EMAL+'">'+data.data.EMAL+'</a>');
+						$("#chaptcha-group,#re-chaptcha-submit").hide();
+						$("#captcha-people-info").show();
+// 						alert('test2');
+					}else if(data.division=="board"){
+						if(data.data == null || data.data == ""){
+							if(data.action == null ){
+								$("#captcha-modal").modal("hide");
+								reCaptchaClick();
+								return false;
+							}
+						}
+						if(data.data != null){
+							if(data.action == "delete" || data.action == "view"){
+								alert("이메일을 입력해주세요.");
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+								$("#chaptcha-brd-people-info").show();
+								return false;
+							}else if(data.action == "update"){
+								reCaptchaUpdate();
+								return false;
+							}else if(data.action == null || data.action == ""){
+								reCaptchaClick();
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+							}
+						}else{
+							alert("입력하신 문자가 다릅니다");
+						}
+					}else if(data.division=="page"){
+						pageAction();
+						$("#captcha-modal").modal("hide");
+					}
+				}else{
+					alert('입력하신 문자가 다릅니다');
+				}
+				return false;
+			},
+			error: function(data){
+				alert('네트워크 오류입니다 관리자에게 문의하세요');
+				return false;
+			}
+		});
+		
+	};
+	*/
+
+	function checkEmail2(empnm, telnum){ 
+		$.ajax({
+			url: "/ajax/chaptcha2.it",
+			type:"POST",
+			data: {empnm:empnm, telnum:telnum},
+			async: true,
+			dataType:"json",
+			success: function(data){
+				if(data.result){
+					if(data.division=="charge"){
+// 						alert('test');
+						$("#captcha-people-info span#captcha-name").text("kr"=="kr"?data.data.EMP_NM:data.data.ENG_EMP_NM);
+						if(data.data.CO_TEL_NO!=undefined){
+							$(".iitp-charge-phone").show();
+							$("#captcha-people-info span#captcha-phone").html('<a href="tel:'+data.data.CO_TEL_NO+'">'+data.data.CO_TEL_NO+'</a>');
+						}else{
+							$(".iitp-charge-phone").hide();
+						}
+						$("#captcha-people-info span#captcha-email").html('<a href="mailto:'+data.data.EMAL+'">'+data.data.EMAL+'</a>');
+						$("#chaptcha-group,#re-chaptcha-submit").hide();
+						$("#captcha-people-info").show();
+// 						alert('test2');
+					}else if(data.division=="board"){
+						if(data.data == null || data.data == ""){
+							if(data.action == null ){
+								$("#captcha-modal").modal("hide");
+								reCaptchaClick();
+								return false;
+							}
+						}
+						if(data.data != null){
+							if(data.action == "delete" || data.action == "view"){
+								alert("이메일을 입력해주세요.");
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+								$("#chaptcha-brd-people-info").show();
+								return false;
+							}else if(data.action == "update"){
+								reCaptchaUpdate();
+								return false;
+							}else if(data.action == null || data.action == ""){
+								reCaptchaClick();
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+							}
+						}else{
+							alert("입력하신 문자가 다릅니다");
+						}
+					}else if(data.division=="page"){
+						pageAction();
+						$("#captcha-modal").modal("hide");
+					}
+				}else{
+					alert('입력하신 문자가 다릅니다');
+				}
+				return false;
+			},
+			error: function(data){
+				alert('네트워크 오류입니다 관리자에게 문의하세요');
+				return false;
+			}
+		});
+		
+	};
+
+	function checkEmailView(empnm, telnum, emal){
+		var uniq = uniq;
+		$.ajax({
+			url: "/ajax/emailcheck.it",
+			type:"POST",
+			data: {empnm:empnm, telnum:telnum, emal:emal},
+			async: true,
+			dataType:"json",
+			success: function(data){
+				if(data.result){
+					if(data.division=="charge"){
+// 						alert('test');
+						$("#captcha-people-info span#captcha-name").text("kr"=="kr"?data.data.EMP_NM:data.data.ENG_EMP_NM);
+						if(data.data.CO_TEL_NO!=undefined){
+							$(".iitp-charge-phone").show();
+							$("#captcha-people-info span#captcha-phone").html('<a href="tel:'+data.data.CO_TEL_NO+'">'+data.data.CO_TEL_NO+'</a>');
+						}else{
+							$(".iitp-charge-phone").hide();
+						}
+						$("#captcha-people-info span#captcha-email").html('<a href="mailto:'+data.data.EMAL+'">'+data.data.EMAL+'</a>');
+						$("#chaptcha-group,#re-chaptcha-submit").hide();
+						$("#captcha-people-info").show();
+// 						alert('test2');
+					}else if(data.division=="board"){
+						if(data.data == null || data.data == ""){
+							if(data.action == null ){
+								$("#captcha-modal").modal("hide");
+								reCaptchaClick();
+								return false;
+							}
+						}
+						if(data.data != null){
+							if(data.action == "delete" || data.action == "view"){
+								alert("이메일을 입력해주세요.");
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+								$("#chaptcha-brd-people-info").show();
+								return false;
+							}else if(data.action == "update"){
+								reCaptchaUpdate();
+								return false;
+							}else if(data.action == null || data.action == ""){
+								reCaptchaClick();
+								$("#chaptcha-group,#re-chaptcha-submit").hide();
+							}
+						}else{
+							alert("입력하신 문자가 다릅니다");
+						}
+					}else if(data.division=="page"){
+						pageAction();
+						$("#captcha-modal").modal("hide");
+					}
+				}else{
+					alert('입력하신 문자가 다릅니다');
+				}
+				return false;
+			},
+			error: function(data){
+				alert('네트워크 오류입니다 관리자에게 문의하세요');
+				return false;
+			}
+		});
+		
+	};
+</script>
+<div aria-hidden="true" aria-labelledby="captcha-modal-label" class="modal fade" id="captcha-modal" role="dialog" tabindex="-1">
+<input id="recaptcha-url" type="hidden" value="">
+<div class="modal-dialog">
+<div class="modal-content">
+<form action="" enctype="multipart/form-data" id="chaptcha" method="post">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<h4 class="modal-title" id="captcha-modal-label">이메일 주소 확인</h4>
+</div>
+<div class="modal-body">
+<div id="chaptcha-group">
+<input name="uniq" type="hidden" value=""/>
+<input name="ArticleIdx" type="hidden" value=""/>
+<input name="BOARD_IDX" type="hidden" value=""/>
+<input name="action" type="hidden" value=""/>
+<div class="text-center" id="responsive_recaptcha">
+<!-- 							<div id="recaptcha_image" style="width:100%"></div> -->
+<!-- 							<label class="solution"> -->
+<!-- 							</label> -->
+<div id="html_element" style="padding-left: 125px;"></div>
+<!-- 							 <div class="g-recaptcha" data-sitekey="6Lf4TyYUAAAAANsGSjOoKYpe_0xK0ePSlzVqTq67" style="padding-left: 123px;"></div> -->
+<!-- 							<div class="options"> -->
+<!-- 								<a href="javascript:Recaptcha.reload()" id="icon-reload" class="glyphicon glyphicon-refresh" title="reload"><span class="hide">reload</span></a> -->
+<!-- 								<a href="javascript:Recaptcha.switch_type('audio')" id="icon-audio" class="recaptcha_only_if_image glyphicon glyphicon-volume-up" title="audio"><span class="hide">audio</span></a> -->
+<!-- 								<a href="javascript:Recaptcha.switch_type('image')" id="icon-image" class="recaptcha_only_if_audio glyphicon glyphicon-text-width" title="text"><span class="hide">text</span></a> -->
+<!-- 								<a href="javascript:Recaptcha.showhelp()" id="icon-help" class="glyphicon glyphicon-question-sign" title="help"><span class="hide">help</span></a> -->
+<!-- 							</div> -->
+</div>
+</div>
+<div id="captcha-people-info" style="display: none;">
+<table class="table" summary="이메일 주소 확인 - 담당자, 대표전화, 이메일">
+<caption>이메일 주소 확인</caption>
+<thead>
+<tr>
+<th class="text-center" scope="col">담당자</th>
+<th class="text-center iitp-charge-phone" scope="col">대표전화</th>
+<th class="text-center" scope="col">이메일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center"><span id="captcha-name"></span></td>
+<td class="text-center iitp-charge-phone"><span id="captcha-phone"></span></td>
+<td class="text-center"><span id="captcha-email"></span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="chaptcha-brd-people-info" style="display: none;">
+<div>
+<input class="form-control form-control-inline input-sm" id="registId" name="registId" title="인증값" type="text" value=""/>
+<label for="registId">인증값</label>
+<a class="btn btn-blue" href="#" onclick="checkUserId();" style=" margin-top: -3px;">인증</a>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-default" data-dismiss="modal" type="button">닫기</button>
+<button class="btn btn-primary" id="re-chaptcha-submit" type="submit">인증</button>
+<!-- 					<button class="g-recaptcha" data-sitekey="6Lf4TyYUAAAAANsGSjOoKYpe_0xK0ePSlzVqTq67" data-callback="YourOnSubmitFn"> -->
+<!-- 					Submit -->
+<!-- 					</button> -->
+</div>
+</form>
+</div>
+</div>
+</input></div>
+<form action="/kr/1/business/businessApiView/form.it" id="chaptchaBrdUrl" method="get">
+<input name="ArticleIdx" type="hidden" value=""/>
+<input name="REGIST_MEMBER_ID" type="hidden" value=""/>
+<input name="LANG_TYPE_CODE" type="hidden" value="kr"/>
+<input name="MENU_GROUP_IDX" type="hidden" value="1"/>
+<input name="PARENT_MENU_ID" type="hidden" value="business"/>
+<input name="MENU_ID" type="hidden" value="businessApiView"/>
+</form>
+<form action="/kr/1/business/businessApiView/view.it" id="chaptchaBrdView" method="get">
+<input name="ArticleIdx" type="hidden" value="">
+<input name="REGIST_MEMBER_ID" type="hidden" value="">
+<input name="LANG_TYPE_CODE" type="hidden" value="kr"/>
+<input name="MENU_GROUP_IDX" type="hidden" value="1"/>
+<input name="PARENT_MENU_ID" type="hidden" value="business"/>
+<input name="MENU_ID" type="hidden" value="businessApiView"/>
+</input></input></form>
+<div title="reCaptcha">
+<script async="" defer="" src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&amp;render=explicit" title="reCaptcha"></script>
+</div>
+</div>
+<div class="hidden-sm hidden-xs" id="sub-service-new">
+<ul>
+<li><a href="http://ezone.iitp.kr" rel="noopener noreferrer" target="_blank"><span class="picto"> </span>사업관리<br/> 시스템</a></li>
+<li><a href="http://loanuser.iitp.kr" rel="noopener noreferrer" target="_blank"><span class="picto"> </span>융자사업<br/> 관리시스템</a></li>
+<li><a href="http://ezone.iitp.kr/common/sign/signup?PMS_EVA_YN=Y" rel="noopener noreferrer" target="_blank"><span class="picto"> </span>평가위원<br/> 등록/수정</a></li>
+</ul>
+</div>
+</div>
+<footer>
+<script>
+		var iitpLanguage="kr";
+		function wahPopup(type){
+			if(type == "wah"){
+				window.name ="Parent_window"; 
+				//window.open('https://www.iitp.kr/resources/images/2018_970wah.jpg', 'popupChk', 'width=512, height=729, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');
+				window.open('https://www.iitp.kr/resources/html/wga_2025.html', 'popupChk', 'width=633, height=924, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');				
+			}else if(type == "eprivacy"){
+				window.name ="Parent_window"; 
+				//window.open('http://www.iitp.kr/resources/images/eprivacy_2016.jpg', 'popupChk', 'width=512, height=729, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');
+				window.open('https://www.eprivacy.or.kr/front/certifiedSiteMark/certifiedSiteMarkPopup.do?certCmd=EP&certNum=2023-EP-R043','seal','width=527,height=720,location=no,status=no,scrollbars=no');
+			}else if(type == "isafe"){
+				window.name ="Parent_window"; 
+				window.open('http://www.iitp.kr/resources/images/isafe_2016.jpg', 'popupChk', 'width=512, height=729, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');
+			}
+			else if(type == "iso27001"){
+				window.name ="Parent_window"; 
+				window.open('https://www.iitp.kr/resources/html/ISO_27001.html', 'popupChk', 'width=633, height=924, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');
+			}
+			else if(type == "iso27701"){
+				window.name ="Parent_window"; 
+				window.open('http://www.iitp.kr/resources/html/ISO_27701.html', 'popupChk', 'width=633, height=924, top=100, left=100, fullscreen=no, menubar=no, status=no, toolbar=no, titlebar=yes, location=no, scrollbars=yes');
+			}
+			return false;
+		}
+		 // 개인정보보호협회 인증서 불러오기
+		 function markPopupE(code){
+			return dcPopup('http://www.eprivacy.or.kr/seal/mark.jsp?mark=e&code='+ code, 'seal', 500, 700);
+		 }
+			 
+		 function markPopupI(code){
+		  	return dcPopup('http://www.eprivacy.or.kr/seal/mark.jsp?mark=i&code='+ code, 'seal', 500, 700);
+		 }
+		 
+		 function dcPopup(url, name, w, h){
+			  	var x = (screen.availWidth  / 2) - (w/2);
+			  	var y = (screen.availHeight / 2) - (h/2);
+			  	return window.open(url, name, "toolbar=no,resizable=yes,scrollbars=yes,status=no,location=no,left="+ x + ",top=" + y + ",width=" + w + ",height="+ h);
+			 }
+	</script>
+<div class="footer-top">
+<div class="container">
+<div class="foot-menu">
+<ul class="list-inline-box">
+<li class="list-inline-item"><a href="/etc/email.it">이메일 무단 수집 거부</a></li>
+<li class="list-inline-item"><a href="/kr/1/introduce/map.it">찾아오시는길</a></li>
+<li class="list-inline-item" style="color: #ff7200;"><a href="/etc/person.it">개인정보처리방침</a></li>
+<li class="list-inline-item"><a href="/etc/rules.it">이용약관</a></li>
+<li class="list-inline-item"><a href="/etc/copyright.it">저작권보호 정책</a></li>
+<li class="list-inline-item"><a href="/etc/imageProcessorMg.it">영상정보처리기기 운영·관리 방침</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="company-info-box">
+<div>
+<ul class="list-inline-box">
+<li class="list-inline-item">주소: 대전광역시 유성구 유성대로 1548</li>
+<li class="list-inline-item">전화번호: 042-612-8001</li>
+</ul>
+<ul class="list-inline-box">
+<li class="list-inline-item"><span>[이지원시스템 문의]</span> 전화번호: 042-612-8065</li>
+<li class="list-inline-item">이메일주소 : ezone@iitp.kr</li>
+</ul>
+<ul class="list-inline-box">
+<li class="list-inline-item"><span>[범부처통합연구지원시스템(IRIS) 문의]</span> 전화번호: 1877-2041</li>
+</ul>
+</div>
+</div>
+<div class="copyright">ALL RIGHTS RESERVED © 정보통신기획평가원</div>
+<ul class="footer-mark">
+<li class="list-inline-item">
+<a href="#" onclick="return wahPopup('wah');" rel="noopener noreferrer" target="_blank" title="웹 접근성 우수사이트 인증마크(WA인증마크)를 새창으로 보여줍니다.">
+<img alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" class="wa" height="35.5px" src="/resources/images/common/web_accessibility_CI_2025.png" width="50px">
+</img></a>
+</li>
+<li class="list-inline-item">
+<a href="#" onclick="return wahPopup('eprivacy');" rel="noopener noreferrer" target="_blank" title="ePRIVACY 인증서를 새창으로 보여줍니다.">
+<img alt="ePRIVACY 인증마크" height="40px" src="https://www.eprivacy.or.kr/images/mng/sub/mark1_eprivacy_plus.png" style="cursor:pointer;">
+</img></a>
+</li>
+<li class="list-inline-item">
+<a href="#" onclick="return wahPopup('iso27001');" rel="noopener noreferrer" target="_blank" title="ISO 27001 인증서를 새창으로 보여줍니다.">
+<img alt="INFORMATION SECURITY MANAGEMENT SYSTEM 정보보안경영시스템 Registered ITS ISO 27001" class="iso" height="40px" src="/resources/images/common/ISO-27001-logo.gif">
+</img></a>
+</li>
+<li class="list-inline-item">
+<a href="#" onclick="return wahPopup('iso27701');" rel="noopener noreferrer" target="_blank" title="ISO 27701 인증서를 새창으로 보여줍니다.">
+<img alt="PRIVACY INFORMATION MANAGEMENT SYSTEM 개인정보보호경영시스템 Registered ITS ISO 27701" class="iso" height="40px" src="/resources/images/common/ITS-Logo-(27701).png">
+</img></a>
+</li>
+</ul>
+</div>
+</footer>
+
+</body>
+<script src="/resources/main_js/script.js"></script>
+<script type="text/javascript">
+	setTimeout(function(){
+		$(document).ready(function(){
+			$('#g-recaptcha-response').attr('title','구글리캡차');
+			$('#html_element > div > div > iframe').attr('title','구글리캡차입니다. 클릭해주세요');
+		});
+	},2000);
+	</script>
+</html></link></link></meta>
