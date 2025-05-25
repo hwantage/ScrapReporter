@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1266; // 전체 조회 건수
+	var totalNum = 1273; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -188,7 +188,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1266</b>건
+<span>총 <b>1273</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -227,13 +227,85 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3468&amp;page=1">「블록체인 기반 AI 융합기술 기업을 위한 투자유치 및 해외진출 지원사업」 모집 공고 (~5/21 18시까지)</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3476&amp;page=1">블록체인 기반 AI 융합기술 기업을 위한 투자유치 및 해외진출 지원사업 추가모집 공고(~6.5(목) 16시까지)</a>
 </td>
-<td class="date">2025-05-12</td>
-<td class="count">4500</td>
+<td class="date">2025-05-23</td>
+<td class="count">1823</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3468', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3476', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3472&amp;page=1">2025년 마이데이터 서비스 지원사업 공고(~6.9)</a>
+</td>
+<td class="date">2025-05-21</td>
+<td class="count">3062</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3472', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3465&amp;page=1">2025년 마이데이터 중계 인프라 실증 지원사업 공고 및 사업설명회 안내</a>
+</td>
+<td class="date">2025-04-30</td>
+<td class="count">11668</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1270</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3477&amp;page=1">온마이데이터 해시태그 이벤트 개최 안내</a>
+</td>
+<td class="date">2025-05-23</td>
+<td class="count">1181</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1269</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3475&amp;page=1">마이데이터 선도서비스 출시 안내</a>
+</td>
+<td class="date">2025-05-22</td>
+<td class="count">1675</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1268</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3474&amp;page=1">2025년 SW개발보안 교육 및 진단원 교육과정 안내</a>
+</td>
+<td class="date">2025-05-22</td>
+<td class="count">2047</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3474', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1267</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3473&amp;page=1">중소기업 기술마켓 활용 안내(2025-2호 카드뉴스)</a>
+</td>
+<td class="date">2025-05-21</td>
+<td class="count">1341</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1266</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3471&amp;page=1">2025년 제7기 국민참여단 모집 안내 (~05.30)</a>
+</td>
+<td class="date">2025-05-19</td>
+<td class="count">2638</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3471', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
 </td>
 </tr>
@@ -242,7 +314,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3470&amp;page=1">「2025년 블록체인 누리단(국민참여단)」 모집 안내(~5.30)</a>
 </td>
 <td class="date">2025-05-14</td>
-<td class="count">2714</td>
+<td class="count">4803</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3470', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -254,88 +326,10 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3466&amp;page=1">2025년 ICT 중소기업 정보보호 지원 사업 정보보호 컨설팅 및 보안솔루션(보안제품, SECaaS) 공급기업 모집</a>
 </td>
 <td class="date">2025-05-14</td>
-<td class="count">2603</td>
+<td class="count">4401</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3466', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1263</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3469&amp;page=1">2025년 '사이버보안 AI데이터셋 최신화 및 활용강화' 사업 설명회(5.20) 안내</a>
-</td>
-<td class="date">2025-05-12</td>
-<td class="count">3044</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3469', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1262</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3467&amp;page=1">2025년 3차 정보보호 인증제품 조달청 벤처나라 추천 희망기업 모집 공고(6월 지정심사) (~5.23(금) 18시까지)</a>
-</td>
-<td class="date">2025-05-12</td>
-<td class="count">2862</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3467', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1261</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3465&amp;page=1">2025년 마이데이터 중계 인프라 실증 지원사업 공고 및 사업설명회 안내</a>
-</td>
-<td class="date">2025-04-30</td>
-<td class="count">7966</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1260</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3464&amp;page=1">2025년 정보보호 및 개인정보보호 관리체계(ISMS-P) 인증심사원 자격검정 시행공고</a>
-</td>
-<td class="date">2025-04-28</td>
-<td class="count">15217</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3464', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1259</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3463&amp;page=1">신규 일반최상위도메인(gTLD) 정책 설명회 개최 안내(5.22(목), 서울 코엑스)</a>
-</td>
-<td class="date">2025-04-25</td>
-<td class="count">7786</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3463', 1, 'KO');">
-<img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1258</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3462&amp;page=1">클라우드 MSP를 위한 보안수칙</a>
-</td>
-<td class="date">2025-04-25</td>
-<td class="count">7628</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1257</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3461&amp;page=1">2025년도 글로벌 정보보호 고급 인력 양성과제 해외파견생 모집</a>
-</td>
-<td class="date">2025-04-24</td>
-<td class="count">7485</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3461', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
@@ -364,10 +358,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2025-05-14</dd>
+<dd>2025-05-23</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="5bcaa19b-e2b0-4a48-859b-ae9391b43e24">
+<input name="_csrf" type="hidden" value="fa0c74f5-1f6a-434c-9243-ee71c209a739">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -390,7 +384,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "5bcaa19b-e2b0-4a48-859b-ae9391b43e24");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "fa0c74f5-1f6a-434c-9243-ee71c209a739");
             },			
 			success: function(data) {
 				alert(data.message)
