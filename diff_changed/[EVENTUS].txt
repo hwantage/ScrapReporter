@@ -70,10 +70,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'd_tvIaVNxWEe6kz6qgSWhYwrR914GdAJ-UIjqor8sls46Aqbk94RHzcjUh9zD-Vhz40wtY7UdAXYLM3udY9rJ-dxmwE9hIGJ0EvgiaO8CyScGJYd0-TGaBlhtQ_22l7VEj-4dw2'
+            'user_id': 'fFG43cVLY2eXNoSCHBotn79HA9e63EWLnl46KVxQlUmU_0zBjj2MezDG3U8E1ntt07Ut4S78uGKEPvvavP39Ei6R8ggA2ql2vxt3bWc9jCuuV1_8PiQ6F6J_IkjcmAcZpdh22g2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'd_tvIaVNxWEe6kz6qgSWhYwrR914GdAJ-UIjqor8sls46Aqbk94RHzcjUh9zD-Vhz40wtY7UdAXYLM3udY9rJ-dxmwE9hIGJ0EvgiaO8CyScGJYd0-TGaBlhtQ_22l7VEj-4dw2'
+            'crm_id': 'fFG43cVLY2eXNoSCHBotn79HA9e63EWLnl46KVxQlUmU_0zBjj2MezDG3U8E1ntt07Ut4S78uGKEPvvavP39Ei6R8ggA2ql2vxt3bWc9jCuuV1_8PiQ6F6J_IkjcmAcZpdh22g2'
         });
     </script>
 <script>
@@ -140,7 +140,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?f1ca1ebc3b9f1bd4"></script><style>body {
+<script src="/Content/dist/js/preload.js?f3e9bb72b36fc8a3"></script><style>body {
         opacity: 0;
       }
 
@@ -154,7 +154,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?f1ca1ebc3b9f1bd4"></script><script defer="defer" src="/Content/dist/js/default.js?f1ca1ebc3b9f1bd4"></script><link href="/Content/dist/css/default.css?f1ca1ebc3b9f1bd4" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?f3e9bb72b36fc8a3"></script><script defer="defer" src="/Content/dist/js/default.js?f3e9bb72b36fc8a3"></script><link href="/Content/dist/css/default.css?f3e9bb72b36fc8a3" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2358,6 +2358,30 @@
         zoom: 0.7;
     }
 </style>
+<div id="app-prompt-popup">
+<ev-modal :open="isOpen" class="w-full max-w-md fixed bottom-0 p-8 my-0 rounded-b-none rounded-t-2xl sm:p-8">
+<div class="flex flex-col items-center">
+<div class="mb-6">
+<svg fill="none" height="90" viewbox="0 0 91 90" width="91" xmlns="http://www.w3.org/2000/svg">
+<path d="M90.5 78C90.5 84.6274 85.1274 90 78.5 90H12.5C5.87258 90 0.5 84.6274 0.5 78V12C0.5 5.37258 5.87258 0 12.5 0H78.5C85.1274 0 90.5 5.37258 90.5 12V78Z" fill="#5C3FBF"></path>
+<path d="M61.1357 25.3125H29.3281V34.5166H61.1357V25.3125Z" fill="#FFC200"></path>
+<path d="M50.4061 49.5941H29.3281V40.39H52.1604L50.4061 49.5941Z" fill="white"></path>
+<path d="M61.8477 55.442H29.3281V64.6461H61.8477V55.442Z" fill="white"></path>
+</svg>
+</div>
+<div>
+                이벤터스 앱을 설치하고
+            </div>
+<div class="font-bold mb-4">
+                더 편하게 이벤터스를 이용해보세요.
+            </div>
+<ev-button @click="handleAppOpen" class="border-transparent rounded-[10px] bg-primary-50 !text-primary-400 text-xs mb-3">
+                편하게 앱으로 보기
+            </ev-button>
+<button @click="handleClose" class="text-xs text-gray-500">오늘은 그냥 볼게요</button>
+</div>
+</ev-modal>
+</div>
 </main>
 <footer id="footer">
 <div class="border-y">
@@ -2367,7 +2391,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 5월 이벤터스 휴무일 안내 : 5/1(목)~6(화)</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 6월 이벤터스 휴무일 안내 : 6/3(화), 6/6(금)</a>
 </div>
 </div>
 </div>
@@ -2632,7 +2656,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="Wh4NKza7tBLj2edOKfMl06TvjeNy2SshD_chOG8rRolujQYCDeyzEX8jJg2dji2U9mRTchUaj1v1uI3Ijfarx9DwF2U1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="mQ1Q9mgPMhG4Iu0hqEhsgim-md0yS7fotrFhtNZClsjl78EfuQl5faH6qOeDJiVSzLqdh7g5_cXLPjvQNYGpQexylxQ1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3064,10 +3088,10 @@
                         if (val) {
                             if(!this.asideMenu){
                                 this.asideMenu = 'solution';
-                            }                            
+                            }
                         }else{
                             this.myMenu = false;
-                            this.myChannelBtn = false;                            
+                            this.myChannelBtn = false;
                         }
                     },
                     openSearch: function (val) {
@@ -3172,7 +3196,7 @@
                                     closeTitle: '확인',
                                 });
                             }
-                        } 
+                        }
                     },
                     async sendEmailConfirmation() {
                         const response = await axios.get('/account/SendEmailConfirmationAndCloseAsync', {
@@ -3577,7 +3601,7 @@
                     adDownloadClick() {
                         const anchor = event.target.closest('a');
                         let clickText = anchor.innerText;
-                        
+
                     },
                     adConsultClick() {
                         const anchor = event.target.closest('a');
@@ -3715,7 +3739,7 @@
                 if (/android/i.test(navigator.userAgent)) {
                     // 안드로이드일 경우, 다운로드 배너를 표시하는 코드
                     this.isAndroid = true;
-                    
+
                 }
             },
             methods: {
@@ -3745,7 +3769,7 @@
                         `;
                         this.$refs.modalContent.appendChild(script2);
                     };
-                    });                   
+                    });
                     this.track('소개서 다운로드', { 위치: '푸터' });
                     mixpanel.track('start_lead', {
                         currency: 'KRW',
@@ -3926,6 +3950,70 @@
             },
         }).mount('#footer');
         
+
+        ui.createApp({
+            data: () => ({
+                // constants
+                cookieName: 'AppModalClose',
+                packageName: 'com.DHYSenjtpL.sjXrVtojDn',
+                scheme: 'sjXrVtojDn',
+                playStoreUrl: 'https://play.google.com/store/apps/details?id=com.DHYSenjtpL.sjXrVtojDn',
+                isMobile: 'False' === 'True',
+                isAndroid: /android/i.test(navigator.userAgent || navigator.vendor || window.opera),
+                // variables
+                isOpen: false,
+            }),
+            mounted() {
+                this.initAppModal();
+            },
+            methods: {
+                initAppModal() {
+                    if (!this.isMobile || !this.isAndroid) return;
+                    if (util.getCookie(this.cookieName)) return;
+                    const allowedPagePathRegexList = [
+                        /^\/$/, // 메인페이지
+                        /^\/\w+\/event\/\d+$/i, // 행사페이지
+                        /^\/search$/i, // 검색페이지
+                    ];
+                    const isAllowedPage = allowedPagePathRegexList.some((regex) => regex.test(location.pathname));
+                    if (!isAllowedPage) return;
+                    if (document.referrer && (document.referrer.includes('event-us.kr') || document.referrer.includes('localhost'))) return;
+
+                    // headlessui dialog 버그 수정 코드 (html 태그에 padding-right가 잘못 설정되는 문제)
+                    const style = document.createElement('style');
+                    style.innerHTML = `html { padding-right: 0 !important; }`;
+                    document.head.appendChild(style);
+
+                    this.isOpen = true;
+                },
+                handleAppOpen() {
+                    const start = Date.now();
+                    const timeout = 1500;
+
+                    // 앱이 설치되어 있는 경우 앱 열기
+                    const encodedUrl = encodeURIComponent(`https://event-us.kr${location.pathname}${location.search}`);
+                    window.location = `${this.scheme}://open?targeturl=${encodedUrl}`;
+
+                    // 앱이 설치되어 있지 않은 경우 1.5초 후에 Play Store로 이동
+                    setTimeout(() => {
+                        const elapsed = Date.now() - start;
+                        if (elapsed < timeout + 200) {
+                            window.open(this.playStoreUrl, '_blank');
+                        }
+                    }, timeout);
+
+                    this.isOpen = false;
+                    this.setAppModalCloseCookie(30);
+                },
+                handleClose() {
+                    this.isOpen = false;
+                    this.setAppModalCloseCookie();
+                },
+                setAppModalCloseCookie(expiredDaysFromToday) {
+                    util.setCookie(this.cookieName, 'fFG43cVLY2eXNoSCHBotn79HA9e63EWLnl46KVxQlUmU_0zBjj2MezDG3U8E1ntt07Ut4S78uGKEPvvavP39Ei6R8ggA2ql2vxt3bWc9jCuuV1_8PiQ6F6J_IkjcmAcZpdh22g2', expiredDaysFromToday ?? 1);
+                },
+            },
+        }).mount('#app-prompt-popup');
     });
     </script>
 <script>
@@ -4022,8 +4110,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":6753,"New_Start_Date":"2025-05-14T00:00:00","New_End_Date":"2025-05-27T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-05-13T14:52:02.8772377","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4252e4b95725403ca807f89e7cf3c2e2.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/917b0821fd5b4b57b5f535c9814fa722.png","Click_Url":"https://event-us.kr/wertintelligecne/event/100706?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=gmia8m8w0m","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"비즈니스 임팩트를 만드는","BannerDescription":"비즈니스 리더를 위한 기술 전략 행사","BannerDate":"2025. 06. 17(화) 09:30","BannerPlace":"오프라인 행사"},{"Id":6759,"New_Start_Date":"2025-05-17T00:00:00","New_End_Date":"2025-05-30T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-05-14T10:47:57.8020175","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/44549ee14cca4f059e946f8c8c34eec8.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/146264c4a34b4abbbc533fe849f50f10.jpg","Click_Url":"https://event-us.kr/totalseller/event/103705?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=wbrameswis","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"국내 양키캔들 총판 대표의","BannerDescription":"OEM 브랜딩과 자동화 수익 프로젝트","BannerDate":"2025. 05. 31(토) 13:00","BannerPlace":"오프라인 행사"},{"Id":6752,"New_Start_Date":"2025-05-15T00:00:00","New_End_Date":"2025-05-28T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-05-13T14:18:29.8812011","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/fa4d430ecb4944559c6c60c2624aabbe.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e602e9f584ec47f299b33734ea64b0e1.png","Click_Url":"https://event-us.kr/webinar/event/104038","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스가 직접 기획한","BannerDescription":"초기 스타트업을 위한 원데이 컨퍼런스","BannerDate":"2025. 05. 29(목) 10:00","BannerPlace":"오프라인 행사"}],
-                    searchResultBanners: [{"Id":"103705","CoverImageUrl":"/Image/totalseller/103705/ProjectInfo/Cover/5e19000930e34e468870b1f0e07c9d9b.jpg","Title":"국내 양키캔들 총판 대표의 중국oem 브랜딩과 자동화 수익 프로젝트 공개","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/totalseller/TopLogoImage/54f19ccacc9148bba7faafc432f2cc1b.png","EventType":"강연/세미나","Category":"창업","Category2":"창업 지원","StartDate":"2025-05-31T13:00:00","CloseDate":"2025-05-31T14:30:00","RegisterStartDate":"2025-05-02T18:30:00","RegisterDueDate":"2025-05-30T23:30:00","ViewCount":13822,"AppSubDomain":"totalseller","IsSuper":false,"AppTitle":"토탈셀러","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강서구","EventAddress":"서울 강서구 마곡중앙1로 20","EventAddressTitle":"NSP 홀 B1 컨퍼런스 홀","GroupRequestGroupMoney":10000,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-05-02T18:08:47.7089005","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":116588,"ProjectId":"103705","ProjectSubDomain":"totalseller","TagId":8051,"Date":"2025-05-02T18:25:21.7102735","Sort":0,"Project":null,"Tag":null},{"Id":116589,"ProjectId":"103705","ProjectSubDomain":"totalseller","TagId":17442,"Date":"2025-05-02T18:25:21.7102735","Sort":1,"Project":null,"Tag":null},{"Id":116590,"ProjectId":"103705","ProjectSubDomain":"totalseller","TagId":3341,"Date":"2025-05-02T18:25:21.7102735","Sort":2,"Project":null,"Tag":null},{"Id":116591,"ProjectId":"103705","ProjectSubDomain":"totalseller","TagId":125,"Date":"2025-05-02T18:25:21.7102735","Sort":3,"Project":null,"Tag":null},{"Id":116592,"ProjectId":"103705","ProjectSubDomain":"totalseller","TagId":444,"Date":"2025-05-02T18:25:21.7102735","Sort":4,"Project":null,"Tag":null}],"pitId":6743,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/totalseller/event/103705?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=xiwwbus0bi","CorrectionValue":0.0},{"Id":"100706","CoverImageUrl":"/Image/wertintelligecne/100706/ProjectInfo/Cover/a721bb00268a4e0fa6cea5870bd3461a.png","Title":"[워트인텔리전스] WERT TECH Summit 25","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/wertintelligecne/TopLogoImage/09271626511b49eb9ecaad81dd30aabe.png","EventType":"강연/세미나","Category":"과학기술","Category2":"AI","StartDate":"2025-06-17T09:30:00","CloseDate":"2025-06-17T18:30:00","RegisterStartDate":"2025-04-25T00:00:00","RegisterDueDate":"2025-06-16T23:30:00","ViewCount":7236,"AppSubDomain":"wertintelligecne","IsSuper":false,"AppTitle":"워트인텔리전스","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 논현로 508","EventAddressTitle":"GS 타워 아모리스 역삼(지하철 2호선 역삼역 7번 출구와 연결)","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-03-14T19:06:00","EventSystemType":"hybrid","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":115369,"ProjectId":"100706","ProjectSubDomain":"wertintelligecne","TagId":24373,"Date":"2025-04-25T19:11:47.5136138","Sort":0,"Project":null,"Tag":null},{"Id":115370,"ProjectId":"100706","ProjectSubDomain":"wertintelligecne","TagId":97,"Date":"2025-04-25T19:11:47.5136138","Sort":1,"Project":null,"Tag":null},{"Id":115371,"ProjectId":"100706","ProjectSubDomain":"wertintelligecne","TagId":24374,"Date":"2025-04-25T19:11:47.5136138","Sort":2,"Project":null,"Tag":null},{"Id":115372,"ProjectId":"100706","ProjectSubDomain":"wertintelligecne","TagId":24375,"Date":"2025-04-25T19:11:47.5136138","Sort":3,"Project":null,"Tag":null},{"Id":115373,"ProjectId":"100706","ProjectSubDomain":"wertintelligecne","TagId":12596,"Date":"2025-04-25T19:11:47.5136138","Sort":4,"Project":null,"Tag":null}],"pitId":6780,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/wertintelligecne/event/100706?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=yrui0kback","CorrectionValue":0.0}],
+                    banners: [{"Id":6864,"New_Start_Date":"2025-05-27T00:00:00","New_End_Date":"2025-06-09T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-05-26T19:36:08.0553105","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/830729d7eeec4fa29a9132b5e4e6094b.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/10d152aca23e4d34887290b58a911ce8.jpg","Click_Url":"https://event-us.kr/cliwant/event/102248?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=acia6wx8nn","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"입찰 제안부터 발표, 협상까지","BannerDescription":"실전 입찰 전략 컨퍼런스 2025","BannerDate":"2025. 07. 02(수) 13:00","BannerPlace":"오프라인 행사"},{"Id":6878,"New_Start_Date":"2025-06-02T00:00:00","New_End_Date":"2025-06-08T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-06-01T17:23:41.5432895","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/96f0ab599d474d288f27b5b97c66dd8c.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f888a7db52944cbc99e3621196f3cd0f.png","Click_Url":"https://event-us.kr/dallem/event/103772","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"31년차 커리어 멘토가 알려주는","BannerDescription":"AI 시대에 맞는 리더의 원칙과 태도","BannerDate":"2025. 06. 18(수) 19:00","BannerPlace":"오프라인 행사"}],
+                    searchResultBanners: [{"Id":"105394","CoverImageUrl":"/Image/micedot/105394/ProjectInfo/Cover/171720324e294136a2c39ec0cac0b406.png","Title":"2025 해양산업 르네상스","State":"Start","AppTopLogoImageUrl":"/Image/micedot/1cd4ebf09f3644e68e6ce6a3c5a3b4fd.png","EventType":"강연/세미나","Category":"창업","Category2":"스타트업","StartDate":"2025-06-12T14:00:00","CloseDate":"2025-06-12T17:00:00","RegisterStartDate":"2025-05-30T09:00:00","RegisterDueDate":"2025-06-12T13:00:00","ViewCount":59,"AppSubDomain":"micedot","IsSuper":false,"AppTitle":"2025 해양산업르네상스","AppThemeColor":"eventus-purple","ProjectInfoArea":"부산/울산/경남","ProjectInfoArea_Detail":"부산 동구","EventAddress":"","EventAddressTitle":"부산항국제전시컨벤션센터 이벤트홀 5층","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-05-30T15:26:10.141665","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":6876,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/micedot/event/105394","CorrectionValue":0.0},{"Id":"105399","CoverImageUrl":"/Image/dcampprogram/105399/ProjectInfo/Cover/43041f9fadde4210ba3e63e37f502bf4.png","Title":"6월 디캠프 오피스아워","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dcampprogram/TopLogoImage/ba6cc428bacb4fc68563fbcc803c8bbc.png","EventType":"멘토링/대외활동","Category":"창업","Category2":"창업 지원","StartDate":"2025-06-23T10:00:00","CloseDate":"2025-06-30T18:00:00","RegisterStartDate":"2025-05-30T08:00:00","RegisterDueDate":"2025-06-22T11:30:00","ViewCount":30,"AppSubDomain":"dcampprogram","IsSuper":false,"AppTitle":"디캠프","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 선릉로 551","EventAddressTitle":"디캠프 선릉","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-05-30T15:35:53.075167","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":121555,"ProjectId":"105399","ProjectSubDomain":"dcampprogram","TagId":59,"Date":"2025-05-30T15:40:15.8462348","Sort":0,"Project":null,"Tag":null},{"Id":121556,"ProjectId":"105399","ProjectSubDomain":"dcampprogram","TagId":178,"Date":"2025-05-30T15:40:15.8462348","Sort":1,"Project":null,"Tag":null},{"Id":121557,"ProjectId":"105399","ProjectSubDomain":"dcampprogram","TagId":136,"Date":"2025-05-30T15:40:15.8462348","Sort":2,"Project":null,"Tag":null},{"Id":121558,"ProjectId":"105399","ProjectSubDomain":"dcampprogram","TagId":596,"Date":"2025-05-30T15:40:15.8462348","Sort":3,"Project":null,"Tag":null},{"Id":121559,"ProjectId":"105399","ProjectSubDomain":"dcampprogram","TagId":70,"Date":"2025-05-30T15:40:15.8462348","Sort":4,"Project":null,"Tag":null}],"pitId":6874,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/dcampprogram/event/105399","CorrectionValue":0.0},{"Id":"102248","CoverImageUrl":"/Image/cliwant/102248/ProjectInfo/Cover/7a6dd345506f46e7abbea5d0d2d373b3.jpg","Title":"실전 입찰 전략 컨퍼런스 2025: 제안, 발표, 협상까지","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/cliwant/TopLogoImage/ecdd795cdee849f28708c83b12652325.png","EventType":"강연/세미나","Category":"경영","Category2":"경제","StartDate":"2025-07-02T13:00:00","CloseDate":"2025-07-02T18:30:00","RegisterStartDate":"2025-05-14T12:00:00","RegisterDueDate":"2025-07-01T23:30:00","ViewCount":1249,"AppSubDomain":"cliwant","IsSuper":false,"AppTitle":"Cliwant","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 논현로 508","EventAddressTitle":"아모리스 역삼점","GroupRequestGroupMoney":30000,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-04-09T14:14:36.756951","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":118781,"ProjectId":"102248","ProjectSubDomain":"cliwant","TagId":24927,"Date":"2025-05-15T20:36:11.6778647","Sort":0,"Project":null,"Tag":null},{"Id":118782,"ProjectId":"102248","ProjectSubDomain":"cliwant","TagId":24928,"Date":"2025-05-15T20:36:11.6778647","Sort":1,"Project":null,"Tag":null},{"Id":118783,"ProjectId":"102248","ProjectSubDomain":"cliwant","TagId":24929,"Date":"2025-05-15T20:36:11.6778647","Sort":2,"Project":null,"Tag":null},{"Id":118784,"ProjectId":"102248","ProjectSubDomain":"cliwant","TagId":24930,"Date":"2025-05-15T20:36:11.6778647","Sort":3,"Project":null,"Tag":null},{"Id":118785,"ProjectId":"102248","ProjectSubDomain":"cliwant","TagId":24931,"Date":"2025-05-15T20:36:11.6778647","Sort":4,"Project":null,"Tag":null}],"pitId":6885,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/cliwant/event/102248?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=06mbmwrc0g","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
