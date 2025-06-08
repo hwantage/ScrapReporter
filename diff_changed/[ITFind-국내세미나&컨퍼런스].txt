@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-06-02"></script>
+<script src="/contents/js/func.js?ver=2025-06-09"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -476,8 +476,8 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>3220건</strong></span>
-<span>현재페이지 : <strong>1/322.0</strong></span>
+<span>총 게시물 : <strong>3233건</strong></span>
+<span>현재페이지 : <strong>1/324.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
 <option value="20">20개씩 보기</option>
@@ -507,7 +507,7 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">3220</th>
+<th data-cell-header="번호" scope="row">3233</th>
 <td data-cell-header="구분">종료</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14232&amp;boardParam1=ko&amp;searchTarget2=">국내//트럼프 행정부의 대외경제정책 영향과 대응 방향 / 한국</a></td>
@@ -515,7 +515,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-04-25~2028-05-25</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3219</th>
+<th data-cell-header="번호" scope="row">3232</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14177&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 대한민국 ICT 융합엑스포 / 한국</a></td>
@@ -523,7 +523,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-05-07~2025-10-24</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3218</th>
+<th data-cell-header="번호" scope="row">3231</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14171&amp;boardParam1=ko&amp;searchTarget2=">국내//스마트라이프위크(SLW, Smart Life Week) / 한국</a></td>
@@ -531,7 +531,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-08-29~2025-09-29</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3217</th>
+<th data-cell-header="번호" scope="row">3230</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14267&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.16] 하루 6시간 완성 AI + ChatGPT 고급 실무 마스터 클래스-(실습위주)(심화과정) / 한국</a></td>
@@ -539,7 +539,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-05-01~2025-07-15</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3216</th>
+<th data-cell-header="번호" scope="row">3229</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14258&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.11] 고성능 나트륨 배터리(SIB) 개발 현황과 상용화 방안	 / 한국</a></td>
@@ -547,7 +547,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-05-28~2025-07-10</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3215</th>
+<th data-cell-header="번호" scope="row">3228</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14193&amp;boardParam1=ko&amp;searchTarget2=">국내//Tech-Biz Korea 2025(테크비즈 코리아 2025) / 한국</a></td>
@@ -555,7 +555,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-06-09~2025-07-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3214</th>
+<th data-cell-header="번호" scope="row">3227</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14190&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.10] 달라진 태양광 시장의 구조 및 제도 변화와 RE100 이행방안 / 한국</a></td>
@@ -563,7 +563,15 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-05-09~2025-07-09</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3213</th>
+<th data-cell-header="번호" scope="row">3226</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14284&amp;boardParam1=ko&amp;searchTarget2=">국내//[7/9] ChatGPT 실무 자동화 핵심 실전캠프 / 한국</a></td>
+<td data-cell-header="행사기간">2025-07-09 00:00:00.0~2025-07-09 00:00:00.0</td>
+<td data-cell-header="접수기간">2025-06-05~2025-07-08</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3225</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14251&amp;boardParam1=ko&amp;searchTarget2=">국내//제12회 국제 e-Mobility 엑스포 [International e-Mobility Expo] / 한국</a></td>
@@ -571,20 +579,12 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-06-08~2025-07-08</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3212</th>
+<th data-cell-header="번호" scope="row">3224</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14266&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.08] 청정수소 발전 기술 및 입찰전략과 실증현황 세미나 / 한국</a></td>
 <td data-cell-header="행사기간">2025-07-08 00:00:00.0~2025-07-08 00:00:00.0</td>
 <td data-cell-header="접수기간">2025-05-01~2025-07-07</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3211</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14257&amp;boardParam1=ko&amp;searchTarget2=">국내//[07.04] 제2기 ChatGPT 활용 마스터 : 입문부터 실무까지 / 한국</a></td>
-<td data-cell-header="행사기간">2025-07-04 00:00:00.0~2025-07-04 00:00:00.0</td>
-<td data-cell-header="접수기간">2025-05-28~2025-07-03</td>
 </tr>
 </tbody>
 </table>
