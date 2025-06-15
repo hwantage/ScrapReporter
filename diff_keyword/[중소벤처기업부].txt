@@ -298,9 +298,6 @@
 <a href="/site/smba/main.do">
 <img alt="중소벤처기업부" class="logo-im" src="/images/pattern/layout/head_logo.svg"/>
 </a>
-<a href="javascript:;" style="cursor: default;">
-<img alt="다시 대한민국! 새로운 국민의 나라" class="logo_pc" src="/images/pattern/layout/head_logo_txt.png"/>
-</a>
 </h1>
 <div class="right">
 <div class="head-in-service">
@@ -2320,9 +2317,9 @@ $(document).ready(function() {
 								}
 							})">
 <a class="attach-file pdf" data-file-type="hwpx" href="#">
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1059339&amp;cbIdx=126&amp;streFileNm=b87203dc-a918-48e7-b177-3f03548bcde1.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</img></a></td>
+</a></td>
 <td><span class="text2Line">2025.05.30</span></td>
 <td><span class="text2Line">중소벤처기업부공고<br/>제2025-328호</span></td>
 <!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
@@ -3031,7 +3028,7 @@ $(document).ready(function() {
             }
         });
     }
-	console.log("N" + " : " + "N");
+
 </script>
 <script>
                                 const refererInfo = document.referrer;

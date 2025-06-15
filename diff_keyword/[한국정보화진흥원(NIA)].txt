@@ -63,6 +63,7 @@ $(document).ready(function(){
 	
 	$("a").removeAttr("alt");
 	$("i").attr("aria-hidden","true");
+	$(".mobile_naviArea i").removeAttr("aria-hidden");
 	
 	/** 2017.04.20 Add for focus's movement by anchor : web accessibility **/
 	$("a[href='#sub_contentsArea2']").click(function()
@@ -130,6 +131,7 @@ $(document).ready(function(){
     		$(this).find("label").attr("aria-hidden","false");
             $(this).find("input").attr("aria-hidden","false");
             $(this).find("a").attr("aria-hidden","false");
+            $(this).find("span").attr("aria-expanded","false");
     		$(this).find("input").focus();
     	}
     	else
@@ -139,6 +141,7 @@ $(document).ready(function(){
             $(this).find("a").attr("tabindex","-1");
             $(this).find("label").attr("aria-hidden","true");
             $(this).find("input").attr("aria-hidden","true");
+            $(this).find("span").attr("aria-expanded","true");
             $(this).find("a").attr("aria-hidden","true");
     	}
     });
@@ -158,8 +161,8 @@ function addTitleToMenu(obj)
 		
 		if($(item).hasClass("has-subnav"))
 		{
-			$(item).children("span").children("a.accordion-collapsed").attr("title", menuText + " 하위메뉴 열기");
-			$(item).children("span").children("a.accordion-expanded").attr("title", menuText + " 하위메뉴 닫기");
+//			$(item).children("span").children("a.accordion-collapsed").attr("title", menuText + " 하위메뉴 열기");
+//			$(item).children("span").children("a.accordion-expanded").attr("title", menuText + " 하위메뉴 닫기");
 			
 			$(item).children("span").children("a.accordion-collapsed").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 열기</span>");
 			$(item).children("span").children("a.accordion-expanded").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 닫기</span>");
@@ -191,7 +194,7 @@ function ignore(e){
 <!--메뉴 건너뛰기-->
 <div id="skip_navigation">
 <a href="#sub_contentsArea" id="goContentBtn">본문 바로가기</a>
-<a href="#gnb_menu" id="goMenuBtn">대메뉴 바로가기</a>
+<a href="#gnb_menu" id="goMenuBtn">전체메뉴 바로가기</a>
 </div>
 <!--//메뉴 건너뛰기-->
 <!--topSliderArea[S]-->
@@ -822,7 +825,7 @@ function ignore(e){
         -->
 <div class="mobile_naviArea">
 <div id="o-wrapper">
-<button class="c-button" id="c-button--push-left" title="좌측메뉴 열기"><i class="ion-navicon"></i><span class="hiddenTxt">좌측메뉴 열기</span></button>
+<button class="c-button" id="c-button--push-left"><i class="ion-navicon"></i><span class="hiddenTxt">전체메뉴 열기</span></button>
 </div>
 <nav class="c-menu c-menu--push-left" id="c-menu--push-left">
 <div class="c-menu__logo"><span class="top_logo img02">한국지능정보사회진흥원</span></div>
@@ -1099,7 +1102,7 @@ function ignore(e){
 <div class="eng_page"><a href="http://eng.nia.or.kr/" title="영문사이트로 이동">ENGLISH</a></div>
 </div>
 </div>
-<button class="ion-ios-close-empty c-menu__close" title="좌측메뉴 닫기"><span class="hiddenTxt">좌측메뉴 닫기</span></button>
+<button class="ion-ios-close-empty c-menu__close"><span class="hiddenTxt">전체메뉴 닫기</span></button>
 <form id="snsLogForm" method="post" name="snsLogForm">
 <input id="slSiteCd" name="slSiteCd" type="hidden" value="nia_kor">
 <input id="slSortOrder" name="slSortOrder" type="hidden" value="1100101000000"/>
@@ -1167,7 +1170,7 @@ function ignore(e){
 <form action="/site/nia_kor/ex/search/searchList.do" id="m_niaSearchVo" method="post" name="niaSearchVo">
 <label aria-hidden="true" class="lHidden" for="m_search" tabindex="-1">통합검색</label>
 <input aria-hidden="true" aria-label="통합검색" class="sb-search-input" id="m_search" name="query" placeholder="검색어를 입력하세요" style="display:none;" tabindex="-1" title="검색어 입력(모바일)" type="text"/>
-<a class="sb-icon-search" onclick="m_totalSearch(this);" title="통합검색 검색하기"><span class="hiddenTxt">검색하기</span></a>
+<a class="sb-icon-search" href="javascript:void(0);" onclick="m_totalSearch(this);"><span class="hiddenTxt">검색하기</span></a>
 </form>
 </div>
 </div>
@@ -1303,7 +1306,7 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,774</em>건
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,775</em>건
             (1페이지 / 178페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
@@ -1392,7 +1395,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.12.27</em>
-<em>조회수 1298</em>
+<em>조회수 1350</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1401,7 +1404,83 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28163','16010100','28163');return false;" title="2025년 NIA 제3기 국민정책기자단 모집 공고(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28172','16010100','28172');return false;" title="제33회 KRnet 2025 콘퍼런스 개최 안내(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             제33회 KRnet 2025 콘퍼런스 개최 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.06.09</em>
+<em>조회수 320</em>
+</span>
+<span class="writer">
+<em>이신영</em>
+<em>네트워크전략팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28163','16010100','28163');return false;" title="2025년 NIA 제3기 국민정책기자단 모집 공고-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1464,11 +1543,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.06.05</em>
-<em>조회수 176</em>
+<em>조회수 616</em>
 </span>
 <span class="writer">
 <em>구서연</em>
@@ -1477,7 +1555,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28154','16010100','28154');return false;" title="2025년 초거대 AI 기반 플랫폼 이용지원  주관기관 사전 등록 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28154','16010100','28154');return false;" title="2025년 초거대 AI 기반 플랫폼 이용지원  주관기관 사전 등록 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1540,11 +1618,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.05.30</em>
-<em>조회수 516</em>
+<em>조회수 751</em>
 </span>
 <span class="writer">
 <em>손기문</em>
@@ -1621,7 +1698,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.05.28</em>
-<em>조회수 313</em>
+<em>조회수 434</em>
 </span>
 <span class="writer">
 <em>이정현</em>
@@ -1698,7 +1775,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.05.27</em>
-<em>조회수 184</em>
+<em>조회수 215</em>
 </span>
 <span class="writer">
 <em>손준우</em>
@@ -1775,7 +1852,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.05.23</em>
-<em>조회수 137</em>
+<em>조회수 160</em>
 </span>
 <span class="writer">
 <em>정재욱</em>
@@ -1850,7 +1927,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.05.19</em>
-<em>조회수 1728</em>
+<em>조회수 2054</em>
 </span>
 <span class="writer">
 <em>기태량</em>
@@ -1925,7 +2002,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.05.07</em>
-<em>조회수 1793</em>
+<em>조회수 1930</em>
 </span>
 <span class="writer">
 <em>김기택</em>
@@ -2000,86 +2077,11 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.05.02</em>
-<em>조회수 419</em>
+<em>조회수 462</em>
 </span>
 <span class="writer">
 <em>김보람</em>
 <em>공공지능데이터기획팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','27961','16010100','27961');return false;" title="2025년 한국지능정보원(NIA) 사업자 선정 평가위원 후보자 모집 및 등록 안내-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년 한국지능정보원(NIA) 사업자 선정 평가위원 후보자 모집 및 등록 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.04.09</em>
-<em>조회수 3640</em>
-</span>
-<span class="writer">
-<em>이은실</em>
-<em>재무관리팀</em>
 </span>
 </a>
 </li>
