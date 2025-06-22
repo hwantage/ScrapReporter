@@ -131,7 +131,7 @@ $(document).ready(function(){
     		$(this).find("label").attr("aria-hidden","false");
             $(this).find("input").attr("aria-hidden","false");
             $(this).find("a").attr("aria-hidden","false");
-            $(this).find("span").attr("aria-expanded","false");
+            $(this).find("a").attr("aria-expanded","true");
     		$(this).find("input").focus();
     	}
     	else
@@ -141,7 +141,7 @@ $(document).ready(function(){
             $(this).find("a").attr("tabindex","-1");
             $(this).find("label").attr("aria-hidden","true");
             $(this).find("input").attr("aria-hidden","true");
-            $(this).find("span").attr("aria-expanded","true");
+            $(this).find("a").attr("aria-expanded","false");
             $(this).find("a").attr("aria-hidden","true");
     	}
     });
@@ -167,8 +167,8 @@ function addTitleToMenu(obj)
 			$(item).children("span").children("a.accordion-collapsed").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 열기</span>");
 			$(item).children("span").children("a.accordion-expanded").children("i").html("<span class='hiddenTxt'>" + menuText + " 하위메뉴 닫기</span>");
 			
-			$(item).children("span").children("a.accordion-collapsed").attr("href","#").attr("onclick","ignore(window.event)");
-            $(item).children("span").children("a.accordion-expanded").attr("href","#").attr("onclick","ignore(window.event)");
+			$(item).children("span").children("a.accordion-collapsed").attr("href","javascript:void(0);").attr("onclick","ignore(window.event)");
+            $(item).children("span").children("a.accordion-expanded").attr("href","javascript:void(0);").attr("onclick","ignore(window.event)");
 			
 			addTitleToMenu($(item).children("ul").children("li"));
 		}
@@ -225,9 +225,6 @@ function ignore(e){
 <a href="/site/nia_kor/main.do"><span class="top_logo img01">한국지능정보사회진흥원</span></a>
 </h1>
 <h1 class="h_mobile"><a href="/site/nia_kor/main.do"><span class="top_logo img01m">한국지능정보사회진흥원</span></a></h1>
-<h1 class="h_gov" style="position:absolute;right:20px;top:17px;">
-<a href="/govindex.jsp" target="_blank" title="2022국정과제 바로가기 - 새창"><img alt="다시 도약하는 대한민국, 함께 잘사는 국민의 나라" src="/img/nia_kor/gov_2022.png"/></a>
-</h1>
 <ul class="globalSet">
 <li><a href="https://post.naver.com/withnia" target="_blank" title="한국지능정보사회진흥원 네이버포스트 새창 바로가기"><img alt="naver post" src="/images/nia_kor/img/naver_small.png"/><span class="hiddenTxt">네이버포스트</span></a></li>
 <li><a href="https://www.facebook.com/ITKOREANIA" target="_blank" title="NIA 한국지능정보사회진흥원 페이스북으로 새창 바로가기"><i class="ion-social-facebook"></i><span class="hiddenTxt">페이스북</span></a></li>
@@ -1170,7 +1167,7 @@ function ignore(e){
 <form action="/site/nia_kor/ex/search/searchList.do" id="m_niaSearchVo" method="post" name="niaSearchVo">
 <label aria-hidden="true" class="lHidden" for="m_search" tabindex="-1">통합검색</label>
 <input aria-hidden="true" aria-label="통합검색" class="sb-search-input" id="m_search" name="query" placeholder="검색어를 입력하세요" style="display:none;" tabindex="-1" title="검색어 입력(모바일)" type="text"/>
-<a class="sb-icon-search" href="javascript:void(0);" onclick="m_totalSearch(this);"><span class="hiddenTxt">검색하기</span></a>
+<a aria-expanded="false" class="sb-icon-search" href="javascript:void(0);" onclick="m_totalSearch(this);"><span class="hiddenTxt">검색하기</span></a>
 </form>
 </div>
 </div>
@@ -1306,7 +1303,7 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,775</em>건
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,778</em>건
             (1페이지 / 178페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
@@ -1395,7 +1392,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.12.27</em>
-<em>조회수 1350</em>
+<em>조회수 1387</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1404,7 +1401,237 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28172','16010100','28172');return false;" title="제33회 KRnet 2025 콘퍼런스 개최 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28234','16010100','28234');return false;" title="2025년 NIA 제3기 국민정책기자단 합격자 발표(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년 NIA 제3기 국민정책기자단 합격자 발표
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.06.20</em>
+<em>조회수 62</em>
+</span>
+<span class="writer">
+<em>구서연</em>
+<em>ESG혁신팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28226','16010100','28226');return false;" title="2025년 SOC사업 지능정보화계획 수립 의무화 제도 설명회 자료 공유(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년 SOC사업 지능정보화계획 수립 의무화 제도 설명회 자료 공유
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.06.19</em>
+<em>조회수 131</em>
+</span>
+<span class="writer">
+<em>홍혁기</em>
+<em>AI융합기획팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28225','16010100','28225');return false;" title="2025년 AI·고가치 공공데이터 수요조사 안내(새 글)-첨부파일 없음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년 AI·고가치 공공데이터 수요조사 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                        <em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.06.19</em>
+<em>조회수 153</em>
+</span>
+<span class="writer">
+<em>김규리</em>
+<em>공공지능데이터기획팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28172','16010100','28172');return false;" title="제33회 KRnet 2025 콘퍼런스 개최 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1467,11 +1694,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.06.09</em>
-<em>조회수 320</em>
+<em>조회수 555</em>
 </span>
 <span class="writer">
 <em>이신영</em>
@@ -1546,7 +1772,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.06.05</em>
-<em>조회수 616</em>
+<em>조회수 773</em>
 </span>
 <span class="writer">
 <em>구서연</em>
@@ -1621,7 +1847,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.05.30</em>
-<em>조회수 751</em>
+<em>조회수 900</em>
 </span>
 <span class="writer">
 <em>손기문</em>
@@ -1698,7 +1924,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.05.28</em>
-<em>조회수 434</em>
+<em>조회수 589</em>
 </span>
 <span class="writer">
 <em>이정현</em>
@@ -1775,7 +2001,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.05.27</em>
-<em>조회수 215</em>
+<em>조회수 252</em>
 </span>
 <span class="writer">
 <em>손준우</em>
@@ -1852,236 +2078,11 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.05.23</em>
-<em>조회수 160</em>
+<em>조회수 184</em>
 </span>
 <span class="writer">
 <em>정재욱</em>
 <em>재무관리팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28088','16010100','28088');return false;" title="ISP·ISMP 수립 공통가이드(제9판) 배포-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             ISP·ISMP 수립 공통가이드(제9판) 배포
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.05.19</em>
-<em>조회수 2054</em>
-</span>
-<span class="writer">
-<em>기태량</em>
-<em>디지털투자성과센터</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28056','16010100','28056');return false;" title="2025년 디지털정부 국제개발협력 실무자과정 교육생 모집 안내-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년 디지털정부 국제개발협력 실무자과정 교육생 모집 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.05.07</em>
-<em>조회수 1930</em>
-</span>
-<span class="writer">
-<em>김기택</em>
-<em>글로벌아카데미</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28048','16010100','28048');return false;" title="제13회 범정부 공공데이터 활용 창업경진대회 수정 통합공고-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             제13회 범정부 공공데이터 활용 창업경진대회 수정 통합공고
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.05.02</em>
-<em>조회수 462</em>
-</span>
-<span class="writer">
-<em>김보람</em>
-<em>공공지능데이터기획팀</em>
 </span>
 </a>
 </li>

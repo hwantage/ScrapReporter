@@ -26,7 +26,7 @@
 <link href="https://www.oss.kr/assets/core/common/css/xe-common.css?1573799923" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/assets/core/xe-ui-component/xe-ui-component.css?1637824731" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/plugins/oss_board_skins/components/OSS/assets/css/board.css?1700281078" media="all" rel="stylesheet" type="text/css"/>
-<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1735009383" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/style.css?1735009395" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick.css?1635139724" media="all" rel="stylesheet" type="text/css"/>
 <link href="https://www.oss.kr/plugins/oss/components/Themes/OSS/assets/css/slick-theme.css?1686556394" media="all" rel="stylesheet" type="text/css"/>
 <!-- JS at head.prepend -->
@@ -41,7 +41,7 @@
             XE.setup({
                 baseURL: 'https://www.oss.kr',
                 assetsURL: 'https://www.oss.kr',
-                userToken: 'fE2XihjskL9Waofu9V7sR1ZTuU6EmUosFZl5dDmF',
+                userToken: 'jpK0k9PQKmFPQKSZSDTVWOhMmGmAGjaRgWzjQ9rb',
                 loginUserId: '', // @DEPRECATED
                 useXeSpinner: true, // @DEPRECATED
                 locale: 'ko',
@@ -958,11 +958,35 @@
 <!-- /NOTICE -->
 <!-- LIST -->
 <tr>
+<td>11383</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/6949fdcd-af5e-4659-a5a2-fbc15941ea9b" id="title_6949fdcd-af5e-4659-a5a2-fbc15941ea9b">[주간 OSS 동향리포트] 허깅페이스, 로보틱스 전용 오픈소스 소형 VLA(비전-언어-행동) 모델 오픈소스로 공개</a>
+</td>
+<td class="read_num xe-hidden-xs">137</td>
+<td class="time xe-hidden-xs column-created_at">2025-06-19</td>
+</tr>
+<tr>
+<td>11382</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/273bbce3-0fed-4162-baf3-6d8bcc6d0e98" id="title_273bbce3-0fed-4162-baf3-6d8bcc6d0e98">카스퍼스키 “지난해 악성 오픈소스, 50% 증가한 1만4000개”</a>
+</td>
+<td class="read_num xe-hidden-xs">939</td>
+<td class="time xe-hidden-xs column-created_at">2025-06-18</td>
+</tr>
+<tr>
+<td>11381</td>
+<td class="title column-title">
+<a class="title_text" href="https://www.oss.kr/news/show/46f49fde-bc1e-4332-acd2-04e41bc0f31c" id="title_46f49fde-bc1e-4332-acd2-04e41bc0f31c">엔진AI, 로봇 개발 가속을 위한 종합 오픈소스 리소스 공개</a>
+</td>
+<td class="read_num xe-hidden-xs">927</td>
+<td class="time xe-hidden-xs column-created_at">2025-06-17</td>
+</tr>
+<tr>
 <td>11380</td>
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/d18e0d31-121a-4295-8c56-8b689c874b76" id="title_d18e0d31-121a-4295-8c56-8b689c874b76">"AI가 행동하기 전에 생각하도록 돕는다!"...메타, 차세대 월드 모델 'V-JEPA 2' 오픈소스로 공개</a>
 </td>
-<td class="read_num xe-hidden-xs">720</td>
+<td class="read_num xe-hidden-xs">1824</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-13</td>
 </tr>
 <tr>
@@ -970,7 +994,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/4fd6e0ad-770b-460a-95cd-b72806a895d7" id="title_4fd6e0ad-770b-460a-95cd-b72806a895d7">레드햇-메타, 라마 스택·vLLM 중심 생성AI 통합 오픈소스 협력 강화</a>
 </td>
-<td class="read_num xe-hidden-xs">1136</td>
+<td class="read_num xe-hidden-xs">2226</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-11</td>
 </tr>
 <tr>
@@ -978,7 +1002,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/de6a0e5a-9e4c-4bf7-82f4-4f5b57f2a16b" id="title_de6a0e5a-9e4c-4bf7-82f4-4f5b57f2a16b">모티프, 고성능 sLM ‘모티프 2.6B’ 오픈 소스 공개…“미스트랄 7B 성능 능가”</a>
 </td>
-<td class="read_num xe-hidden-xs">1151</td>
+<td class="read_num xe-hidden-xs">2263</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-11</td>
 </tr>
 <tr>
@@ -986,15 +1010,15 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/1e498a92-64ca-4954-8ace-3e893cbc22b7" id="title_1e498a92-64ca-4954-8ace-3e893cbc22b7"> 베이징 아카데미, 휴머노이드용 오픈 소스 모델 공개...AI도 미국 추격 본격화</a>
 </td>
-<td class="read_num xe-hidden-xs">1118</td>
+<td class="read_num xe-hidden-xs">2197</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-11</td>
 </tr>
 <tr>
 <td>11376</td>
 <td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/ea8b4df7-6c41-445b-aee3-d792dc8c35a2" id="title_ea8b4df7-6c41-445b-aee3-d792dc8c35a2">[주간 OSS 동향리포트] 국내 기업 10곳 중 8곳 오픈소스 SW 활용, 국내 오픈소스 SW 시장 규모는 8854억원</a>
+<a class="title_text" href="https://www.oss.kr/news/show/ea8b4df7-6c41-445b-aee3-d792dc8c35a2" id="title_ea8b4df7-6c41-445b-aee3-d792dc8c35a2">[주간 OSS 동향리포트] 마이크로소프트, 금융 오픈소스 혁신을 위한 FINOS 이사회에 합류</a>
 </td>
-<td class="read_num xe-hidden-xs">1140</td>
+<td class="read_num xe-hidden-xs">2225</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-11</td>
 </tr>
 <tr>
@@ -1002,7 +1026,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/c89d0bb6-bc48-4276-855e-afa97aaa975d" id="title_c89d0bb6-bc48-4276-855e-afa97aaa975d">삼성전자, 오픈소스 AI 코딩 어시스턴트 도입…"생산성 향상"</a>
 </td>
-<td class="read_num xe-hidden-xs">1164</td>
+<td class="read_num xe-hidden-xs">2264</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-11</td>
 </tr>
 <tr>
@@ -1010,31 +1034,7 @@
 <td class="title column-title">
 <a class="title_text" href="https://www.oss.kr/news/show/ef373fdc-dc70-4e61-b31e-a4a7f2b7df72" id="title_ef373fdc-dc70-4e61-b31e-a4a7f2b7df72">허깅페이스, 맥북에서 구동하는 로봇용 시각-언어-행동 모델 출시</a>
 </td>
-<td class="read_num xe-hidden-xs">1095</td>
-<td class="time xe-hidden-xs column-created_at">2025-06-11</td>
-</tr>
-<tr>
-<td>11373</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/6501a4a8-061f-48ce-8f1f-3535516686d9" id="title_6501a4a8-061f-48ce-8f1f-3535516686d9">앤트로픽, AI 모델 사고 내용 시각화 오픈소스 도구 공개</a>
-</td>
-<td class="read_num xe-hidden-xs">1097</td>
-<td class="time xe-hidden-xs column-created_at">2025-06-11</td>
-</tr>
-<tr>
-<td>11372</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/ce750bd0-10cc-458d-973d-1136f1705268" id="title_ce750bd0-10cc-458d-973d-1136f1705268">“SaaS형 코파일럿, 기업 환경에 한계”···미스트랄, 로컬배포·보안 강화한 AI 코딩 도구 출시</a>
-</td>
-<td class="read_num xe-hidden-xs">1097</td>
-<td class="time xe-hidden-xs column-created_at">2025-06-11</td>
-</tr>
-<tr>
-<td>11371</td>
-<td class="title column-title">
-<a class="title_text" href="https://www.oss.kr/news/show/ad85c299-b00f-4f78-afbe-058a81f07ebe" id="title_ad85c299-b00f-4f78-afbe-058a81f07ebe">복잡다단해진 오픈소스 생태계, 뜨거운 감자로 부상한 ‘라이선스 관리’</a>
-</td>
-<td class="read_num xe-hidden-xs">1097</td>
+<td class="read_num xe-hidden-xs">2178</td>
 <td class="time xe-hidden-xs column-created_at">2025-06-11</td>
 </tr>
 <!-- /LIST -->
@@ -1054,15 +1054,15 @@
 <a href="https://www.oss.kr/news?page=7">7</a>
 <a href="https://www.oss.kr/news?page=8">8</a>
 <span>...</span>
-<a href="https://www.oss.kr/news?page=1137">1137</a>
 <a href="https://www.oss.kr/news?page=1138">1138</a>
+<a href="https://www.oss.kr/news?page=1139">1139</a>
 <a class="btn_pg btn_next" href="https://www.oss.kr/news?page=2"><i class="xi-angle-right"><span class="bd_hidden">다음 페이지로 이동</span></i></a>
 </div>
 <!-- /PAGINATION PC-->
 <!-- PAGINATAION Mobile -->
 <div class="bd_paginate v2 xe-visible-xs">
 <span class="btn_pg btn_prev"><i class="xi-angle-left"><span class="bd_hidden">«</span></i></span>
-<span class="pg_box"><strong>1</strong> / <span>1138</span></span>
+<span class="pg_box"><strong>1</strong> / <span>1139</span></span>
 <a class="btn_pg btn_next" href="https://www.oss.kr/news?page=2"><i class="xi-angle-right"><span class="bd_hidden">»</span></i></a>
 </div>
 <!-- /PAGINATION Mobile -->
