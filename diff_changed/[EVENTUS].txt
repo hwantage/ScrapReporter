@@ -70,10 +70,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'dSQknu4qEXnz0E5mVRBSe1vKqyggA976QTiHn5UKLfqRwOty4Vx0w0rF6npf5KiMSykwTDfHDmrA2DM4f-OftQD2GfG_wcNRs-3aXo4OFwmQkHFxBHulUFbOyO3OqzP1MjQKGA2'
+            'user_id': '90-iFq5t046kSquQ8aEbAv-ePsrwn0UAv8aMpaSJKEqCmDUJHiHIotzYD2D74qFnYC8EVyXl3k7v80u6GhDPH6mvgGr3KlLsZYZjkF2WaKzzobVNzVZMmX6-ccHGFumOiqmenQ2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'dSQknu4qEXnz0E5mVRBSe1vKqyggA976QTiHn5UKLfqRwOty4Vx0w0rF6npf5KiMSykwTDfHDmrA2DM4f-OftQD2GfG_wcNRs-3aXo4OFwmQkHFxBHulUFbOyO3OqzP1MjQKGA2'
+            'crm_id': '90-iFq5t046kSquQ8aEbAv-ePsrwn0UAv8aMpaSJKEqCmDUJHiHIotzYD2D74qFnYC8EVyXl3k7v80u6GhDPH6mvgGr3KlLsZYZjkF2WaKzzobVNzVZMmX6-ccHGFumOiqmenQ2'
         });
     </script>
 <script>
@@ -140,7 +140,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?55264ab4f0aa0413"></script><style>body {
+<script src="/Content/dist/js/preload.js?3c86e2a21dd5a038"></script><style>body {
         opacity: 0;
       }
 
@@ -154,7 +154,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?55264ab4f0aa0413"></script><script defer="defer" src="/Content/dist/js/default.js?55264ab4f0aa0413"></script><link href="/Content/dist/css/default.css?55264ab4f0aa0413" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?3c86e2a21dd5a038"></script><script defer="defer" src="/Content/dist/js/default.js?3c86e2a21dd5a038"></script><link href="/Content/dist/css/default.css?3c86e2a21dd5a038" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -769,14 +769,17 @@
 <ui-transition-root :show="isOpen" as="template" enter="transition-opacity duration-500" enter-from="opacity-0" enter-to="opacity-100" leave="transition-opacity duration-500" leave-from="opacity-100" leave-to="opacity-0">
 <div :class="[maxWidthClass,{
             'sm:left-auto' : onLocation === null,
-            'mx-auto' : onLocation === 'center'
+            'mx-auto' : onLocation === 'center',
+            'justify-items-center' : widthAuto
         }]" class="fixed left-0 right-0 top-0 z-[300] p-4 w-full">
 <div :class="{
                 'bg-success-50 border-success-300': theme === 'success',
                 'bg-danger-50 border-danger-300': theme === 'danger',
                 'bg-info-50 border-info-300': theme === 'info',
-                'bg-gray-50 border-gray-300' : theme === 'disabled' || !theme
-            }" class="flex items-center w-full px-4 py-5 rounded-md border">
+                'bg-gray-50 border-gray-300' : theme === 'disabled' || !theme,
+                'absolute w-auto' : widthAuto,
+                'w-full' : !widthAuto
+            }" class="flex items-center px-4 py-5 rounded-md border">
 <span class="mr-2.5 text-white">
 <template v-if="theme === 'success'">
 <svg class="w-6 h-6 fill-success-400" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -817,6 +820,7 @@
                 onClose: null,
                 onLocation: null,
                 duration: 5000,
+                widthAuto: false,
             };
         }
         ui.createApp({
@@ -1468,7 +1472,7 @@
 <input @keyup="getSuggest()" autocomplete="off" class="pr-6 pl-14 w-full h-12 text-ellipsis bg-white rounded-md drop-shadow-sm" id="query" name="query" placeholder="참여하고 싶은 행사를 검색해보세요" ref="queryInput" type="search"/>
 </div>
 </div>
-<div class="space-y-4" v-show="suggest.length">
+<div class="space-y-4" v-show="suggestEvents.length">
 <div class="flex justify-between items-center">
 <div class="text-primary-400 text-lg">
                                             행사
@@ -1479,10 +1483,24 @@
                                             </button>
 </div>
 </div>
-<a :href="getSearchUrl(sug.title.raw)" :key="sug.id.raw" :tabindex="idx" :title="sug.title.raw" @click="beforeSearch(sug.title.raw)" class="block truncate" v-dompurify-html="sug.title.snippet ?? sug.title.raw" v-for="(sug, idx) in suggest.slice(0, 5)">
+<a :href="getSearchUrl(sug.title.raw)" :key="sug.id.raw" :tabindex="idx" :title="sug.title.raw" @click="beforeSearch(sug.title.raw)" class="block truncate" v-dompurify-html="sug.title.snippet ?? sug.title.raw" v-for="(sug, idx) in suggestEvents.slice(0, 5)">
 </a>
 </div>
-<div class="space-y-4" v-show="!suggest.length">
+<div class="space-y-4" v-show="suggestChannels.length">
+<div class="flex justify-between items-center">
+<div class="text-primary-400 text-lg">
+                                            채널
+                                        </div>
+<div class="text-xs" v-show="useSearchHistory">
+<a :href="getChannelListUrl" class="text-gray-500">
+                                                검색 결과 더 보기
+                                            </a>
+</div>
+</div>
+<a :href="getChannelSearchUrl(sug.title)" :key="sug.subdomain" :tabindex="idx" :title="sug.title" @click="beforeSearch(sug.title)" class="block truncate" v-dompurify-html="sug.snippet ?? sug.title" v-for="(sug, idx) in suggestChannels.slice(0, 5)">
+</a>
+</div>
+<div class="space-y-4" v-show="!suggestEvents.length||!suggestChannels.length">
 <div class="flex justify-between items-center">
 <div class="text-primary-400 text-lg">
                                             최근 검색어
@@ -2415,6 +2433,10 @@
 <span v-if="language === 'ko'">자주 묻는 질문</span>
 <span v-else="">FAQ</span>
 </a>
+<a href="https://eventwithus.notion.site/21720cee823780df852cdf89c06cecdb" target="_blank">
+<span v-if="language === 'ko'">채용</span>
+<span v-else="">About Us</span>
+</a>
 <ui-popover class="!ml-0 relative flex" v-slot="{ open }">
 <ui-popover-button @click="channelActive='channel'">
 <div class="flex items-center font-bold text-gray-900">
@@ -2656,7 +2678,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="TXsaKqMSQI97cnyi0QH7C6Nt_92OC7GqPFELUe_cRxCvdaQIvSNhTET-jG2y3x08s5K0XI8-tusBFX3YDM8hq9pC1Rs1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="6wNRMcRStKcCVEgXhqCvSc86Mjub2rlhKXCnmX_-_BYOIB6l9ge8oNnr7X3mOiNi24YRtkkakPMFxJJZjmnxwAxHAIM1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -2815,6 +2837,11 @@
                             url: '/search?category=마케팅&order=score&date=모든날&page=1',
                         },
                         {
+                            title: '게임',
+                            titleEn: 'Game',
+                            url: '/search?category=게임&order=score&date=모든날&page=1',
+                        },
+                        {
                             title: '과학기술',
                             titleEn: 'Science and Technology',
                             url: '/search?category=과학기술&order=score&date=모든날&page=1',
@@ -2878,14 +2905,19 @@
                             url: '/search?category=마케팅&order=score&date=모든날&page=1',
                         },
                         {
-                            title: '커리어',
-                            titleEn: 'Career',
-                            url: '/search?category=커리어&order=score&date=모든날&page=1',
+                            title: '게임',
+                            titleEn: 'Game',
+                            url: '/search?category=게임&order=score&date=모든날&page=1',
                         },
                         {
                             title: '과학기술',
                             titleEn: 'Science and Technology',
                             url: '/search?category=과학기술&order=score&date=모든날&page=1',
+                        },
+                        {
+                            title: '커리어',
+                            titleEn: 'Career',
+                            url: '/search?category=커리어&order=score&date=모든날&page=1',
                         },
                         {
                             title: '디자인/영상',
@@ -2978,7 +3010,9 @@
                             isOpen:false,
                             data:[],
                         },
-                        suggest: [],
+                        suggestEvents: [],
+                        suggestChannels: [],
+                        getChannelListUrl:'/search/channel',
                         useSearchHistory: true,
                         showAllSearchTrends: false,
                         analytics: [],
@@ -3218,12 +3252,17 @@
                         const self = this;
                         const query = document.getElementById('query').value;
                         if (!query) {
-                            self.suggest = [];
+                            self.suggestEvents = [];
+                            self.suggestChannels = [];
 
                             return;
                         }
                         axios.get('https://api.event-us.kr/api/v1/engine/suggest?query=' + query).then(({ data }) => {
-                            self.suggest = data.results;
+                            self.suggestEvents = data.results;
+                        });
+                        axios.get('https://api.event-us.kr/api/v1/engine/suggestChannel?query=' + query).then(({ data }) => {
+                            self.getChannelListUrl=`/search/channel?channelquery=${encodeURIComponent(query)}`
+                            self.suggestChannels = data.items;
                         });
                     },
                     beforeSearch(query) {
@@ -3259,6 +3298,19 @@
                         self.$refs.layoutSearchForm.submit();
                     },
                     getSearchUrl(query) {
+                        const queryModel = {
+                            query,
+                            order: 'score',
+                            date: '모든날',
+                            page: 1,
+                        };
+
+                        return `/search?${queryString.stringify(queryModel, { sort: false })}`;
+                    },
+                    getChannelSearchUrl(query) {
+                        return `/search/channel?channelquery=${encodeURIComponent(query)}`;
+                    },
+                    getSearchChannel(query) {
                         const queryModel = {
                             query,
                             order: 'score',
@@ -4010,7 +4062,7 @@
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'dSQknu4qEXnz0E5mVRBSe1vKqyggA976QTiHn5UKLfqRwOty4Vx0w0rF6npf5KiMSykwTDfHDmrA2DM4f-OftQD2GfG_wcNRs-3aXo4OFwmQkHFxBHulUFbOyO3OqzP1MjQKGA2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, '90-iFq5t046kSquQ8aEbAv-ePsrwn0UAv8aMpaSJKEqCmDUJHiHIotzYD2D74qFnYC8EVyXl3k7v80u6GhDPH6mvgGr3KlLsZYZjkF2WaKzzobVNzVZMmX6-ccHGFumOiqmenQ2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4110,8 +4162,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":7060,"New_Start_Date":"2025-06-16T00:00:00","New_End_Date":"2025-06-29T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-06-16T00:37:26.8255853","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/6f3eeb45a9244f89a96b4ce8f6cee596.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/8fbb0d34ff3549a48cd94a1bd33839db.png","Click_Url":"https://event-us.kr/webinar/event/106309?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=3ygng6wldm","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"국내 대표 IT 기업들이 알려주는","BannerDescription":"아웃바운드 세일즈 전략 A-Z","BannerDate":"2025. 07. 03(목) 19:30","BannerPlace":"오프라인 행사"},{"Id":7053,"New_Start_Date":"2025-06-14T00:00:00","New_End_Date":"2025-06-27T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-06-14T00:46:21.1852064","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/93a912dac4ce4ce28af3e18b2194a743.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/3f586e77b83d4e84818805d973c91040.png","Click_Url":"https://event-us.kr/yamyam/event/104636?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=66wnn088cw","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"저명한 경제 및 금융 전문가들의","BannerDescription":"2030 맞춤 재테크 마스터 교육","BannerDate":"2025. 07. 05(토) 10:00","BannerPlace":"오프라인 행사"},{"Id":6864,"New_Start_Date":"2025-06-17T00:00:00","New_End_Date":"2025-06-30T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-05-26T19:36:08.0553105","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/830729d7eeec4fa29a9132b5e4e6094b.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/10d152aca23e4d34887290b58a911ce8.jpg","Click_Url":"https://event-us.kr/cliwant/event/102248?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=acia6wx8nn","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"40% 특별 할인 코드: 40dc","BannerDescription":"실전 입찰 전략 컨퍼런스 2025","BannerDate":"2025. 07. 02(수) 13:00","BannerPlace":"오프라인 행사"},{"Id":7095,"New_Start_Date":"2025-06-23T00:00:00","New_End_Date":"2025-06-29T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-06-23T00:56:18.6252193","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4d3a77fb8f8444f489753caee8508895.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/cdee2179fc214f079e75e96c467d676e.png","Click_Url":"https://event-us.kr/albatross/event/102138","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"2025년 하반기 마케팅과 브랜딩","BannerDescription":"업계 리더들이 전하는 전략과 인사이트","BannerDate":"2025. 07. 10(목) 09:30","BannerPlace":"오프라인 행사"}],
-                    searchResultBanners: [{"Id":"105537","CoverImageUrl":"/Image/puzlcorp/105537/ProjectInfo/Cover/b1763b0e5fed45ad83ecb205ecaaf4f2.png","Title":"Fast Growth Club (FGC), 위기를 기회로 바꾼 마케팅 노하우","State":"Start","AppTopLogoImageUrl":null,"EventType":"강연/세미나","Category":"마케팅","Category2":"스타트업","StartDate":"2025-06-26T16:00:00","CloseDate":"2025-06-26T17:00:00","RegisterStartDate":"2025-06-09T09:00:00","RegisterDueDate":"2025-06-24T23:30:00","ViewCount":558,"AppSubDomain":"puzlcorp","IsSuper":false,"AppTitle":"퍼즐코퍼레이션","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 강남대로 464","EventAddressTitle":"비제바노빌딩 6층","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-02T17:25:31.1128033","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":122319,"ProjectId":"105537","ProjectSubDomain":"puzlcorp","TagId":3437,"Date":"2025-06-04T15:51:09.2704712","Sort":0,"Project":null,"Tag":null},{"Id":122320,"ProjectId":"105537","ProjectSubDomain":"puzlcorp","TagId":25493,"Date":"2025-06-04T15:51:09.2704712","Sort":1,"Project":null,"Tag":null},{"Id":122321,"ProjectId":"105537","ProjectSubDomain":"puzlcorp","TagId":59,"Date":"2025-06-04T15:51:09.2704712","Sort":2,"Project":null,"Tag":null},{"Id":122322,"ProjectId":"105537","ProjectSubDomain":"puzlcorp","TagId":1107,"Date":"2025-06-04T15:51:09.2704712","Sort":3,"Project":null,"Tag":null},{"Id":122323,"ProjectId":"105537","ProjectSubDomain":"puzlcorp","TagId":125,"Date":"2025-06-04T15:51:09.2704712","Sort":4,"Project":null,"Tag":null}],"pitId":7064,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/puzlcorp/event/105537","CorrectionValue":0.0},{"Id":"106709","CoverImageUrl":"/Image/aiedutech/106709/ProjectInfo/Cover/a65591053c74467f8d9bab41b19fe7a6.png","Title":"AI 크립토 투자 세미나","State":"Start","AppTopLogoImageUrl":"/Image/aiedutech/1fcda16218e746bb886066f1290b3a1d.png","EventType":"강연/세미나","Category":"경제/금융","Category2":"재테크","StartDate":"2025-06-27T19:00:00","CloseDate":"2025-06-27T20:30:00","RegisterStartDate":"2025-06-20T17:00:00","RegisterDueDate":"2025-06-27T18:00:00","ViewCount":16,"AppSubDomain":"aiedutech","IsSuper":false,"AppTitle":"브라이언","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 봉은사로 524","EventAddressTitle":" 지하2층, 스파크플러스 IR룸 L1A","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-20T15:10:26.3709786","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":7083,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/aiedutech/event/106709","CorrectionValue":0.0},{"Id":"106296","CoverImageUrl":"/Image/postechholdings1/106296/ProjectInfo/Cover/cc0de8919bd945a69b707354edaf1352.jpg","Title":"2025 포스텍홀딩스 아카데미(POSTECH HOLDINGS ACADEMY) 3회차 참여자 모집","State":"Start","AppTopLogoImageUrl":"/Image/postechholdings1/31919f9095864eb5b2cb817715f3ac21.png","EventType":"강연/세미나","Category":"창업","Category2":"스타트업","StartDate":"2025-07-02T14:00:00","CloseDate":"2025-07-02T16:00:00","RegisterStartDate":"2025-06-13T00:00:00","RegisterDueDate":"2025-07-01T17:00:00","ViewCount":277,"AppSubDomain":"postechholdings1","IsSuper":false,"AppTitle":"포스텍홀딩스","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 역삼로 168","EventAddressTitle":"팁스타운 S6 B1","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-13T20:54:04.0240229","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":124284,"ProjectId":"106296","ProjectSubDomain":"postechholdings1","TagId":503,"Date":"2025-06-13T21:02:28.3546765","Sort":0,"Project":null,"Tag":null},{"Id":124285,"ProjectId":"106296","ProjectSubDomain":"postechholdings1","TagId":1956,"Date":"2025-06-13T21:02:28.3546765","Sort":1,"Project":null,"Tag":null},{"Id":124286,"ProjectId":"106296","ProjectSubDomain":"postechholdings1","TagId":457,"Date":"2025-06-13T21:02:28.3546765","Sort":2,"Project":null,"Tag":null},{"Id":124287,"ProjectId":"106296","ProjectSubDomain":"postechholdings1","TagId":580,"Date":"2025-06-13T21:02:28.3546765","Sort":3,"Project":null,"Tag":null},{"Id":124288,"ProjectId":"106296","ProjectSubDomain":"postechholdings1","TagId":16923,"Date":"2025-06-13T21:02:28.3546765","Sort":4,"Project":null,"Tag":null}],"pitId":7067,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/postechholdings1/event/106296","CorrectionValue":0.0}],
+                    banners: [{"Id":7060,"New_Start_Date":"2025-06-18T00:00:00","New_End_Date":"2025-07-01T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-06-16T00:37:26.8255853","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/6f3eeb45a9244f89a96b4ce8f6cee596.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/8fbb0d34ff3549a48cd94a1bd33839db.png","Click_Url":"https://event-us.kr/webinar/event/106309?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=3ygng6wldm","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"국내 대표 IT 기업들이 알려주는","BannerDescription":"아웃바운드 세일즈 전략 A-Z","BannerDate":"2025. 07. 03(목) 19:30","BannerPlace":"오프라인 행사"},{"Id":6864,"New_Start_Date":"2025-06-17T00:00:00","New_End_Date":"2025-06-30T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-05-26T19:36:08.0553105","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/830729d7eeec4fa29a9132b5e4e6094b.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/10d152aca23e4d34887290b58a911ce8.jpg","Click_Url":"https://event-us.kr/cliwant/event/102248?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=acia6wx8nn","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"40% 특별 할인 코드: 40dc","BannerDescription":"실전 입찰 전략 컨퍼런스 2025","BannerDate":"2025. 07. 02(수) 13:00","BannerPlace":"오프라인 행사"}],
+                    searchResultBanners: [{"Id":"106977","CoverImageUrl":"/Image/dcampprogram/106977/ProjectInfo/Cover/b7e3fcd24b134b7e86c7b08578351c0a.png","Title":"7월 디캠프 오피스아워 #벤처투자","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dcampprogram/TopLogoImage/ba6cc428bacb4fc68563fbcc803c8bbc.png","EventType":"멘토링/대외활동","Category":"창업","Category2":"창업 지원","StartDate":"2025-07-21T10:00:00","CloseDate":"2025-07-23T17:00:00","RegisterStartDate":"2025-06-25T14:00:00","RegisterDueDate":"2025-07-13T23:30:00","ViewCount":192,"AppSubDomain":"dcampprogram","IsSuper":false,"AppTitle":"디캠프","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 선릉로 551","EventAddressTitle":"디캠프","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-25T13:37:24.9726532","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":126446,"ProjectId":"106977","ProjectSubDomain":"dcampprogram","TagId":178,"Date":"2025-06-25T16:48:55.3649891","Sort":0,"Project":null,"Tag":null},{"Id":126447,"ProjectId":"106977","ProjectSubDomain":"dcampprogram","TagId":228,"Date":"2025-06-25T16:48:55.3649891","Sort":1,"Project":null,"Tag":null},{"Id":126448,"ProjectId":"106977","ProjectSubDomain":"dcampprogram","TagId":89,"Date":"2025-06-25T16:48:55.3649891","Sort":2,"Project":null,"Tag":null},{"Id":126449,"ProjectId":"106977","ProjectSubDomain":"dcampprogram","TagId":136,"Date":"2025-06-25T16:48:55.3649891","Sort":3,"Project":null,"Tag":null},{"Id":126450,"ProjectId":"106977","ProjectSubDomain":"dcampprogram","TagId":1996,"Date":"2025-06-25T16:48:55.3649891","Sort":4,"Project":null,"Tag":null}],"pitId":7109,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/dcampprogram/event/106977","CorrectionValue":0.0},{"Id":"106309","CoverImageUrl":"/Image/webinar/106309/ProjectInfo/Cover/40e10535f4984aa68387d808b48c803c.png","Title":"매출을 높이는 아웃바운드 세일즈  전략 A-Z : 타겟 발굴부터 콜드 메일과 미팅까지","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"경영","Category2":"스타트업","StartDate":"2025-07-03T19:30:00","CloseDate":"2025-07-03T21:30:00","RegisterStartDate":"2025-06-16T00:00:00","RegisterDueDate":"2025-07-01T23:59:00","ViewCount":2472,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 선릉로 551","EventAddressTitle":"디캠프 선릉 6층 다목적홀","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-15T22:59:00","EventSystemType":"offline","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":258,"ProjectTags":[{"Id":124329,"ProjectId":"106309","ProjectSubDomain":"webinar","TagId":2225,"Date":"2025-06-15T23:06:32.6067589","Sort":0,"Project":null,"Tag":null},{"Id":124330,"ProjectId":"106309","ProjectSubDomain":"webinar","TagId":653,"Date":"2025-06-15T23:06:32.6067589","Sort":1,"Project":null,"Tag":null},{"Id":124331,"ProjectId":"106309","ProjectSubDomain":"webinar","TagId":25883,"Date":"2025-06-15T23:06:32.6067589","Sort":2,"Project":null,"Tag":null},{"Id":124332,"ProjectId":"106309","ProjectSubDomain":"webinar","TagId":594,"Date":"2025-06-15T23:06:32.6067589","Sort":3,"Project":null,"Tag":null},{"Id":124333,"ProjectId":"106309","ProjectSubDomain":"webinar","TagId":25884,"Date":"2025-06-15T23:06:32.6067589","Sort":4,"Project":null,"Tag":null}],"pitId":7059,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/webinar/event/106309?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=a06atawlim","CorrectionValue":0.0},{"Id":"106978","CoverImageUrl":"/Image/dcampprogram/106978/ProjectInfo/Cover/7cb7dd29012143ccb824252b445aa971.png","Title":"7월 디캠프 오피스아워 #사업협력","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dcampprogram/TopLogoImage/ba6cc428bacb4fc68563fbcc803c8bbc.png","EventType":"멘토링/대외활동","Category":"창업","Category2":"창업 지원","StartDate":"2025-07-23T14:00:00","CloseDate":"2025-07-24T17:00:00","RegisterStartDate":"2025-06-25T14:00:00","RegisterDueDate":"2025-07-13T23:30:00","ViewCount":84,"AppSubDomain":"dcampprogram","IsSuper":false,"AppTitle":"디캠프","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 선릉로 551","EventAddressTitle":"디캠프","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-25T13:39:50.5937453","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":126459,"ProjectId":"106978","ProjectSubDomain":"dcampprogram","TagId":596,"Date":"2025-06-25T17:07:44.9613693","Sort":0,"Project":null,"Tag":null},{"Id":126460,"ProjectId":"106978","ProjectSubDomain":"dcampprogram","TagId":12618,"Date":"2025-06-25T17:07:44.9613693","Sort":1,"Project":null,"Tag":null},{"Id":126462,"ProjectId":"106978","ProjectSubDomain":"dcampprogram","TagId":136,"Date":"2025-06-25T17:07:44.9613693","Sort":3,"Project":null,"Tag":null},{"Id":126463,"ProjectId":"106978","ProjectSubDomain":"dcampprogram","TagId":506,"Date":"2025-06-25T17:07:44.9613693","Sort":4,"Project":null,"Tag":null},{"Id":126464,"ProjectId":"106978","ProjectSubDomain":"dcampprogram","TagId":7386,"Date":"2025-06-25T17:07:52.1452739","Sort":2,"Project":null,"Tag":null}],"pitId":7115,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/dcampprogram/event/106978","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
@@ -4137,8 +4189,9 @@ docReady(() => {
                         '인문/사회': false,
                         '예술': false,
                         '마케팅': false,
-                        '커리어': false,
+                        '게임': false,
                         '과학기술': false,
+                        '커리어': false,
                         '디자인/영상': false,
                         '의료/의학': false,
                         '행사 기획': false,

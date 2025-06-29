@@ -1,122 +1,76 @@
 <!DOCTYPE html>
 
-<html class="no-js" dir="ltr" lang="ko">
+<html class="no-js" data-mobile="false" dir="ltr" lang="ko">
 <head>
 <meta charset="utf-8"/>
 <meta content="ie=edge" http-equiv="x-ua-compatible"/>
 <meta content="width=1080" name="viewport"/>
 <meta content="AI타임스" name="apple-mobile-web-app-title">
+<meta content="max-image-preview:large" name="robots"/>
 <!-- 메타태그정보 //-->
 <meta content="AI타임스(aitimes.com)는 인공지능 중심의 전문 미디어입니다." name="description">
 <meta content="AI타임스" property="og:title">
-<meta content="AI타임스" property="og:site_name"/>
-<meta content="https://www.aitimes.com/image/logo/snslogo_20230911013833.jpg" property="og:image"/>
+<meta content="AI타임스" property="og:site_name">
+<meta content="https://www.aitimes.com/image/logo/snslogotrans_20250610094832.png" property="og:image"/>
 <meta content="https://www.aitimes.com" property="og:url"/>
 <meta content="AI타임스(aitimes.com)는 인공지능 중심의 전문 미디어입니다." property="og:description"/>
 <meta content="summary" name="twitter:card"/>
 <meta content="AI타임스" name="twitter:title"/>
 <meta content="AI타임스(aitimes.com)는 인공지능 중심의 전문 미디어입니다." name="twitter:description"/>
-<meta content="https://www.aitimes.com/image/logo/snslogo_20230911013833.jpg" name="twitter:image:src"/>
+<meta content="https://www.aitimes.com/image/logo/snslogotrans_20250610094832.png" name="twitter:image:src"/>
 <!--// 메타태그정보 -->
-<link href="https://cdn.aitimes.com/image/logo/favicon.png" rel="shortcut icon"/>
+<link href="https://cdn.aitimes.com/favicon.ico" rel="shortcut icon"/>
 <title>정책 &lt; 기사목록 - AI타임스</title>
-<link href="https://www.aitimes.com" rel="canonical">
-<link href="https://cdn.aitimes.com/css/jquery-ui.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/slick.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/jquery.timepicker.css" rel="stylesheet">
-<link href="https://cdn.aitimes.com/adManager/css/adManager.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/foundation.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/custom.foundation.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/webfonts.min.css" rel="stylesheet"/>
+<link href="https://cdn.aitimes.com/rss/gn_rss_allArticle.xml" rel="alternate" type="application/rss+xml">
+<link href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=" id="canonical" rel="canonical"/>
+<link href="https://cdn.aitimes.com/css/common.min.css" rel="stylesheet"/>
 <link href="https://cdn.aitimes.com/css/font.style.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/media.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/autobox.style.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/templates.style.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/plugin.style.min.css" rel="stylesheet"/>
+<link href="https://cdn.aitimes.com/css/plugins.min.css" rel="stylesheet"/>
 <link href="https://cdn.aitimes.com/css/style.min.css" rel="stylesheet"/>
-<link href="https://cdn.aitimes.com/css/design.style.css" rel="stylesheet"/><link href="https://cdn.aitimes.com/menuskin/pd_01/menubar.css?220901" rel="stylesheet"/>
+<link href="https://cdn.aitimes.com/css/design.style.css" rel="stylesheet"/>
+<link href="https://cdn.aitimes.com/menuskin/pd_01/menubar.css" rel="stylesheet"/>
 <script src="https://cdn.aitimes.com/script/jquery.min.js"></script>
 <script src="https://cdn.aitimes.com/script/jquery-ui.min.js"></script>
 <script src="https://cdn.aitimes.com/script/slick.min.js"></script>
 <script src="https://cdn.aitimes.com/script/jquery.rwdImageMaps.min.js"></script>
-<script src="https://cdn.aitimes.com/script/what-input.js"></script>
+<script src="https://cdn.aitimes.com/script/what-input.min.js"></script>
 <script src="https://cdn.aitimes.com/script/foundation.min.js"></script>
 <script src="https://cdn.aitimes.com/menuskin/pd_01/menubar.js"></script>
 <script src="https://cdn.aitimes.com/script/user.style.js"></script>
-<script src="https://cdn.aitimes.com/script/clipboard.min.js"></script>
 <script src="https://cdn.aitimes.com/script/jquery.timepicker.min.js"></script>
 <script src="https://cdn.aitimes.com/script/jquery.tabslet.min.js"></script>
 <script src="https://cdn.aitimes.com/script/common.js"></script>
-<!--[if lt IE 10]>
-<link rel="stylesheet" href="https://cdn.aitimes.com/css/style.ie9.css">
-<script src="https://cdn.aitimes.com/script/html5shiv.min.js"></script>
-<![endif]-->
-<script type="text/javascript">
+<script src="https://cdn.aitimes.com/script/Util.js"></script>
+<script src="https://cdn.aitimes.com/script/Bannerpop.js"></script>
+<script src="https://cdn.aitimes.com/script/ImageViewer.js"></script>
+<script>
+$(function(e) {
+	// 이미지맵
+	$('img[usemap]').rwdImageMaps();
 
-	$(document).ready(function(e) {
-		// 이미지맵
-		$('img[usemap]').rwdImageMaps();
-		bannerpop.banner(".banner_event_box");					// 기능성배너 이벤트
-		bannerpopMulti.bannerLoad();                            // 멀티 기능성 배너 이벤트
-
-		// 기사뷰 이미지관련
-		
-		// 기사본문 부분 복사하기 저작권 표시
-		$('#article-view-content-div').on('copy', function(e){			
-			var sel = window.getSelection();
-			var copyFooter = "<br/><br/>출처 : AI타임스(https://www.aitimes.com)<br/>";
-			var copyHolder = $('<div>', {html: sel+copyFooter, id:'copy_text', style: {position: 'absolute', left: '-99999px'}});
-			$('body').append(copyHolder);
-			var str = $('#copy_text').html();
-			$('#copy_text').html(str.replace(/(\r\n|\n|\r)/gm, "<br />"));
-			sel.selectAllChildren( copyHolder[0] );
-			window.setTimeout(function() {
-				copyHolder.remove();
-			},0);
-		});
+	// 기사뷰 이미지관련
 	});
 
-	// 도메인
-	var SITE_DOMAIN = 'https://www.aitimes.com'
-	,CDN_DOMAIN = "https://cdn.aitimes.com",___currentTime	= 1750634699;
+// 도메인
+var SITE_DOMAIN = 'https://www.aitimes.com'
+	,CDN_DOMAIN = 'https://cdn.aitimes.com'
+	,___currentTime	= 1751239481;
 
-	// 즐겨찾기 스크립트
-	function bookmark() {
-		window.external.AddFavorite("https://www.aitimes.com", "AI타임스")
-	}
-
+// 즐겨찾기 스크립트
+function bookmark() {
+	window.external.AddFavorite("https://www.aitimes.com", "AI타임스")
+}
 </script>
-<style type="text/css">
-/* 사이트 기본 색 */
-.user-point,a.user-point,
-.poll-columns .poll-state.going
-{color:#ed1c24 !important}
-.user-bg,.user-bg:hover,.user-bg:active,.user-bg:focus,li[id*="slick-"].slick-active button[data-role],.tabs .is-active a,
-.checkbox-group > input[type="radio"]:checked + label::before, .checkbox-group > input[type="checkbox"]:checked + label::before,
-.radio-group > input[type="radio"]:checked + label::before, .radio-group > input[type="checkbox"]:checked + label::before,
-.poll-view .poll-view-state.going,.poll-view .poll-radio input[type="radio"]:checked + label::before,.poll-view .poll-radio input[type="checkbox"]:checked + label::before,
-.nd-switch.user-bg input[type="checkbox"]:checked + label,.nd-switch.user-bg input[type="radio"]:checked + label,
-.nd-switch.user-bg input[type="checkbox"]:checked + label::before,.nd-switch.user-bg input[type="radio"]:checked + label::before,
-.switch-group.user-bg > .nd-switch input[type="checkbox"]:checked + label,.switch-group.user-bg > .nd-switch input[type="radio"]:checked + label
-{background-color:#ed1c24 !important}
-.user-border,
-.checkbox-group input[type="checkbox"] + label::before, .checkbox-group input[type="radio"] + label::before,
-.radio-group input[type="checkbox"] + label::before, .radio-group input[type="radio"] + label::before,
-.poll-view .poll-radio input[type="radio"] + label:hover strong::before,.poll-view .poll-radio input[type="checkbox"] + label:hover strong::before,
-.poll-view .poll-radio input[type="radio"]:checked + label  strong::before,.poll-view .poll-radio input[type="checkbox"]:checked + label  strong::before,
-#gallery-wrap .gallery-content.view-page .gallery-thumb .nav-content.slick-current::before
-{border-color:#ed1c24 !important}
-.user-border-top {border-top-color:#ed1c24 !important}
-.user-border-bottom {border-bottom-color:#ed1c24 !important}
-.user-border-left {border-left-color:#ed1c24 !important}
-.user-border-right {border-right-color:#ed1c24 !important}
-.checkbox-group input[type="checkbox"] + label::before, .checkbox-group input[type="radio"] + label::before,
-.radio-group input[type="checkbox"] + label::before, .radio-group input[type="radio"] + label::before {opacity:.3}
-.checkbox-group > input[type="radio"]:checked + label::before, .checkbox-group > input[type="checkbox"]:checked + label::before,
-.radio-group > input[type="radio"]:checked + label::before, .radio-group > input[type="checkbox"]:checked + label::before {opacity:initial}
-
-/* site size */
+<style>
+:root {
+	--nd-primary: #ed1c24;
+	--nd-primary-hover: #d51920;
+	--nd-primary-active: #be161d;
+	--nd-primary-rgb: 237, 28, 36;
+	--nd-site-width: 1080px;
+    --nd-index-width: 1080px;
+	--nd-writing-content-max-width: 600px;
+}
 .width-1080 {width:1080px}
 .max-width-1080 {max-width:1080px}
 .min-width-1080 {min-width:1080px}
@@ -199,390 +153,313 @@ wcs_do();
  ]
 }
 </script>
-<style type="text/css">
-    body{ top: 0 !important;}
-    .goog-te-banner-frame{display: none !important;}
-    .goog-te-balloon-frame { display: none; }
-    #google_translate_element { display:none;}
-</style>
-</meta></link></link></meta></meta></meta></head>
+</meta></link></meta></meta></meta></meta></head>
 <body class="" style="">
 <nav class="skip-nav">
-<a class="user-border" href="#user-menu" onclick="document.getElementById('user-menu').tabIndex = -1;document.getElementById('user-menu').focus();return false;"><span>주요서비스 바로가기</span></a>
-<a class="user-border" href="#user-container" onclick="document.getElementById('user-container').tabIndex = -1;document.getElementById('user-container').focus();return false;"><span>본문 바로가기</span></a>
-<a class="user-border" href="#user-footer" onclick="document.getElementById('user-footer').tabIndex = -1;document.getElementById('user-footer').focus();return false;"><span>매체정보 바로가기</span></a>
-<a class="user-border" href="#userLogin" onclick="document.getElementById('userLogin').tabIndex = -1;document.getElementById('userLogin').focus();return false;"><span>로그인 바로가기</span></a>
-<a class="user-border" href="#userSearch" onclick="document.getElementById('userSearch').tabIndex = -1;document.getElementById('userSearch').focus();return false;"><span>기사검색 바로가기</span></a>
-<a class="user-border" href="#allService" onclick="document.getElementById('allService').tabIndex = -1;document.getElementById('allService').focus();return false;"><span>전체서비스 바로가기</span></a>
+<a class="skip-nav-item" href="#user-menu" onclick="document.getElementById('user-menu').tabIndex = -1;document.getElementById('user-menu').focus();return false;">주요서비스 바로가기</a>
+<a class="skip-nav-item" href="#user-container" onclick="document.getElementById('user-container').tabIndex = -1;document.getElementById('user-container').focus();return false;">본문 바로가기</a>
+<a class="skip-nav-item" href="#user-footer" onclick="document.getElementById('user-footer').tabIndex = -1;document.getElementById('user-footer').focus();return false;">매체정보 바로가기</a>
+<a class="skip-nav-item" href="#userLogin" onclick="document.getElementById('userLogin').tabIndex = -1;document.getElementById('userLogin').focus();return false;">로그인 바로가기</a>
+<a class="skip-nav-item" href="#userSearch" onclick="document.getElementById('userSearch').tabIndex = -1;document.getElementById('userSearch').focus();return false;">기사검색 바로가기</a>
 </nav>
-<!--[if lt IE 10]>
-<div id="ie9-guide">
-	<div class="ie9-wrapper border-box">
-		<p class="guide-txt">
-		잠깐! 현재 Internet Explorer 8이하 버전을 이용중이십니다. 최신 브라우저(Browser) 사용을 권장드립니다!
-		</p>
-
-		<div class="guide-right">
-			<dl class="ie9-down nobr">
-				<dt><i class="icon ie-logo">ie</i></dt>
-				<dd>
-					<span>인터넷 익스플로러 11</span>
-					<a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank">다운로드</a>
-				</dd>
-			</dl>
-
-			<dl class="ie9-down">
-				<dt><i class="icon cr-logo">chrome</i></dt>
-				<dd>
-					<span>구글 크롬</span>
-					<a href="http://www.google.com/chrome/" target="_blank">다운로드</a>
-				</dd>
-			</dl>
-
-			<dl class="ie9-down">
-				<dt><i class="icon ff-logo">firefox</i></dt>
-				<dd>
-					<span>모질라 파이어폭스</span>
-					<a href="http://www.mozilla.or.kr/" target="_blank">다운로드</a>
-				</dd>
-			</dl>
-		</div>
-	</div>
-</div>
-<![endif]-->
-<div class="off-canvas-wrapper">
-<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
 <div class="off-canvas-content" data-off-canvas-content="">
-<!-- wrap //-->
-<div class="min-width-1080" id="user-wrap">
+<div class="user-wrap" id="user-wrap">
 <div id="user-wrapper">
-<!-- header //-->
-<header class="posi-re float-center" id="user-header">
-<h2 class="show-for-sr">상단영역</h2>
+<header class="user-header" id="user-header">
 <div class="clearfix text-center">
 </div>
-<style type="text/css">
-#header-wrapper.basic, #header-wrapper .mode-inner, #nav-header {max-width:1080px}
-#user-nav::before,
-#user-nav::after {background-color:#ed1c24}
-
-/* 1차 */
-#user-nav .user-menu > .secline > a.a-hover {color:#ed1c24}
-#user-nav .user-menu > .secline > a.a-hover::before {border-top-color:#ed1c24}
-
-/* 2차 - vertical */
-#header-wrapper.vertical #user-nav .user-menu .secline > ul {border-color:#ed1c24}
-
-/* 2차 - 배경 slideDown */
-#header-wrapper.horizon #user-nav.active::before {border-top-color:#ed1c24}
-
-/* 2차 - vertical & use autobox */
-#header-wrapper.vertical.nav-autobox #user-nav .user-menu .secline > ul {max-width:1080px;padding-right:calc(1080px - 300px)}
-#header-wrapper.vertical.nav-autobox #user-nav .user-menu .secline .sub > a.a-sub-hover,
-#header-wrapper.vertical.nav-autobox #user-nav .user-menu .secline .sub > a:hover {color:#fff;background-color:#ed1c24}
-</style>
-<!-- 메뉴 시작 //-->
-<header class="data-sticky-container vertical basic center" data-main-code="S1N1" data-multi-code="" data-serial-code="/news/articleList.html" data-sticky-container="" data-sub-code="/news/articleList.html" id="header-wrapper">
-<div class="sticky" data-anchor="user-container" data-margin-top="0" data-sticky="" data-sticky-on="small">
-<div class="float-center" style="width:1080px">
-<!-- 최상단영역 //-->
-<div id="user-gnb">
-<div class="mode-inner">
-<!-- 번역 -->
-<ul class="translation translation-icons">
-<li>
-<a class="lang-btns ko" data-lang="ko" href="javascript:ChangeLanguages('ko');">
-<img alt="한국어" src="https://cdn.aitimes.com/image/translation_icon_Korea.gif"/>
-</a>
-</li>
-<li>
-<a class="lang-btns en" data-lang="en" href="javascript:ChangeLanguages('en');">
-<img alt="영어" src="https://cdn.aitimes.com/image/translation_icon_Usa.gif"/>
-</a>
-</li>
-<li>
-<a class="lang-btns ja" data-lang="ja" href="javascript:ChangeLanguages('ja');">
-<img alt="일본어" src="https://cdn.aitimes.com/image/translation_icon_Japan.gif"/>
-</a>
-</li>
-<li>
-<a class="lang-btns cn" data-lang="zh-CN" href="javascript:ChangeLanguages('zh-CN');">
-<img alt="중국어" src="https://cdn.aitimes.com/image/translation_icon_China.gif"/>
-</a>
-</li>
-</ul>
-<!-- 번역 -->
-</div>
-</div>
-<!--// 최상단영역 -->
 <!-- 로고영역 //-->
-<header id="nav-header">
-<h1 class="user-logo"><a href="https://www.aitimes.com" target="_top"><img alt="AI타임스" src="https://cdn.aitimes.com/image/logo/toplogo_20230925095718.gif"/></a></h1>
-<div class="user-banner">
-<div class="banner-box" style="width:530px;">
-<!--제호우측--><script type="text/javascript">var ___BANNER = "ban_1694498788926";</script><script charset="utf-8" id="ban_1694498788926" src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/33.js?1694498788926" type="text/javascript"></script><!--//제호우측-->
-<!--220929_네이버뉴스스탠드--<script type="text/javascript">var ___BANNER = "ban_1664432654657";</script><script type="text/javascript" charset="utf-8" src="https://cdn.aitimes.com/bannerpop/uploads/js/359.js?1664432654657" id="ban_1664432654657"></script><!--//220929_네이버뉴스스탠드-->
+<article class="gl-logo-container">
+<div class="gl-logo">
+<a href="https://www.aitimes.com" id="logo-roll" target="_top">
+<!-- <div class="slick-slide"><img src="https://cdn.aitimes.com/image/logo/translogo_20250624031234.png" alt="AI타임스" width="328" height="70" loading="lazy" /></div> -->
+<div class="slick-slide"><img alt="toplogo2" src="https://cdn.aitimes.com/image/logo/toplogo2.png"/></div>
+</a>
+<p class="txt">www.aitimes.com</p>
 </div>
-<!--<div class="banner-box marleft-50">
-				<!--221101_이태원애도--<script type="text/javascript">var ___BANNER = "ban_1667269423403";</script><script type="text/javascript" charset="utf-8" src="https://cdn.aitimes.com/bannerpop/uploads/js/362.js?1667269423403" id="ban_1667269423403"></script><!--//221101_이태원애도-->
-<!--리본_221031--<script type="text/javascript">var ___BANNER = "ban_1667197742367";</script><script type="text/javascript" charset="utf-8" src="https://cdn.aitimes.com/bannerpop/uploads/js/361.js?1667197742367" id="ban_1667197742367"></script><!--//리본_221031
-			</div>-->
+<div class="gl-banner">
+<!--250626_NIA--><script src="https://cdn.aitimes.com/bannerpop/uploads/js/680.js?1750926150"></script><!--//250626_NIA--> </div>
+<div class="gl-banner etc">
+<div class="gl-updated">발행일: 2025-06-30 08:03 (월) </div>
+<div class="etc-list">
+<a class="item" href="https://www.aitimes.com/member/login.html" target="_top">로그인</a>
+<div class="selec-box">
+<div class="txt"><i class="ndcon-language"></i> <i class="icon-angle-down-min"></i></div>
+<div class="link">
+<button class="translate-btn kr" data-lang="kr" data-tooltip="" onclick="javascript:ChangeLanguages('ko');" title="한국어" type="button"><span class="show-for-sr">한국어</span>KR</button>
+<button class="translate-btn en" data-lang="en" data-tooltip="" onclick="javascript:ChangeLanguages('en');" title="영어" type="button"><span class="show-for-sr">영어</span>EN</button>
+<button class="translate-btn jp" data-lang="jp" data-tooltip="" onclick="javascript:ChangeLanguages('ja');" title="일본어" type="button"><span class="show-for-sr">일본어</span>JP</button>
+<button class="translate-btn cn" data-lang="cn" data-tooltip="" onclick="javascript:ChangeLanguages('zh-CN');" title="중국어" type="button"><span class="show-for-sr">중국어</span>CH</button>
 </div>
-<div class="user-banner right">
-<!-- 로그인 // --
-			<ul id="userLogin" class="user-logbox">
-									<li><a href="https://www.aitimes.com/member/login.html" target="_top">로그인</a></li>
-					<li><a href="https://www.aitimes.com/member/index.html" target="_top">회원가입</a></li>
-							</ul>
-			<!--// 로그인 -->
-<!-- 검색 //--
-			<div class="user-search-form">
-				<fieldset class="sch-fieldset">
-					<form name="head-search" method="post" class="clearfix" action="/news/articleList.html">
-						<input type="hidden" name="sc_area" value="A">
-						<input type="hidden" name="view_type" value="tm">
-						<label class="show-for-sr" for="sc_word">검색</label>
-						<input type="search" name="sc_word" id="sc_word" onkeydown="if(event.keyCode==13){if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');return false;}}" placeholder="검색어를 입력하세요">
-						<button type="button" onclick="if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');this.form.sc_word.focus();return false;}"><i class="icon-search"><span class="show-for-sr">검색</span></i></button>
-					</form>
-				</fieldset>
-			</div>-->
 </div>
-</header>
+<a class="item letter" href="https://www.aitimes.com/com/letter.html" target="_top"><i class="icon-mail-o"></i> 뉴스레터 신청</a>
+</div>
+</div>
+</article>
 <!--// 로고영역 -->
-<!-- 메뉴바 //-->
-<nav id="user-nav">
-<div class="top-box">
-<div class="date">2025년 06월 23일 (월)</div>
-<div class="right-box">
-<!-- 로그인 // -->
-<ul class="user-logbox" id="userLogin">
-<li><a href="https://www.aitimes.com/member/login.html" target="_top">로그인</a></li>
-<li><a href="https://www.aitimes.com/member/index.html" target="_top">회원가입</a></li>
-</ul>
-<!--// 로그인 -->
-<!-- 검색 //-->
-<div class="user-search-form">
-<fieldset class="sch-fieldset">
-<form action="/news/articleList.html" class="clearfix" method="post" name="head-search">
-<input name="sc_area" type="hidden" value="A"/>
-<input name="view_type" type="hidden" value="tm"/>
-<label class="show-for-sr" for="sc_word">검색</label>
-<input id="sc_word" name="sc_word" onkeydown="if(event.keyCode==13){if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');return false;}}" placeholder="검색어를 입력하세요" type="search"/>
-<button onclick="if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');this.form.sc_word.focus();return false;}" type="button"><i class="icon-search"><span class="show-for-sr">검색</span></i></button>
-</form>
-</fieldset>
-</div>
-</div>
-</div>
-<div class="mode-inner">
-<div class="menu-left">
-<!-- 전체 -->
-<button class="user-allbtn" title="전체메뉴" type="button">
-<i class="icon-bars"><span class="show-for-sr">전체메뉴 버튼</span></i>
-</button>
-<!-- 섹션 //-->
-<ul class="user-menu no-bullet" id="user-menu">
-<li class="secline">
-<a data-code="sm" href="/news/articleList.html?view_type=sm" target="_top">전체기사</a>
-<ul class="no-bullet">
-</ul>
-</li>
-<li class="secline">
-<a data-code="S2N110" href="/news/articleList.html?sc_sub_section_code=S2N110&amp;view_type=sm" target="_top">뉴스 브리핑</a>
-<ul class="no-bullet">
-</ul>
-</li>
-<li class="secline">
-<a data-code="S8" href="/news/articleList.html?sc_multi_code=S8&amp;view_type=sm" target="_top">Feature</a>
-<ul class="no-bullet">
-<li class="sub">
-<a data-code="S2N104" href="/news/articleList.html?sc_sub_section_code=S2N104&amp;view_type=sm" target="_top">왔다!AI</a>
-</li>
-<li class="sub">
-<a data-code="S2N106" href="/news/articleList.html?sc_sub_section_code=S2N106&amp;view_type=sm" target="_top">Chat with AI</a>
-</li>
-<li class="sub">
-<a data-code="S2N108" href="/news/articleList.html?sc_sub_section_code=S2N108&amp;view_type=sm" target="_top">AI 주크박스</a>
-</li>
-<li class="sub">
-<a data-code="S2N112" href="/news/articleList.html?sc_sub_section_code=S2N112&amp;view_type=sm" target="_top">AI 갤러리</a>
-</li>
-<li class="sub">
-<a data-code="S2N111" href="/news/articleList.html?sc_sub_section_code=S2N111&amp;view_type=sm" target="_top">체험기</a>
-</li>
-<li class="sub">
-<a data-code="S2N113" href="/news/articleList.html?sc_sub_section_code=S2N113&amp;view_type=sm" target="_top">AI 무비</a>
-</li>
-<li class="sub">
-<a data-code="S2N114" href="/news/articleList.html?sc_sub_section_code=S2N114&amp;view_type=sm" target="_top">AI &amp; 푸드</a>
-</li>
-</ul>
-</li>
-<li class="secline">
-<a data-code="S2N109" href="/news/articleList.html?sc_sub_section_code=S2N109&amp;view_type=sm" target="_top">인터뷰</a>
-<ul class="no-bullet">
-</ul>
-</li>
-<li class="secline">
-<a data-code="S1N34" href="/news/articleList.html?sc_section_code=S1N34&amp;view_type=sm" target="_top">Future Energy</a>
-<ul class="no-bullet">
-</ul>
-</li>
-<li class="secline">
-<a data-code="S1N36" href="/news/articleList.html?sc_section_code=S1N36&amp;view_type=sm" target="_top">AI WEBTOON</a>
-<ul class="no-bullet">
-</ul>
-</li>
-</ul>
-<!--// 섹션 -->
-</div>
-<div class="menu-right">
-<div class="letter">
-<a href="https://www.aitimes.com/com/letter.html" target="_blank"><i class="icon-paper"></i>뉴스레터 신청</a>
-</div>
-</div>
-</div>
-</nav>
-<!--// 메뉴바 -->
-</div>
-</div>
-<!-- 모바일메뉴 -->
-<nav id="user-for-nav">
-<header class="header">
-<a class="item" href="https://www.aitimes.com">
-<img alt="AI타임스" src="https://cdn.aitimes.com/image/logo/mobilelogo_20230919111044.png">
-</img></a>
-<article class="item">
-<button class="btns nav-close" type="button"><i class="icon-close"><span class="show-for-sr">메뉴닫기</span></i></button>
-</article>
-</header>
-<ul class="vertical menu menu-con">
-<li><a href="/news/articleList.html?view_type=sm">전체기사</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N110&amp;view_type=sm" target="_top">뉴스 브리핑</a>
-<li><a href="/news/articleList.html?sc_multi_code=S8&amp;view_type=sm" target="_top">Feature</a>
-<a class="more"></a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N104&amp;view_type=sm" target="_top">왔다!AI</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N106&amp;view_type=sm" target="_top">Chat with AI</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N108&amp;view_type=sm" target="_top">AI주크박스</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N112&amp;view_type=sm" target="_top">AI 갤러리</a></li>
-<li><a href="/news/articleList.html?sc_section_code=S2N111&amp;view_type=sm" target="_top">체험기</a></li>
-<li><a href="/news/articleList.html?sc_section_code=S2N113&amp;view_type=sm" target="_top">AI 무비</a></li>
-<li><a href="/news/articleList.html?sc_section_code=S2N114&amp;view_type=sm" target="_top">AI &amp; 푸드</a></li>
-</ul>
-</li>
-<!-- <li><a href="/news/articleList.html?sc_section_code=S1N31&view_type=sm" target="_top">Local</a></li>-->
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N109&amp;view_type=sm" target="_top">인터뷰</a></li>
-<li><a href="/news/articleList.html?sc_section_code=S1N34&amp;view_type=sm" target="_top">Future Energy</a></li>
-<li><a href="/news/articleList.html?sc_section_code=S1N25&amp;view_type=sm" target="_top">Art &amp; Living</a>
-<a class="more"></a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N56&amp;view_type=sm" target="_top">Art</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N55&amp;view_type=sm" target="_top">Living</a></li>
-</ul>
-</li>
-<li><a href="/news/articleList.html?sc_section_code=S1N13&amp;view_type=sm" target="_top">Global</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N50&amp;view_type=sm" target="_top">메타버스</a></li>
-<!-- nav container //-->
-<!--		<section class="container">
+<script>
 
-			<!-- 1차 //--
-			<ul class="vertical menu menu-con">
-				<li><a href="/news/articleList.html?view_type=sm">전체기사</a></li>				
-					<li>
-		<a href="/news/articleList.html?sc_section_code=S1N35&view_type=sm" target="_top">Feature</a>
-	</li>
-	<li>
-		<a href="/news/articleList.html?sc_section_code=S1N31&view_type=sm" target="_top">Local</a>
-		<a class="more"></a>
-		<ul class="menu vertical nested">
-			<li>
-				<a href="/news/articleList.html?sc_sub_section_code=S2N87&view_type=sm" target="_top">지역뉴스</a>				</li>
-			<li>
-				<a href="/news/articleList.html?sc_sub_section_code=S2N88&view_type=sm" target="_top">광주AI산업단지</a>				</li>
-		</ul>
-	</li>
-	<li>
-		<a href="/news/articleList.html?sc_section_code=S1N34&view_type=sm" target="_top">Future Energy</a>
-	</li>
-	<li>
-		<a href="/news/articleList.html?sc_section_code=S1N36&view_type=sm" target="_top">AI WEBTOON</a>
-	</li>
-	-->
-</li></ul>
-<!-- SNS //-->
-<article class="user-sns">
-<a class="item instagram" href="https://www.instagram.com/aitimes_news/" target="_blank"><i class="icon-instagram"><span class="show-for-sr">instagram</span></i></a>
-<!--<a href="https://www.facebook.com/newsaitimes/" target="_blank" class="item facebook"><i class="icon-facebook"><span class="show-for-sr">facebook</span></i></a>-->
-<a class="item post" href="https://post.naver.com/my.nhn?memberNo=43011790" target="_blank"><i class="icon-post"><span class="show-for-sr">naverpost</span></i></a>
-<a class="item twitter" href="https://twitter.com/AITimes_News" target="_blank"><i class="icon-twitter"><span class="show-for-sr">twitter</span></i></a>
-<a class="item kakao" href="https://pf.kakao.com/_xgtfxaxb" target="_blank"><img alt="카카오톡 채널" src="https://cdn.aitimes.com/image/kakao_c.png"/></a>
-<a class="item youtube" href="https://www.youtube.com/channel/UCxKaTFMQcCg4kA_oHLGbNxQ" target="_blank"><i class="icon-youtube"><span class="show-for-sr">youtube</span></i></a>
-</article>
-<!--// SNS -->
-
-<!--// nav container -->
-<footer class="footer">
-<nav class="navs">
-<!-- 로그인 //-->
-<ul class="user-logbox no-bullet" id="userLogin">
-<li><a href="https://www.aitimes.com/member/login.html" target="_top">로그인</a></li>
-</ul>
-<!--// 로그인 -->
-<a href="/com/com-1.html">매체소개</a>
-<a href="https://www.aitimes.com/com/jb.html">기사제보</a>
-</nav>
-</footer>
-</nav>
-<!-- 모바일 -->
-</header></header></div>
-<!--// 메뉴 끝 -->
-<script type="text/javascript">
-<!--
-//메뉴 스타일 불러옴 : 메뉴 /script/menubar.js 와 같이 사용되어야 함
-var menuIndexHold = true,
-menuOverHold = true,
-submenuStyle = "vertical",
-sizeMode = "basic",
-subShow = "hold",
-submenuPosi = "center",
-effectSwitch = "on",
-subSlideSpeed = 150,
-subFadeSpeed = 150;
-//-->
-
-$(document).ready(function(){
-	
-	var headerset = $("#header-wrapper").innerHeight();
-	$(window).scroll( function() {
-		if ($(document).scrollTop() > headerset) {
-			$("#header-wrapper").addClass("navfixed");
-		} else {
-			$("#header-wrapper").removeClass("navfixed");
-		}
-	});
-
-	$("#user-for-nav .menu-con li > a.more").click(function(){
-		$(this).toggleClass("active");
-
-		var submenu = $(this).next("ul");
-		if( submenu.is(":visible") ){
-			submenu.slideUp();
-		}else{
-			submenu.slideDown();
-		}
+$(function() {
+	$('#logo-roll').slick({
+		fade: true,
+		dots: false,
+		arrows: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed : 5000,
+		speed: 1000,
+		draggable: false
 	});
 
 });
-//-->
 </script>
+<!-- 메뉴바 //-->
+<nav class="gl-nav" id="user-nav">
+<div class="index-width">
+<!-- 섹션 //-->
+<ul class="gl-menu" data-main-code="S1N1" data-menu-direction="horizon" data-menu-effect="false" data-menu-holder="true" data-menu-index="false" data-menu-over="true" data-menu-position="left" data-menu-speed="300" data-multi-code="" data-serial-code="/news/articleList.html" data-sub-code="/news/articleList.html" id="user-menu">
+<li class="gl-menu-item" data-menu-code="sm">
+<a class="gl-menu-link" href="https://www.aitimes.com/news/articleList.html?view_type=sm" target="_top">전체기사</a>
+</li>
+<li class="gl-menu-item" data-menu-code="S2">
+<a class="gl-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_multi_code=S2&amp;view_type=sm" target="_top">산업</a>
+</li>
+<li class="gl-menu-item" data-menu-code="S2N51">
+<a class="gl-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N51&amp;view_type=sm" target="_top">기업</a>
+</li>
+<li class="gl-menu-item" data-menu-code="S1N24">
+<a class="gl-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N24&amp;view_type=sm" target="_top">기술</a>
+</li>
+<li class="gl-menu-item" data-menu-code="S1N31">
+<a class="gl-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N31&amp;view_type=sm" target="_top">Local</a>
+</li>
+<li class="gl-menu-item" data-menu-code="S1N34">
+<a class="gl-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N34&amp;view_type=sm" target="_top">Future Energy</a>
+</li>
+</ul>
+<!--// 섹션 -->
+<div class="hstack gap-3">
+<!-- 검색 //-->
+<div class="gl-search-container">
+<button aria-label="검색버튼" class="gl-search-action" title="검색" type="button"><i class="icon-search-thin"></i></button>
+</div>
+<!-- 전체 -->
+<button aria-label="전체메뉴" class="gl-menu-btn" id="all-section" type="button">
+<i class="icon-bars"></i>
+</button>
+</div>
+</div>
+<div class="gl-search-fixed">
+<button aria-label="close" class="gl-search-close" type="button">
+<i class="icon-close-thin"></i>
+</button>
+<div class="gl-search-wrap">
+<div class="gl-search-txt">Search</div>
+<form action="https://www.aitimes.com/news/articleList.html" class="gl-search gl-search-stack" id="userSearch" method="get" name="head-search">
+<input name="sc_area" type="hidden" value="A"/>
+<input name="view_type" type="hidden" value="sm"/>
+<label class="show-for-sr" for="search">기사검색</label>
+<input class="gl-search-input" id="search" name="sc_word" onkeydown="if(event.keyCode==13){if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');return false;}}" placeholder="검색어 입력" title="기사검색" type="text"/>
+<button aria-label="기사검색" class="gl-search-btn" onclick="if(this.form.sc_word.value != ''){this.form.submit();}else{alert('검색어를 입력해주세요');this.form.sc_word.focus();return false;}" type="button"><i class="icon-search-thin"></i></button>
+</form>
+</div>
+</div>
+</nav>
+<!-- navigation //-->
+<nav class="gl-sidenav" id="user-sidenav">
+<button aria-label="close" class="gl-sidenav-close gl-sidenav-exit" id="all-section-close" type="button">
+<i class="icon-close-thin"></i>
+</button>
+<div class="gl-sidenav-ci">
+<a href="https://www.aitimes.com" target="_top">
+<img alt="AI타임스" height="70" loading="lazy" src="https://cdn.aitimes.com/image/logo/translogo_20250624031234.png" width="328"/> </a>
+</div>
+<ul class="gl-sidenav-menu" data-accordion="" data-allow-all-closed="true" data-multi-expand="true">
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?view_type=sm">전체기사</a></li>
+<li class="gl-sidenav-menu-item">
+<a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N1&amp;view_type=sm" target="_top">정책</a>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav1" target="_top">산업</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav1">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N3&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N48&amp;view_type=sm" target="_top">산업일반</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N50&amp;view_type=sm" target="_top">메타버스</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N51&amp;view_type=sm" target="_top">AI 기업</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N101&amp;view_type=sm" target="_top">말·말·말</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N102&amp;view_type=sm" target="_top">English News</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N109&amp;view_type=sm" target="_top">인터뷰</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N115&amp;view_type=sm" target="_top">클릭 AI</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav2" target="_top">기술</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav2">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N24&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N103&amp;view_type=sm" target="_top">뉴테크</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav3" target="_top">Art &amp; Living</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav3">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N25&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N56&amp;view_type=sm" target="_top">Art</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N55&amp;view_type=sm" target="_top">Living</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav4" target="_top">교육</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav4">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N26&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N58&amp;view_type=sm" target="_top">AI 교육</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N59&amp;view_type=sm" target="_top">AI대학원</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N60&amp;view_type=sm" target="_top">AI융합연구센터</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav5" target="_top">인물</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav5">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N27&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N61&amp;view_type=sm" target="_top">AI초대석</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N62&amp;view_type=sm" target="_top">글로벌LAB 젊은 과학자</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N63&amp;view_type=sm" target="_top">동정</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N64&amp;view_type=sm" target="_top">인사/부음</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav6" target="_top">오피니언</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav6">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N28&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N65&amp;view_type=sm" target="_top">칼럼</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N66&amp;view_type=sm" target="_top">기고</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N67&amp;view_type=sm" target="_top">기자수첩</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N68&amp;view_type=sm" target="_top">박정현의 데이터사이언스</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N69&amp;view_type=sm" target="_top">조금원의 디지털 세상 이야기</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N70&amp;view_type=sm" target="_top">조영임의 AI단상</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N96&amp;view_type=sm" target="_top">옴부즈만</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav7" target="_top">포커스</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav7">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N32&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N90&amp;view_type=sm" target="_top">AI만평</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N98&amp;view_type=sm" target="_top">포토/영상</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N92&amp;view_type=sm" target="_top">그래픽</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N94&amp;view_type=sm" target="_top">영상</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N93&amp;view_type=sm" target="_top">리스티클</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N104&amp;view_type=sm" target="_top">왔다!AI</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N106&amp;view_type=sm" target="_top">Chat with AI</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N107&amp;view_type=sm" target="_top">오픈-Ko LLM 리더보드</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N108&amp;view_type=sm" target="_top">AI주크박스</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N110&amp;view_type=sm" target="_top">뉴스 브리핑</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N111&amp;view_type=sm" target="_top">체험기</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N112&amp;view_type=sm" target="_top">AI갤러리</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N113&amp;view_type=sm" target="_top">AI무비</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N114&amp;view_type=sm" target="_top">AI &amp; 푸드</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav8" target="_top">이벤트</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav8">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N29&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N97&amp;view_type=sm" target="_top">NVIDIA GTC</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N71&amp;view_type=sm" target="_top">IFA</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N72&amp;view_type=sm" target="_top">CES</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N99&amp;view_type=sm" target="_top">CES 2023</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N105&amp;view_type=sm" target="_top">AI &amp; BIG DATA SHOW</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav9" target="_top">스페셜 리포트</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav9">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N30&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N74&amp;view_type=sm" target="_top">찬이의 IT교실</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N75&amp;view_type=sm" target="_top">칼럼이 있는 AI 톡</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N76&amp;view_type=sm" target="_top">일상으로 파고드는 AI기술</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N77&amp;view_type=sm" target="_top">AI와 클라우드</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N78&amp;view_type=sm" target="_top">스포츠, AI를 만나다</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N79&amp;view_type=sm" target="_top">춤추는 AI개발자 연봉</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N80&amp;view_type=sm" target="_top">로봇이 온다</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N81&amp;view_type=sm" target="_top">이미지와 비전 AI</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N82&amp;view_type=sm" target="_top">블록체인 쿼바디스?</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N83&amp;view_type=sm" target="_top">코로나와 AI</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N84&amp;view_type=sm" target="_top">광주의 AI교육</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N85&amp;view_type=sm" target="_top">AI 저널리즘을 부탁해</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N86&amp;view_type=sm" target="_top">자율주행차 사고 어떻게 볼 것인가</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N95&amp;view_type=sm" target="_top">김미정의 로빌리티 뿌뿌</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item">
+<a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N13&amp;view_type=sm" target="_top">Global</a>
+</li>
+<li class="gl-sidenav-menu-item">
+<a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N35&amp;view_type=sm" target="_top">Feature</a>
+</li>
+<li class="gl-sidenav-menu-item" data-accordion-item="">
+<a class="gl-sidenav-menu-link" href="#sidenav12" target="_top">Local</a>
+<div class="gl-sidenav-menu-body" data-tab-content="" id="sidenav12">
+<ul class="gl-sidenav-menu">
+<li><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N31&amp;view_type=sm" target="_top">전체</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N87&amp;view_type=sm" target="_top">지역뉴스</a></li>
+<li class="gl-sidenav-menu-item"><a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N88&amp;view_type=sm" target="_top">광주AI산업단지</a></li>
+</ul>
+</div>
+</li>
+<li class="gl-sidenav-menu-item">
+<a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N34&amp;view_type=sm" target="_top">Future Energy</a>
+</li>
+<li class="gl-sidenav-menu-item">
+<a class="gl-sidenav-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N36&amp;view_type=sm" target="_top">AI WEBTOON</a>
+</li>
+</ul>
+<footer class="gl-sidenav-footer">
+<!-- 로그인 //-->
+<ul class="gl-account" id="userLogin">
+<li class="gl-account-item"><a class="gl-account-link" href="https://www.aitimes.com/com/jb.html" target="_top">기사제보</a></li>
+<li class="gl-account-item"><a class="gl-account-link" href="https://www.aitimes.com/member/login.html" target="_top">로그인</a></li>
+<li class="gl-account-item"><a class="gl-account-link" href="https://www.aitimes.com/member/index.html" target="_top">회원가입</a></li>
+</ul>
+<!--// 로그인 -->
+<div class="gl-sns-box">
+<div class="title">SNS</div>
+<div class="gl-sns-container">
+<a aria-label="instagram" class="gl-sns" href="https://www.instagram.com/aitimes_news/" rel="nofollow sponsored ugc" target="_blank"><i class="icon-instagram"></i></a>
+<a aria-label="facebook" class="gl-sns" href="https://www.facebook.com/aitimes.co.kr/" rel="nofollow sponsored ugc" target="_blank"><i class="icon-facebook"></i></a>
+<!-- <a href="#link" target="_blank" class="gl-sns" rel="nofollow sponsored ugc" aria-label="post"><i class="icon-post"></i></a> -->
+<a aria-label="twitter" class="gl-sns" href="https://x.com/AITimes_News" rel="nofollow sponsored ugc" target="_blank"><i class="icon-twitter"></i></a>
+<a aria-label="kakaoch" class="gl-sns" href="https://pf.kakao.com/_xgtfxaxb" rel="nofollow sponsored ugc" target="_blank"><i class="icon-kakao-ch"></i></a>
+<a aria-label="youtube" class="gl-sns" href="https://www.youtube.com/channel/UCxKaTFMQcCg4kA_oHLGbNxQ" rel="nofollow sponsored ugc" target="_blank"><i class="icon-youtube-play"></i></a>
+</div>
+</div>
+</footer>
+</nav>
+<!--// navigation -->
+<!-- 구글번역 신적용 -S -->
 <div class="hd_lang" id="google_translate_element" style="position: absolute; top: 7px; right: 0; display:none;"></div>
 <script>
 	function googleTranslateElementInit() {
 		new google.translate.TranslateElement({
 			pageLanguage: 'ko',
-			includedLanguages: 'ko,zh-CN,zh-TW,ja,vi,th,tl,km,my,mn,ru,en,fr,ar,es,de,pt,vi',
+			includedLanguages: 'ko,zh-CN,zh-TW,ja,vi,th,tl,km,my,mn,ru,en,fr,ar,es,de,pt,ar,ne,cs,id,th',
 			layout: google.translate.TranslateElement.InlineLayout.VERTICAL,
 			autoDisplay: true
 		}, 'google_translate_element');
@@ -599,1729 +476,845 @@ $(document).ready(function(){
 			return false;
 		}
 		gtcombo.value = tolang;
-		gtcombo.dispatchEvent(new Event('change'));
-
-		$('.skiptranslate').hide();    // 상단 번역바 숨김
+		gtcombo.dispatchEvent(new Event('change')); 
 	}
 </script>
-
-<!--// header -->
-<!-- container //-->
-<section class="posi-re text-left martop-20 float-center width-1080" id="user-container">
-<h2 class="show-for-sr">본문영역</h2>
-<div class="float-center width-1080" id="layer-popups"></div>
-<div class="posi-re float-center width-1080"><div class="view-aside left-wing" data-down-margin="15" data-duration="300" data-scroll="y" data-top-margin="20" id="floating_banner_left">
-<!--250213_좌측날개--><script type="text/javascript">var ___BANNER = "ban_1739429303";</script><script charset="utf-8" id="ban_1739429303" src="https://cdn.aitimes.com/bannerpop/uploads/js/623.js?1739429303" type="text/javascript"></script><!--//250213_좌측날개--></div>
-<div class="view-aside right-wing" data-down-margin="15" data-duration="300" data-scroll="y" data-top-margin="20" id="floating_banner_right">
-<!--뉴스레터 신청_240130--><script type="text/javascript">var ___BANNER = "ban_1707359221";</script><script charset="utf-8" id="ban_1707359221" src="https://cdn.aitimes.com/bannerpop/uploads/js/500.js?1707359221" type="text/javascript"></script><!--//뉴스레터 신청_240130--></div>
+<!-- 구글번역 신적용 -E -->
+</header>
+<main class="user-container" id="user-container">
+<div class="index-width" id="layer-popups"></div>
+<div class="position-relative index-width"><div class="view-aside left-wing" data-down-margin="15" data-duration="300" data-scroll="y" data-top-margin="20" id="floating_banner_left">
 </div>
-<!-- 날개배너 //-->
-<div class="posi-re float-center width-1080" id="wingBanner">
+<div class="view-aside right-wing" data-down-margin="15" data-duration="300" data-scroll="y" data-top-margin="20" id="floating_banner_right">
+</div>
+</div>
+<div class="position-relative index-width" id="wingBanner">
 <div class="wing-banner-left">
 </div>
 <div class="wing-banner-right">
 </div>
 </div>
-<!--// 날개배너 -->
-<style type="text/css">
-/* edit skin css START */
-#user-section {display:block;margin:0 auto}
-#user-section .grid-wrap {display:table;width:100%;table-layout:fixed}
-#user-section .grid-wrap > .grid {display:table-cell;width:100%;vertical-align:top}
-#user-section .grid-wrap > .grid.side {width:330px;padding-left:30px}	
-#user-section .grid.side .sticky {width:100%}
-#user-section .grid.side .sticky::after {content:'';display:table;clear:both}
-@media screen and (max-width: 63.9375em) {
-	.row #user-section .grid-wrap, .row #user-section .grid-wrap > .grid {display:block;width:auto}
-	.row #user-section .grid-wrap {table-layout:initial}
-	.row #user-section .grid-wrap > .grid {vertical-align:initial}
-	.row #user-section .grid-wrap > .grid.side {padding-left:0}	
-}
-/* edit skin css END */
+<style>#user-section { --grid-gutter-x: 4.5rem; --grid-default-width: 18.75rem; --grid-side-width: calc(var(--grid-default-width) + var(--grid-gutter-x)); --grid-body-width: calc(100% - var(--grid-side-width)); margin-right: auto; margin-left: auto; } @media print, screen and (max-width: 74.99875em) { .mobile #user-section { --grid-gutter-x: 0px; --grid-side-width: auto; --grid-body-width: var(--grid-side-width); } .mobile #user-section .sticky[data-sticky] { all: revert !important; } .mobile #user-section .sticky-container[data-sticky-container] { height: auto !important; } } #user-section .grid-wrap { display: flex; flex-direction: row; } @media print, screen and (max-width: 74.99875em) { .mobile #user-section .grid-wrap { flex-direction: column; align-self: stretch; gap: 1.5rem; } } #user-section .grid-wrap > .grid.body { flex: 0 0 auto; width: var(--grid-body-width); max-width: 100%; } #user-section .grid-wrap > .grid.side { flex: 0 0 auto; width: var(--grid-side-width); max-width: 100%; padding-left: var(--grid-gutter-x); } #user-section .grid-wrap > .grid.side .sticky { width: 100%; } #user-section .grid-wrap > .grid.side .sticky::before, #user-section .grid-wrap > .grid.side .sticky::after { display: table; content: " "; flex-basis: 0; order: 1; } #user-section .grid-wrap > .grid.side .sticky::after { clear: both; } @media print, screen and (max-width: 74.99875em) { .mobile .sticky { position: static !important; top: auto !important; bottom: auto !important; max-width: none !important; margin: 0 !important; } .mobile .sticky-container { height: auto !important; } } .altlist { --nd-section-gap: 2.5rem; } .altlist-cover { margin-bottom: 1.25rem; text-align: center; clear: both; } .altlist-header-item { display: flex; flex-wrap: wrap; align-items: center; padding-bottom: 0.75rem; border-bottom: 1px solid var(--nd-dark, #212529); } .altlist-title { align-self: flex-end; font-size: 1.5rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.75px; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-title { align-self: normal; } } .altlist-count { font-size: 0.8125rem; font-weight: 400; color: var(--nd-secondary, #6c757d); line-height: var(--nd-body-line-height, 1.5); letter-spacing: var(--nd-body-letter-spacing, -0.5px); } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-count { display: block; margin-top: 0.25rem; } } .altlist-count > strong { color: var(--nd-body-color, #000); } .altlist-btn { display: block; padding: 0.25rem; font-size: 1.5rem; font-weight: 400; line-height: 1; color: var(--nd-secondary, #6c757d); background-color: transparent; border: 1px solid transparent; border-radius: var(--nd-border-radius, 0.25rem); transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; } .altlist-btn::before { content: ""; display: inline-block; width: 1em; height: 1em; line-height: 1; background-color: currentColor; -webkit-mask-image: var(--nd-section-icon, unset); mask-image: var(--nd-section-icon, unset); -webkit-mask-size: cover; mask-size: cover; vertical-align: -0.125em; } .altlist-btn:hover { color: var(--nd-gray-dark, #343a40); background-color: transparent; border-color: var(--nd-gray-200, #e8e8e9); } .altlist-btn.active { color: var(--nd-body-color, #000); background-color: var(--nd-light, #f8f9fa); border-color: var(--nd-gray-300, #d2d2d4); } .altlist-btn-list { --nd-section-icon: url("data:image/svg+xml,%3Csvg width='24' height='24' stroke-width='1.5' fill='none' xmlns='http://www.w3.org/2000/svg' color='%23000'%3E%3Cpath d='M8 6h12M4 6.01l.01-.011M4 12.01l.01-.011M4 18.01l.01-.011M8 12h12M8 18h12' stroke='%23000' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); } .altlist-btn-webzine { --nd-section-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M14 19h6M14 9h6M14 15h6M14 5h6' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'/%3E%3Cpath d='M4 9.4V4.6c0-.33.27-.6.6-.6h4.8c.33 0 .6.27.6.6v4.8c0 .33-.27.6-.6.6H4.6c-.33 0-.6-.27-.6-.6zM4 19.4v-4.8c0-.33.27-.6.6-.6h4.8c.33 0 .6.27.6.6v4.8c0 .33-.27.6-.6.6H4.6c-.33 0-.6-.27-.6-.6z' fill='none' stroke='%23000' stroke-width='1.5'/%3E%3C/svg%3E"); } .altlist-btn-tile { --nd-section-icon: url("data:image/svg+xml,%3Csvg width='24' height='24' stroke-width='1.5' fill='none' xmlns='http://www.w3.org/2000/svg' color='%23000'%3E%3Cpath d='M14 20.4v-5.8a.6.6 0 0 1 .6-.6h5.8a.6.6 0 0 1 .6.6v5.8a.6.6 0 0 1-.6.6h-5.8a.6.6 0 0 1-.6-.6zM3 20.4v-5.8a.6.6 0 0 1 .6-.6h5.8a.6.6 0 0 1 .6.6v5.8a.6.6 0 0 1-.6.6H3.6a.6.6 0 0 1-.6-.6zM14 9.4V3.6a.6.6 0 0 1 .6-.6h5.8a.6.6 0 0 1 .6.6v5.8a.6.6 0 0 1-.6.6h-5.8a.6.6 0 0 1-.6-.6zM3 9.4V3.6a.6.6 0 0 1 .6-.6h5.8a.6.6 0 0 1 .6.6v5.8a.6.6 0 0 1-.6.6H3.6a.6.6 0 0 1-.6-.6z' stroke='%23000'/%3E%3C/svg%3E"); } .altlist-btn-group { display: flex; flex-direction: row; align-items: center; gap: 0.25rem; margin-left: auto; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-btn-group { align-self: flex-end; } } .altlist-nav { padding: 0.5rem 0; border-bottom: 1px solid var(--nd-gray-300); } .altlist-menu { display: flex; flex-wrap: wrap; align-items: center; font-size: 1em; margin-bottom: 0; margin-left: 0; list-style: none; } .altlist-menu-link { display: block; padding: 0.5rem 0.75rem; color: var(--nd-gray-700, #495057); transition: color 0.15s ease-in-out; } .altlist-menu-link:hover { color: var(--nd-body-color, #000); } .altlist-menu-link.active { font-weight: 600; color: var(--nd-body-color, #000); } .altlist-image { display: flex; align-items: center; justify-content: center; align-self: flex-start; flex: 0 0 auto; width: var(--image-width); max-width: 100%; height: var(--image-height); background-color: var(--nd-light, #f8f9fa); } .altlist-tile .altlist-image { margin-bottom: 0.75rem; } .altlist-image img { aspect-ratio: var(--image-ratio, 16/9); -o-object-fit: var(--image-object-fit, contain); object-fit: var(--image-object-fit, contain); } .altlist-subject { max-width: 100%; font-size: 1.125rem; font-weight: 600; line-height: 26px; } .altlist-text .altlist-subject, .altlist-webzine .altlist-subject { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-webzine .altlist-subject { overflow: initial; text-overflow: initial; white-space: normal; } } .altlist-tile .altlist-subject { display: block; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; height: 52px; } .altlist-shoulder { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-bottom: 0.25rem; font-size: var(--nd-body-font-size, 1em); font-weight: 500; color: var(--nd-primary, #007aff); } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-webzine .altlist-shoulder { display: none; } } .altlist-summary { display: block; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; margin: 1rem 0; font-size: 0.875rem; line-height: 22px; color: var(--nd-secondary, #6c757d); } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-webzine .altlist-summary { display: none; } } .altlist-tile .altlist-summary { color: var(--nd-gray-700, #495057); -webkit-line-clamp: 3; } .altlist-info { flex-wrap: wrap; font-size: 0.8125rem; color: var(--nd-gray-700, #495057); } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-info { --info-item-padding-x: 0.25rem; } } .altlist-text .altlist-info { flex: 0 0 auto; width: auto; max-width: 100%; margin-left: auto; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-text .altlist-info { margin-left: 0; } } .altlist-webzine .altlist-info { margin-top: auto; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-webzine .altlist-info { margin-top: 0.5rem; } } .altlist-tile .altlist-info { margin-top: 0.5rem; } .altlist-info-item { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 8.5rem; } .altlist-info-item + .altlist-info-item { padding-left: var(--info-item-padding-x, 0.5rem); } .altlist-info-item + .altlist-info-item::before { content: "|"; float: left; padding-right: var(--info-item-padding-x, 0.5rem); font-weight: 400; color: var(--nd-gray-300, #d2d2d4); } .altlist-text { --gutter-y: 1.5rem; margin-bottom: 0; margin-left: 0; list-style: none; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-text { --gutter-y: 1rem; } } .altlist-text-group, .altlist-text-item, .altlist-info { display: flex; align-items: center; } .altlist-text-item { flex-wrap: wrap; gap: 2rem; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-text-item { flex-direction: column; align-items: stretch; gap: 0.25rem; } } .altlist-text-item:nth-of-type(5n + 1):not(:first-of-type) { padding-top: var(--gutter-y); border-top: 1px solid var(--nd-gray-200, #e8e8e9); } .altlist-text-item + .altlist-text-item { margin-top: var(--gutter-y); } .altlist-text-group { flex-direction: row; gap: 0.25rem; flex: 1 1 0; min-width: 0; max-width: 100%; } .altlist-text-group > i[class*=icon-]:not(.icon-youtube-play) { color: var(--nd-secondary, #6c757d); } .altlist-text-group > .icon-youtube-play { color: #ff0000; } .altlist-webzine { --gutter-y: 1rem; --image-width: 16.5rem; --image-height: calc(.5625 * var(--image-width)); margin-bottom: 0; margin-left: 0; list-style: none; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-webzine { --gutter-y: 1.5rem; --image-width: 6.375rem; --image-height: calc(0.75 * var(--image-width)); --image-ratio: 4 / 3; --image-object-fit: cover; } } .altlist-webzine-item { display: flex; flex-direction: row; gap: 1.25rem; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-webzine-item { gap: 1rem; } } .altlist-webzine-item + .altlist-webzine-item { margin-top: var(--gutter-y); padding-top: var(--gutter-y); border-top: 1px solid var(--nd-gray-200, #e8e8e9); } .altlist-webzine-content { display: flex; flex-direction: column; align-items: stretch; flex: 1 1 0; min-width: 0; max-width: 100%; } .altlist-tile { --gutter-x: 1.5rem; --gutter-y: 2rem; --item-width: 33.3333333333%; --image-width: auto; --image-height: var(--image-width); display: flex; flex-wrap: wrap; margin: calc(-1 * var(--gutter-y)) calc(-0.5 * var(--gutter-x)) 0; padding: 0; list-style: none; } @media print, screen and (max-width: 74.99875em) { .mobile .altlist-tile { --gutter-x: 0px; --gutter-y: 1.5rem; --item-width: 100%; --image-object-fit: scale-down; } } .altlist-tile::before, .altlist-tile::after { content: normal; } .altlist-tile-item { width: var(--item-width); margin-top: var(--gutter-y); padding-right: calc(0.5 * var(--gutter-x)); padding-left: calc(0.5 * var(--gutter-x)); } .altlist-tile-item:not(.noimage) .altlist-summary { display: none; } .altlist-tile-item.noimage .altlist-tile-content { min-height: 100%; padding: 1.5rem; background-color: var(--nd-light, #f8f9fa); border: 1px solid var(--nd-gray-200, #e8e8e9); } .altlist-tile-content { padding-right: 1rem; } .altlist .list-btn-more { --nd-btn-width: max-content; --nd-btn-padding-x: 1.25rem; --nd-btn-padding-y: 0.75rem; --nd-btn-font-size: var(--nd-body-font-size, 1em); --nd-btn-font-weight: 500; --nd-btn-color: var(--nd-gray-dark, #343a40); --nd-btn-bg: var(--nd-white, #fff); --nd-btn-border-color: var(--nd-gray-400, #ced4da); --nd-btn-border-radius: var(--nd-border-radius-pill, 50rem); --nd-btn-hover-color: var(--nd-body-color, #000); --nd-btn-hover-bg: var(--nd-light, #f8f9fa); --nd-btn-hover-border-color: var(--nd-dark, #212529); min-width: 10rem; margin: 3rem auto 0; } .box-skin.idx--bg { --nd-box-skin-title-color: var(--nd-user-header-color, #fff); --nd-atx-title-color: var(--nd-user-header-color, #fff); --nd-box-skin-title-margin-bottom: 0; --nd-box-skin-title-font-size: 2rem; --nd-box-skin-title-line-height: 1; padding: 1.25rem; background-color: #2f48dd; border-radius: .75rem; } .box-skin.idx--bg > header { display: flex; margin-bottom: 1.25rem; } .box-skin.idx--bg > header::after { content: ''; flex: 1 1 0; margin-left: 1rem; border-bottom: 2px solid #fff; } .box-skin.idx--box { --nd-box-skin-title-color: var(--nd-user-header-color, #fff); --nd-atx-title-color: var(--nd-user-header-color, #fff); padding: 1.25rem; background-color: var(--nd-user-header-bg, #172956); border-radius: .75rem; }
 </style>
-<div id="user-section" style="max-width:1080px">
-<!-- 편집패널 //-->
-<div class="clearfix">
-</div>
-<!--// 편집패널 -->
+<div class="index-max-width" id="user-section">
 <div class="grid-wrap" id="anchorCon">
 <section class="grid body">
-<!-- 편집패널 //-->
-<div class="clearfix">
-</div>
-<!--// 편집패널 -->
 <!-- 기사리스트 //-->
-<div id="sections">
-<section class="section-body">
-<!-- header //-->
-<header class="header">
-<h3 class="titles">
-<strong>
-    				정책                    <span class="show-for-sr">목록</span>
-</strong>
-<small>( <span class="show-for-sr">총 : </span>817건)</small>
-</h3>
-<div class="view-type">
-<h3 class="show-for-sr">기사목록 보기 형태</h3>
-<div class="button-group tiny">
-<a class="button user-bg" href="/news/articleList.html?page=1&amp;total=817&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=li" title="제목형:제목과 간략정보만 보실 수 있습니다."><i class="icon-th-list"></i><span class="show-for-medium"> 제목형</span></a>
-<a class="button nd-white" href="/news/articleList.html?page=1&amp;total=817&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."><i class="icon-th"></i><span class="show-for-medium"> 요약형</span></a>
-<a class="button nd-white" href="/news/articleList.html?page=1&amp;total=817&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."><i class="icon-th-large"></i><span class="show-for-medium"> 포토형</span></a>
+<div class="altlist" id="sections">
+<header class="altlist-header">
+<article class="altlist-header-item">
+<h1 class="altlist-title">
+				정책    			<small class="altlist-count">총 <strong>1,378</strong>건의 기사가 있습니다.</small>
+</h1>
+<div class="altlist-btn-group">
+<a aria-label="제목형" class="altlist-btn altlist-btn-list active" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1378&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E" title="제목형:제목과 간략정보만 보실 수 있습니다."></a>
+<a aria-label="요약형" class="altlist-btn altlist-btn-webzine" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1378&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."></a>
+<a aria-label="포토형" class="altlist-btn altlist-btn-tile" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1378&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."></a>
 </div>
-</div>
-</header>
-<!--// header -->
-<!-- 특정섹션 상단 탑기사 -->
-<article class="box-skin">
-<header class="header"></header>
-<section class="content">
-<style type="text/css">
-#skin-31 {margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:2px solid rgba(0,0,0,.12)}
-#skin-31 > .item {margin-top:20px;font-size:0}
-#skin-31 > .item:first-child {margin-top:0}
-#skin-31 .frame {width:320px}
-#skin-31 .frame > i[class*="icon-"] {overflow:hidden;position:absolute;z-index:10;left:0;top:0;width:40px;height:40px;font-size:1.5rem;line-height:40px;color:#ed1c24;background-color:#fff;text-align:center}
-#skin-31 .auto-images {transition:transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1)}
-#skin-31 a:hover .auto-images {-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}
-#skin-31 .content {display:block;padding-left:30px}
-#skin-31 .frame + .content {display:inline-block;width:calc(100% - 320px);padding-top:0;padding-bottom:0}
-#skin-31 .auto-section {display:inline-block;overflow:hidden;max-width:100%;padding:0 10px;margin-bottom:5px;line-height:1.8;border-radius:2rem;text-overflow:ellipsis;white-space:nowrap}
-#skin-31 .m-section {display:none}
-#skin-31 .auto-user > em {display:inline-block;margin-left: .625rem;padding-left: .625rem;font-size: .75rem;font-weight: var(--wgt400, 400);font-style: normal;line-height:1.125;color:#777675;border-left:1px solid rgba(0,0,0,.1);vertical-align:middle}
-#skin-31 .auto-user > :first-child {margin-left:0;padding-left:0;border-left:0}
-#skin-31 .height-200 {height:200px}
-@media screen and (max-width: 39.9375em) {
-	#skin-31 .frame {width:100%}
-	#skin-31 .frame + .content {display:inline-block;padding-left:0;width:100%}
-	#skin-31 .auto-images {height:0;padding-bottom:56.25%;margin:0 auto .75rem;background-size:contain}
-	#skin-31 a:hover .auto-images {transition:none;transform:none}
-	#skin-31 .auto-section {display:none}
-	#skin-31 .auto-titles {font-size:1.125rem;font-weight:var(--wgt500, 500);line-height:1.375rem;letter-spacing:-.025em;color:#1e1e1e;white-space:normal}
-	#skin-31 .auto-sums {margin:.5rem 0 0 0 !important;max-height: 3.126em;font-size:.813rem;line-height:1.563;overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical}
-	#skin-31 .auto-user {display:block;margin-top:1.125rem}
-}
-</style>
-<div class="auto-article" id="skin-31">
-<div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171525" target="_top"><span class="frame for-middle">
-<em class="auto-images height-200 line" style="background-image:url(https://cdn.aitimes.com/news/photo/202506/171525_187796_3043.jpg)"></em>
-</span><span class="content for-top">
-<span class="auto-titles size-27 line-5x1 auto-fontA onload">국가 파운데이션 모델 구축 정예팀 공모..."해외 대비 95% 이상 성능 목표"</span>
-<span class="auto-sums mary-10 size-15 auto-fontK">새 정부가 지난 2월 예고됐던 '국가 대표 인공지능(AI) 모델' 개발에 본격 착수했다. 이를 위해 정예팀 선발에 나섰다.과학기술정보통신부(장관 유상임)는 정보통신산업진흥원(원장 박윤규), 한국지능정보사회진흥원(원장 황종성), 정보통신기획평가원(원장 홍진배) 등과 함께 '독자 인공지능 기초 모형(독자 AI 파운데이션 모델)' 사업에 참여할 국내 정예팀 공모...</span>
-<span class="auto-user size-13 line-4x1 auto-fontK">
-<em>박수빈 기자</em>
-<em>2025.06.21 06:39</em>
-</span>
-</span>
-</a>
-</div>
-</div>
-</section>
 </article>
-<!-- <div class="box-margins box-solid" style="margin-bottom: 20px;margin-top: 20px;border-top-width: 2px"></div> -->
-<!-- 특정섹션 상단 탑기사 -->
-<!-- 리스트형 //-->
-<section id="section-list">
-<ul class="type1">
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=171393" target="_top">NIA, 중소기업 AI·데이터 분석 지원 사업 착수</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">06.17 16:18</em>
+</header>
+<article class="altlist-body" id="section-list">
+<ul class="altlist-text">
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200167" target="_top">
+								'K-휴머노이드 연합' 창립 총회...장병탁 교수 위원장 추대
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-27 06:00</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=171377" target="_top">UNIST, AI 융합 ‘이노코어 연구단’ 출범..."AI 에너지 인재 연봉 9000만원 보장"</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">06.16 17:25</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200092" target="_top">
+								하정우 AI 수석 “공공 AX가 AI 산업 성장 견인할 것”
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">06-25 18:00</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=171340" target="_top">하정우 네이버 센터장, 대통령실 AI미래기획수석에 임명</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">장세민 기자</em>
-<em class="info dated">06.15 20:53</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200022" target="_top">
+								NIA, 고등·대학 대상 데이터 크리에이터 캠프 모집
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-24 15:30</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=171324" target="_top">국가AI컴퓨팅센터 사업 유찰...과기부 "관계 부처와 사업 방향 논의"</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">06.13 18:50</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171579" target="_top">
+								국가 GPU 1만장 사업자 공모에 컨소시엄 4곳 입찰
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-24 05:35</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170942" target="_top">KAIST 명현 교수팀, 국제 로봇대회 위치 추정 챌린지서 우승</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.31 17:25</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171576" target="_top">
+								배경훈 LG AI연구원 원장·한성숙 네이버 고문, 장관 후보자 지명
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">06-23 18:00</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170932" target="_top">'국가 AI 컴퓨팅 센터' 구축 사업 1차 공모에 신청자 없어</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.30 17:55</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171570" target="_top">
+								과기정통부, ‘국산 AI 파운데이션 모델’ 데이터 제공 협력기관 모집
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">06-23 16:53</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170869" target="_top">저작권위, ‘공유마당 AI 원천데이터 활용 공모전’ 개최</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.29 14:16</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171559" target="_top">
+								서울 AI 허브, 청년 창업 육성 본격화…27일까지 참가자 모집
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">06-23 14:15</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170842" target="_top">UNIST, 385억 규모 기상청 과제 선정...AI 활용 기후 위기 대처 연구</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.28 16:40</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171525" target="_top">
+								국가 파운데이션 모델 구축 정예팀 공모..."해외 대비 95% 이상 성능 목표"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-21 06:39</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170819" target="_top">AICA, 스타트업·연구기관 대상 AI 컴퓨팅 인프라 이용자 모집</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.28 13:55</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171393" target="_top">
+								NIA, 중소기업 AI·데이터 분석 지원 사업 착수
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-17 16:18</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170790" target="_top">GIST, 미래 우주·국방 기술 선도 위한 ‘국방 R&amp;D 역량 강화 세미나’ 개최</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">장세민 기자</em>
-<em class="info dated">05.27 13:22</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171377" target="_top">
+								UNIST, AI 융합 ‘이노코어 연구단’ 출범..."AI 에너지 인재 연봉 9000만원 보장"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-16 17:25</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170744" target="_top">GIST-MIT, ‘첨단 AI 로보틱스 워크숍’ 개최…“피지컬 AI 협력 논의”</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">장세민 기자</em>
-<em class="info dated">05.26 12:08</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171340" target="_top">
+								하정우 네이버 센터장, 대통령실 AI미래기획수석에 임명
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">06-15 20:53</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170436" target="_top">틱톡도 '이미지-비디오' 변환 도구 추가</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박찬 기자</em>
-<em class="info dated">05.14 18:00</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=171324" target="_top">
+								국가AI컴퓨팅센터 사업 유찰...과기부 "관계 부처와 사업 방향 논의"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">06-13 18:50</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170290" target="_top">GIST, AI 순환경제 특성화 대학 선정…5년간 연구비 최대 47억 지원</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.09 14:20</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170942" target="_top">
+								KAIST 명현 교수팀, 국제 로봇대회 위치 추정 챌린지서 우승
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">05-31 17:25</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170282" target="_top">KAIST, 16일 ‘AI 기술 설명회’서 최신 연구 성과 공개</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.09 13:47</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170932" target="_top">
+								'국가 AI 컴퓨팅 센터' 구축 사업 1차 공모에 신청자 없어
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">05-30 17:55</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=170303" target="_top">과기부, 국산 AI 반도체 활용한 K-클라우드 사업 17개 컨소시엄 선정</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">05.09 11:00</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170869" target="_top">
+								저작권위, ‘공유마당 AI 원천데이터 활용 공모전’ 개최
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">05-29 14:16</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=169935" target="_top">개인정보위 "딥시크 사용자 정보 중국 전송 시정 조치"</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">04.25 06:08</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170842" target="_top">
+								UNIST, 385억 규모 기상청 과제 선정...AI 활용 기후 위기 대처 연구
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">05-28 16:40</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=169916" target="_top">산업부, 유통산업 AI 확산 위한 '유통-AI얼라이언스' 출범</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">04.24 15:36</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170819" target="_top">
+								AICA, 스타트업·연구기관 대상 AI 컴퓨팅 인프라 이용자 모집
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">05-28 13:55</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=169723" target="_top">AICA, 'AI 커리어지원센터’ 운영…"취업부터 현장 정착까지 지원"</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">04.17 14:47</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170790" target="_top">
+								GIST, 미래 우주·국방 기술 선도 위한 ‘국방 R&amp;D 역량 강화 세미나’ 개최
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">05-27 13:22</div>
+</div>
 </li>
-<li>
-<h4 class="titles"><a href="/news/articleView.html?idxno=169721" target="_top">GIST, 과학기술축제서 AI 기반 실용·체험형 기술 선보여</a></h4>
-<i class="icon-image-o" title="이미지기사"><span class="show-for-sr">이미지기사</span></i> <!-- <em class="info category">정책</em> -->
-<em class="info name">박수빈 기자</em>
-<em class="info dated">04.17 14:32</em>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170744" target="_top">
+								GIST-MIT, ‘첨단 AI 로보틱스 워크숍’ 개최…“피지컬 AI 협력 논의”
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">05-26 12:08</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=170436" target="_top">
+								틱톡도 '이미지-비디오' 변환 도구 추가
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">05-14 18:00</div>
+</div>
 </li>
 </ul>
-</section>
-<!--// 리스트형 -->
-<!-- //샘플
-       지우면 안됨!!! ajax로 append시키기 위한 샘플 입니다.
-       만약 요소와 속성이 변경이 된다면 paginate.js 의 call 부분도 수정 해야 합니다. -->
-<li class="blind" id="sample">
-<h4 class="titles"><a href=""></a></h4>
+<li class="altlist-text-item blind" id="sample">
+<div class="altlist-text-group">
+<h2 class="altlist-subject"><a class="replace-titles linked" href=""></a></h2>
 <i class="icon"></i>
-<em class="info category"></em>
-<em class="info name"></em>
-<em class="info dated"></em>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item replace-name"></div>
+<div class="altlist-info-item replace-date"></div>
+</div>
 </li>
-<!-- // 샘플 -->
-<nav aria-label="Pagination"><ul class="pagination"><li class="pagination-start"><a href="/news/articleList.html?page=1&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1" title="처음"><i class="icon-angle-double-left"><span class="show-for-sr">처음</span></i></a></li><li class="current user-bg">1</li><li><a href="/news/articleList.html?page=2&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">2</a></li><li><a href="/news/articleList.html?page=3&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">3</a></li><li><a href="/news/articleList.html?page=4&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">4</a></li><li><a href="/news/articleList.html?page=5&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">5</a></li><li><a href="/news/articleList.html?page=6&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">6</a></li><li><a href="/news/articleList.html?page=7&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">7</a></li><li><a href="/news/articleList.html?page=8&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">8</a></li><li><a href="/news/articleList.html?page=9&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">9</a></li><li><a href="/news/articleList.html?page=10&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1">10</a></li><li class="pagination-onenext"><a href="/news/articleList.html?page=2&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1" title="다음"><span class="show-static-small-only">다음</span><i class="icon-angle-right-min"><span class="show-for-sr">다음</span></i></a></li><li class="pagination-next"><a href="/news/articleList.html?page=11&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1" title="다음"><i class="icon-angle-right-min"><span class="show-for-sr">다음</span></i></a></li><li class="pagination-end"><a href="/news/articleList.html?page=41&amp;total=817&amp;box_idxno=&amp;sc_section_code=S1N1" title="끝"><i class="icon-angle-double-right"><span class="show-for-sr">끝</span></i></a></li></ul></nav> </section>
+<button class="button expanded nd-white list-btn-more" data-page="1" type="button">더보기 <i class="icon-angle-down-min"></i></button>
+<script src="https://cdn.aitimes.com/script/paginate.js"></script>
+<script>
+$(function() { 
+	var params = {};
+
+	params['sc_section_code'] = "S1N1";
+params['total'] = "1378";
+params['list_per_page'] = "20";
+params['page_per_page'] = "10";
+params['page'] = "1";
+params['box_idxno'] = "0";
+params['list_page_limit'] = "200";
+
+	articlePaging.vars.pagingType = "more";
+	articlePaging.vars.viewType = "";
+    	articlePaging.vars.params = params;
+	articlePaging.vars.device = "pc";
+	articlePaging.evtMoreList();
+}); 
+</script> </article>
 </div>
 <!--// 기사리스트 예시 -->
-<!-- 편집패널 //-->
-<div class="clearfix">
-</div>
-<!--// 편집패널 -->
 </section>
 <aside class="grid side">
 <div class="clearfix" data-sticky-container="">
 <div class="sticky" data-anchor="anchorCon" data-check-every="0" data-dynamic-height="true" data-sticky="" data-sticky-on="large">
-<!-- 편집패널 //-->
-<div class="clearfix">
-<article class="box-skin header-line">
-<header class="header"><strong><i class="icon-search-thin"></i>많이 본 기사</strong></header>
-<section class="content"><style type="text/css">
-#skin-200 > .item:not(:first-child) {margin-top:8px}
-#skin-200 .number {overflow:hidden;width:22px;line-height:38px;background-color:#fff;border:1px solid rgba(0,0,0,.1);text-align:center}
-#skin-200 .number.user-bg {background-color:#e73f72}
-#skin-200 .auto-titles {width:calc(100% - 22px);padding-left:12px}
-</style>
-<div class="auto-article" id="skin-200"><div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171462" target="_top">
-<em class="number for-middle size-12 auto-fontF user-bg">1</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">오픈AI, '챗GPT' 할인 판매 시작..."MS 영업에 타격"</span>
-</a>
+<article class="box-skin idx--bg">
+<header class="header"><strong>Most<br/>Popular</strong></header>
+<section class="content"><style>#skin-18 { --gutter-y: 0.875rem; --nd-atx-title-font-size: 14px; --nd-atx-title-line-height: 22px; --item-border: 1px solid var(--global-border-color, #e8e8e9); } #skin-18 > .item { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem; } #skin-18 > .item::after { content: normal; } #skin-18 > .item .number { flex: 0 0 auto; width: 24px; height: 24px; max-width: 100%; font-size: .875rem; font-weight: 500; line-height: 24px; text-align: center; color: #fff; background-color: #fff; } #skin-18 > .item > *:not(.number) { flex: 1 1 0; min-width: 0; max-width: 100%; } #skin-18 > .item:nth-child(-n+3) { /*min-height: var(--item-min-height, 3.9375rem);*/ } #skin-18 > .item + .item { margin-top: var(--gutter-y); }</style><div class="auto-article" id="skin-18"><div class="item">
+<div class="number user-bg">1</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200193" target="_top"><div class="auto-titles line-x2 onload">중국 샤오미, AI 안경 공개...가격은 38만원</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171441" target="_top">
-<em class="number for-middle size-12 auto-fontF user-bg">2</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">"제미나이, 포켓몬 게임 중 죽을 위기 닥치면 '패닉'에 빠져"</span>
-</a>
+<div class="number user-bg">2</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200016" target="_top"><div class="auto-titles line-x2 onload">[6월24일] "9년 뒤 글로벌 AI 시장 5배로 확대"...그중 가장 큰 비중 차지할 분야는 </div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171352" target="_top">
-<em class="number for-middle size-12 auto-fontF user-bg">3</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">구글, '확산' 기반 언어모델 '제미나이 디퓨전' 공개..."자기회귀 방식보다 유리"</span>
-</a>
+<div class="number user-bg">3</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200206" target="_top"><div class="auto-titles line-x2 onload">앤트로픽 "클로드에 한달 간 가게 운영 맡겼더니"</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171422" target="_top">
-<em class="number for-middle size-12 auto-fontB">4</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">오픈AI, MS에 지분 33% 주는 대신 수익 배분 등 포기 요청</span>
-</a>
+<div class="number user-point">4</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200032" target="_top"><div class="auto-titles line-x2 onload">'비오3' 영상으로 스타덤에 오른 광고 감독..."제작비는 2000달러"</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171454" target="_top">
-<em class="number for-middle size-12 auto-fontB">5</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">[6월19일] '바이브 코딩'이 SW산업 근간 흔들어..."SaaS에서 자체 개발로 다시 전환"</span>
-</a>
+<div class="number user-point">5</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200068" target="_top"><div class="auto-titles line-x2 onload">알트먼, 'o3-미니급' 온디바이스 모델 출시 예고</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171446" target="_top">
-<em class="number for-middle size-12 auto-fontB">6</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">메타, '오클리' 스마트 안경 출시..."이번엔 고글형"</span>
-</a>
+<div class="number user-point">6</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200102" target="_top"><div class="auto-titles line-x2 onload">구글, 개발자 터미널용 오픈 소스 AI 도구 '제미나이 CLI' 공개</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171516" target="_top">
-<em class="number for-middle size-12 auto-fontB">7</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">[AI 이슈트렌드] '하정우 AI 수석' 10위…국내 AI 인물로 첫 톱 10</span>
-</a>
+<div class="number user-point">7</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200144" target="_top"><div class="auto-titles line-x2 onload">테슬라 로보택시, 실수 영상 리스트까지 등장..."사흘 동안 11건 발생"</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171440" target="_top">
-<em class="number for-middle size-12 auto-fontB">8</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">코딩 AI 커서, 월 200달러 '울트라' 요금제 출시</span>
-</a>
+<div class="number user-point">8</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200064" target="_top"><div class="auto-titles line-x2 onload">아마존, 앤트로픽 위한 대규모 데이터센터 '프로젝트 레이니어' 가동</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171481" target="_top">
-<em class="number for-middle size-12 auto-fontB">9</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">오픈AI, 모델 오작동 일으키는 '나쁜 페르소나' 존재 확인</span>
-</a>
+<div class="number user-point">9</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200085" target="_top"><div class="auto-titles line-x2 onload">가트너 “AI 에이전트는 대부분 과장 광고...프로젝트 절반 실패할 것”</div></a>
 </div>
 <div class="item">
-<a class="auto-valign" href="/news/articleView.html?idxno=171345" target="_top">
-<em class="number for-middle size-12 auto-fontB">10</em>
-<span class="auto-titles for-middle size-14 line-4x2 auto-fontA onload">[6월16일] '챗GPT'로 아이디어를 잘 얻는 5가지 방법..."다양성 유도가 핵심"</span>
-</a>
+<div class="number user-point">10</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200059" target="_top"><div class="auto-titles line-x2 onload">[6월25일] 테슬라의 로보택시 출시가 이제 시작에 불과한 이유</div></a>
 </div>
 </div></section>
-</article><div class="box-margins" style="margin-bottom:30px;"></div>
-<article class="box-skin">
-<header class="header"><a class="btm-Kor" href="/news/articleList.html?sc_sub_section_code=S2N98&amp;view_type=sm" target="_top"><img src="https://cdn.aitimes.com/image/logo/title-logo-b.png"/>포토/영상</a></header>
-<section class="content"><style type="text/css">
-#skin-196 {letter-spacing:-.075em}
-#skin-196 > :not(:first-child) {margin-top:1.875rem}
-#skin-196 .frame.movie-icon::before {content:'';display:block;overflow:hidden;position:absolute;z-index:15;left:50%;top:50%;width:62px;height:62px;background:url(/image/autobox/autobox-icons.png) -100px -50px no-repeat;-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%)}
-#skin-245 .auto-images, #skin-245_edituse .auto-images{padding-bottom:100%;}
-</style>
-<div class="auto-article" id="skin-196"><div class="item">
-<a href="/news/articleView.html?idxno=170494" target="_top">
-<span class="frame marbtm-12"><em class="auto-images" style="background-image:url(https://cdn.aitimes.com/news/photo/image/p1/170494_186446_3955_1747370395_400.jpg)"></em></span>
-<strong class="auto-titles size-17 weight-500 line-4x2 auto-fontA onload">테슬라, 춤추는 '옵티머스' 영상 공개...발레부터 탭댄스까지</strong>
-</a>
+</article><div class="box-margins" style="margin-bottom:30px;"></div><!--우측단--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/58.js?1750986021"></script><!--//우측단--><div class="marbtm-20"></div><article class="box-skin idx--box">
+<header class="header"></header>
+<section class="content"><style>#skin-20 { --nd-atx-section-margin: 0 0 0.375rem; --nd-atx-section-color: var(--nd-primary, #fff); --nd-atx-title-color: #fff; --frame-width: 4rem; --gutter-y: 1.25rem; --item-border: 1px solid rgba(255,255,255,.25); } #skin-20 > .item { display: flex; flex-direction: row; align-items: center; gap: 1.25rem; } #skin-20 > .item::after { content: normal; } #skin-20 > .item .frame { flex: 0 0 auto; width: var(--frame-width); max-width: 100%; } #skin-20 > .item .auto-content { flex: 1 1 0; min-width: 0; max-width: 100%; } #skin-20 > .item + .item { margin-top: var(--gutter-y); padding-top: var(--gutter-y); border-top: var(--item-border); } #skin-20 .frame { align-self: flex-end; }</style><div class="auto-article" id="skin-20"><div class="item">
+<div class="auto-content">
+<div class="auto-section line-x1 fw-medium">포커스</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200195" target="_top"><div class="auto-titles line-x2 onload">[AI 이슈트렌드] 이란 전쟁·국내 사건 사고에 관심 집중</div></a>
+</div>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=200195" target="_top"><div class="auto-images thumb"><img alt="[AI 이슈트렌드] 이란 전쟁·국내 사건 사고에 관심 집중" height="117" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250630/200195_200179_5359_1751010839_120.jpg" width="120"/></div></a>
+</div>
+<div class="item">
+<div class="auto-content">
+<div class="auto-section line-x1 fw-medium">기고</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200209" target="_top"><div class="auto-titles line-x2 onload">[AI의 역사] 56 기존 이론이 발전해 온 머신러닝 알고리즘들 – 머신러닝 전성시대(중) </div></a>
+</div>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=200209" target="_top"><div class="auto-images thumb"><img alt="[AI의 역사] 56 기존 이론이 발전해 온 머신러닝 알고리즘들 – 머신러닝 전성시대(중) " height="62" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250630/200209_200198_4045_1751092846_120.jpg" width="120"/></div></a>
+</div>
+<div class="item">
+<div class="auto-content">
+<div class="auto-section line-x1 fw-medium">뉴스 브리핑</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200176" target="_top"><div class="auto-titles line-x2 onload">[6월27일] 오픈AI, 생산성 앱 시장까지 점령할까...긴장하는 기업용 SW 업계</div></a>
+</div>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=200176" target="_top"><div class="auto-images thumb"><img alt="[6월27일] 오픈AI, 생산성 앱 시장까지 점령할까...긴장하는 기업용 SW 업계" height="66" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250630/200176_200152_345_1750993426_120.jpg" width="120"/></div></a>
+</div>
+<div class="item">
+<div class="auto-content">
+<div class="auto-section line-x1 fw-medium">왔다!AI</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=200160" target="_top"><div class="auto-titles line-x2 onload">충격! ‘모기’ 크기만 한 스파이용 드론 개발</div></a>
+</div>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=200160" target="_top"><div class="auto-images thumb"><img alt="충격! ‘모기’ 크기만 한 스파이용 드론 개발" height="68" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250630/200160_200142_5727_1750928249_120.jpg" width="120"/></div></a>
 </div>
 </div></section>
-</article><div class="box-margins" style="margin-bottom:30px;"></div> <!--[9] 기사배너--><script type="text/javascript">var ___BANNER = "ban_1708414835188";</script><script charset="utf-8" id="ban_1708414835188" src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/51.js?1708414835188" type="text/javascript"></script><!--//[9] 기사배너-->
-<article class="box-skin bg-gray" style="margin-top:30px">
-<header class="header"><strong><img src="https://cdn.aitimes.com/image/logo/title-logo-b.png" style="margin:0 .7rem .125rem 0"/> 행사/컨퍼런스</strong></header>
-<section class="content"><style type="text/css">
-#skin-194 > .item:not(:first-child) {margin-top:16px}
-#skin-194 > .item:nth-child(5n + 1):not(:first-child)::before {content:'';display:block;overflow:hidden;width:50%;max-width:80px;height:0;margin:30px 0;border-top:1px solid #ddd}
-#skin-194 .flex {display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-align-items:center;align-items:center}
-#skin-194 .frame {-ms-flex:0 0 70px;flex:0 0 70px;max-width:70px;margin-right:15px}
-#skin-194 .auto-titles {-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%;min-width:0;letter-spacing:-.05em}
-</style>
-<div class="auto-article" id="skin-194"><div class="item">
-<a class="flex" href="/news/articleView.html?idxno=157653" target="_top"><span class="frame">
-<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202403/157653_169459_3819_v150.jpg)"></em>
-</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">인터넷전문가협회,  '웹 트렌드 컨퍼런스'서 혁신 웹사이트 공개</span>
-</a>
-</div>
-<div class="item">
-<a class="flex" href="/news/articleView.html?idxno=171318" target="_top"><span class="frame">
-<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202506/171318_187549_3920_v150.jpg)"></em>
-</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">[AI&amp;빅데이터쇼] 폴리머라이즈, 실험 기간 줄여주는 ‘AI 실험 결과 예측 플랫폼’ 소개</span>
-</a>
-</div>
-<div class="item">
-<a class="flex" href="/news/articleView.html?idxno=171310" target="_top"><span class="frame">
-<em class="auto-images ratio-11" style="background-image:url(https://cdn.aitimes.com/news/thumbnail/202506/171310_187543_1350_v150.jpg)"></em>
-</span><span class="auto-titles size-15 line-3x3 auto-fontA onload">[AI&amp;빅데이터쇼] 툰스퀘어, 실용성 극대화한 웹툰 AI 도구 ‘투닝플러스’ 소개</span>
-</a>
-</div>
-</div><a class="dis-block martop-18 size-13 line-3x1 auto-fontA text-center" href="/news/articleList.html?box_idxno=194&amp;view_type=sm" target="_top">더보기<i class="icon-plus marleft-6"></i></a>
-</section>
-</article><div class="box-margins" style="margin-bottom:30px;"></div> <!--[10] 리스트배너--><script type="text/javascript">var ___BANNER = "ban_1708414858303";</script><script charset="utf-8" id="ban_1708414858303" src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/52.js?1708414858303" type="text/javascript"></script><!--//[10] 리스트배너-->
-<div class="box-margins height-30"></div>
-</div>
-<!--// 편집패널 -->
+</article><div class="box-margins" style="margin-bottom:40px;"></div>
 </div>
 </div>
 </aside>
 </div>
-<!-- 편집패널 //-->
-<div class="clearfix">
 </div>
-<!--// 편집패널 -->
+</main>
 </div>
-</section>
-<!--// container -->
-</div>
-<!-- footer //-->
+<style>
+#user-footer {
+	--nd-footer-margin:                 var(--nd-user-header-margin-bottom, 1.875rem) 0 0;
+	--nd-footer-padding:                0;
+	--nd-footer-color: 					var(--nd-user-header-color, #fff);
+	--nd-footer-bg:                     var(--nd-user-header-bg, #000);
+	--nd-footer-nav-margin:             0;
+	--nd-footer-nav-font-size:          0.813rem;
+	--nd-footer-nav-font-weight:        400;
+	--nd-footer-nav-color:              rgba(255,255,255,.7);
+	--nd-footer-nav-item-gap:           0;
+	--nd-footer-nav-divider:            normal;
+	--nd-footer-nav-divider-color:      rgba(255, 255, 255, .5);
+	--nd-footer-nav-hover-color:        var(--nd-footer-color);
+	--nd-footer-nav-point-font-weight:  var(--nd-footer-nav-font-weight);
+	--nd-footer-nav-point-color:        var(--nd-footer-nav-color);
+	--nd-footer-nav-point-hover-color:  var(--nd-footer-nav-point-color);
+	--nd-address-margin: 				1rem 0 0;
+	--nd-address-font-size:             0.75rem;
+	--nd-address-line-height: 			1.8;
+	--nd-address-color:                 rgba(255,255,255,.75);
+	--nd-address-divider-padding:       0 0.625rem;
+	--nd-address-divider-color:         rgba(255,255,255,.15);
+}
+#user-footer > .index-width {display:flex;flex-wrap:wrap;padding:3.125rem 0 0}
+#user-footer .footer-info {flex:1 1 0;min-width:0}
+#user-footer .footer-menu {flex:0 0 auto;max-width:100%;width:300px;display:block}
+#user-footer .footer-menu-title {margin-bottom:1.5rem;font-size:1.125rem;font-weight:600}
+#user-footer .footer-nav-item {flex:0 0 auto;width:50%;margin-top:5px}
+#user-footer .footer-nav-item:nth-child(-n+2) {margin-top:0}
+
+/* logo */
+#user-footer .user-logo {--nd-logo-max-width:180px;display:block;float:none;width:auto;padding:0;margin:0 0 2rem 0;font-size:0}
+
+/* footer menu */
+#user-footer .footer-nav {flex:1 1 0;max-width:100%;min-width:0;}
+
+
+/* copyright */
+#user-footer .user-copy {margin-top:2.5rem;padding:1.25rem 0;font-size:.813rem;font-weight:400;color:rgba(255,255,255,.75);line-height:1.375;background-color:rgba(255,255,255,.1)}
+#user-footer .user-copy .index-width {display:flex;flex-direction:row;align-items:center;}
+#user-footer .user-copy a {color:inherit;text-decoration:none;}
+#user-footer .user-copy a:hover, #user-footer .user-copy a:focus {text-decoration:none;}
+#user-footer .ndsoft {margin-left:auto}
+</style>
 <footer id="user-footer">
-<div class="wrapper" style="max-width:1080px">
-<!-- nav //-->
-<nav class="user-nav">
-<h3 class="show-for-sr">하단메뉴</h3>
-<a href="/com/com-1.html">매체소개</a>
-<a href="https://www.aitimes.com/com/jb.html">기사제보</a>
-<a href="https://www.aitimes.com/com/com-10.html">광고문의</a>
-<a class="show-for-large" href="/com/service.html">이용약관</a>
-<a class="point" href="/com/privacy.html">개인정보처리방침</a>
-<a class="show-for-large" href="/com/youthpolicy.html">청소년보호정책</a>
-<a class="show-for-large" href="/com/copyright.html">저작권보호정책</a>
-<a class="show-for-large" href="/com/emailno.html">이메일무단수집거부</a>
-</nav>
-<!--// nav  -->
-<!-- sns 
-		<div class="footer-sns">
-			<a href="https://www.facebook.com/aitimes.co.kr/?ref=pages_you_manage" target="_blank" class="item facebook"><i class="icon-facebook"><span class="show-for-sr">facebook</span></i></a>
-			<a href="https://post.naver.com/my.nhn?memberNo=43011790" target="_blank" class="item post"><i class="icon-post"><span class="show-for-sr">naverpost</span></i></a>
-			<a href="https://twitter.com/AITimes_News" target="_blank" class="item twitter"><i class="icon-twitter"><span class="show-for-sr">twitter</span></i></a>
-			<a href="https://pf.kakao.com/_xgtfxaxb" target="_blank" class="item kakao"><img src="https://cdn.aitimes.com/image/kakao_c.png" alt="카카오톡 채널" /></a>
-			<a href="https://www.youtube.com/channel/UCxKaTFMQcCg4kA_oHLGbNxQ" target="_blank" class="item youtube"><i class="icon-youtube-play"><span class="show-for-sr">youtube</span></i></a>
-		</div>//-->
-<article class="footer-info">
-<div class="footer-columns down-logo"><img alt="AI타임스" src="https://cdn.aitimes.com/image/logo/downlogo_20230911013833.png"/></div>
-<!--// logo -->
-<address class="address">
-<em class="clear">서울특별시 영등포구 당산로41길 11 (당산 SK V1 센터) 431호</em>
-<em class="bars">대표전화 : 02-2655-2663</em>
-<em class="bars">팩스 : 02-2655-2664</em>
-<em class="bars show-for-large">청소년보호책임자 : 전동희</em>
-<em class="clear show-for-large"><a href="/bbs/list.html?table=bbs_5" tabindex="-1">제호</a> : AI타임스</em>
-<em class="bars show-for-large">등록번호 : 서울 아 04551</em>
-<em class="bars show-for-large">등록일 : 2017-06-01</em>
-<em class="bars show-for-large">발행일 : 2017-06-01</em>
-<em class="bars show-for-large">발행인 : 박상용</em>
-<em class="bars show-for-large">편집인 : 전동희</em>
-<em class="clear martop-20 show-for-large">AI타임스 (http://www.aitimes.com)의  모든 콘텐츠는 저작권법의 보호를 받는 바, 무단 전재와 복사, 배포 등을 금합니다.</em>
-<em class="clear">C<a href="https://www.aitimes.com/admin/adminLoginForm.html" tabindex="-1">o</a>pyright © 2025 AI타임스. All rights reserved.</em>
-</address>
-<span class="ban b01">
-<!--한국인터넷신문협회_210617--><script type="text/javascript">var ___BANNER = "ban_1623906810931";</script><script charset="utf-8" id="ban_1623906810931" src="https://cdn.aitimes.com/bannerpop/uploads/js/243.js?1623906810931" type="text/javascript"></script><!--//한국인터넷신문협회_210617-->
-</span>
-<span class="ban b02">
-<!--인신회_210617--><script type="text/javascript">var ___BANNER = "ban_1623906807581";</script><script charset="utf-8" id="ban_1623906807581" src="https://cdn.aitimes.com/bannerpop/uploads/js/242.js?1623906807581" type="text/javascript"></script><!--//인신회_210617-->
-</span>
-<span class="ban b03">
-<!--인터넷신문자율공시기구_210617--><script type="text/javascript">var ___BANNER = "ban_1623906783124";</script><script charset="utf-8" id="ban_1623906783124" src="https://cdn.aitimes.com/bannerpop/uploads/js/241.js?1623906783124" type="text/javascript"></script><!--//인터넷신문자율공시기구_210617-->
-</span>
-<span class="ndsoft">
-<a class="ci" href="http://www.ndsoft.co.kr" target="_blank"><img alt="ND소프트" src="https://cdn.aitimes.com/image/ndsoft.svg"/></a>
-</span>
-</article>
+<div class="index-width">
+<div class="footer-info">
+<div class="user-logo">
+<img alt="AI타임스" height="33" loading="lazy" src="https://cdn.aitimes.com/image/logo/watermark_20250610094832.png" width="184"/> </div>
+<ul class="gl-address">
+<li class="gl-address-item">주소: 서울특별시 영등포구 당산로41길 11, 431호(당산 SK V1 센터)</li>
+<li class="gl-address-item">대표전화: 02-2655-2663</li>
+<li class="gl-address-item clear"></li>
+<li class="gl-address-item">팩스: 02-2655-2664</li>
+<li class="gl-address-item">등록번호: 서울 아 04551</li>
+<li class="gl-address-item">등록일: 2017-06-01</li>
+<li class="gl-address-item clear"></li>
+<li class="gl-address-item">최초발행일: 2017-06-01</li>
+<li class="gl-address-item">발행인: 박상용</li>
+<li class="gl-address-item">편집인: 전동희</li>
+<li class="gl-address-item">청소년보호책임자: 전동희</li>
+</ul>
+</div>
+<div class="footer-menu">
+<div class="footer-menu-title">More From</div>
+<ul class="footer-nav">
+<li class="footer-nav-item footer-nav-point"><a class="footer-nav-link" href="https://www.aitimes.com/com/privacy.html" target="_top">개인정보처리방침</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/com-1.html" target="_top">매체소개</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/service.html" target="_top">이용약관</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/jb.html" target="_top">기사제보</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/youthpolicy.html" target="_top">청소년보호정책</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/ad.html" target="_top">광고문의</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/copyright.html" target="_top">저작권보호정책</a></li>
+<li class="footer-nav-item"><a class="footer-nav-link" href="https://www.aitimes.com/com/emailno.html" target="_top">이메일무단수집거부</a></li>
+</ul>
+</div>
+</div>
+<div class="user-copy">
+<div class="index-width">
+			C<a href="https://www.aitimes.com/admin/adminLoginForm.html" tabindex="-1">o</a>pyright by AI타임스 <a href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N1" onclick="setCookie('view_pc', 'n', 1);" tabindex="-1">All</a> rights reserved.<div class="ndsoft"><a href="https://www.ndsoft.co.kr/" rel="nofollow sponsored ugc" target="_blank"><img alt="ND소프트" height="9" loading="lazy" src="https://cdn.aitimes.com/image/ndsoft.svg" width="72"/></a></div>
+</div>
 </div>
 </footer>
-<!--// footer -->
 <div class="clearfix text-center">
 </div>
-<button class="back-to-top" id="back-to-top" title="위로" type="button"><i class="icon-arrow-top"><span class="show-for-sr">위로</span></i></button> </div>
-<!--// wrap -->
+<button aria-label="위로" class="back-to-top" id="back-to-top" type="button"></button>
+<a class="desktop-to-mobile hide" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N1" onclick="setCookie('view_pc', 'n', 1);">모바일버전</a>
 </div>
-<div class="off-canvas user-canvas position-left is-closed" data-off-canvas="" data-transition="overlap" id="offCanvas">
-			Array
-(
-    [0] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 정책
-                    [1] =&gt; S1N1
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-        )
-
-    [1] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 산업
-                    [1] =&gt; S1N3
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; 산업일반
-                                    [2] =&gt; S2N48
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; 메타버스
-                                    [2] =&gt; S2N50
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; AI 기업
-                                    [2] =&gt; S2N51
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [3] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; 말·말·말
-                                    [2] =&gt; S2N101
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [4] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; English News
-                                    [2] =&gt; S2N102
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [5] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; 인터뷰
-                                    [2] =&gt; S2N109
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [6] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N3
-                                    [1] =&gt; 클릭 AI
-                                    [2] =&gt; S2N115
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [2] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 기술
-                    [1] =&gt; S1N24
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N24
-                                    [1] =&gt; 뉴테크
-                                    [2] =&gt; S2N103
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [3] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; Art &amp; Living
-                    [1] =&gt; S1N25
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N25
-                                    [1] =&gt; Art
-                                    [2] =&gt; S2N56
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N25
-                                    [1] =&gt; Living
-                                    [2] =&gt; S2N55
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [4] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 교육
-                    [1] =&gt; S1N26
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N26
-                                    [1] =&gt; AI 교육
-                                    [2] =&gt; S2N58
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N26
-                                    [1] =&gt; AI대학원
-                                    [2] =&gt; S2N59
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N26
-                                    [1] =&gt; AI융합연구센터
-                                    [2] =&gt; S2N60
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [5] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 인물
-                    [1] =&gt; S1N27
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N27
-                                    [1] =&gt; AI초대석
-                                    [2] =&gt; S2N61
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N27
-                                    [1] =&gt; 글로벌LAB 젊은 과학자
-                                    [2] =&gt; S2N62
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N27
-                                    [1] =&gt; 동정
-                                    [2] =&gt; S2N63
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [3] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N27
-                                    [1] =&gt; 인사/부음
-                                    [2] =&gt; S2N64
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [6] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 오피니언
-                    [1] =&gt; S1N28
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 칼럼
-                                    [2] =&gt; S2N65
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 기고
-                                    [2] =&gt; S2N66
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 기자수첩
-                                    [2] =&gt; S2N67
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [3] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 박정현의 데이터사이언스
-                                    [2] =&gt; S2N68
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [4] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 조금원의 디지털 세상 이야기
-                                    [2] =&gt; S2N69
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [5] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 조영임의 AI단상
-                                    [2] =&gt; S2N70
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [6] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N28
-                                    [1] =&gt; 옴부즈만
-                                    [2] =&gt; S2N96
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [7] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 포커스
-                    [1] =&gt; S1N32
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; AI만평
-                                    [2] =&gt; S2N90
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 포토/영상
-                                    [2] =&gt; S2N98
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 그래픽
-                                    [2] =&gt; S2N92
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [3] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 영상
-                                    [2] =&gt; S2N94
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [4] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 리스티클
-                                    [2] =&gt; S2N93
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [5] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 왔다!AI
-                                    [2] =&gt; S2N104
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [6] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; Chat with AI
-                                    [2] =&gt; S2N106
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [7] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 오픈-Ko LLM 리더보드
-                                    [2] =&gt; S2N107
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [8] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; AI주크박스
-                                    [2] =&gt; S2N108
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [9] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 뉴스 브리핑
-                                    [2] =&gt; S2N110
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [10] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; 체험기
-                                    [2] =&gt; S2N111
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [11] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; AI갤러리
-                                    [2] =&gt; S2N112
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [12] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; AI무비
-                                    [2] =&gt; S2N113
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [13] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N32
-                                    [1] =&gt; AI &amp; 푸드
-                                    [2] =&gt; S2N114
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [8] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 이벤트
-                    [1] =&gt; S1N29
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N29
-                                    [1] =&gt; NVIDIA GTC
-                                    [2] =&gt; S2N97
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N29
-                                    [1] =&gt; IFA
-                                    [2] =&gt; S2N71
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N29
-                                    [1] =&gt; CES
-                                    [2] =&gt; S2N72
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [3] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N29
-                                    [1] =&gt; CES 2023
-                                    [2] =&gt; S2N99
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [4] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N29
-                                    [1] =&gt; AI &amp; BIG DATA SHOW
-                                    [2] =&gt; S2N105
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [9] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; 스페셜 리포트
-                    [1] =&gt; S1N30
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-            [child] =&gt; Array
-                (
-                    [0] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 찬이의 IT교실
-                                    [2] =&gt; S2N74
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [1] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 칼럼이 있는 AI 톡
-                                    [2] =&gt; S2N75
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [2] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 일상으로 파고드는 AI기술
-                                    [2] =&gt; S2N76
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [3] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; AI와 클라우드
-                                    [2] =&gt; S2N77
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [4] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 스포츠, AI를 만나다
-                                    [2] =&gt; S2N78
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [5] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 춤추는 AI개발자 연봉
-                                    [2] =&gt; S2N79
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [6] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 로봇이 온다
-                                    [2] =&gt; S2N80
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [7] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 이미지와 비전 AI
-                                    [2] =&gt; S2N81
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [8] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 블록체인 쿼바디스?
-                                    [2] =&gt; S2N82
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [9] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 코로나와 AI
-                                    [2] =&gt; S2N83
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [10] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 광주의 AI교육
-                                    [2] =&gt; S2N84
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [11] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; AI 저널리즘을 부탁해
-                                    [2] =&gt; S2N85
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [12] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 자율주행차 사고 어떻게 볼 것인가
-                                    [2] =&gt; S2N86
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                    [13] =&gt; Array
-                        (
-                            [data] =&gt; Array
-                                (
-                                    [0] =&gt; S1N30
-                                    [1] =&gt; 김미정의 로빌리티 뿌뿌
-                                    [2] =&gt; S2N95
-                                    [3] =&gt; 
-                                    [4] =&gt; N
-                                    [5] =&gt; 
-                                )
-
-                        )
-
-                )
-
-        )
-
-    [10] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; Global
-                    [1] =&gt; S1N13
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-        )
-
-    [11] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; Feature
-                    [1] =&gt; S1N35
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-        )
-
-    [12] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; Future Energy
-                    [1] =&gt; S1N34
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-        )
-
-    [13] =&gt; Array
-        (
-            [data] =&gt; Array
-                (
-                    [0] =&gt; AI WEBTOON
-                    [1] =&gt; S1N36
-                    [2] =&gt; 
-                    [3] =&gt; 
-                    [4] =&gt; N
-                    [5] =&gt; 
-                )
-
-        )
-
-)
-<style type="text/css">
-.user-canvas .user-canvas-navs .menu li > a:hover,.user-canvas .user-canvas-navs .menu li.is-accordion-submenu-parent[aria-expanded="true"] > a {background:#ed1c24}
-.user-canvas .user-canvas-navs .menu li.is-accordion-submenu-parent > a::after,.user-canvas .user-canvas-navs .menu li.is-accordion-submenu-parent[aria-expanded="true"] > a::after {border-top-color:#ed1c24}
-.user-canvas .user-canvas-navs .menu li ul.menu.nested li a:hover {color:#ed1c24}
-</style>
-<nav class="user-canvas-navs" id="allService">
-<h2 class="show-for-sr">전체메뉴</h2>
-<!-- 1차 //-->
-<ul class="vertical menu accordion" data-accordion-menu="" data-multi-open="false">
-<li><a href="/news/articleList.html?view_type=sm">전체기사</a></li>
-<li><a href="/index.html?editcode=MOBILE_49">오피니언</a></li>
-<li>
-<a href="/index.html?editcode=MOBILE_52" target="_top">AI 대학원</a>
-<a class="more active"></a>
-<ul class="menu vertical nested" style="display: block;">
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N28&amp;view_type=sm" target="_top">2021</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N29&amp;view_type=sm" target="_top">2020</a></li>
-<li><a href="/news/articleList.html?sc_sub_section_code=S2N30&amp;view_type=sm" target="_top">해외대학</a></li>
-<li><a href="/news/articleList.html?sc_area=A&amp;sc_word=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%EB%8C%80%ED%95%99%EC%9B%90&amp;view_type=sm" target="_top">대학 NOW</a></li>
-</ul>
+</div>
+<div class="off-canvas position-left global-menu-wrapper" data-content-scroll="false" data-off-canvas="" data-transition="slide" id="offCanvas" tabindex="-1">
+<nav class="global-menu-container">
+<header class="global-menu-header">
+<a class="global-menu-title" href="https://www.aitimes.com" target="_top">AI타임스</a>
+<button aria-label="close global menu" class="btn-close ms-auto" data-close="" type="button"></button>
+</header>
+<main class="global-menu-body">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?view_type=sm" target="_top">전체기사</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N1&amp;view_type=sm" target="_top">정책</a>
+<li class="global-menu-item">
+<a class="global-menu-link active" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N1&amp;view_type=sm" target="_top">정책</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N3&amp;view_type=sm" target="_top">산업</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N3&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N48&amp;view_type=sm" target="_top">산업일반</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N50&amp;view_type=sm" target="_top">메타버스</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N51&amp;view_type=sm" target="_top">AI 기업</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N101&amp;view_type=sm" target="_top">말·말·말</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N102&amp;view_type=sm" target="_top">English News</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N109&amp;view_type=sm" target="_top">인터뷰</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N115&amp;view_type=sm" target="_top">클릭 AI</a> </li>
-</ul>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N3" target="_top">산업</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N3&amp;view_type=sm" target="_top">전체</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N24&amp;view_type=sm" target="_top">기술</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N24&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N103&amp;view_type=sm" target="_top">뉴테크</a> </li>
-</ul>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N48&amp;view_type=sm" target="_top">산업일반</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N25&amp;view_type=sm" target="_top">Art &amp; Living</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N25&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N56&amp;view_type=sm" target="_top">Art</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N55&amp;view_type=sm" target="_top">Living</a> </li>
-</ul>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N50&amp;view_type=sm" target="_top">메타버스</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N26&amp;view_type=sm" target="_top">교육</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N26&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N58&amp;view_type=sm" target="_top">AI 교육</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N59&amp;view_type=sm" target="_top">AI대학원</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N60&amp;view_type=sm" target="_top">AI융합연구센터</a> </li>
-</ul>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N51&amp;view_type=sm" target="_top">AI 기업</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N27&amp;view_type=sm" target="_top">인물</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N27&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N61&amp;view_type=sm" target="_top">AI초대석</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N62&amp;view_type=sm" target="_top">글로벌LAB 젊은 과학자</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N63&amp;view_type=sm" target="_top">동정</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N64&amp;view_type=sm" target="_top">인사/부음</a> </li>
-</ul>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N101&amp;view_type=sm" target="_top">말·말·말</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N28&amp;view_type=sm" target="_top">오피니언</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N28&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N65&amp;view_type=sm" target="_top">칼럼</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N66&amp;view_type=sm" target="_top">기고</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N67&amp;view_type=sm" target="_top">기자수첩</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N68&amp;view_type=sm" target="_top">박정현의 데이터사이언스</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N69&amp;view_type=sm" target="_top">조금원의 디지털 세상 이야기</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N70&amp;view_type=sm" target="_top">조영임의 AI단상</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N96&amp;view_type=sm" target="_top">옴부즈만</a> </li>
-</ul>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N102&amp;view_type=sm" target="_top">English News</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N32&amp;view_type=sm" target="_top">포커스</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N32&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N90&amp;view_type=sm" target="_top">AI만평</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N98&amp;view_type=sm" target="_top">포토/영상</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N92&amp;view_type=sm" target="_top">그래픽</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N94&amp;view_type=sm" target="_top">영상</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N93&amp;view_type=sm" target="_top">리스티클</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N104&amp;view_type=sm" target="_top">왔다!AI</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N106&amp;view_type=sm" target="_top">Chat with AI</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N107&amp;view_type=sm" target="_top">오픈-Ko LLM 리더보드</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N108&amp;view_type=sm" target="_top">AI주크박스</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N110&amp;view_type=sm" target="_top">뉴스 브리핑</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N111&amp;view_type=sm" target="_top">체험기</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N112&amp;view_type=sm" target="_top">AI갤러리</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N113&amp;view_type=sm" target="_top">AI무비</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N114&amp;view_type=sm" target="_top">AI &amp; 푸드</a> </li>
-</ul>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N109&amp;view_type=sm" target="_top">인터뷰</a>
 </li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N29&amp;view_type=sm" target="_top">이벤트</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N29&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N97&amp;view_type=sm" target="_top">NVIDIA GTC</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N71&amp;view_type=sm" target="_top">IFA</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N72&amp;view_type=sm" target="_top">CES</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N99&amp;view_type=sm" target="_top">CES 2023</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N105&amp;view_type=sm" target="_top">AI &amp; BIG DATA SHOW</a> </li>
-</ul>
-</li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N30&amp;view_type=sm" target="_top">스페셜 리포트</a>
-<ul class="menu vertical nested">
-<li><a href="/news/articleList.html?sc_section_code=S1N30&amp;view_type=sm" target="_top">전체</a></li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N74&amp;view_type=sm" target="_top">찬이의 IT교실</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N75&amp;view_type=sm" target="_top">칼럼이 있는 AI 톡</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N76&amp;view_type=sm" target="_top">일상으로 파고드는 AI기술</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N77&amp;view_type=sm" target="_top">AI와 클라우드</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N78&amp;view_type=sm" target="_top">스포츠, AI를 만나다</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N79&amp;view_type=sm" target="_top">춤추는 AI개발자 연봉</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N80&amp;view_type=sm" target="_top">로봇이 온다</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N81&amp;view_type=sm" target="_top">이미지와 비전 AI</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N82&amp;view_type=sm" target="_top">블록체인 쿼바디스?</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N83&amp;view_type=sm" target="_top">코로나와 AI</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N84&amp;view_type=sm" target="_top">광주의 AI교육</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N85&amp;view_type=sm" target="_top">AI 저널리즘을 부탁해</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N86&amp;view_type=sm" target="_top">자율주행차 사고 어떻게 볼 것인가</a> </li>
-<li>
-<a href="/news/articleList.html?sc_sub_section_code=S2N95&amp;view_type=sm" target="_top">김미정의 로빌리티 뿌뿌</a> </li>
-</ul>
-</li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N13&amp;view_type=sm" target="_top">Global</a>
-</li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N35&amp;view_type=sm" target="_top">Feature</a>
-</li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N34&amp;view_type=sm" target="_top">Future Energy</a>
-</li>
-<li>
-<a href="/news/articleList.html?sc_section_code=S1N36&amp;view_type=sm" target="_top">AI WEBTOON</a>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N115&amp;view_type=sm" target="_top">클릭 AI</a>
 </li>
 </ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N24" target="_top">기술</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N24&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N103&amp;view_type=sm" target="_top">뉴테크</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N25" target="_top">Art &amp; Living</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N25&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N56&amp;view_type=sm" target="_top">Art</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N55&amp;view_type=sm" target="_top">Living</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N26" target="_top">교육</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N26&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N58&amp;view_type=sm" target="_top">AI 교육</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N59&amp;view_type=sm" target="_top">AI대학원</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N60&amp;view_type=sm" target="_top">AI융합연구센터</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N27" target="_top">인물</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N27&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N61&amp;view_type=sm" target="_top">AI초대석</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N62&amp;view_type=sm" target="_top">글로벌LAB 젊은 과학자</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N63&amp;view_type=sm" target="_top">동정</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N64&amp;view_type=sm" target="_top">인사/부음</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N28" target="_top">오피니언</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N28&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N65&amp;view_type=sm" target="_top">칼럼</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N66&amp;view_type=sm" target="_top">기고</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N67&amp;view_type=sm" target="_top">기자수첩</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N68&amp;view_type=sm" target="_top">박정현의 데이터사이언스</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N69&amp;view_type=sm" target="_top">조금원의 디지털 세상 이야기</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N70&amp;view_type=sm" target="_top">조영임의 AI단상</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N96&amp;view_type=sm" target="_top">옴부즈만</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N32" target="_top">포커스</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N32&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N90&amp;view_type=sm" target="_top">AI만평</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N98&amp;view_type=sm" target="_top">포토/영상</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N92&amp;view_type=sm" target="_top">그래픽</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N94&amp;view_type=sm" target="_top">영상</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N93&amp;view_type=sm" target="_top">리스티클</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N104&amp;view_type=sm" target="_top">왔다!AI</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N106&amp;view_type=sm" target="_top">Chat with AI</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N107&amp;view_type=sm" target="_top">오픈-Ko LLM 리더보드</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N108&amp;view_type=sm" target="_top">AI주크박스</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N110&amp;view_type=sm" target="_top">뉴스 브리핑</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N111&amp;view_type=sm" target="_top">체험기</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N112&amp;view_type=sm" target="_top">AI갤러리</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N113&amp;view_type=sm" target="_top">AI무비</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N114&amp;view_type=sm" target="_top">AI &amp; 푸드</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N29" target="_top">이벤트</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N29&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N97&amp;view_type=sm" target="_top">NVIDIA GTC</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N71&amp;view_type=sm" target="_top">IFA</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N72&amp;view_type=sm" target="_top">CES</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N99&amp;view_type=sm" target="_top">CES 2023</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N105&amp;view_type=sm" target="_top">AI &amp; BIG DATA SHOW</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N30" target="_top">스페셜 리포트</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N30&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N74&amp;view_type=sm" target="_top">찬이의 IT교실</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N75&amp;view_type=sm" target="_top">칼럼이 있는 AI 톡</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N76&amp;view_type=sm" target="_top">일상으로 파고드는 AI기술</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N77&amp;view_type=sm" target="_top">AI와 클라우드</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N78&amp;view_type=sm" target="_top">스포츠, AI를 만나다</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N79&amp;view_type=sm" target="_top">춤추는 AI개발자 연봉</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N80&amp;view_type=sm" target="_top">로봇이 온다</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N81&amp;view_type=sm" target="_top">이미지와 비전 AI</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N82&amp;view_type=sm" target="_top">블록체인 쿼바디스?</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N83&amp;view_type=sm" target="_top">코로나와 AI</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N84&amp;view_type=sm" target="_top">광주의 AI교육</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N85&amp;view_type=sm" target="_top">AI 저널리즘을 부탁해</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N86&amp;view_type=sm" target="_top">자율주행차 사고 어떻게 볼 것인가</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N95&amp;view_type=sm" target="_top">김미정의 로빌리티 뿌뿌</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N13&amp;view_type=sm" target="_top">Global</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N35&amp;view_type=sm" target="_top">Feature</a>
+</li>
+<li class="global-menu-item" data-accordion-item="">
+<a class="global-menu-link" href="#S1N31" target="_top">Local</a>
+<div class="global-menu-content" data-tab-content="">
+<ul class="global-menu" data-accordion="" data-allow-all-closed="true">
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N31&amp;view_type=sm" target="_top">전체</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N87&amp;view_type=sm" target="_top">지역뉴스</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_sub_section_code=S2N88&amp;view_type=sm" target="_top">광주AI산업단지</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N34&amp;view_type=sm" target="_top">Future Energy</a>
+</li>
+<li class="global-menu-item">
+<a class="global-menu-link" href="https://www.aitimes.com/news/articleList.html?sc_section_code=S1N36&amp;view_type=sm" target="_top">AI WEBTOON</a>
+</li>
+</ul>
+</main>
 </nav>
-<button aria-label="Close menu" class="close-button" data-close="" type="button">
-<i class="icon-close-thin"><span class="show-for-sr">전체메뉴닫기</span></i>
-</button>
 </div>
-</div>
-
 <script>
+const bannerpop = new Bannerpop();
 // Popup Json
 var ___popup = [];
 bannerpop.popup();
 </script>
-<script type="text/javascript">
-// back to the top
+<script>
+// back to the top		
 $(document).scroll(function(){
 	var sDocumentHeight = $(document).height() - $(window).height();
-	if($(document).scrollTop() > 0){
+	if($(document).scrollTop() > 0){	
 		$('#back-to-top').fadeIn();
 	}else{
 		$('#back-to-top').fadeOut();
 	}
 });
 
-$('#back-to-top').click(function(){
+$('#back-to-top, a[href="#top"]').click(function(){
 	$('html, body').animate( {scrollTop:0}, 100);
 });
+
+// 모바일버전 이동 버튼
+if (Util.isMobileDevice() === true) $(".desktop-to-mobile").removeClass("hide");
 </script>
 <!-- 구글 애드센스 S -->
 <script src="https://cdn.aitimes.com/adManager/js/lab.js"></script>
@@ -2342,7 +1335,6 @@ jQuery(function($) {
 });
 </script>
 <!-- 구글 애드센스 E -->
-<script src="/library/isND/index.html" type="text/javascript"></script>
 <script>
 $(document).ready(function(){
 	// 닫기 버튼 자동 노출
@@ -2355,9 +1347,9 @@ $(document).ready(function(){
 		$(this).closest('.ad-view').slideUp();
 	})
 
-	
+	// isND
+	var ____is_nd = getCookie('____is_nd');
 	if(____is_nd) {
-
 				// ND IP만 광고 ID 보이기
 		$('.ad-template').each(function(){
 			$(this).append('<div class="ad-code-id">'+$(this).attr('id')+'</div>');
@@ -2374,14 +1366,17 @@ $(document).ready(function(){
 		
 
 			}
-
-	})
+})
 
 
 
 /* ****************************************** */
 /* 날개배너 스크립트  */
 /* ****************************************** */
+$('#wingBanner .wing-banner-left .wing-banner').each(function(){
+	if( $(this).data('scroll') == 'y' ) $(this).addClass('scroll-on');
+});
+
 $(window).scroll(function() {
 	if( $('#wingBanner .wing-banner').length > 0 ){											// 날개배너가 있으면 작동
 
@@ -2437,7 +1432,7 @@ $(window).scroll(function() {
 
 						if( (winScrollTop >= ((docHeight - userFooterHeight) - winHeight)) && (bannerAllHeight >= siteAllHeight) ) {					// 사이트 Footer 넘어가는 경우 처리
 							wingBnTop_L -= ((userFooterHeight + downMargin) - (winHeight - (scrollingHeight_L + topMargin + articleTitleHeight)));
-							$('#wingBanner .wing-banner-left .wing-banner').animate({top:wingBnTop_L+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
+							$('#wingBanner .wing-banner-left .wing-banner.scroll-on').animate({top:wingBnTop_L+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
 						}
 					} else {
 						wingBnTop_L = 0;																			// 최상단 처리
@@ -2457,7 +1452,7 @@ $(window).scroll(function() {
 
 						if( (winScrollTop >= ((docHeight - userFooterHeight) - winHeight)) && (bannerAllHeight >= siteAllHeight) ) {					// 사이트 Footer 넘어가는 경우 처리
 							wingBnTop_R -= ((userFooterHeight + downMargin) - (winHeight - (scrollingHeight_R + topMargin + articleTitleHeight)));
-							$('#wingBanner .wing-banner-right .wing-banner').animate({top:wingBnTop_R+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
+							$('#wingBanner .wing-banner-right .wing-banner.scroll-on').animate({top:wingBnTop_R+"px" },{queue: false, duration: duration});		// 마지막 배너 움직임 처리
 						}
 					} else {
 						wingBnTop_R = 0;																			// 최상단 처리

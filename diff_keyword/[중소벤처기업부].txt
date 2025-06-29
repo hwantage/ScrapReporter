@@ -1291,7 +1291,7 @@ $(document).ready(function() {
 <input id="recordCountPerPage" name="recordCountPerPage" type="hidden" value="10"/>
 <input id="sort" name="sort" type="hidden" value=""/>
 <input id="ext6" name="ext6" type="hidden" value=""/>
-<input id="bcIdx" name="bcIdx" type="hidden" value="1059592"/>
+<input id="bcIdx" name="bcIdx" type="hidden" value="1059695"/>
 <input name="SearchFirstYn" type="hidden" value="N"/>
 <div id="contents_inner">
 <div class="search_box">
@@ -2163,6 +2163,10 @@ $(document).ready(function() {
 							      
 							　　 전산실
 						</option>
+<option value="　　 발령대기">
+							      
+							　　 발령대기
+						</option>
 <option value="　　 사이버안전센터">
 							      
 							　　 사이버안전센터
@@ -2187,7 +2191,7 @@ $(document).ready(function() {
 <!-- 게시판 요약 정보 및 소팅 옵션 S -->
 <div class="board_support">
 <ul class="board_count">
-<li class="all_count">전체 : <span>5,649</span>건</li>
+<li class="all_count">전체 : <span>5,650</span>건</li>
 <li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">565</span></li>
 </ul>
 <!-- 목록 정렬순 버튼 -->
@@ -2218,6 +2222,82 @@ $(document).ready(function() {
 <tbody>
 <tr class="">
 <td>
+										5650
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1059695','16010100','1059695');return false;" title="2025년 중소기업 R&amp;D 우수성과 50선 모집 공고">
+										
+										2025년 중소기업 R&amp;D 우수성과 50선 모집 공고
+								</a></td>
+<td class="cd_subject"><span>기술개발과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								event.stopPropagation();
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1059695&amp;cbIdx=126&amp;streFileNm=90a4b8bc-05e4-4996-b197-f3667029878c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</img></a></td>
+<td><span class="text2Line">2025.06.23</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br>제2025-377호</br></span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1059695','16010100','1059695');return false;">
+<div class="subject">
+<span>2025년 중소기업 R&amp;D 우수성과 50선 모집 공고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>기술개발과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													event.stopPropagation();
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1059695&amp;cbIdx=126&amp;streFileNm=90a4b8bc-05e4-4996-b197-f3667029878c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</img></span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.06.23</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>중소벤처기업부공고 제2025-377호</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
 										5649
 									</td>
 <td class="subject" style="text-align:left;">
@@ -2241,11 +2321,11 @@ $(document).ready(function() {
 								}
 							})">
 <a class="attach-file pdf" data-file-type="hwpx" href="#">
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1059592&amp;cbIdx=126&amp;streFileNm=118668df-4d3a-4454-b101-df82fc3d304d.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</img></a></td>
+</a></td>
 <td><span class="text2Line">2025.06.17</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br>제2025-374호</br></span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-374호</span></td>
 <!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
 <td class="mobile">
 <a href="#" onclick="doBbsFView('126','1059592','16010100','1059592');return false;">
@@ -2274,9 +2354,9 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1059592&amp;cbIdx=126&amp;streFileNm=118668df-4d3a-4454-b101-df82fc3d304d.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</img></span>
+</span>
 </li>
 <li>
 <span>등록일</span>
@@ -2897,82 +2977,6 @@ $(document).ready(function() {
 <li>
 <span>공고번호</span>
 <span>중소벤처기업부공고 제2025-336호</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5640
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1059072','16010100','1059072');return false;" title="「중소기업 기술거래 사업화 촉진 지원사업 운영요령 일부개정안｣ 행정예고">
-										
-										「중소기업 기술거래 사업화 촉진 지원사업 운영요령 일부개정안｣ 행정예고
-								</a></td>
-<td class="cd_subject"><span>기술보호과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								event.stopPropagation();
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwp" href="#">
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1059072&amp;cbIdx=126&amp;streFileNm=b4ee1eda-7e11-4566-a832-fcaa1f7e0dab.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</a></td>
-<td><span class="text2Line">2025.05.21</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-332호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1059072','16010100','1059072');return false;">
-<div class="subject">
-<span>「중소기업 기술거래 사업화 촉진 지원사업 운영요령 일부개정안｣ 행정예고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>기술보호과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													event.stopPropagation();
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1059072&amp;cbIdx=126&amp;streFileNm=b4ee1eda-7e11-4566-a832-fcaa1f7e0dab.hwp" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.05.21</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>중소벤처기업부공고 제2025-332호</span>
 </li>
 </ul>
 </div>

@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1288; // 전체 조회 건수
+	var totalNum = 1291; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -188,7 +188,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1288</b>건
+<span>총 <b>1291</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -227,10 +227,31 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3494&amp;page=1">2025년 제4회 랜섬웨어 레질리언스 컨퍼런스 개최 안내(7.10. 목, 피스앤파크 파크홀)</a>
+</td>
+<td class="date">2025-06-26</td>
+<td class="count">2533</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3494', 1, 'KO');">
+<img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3493&amp;page=1">2025년 한국인터넷진흥원 공공데이터 활용 설문조사</a>
+</td>
+<td class="date">2025-06-23</td>
+<td class="count">3765</td>
+<td class="attach">
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3492&amp;page=1">2025년 정보보호제품 성능평가 지원 공모 사업(~7/4)</a>
 </td>
 <td class="date">2025-06-20</td>
-<td class="count">1563</td>
+<td class="count">5307</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3492', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -239,14 +260,23 @@ function oneDepMenu() {
 </tr>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3486&amp;page=1">2025년도 암호모듈검증 전문교육 기초과정 신청·접수 안내(6.17~7.2, 무료/선착순 200명)</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3487&amp;page=1">사이버위협 공동대응 플랫폼 구축(SIEM&amp;SOAR 지원)을 위한 참여기업 2차 모집안내(~7.10)</a>
 </td>
-<td class="date">2025-06-16</td>
-<td class="count">4411</td>
+<td class="date">2025-06-19</td>
+<td class="count">3559</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3486', 1, 'KO');">
-<img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3487', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
+</td>
+</tr>
+<tr>
+<td class="num">1287</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3495&amp;page=1">2025년 블록체인 수요-공급 협의체 ABLE 1차 정례회의 개최(7.9(수), 서울 드래곤시티 랑데부홀)</a>
+</td>
+<td class="date">2025-06-27</td>
+<td class="count">1106</td>
+<td class="attach">
 </td>
 </tr>
 <tr>
@@ -254,7 +284,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3489&amp;page=1">2025년 ICT 중소기업 정보보호 지원 사업 수요기업 모집</a>
 </td>
 <td class="date">2025-06-20</td>
-<td class="count">1780</td>
+<td class="count">3993</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3489', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -266,7 +296,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3491&amp;page=1">2025 블록체인 밋업데이(Blockchain Meetup Day) 안내</a>
 </td>
 <td class="date">2025-06-19</td>
-<td class="count">1492</td>
+<td class="count">3192</td>
 <td class="attach">
 </td>
 </tr>
@@ -275,7 +305,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3490&amp;page=1">2025년 개인정보 불법유통 대응 대학생 모니터링단 모집(~6.27)</a>
 </td>
 <td class="date">2025-06-19</td>
-<td class="count">1670</td>
+<td class="count">5134</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3490', 1, 'KO');">
 <img alt="첨부파일 PNG" src="/resource/kor/images/common/png.png"/>
@@ -287,48 +317,18 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3488&amp;page=1">2025년 정보보호 지원사업 공급기업 협약식 개최 안내</a>
 </td>
 <td class="date">2025-06-19</td>
-<td class="count">1436</td>
+<td class="count">2224</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
 <td class="num">1282</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3487&amp;page=1">사이버위협 공동대응 플랫폼 구축(SIEM&amp;SOAR 지원)을 위한 참여기업 2차 모집안내(~7.10)</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3486&amp;page=1">2025년도 암호모듈검증 전문교육 기초과정 신청·접수 안내(6.17~7.2, 무료/선착순 200명)</a>
 </td>
-<td class="date">2025-06-19</td>
-<td class="count">880</td>
+<td class="date">2025-06-16</td>
+<td class="count">8115</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3487', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1281</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3485&amp;page=1">2025년 전자문서산업 실태조사 사전수요 조사</a>
-</td>
-<td class="date">2025-06-13</td>
-<td class="count">3295</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1280</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3484&amp;page=1">2025년 상반기 침해사고 정보공유 세미나 개최(6/27, 강남 한국과학기술회관)</a>
-</td>
-<td class="date">2025-06-13</td>
-<td class="count">5251</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1279</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3483&amp;page=1">제14회 한국인터넷거버넌스 포럼(KrIGF) 개최 안내(7.3.(목))</a>
-</td>
-<td class="date">2025-06-13</td>
-<td class="count">3195</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3483', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3486', 1, 'KO');">
 <img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
 </a>
 </td>
@@ -358,10 +358,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2025-06-20</dd>
+<dd>2025-06-30</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="2cdd179e-8c13-4275-8a5b-e98627545616">
+<input name="_csrf" type="hidden" value="e975add4-a880-4aab-bb5a-f4ad86ad2d52">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -384,7 +384,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "2cdd179e-8c13-4275-8a5b-e98627545616");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "e975add4-a880-4aab-bb5a-f4ad86ad2d52");
             },			
 			success: function(data) {
 				alert(data.message)
