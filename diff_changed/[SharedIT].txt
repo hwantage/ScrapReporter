@@ -51,7 +51,7 @@
 <script async="async" data-turbolinks-track="false" defer="defer" src="https://shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/application-9ca6b727025d6432e02fc75216a889eccf7eb1c26cdec57bea3eaceb744c6114.js"></script>
 <script data-turbolinks-track="false" src="https://shareditassets.s3.ap-northeast-2.amazonaws.com/assets/production/controllers/seminars-07263be6dab85106e76160b1fe1cd524c0164649ba40806c403a1f82c0c57061.js"></script>
 <meta content="authenticity_token" name="csrf-param">
-<meta content="CMD5V8lbtUP2HMUadDt9VkJZuwD231msE6vfi6dA+kv2Usqn+4Luu9trN4Smqv/0BeYomaP/6S7BN1ZoScsYKw==" name="csrf-token">
+<meta content="cy0WZGcbBAcIfcBYZFIeA97+W46nPp1atbijsPSHpscjze5JaByNKCk4OjmkeP7eiUjfw2a1mAdF+JmihKr+mg==" name="csrf-token">
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   var googletag = googletag || {};
@@ -162,7 +162,7 @@ ga("send","pageview");
 <li class="linkedin"><a href="https://www.linkedin.com/in/sharedit2014/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 <ul class="list-inline hidden-xs">
-<li><a href="/cdn-cgi/l/email-protection#f994988a8d9c8bb98a91988b9c9d908dd79a96d7928b"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="84e9e5f7f0e1f6c4f7ece5f6e1e0edf0aae7ebaaeff6">[email protected]</span></a></li>
+<li><a href="/cdn-cgi/l/email-protection#a6cbc7d5d2c3d4e6d5cec7d4c3c2cfd288c5c988cdd4"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="137e726067766153607b726176777a673d707c3d7861">[email protected]</span></a></li>
 <li><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"><i class="fa fa-youtube-play pr-5 pl-10" title="SHAREDIT CLASS / SHAREDIT LIVE"></i></a><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"> YouTube</a></li>
 <li><a href="http://www.podbbang.com/ch/15150" target="_blank"><i class="fa fa-podcast pr-5 pl-10" title="팟빵 - 쌤팍의 전산쟁이 이야기"></i></a><a href="https://www.sharedit.co.kr/posts/1236" target="_blank"> 팟캐스트</a></li>
 </ul>
@@ -182,7 +182,7 @@ ga("send","pageview");
 <button class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" type="button"><i class="fa fa-lock pr-5"></i> 로그인</button>
 <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 <li>
-<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="xW3u06fTuHVucWuNeCrhplYi2WkPvG3O4BZ/CjMPSQM7/90jlQrjjUMGmROqu2MEEZ1K8Fqc3Uwyivbp3YSrYw=="/>
+<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="db+pmZPi2qmFKs8yk1B/LCriqFx+T0lfvd4Vw5lrT+wlX1G0nOVThqRvNVNTep/xfVQsEb/ETAJNni/R6UYXsQ=="/>
 <div class="form-group has-feedback">
 <label class="control-label">이메일 주소</label>
 <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="" type="email" value=""/>
@@ -439,12 +439,12 @@ ga("send","pageview");
 <i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
 </a> </li>
 <li class="col-lg-6">
-<a href="/companies/synapsoft/products">
-<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
-</a> </li>
-<li class="col-lg-6">
 <a href="/companies/2830/products">
 <i class="fa fa-building-o" style="margin-left:-15px;"></i> (주)제이커넥트
+</a> </li>
+<li class="col-lg-6">
+<a href="/companies/synapsoft/products">
+<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
 </a> </li>
 </ul>
 </div>
@@ -452,12 +452,12 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/jirandata/products">
-<i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
-</a> </li>
-<li class="col-lg-6">
 <a href="/companies/bellins/products">
 <i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
+</a> </li>
+<li class="col-lg-6">
+<a href="/companies/jirandata/products">
+<i class="menus jirandata" style="margin-left:-15px;"></i> 지란지교데이터
 </a> </li>
 </ul>
 </div>
@@ -682,15 +682,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul class="list" style="min-height: 700px;">
 <div class="tags-cloud2 mb-10" style="color: #000000; margin-top: -20px;">
 <div class="tag">
-<a href="/seminars/2193" title="Zoom - [0715] 현장 업무 효율과 교대 근무 관리를 한번에! Zoom Workplace for Frontline">15일 (화)</a>
-</div>
-<div class="tag">
-<a href="/seminars/2186" title="엠클라우드브리지 - [웨비나] 7월 Microsoft Azure OpenAI 기반 Ai 365 Mesh 플랫폼 웨비나 _ 기업 중요 정보 접근 권한관리 및 정보 유출 차단하는 AI를 확인하세요!">16일 (수)</a>
-</div>
-<div class="tag">
-<a href="/seminars/2190" title="엠클라우드브리지 - [무료 교육] 7/18(금) Microsoft Copilot Studio &amp; AI Agent Hands On 교육 _ 팀과 나를 위한 맞춤 AI 비서, AI Agent를 직접 구축해보세요!">18일 (금)</a>
-</div>
-<div class="tag">
 <a href="/seminars/2196" title="Red Hat - 애플리케이션·보안·운영 간극을 잇는 자동화 전략 공개! 7월 22일, Ansible Automates 2025에서 확인하세요.">22일 (화)</a>
 </div>
 <div class="tag">
@@ -744,44 +735,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>장소</dt>
 <dd>서울시 송파구 올림픽로 300, 롯데월드타워 31F SKY31 컨벤션</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2186/low_7%EC%9B%94-Microsoft-Azure-OpenAI-%EA%B8%B0%EB%B0%98-Ai-365-Mesh-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%9B%A8%EB%B9%84%EB%82%98_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');"></figure>
-<header>
-<span class="sponsor">
-               	    엠클라우드브리지
-               </span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/2186" title="[웨비나] 7월 Microsoft Azure OpenAI 기반 Ai 365 Mesh 플랫폼 웨비나 _ 기업 중요 정보 접근 권한관리 및 정보 유출 차단하는 AI를 확인하세요!">[웨비나] 7월 Microsoft Azure OpenAI 기반 Ai 365 Mesh 플랫폼 웨비나 _ 기업 중요 정보 접근 권한관리 및 정보 유출 차단하는 AI를 확인하세요!</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2025-07-16(수) 14:00 ~ 15:30</dd>
-<dt>장소</dt>
-<dd>온라인 웨비나</dd>
-<dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
-</dl>
-</li>
-<li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2193/low_0715_thumbnail_sharedit.png');"></figure>
-<header>
-<span class="sponsor">
-               	    Zoom
-               </span>
-<span class="category">웨비나</span>
-<strong>
-<a href="/seminars/2193" title="[0715] 현장 업무 효율과 교대 근무 관리를 한번에! Zoom Workplace for Frontline">[0715] 현장 업무 효율과 교대 근무 관리를 한번에! Zoom Workplace for Frontline</a>
-</strong>
-</header>
-<dl class="info">
-<dt>일시</dt>
-<dd>2025-07-15(화) 14:00 ~ 15:00</dd>
-<dt>댓글</dt>
 <dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
@@ -821,6 +774,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <dd>2025-07-31(목) 09:00 ~ 18:00</dd>
 <dt>장소</dt>
 <dd>기업 출강 교육</dd>
+<dt>댓글</dt>
+<dd>1개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -860,11 +815,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </dl>
 </li>
 <li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2190/low__MCloudBridge_-2025%EB%85%84-7%EC%9B%94-Copilot-Studio-_-AI-Agent-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SNS-8.png');"></figure>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2190/low__MCloudBridge_-2025%EB%85%84-7%EC%9B%94-Copilot-Studio-_-AI-Agent-%EB%AC%B4%EB%A3%8C-%EA%B5%90%EC%9C%A1-%EC%B4%88%EC%B2%AD_SNS-8.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-               	    엠클라우드브리지
-               </span>
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
 <span class="category">교육</span>
 <strong>
 <a href="/seminars/2190" title="[무료 교육] 7/18(금) Microsoft Copilot Studio &amp; AI Agent Hands On 교육 _ 팀과 나를 위한 맞춤 AI 비서, AI Agent를 직접 구축해보세요!">[무료 교육] 7/18(금) Microsoft Copilot Studio &amp; AI Agent Hands On 교육 _ 팀과 나를 위한 맞춤 AI 비서, AI Agent를 직접 구축해보세요!</a>
@@ -876,7 +831,45 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>장소</dt>
 <dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2186/low_7%EC%9B%94-Microsoft-Azure-OpenAI-%EA%B8%B0%EB%B0%98-Ai-365-Mesh-%ED%94%8C%EB%9E%AB%ED%8F%BC-%EC%9B%A8%EB%B9%84%EB%82%98_SharedIT-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg');opacity: .2;"></figure>
+<header>
+<span class="sponsor">
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/2186" title="[웨비나] 7월 Microsoft Azure OpenAI 기반 Ai 365 Mesh 플랫폼 웨비나 _ 기업 중요 정보 접근 권한관리 및 정보 유출 차단하는 AI를 확인하세요!">[웨비나] 7월 Microsoft Azure OpenAI 기반 Ai 365 Mesh 플랫폼 웨비나 _ 기업 중요 정보 접근 권한관리 및 정보 유출 차단하는 AI를 확인하세요!</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2025-07-16(수) 14:00 ~ 15:30</dd>
+<dt>장소</dt>
+<dd>온라인 웨비나</dd>
+<dt>댓글</dt>
+<dd>2개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2193/low_0715_thumbnail_sharedit.png');opacity: .2;"></figure>
+<header>
+<span class="sponsor">
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/2193" title="[0715] 현장 업무 효율과 교대 근무 관리를 한번에! Zoom Workplace for Frontline">[0715] 현장 업무 효율과 교대 근무 관리를 한번에! Zoom Workplace for Frontline</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2025-07-15(화) 14:00 ~ 15:00</dd>
+<dt>댓글</dt>
+<dd>3개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -896,7 +889,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>장소</dt>
 <dd>서울시 강남구 테헤란로 518 (대치동) 섬유센터 11층 위워크 삼성2호점 컨퍼런스룸</dd>
 <dt>댓글</dt>
-<dd>2개의 댓글이 있습니다.</dd>
+<dd>3개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -914,7 +907,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2025-07-10(목) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>4개의 댓글이 있습니다.</dd>
+<dd>5개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -932,7 +925,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2025-07-03(목) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -952,7 +945,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>장소</dt>
 <dd>서울시 종로구 관철동 13-13 종로 코아빌딩 솔데스크 종로점</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 </ul>
@@ -1004,10 +997,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1868" title="HPE Aruba Networking SASE 자료를 다운로드 하시고 푸짐한 선물도 받아가세요!">HPE Aruba Net (설문조사)<span>D-4</span></a>
-</li>
-<li>
-<a ,="" href="/promotions/1872" title="AI 시대, 인프라는 무기가 된다 – 데이타솔루션과 함께 Dell PowerFlex로 무장하세요!">AI 시대, 인프라는 무 (설문조사)<span>D-1</span></a>
+<a ,="" href="/promotions/1875" title="[스타벅스 커피쿠폰 이벤트] AI용 이더넷 네트워킹 플랫폼 NVIDIA Spectrum™-X확인 후, 베이넥스 설문 이벤트 참여하세요!">[스타벅스 커피쿠폰 이벤 (설문조사)<span>D-3</span></a>
 </li>
 </ul>
 </div>
@@ -1016,29 +1006,31 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/seminars/2199" title="[기업 교육] AI Agent, 생성형 AI 설계 및 구현을 위한 AOAI 교육">[기업 교육] AI Ag (교육)	<span>D-17</span></a>
+<a ,="" href="/seminars/2203" title="[무료 웨비나] 8월 Microsoft 365 보안 EMS 웨비나 _ 기업 보안 All in One 솔루션으로 강력한 보안 환경을 구축하세요.">[무료 웨비나] 8월 M (웨비나)	<span>D-30</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1863" title="[메타넷글로벌] 지금이 전환의 타이밍, SAP ERP로 미래를 준비하세요!">[메타넷글로벌] 지금이  (자료다운로)<span>D-3
+<a ,="" href="/promotions/1875" title="[스타벅스 커피쿠폰 이벤트] AI용 이더넷 네트워킹 플랫폼 NVIDIA Spectrum™-X확인 후, 베이넥스 설문 이벤트 참여하세요!">[스타벅스 커피쿠폰 이벤 (설문조사)<span>D-3
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1862" title='쉐어드IT가 먼저 써보고 선택한 실무자 중심 IT 모니터링 도구 "마인드뷰"'>쉐어드IT가 먼저 써보고 (데모신청)<span>D-1
+<a ,="" href="/promotions/1869" title=" Red Hat, AWS에 담으면 혜택이 쏟아진다! 프라이빗 헤택으로 더 스마트하게 시작하고 경품도 챙기세요 🎁"> Red Hat, AWS (기타)<span>D-4
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2190" title="[무료 교육] 7/18(금) Microsoft Copilot Studio &amp; AI Agent Hands On 교육 _ 팀과 나를 위한 맞춤 AI 비서, AI Agent를 직접 구축해보세요!">[무료 교육] 7/18( (교육)	<span>D-4</span></a>
+<a ,="" href="/seminars/2199" title="[기업 교육] AI Agent, 생성형 AI 설계 및 구현을 위한 AOAI 교육">[기업 교육] AI Ag (교육)	<span>D-10</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2193" title="[0715] 현장 업무 효율과 교대 근무 관리를 한번에! Zoom Workplace for Frontline">[0715] 현장 업무  (웨비나)	<span>D-1</span></a>
+<a ,="" href="/seminars/2197" title="[무료 웨비나] 7월 Microsoft 365 보안 EMS 웨비나 _ All in One 보안 솔루션으로 기업 보안 강화 방안을 확인해보세요!">[무료 웨비나] 7월 M (웨비나)	<span>D-3</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2202" title="[무료 웨비나] 8/13(수) Ai 365 Mesh 웨비나 _ Azure OpenAI 기반 Data &amp; AI 통합 폐쇄형 플랫폼으로 AI 업무 혁신을 실현하세요!">[무료 웨비나] 8/13 (웨비나)	<span>D-30</span></a>
+<a ,="" href="/seminars/2205" title="[무료 교육] 8/21(목) Microsoft Copilot Studio &amp; AI Agent Hands On 교육 _ 업무 맞춤 Copilot 개발로 생산성 강화 방안을 확인하세요!">[무료 교육] 8/21( (교육)	<span>D-31</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2197" title="[무료 웨비나] 7월 Microsoft 365 보안 EMS 웨비나 _ All in One 보안 솔루션으로 기업 보안 강화 방안을 확인해보세요!">[무료 웨비나] 7월 M (웨비나)	<span>D-10</span></a>
+<a ,="" href="/promotions/1873" title="제조기업의 클라우드 ERP 전환[다운로드 이벤트]">제조기업의 클라우드 ER (자료다운로)<span>D-19
+									
+								</span></a>
 </li>
 </ul>
 </div>
@@ -1057,21 +1049,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <div class="overlay-container overlay-visible" style="width: 100%; border: 1px solid #eee; height:220px; display:table-cell;vertical-align:middle;">
 <div class="sponsor-ad-box" style="width:260px;">
-<img alt="Medium %ec%98%a4%ed%94%bc%ec%8a%a4%eb%84%a5%ec%8a%a4%ed%8a%b8 %eb%a1%9c%ea%b3%a0" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","807",null);' src="https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/807/medium_%EC%98%A4%ED%94%BC%EC%8A%A4%EB%84%A5%EC%8A%A4%ED%8A%B8_%EB%A1%9C%EA%B3%A0.png"/>
+<img alt="Medium if pk" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","750",null);' src="https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/750/medium_IF_pk.png"/>
 </div>
-<a class="overlay-link" href="/evaluations/products/807">
+<a class="overlay-link" href="/evaluations/products/750">
 <i class="fa fa-link"></i>
 </a>
 <div class="overlay-bottom hidden-xs" style="padding: 10px;">
 <div class="text">
-<p class="lead margin-clear text-left" style="font-size: 16px;">오피스넥스트</p>
+<p class="lead margin-clear text-left" style="font-size: 16px;">아이디필터 (IDFILTER)</p>
 </div>
 </div>
 </div>
 <script>
     ;(function($){
       $(function(){
-        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","807",null);
+        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","750",null);
       });
     })(jQuery);
   </script>
@@ -1093,19 +1085,19 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav>
 <ul class="nav product-brands-list">
 <li>
-<a href="/posts/34896" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/promotions/1868" rel="nofollow" target="_self" title="참고하겠습니다">참고하겠습니다<span>프로모션</span></a>
 </li>
 <li>
-<a href="/posts/34904" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2190" rel="nofollow" target="_self" title="유익하네요. 정보 참고하겠습니다.">유익하네요. 정보 참고하겠습니다<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/34906" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2186" rel="nofollow" target="_self" title="유익하네요. 정보 참고하겠습니다.">유익하네요. 정보 참고하겠습니다<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/34907" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2193" rel="nofollow" target="_self" title="유익하네요. 정보 참고하겠습니다.">유익하네요. 정보 참고하겠습니다<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/34918" rel="nofollow" target="_self" title="정보 참고하겠습니다.">정보 참고하겠습니다.<span>테크박스</span></a>
+<a href="/seminars/2183" rel="nofollow" target="_self" title="유익하네요. 정보 참고하겠습니다.">유익하네요. 정보 참고하겠습니다<span>세미나</span></a>
 </li>
 </ul>
 </nav>
@@ -1135,7 +1127,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h4 class="modal-title" id="myModalLabel">알림</h4>
 </div>
 <div class="modal-body">
-<p><a href="/cdn-cgi/l/email-protection#cca1adbfb8a9be8cbfa4adbea9a8a5b8e2afa3e2a7be"><span class="__cf_email__" data-cfemail="503d31232435221023383122353439247e333f7e3b22">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
+<p><a href="/cdn-cgi/l/email-protection#ff929e8c8b9a8dbf8c979e8d9a9b968bd19c90d1948d"><span class="__cf_email__" data-cfemail="3d505c4e49584f7d4e555c4f58595449135e5213564f">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
 <a href="/memberships">멤버십</a>에 가입하신 후 직접 업로드를 하실 수 있습니다.</p>
 </div>
 </div>
@@ -1156,7 +1148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 class="title">IT 세미나/교육/프로모션 정보 구독 신청</h3>
 <p>새로운 세미나/교육/프로모션 정보를 메일로 편하게 받아 보세요. 정기적으로 보내 드립니다.</p>
 <div class="separator"></div>
-<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="UaenmmKb4gHGTNbfWQ+lkTiFg/7nO+K5phz3ddijZMGvNZRqUEK5+es7JEGLniczfzoQZ7IbUjt0gH6WNiiGoQ=="/>
+<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="+cHRpdZMew01pF65/pTEC287cQNLCbQEAfKmRItYrc6pISmI2UvyIhThpNg+viTWOI31ToqCsVnxspxW+3X1kw=="/>
 <div class="form-group has-feedback">
 <label class="sr-only" for="subscribe2">Email address</label>
 <input class="form-control" id="email" name="email" placeholder="Enter email" required="required" type="text"/>
@@ -1201,7 +1193,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><i class="text-default fa fa-id-card-o pr-5"></i>사업자 등록번호 : 144-81-29382</li>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>통신판매업신고 : 2017-용인수지-0227</li><br/>
 <li><i class="text-default fa fa-map-marker pr-5"></i>(주) 쉐어드커뮤니케이션</li>
-<li><a class="link-dark" href="/cdn-cgi/l/email-protection#c0ada1b3b4a5b280b3a8a1b2a5a4a9b4eea3afeeabb2"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="177a766463726557647f766572737e63397478397c65">[email protected]</span></a></li>
+<li><a class="link-dark" href="/cdn-cgi/l/email-protection#036e627077667143706b627166676a772d606c2d6871"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="e28f8391968790a2918a839087868b96cc818dcc8990">[email protected]</span></a></li>
 </ul>
 <ul class="list-inline small" style="margin-top: -9px">
 <li><i class="text-default fa fa-lock pr-5"></i><strong> <a class="link-dark" href="/welcome/terms_of_service" style="color: #777777;" target="_blank">이용약관</a> | <a class="link-dark" href="/welcome/personal_information" style="text-decoration: underline!important;" target="_blank">개인정보처리방침</a></strong></li>
@@ -1290,5 +1282,5 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'95ec8c80ff67faf8',t:'MTc1MjQ0OTIyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96263aa6bea620d6',t:'MTc1MzA1NDA0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
