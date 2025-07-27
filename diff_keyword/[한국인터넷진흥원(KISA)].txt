@@ -230,7 +230,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3512&amp;page=1">2025년 블록체인 기업성장허브 입주기업 모집(~8월 8일(금), 16:00까지)</a>
 </td>
 <td class="date">2025-07-18</td>
-<td class="count">1457</td>
+<td class="count">5373</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3512', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -242,7 +242,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3511&amp;page=1">2025년 청소년 개인정보보호 영상 공모전 개최 공고</a>
 </td>
 <td class="date">2025-07-16</td>
-<td class="count">2106</td>
+<td class="count">4368</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3511', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -254,7 +254,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3510&amp;page=1">2025년 제20회 대한민국 인터넷대상 공고</a>
 </td>
 <td class="date">2025-07-15</td>
-<td class="count">2571</td>
+<td class="count">4840</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3510', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -266,7 +266,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3509&amp;page=1">2025 클라우드 인프라 지원사업 안내</a>
 </td>
 <td class="date">2025-07-15</td>
-<td class="count">2517</td>
+<td class="count">4777</td>
 <td class="attach">
 </td>
 </tr>
@@ -275,7 +275,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3508&amp;page=1">2025 KOREA LBS 스타트업 챌린지 안내</a>
 </td>
 <td class="date">2025-07-15</td>
-<td class="count">2305</td>
+<td class="count">4458</td>
 <td class="attach">
 </td>
 </tr>
@@ -284,7 +284,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3507&amp;page=1">2025년도 위치정보 보호조치 대면 실습교육(1차) 안내</a>
 </td>
 <td class="date">2025-07-15</td>
-<td class="count">2123</td>
+<td class="count">4238</td>
 <td class="attach">
 </td>
 </tr>
@@ -293,7 +293,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3506&amp;page=1">2025년도 위치정보 보호조치 비대면 이론교육(3차) 안내</a>
 </td>
 <td class="date">2025-07-15</td>
-<td class="count">1366</td>
+<td class="count">1915</td>
 <td class="attach">
 </td>
 </tr>
@@ -302,7 +302,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3505&amp;page=1">보안인증 업무 신뢰를 위한 공평성 보장 선언식 개최</a>
 </td>
 <td class="date">2025-07-10</td>
-<td class="count">3042</td>
+<td class="count">3480</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3505', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -314,7 +314,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3504&amp;page=1">2025년「개인정보 기술포럼」공개세미나 개최 - 데이터 활용과 개인정보 보호 기술 정책 방향 : 보건의료데이터 2차 활용 중심으로</a>
 </td>
 <td class="date">2025-07-07</td>
-<td class="count">4295</td>
+<td class="count">4713</td>
 <td class="attach">
 </td>
 </tr>
@@ -323,7 +323,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3503&amp;page=1">2025년도 인터넷법제도포럼-한국소비자법학회 공동세미나 개최 안내(서울 ENA 스위트 호텔, 7.11.)</a>
 </td>
 <td class="date">2025-07-07</td>
-<td class="count">4377</td>
+<td class="count">4674</td>
 <td class="attach">
 </td>
 </tr>
@@ -355,7 +355,7 @@ function oneDepMenu() {
 <dd>2025-07-18</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="22437e6d-333d-4598-ba33-1f4905a95425">
+<input name="_csrf" type="hidden" value="8e958ceb-cff7-4c88-8820-de0c4f17e3fc">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -378,7 +378,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "22437e6d-333d-4598-ba33-1f4905a95425");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "8e958ceb-cff7-4c88-8820-de0c4f17e3fc");
             },			
 			success: function(data) {
 				alert(data.message)

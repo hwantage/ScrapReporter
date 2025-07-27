@@ -127,22 +127,26 @@ $(document).ready(function(){
     	{
     		$(this).find("label").attr("tabindex","0");
     		$(this).find("input").attr("tabindex","0");
-    		$(this).find("a").attr("tabindex","0");
+    		//$(this).find("a").attr("tabindex","0");
+    		$(this).find("a").removeAttr("tabindex");
     		$(this).find("label").attr("aria-hidden","false");
             $(this).find("input").attr("aria-hidden","false");
-            $(this).find("a").attr("aria-hidden","false");
+            //$(this).find("a").attr("aria-hidden","false");
             $(this).find("a").attr("aria-expanded","true");
+            $(this).find("a").append("<span class='inner-icon-search' aria-hidden='true'></span>");
     		$(this).find("input").focus();
     	}
     	else
     	{
     		$(this).find("label").attr("tabindex","-1");
     		$(this).find("input").attr("tabindex","-1");
-            $(this).find("a").attr("tabindex","-1");
+            //$(this).find("a").attr("tabindex","-1");
+            $(this).find("a").removeAttr("tabindex");
             $(this).find("label").attr("aria-hidden","true");
             $(this).find("input").attr("aria-hidden","true");
             $(this).find("a").attr("aria-expanded","false");
-            $(this).find("a").attr("aria-hidden","true");
+            $(".inner-icon-search").remove();
+            //$(this).find("a").attr("aria-hidden","true");
     	}
     });
 });
@@ -836,6 +840,12 @@ function ignore(e){
 <ul>
 <li>
 <em aria-hidden="true">인공지능</em>
+<span class="accordion-btn-wrap">
+<!-- 1depth 공통 수정 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">인공지능</span></i>
+</button>
+</span>
 <!--                                 </a> -->
 <ul>
 <li>
@@ -847,6 +857,12 @@ function ignore(e){
 </li>
 <li>
 <em aria-hidden="true">주요사업</em>
+<span class="accordion-btn-wrap">
+<!-- 1depth 공통 수정 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">주요사업</span></i>
+</button>
+</span>
 <!--                                 </a> -->
 <ul>
 <li>
@@ -868,10 +884,22 @@ function ignore(e){
 </li>
 <li>
 <em aria-hidden="true">지식정보</em>
+<span class="accordion-btn-wrap">
+<!-- 1depth 공통 수정 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">지식정보</span></i>
+</button>
+</span>
 <!--                                 </a> -->
 <ul>
 <li>
 <em aria-hidden="true">간행물</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">간행물</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=44086" title="국가지능정보화백서">국가지능정보화백서</a>
@@ -900,6 +928,12 @@ function ignore(e){
 </ul> </li>
 <li>
 <em aria-hidden="true">연구보고서</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">연구보고서</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=66361" title="정책연구">정책연구</a>
@@ -913,6 +947,12 @@ function ignore(e){
 </ul> </li>
 <li>
 <em aria-hidden="true">통계·실태조사</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">통계·실태조사</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/02/10202030100002016092709.jsp" title="기업정보화통계">기업정보화통계</a>
@@ -944,6 +984,12 @@ function ignore(e){
 </ul> </li>
 <li>
 <em aria-hidden="true">기타자료집</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">기타자료집</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99852" title="법령 및 사업 관련규정">법령 및 사업 관련규정</a>
@@ -955,10 +1001,22 @@ function ignore(e){
 </li>
 <li class="selected">
 <em aria-hidden="true">알림마당</em>
+<span class="accordion-btn-wrap">
+<!-- 1depth 공통 수정 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">알림마당</span></i>
+</button>
+</span>
 <!--                                 </a> -->
 <ul>
 <li class="selected">
 <em aria-hidden="true">NIA 알림</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">NIA 알림</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835" title="공지사항">공지사항</a>
@@ -984,6 +1042,12 @@ function ignore(e){
 </ul> </li>
 <li>
 <em aria-hidden="true">윤리경영</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">윤리경영</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/ex/bbs/List.do?cbIdx=99844" title="청탁금지법">청탁금지법</a>
@@ -1013,10 +1077,22 @@ function ignore(e){
 </li>
 <li>
 <em aria-hidden="true">기관소개</em>
+<span class="accordion-btn-wrap">
+<!-- 1depth 공통 수정 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">기관소개</span></i>
+</button>
+</span>
 <!--                                 </a> -->
 <ul>
 <li>
 <em aria-hidden="true">NIA 소개</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">NIA 소개</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/04/10401010000002016082201.jsp" title="인사말">인사말</a>
@@ -1042,6 +1118,12 @@ function ignore(e){
 </ul> </li>
 <li>
 <em aria-hidden="true">열린경영</em>
+<span class="accordion-btn-wrap">
+<!-- 2depth 중 3depth 서브 메뉴 있는 경우 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">열린경영</span></i>
+</button>
+</span>
 <ul>
 <li>
 <a href="/site/nia_kor/04/10403020900002018111309.jsp" title="국민참여">국민참여</a>
@@ -1070,6 +1152,12 @@ function ignore(e){
 </li>
 <li>
 <em aria-hidden="true">정보공개</em>
+<span class="accordion-btn-wrap">
+<!-- 1depth 공통 수정 -->
+<button aria-expanded="false" class="accordion-btn" style="width: 20%; text-align: center;">
+<i class="ion-ios-arrow-down"><span class="hiddenTxt">정보공개</span></i>
+</button>
+</span>
 <!--                                 </a> -->
 <ul>
 <li>
@@ -1311,8 +1399,8 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,789</em>건
-            (1페이지 / 179페이지)</span>
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,794</em>건
+            (1페이지 / 180페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
 <span class="bar"></span>
@@ -1400,7 +1488,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.12.27</em>
-<em>조회수 1551</em>
+<em>조회수 1594</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1409,7 +1497,387 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28343','16010100','28343');return false;" title="공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항 알림(새 글)-첨부파일 없음">
+<a href="#view" onclick="doBbsFView('99835','28384','16010100','28384');return false;" title="2025년 스마트빌리지 보급 및 확산사업 목록(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년 스마트빌리지 보급 및 확산사업 목록
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.25</em>
+<em>조회수 74</em>
+</span>
+<span class="writer">
+<em>권선희</em>
+<em>AI융합확산팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28383','16010100','28383');return false;" title="스마트빌리지 보급 및 확산사업 수행관리 지침('23년~'26년)(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             스마트빌리지 보급 및 확산사업 수행관리 지침('23년~'26년)
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.25</em>
+<em>조회수 63</em>
+</span>
+<span class="writer">
+<em>권선희</em>
+<em>AI융합확산팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28382','16010100','28382');return false;" title="2025년 양자 테스트베드 양자인터넷 회선 지원 이용기관 모집(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년 양자 테스트베드 양자인터넷 회선 지원 이용기관 모집
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.25</em>
+<em>조회수 40</em>
+</span>
+<span class="writer">
+<em>정래진</em>
+<em>양자기술활용센터</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28375','16010100','28375');return false;" title="「2025년 공공데이터·AI 활용 기업 맞춤형 지원 사업」 참여기업 모집 안내(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             「2025년 공공데이터·AI 활용 기업 맞춤형 지원 사업」 참여기업 모집 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.24</em>
+<em>조회수 388</em>
+</span>
+<span class="writer">
+<em>정혜린</em>
+<em>공공지능데이터개방팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28368','16010100','28368');return false;" title="배리어프리 키오스크 제작/기술 컨설팅 지원 신청 안내(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             배리어프리 키오스크 제작/기술 컨설팅 지원 신청 안내
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.22</em>
+<em>조회수 210</em>
+</span>
+<span class="writer">
+<em>이동준</em>
+<em>디지털접근성팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28343','16010100','28343');return false;" title="공공기관 종합청렴도 평가 관련 개인정보 제3자 제공사항 알림-첨부파일 없음">
 <span class="subject searchItem">
                     
                         
@@ -1474,11 +1942,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     
-                        <em class="list_new">new</em>
-</span>
+                    </span>
 <span class="src">
 <em>2025.07.15</em>
-<em>조회수 59</em>
+<em>조회수 93</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -1487,7 +1954,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28339','16010100','28339');return false;" title="[공개세미나] ‘새 정부 AI법정책 과제와 제언’ 세미나 개최 안내(7.23.(수)14:00~17:30)(새 글)-첨부파일 없음">
+<a href="#view" onclick="doBbsFView('99835','28339','16010100','28339');return false;" title="[공개세미나] ‘새 정부 AI법정책 과제와 제언’ 세미나 개최 안내(7.23.(수)14:00~17:30)-첨부파일 없음">
 <span class="subject searchItem">
                     
                         
@@ -1552,11 +2019,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     
-                        <em class="list_new">new</em>
-</span>
+                    </span>
 <span class="src">
 <em>2025.07.14</em>
-<em>조회수 961</em>
+<em>조회수 1532</em>
 </span>
 <span class="writer">
 <em>박은영</em>
@@ -1565,7 +2031,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28338','16010100','28338');return false;" title="제13회 범정부 공공데이터 활용 창업경진대회 수정 통합공고(7.14.)(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28338','16010100','28338');return false;" title="제13회 범정부 공공데이터 활용 창업경진대회 수정 통합공고(7.14.)-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1628,11 +2094,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.07.14</em>
-<em>조회수 123</em>
+<em>조회수 224</em>
 </span>
 <span class="writer">
 <em>김보람</em>
@@ -1641,7 +2106,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28335','16010100','28335');return false;" title="2025년도 데이터 산업진흥 유공자 포상계획 공고(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28335','16010100','28335');return false;" title="2025년도 데이터 산업진흥 유공자 포상계획 공고-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1704,11 +2169,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.07.14</em>
-<em>조회수 167</em>
+<em>조회수 290</em>
 </span>
 <span class="writer">
 <em>김대규</em>
@@ -1716,391 +2180,10 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 </a>
 </li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28328','16010100','28328');return false;" title="『K-Digital Twin World Conference』 개최 안내(새 글)-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             『K-Digital Twin World Conference』 개최 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
-</span>
-<span class="src">
-<em>2025.07.11</em>
-<em>조회수 386</em>
-</span>
-<span class="writer">
-<em>김민준</em>
-<em>AI융합확산팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28327','16010100','28327');return false;" title="2025년 기업정보화통계조사 안내문(새 글)-첨부파일 없음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년 기업정보화통계조사 안내문
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                        <em class="list_new">new</em>
-</span>
-<span class="src">
-<em>2025.07.11</em>
-<em>조회수 82</em>
-</span>
-<span class="writer">
-<em>장세윤</em>
-<em>미래전략팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28318','16010100','28318');return false;" title="2025년 우선구매대상 지능정보제품 검증 시험평가 비용 지원 사업 공고-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년 우선구매대상 지능정보제품 검증 시험평가 비용 지원 사업 공고
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.07.09</em>
-<em>조회수 305</em>
-</span>
-<span class="writer">
-<em>이혜림</em>
-<em>디지털접근성팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28311','16010100','28311');return false;" title="2025년 KOREN(차세대 네트워크 선도 연구시험망) 이용설명회 안내-첨부파일 없음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년 KOREN(차세대 네트워크 선도 연구시험망) 이용설명회 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    
-                    
-                    
-                    </span>
-<span class="src">
-<em>2025.07.04</em>
-<em>조회수 274</em>
-</span>
-<span class="writer">
-<em>김지은</em>
-<em>네트워크전략팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28298','16010100','28298');return false;" title="2025년 디지털정부 영프론티어(Young Frontier) 과정 교육생 모집 안내-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년 디지털정부 영프론티어(Young Frontier) 과정 교육생 모집 안내
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.07.03</em>
-<em>조회수 1748</em>
-</span>
-<span class="writer">
-<em>김기택</em>
-<em>글로벌아카데미</em>
-</span>
-</a>
-</li>
 </ul>
 </div>
 <div class="pageNation">
-<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=179" onclick="doBbsFPag(179);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
+<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=180" onclick="doBbsFPag(180);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
 </div>
 </section>
 <!-- 0926수정 top버튼추가 --><!-- 0928 -->
