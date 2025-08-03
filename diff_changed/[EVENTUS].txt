@@ -70,10 +70,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'J86-Z3qrQ7pLzlOyRcjY6O5u1qrZh_cyTAzZgAAfSanJ6MEPo5wwFkSL19VcBS6UbL0c7b7q43l4JTRyLd5GqjmaRZYD-ZNqudQuIAA_Os_NQd8alhPeHsOHlQI27LXnPd8MOQ2'
+            'user_id': 'sdqzXSkrEzn1g3zH6kkKExmfAcG3KjKCPl5AK8GvwXNDCsKFFLvYHotb01cy-QKDbsHkhTuHahEhC71wAv7wHM_K88aTtn0PIxiqB5zEJXlrD03fOpsifl85z0p2Zs0HCR7fMQ2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'J86-Z3qrQ7pLzlOyRcjY6O5u1qrZh_cyTAzZgAAfSanJ6MEPo5wwFkSL19VcBS6UbL0c7b7q43l4JTRyLd5GqjmaRZYD-ZNqudQuIAA_Os_NQd8alhPeHsOHlQI27LXnPd8MOQ2'
+            'crm_id': 'sdqzXSkrEzn1g3zH6kkKExmfAcG3KjKCPl5AK8GvwXNDCsKFFLvYHotb01cy-QKDbsHkhTuHahEhC71wAv7wHM_K88aTtn0PIxiqB5zEJXlrD03fOpsifl85z0p2Zs0HCR7fMQ2'
         });
     </script>
 <script>
@@ -140,7 +140,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?40bad00bd1c5e2cb"></script><style>body {
+<script src="/Content/dist/js/preload.js?09f0dcd2062ac534"></script><style>body {
         opacity: 0;
       }
 
@@ -154,7 +154,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?40bad00bd1c5e2cb"></script><script defer="defer" src="/Content/dist/js/default.js?40bad00bd1c5e2cb"></script><link href="/Content/dist/css/default.css?40bad00bd1c5e2cb" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?09f0dcd2062ac534"></script><script defer="defer" src="/Content/dist/js/default.js?09f0dcd2062ac534"></script><link href="/Content/dist/css/default.css?09f0dcd2062ac534" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -767,19 +767,14 @@
 </script>
 <div id="uiToast">
 <ui-transition-root :show="isOpen" as="template" enter="transition-opacity duration-500" enter-from="opacity-0" enter-to="opacity-100" leave="transition-opacity duration-500" leave-from="opacity-100" leave-to="opacity-0">
-<div :class="[maxWidthClass,{
-            'sm:left-auto' : onLocation === null,
-            'mx-auto' : onLocation === 'center',
-            'justify-items-center' : widthAuto
-        }]" class="fixed left-0 right-0 top-0 z-[300] p-4 w-full">
+<div :class="[maxWidthClass]" class="fixed left-0 right-0 top-0 z-[300] p-4 w-full sm:left-auto">
 <div :class="{
                 'bg-success-50 border-success-300': theme === 'success',
                 'bg-danger-50 border-danger-300': theme === 'danger',
                 'bg-info-50 border-info-300': theme === 'info',
-                'bg-gray-50 border-gray-300' : theme === 'disabled' || !theme,
-                'absolute w-auto' : widthAuto,
-                'w-full' : !widthAuto
-            }" class="flex items-center px-4 py-5 rounded-md border">
+                'bg-gray-50 border-gray-300' : theme === 'disabled' || !theme
+            }" class="flex justify-between p-4 rounded-md border">
+<div class="flex items-center">
 <span class="mr-2.5 text-white">
 <template v-if="theme === 'success'">
 <svg class="w-6 h-6 fill-success-400" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -802,9 +797,15 @@
 </svg>
 </template>
 </span>
-<span>
-                    {{ message }}
-                </span>
+<span class="text-xs">
+                        {{ message }}
+                    </span>
+</div>
+<div class="flex items-center">
+<svg @click="isOpen = false" class="w-5 h-5 cursor-pointer text-gray-500" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
 </div>
 </div>
 </ui-transition-root>
@@ -820,7 +821,6 @@
                 onClose: null,
                 onLocation: null,
                 duration: 5000,
-                widthAuto: false,
             };
         }
         ui.createApp({
@@ -2409,7 +2409,7 @@
 <span v-if="language === 'ko'">공지사항</span>
 <span v-else="">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 6월 이벤터스 휴무일 안내 : 6/3(화), 6/6(금)</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 8월 ~ 2026년 1월 이벤터스 휴무일 안내</a>
 </div>
 </div>
 </div>
@@ -2678,7 +2678,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="kVvkwKgO9wUBMl9cflPB5ecz6O1PRSwF-yftI27bpkQMIVBemyz1p_AmAQJoksa7FzSZBUglvzOYbS3ngKin-AwzGvQ1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="sucXeX9YdmIVtrqwdGGM1AuedBGmZqmtiXUFhZToVzy8BRPe7WN7p8SpRqRJ3pId6igSFAZptiboimt028M0hxrfOFo1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4062,7 +4062,7 @@
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'J86-Z3qrQ7pLzlOyRcjY6O5u1qrZh_cyTAzZgAAfSanJ6MEPo5wwFkSL19VcBS6UbL0c7b7q43l4JTRyLd5GqjmaRZYD-ZNqudQuIAA_Os_NQd8alhPeHsOHlQI27LXnPd8MOQ2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, 'sdqzXSkrEzn1g3zH6kkKExmfAcG3KjKCPl5AK8GvwXNDCsKFFLvYHotb01cy-QKDbsHkhTuHahEhC71wAv7wHM_K88aTtn0PIxiqB5zEJXlrD03fOpsifl85z0p2Zs0HCR7fMQ2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4162,8 +4162,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":7259,"New_Start_Date":"2025-07-21T00:00:00","New_End_Date":"2025-07-31T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-07-21T18:33:39.004101","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/dc6bf40398414dce92f284943414282d.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/5f2f2cad96054c2d8d21fc2877bf470a.jpg","Click_Url":"https://www.kocca.kr/shortUrl/8cBq","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"총 상금 1억원! 참가기업 모집","BannerDescription":"콘텐츠 스타트업 글로벌 진출 오디션","BannerDate":"2025. 07. 07(월) ~ 2025. 07. 31(목)","BannerPlace":"온라인 접수"},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null}],
-                    searchResultBanners: [{"Id":"107990","CoverImageUrl":"/Image/govtech/107990/ProjectInfo/Cover/9669c3304b1947eea7c5380df242a474.jpg","Title":"2025년 GovTech 창업경진대회","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/govtech/TopLogoImage/c9fd8237a45a42f7b86b9e7e5fa140b7.png","EventType":"대회/공모전","Category":"창업","Category2":"스타트업","StartDate":"2025-07-11T10:00:00","CloseDate":"2025-08-18T10:00:00","RegisterStartDate":"2025-07-11T10:00:00","RegisterDueDate":"2025-08-18T10:00:00","ViewCount":439,"AppSubDomain":"govtech","IsSuper":false,"AppTitle":"GovTech 창업경진대회 ","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-07-10T15:30:01.029652","EventSystemType":"online","OnlineEventType":"other","ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":129482,"ProjectId":"107990","ProjectSubDomain":"govtech","TagId":3474,"Date":"2025-07-10T16:38:55.0381561","Sort":0,"Project":null,"Tag":null},{"Id":130083,"ProjectId":"107990","ProjectSubDomain":"govtech","TagId":1257,"Date":"2025-07-14T16:22:32.4074939","Sort":1,"Project":null,"Tag":null},{"Id":130084,"ProjectId":"107990","ProjectSubDomain":"govtech","TagId":16875,"Date":"2025-07-14T16:22:32.4074939","Sort":2,"Project":null,"Tag":null},{"Id":130085,"ProjectId":"107990","ProjectSubDomain":"govtech","TagId":97,"Date":"2025-07-14T16:22:32.4074939","Sort":3,"Project":null,"Tag":null},{"Id":130086,"ProjectId":"107990","ProjectSubDomain":"govtech","TagId":34,"Date":"2025-07-14T16:22:32.4074939","Sort":4,"Project":null,"Tag":null}],"pitId":7179,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/govtech/event/107990","CorrectionValue":0.0},{"Id":"106451","CoverImageUrl":"/Image/mustsafe0727/106451/ProjectInfo/Cover/19522bf40fb34e8393aedf7f953d01a6.jpg","Title":"명사 3인과 2030 청년들이 함께하는 민주주의 학술 포럼","State":"Start","AppTopLogoImageUrl":"/Image/mustsafe0727/4b6094fb39a741209a12aac556723c7c.png","EventType":"강연/세미나","Category":"인문/사회","Category2":null,"StartDate":"2025-08-15T12:00:00","CloseDate":"2025-08-15T17:00:00","RegisterStartDate":"2025-06-25T00:00:00","RegisterDueDate":"2025-08-06T00:00:00","ViewCount":5566,"AppSubDomain":"mustsafe0727","IsSuper":false,"AppTitle":"(사)중대안전보건예방협회","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 테헤란로 518","EventAddressTitle":"섬유센터빌딩 3층 이벤트홀","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-17T12:30:27.8410036","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":7130,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/106451/37969","CorrectionValue":0.0}],
+                    banners: [{"Id":7150,"New_Start_Date":"2025-07-18T00:00:00","New_End_Date":"2025-08-05T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-07-08T14:57:43.0639887","Support":false,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f8dde38950c04a2a808b3f57add42924.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d5614208dbed4bdea974fcdf6e8a4c3f.jpg","Click_Url":"https://event-us.kr/m/106451/38196","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"명사와 2030 청년이 함께하는","BannerDescription":"MZ 세대의 민주주의 학술포럼","BannerDate":"2025. 08. 15(금) 12:00","BannerPlace":"오프라인 행사"},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null}],
+                    searchResultBanners: [{"Id":"106451","CoverImageUrl":"/Image/mustsafe0727/106451/ProjectInfo/Cover/19522bf40fb34e8393aedf7f953d01a6.jpg","Title":"명사 3인과 2030 청년들이 함께하는 민주주의 학술 포럼","State":"Start","AppTopLogoImageUrl":"/Image/mustsafe0727/4b6094fb39a741209a12aac556723c7c.png","EventType":"강연/세미나","Category":"인문/사회","Category2":null,"StartDate":"2025-08-15T12:00:00","CloseDate":"2025-08-15T17:00:00","RegisterStartDate":"2025-06-25T00:00:00","RegisterDueDate":"2025-08-06T00:00:00","ViewCount":6494,"AppSubDomain":"mustsafe0727","IsSuper":false,"AppTitle":"(사)중대안전보건예방협회","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 테헤란로 518","EventAddressTitle":"섬유센터빌딩 3층 이벤트홀","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-06-17T12:30:27.8410036","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":7130,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/106451/37969","CorrectionValue":0.0},{"Id":"108898","CoverImageUrl":"/Image/leadershigh/108898/ProjectInfo/Cover/3026024e63fc4805a3b9bcc587c321f7.png","Title":"[5회차 집중 교육] 스타트업의 리더들을 위한 리더십 실무 A-Z","State":"Start","AppTopLogoImageUrl":"/Image/leadershigh/6d7aae2cbd4b4aa4bfd7c677ef987efb.png","EventType":"강연/세미나","Category":"경영","Category2":"HR","StartDate":"2025-08-19T19:30:00","CloseDate":"2025-10-14T22:00:00","RegisterStartDate":"2025-07-28T08:00:00","RegisterDueDate":"2025-08-11T10:00:00","ViewCount":259,"AppSubDomain":"leadershigh","IsSuper":false,"AppTitle":"리더스하이","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 마포구","EventAddress":"서울 마포구 마포대로 122","EventAddressTitle":"프론트원 공덕 18층","GroupRequestGroupMoney":275000,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-07-24T20:56:26.3172708","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":132606,"ProjectId":"108898","ProjectSubDomain":"leadershigh","TagId":686,"Date":"2025-07-25T20:16:42.2863121","Sort":0,"Project":null,"Tag":null},{"Id":132607,"ProjectId":"108898","ProjectSubDomain":"leadershigh","TagId":143,"Date":"2025-07-25T20:16:42.2863121","Sort":1,"Project":null,"Tag":null},{"Id":132608,"ProjectId":"108898","ProjectSubDomain":"leadershigh","TagId":3804,"Date":"2025-07-25T20:16:42.2863121","Sort":2,"Project":null,"Tag":null},{"Id":132609,"ProjectId":"108898","ProjectSubDomain":"leadershigh","TagId":90,"Date":"2025-07-25T20:16:42.2863121","Sort":3,"Project":null,"Tag":null},{"Id":132686,"ProjectId":"108898","ProjectSubDomain":"leadershigh","TagId":1223,"Date":"2025-07-27T23:38:59.2391255","Sort":4,"Project":null,"Tag":null}],"pitId":7293,"IsAdCheck":true,"AdOrder":2,"IsAdMark":true,"Url":"https://event-us.kr/leadershigh/event/108898","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,

@@ -43,7 +43,7 @@
 <link href="/favicon_ios.png" rel="apple-touch-icon" type="image/x-icon"/>
 <!-- 파이어폭스/오페라용 파비콘(png파일) -->
 <link href="/favicon.png" rel="icon" type="image/x-icon"/>
-<link href="/css/nia_kor/global.css?ver=20220825" rel="stylesheet" type="text/css"/>
+<link href="/css/nia_kor/global.css?ver=20250728" rel="stylesheet" type="text/css"/>
 <script src="/js/nia_kor/modernizr.custom.js" type="text/javascript"></script>
 <script src="/js/nia_kor/jquery-1.10.2.js" type="text/javascript"></script>
 <script src="/js/nia_kor/jquery-ui-1.11.4.js" type="text/javascript"></script>
@@ -133,7 +133,6 @@ $(document).ready(function(){
             $(this).find("input").attr("aria-hidden","false");
             //$(this).find("a").attr("aria-hidden","false");
             $(this).find("a").attr("aria-expanded","true");
-            $(this).find("a").append("<span class='inner-icon-search' aria-hidden='true'></span>");
     		$(this).find("input").focus();
     	}
     	else
@@ -145,7 +144,6 @@ $(document).ready(function(){
             $(this).find("label").attr("aria-hidden","true");
             $(this).find("input").attr("aria-hidden","true");
             $(this).find("a").attr("aria-expanded","false");
-            $(".inner-icon-search").remove();
             //$(this).find("a").attr("aria-hidden","true");
     	}
     });
@@ -1263,7 +1261,7 @@ function ignore(e){
 <form action="/site/nia_kor/ex/search/searchList.do" id="m_niaSearchVo" method="post" name="niaSearchVo">
 <label aria-hidden="true" class="lHidden" for="m_search" tabindex="-1">통합검색</label>
 <input aria-hidden="true" aria-label="통합검색" class="sb-search-input" id="m_search" name="query" placeholder="검색어를 입력하세요" style="display:none;" tabindex="-1" title="검색어 입력(모바일)" type="text"/>
-<a aria-expanded="false" class="sb-icon-search" href="javascript:void(0);" onclick="m_totalSearch(this);"><span class="hiddenTxt">검색하기</span></a>
+<a aria-expanded="false" class="sb-icon-search" href="javascript:void(0);" onclick="m_totalSearch(this);"><span class="hiddenTxt">검색하기</span><span aria-hidden="true" class="inner-icon-search"></span></a>
 </form>
 </div>
 </div>
@@ -1399,7 +1397,7 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,794</em>건
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,796</em>건
             (1페이지 / 180페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
@@ -1488,11 +1486,165 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2024.12.27</em>
-<em>조회수 1594</em>
+<em>조회수 1641</em>
 </span>
 <span class="writer">
 <em>장호영</em>
 <em>감사실</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28408','16010100','28408');return false;" title="2025년 초거대 AI 기반 플랫폼 이용지원 연결의 날 개최 및 주관기관 사전등록 결과 공지(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년 초거대 AI 기반 플랫폼 이용지원 연결의 날 개최 및 주관기관 사전등록 결과 공지
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.31</em>
+<em>조회수 255</em>
+</span>
+<span class="writer">
+<em>이민호</em>
+<em>AI서비스혁신팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','28406','16010100','28406');return false;" title="2025년도 1/4분기 한국지능정보사회진흥원 신규채용자와 재직 임직원과의 친인척 현황 공개(새 글)-첨부파일 없음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2025년도 1/4분기 한국지능정보사회진흥원 신규채용자와 재직 임직원과의 친인척 현황 공개
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    
+                    
+                    
+                        <em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2025.07.31</em>
+<em>조회수 94</em>
+</span>
+<span class="writer">
+<em>박연홍</em>
+<em>인사총무팀</em>
 </span>
 </a>
 </li>
@@ -1564,7 +1716,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.07.25</em>
-<em>조회수 74</em>
+<em>조회수 373</em>
 </span>
 <span class="writer">
 <em>권선희</em>
@@ -1640,7 +1792,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.07.25</em>
-<em>조회수 63</em>
+<em>조회수 159</em>
 </span>
 <span class="writer">
 <em>권선희</em>
@@ -1716,7 +1868,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.07.25</em>
-<em>조회수 40</em>
+<em>조회수 189</em>
 </span>
 <span class="writer">
 <em>정래진</em>
@@ -1725,7 +1877,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28375','16010100','28375');return false;" title="「2025년 공공데이터·AI 활용 기업 맞춤형 지원 사업」 참여기업 모집 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28375','16010100','28375');return false;" title="「2025년 공공데이터·AI 활용 기업 맞춤형 지원 사업」 참여기업 모집 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1788,11 +1940,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.07.24</em>
-<em>조회수 388</em>
+<em>조회수 1061</em>
 </span>
 <span class="writer">
 <em>정혜린</em>
@@ -1801,7 +1952,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','28368','16010100','28368');return false;" title="배리어프리 키오스크 제작/기술 컨설팅 지원 신청 안내(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','28368','16010100','28368');return false;" title="배리어프리 키오스크 제작/기술 컨설팅 지원 신청 안내-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1864,11 +2015,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2025.07.22</em>
-<em>조회수 210</em>
+<em>조회수 369</em>
 </span>
 <span class="writer">
 <em>이동준</em>
@@ -1945,7 +2095,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.07.15</em>
-<em>조회수 93</em>
+<em>조회수 109</em>
 </span>
 <span class="writer">
 <em>장호영</em>
@@ -2022,161 +2172,11 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2025.07.14</em>
-<em>조회수 1532</em>
+<em>조회수 1663</em>
 </span>
 <span class="writer">
 <em>박은영</em>
 <em>AI법제도센터</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28338','16010100','28338');return false;" title="제13회 범정부 공공데이터 활용 창업경진대회 수정 통합공고(7.14.)-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             제13회 범정부 공공데이터 활용 창업경진대회 수정 통합공고(7.14.)
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.07.14</em>
-<em>조회수 224</em>
-</span>
-<span class="writer">
-<em>김보람</em>
-<em>공공지능데이터기획팀</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','28335','16010100','28335');return false;" title="2025년도 데이터 산업진흥 유공자 포상계획 공고-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             2025년도 데이터 산업진흥 유공자 포상계획 공고
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2025.07.14</em>
-<em>조회수 290</em>
-</span>
-<span class="writer">
-<em>김대규</em>
-<em>데이터활용기술팀</em>
 </span>
 </a>
 </li>

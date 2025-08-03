@@ -1414,10 +1414,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="75342">
+<input id="totalCount" name="totalCount" type="hidden" value="75339">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>75,342건</span></h3>
+<h3 class="t_head">검색결과 <span>75,339건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1470,44 +1470,9 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2026년도 산업기술 RD사업 통합기술수요조사 공고" type="checkbox" value="1244626"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75342
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1244626&amp;flag=rndList" onclick="javascript:fn_view('1244626'); return false;" title="2026년도 산업기술 RD사업 통합기술수요조사 공고"> 2026년도 산업기술 RD사업 통합기술수요조사 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2025.08.04</td>
-<td data-title="마감일">2025.08.25</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-29
-                                
-
-                            </td>
-</tr>
-<tr>
 <td><input name="selectCheckList" title="2025년도 NRF 인터내셔널 모빌리티 신규과제 공모" type="checkbox" value="1244421"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75341
+                            75339
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1534,7 +1499,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-31
+                                    D-24
                                 
 
                             </td>
@@ -1542,7 +1507,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="공공부문 이용 클라우드 플랫폼 내 AI기능 개발지원 재공고" type="checkbox" value="1244581"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75340
+                            75338
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1569,7 +1534,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-17
+                                    D-10
                                 
 
                             </td>
@@ -1577,7 +1542,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="KIC유럽 센터장 공모" type="checkbox" value="1244507"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75339
+                            75337
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1604,7 +1569,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                    D-19
                                 
 
                             </td>
@@ -1612,7 +1577,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2025년도 한중핵심공동연구사업(Key Joint Research Program) 신규과제 공모" type="checkbox" value="1244427"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75338
+                            75336
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1639,7 +1604,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-31
+                                    D-24
                                 
 
                             </td>
@@ -1647,10 +1612,10 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="AI 팩토리 전문기업 선정을 위한 공고(2차)" type="checkbox" value="1244423"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75337
+                            75335
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1662,13 +1627,12 @@ $(function(){
 <td data-title="접수일">2025.07.22</td>
 <td data-title="마감일">2025.07.30</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 3</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2025년 고려인삼학회 연구과제 공모" type="checkbox" value="1244428"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75336
+                            75334
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1695,7 +1659,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                    D-19
                                 
 
                             </td>
@@ -1703,7 +1667,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2025년도 과학기술정보통신부『AI반도체 최적화 설계지원』사업 통합 공고" type="checkbox" value="1244356"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75335
+                            75333
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1730,7 +1694,9 @@ $(function(){
                                     
                                     
                                     
-                                    D-15
+                                        D - 8
+                                    
+                                    
                                 
 
                             </td>
@@ -1738,7 +1704,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="[대구] 2025년 대구특구 연구소기업 수요 맞춤형 성장 지원 사업(2차)" type="checkbox" value="1244281"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75334
+                            75332
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1765,7 +1731,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-29
+                                    D-22
                                 
 
                             </td>
@@ -1773,7 +1739,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2025년도 제1차 산업기술RD연구기획사업 신규지원 대상과제 재공고" type="checkbox" value="1244177"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75333
+                            75331
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1800,7 +1766,42 @@ $(function(){
                                     
                                     
                                     
-                                    D-22
+                                    D-15
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2025년도 투자연계형기후테크에너지초격차기술개발(RD)사업 하반기 신규지원 대상과제 공고" type="checkbox" value="1244426"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            75330
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1244426&amp;flag=rndList" onclick="javascript:fn_view('1244426'); return false;" title="2025년도 투자연계형기후테크에너지초격차기술개발(RD)사업 하반기 신규지원 대상과제 공고"> 2025년도 투자연계형기후테크에너지초격차기술개발(RD)사업 하반기 신규지원 대상과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">산업통상자원부</td>
+<td data-title="접수일">2025.07.21</td>
+<td data-title="마감일">2025.08.18</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-15
                                 
 
                             </td>
@@ -1816,7 +1817,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7535" onclick="fn_search(7535);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7534" onclick="fn_search(7534);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
