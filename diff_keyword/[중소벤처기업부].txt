@@ -23,18 +23,18 @@
 <script src="/js/dev/AssertUtil.js"></script>
 <script src="/libs/jquery/gioinfra-jquery-3.7.1_new.js"></script>
 <script src="/libs/swiper/swiper11.1.1_new.js"></script>
-<link href="/libs/swiper/swiper11.1.1_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
+<link href="/libs/swiper/swiper11.1.1_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
 <script src="/libs/scrollbar/scrollbar_new.js"></script>
-<link href="/libs/scrollbar/scrollbar_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
-<link href="/libs/gioSelect/gioSelect-1.0.1_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
-<link href="/libs/datepicker/datepicker_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
-<link href="/css/pattern_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
-<link href="/css/style_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
-<link href="/css/main_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
-<link href="/css/board_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
+<link href="/libs/scrollbar/scrollbar_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
+<link href="/libs/gioSelect/gioSelect-1.0.1_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
+<link href="/libs/datepicker/datepicker_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
+<link href="/css/pattern_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
+<link href="/css/style_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
+<link href="/css/main_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
+<link href="/css/board_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
 <script src="/js/common_new.js"></script>
 <script src="/js/main_new.js"></script>
-<link href="/css/sub_new.css?version=1754868422396" rel="stylesheet" type="text/css"/>
+<link href="/css/sub_new.css?version=1755473181049" rel="stylesheet" type="text/css"/>
 <script src="/js/sub_new.js"></script>
 <script src="/js/pagination.js"></script>
 <script src="/js/jquery.printarea.js"></script>
@@ -1251,7 +1251,7 @@ $(document).ready(function() {
 <input id="recordCountPerPage" name="recordCountPerPage" type="hidden" value="10"/>
 <input id="sort" name="sort" type="hidden" value=""/>
 <input id="ext6" name="ext6" type="hidden" value=""/>
-<input id="bcIdx" name="bcIdx" type="hidden" value="1060817"/>
+<input id="bcIdx" name="bcIdx" type="hidden" value="1060932"/>
 <input name="SearchFirstYn" type="hidden" value="N"/>
 <div id="contents_inner">
 <div class="search_box">
@@ -1553,8 +1553,8 @@ $(document).ready(function() {
 <!-- 게시판 요약 정보 및 소팅 옵션 S -->
 <div class="board_support">
 <ul class="board_count">
-<li class="all_count">전체 : <span>5,659</span>건</li>
-<li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">566</span></li>
+<li class="all_count">전체 : <span>5,661</span>건</li>
+<li class="now_count">현재 페이지 : <span class="num">1</span>/<span class="all_num">567</span></li>
 </ul>
 </div>
 <div class="board">
@@ -1583,6 +1583,160 @@ $(document).ready(function() {
 <tbody>
 <tr class="">
 <td>
+										5661
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1060932','16010100','1060932');return false;" title="벤처투자회사 등록취소">
+										
+										벤처투자회사 등록취소
+								</a></td>
+<td class="cd_subject"><span>투자관리감독과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								event.stopPropagation();
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="pdf" href="#">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060932&amp;cbIdx=126&amp;streFileNm=ea7192e4-a97d-48d3-960e-17e94d667b0a.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</img></a></td>
+<td><span class="text2Line">2025.08.14</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br>제2025-458호</br></span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1060932','16010100','1060932');return false;">
+<div class="subject">
+<span>벤처투자회사 등록취소</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>투자관리감독과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													event.stopPropagation();
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060932&amp;cbIdx=126&amp;streFileNm=ea7192e4-a97d-48d3-960e-17e94d667b0a.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</img></span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.08.14</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>중소벤처기업부공고 제2025-458호</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
+										5660
+									</td>
+<td class="subject" style="text-align:left;">
+<a href="#view" onclick="doBbsFView('126','1060907','16010100','1060907');return false;" title="지역중소기업 지원기관 지정에 관한 규정 일부개정고시안 행정예고">
+										
+										지역중소기업 지원기관 지정에 관한 규정 일부개정고시안 행정예고
+								</a></td>
+<td class="cd_subject"><span>지역혁신정책과</span></td>
+<td class="attached-files" onclick="
+							$(this).find('.single-file').each(function(){
+								event.stopPropagation();
+								const href = $(this).attr('data-href');
+								if (href) {
+									const a = document.createElement('a');
+									a.href = href
+									a.download = 'download';
+									a.style.display = 'none';
+									document.body.appendChild(a);
+									a.click();
+									document.body.removeChild(a);
+								}
+							})">
+<a class="attach-file pdf" data-file-type="hwpx" href="#">
+<img alt="첨부파일 모두 다운로드" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060907&amp;cbIdx=126&amp;streFileNm=1c6131df-34f6-4325-b259-ede33e46bca0.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060907&amp;cbIdx=126&amp;streFileNm=ffba9b20-8c25-4834-ac8f-4211c22e1544.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</a></td>
+<td><span class="text2Line">2025.08.13</span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-461호</span></td>
+<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
+<td class="mobile">
+<a href="#" onclick="doBbsFView('126','1060907','16010100','1060907');return false;">
+<div class="subject">
+<span>지역중소기업 지원기관 지정에 관한 규정 일부개정고시안 행정예고</span>
+</div>
+<div class="info">
+<ul>
+<li>
+<span>담당부서</span>
+<span>지역혁신정책과</span>
+</li>
+<li class="attached-files" onclick="
+												$(this).find('.single-file').each(function(){
+													event.stopPropagation();
+													const href = $(this).attr('data-href');
+													if (href) {
+														const a = document.createElement('a');
+														a.href = href
+														a.download = 'download';
+														a.style.display = 'none';
+														document.body.appendChild(a);
+														a.click();
+														document.body.removeChild(a);
+													}
+												})" title="모든 파일 내려받기">
+<span>첨부</span>
+<span>
+<img alt="첨부파일 모두 다운로드" class="attach-file-icon" src="/images/board/icon_attached-files-all.svg"/>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060907&amp;cbIdx=126&amp;streFileNm=1c6131df-34f6-4325-b259-ede33e46bca0.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060907&amp;cbIdx=126&amp;streFileNm=ffba9b20-8c25-4834-ac8f-4211c22e1544.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
+</span>
+</li>
+<li>
+<span>등록일</span>
+<span>2025.08.13</span>
+</li>
+<li>
+<span>공고번호</span>
+<span>중소벤처기업부공고 제2025-461호</span>
+</li>
+</ul>
+</div>
+</a>
+</td>
+<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
+</tr>
+<tr class="">
+<td>
 										5659
 									</td>
 <td class="subject" style="text-align:left;">
@@ -1606,11 +1760,11 @@ $(document).ready(function() {
 								}
 							})">
 <a class="attach-file pdf" data-file-type="hwpx" href="#">
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1060817&amp;cbIdx=126&amp;streFileNm=ac2a7053-028c-4910-924a-8600ec198451.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</img></a></td>
+</a></td>
 <td><span class="text2Line">2025.08.07</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br>제2025-448호</br></span></td>
+<td><span class="text2Line">중소벤처기업부공고<br/>제2025-448호</span></td>
 <!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
 <td class="mobile">
 <a href="#" onclick="doBbsFView('126','1060817','16010100','1060817');return false;">
@@ -1639,9 +1793,9 @@ $(document).ready(function() {
 												})" title="모든 파일 내려받기">
 <span>첨부</span>
 <span>
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg">
+<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
 <span class="single-file" data-href="/common/board/Download.do?bcIdx=1060817&amp;cbIdx=126&amp;streFileNm=ac2a7053-028c-4910-924a-8600ec198451.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</img></span>
+</span>
 </li>
 <li>
 <span>등록일</span>
@@ -2195,164 +2349,12 @@ $(document).ready(function() {
 </td>
 <!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
 </tr>
-<tr class="">
-<td>
-										5651
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1060118','16010100','1060118');return false;" title="중소기업특별지원지역 지정(중소벤처기업부공고 제2025-402호)">
-										
-										중소기업특별지원지역 지정(중소벤처기업부공고 제2025-402호)
-								</a></td>
-<td class="cd_subject"><span>기업구조개선과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								event.stopPropagation();
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="pdf" href="#">
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060118&amp;cbIdx=126&amp;streFileNm=a605a1d2-7c20-4a36-b0dd-61c309941967.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</a></td>
-<td><span class="text2Line">2025.07.08</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-402호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1060118','16010100','1060118');return false;">
-<div class="subject">
-<span>중소기업특별지원지역 지정(중소벤처기업부공고 제2025-402호)</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>기업구조개선과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													event.stopPropagation();
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1060118&amp;cbIdx=126&amp;streFileNm=a605a1d2-7c20-4a36-b0dd-61c309941967.pdf" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.07.08</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>중소벤처기업부공고 제2025-402호</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
-<tr class="">
-<td>
-										5650
-									</td>
-<td class="subject" style="text-align:left;">
-<a href="#view" onclick="doBbsFView('126','1059695','16010100','1059695');return false;" title="2025년 중소기업 R&amp;D 우수성과 50선 모집 공고">
-										
-										2025년 중소기업 R&amp;D 우수성과 50선 모집 공고
-								</a></td>
-<td class="cd_subject"><span>기술개발과</span></td>
-<td class="attached-files" onclick="
-							$(this).find('.single-file').each(function(){
-								event.stopPropagation();
-								const href = $(this).attr('data-href');
-								if (href) {
-									const a = document.createElement('a');
-									a.href = href
-									a.download = 'download';
-									a.style.display = 'none';
-									document.body.appendChild(a);
-									a.click();
-									document.body.removeChild(a);
-								}
-							})">
-<a class="attach-file pdf" data-file-type="hwpx" href="#">
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1059695&amp;cbIdx=126&amp;streFileNm=90a4b8bc-05e4-4996-b197-f3667029878c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</a></td>
-<td><span class="text2Line">2025.06.23</span></td>
-<td><span class="text2Line">중소벤처기업부공고<br/>제2025-377호</span></td>
-<!-- 모바일 내용(구조 변경으로 인해 별도 마크업 처리) S -->
-<td class="mobile">
-<a href="#" onclick="doBbsFView('126','1059695','16010100','1059695');return false;">
-<div class="subject">
-<span>2025년 중소기업 R&amp;D 우수성과 50선 모집 공고</span>
-</div>
-<div class="info">
-<ul>
-<li>
-<span>담당부서</span>
-<span>기술개발과</span>
-</li>
-<li class="attached-files" onclick="
-												$(this).find('.single-file').each(function(){
-													event.stopPropagation();
-													const href = $(this).attr('data-href');
-													if (href) {
-														const a = document.createElement('a');
-														a.href = href
-														a.download = 'download';
-														a.style.display = 'none';
-														document.body.appendChild(a);
-														a.click();
-														document.body.removeChild(a);
-													}
-												})" title="모든 파일 내려받기">
-<span>첨부</span>
-<span>
-<img alt="첨부파일 다운로드" class="attach-file-icon" src="/images/board/ico_file.svg"/>
-<span class="single-file" data-href="/common/board/Download.do?bcIdx=1059695&amp;cbIdx=126&amp;streFileNm=90a4b8bc-05e4-4996-b197-f3667029878c.hwpx" style="display: none; width: 0 !important; height: 0 !important;"></span>
-</span>
-</li>
-<li>
-<span>등록일</span>
-<span>2025.06.23</span>
-</li>
-<li>
-<span>공고번호</span>
-<span>중소벤처기업부공고 제2025-377호</span>
-</li>
-</ul>
-</div>
-</a>
-</td>
-<!--// 모바일 내용(구조 변경으로 인해 별도 마크업 처리) E -->
-</tr>
 </tbody>
 </table>
 </div>
 <div class="btn-area" style="text-align: right;">
 </div>
-<div class="pagination w-page"><div class="page-links"><a class="page-link active" href="javascript:;" title="현재 페이지">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(3);return false;">3</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(4);return false;">4</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(566);return false;">566</a></div><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="pagination m-page"><div class="page-navis"><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="page-links"><a class="page-link active" href="javascript:;" title="현재 페이지">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(566);return false;">566</a></div></div>
+<div class="pagination w-page"><div class="page-links"><a class="page-link active" href="javascript:;" title="현재 페이지">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(3);return false;">3</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(4);return false;">4</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(567);return false;">567</a></div><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="pagination m-page"><div class="page-navis"><a class="page-navi next" href="javascript:;" onclick="doBbsFPag(2);return false;">다음</a></div><div class="page-links"><a class="page-link active" href="javascript:;" title="현재 페이지">1</a><a class="page-link" href="javascript:;" onclick="doBbsFPag(2);return false;">2</a><span class="page-link link-dot"></span><a class="page-link" href="javascript:;" onclick="doBbsFPag(567);return false;">567</a></div></div>
 </div>
 </div>
 </input></input></form>
