@@ -54,7 +54,7 @@ $(function(e) {
 // 도메인
 var SITE_DOMAIN = 'https://www.aitimes.com'
 	,CDN_DOMAIN = 'https://cdn.aitimes.com'
-	,___currentTime	= 1755473126;
+	,___currentTime	= 1756077838;
 
 // 즐겨찾기 스크립트
 function bookmark() {
@@ -183,7 +183,7 @@ wcs_do();
 <div class="gl-banner">
 <!--제호우측--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/59.js?1754027065"></script><!--//제호우측--> </div>
 <div class="gl-banner etc">
-<div class="gl-updated">발행일: 2025-08-18 08:03 (월) </div>
+<div class="gl-updated">발행일: 2025-08-25 08:03 (월) </div>
 <div class="etc-list">
 <a class="item" href="https://www.aitimes.com/member/login.html" target="_top">로그인</a>
 <div class="selec-box">
@@ -507,17 +507,82 @@ $(function() {
 <header class="altlist-header">
 <article class="altlist-header-item">
 <h1 class="altlist-title">
-				정책    			<small class="altlist-count">총 <strong>1,402</strong>건의 기사가 있습니다.</small>
+				정책    			<small class="altlist-count">총 <strong>1,407</strong>건의 기사가 있습니다.</small>
 </h1>
 <div class="altlist-btn-group">
-<a aria-label="제목형" class="altlist-btn altlist-btn-list active" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1402&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E" title="제목형:제목과 간략정보만 보실 수 있습니다."></a>
-<a aria-label="요약형" class="altlist-btn altlist-btn-webzine" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1402&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."></a>
-<a aria-label="포토형" class="altlist-btn altlist-btn-tile" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1402&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."></a>
+<a aria-label="제목형" class="altlist-btn altlist-btn-list active" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1407&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E" title="제목형:제목과 간략정보만 보실 수 있습니다."></a>
+<a aria-label="요약형" class="altlist-btn altlist-btn-webzine" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1407&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."></a>
+<a aria-label="포토형" class="altlist-btn altlist-btn-tile" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=1407&amp;sc_section_code=S1N1&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."></a>
 </div>
 </article>
 </header>
 <article class="altlist-body" id="section-list">
 <ul class="altlist-text">
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201755" target="_top">
+								AI 스타트업 뉴욕 진출 정부 지원 사업에 10개사 선정
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">08-24 16:25</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201727" target="_top">
+								정부, 'AI 대전환' 15개 과제 발표..."피지컬 AI 1등 국가 도약"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">08-22 16:58</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201732" target="_top">
+								K-온디바이스 AI 반도체 기술개발 사업 예비타당성조사 면제
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">08-22 16:00</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201631" target="_top">
+								GIST–MIT 글로벌 R&amp;D 협력 허브 출범...인간중심 피지컬AI 연구센터 설립
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">08-20 07:35</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201623" target="_top">
+								ETRI, 레드팀 테스트·신뢰성 라벨 ISO 표준 착수
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">박수빈 기자</div>
+<div class="altlist-info-item">08-19 16:30</div>
+</div>
+</li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
@@ -713,71 +778,6 @@ $(function() {
 <div class="altlist-info-item">07-24 12:29</div>
 </div>
 </li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=200832" target="_top">
-								'국대 AI 모델' 구축에 컨소시엄 15곳 신청..."기대 이상 뜨거운 경쟁"
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">장세민 기자</div>
-<div class="altlist-info-item">07-21 19:45</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=200835" target="_top">
-								배경훈 과기부 장관, 취임 첫 행보..."AI 바이오 분야 육성할 것"
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">박수빈 기자</div>
-<div class="altlist-info-item">07-21 16:45</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=200736" target="_top">
-								배경훈 과기부 장관 취임..."파운데이션 모델 개발·인재 확보 힘쓸 것"
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">장세민 기자</div>
-<div class="altlist-info-item">07-17 16:35</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=200706" target="_top">
-								과기부, ‘국가 AI 연구거점’ 방문...연구개발 방향 논의
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">장세민 기자</div>
-<div class="altlist-info-item">07-16 17:35</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=200704" target="_top">
-								중기부, 빅테크-스타트업 ‘LLM 기반 AX 협업’ 지원
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">장세민 기자</div>
-<div class="altlist-info-item">07-16 17:00</div>
-</div>
-</li>
 </ul>
 <li class="altlist-text-item blind" id="sample">
 <div class="altlist-text-group">
@@ -796,7 +796,7 @@ $(function() {
 	var params = {};
 
 	params['sc_section_code'] = "S1N1";
-params['total'] = "1402";
+params['total'] = "1407";
 params['list_per_page'] = "20";
 params['page_per_page'] = "10";
 params['page'] = "1";
@@ -820,43 +820,43 @@ params['list_page_limit'] = "200";
 <header class="header"><strong>Most<br/>Popular</strong></header>
 <section class="content"><style>#skin-18 { --gutter-y: 0.875rem; --nd-atx-title-font-size: 14px; --nd-atx-title-line-height: 22px; --item-border: 1px solid var(--global-border-color, #e8e8e9); } #skin-18 > .item { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem; } #skin-18 > .item::after { content: normal; } #skin-18 > .item .number { flex: 0 0 auto; width: 24px; height: 24px; max-width: 100%; font-size: .875rem; font-weight: 500; line-height: 24px; text-align: center; color: #fff; background-color: #fff; } #skin-18 > .item > *:not(.number) { flex: 1 1 0; min-width: 0; max-width: 100%; } #skin-18 > .item:nth-child(-n+3) { /*min-height: var(--item-min-height, 3.9375rem);*/ } #skin-18 > .item + .item { margin-top: var(--gutter-y); }</style><div class="auto-article" id="skin-18"><div class="item">
 <div class="number user-bg">1</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201510" target="_top"><div class="auto-titles line-x2 onload">구글, 제미나이에 '메모리' 추가..."개인화 본격 시작"</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201712" target="_top"><div class="auto-titles line-x2 onload">구글, '픽셀폰' 칩 제조 삼성에서 TSMC로 교체</div></a>
 </div>
 <div class="item">
 <div class="number user-bg">2</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201491" target="_top"><div class="auto-titles line-x2 onload">머스크, GPT-5 논란 속 ‘그록 4’ 전체 이용자에 무료 개방</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201627" target="_top"><div class="auto-titles line-x2 onload">AI가 '자아성찰'하는 새로운 강화 학습법 ‘GEPA’ 등장</div></a>
 </div>
 <div class="item">
 <div class="number user-bg">3</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201553" target="_top"><div class="auto-titles line-x2 onload">알트먼 "컴퓨팅 한계로 'GPT-5' 성능 낮춰 출시"</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201644" target="_top"><div class="auto-titles line-x2 onload">[8월20일] "AI 개발에 박사 학위 필요 없어...응용 분야가 더 유망"</div></a>
 </div>
 <div class="item">
 <div class="number user-point">4</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201455" target="_top"><div class="auto-titles line-x2 onload">"어이없고 유치한" AI 밈 '브레인롯'...전 세계 어린 층으로 확산</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201651" target="_top"><div class="auto-titles line-x2 onload">알리바바, AI 이미지 편집 모델 오픈 소스 출시..."포토샵 위협하는 수준"</div></a>
 </div>
 <div class="item">
 <div class="number user-point">5</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201514" target="_top"><div class="auto-titles line-x2 onload">[8월14일] '초지능 팀' 구성으로 분열된 메타...기존 인원 불만 폭발</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201575" target="_top"><div class="auto-titles line-x2 onload">[8월18일] GPT-5, AGI에서 애플리케이션으로 AI 개발 본질 바꿔</div></a>
 </div>
 <div class="item">
 <div class="number user-point">6</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201521" target="_top"><div class="auto-titles line-x2 onload">머스크, 챗GPT에 질문..."알트먼과 나, 누가 더 믿을 만한가"</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201682" target="_top"><div class="auto-titles line-x2 onload">메타, 기존 '라마' 개발 팀 해체하고 비 개발 부서로 인원 배치</div></a>
 </div>
 <div class="item">
 <div class="number user-point">7</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201539" target="_top"><div class="auto-titles line-x2 onload">구글, 초경량·고효율 온디바이스 모델 '젬마3 270M' 공개</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201660" target="_top"><div class="auto-titles line-x2 onload">"LLM 추론, 학습 데이터 미포함 문제서 무용지물...진짜 '생각' 아니야"</div></a>
 </div>
 <div class="item">
 <div class="number user-point">8</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201404" target="_top"><div class="auto-titles line-x2 onload">업스테이지 "OCR 수요 급증...데이터 자산화 필수 도구"</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201746" target="_top"><div class="auto-titles line-x2 onload">"GPT-5는 LLM '한계' 보여주는 사례...에이전트가 돌파구 될 것"</div></a>
 </div>
 <div class="item">
 <div class="number user-point">9</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201535" target="_top"><div class="auto-titles line-x2 onload">GPT-5, '바이브 코딩' 기본 모델로 잇달아 채택..."기업 확장 빨라"</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201676" target="_top"><div class="auto-titles line-x2 onload">[8월21일] MIT "생성 AI 도입 기업 95%가 매출 성장 효과 못 봐...그 이유는"</div></a>
 </div>
 <div class="item">
 <div class="number user-point">10</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201453" target="_top"><div class="auto-titles line-x2 onload">'바이브 코딩' 깃허브, CEO 사임으로 MS에 통합</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201702" target="_top"><div class="auto-titles line-x2 onload">[8월22일] 구글이 돈 안 되는 픽셀폰을 계속 내놓는 이유는..."제미나이 위한 것"</div></a>
 </div>
 </div></section>
 </article><div class="box-margins" style="margin-bottom:30px;"></div><!--우측단--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/58.js?1755046153"></script><!--//우측단--><div class="marbtm-20"></div><article class="box-skin idx--box">
@@ -864,30 +864,30 @@ params['list_page_limit'] = "200";
 <section class="content"><style>#skin-20 { --nd-atx-section-margin: 0 0 0.375rem; --nd-atx-section-color: var(--nd-primary, #fff); --nd-atx-title-color: #fff; --frame-width: 4rem; --gutter-y: 1.25rem; --item-border: 1px solid rgba(255,255,255,.25); } #skin-20 > .item { display: flex; flex-direction: row; align-items: center; gap: 1.25rem; } #skin-20 > .item::after { content: normal; } #skin-20 > .item .frame { flex: 0 0 auto; width: var(--frame-width); max-width: 100%; } #skin-20 > .item .auto-content { flex: 1 1 0; min-width: 0; max-width: 100%; } #skin-20 > .item + .item { margin-top: var(--gutter-y); padding-top: var(--gutter-y); border-top: var(--item-border); } #skin-20 .frame { align-self: flex-end; }</style><div class="auto-article" id="skin-20"><div class="item">
 <div class="auto-content">
 <div class="auto-section line-x1 fw-medium">AI WEBTOON</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201545" target="_top"><div class="auto-titles size-15 line-x3 onload">NOT MY BLOOD 03</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201742" target="_top"><div class="auto-titles size-15 line-x3 onload">NOT MY BLOOD 04</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201545" target="_top"><div class="auto-images thumb"><img alt="NOT MY BLOOD 03" height="87" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250818/201545_201906_242_1755320563_120.jpg" width="120"/></div></a>
-</div>
-<div class="item">
-<div class="auto-content">
-<div class="auto-section line-x1 fw-medium">Chat with AI</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201414" target="_top"><div class="auto-titles size-15 line-x3 onload">'그록'의 AI 컴패니언 애니와 발렌타인의 한국어 실력은?</div></a>
-</div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201414" target="_top"><div class="auto-images thumb"><img alt="'그록'의 AI 컴패니언 애니와 발렌타인의 한국어 실력은?" height="80" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250818/201414_201755_2214_1754886134_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201742" target="_top"><div class="auto-images thumb"><img alt="NOT MY BLOOD 04" height="100" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250825/201742_202168_3549_1755927349_120.jpg" width="120"/></div></a>
 </div>
 <div class="item">
 <div class="auto-content">
 <div class="auto-section line-x1 fw-medium">기고</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201544" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI의 역사] 70 음성인식과 자연어이해 그리고 트랜스포머 – AI 비서의 세부 기술의 발전 (상)</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201743" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI의 역사] 72 DBN의 탄생과 딥러닝의 대부 – 제프리 힌튼</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201544" target="_top"><div class="auto-images thumb"><img alt="[AI의 역사] 70 음성인식과 자연어이해 그리고 트랜스포머 – AI 비서의 세부 기술의 발전 (상)" height="64" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250818/201544_201903_4457_1755319498_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201743" target="_top"><div class="auto-images thumb"><img alt="[AI의 역사] 72 DBN의 탄생과 딥러닝의 대부 – 제프리 힌튼" height="80" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250825/201743_202177_166_1755936966_120.jpg" width="120"/></div></a>
+</div>
+<div class="item">
+<div class="auto-content">
+<div class="auto-section line-x1 fw-medium">포커스</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201714" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI 이슈트렌드] 49세 김종국 결혼에 압도적 관심...예비신부에 관심</div></a>
+</div>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201714" target="_top"><div class="auto-images thumb"><img alt="[AI 이슈트렌드] 49세 김종국 결혼에 압도적 관심...예비신부에 관심" height="90" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250825/201714_202134_5614_1755842175_120.jpg" width="120"/></div></a>
 </div>
 <div class="item">
 <div class="auto-content">
 <div class="auto-section line-x1 fw-medium">뉴스 브리핑</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=201514" target="_top"><div class="auto-titles size-15 line-x3 onload">[8월14일] '초지능 팀' 구성으로 분열된 메타...기존 인원 불만 폭발</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=201702" target="_top"><div class="auto-titles size-15 line-x3 onload">[8월22일] 구글이 돈 안 되는 픽셀폰을 계속 내놓는 이유는..."제미나이 위한 것"</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201514" target="_top"><div class="auto-images thumb"><img alt="[8월14일] '초지능 팀' 구성으로 분열된 메타...기존 인원 불만 폭발" height="79" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250818/201514_201862_313_1755147793_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=201702" target="_top"><div class="auto-images thumb"><img alt='[8월22일] 구글이 돈 안 되는 픽셀폰을 계속 내놓는 이유는..."제미나이 위한 것"' height="62" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20250825/201702_202117_3316_1755829996_120.jpg" width="120"/></div></a>
 </div>
 </div></section>
 </article><div class="box-margins" style="margin-bottom:40px;"></div>
