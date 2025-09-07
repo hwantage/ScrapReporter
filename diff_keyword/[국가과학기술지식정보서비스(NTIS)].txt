@@ -1414,10 +1414,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="75394">
+<input id="totalCount" name="totalCount" type="hidden" value="75395">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>75,394건</span></h3>
+<h3 class="t_head">검색결과 <span>75,395건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1470,12 +1470,33 @@ $(function(){
 </thead>
 <tbody>
 <tr>
+<td><input name="selectCheckList" title="2025년도 과학기술혁신정책지원사업 위탁연구과제 공모" type="checkbox" value="1247262"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            75395
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1247262&amp;flag=rndList" onclick="javascript:fn_view('1247262'); return false;" title="2025년도 과학기술혁신정책지원사업 위탁연구과제 공모"> 2025년도 과학기술혁신정책지원사업 위탁연구과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2025.09.01</td>
+<td data-title="마감일">2025.09.10</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 3</span>
+</td>
+</tr>
+<tr>
 <td><input name="selectCheckList" title="[조달청 사전규격공개] (RFP3-2-1) 환자맞춤형 박테리오파지 치료 추진전략 수립 및 치료용 파지선별 표준 프로토콜 개발" type="checkbox" value="1247068"/></td>
 <td data-title="순번" id="mo_disnone_td1">
                             75394
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1487,7 +1508,6 @@ $(function(){
 <td data-title="접수일">2025.08.28</td>
 <td data-title="마감일">2025.09.02</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 2</span>
 </td>
 </tr>
 <tr>
@@ -1520,7 +1540,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-30
+                                    D-23
                                 
 
                             </td>
@@ -1546,22 +1566,8 @@ $(function(){
 <td data-title="접수일">과제별 상이</td>
 <td data-title="마감일">2025.09.10</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
+<span style="color: red">D - 3</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="[대구] 2025년 대구특구 연구소기업 수요 맞춤형 성장 지원 사업 연장 공고" type="checkbox" value="1246765"/></td>
@@ -1581,22 +1587,8 @@ $(function(){
 <td data-title="접수일">2025.08.26</td>
 <td data-title="마감일">2025.09.10</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
+<span style="color: red">D - 3</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2026년 개인정보 연구개발 과제기획위원 공모 안내(~9.12.(금))" type="checkbox" value="1246616"/></td>
@@ -1616,22 +1608,8 @@ $(function(){
 <td data-title="접수일">2025.08.21</td>
 <td data-title="마감일">2025.09.12</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-12
-                                
-
-                            </td>
+<span style="color: red">D - 5</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="첨단혁신장비 중장기 기술개발 로드맵 수립을 위한 수요조사(2차)" type="checkbox" value="1246510"/></td>
@@ -1651,7 +1629,6 @@ $(function(){
 <td data-title="접수일">2025.08.20</td>
 <td data-title="마감일">2025.08.31</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - day</span>
 </td>
 </tr>
 <tr>
@@ -1680,7 +1657,7 @@ $(function(){
                             75387
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1692,7 +1669,6 @@ $(function(){
 <td data-title="접수일">2025.08.14</td>
 <td data-title="마감일">2025.09.04</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 4</span>
 </td>
 </tr>
 <tr>
@@ -1725,42 +1701,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-30
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="서울지역 환경현안 해결을 위한 연구사업 과제 공모" type="checkbox" value="1246222"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75385
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1246222&amp;flag=rndList" onclick="javascript:fn_view('1246222'); return false;" title="서울지역 환경현안 해결을 위한 연구사업 과제 공모"> 서울지역 환경현안 해결을 위한 연구사업 과제 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">환경부</td>
-<td data-title="접수일">2025.08.14</td>
-<td data-title="마감일">2025.09.19</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-19
+                                    D-23
                                 
 
                             </td>
