@@ -20,7 +20,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="/contents/css/ie/v9.css" /><![endif]-->
 <script src="/contents/js/jquery-3.6.0.js"></script>
 <script src="/contents/js/common.js"></script>
-<script src="/contents/js/func.js?ver=2025-09-15"></script>
+<script src="/contents/js/func.js?ver=2025-09-22"></script>
 <script src="/contents/js/jquery-3.6.0.min.js"></script>
 <script src="/contents/js/action.js"></script>
 <link href="/contents/css/sub.css" media="all" rel="stylesheet"/>
@@ -462,7 +462,7 @@ function fncSelect(obj){
 </div>
 </form><div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>3337건</strong></span>
+<span>총 게시물 : <strong>3336건</strong></span>
 <span>현재페이지 : <strong>1/334.0</strong></span>
 <select class="ListNum" onchange="javascript:chgPageSize(this, '/data/seminar/list.do?pageSize=10&amp;boardParam1=ko&amp;searchTarget2=');" title="건 수 선택">
 <option selected="selected" value="10">10개씩 보기</option>
@@ -493,23 +493,39 @@ function fncSelect(obj){
 </thead>
 <tbody>
 <tr>
-<th data-cell-header="번호" scope="row">3337</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14470&amp;boardParam1=ko&amp;searchTarget2=">국내// AI 반도체 기술 혁신 및 시장 대전환 / 한국</a></td>
-<td data-cell-header="행사기간">2025-10-24~2025-10-24</td>
-<td data-cell-header="접수기간">2025-09-02~2025-10-23</td>
-</tr>
-<tr>
 <th data-cell-header="번호" scope="row">3336</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14475&amp;boardParam1=ko&amp;searchTarget2=">국내//Tomatosystem NEXT LEVEL AI 2025 / 한국</a></td>
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14512&amp;boardParam1=ko&amp;searchTarget2=">국내//2025년도 한국통신학회 추계종합학술발표회  / 한국</a></td>
+<td data-cell-header="행사기간">2025-11-19~2025-11-21</td>
+<td data-cell-header="접수기간">2025-10-18~2025-11-18</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3335</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14501&amp;boardParam1=ko&amp;searchTarget2=">국내//2025년 제58회 한국정보통신학회 추계종합학술대회 / 한국</a></td>
+<td data-cell-header="행사기간">2025-10-23~2025-10-25</td>
+<td data-cell-header="접수기간">2025-10-06~2025-10-17</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3334</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14500&amp;boardParam1=ko&amp;searchTarget2=">국내//International Conference on ICT Convergence [ICTC 2025] / 한국</a></td>
+<td data-cell-header="행사기간">2025-10-14~2025-10-17</td>
+<td data-cell-header="접수기간">2025-09-15~2025-10-16</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">3333</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="제목">
+<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14493&amp;boardParam1=ko&amp;searchTarget2=">국내//인더스트리 5.0 디지털 인사이트 2025 / 한국</a></td>
 <td data-cell-header="행사기간">2025-10-16~2025-10-16</td>
 <td data-cell-header="접수기간">2025-09-15~2025-10-15</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3335</th>
+<th data-cell-header="번호" scope="row">3332</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14479&amp;boardParam1=ko&amp;searchTarget2=">국내//제15회 국제과학관심포지엄(ISSM) / 한국</a></td>
@@ -517,7 +533,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-07-14~2025-10-10</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3334</th>
+<th data-cell-header="번호" scope="row">3331</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14453&amp;boardParam1=ko&amp;searchTarget2=">국내//스마트라이프위크 2025(SLW 2025) / 한국</a></td>
@@ -525,7 +541,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-08-29~2025-09-29</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3333</th>
+<th data-cell-header="번호" scope="row">3330</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14441&amp;boardParam1=ko&amp;searchTarget2=">국내//2025 인공지능 페스타 (AI Festa 2025) / 한국</a></td>
@@ -533,15 +549,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-08-29~2025-09-29</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3332</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14480&amp;boardParam1=ko&amp;searchTarget2=">국내//갈륨(Ga) 기반의 액체금속 응용연구: 유연 전자소자 및 기능성 소재 세미나 / 한국</a></td>
-<td data-cell-header="행사기간">2025-09-29~2025-09-29</td>
-<td data-cell-header="접수기간">2025-09-09~2025-09-28</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3331</th>
+<th data-cell-header="번호" scope="row">3329</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14477&amp;boardParam1=ko&amp;searchTarget2=">국내//AI+X 컨퍼런스 / 한국</a></td>
@@ -549,7 +557,7 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-08-28~2025-09-28</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3330</th>
+<th data-cell-header="번호" scope="row">3328</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14481&amp;boardParam1=ko&amp;searchTarget2=">국내//2025년 대전 전략산업 포럼 – 양자(Q)산업 포럼 / 한국</a></td>
@@ -557,18 +565,10 @@ function fncSelect(obj){
 <td data-cell-header="접수기간">2025-09-12~2025-09-24</td>
 </tr>
 <tr>
-<th data-cell-header="번호" scope="row">3329</th>
+<th data-cell-header="번호" scope="row">3327</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="제목">
 <a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14474&amp;boardParam1=ko&amp;searchTarget2=">국내//Miracom Solution Fair 2025 - AX로 진화하는 SDF, 혁신의 패러다임을 바꾸다 / 한국</a></td>
-<td data-cell-header="행사기간">2025-09-25~2025-09-25</td>
-<td data-cell-header="접수기간">2025-08-24~2025-09-24</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">3328</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="제목">
-<a href="/data/seminar/read.do?pageSize=10&amp;pageIndex=0&amp;selectedId=14454&amp;boardParam1=ko&amp;searchTarget2=">국내//AI WORLD 2025 / 한국</a></td>
 <td data-cell-header="행사기간">2025-09-25~2025-09-25</td>
 <td data-cell-header="접수기간">2025-08-24~2025-09-24</td>
 </tr>

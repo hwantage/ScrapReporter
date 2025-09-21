@@ -70,10 +70,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'UCF8psy8LCyui3hayBO2uNOjGU-e8tVHA0mHAAUriaMMygEsIq-SEpTb1oUVPa1RZwR-M4vY909eDd5mxUy4sKCT8ekmPFQSI_CnsVNC0l9EKcegqhSMItlLnWPC2AvAngcBKw2'
+            'user_id': 'ejOSqg9IFouQtfydVpG1oWcrkeyHLoTGCAHX_m5xX8DevTjEhb1g0fRiRbOC5seYs_CDvM5UdlFhAcgIXmyzzix7H0ki2sDjxwVkZjFBCik6zu9enY6dzIxLVvDxo8yoxJ3HOw2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'UCF8psy8LCyui3hayBO2uNOjGU-e8tVHA0mHAAUriaMMygEsIq-SEpTb1oUVPa1RZwR-M4vY909eDd5mxUy4sKCT8ekmPFQSI_CnsVNC0l9EKcegqhSMItlLnWPC2AvAngcBKw2'
+            'crm_id': 'ejOSqg9IFouQtfydVpG1oWcrkeyHLoTGCAHX_m5xX8DevTjEhb1g0fRiRbOC5seYs_CDvM5UdlFhAcgIXmyzzix7H0ki2sDjxwVkZjFBCik6zu9enY6dzIxLVvDxo8yoxJ3HOw2'
         });
     </script>
 <script>
@@ -140,7 +140,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?4f0a1d917f61ac2c"></script><style>body {
+<script src="/Content/dist/js/preload.js?d10aefddc9c7ecaa"></script><style>body {
         opacity: 0;
       }
 
@@ -154,7 +154,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?4f0a1d917f61ac2c"></script><script defer="defer" src="/Content/dist/js/default.js?4f0a1d917f61ac2c"></script><link href="/Content/dist/css/default.css?4f0a1d917f61ac2c" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?d10aefddc9c7ecaa"></script><script defer="defer" src="/Content/dist/js/default.js?d10aefddc9c7ecaa"></script><link href="/Content/dist/css/default.css?d10aefddc9c7ecaa" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -969,9 +969,37 @@
 </div>
 </div>
 <div class="flex space-x-4 lg:hidden">
-<ev-button @click="track('홈 호스트센터 클릭')" class="h-8 px-4 text-xs bg-primary-50 rounded-lg border-none" href="/hostcenter">
-                        호스트센터
-                    </ev-button>
+<ev-dropdown panelclass="min-w-[133px]" right="">
+<ev-button class="h-8 py-2 text-xs bg-primary-50 rounded-lg border-none">
+<span class="flex items-center space-x-2.5">
+<span>호스트센터</span>
+<span>
+<svg fill="none" height="6" viewbox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M0.292583 0.30638C0.479995 0.119161 0.734137 0.0139881 0.999128 0.0139881C1.26412 0.0139881 1.51826 0.119161 1.70567 0.30638L4.99004 3.59009L8.28033 0.30638C8.37244 0.210677 8.48273 0.134291 8.60474 0.0816924C8.72675 0.0290934 8.85802 0.00133726 8.9909 4.71406e-05C9.12377 -0.00124298 9.25556 0.0239593 9.37857 0.0741793C9.50157 0.124399 9.61333 0.198629 9.70728 0.292526C9.80124 0.386423 9.87552 0.498101 9.92577 0.621029C9.97602 0.743956 10.0012 0.875664 9.99995 1.00845C9.99866 1.14123 9.97089 1.27243 9.91825 1.39435C9.86562 1.51628 9.78919 1.6265 9.69342 1.71855L5.69732 5.70761C5.50991 5.89483 5.25577 6 4.99078 6C4.72579 6 4.47164 5.89483 4.28423 5.70761L0.292583 1.71411C0.105241 1.52682 0 1.27284 0 1.00802C0 0.743203 0.105241 0.493671 0.292583 0.30638Z" fill="#8D71DD" fill-rule="evenodd"></path>
+</svg>
+</span>
+</span>
+</ev-button>
+<template #menu="">
+<div class="py-2 space-y-1">
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_Home')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/hostcenter">호스트 홈</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_EventCreate')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/hostcenter/eventcreate">무료 행사 개설</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_ChannelManage')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/hostcenter/channel">채널 / 행사 관리</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_AdCenter')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/adcenter" target="_blank">행사 광고</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_Solution')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="https://blog.event-us.kr/eventus-solution" target="_blank">행사 솔루션</a>
+</ui-popover-button>
+</div>
+</template>
+</ev-dropdown>
 <button @click="openAside = !openAside" class="text-primary-500" type="button">
 <svg class="w-5 h-5" fill="currentColor" v-if="!openAside" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" fill-rule="evenodd"></path>
@@ -1061,9 +1089,37 @@
 </a>
 </div>
 <div>
-<ev-button @click="track('홈 호스트센터 클릭')" class="py-2 text-xs bg-primary-50 rounded-lg border-none" href="/hostcenter" small="">
-                                호스트센터
-                            </ev-button>
+<ev-dropdown panelclass="min-w-[133px]" right="">
+<ev-button class="py-2 text-xs bg-primary-50 rounded-lg border-none" small="">
+<span class="flex items-center space-x-2.5">
+<span>호스트센터</span>
+<span>
+<svg fill="none" height="6" viewbox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M0.292583 0.30638C0.479995 0.119161 0.734137 0.0139881 0.999128 0.0139881C1.26412 0.0139881 1.51826 0.119161 1.70567 0.30638L4.99004 3.59009L8.28033 0.30638C8.37244 0.210677 8.48273 0.134291 8.60474 0.0816924C8.72675 0.0290934 8.85802 0.00133726 8.9909 4.71406e-05C9.12377 -0.00124298 9.25556 0.0239593 9.37857 0.0741793C9.50157 0.124399 9.61333 0.198629 9.70728 0.292526C9.80124 0.386423 9.87552 0.498101 9.92577 0.621029C9.97602 0.743956 10.0012 0.875664 9.99995 1.00845C9.99866 1.14123 9.97089 1.27243 9.91825 1.39435C9.86562 1.51628 9.78919 1.6265 9.69342 1.71855L5.69732 5.70761C5.50991 5.89483 5.25577 6 4.99078 6C4.72579 6 4.47164 5.89483 4.28423 5.70761L0.292583 1.71411C0.105241 1.52682 0 1.27284 0 1.00802C0 0.743203 0.105241 0.493671 0.292583 0.30638Z" fill="#8D71DD" fill-rule="evenodd"></path>
+</svg>
+</span>
+</span>
+</ev-button>
+<template #menu="">
+<div class="py-2 space-y-1">
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_Home')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/hostcenter">호스트 홈</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_EventCreate')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/hostcenter/eventcreate">무료 행사 개설</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_ChannelManage')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/hostcenter/channel">채널 / 행사 관리</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_AdCenter')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="/adcenter" target="_blank">행사 광고</a>
+</ui-popover-button>
+<ui-popover-button as="template">
+<a @click="dropMenuTrack('HostCenterMenu_Solution')" class="text-xs h-8 flex items-center px-4 text-gray-800 hover:bg-gray-50 !py-0" href="https://blog.event-us.kr/eventus-solution" target="_blank">행사 솔루션</a>
+</ui-popover-button>
+</div>
+</template>
+</ev-dropdown>
 </div>
 </div>
 </div>
@@ -2685,7 +2741,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="uA1b9qo_bGYsLm0_5fHvzMnBreVSJ5RUjlcaOXP_kHOu8O4GxXjJjKzIeUXTMXMXRFLTqJU2W9LYP40Zrf0lEXG_ras1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="EtzUR5R4iF-GYgEGSmfKeRE93EjAs8jC-qRvyIuSAcreW58_zrTixkBjmYVgl9dqUfNPQjK_wl_KP3i4Fpzky8_IFec1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3184,6 +3240,12 @@
                     leng(language) {
                         window.setLanguage(language);
                     },
+                    dropMenuTrack(trackName) {
+                        mixpanel.track(trackName, {
+                            is_logged_in: this.user.isAuthenticated,
+                            user_type: "guest",
+                        });
+                    },
                     pathLike(str) {
                         return location.pathname.includes(str);
                     },
@@ -3671,6 +3733,15 @@
                             'click_text': clickText,
                         });
                     },
+                    closeDropdown(){
+                        console.log("들어오나?")
+                        const event = new KeyboardEvent('keydown', {
+            key: 'Escape',
+            keyCode: 27,
+            which: 27
+        });
+        document.dispatchEvent(event);
+                    }
                 },
                 beforeMount() {
                     const self = this;
@@ -3739,6 +3810,7 @@
                             .sort((b, a) => a.clicks - b.clicks ?? a.queries / a.clicks - b.queries / b.clicks);
                     });
                 },
+
             })
             .mount('#header');
         window.footerApp = ui.createApp({
@@ -4069,7 +4141,7 @@
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'UCF8psy8LCyui3hayBO2uNOjGU-e8tVHA0mHAAUriaMMygEsIq-SEpTb1oUVPa1RZwR-M4vY909eDd5mxUy4sKCT8ekmPFQSI_CnsVNC0l9EKcegqhSMItlLnWPC2AvAngcBKw2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, 'ejOSqg9IFouQtfydVpG1oWcrkeyHLoTGCAHX_m5xX8DevTjEhb1g0fRiRbOC5seYs_CDvM5UdlFhAcgIXmyzzix7H0ki2sDjxwVkZjFBCik6zu9enY6dzIxLVvDxo8yoxJ3HOw2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4169,8 +4241,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":7478,"New_Start_Date":"2025-09-11T00:00:00","New_End_Date":"2025-09-17T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-09-10T11:17:12.8171925","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/cbc7529300dc4f2c8a983cca6ea4c328.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/112755554e384d329f30fb4165a904f2.png","Click_Url":"https://event-us.kr/starttrackweek/event/111616","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"팬덤을 만든 창업 브랜딩이 답이다","BannerDescription":"2025 관악S밸리 창업 페스티벌","BannerDate":"2025. 09. 19(금) 10:00","BannerPlace":"오프라인 행사"},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null}],
-                    searchResultBanners: [],
+                    banners: [{"Id":7518,"New_Start_Date":"2025-09-17T00:00:00","New_End_Date":"2025-09-29T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-09-17T15:42:05.3908793","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d8d7c605692140ca89d771cea6d3b5d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b546be50b24b469a811633cc5a48a170.png","Click_Url":"https://event-us.kr/thomsonreuters/event/112543?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=banghmxwmg","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"기업 경쟁력을 좌우하는 지식재산권","BannerDescription":"기업 경쟁력을 높이는 IP 전략","BannerDate":"2025. 09. 30(화) 10:00","BannerPlace":null},{"Id":7528,"New_Start_Date":"2025-09-18T00:00:00","New_End_Date":"2025-09-22T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-09-18T11:37:44.0608109","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/37817d33c32746728f676b26a9f17204.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0684f72c157d47a3967a17513fa11624.jpg","Click_Url":"https://event-us.kr/urPSbftDMRTp/event/112465","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"중대재해 예방을 위한","BannerDescription":"다국어 안전 학습 솔루션 소개","BannerDate":"2025. 09. 22(월) 19:00","BannerPlace":"온라인 행사"},{"Id":7531,"New_Start_Date":"2025-09-18T00:00:00","New_End_Date":"2025-09-23T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-09-18T15:35:01.4639571","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/7ded63e857594d5c8dc812cf5b545a67.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/287e7ff53da1420dbc95087bab753b61.png","Click_Url":"https://event-us.kr/dona/event/112851","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"미국 관세와 스테이블 코인 태풍","BannerDescription":"제 80회 도전과나눔 기업가정신 포럼","BannerDate":"2025. 09. 24(수) 07:30","BannerPlace":"온라인 행사"}],
+                    searchResultBanners: [{"Id":"112362","CoverImageUrl":"/Image/seedgen/112362/ProjectInfo/Cover/ca422a4b29174bcb95fc3ed116cb8f4c.png","Title":"한국인터넷진흥원) 중소·스타트업 대상 개인정보 보호 교육","State":"Start","AppTopLogoImageUrl":null,"EventType":"강연/세미나","Category":"기타","Category2":null,"StartDate":"2025-09-26T13:00:00","CloseDate":"2025-09-26T17:00:00","RegisterStartDate":"2025-09-10T00:00:00","RegisterDueDate":"2025-09-24T20:00:00","ViewCount":305,"AppSubDomain":"seedgen","IsSuper":false,"AppTitle":"개인정보보호 무료교육","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-09-10T14:05:12.970383","EventSystemType":"online","OnlineEventType":"other","ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":7493,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/seedgen/event/112362","CorrectionValue":0.0},{"Id":"112543","CoverImageUrl":"/Image/thomsonreuters/112543/ProjectInfo/Cover/319b4c73fab3489389cf80715a1ea1ee.png","Title":"IP Innovation, 기업 경쟁력을 높이는 IP 전략","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/thomsonreuters/TopLogoImage/d1b6ad36306146fb9f8c232b79231995.png","EventType":"강연/세미나","Category":"경영","Category2":"세무/법무/노무","StartDate":"2025-09-30T10:00:00","CloseDate":"2025-09-30T17:00:00","RegisterStartDate":"2025-09-12T00:00:00","RegisterDueDate":"2025-09-29T18:00:00","ViewCount":313,"AppSubDomain":"thomsonreuters","IsSuper":false,"AppTitle":"톰슨로이터코리아","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"","EventAddress":"서울 중구 을지로6가 58-5","EventAddressTitle":"노보텔앰배서더 동대문 그랜드볼룸 (B1)","GroupRequestGroupMoney":220000,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-09-12T14:39:29.1066961","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":143141,"ProjectId":"112543","ProjectSubDomain":"thomsonreuters","TagId":378,"Date":"2025-09-12T14:52:54.8053243","Sort":0,"Project":null,"Tag":null},{"Id":143142,"ProjectId":"112543","ProjectSubDomain":"thomsonreuters","TagId":3997,"Date":"2025-09-12T14:52:54.8053243","Sort":1,"Project":null,"Tag":null},{"Id":143143,"ProjectId":"112543","ProjectSubDomain":"thomsonreuters","TagId":97,"Date":"2025-09-12T15:00:57.3510033","Sort":2,"Project":null,"Tag":null},{"Id":143144,"ProjectId":"112543","ProjectSubDomain":"thomsonreuters","TagId":12784,"Date":"2025-09-12T15:00:57.3510033","Sort":3,"Project":null,"Tag":null},{"Id":143145,"ProjectId":"112543","ProjectSubDomain":"thomsonreuters","TagId":139,"Date":"2025-09-12T15:00:57.3510033","Sort":4,"Project":null,"Tag":null}],"pitId":7517,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/thomsonreuters/event/112543?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=raibic0imx","CorrectionValue":0.0},{"Id":"112851","CoverImageUrl":"/Image/dona/112851/ProjectInfo/Cover/b5fed7d8266048fa9057d0f8c656d849.png","Title":"제80회 (사)도전과나눔 기업가정신 포럼 l 판이 바뀌고 있다. 미국發 관세와 스테이블코인의 태풍을 대비하라.","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dona/TopLogoImage/130758432fa6488da3329d4ab132bcca.png","EventType":"강연/세미나","Category":"경제/금융","Category2":"경제","StartDate":"2025-09-24T07:30:00","CloseDate":"2025-09-24T10:00:00","RegisterStartDate":"2025-09-16T00:00:00","RegisterDueDate":"2025-09-23T23:30:00","ViewCount":169,"AppSubDomain":"dona","IsSuper":false,"AppTitle":"(사)도전과나눔 기업가정신 포럼","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-09-16T18:33:48.2840736","EventSystemType":"online","OnlineEventType":"other","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":143948,"ProjectId":"112851","ProjectSubDomain":"dona","TagId":21293,"Date":"2025-09-16T18:37:58.3546711","Sort":0,"Project":null,"Tag":null},{"Id":143949,"ProjectId":"112851","ProjectSubDomain":"dona","TagId":49,"Date":"2025-09-16T18:37:58.3546711","Sort":1,"Project":null,"Tag":null},{"Id":143950,"ProjectId":"112851","ProjectSubDomain":"dona","TagId":29126,"Date":"2025-09-16T18:37:58.3546711","Sort":2,"Project":null,"Tag":null},{"Id":143951,"ProjectId":"112851","ProjectSubDomain":"dona","TagId":27839,"Date":"2025-09-16T18:37:58.3546711","Sort":3,"Project":null,"Tag":null},{"Id":143952,"ProjectId":"112851","ProjectSubDomain":"dona","TagId":59,"Date":"2025-09-16T18:37:58.3546711","Sort":4,"Project":null,"Tag":null}],"pitId":7523,"IsAdCheck":true,"AdOrder":2,"IsAdMark":true,"Url":"https://event-us.kr/dona/event/112851","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
