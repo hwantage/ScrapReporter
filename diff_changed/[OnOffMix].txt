@@ -100,7 +100,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 15px; 
+    padding: 0 15px;
     margin-top: 39px;
     border-top: 1px solid #d8d8d8;
 }
@@ -175,6 +175,12 @@
     vertical-align: middle;
     color: #333;
 }
+
+/* 특정 클래스 하이라이트 제거 */
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
 </style>
 <script>
     function googleTranslateElementInit(){
@@ -182,7 +188,7 @@
             pageLanguage: "ko",
             includedLanguages: "ko,en",
             autoDisplay: false,
-        }, "header");
+        }, "googleTranslateElementBanner");
     }
     const cookie = document.cookie.split('; ').find(row => row.startsWith('googtrans'));
     if (cookie && cookie.split('=')[1] === "/ko/en") {
@@ -194,6 +200,9 @@
         const target = event.target;
         if(target.dataset["translation_btn"] === "" || target.closest("[data-translation_btn]")){
             const select_element = document.querySelector('.goog-te-combo');
+            if (!select_element) {
+                window.location.reload();
+            }
             select_element.value = select_element.value === "en" ?
                 "ko" : select_element.value === "ko" ? "en" : "en";
             select_element.dispatchEvent( new Event("change", {
@@ -210,9 +219,9 @@
         }
         target.value = "en";
         target.dispatchEvent( new Event("change", {"bubbles": true}) );
-    }); 
+    });
 </script>
-<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script defer="" type="module">(()=>{
 const channelIOSetting = ()=>{
     const channelIO_obj = {"pluginKey": "e0130bb5-d745-41a9-88af-b10790bbf1f7"};
@@ -276,6 +285,7 @@ if( document.readyState === "complete" ){
 </script>
 </meta></meta></head>
 <body class="onoffmix">
+<div id="googleTranslateElementBanner"></div>
 <article class="ie_end_support_popup_wrap">
 <h1>인터넷 익스플로러 (IE) 브라우저 지원 종료 안내</h1>
 <p>
@@ -781,7 +791,7 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <li data-keyword_row="">
 <a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI 인공지능</a>
 <a href="/event/main?s=게임">게임</a>
-<a href="/event/main?s=국비지원 양성과정">국비지원</a>
+<a href="/event/main?s=창업">창업</a>
 </li>
 <li>
 <a class="link_item event" data-c="b09b92021" href="/event/inviteEvent">무료로 초대해요</a>

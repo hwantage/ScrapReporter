@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1320; // 전체 조회 건수
+	var totalNum = 1321; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -188,7 +188,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1320</b>건
+<span>총 <b>1321</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -227,33 +227,45 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3543&amp;page=1">2025년 정보보호제품 성능평가자 양성교육(보안성능, 2차) 신청·접수 안내</a>
+<td class="sbj txtL"><a href="/401/form?postSeq=3541&amp;page=1">2025 블록체인 진흥주간 x 웹 3.0 컨퍼런스 개최 안내(11/4~5, 서울 코엑스)</a>
 </td>
-<td class="date">2025-09-19</td>
-<td class="count">1751</td>
+<td class="date">2025-09-15</td>
+<td class="count">6255</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3543', 1, 'KO');">
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3532&amp;page=1">[기간추가연장][3차모집]2025년 정보보호제품 성능평가 지원 공모 사업(~10/15)</a>
+</td>
+<td class="date">2025-09-01</td>
+<td class="count">10821</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3532', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3541&amp;page=1">2025 블록체인 진흥주간 x 웹 3.0 컨퍼런스 개최 안내(11/4~5, 서울 코엑스)</a>
+<tr>
+<td class="num">1319</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3544&amp;page=1">2025 전자문서 유공 포상 재공고 안내(~10.15 14:00 마감)</a>
 </td>
-<td class="date">2025-09-15</td>
-<td class="count">3976</td>
+<td class="date">2025-09-25</td>
+<td class="count">1245</td>
 <td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3544', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
 </td>
 </tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3532&amp;page=1">[기간연장][3차모집]2025년 정보보호제품 성능평가 지원 공모 사업(~9/26)</a>
+<tr>
+<td class="num">1318</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3543&amp;page=1">2025년 정보보호제품 성능평가자 양성교육(보안성능, 2차) 신청·접수 안내</a>
 </td>
-<td class="date">2025-09-01</td>
-<td class="count">8533</td>
+<td class="date">2025-09-19</td>
+<td class="count">4057</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3532', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3543', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
@@ -263,7 +275,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3542&amp;page=1">2025년도 개인정보 이노베이션 존 운영기관 지정 공모</a>
 </td>
 <td class="date">2025-09-17</td>
-<td class="count">2313</td>
+<td class="count">4092</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3542', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -275,7 +287,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3540&amp;page=1">2025년도 글로벌 정보보호 고급 인력 양성과제 박사후연구원 해외파견생 모집</a>
 </td>
 <td class="date">2025-09-15</td>
-<td class="count">3226</td>
+<td class="count">4850</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3540', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -287,7 +299,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3539&amp;page=1">KISA에게 바란다! 「모두의 KISA」참여 안내(9.16(화)~9.30(화))</a>
 </td>
 <td class="date">2025-09-15</td>
-<td class="count">3595</td>
+<td class="count">4707</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3539', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -299,7 +311,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3538&amp;page=1">2025년도 블록체인 유공 포상 계획 공고 안내(~9.12 15:00 마감)</a>
 </td>
 <td class="date">2025-09-08</td>
-<td class="count">5584</td>
+<td class="count">6168</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3538', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -311,7 +323,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3537&amp;page=1">2025년도 위치정보 보호조치 비대면 이론교육(5차) 안내</a>
 </td>
 <td class="date">2025-09-08</td>
-<td class="count">4730</td>
+<td class="count">5309</td>
 <td class="attach">
 </td>
 </tr>
@@ -320,20 +332,8 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3536&amp;page=1">2025년 위치정보 스타트업 해외 판로지원 안내</a>
 </td>
 <td class="date">2025-09-08</td>
-<td class="count">3784</td>
+<td class="count">4192</td>
 <td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1311</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3535&amp;page=1">｢2025 블록체인 진흥주간 x 웹 3.0 컨퍼런스｣ 취업컨설팅 지원자 모집 공고(~10.17)</a>
-</td>
-<td class="date">2025-09-05</td>
-<td class="count">4622</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3535', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
 </td>
 </tr>
 </tbody>
@@ -361,10 +361,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2025-09-19</dd>
+<dd>2025-09-27</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="175910ee-2f78-4933-9cc1-00637b58cf60">
+<input name="_csrf" type="hidden" value="514e533a-9a17-420a-8b4e-ea0d5aa00f20">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -387,7 +387,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "175910ee-2f78-4933-9cc1-00637b58cf60");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "514e533a-9a17-420a-8b4e-ea0d5aa00f20");
             },			
 			success: function(data) {
 				alert(data.message)
