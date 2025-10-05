@@ -147,7 +147,7 @@ $(document).ready(function(){
    	}, 0);
 	
 	
-   	//id='subheader'
+   	
 	if (parent[0]?.window.name == "smes_frame")  {
 		$("#subheader")[0].id = "subheader2";
 	}
@@ -610,9 +610,9 @@ function fn_MenuMrfnPageMove(url){
 <!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
 <div class="maintopN8">
 <div class="maintopN8" id="coronaDiv" style="height:102px; border-bottom:0px solid #ccc; text-align:center; width:100%; background:#02244a;">
-<img alt="2025년 중소기업기술개발지원사업 통합공고 안내" src="/front/images/coronaTop-9.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/>
+<img alt="2026년 바뀌는 중소벤처 기술혁신 지원정책" src="/front/images/coronaTop-10.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/>
 <map name="imgmap">
-<area alt="25년 통합공고문 보러 가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=518282&amp;pageIndex=1&amp;noPage=yes" shape="rect" target="_self" title="25년 통합공고문 보러 가기"/>
+<area alt="2026년 바뀌는 중소벤처 기술혁신 지원정책 보러가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=536733&amp;pageIndex=1&amp;noPage=yes" shape="rect" target="_self" title="2026년 바뀌는 중소벤처 기술혁신 지원정책 보러가기"/>
 </map>
 </div>
 <div class="gnbNaviN8">
@@ -1347,8 +1347,8 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--10 10 9 29-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+<!--10 10 10 6-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
@@ -1364,7 +1364,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 9 29-->
+<!--9 10 10 6-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
@@ -1381,7 +1381,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 9 29-->
+<!--9 10 10 6-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
@@ -1398,29 +1398,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 9 29-->
+<!--9 10 10 6-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">5</td>
-<td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=8&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 9월 공고</a></td>
-<td class="ac">
-
-	                       	2025. 09. 01 ~ 2025. 09. 30
-	                  	</td>
-<td class="ac">
-	                    	2025-01-31
-
-	                    </td>
-<td class="ac ll">
-<!--9 9 9 29-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">6</td>
 <td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02814&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 제2차 중소벤처기업부 혁신제품 지정기간 연장(1차) 공고</a></td>
 <td class="ac">
@@ -1432,7 +1415,24 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--7 7 9 29-->
+<!--7 7 10 6-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">6</td>
+<td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=8&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 9월 공고</a></td>
+<td class="ac">
+
+	                       	2025. 09. 01 ~ 2025. 09. 30
+	                  	</td>
+<td class="ac">
+	                    	2025-01-31
+
+	                    </td>
+<td class="ac ll">
+<!--9 9 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1449,7 +1449,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--8 9 9 29-->
+<!--8 9 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1466,7 +1466,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--8 8 9 29-->
+<!--8 8 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1483,7 +1483,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--7 7 9 29-->
+<!--7 7 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1500,7 +1500,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--7 7 9 29-->
+<!--7 7 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1517,7 +1517,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 7 9 29-->
+<!--6 7 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1534,7 +1534,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 7 9 29-->
+<!--6 7 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1551,7 +1551,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 9 29-->
+<!--6 6 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1568,7 +1568,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 9 29-->
+<!--6 6 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
@@ -1585,7 +1585,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 9 29-->
+<!--6 6 10 6-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
