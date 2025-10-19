@@ -610,10 +610,7 @@ function fn_MenuMrfnPageMove(url){
 <!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
 <div class="maintopN8">
 <div class="maintopN8" id="coronaDiv" style="height:102px; border-bottom:0px solid #ccc; text-align:center; width:100%; background:#02244a;">
-<img alt="2026년 바뀌는 중소벤처 기술혁신 지원정책" src="/front/images/coronaTop-10.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/>
-<map name="imgmap">
-<area alt="2026년 바뀌는 중소벤처 기술혁신 지원정책 보러가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=536733&amp;pageIndex=1&amp;noPage=yes" shape="rect" target="_self" title="2026년 바뀌는 중소벤처 기술혁신 지원정책 보러가기"/>
-</map>
+<a href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=536733&amp;pageIndex=1&amp;noPage=yes"><img alt="2026년 바뀌는 중소벤처 기술혁신 지원정책" src="/front/images/coronaTop-10.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/></a>
 </div>
 <div class="gnbNaviN8">
 <a href="/front/main/main.do"><div class="logoN8">SMTECH 중소기업기술개발 종합관리시스템</div></a>
@@ -1336,6 +1333,23 @@ $(document).ready(function () {
 <tbody>
 <tr>
 <td class="ac">1</td>
+<td class="ac">수출지원프로그램</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02822&amp;buclCd=S9121&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 제2차 한국무역보험공사 연계 수출지원프로그램 시행계획 안내</a></td>
+<td class="ac">
+
+	                       	2025. 10. 17 ~ 2025. 11. 07
+	                  	</td>
+<td class="ac">
+	                    	2025-10-17
+
+	                    </td>
+<td class="ac ll">
+<!--10 11 10 20-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">2</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=9&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 10월 공고</a></td>
 <td class="ac">
@@ -1347,12 +1361,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--10 10 10 13-->
+<!--10 10 10 20-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">2</td>
+<td class="ac">3</td>
 <td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02819&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 제3차 중소벤처기업부 혁신제품 지정기간 연장(1차연장) 공고</a></td>
 <td class="ac">
@@ -1364,12 +1378,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 10 13-->
+<!--9 10 10 20-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">3</td>
+<td class="ac">4</td>
 <td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02821&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 제3차 중소벤처기업부 혁신제품 지정기간 연장(2차연장) 공고</a></td>
 <td class="ac">
@@ -1381,24 +1395,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 10 10 13-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">4</td>
-<td class="ac">전담은행 투자설명회(IR)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02818&amp;buclCd=S9171&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 제5차 중소기업 R&amp;D 전담은행 투자지원 추천기업(충청,강원권) 모집 공고</a></td>
-<td class="ac">
-
-	                       	2025. 09. 19 ~ 2025. 10. 16
-	                  	</td>
-<td class="ac">
-	                    	2025-09-19
-
-	                    </td>
-<td class="ac ll">
-<!--9 10 10 13-->
+<!--9 10 10 20-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
@@ -1415,12 +1412,29 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--7 7 10 13-->
+<!--7 7 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">6</td>
+<td class="ac">전담은행 투자설명회(IR)</td>
+<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02818&amp;buclCd=S9171&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 제5차 중소기업 R&amp;D 전담은행 투자지원 추천기업(충청,강원권) 모집 공고</a></td>
+<td class="ac">
+
+	                       	2025. 09. 19 ~ 2025. 10. 16
+	                  	</td>
+<td class="ac">
+	                    	2025-09-19
+
+	                    </td>
+<td class="ac ll">
+<!--9 10 10 20-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">7</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=8&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 9월 공고</a></td>
 <td class="ac">
@@ -1432,12 +1446,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--9 9 10 13-->
+<!--9 9 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">7</td>
+<td class="ac">8</td>
 <td class="ac">중소벤처기업부 혁신제품 지정사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02816&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 중소벤처기업부 혁신제품 지정제도 시행계획(하반기) 공고</a></td>
 <td class="ac">
@@ -1449,12 +1463,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--8 9 10 13-->
+<!--8 9 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">8</td>
+<td class="ac">9</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=7&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 8월 공고</a></td>
 <td class="ac">
@@ -1466,12 +1480,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--8 8 10 13-->
+<!--8 8 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">9</td>
+<td class="ac">10</td>
 <td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02815&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 제2차 중소벤처기업부 혁신제품 지정기간 연장(2차) 공고</a></td>
 <td class="ac">
@@ -1483,12 +1497,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--7 7 10 13-->
+<!--7 7 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">10</td>
+<td class="ac">11</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=6&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 7월 공고</a></td>
 <td class="ac">
@@ -1500,12 +1514,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--7 7 10 13-->
+<!--7 7 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">11</td>
+<td class="ac">12</td>
 <td class="ac">수출지원프로그램</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02813&amp;buclCd=S9121&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 제1차 한국무역보험공사 연계 수출지원프로그램 시행계획 안내</a></td>
 <td class="ac">
@@ -1517,12 +1531,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 7 10 13-->
+<!--6 7 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">12</td>
+<td class="ac">13</td>
 <td class="ac">중소기업 R&amp;D 우수성과 사례발굴</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02811&amp;buclCd=S9161&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 중소기업 R&amp;D 우수성과 50선 모집 공고</a></td>
 <td class="ac">
@@ -1534,12 +1548,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 7 10 13-->
+<!--6 7 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">13</td>
+<td class="ac">14</td>
 <td class="ac">중소벤처기업부 혁신제품 지정사업</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02808&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 중소벤처기업부 혁신제품 추가등록 2차 안내문</a></td>
 <td class="ac">
@@ -1551,12 +1565,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 10 13-->
+<!--6 6 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">14</td>
+<td class="ac">15</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=5&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 6월 공고</a></td>
 <td class="ac">
@@ -1568,24 +1582,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--6 6 10 13-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">15</td>
-<td class="ac">중소기업기술혁신개발사업(시장확대형)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02812&amp;buclCd=S2018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년도 중소기업기술혁신개발사업(공동효과형) 시행계획 공고</a></td>
-<td class="ac">
-
-	                       	2025. 06. 30 ~ 2025. 06. 30
-	                  	</td>
-<td class="ac">
-	                    	2025-05-28
-
-	                    </td>
-<td class="ac ll">
-<!--6 6 10 13-->
+<!--6 6 10 20-->
 <img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>

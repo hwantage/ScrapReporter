@@ -446,6 +446,11 @@ $(function(){
 						</a>
 </li>
 <li class="">
+<a href="/rndgate/eg/un/bzLib/bzLibListView.do" onclick="javascript: fn_movePageHM('CPM000000002503','/rndgate/eg/un/bzLib/bzLibListView.do'); return false;">
+								사업자료실
+						</a>
+</li>
+<li class="">
 <a href="/rndgate/eg/un/ra/myAncmMng.do" onclick="javascript: fn_movePageHM('','/rndgate/eg/un/ra/myAncmMng.do'); return false;" title="로그인팝업">
 								MY공고
 						</a>
@@ -1409,10 +1414,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="75449">
+<input id="totalCount" name="totalCount" type="hidden" value="75447">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>75,449건</span></h3>
+<h3 class="t_head">검색결과 <span>75,447건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1465,12 +1470,68 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="출연연 연구자 학술지 게재 현황 및 인식 분석에 관한 정책연구과제 공고" type="checkbox" value="1249280"/></td>
+<td><input name="selectCheckList" title="2025년도 과학기술혁신정책지원사업 연구과제 재공모" type="checkbox" value="1249559"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75449
+                            75447
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1249559&amp;flag=rndList" onclick="javascript:fn_view('1249559'); return false;" title="2025년도 과학기술혁신정책지원사업 연구과제 재공모"> 2025년도 과학기술혁신정책지원사업 연구과제 재공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2025.10.21</td>
+<td data-title="마감일">2025.10.21</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 2</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="25년 국방연구개발 전력지원체계연구개발사업 주관연구개발기관 선정을 위한 공고" type="checkbox" value="1249442"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            75446
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1249442&amp;flag=rndList" onclick="javascript:fn_view('1249442'); return false;" title="25년 국방연구개발 전력지원체계연구개발사업 주관연구개발기관 선정을 위한 공고"> 25년 국방연구개발 전력지원체계연구개발사업 주관연구개발기관 선정을 위한 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">국방부</td>
+<td data-title="접수일">2025.10.13</td>
+<td data-title="마감일">2025.11.13</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-25
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="출연연 연구자 학술지 게재 현황 및 인식 분석에 관한 정책연구과제 공고" type="checkbox" value="1249280"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            75445
+                        </td>
+<td data-title="현황">
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1482,16 +1543,15 @@ $(function(){
 <td data-title="접수일">2025.09.30</td>
 <td data-title="마감일">2025.10.17</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2025년도 과학기술혁신정책지원사업 연구과제 공모" type="checkbox" value="1249272"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75448
+                            75444
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1503,13 +1563,12 @@ $(function(){
 <td data-title="접수일">2025.09.30</td>
 <td data-title="마감일">2025.10.14</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 2</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="민·군기술협력사업 우주 소재·부품·장비(소부장) 소위원회 RFI 접수" type="checkbox" value="1249138"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75447
+                            75443
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1524,27 +1583,13 @@ $(function(){
 <td data-title="접수일">2025.09.26</td>
 <td data-title="마감일">2025.10.24</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-12
-                                
-
-                            </td>
+<span style="color: red">D - 5</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="K-석유화학산업 리밸런싱 프로젝트 기술수요조사" type="checkbox" value="1249101"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75446
+                            75442
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1571,36 +1616,15 @@ $(function(){
                                     
                                     
                                     
-                                    D-18
+                                    D-11
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="첨단디스플레이국가연구플랫폼구축(가칭) 기술 수요조사" type="checkbox" value="1249025"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75445
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1249025&amp;flag=rndList" onclick="javascript:fn_view('1249025'); return false;" title="첨단디스플레이국가연구플랫폼구축(가칭) 기술 수요조사"> 첨단디스플레이국가연구플랫폼구축(가칭) 기술 수요조사
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2025.09.24</td>
-<td data-title="마감일">2025.10.13</td>
-<td class="end" data-title="D-day">
-<span style="color: red">D - 1</span>
-</td>
-</tr>
-<tr>
 <td><input name="selectCheckList" title="2026년도 첨단산업용시스템엔지니어링설계모델링기술개발사업 신규과제 기획을 위한 기술수요조사 공고" type="checkbox" value="1249022"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75444
+                            75441
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1615,27 +1639,13 @@ $(function(){
 <td data-title="접수일">2025.09.24</td>
 <td data-title="마감일">2025.10.22</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-10
-                                
-
-                            </td>
+<span style="color: red">D - 3</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2026년 착수 민군기술이전사업 과제(연구개발계획서) 공모" type="checkbox" value="1248919"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75443
+                            75440
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
@@ -1662,36 +1672,17 @@ $(function(){
                                     
                                     
                                     
-                                    D-15
+                                        D - 8
+                                    
+                                    
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 반도체분야 산업기술RD사업  추가 기술수요조사 공고" type="checkbox" value="1248806"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75442
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1248806&amp;flag=rndList" onclick="javascript:fn_view('1248806'); return false;" title="2026년도 반도체분야 산업기술RD사업  추가 기술수요조사 공고"> 2026년도 반도체분야 산업기술RD사업  추가 기술수요조사 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2025.09.22</td>
-<td data-title="마감일">2025.10.13</td>
-<td class="end" data-title="D-day">
-<span style="color: red">D - 1</span>
-</td>
-</tr>
-<tr>
 <td><input name="selectCheckList" title="2025년도 제3차 과학기술분야 연구기획과제 공모" type="checkbox" value="1248684"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75441
+                            75439
                         </td>
 <td data-title="현황">
 <span>마감</span>
@@ -1709,39 +1700,24 @@ $(function(){
 </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제2차 조선해양 분야 RD 신규과제 발굴을 위한 기술수요조사" type="checkbox" value="1248678"/></td>
+<td><input name="selectCheckList" title="2025년 KISTEP 수탁사업 위탁연구과제 공모(과학기술정보통신부 직할 출연(연) 및 국가과학기술연구회 기관평가)" type="checkbox" value="1248573"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75440
+                            75438
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1248678&amp;flag=rndList" onclick="javascript:fn_view('1248678'); return false;" title="2026년도 제2차 조선해양 분야 RD 신규과제 발굴을 위한 기술수요조사"> 2026년도 제2차 조선해양 분야 RD 신규과제 발굴을 위한 기술수요조사
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1248573&amp;flag=rndList" onclick="javascript:fn_view('1248573'); return false;" title="2025년 KISTEP 수탁사업 위탁연구과제 공모(과학기술정보통신부 직할 출연(연) 및 국가과학기술연구회 기관평가)"> 2025년 KISTEP 수탁사업 위탁연구과제 공모(과학기술정보통신부 직할 출연(연) 및 국가과학기술연구회 기관평가)
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상자원부</td>
-<td data-title="접수일">2025.09.22</td>
-<td data-title="마감일">2025.10.23</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2025.09.18</td>
+<td data-title="마감일">2025.10.17</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-11
-                                
-
-                            </td>
+</td>
 </tr>
 </tbody>
 </table>
