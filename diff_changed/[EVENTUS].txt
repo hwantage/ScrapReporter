@@ -39,8 +39,28 @@
 <!-- End GrowthFit Google Tag Manager -->
 <script charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+<!-- Nachocode SDK 초기화 함수를 먼저 정의 -->
 <script>
-</script>
+        (async () => {
+            if (window.Nachocode) {
+                try {
+                    await Nachocode.initAsync('CoJZITgcvIxPdPNaAriQ', { logger: true });
+                    /*await Nachocode.initAsync('EsOxDvKpXITLAEBWHWYh', { logger: true });*/
+
+                    if (Nachocode.env.isApp()) {
+                        // 앱 환경에서만 동작할 로직을 작성합니다.
+                    }
+                } catch (error) {
+                    console.error('nachocode Client SDK 초기화 실패:', error);
+                }
+            } else {
+                console.error('nachocode Client SDK가 로드되지 않았습니다.');
+            }
+        })();
+    </script>
+<!-- CDN 로드 -->
+<script src="https://cdn.nachocode.io/nachocode/client-sdk/@latest/client-sdk.min.js"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-75736254-1"></script>
 <script>
@@ -70,10 +90,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'N_XMYKB9nOqfvZgzSjDL-LEbGvdKmiY8jKg5VgdZ-SvKGEMMujkXQ3GSsrrcWQh8hzmdFYvRYmxrKs2JZDYwqRn9F05K94Yy6-Mkc5oIVs9WTnIzWSDJTreTO59n3xFAUeuhnA2'
+            'user_id': 'pNIVdHShGxVf1p_VB-fJ9jCfHPc81Tpx11gpOV1thUp4e8pG-jQCw05ZgXPSUv4SeAXHvipHW9QFE7Vku_Tt51CKqo9MCw5aQjvTObIM6qOfXXyZPdxe05mry-HnvYE9b7BmWw2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'N_XMYKB9nOqfvZgzSjDL-LEbGvdKmiY8jKg5VgdZ-SvKGEMMujkXQ3GSsrrcWQh8hzmdFYvRYmxrKs2JZDYwqRn9F05K94Yy6-Mkc5oIVs9WTnIzWSDJTreTO59n3xFAUeuhnA2'
+            'crm_id': 'pNIVdHShGxVf1p_VB-fJ9jCfHPc81Tpx11gpOV1thUp4e8pG-jQCw05ZgXPSUv4SeAXHvipHW9QFE7Vku_Tt51CKqo9MCw5aQjvTObIM6qOfXXyZPdxe05mry-HnvYE9b7BmWw2'
         });
     </script>
 <script>
@@ -99,12 +119,12 @@
 
             if (typeof console === "object" && console.log && typeof console.log === "function") {
                 const msg = "%c _____                      _                       \
-                                                        \n%c|  ___|                    | |                      \
-                                                        \n%c| |__  __   __  ___  _ __  | |_  ______  _   _  ___ \
-                                                        \n%c|  __| \\ \\ / / / _ \\| '_ \\ | __||______|| | | |/ __|\
-                                                        \n%c| |___  \\ V / |  __/| | | || |_         | |_| |\\__ \\ \
-                                                        \n%c|____/   \\_/   \\___||_| |_| \\__|         \\__,_||___/ \
-                                                        \n%c 행사와 함께 하는 모든 순간 이벤터스\n";
+                                                                        \n%c|  ___|                    | |                      \
+                                                                        \n%c| |__  __   __  ___  _ __  | |_  ______  _   _  ___ \
+                                                                        \n%c|  __| \\ \\ / / / _ \\| '_ \\ | __||______|| | | |/ __|\
+                                                                        \n%c| |___  \\ V / |  __/| | | || |_         | |_| |\\__ \\ \
+                                                                        \n%c|____/   \\_/   \\___||_| |_| \\__|         \\__,_||___/ \
+                                                                        \n%c 행사와 함께 하는 모든 순간 이벤터스\n";
                 if (isUA('chrome') && !isUA('edge')) {
                     console.log(
                         msg,
@@ -140,7 +160,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?bbbc6ae2ace997e1"></script><style>body {
+<script src="/Content/dist/js/preload.js?d7ebac80c8196024"></script><style>body {
         opacity: 0;
       }
 
@@ -154,7 +174,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?bbbc6ae2ace997e1"></script><script defer="defer" src="/Content/dist/js/default.js?bbbc6ae2ace997e1"></script><link href="/Content/dist/css/default.css?bbbc6ae2ace997e1" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?d7ebac80c8196024"></script><script defer="defer" src="/Content/dist/js/default.js?d7ebac80c8196024"></script><link href="/Content/dist/css/default.css?d7ebac80c8196024" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2396,47 +2416,6 @@
 </ev-modal>
 </div>
 </div>
-<div class="hidden" id="Iphone_message">
-<div class="fixed bottom-5 z-50 w-full">
-<div class="relative w-72 my-0 mx-auto p-4 border-x-0 rounded-md bg-black/75">
-<div class="flex justify-between">
-<div class="w-9 h-9">
-<img src="https://eventusstorage.blob.core.windows.net/evs/images/main/eventus-icon.png">
-</img></div>
-<div class="text-xs text-white">
-<div class="flex">
-<span class="pr-1">아래에 있는</span>
-<img class="h-3" src="https://eventusstorage.blob.core.windows.net/evs/images/main/iphone_home_btn_icon.svg"/>
-<span>
-                                눌러
-                            </span>
-</div>
-<div>
-<span class="text-warning-500">이벤터스를 홈 화면에 추가</span>해주세요!
-                        </div>
-<div>
-                            더욱 빠르고 간편하게 이용하실 수 있습니다.
-                        </div>
-<div class="mt-2 flex space-x-4">
-<div>
-<a @click="Iphone_message_disabled()" class="underline py-0 border-none hover:text-gray-500">
-                                    다시 표시하지 않기
-                                </a>
-</div>
-<div>
-<a @click="Iphone_message_close()" class="underline py-0 border-none hover:text-gray-500">
-                                    닫기
-                                </a>
-</div>
-</div>
-</div>
-</div>
-<div class="absolute -bottom-2 inset-x-0 flex justify-center">
-<div class="border-transparent border-t-black/75 border-t-8 border-l-8 border-r-8"></div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <style lang="scss">
     .swiper-image-zoom {
@@ -2544,9 +2523,9 @@
 <span v-if="language === 'ko'">(평일 10:00~17:00)</span>
 <span v-else="">(Weekdays 10:00-17:00 KST)</span>
 </span>
-<!-- <span class="pl-2 text-gray-50 hidden lg:block" >
+<span class="pl-2">
                                     02-2088-8327
-                                </span> -->
+                                </span>
 </td>
 </tr>
 <tr>
@@ -2635,8 +2614,8 @@
 <span v-else="">CPO Lee Jung Soo</span>
 </div>
 <div>
-<span v-if="language === 'ko'">서울특별시 마포구 마포대로 122, 프론트원 17F</span>
-<span v-else="">16F, FrontOne, 122 Mapo-daero, Mapo-gu, Seoul, Korea</span>
+<span v-if="language === 'ko'">서울 영등포구 양산로 85, 하이퍼타워 4층 405, 406호</span>
+<span v-else="">4F, Units 405–406, Hyper Tower, 85 Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea</span>
 </div>
 </div>
 <div class="text-xs text-primary-400">
@@ -2745,7 +2724,7 @@
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="BqniKAVG8bJJL3tfWSQoJRBLPlevhFShY5n5qjTtvb41KD2X27bYmmPVegoWoHg8O-223t9V6WI4lvfA414ELycAfvg1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="VTi3GRBmJiv_SfE_0qZwJS-3ugLHi6q2GvHpH5R03RfPLOstCk9y5iavMRSyZ4bofO1QfLe6xBpf9mrJSk2NBTf1X681"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -3163,6 +3142,7 @@
                                 description: '자유로운 행사 인사이트를 공유하세요.',
                             },
                         ],
+                        showAdSvcIntroMenu: false,
                     };
                 },
                 computed: {
@@ -3238,6 +3218,14 @@
                     }
                     document.addEventListener('languageChanged', (e) => {
                         this.language = e.detail.language;
+                    });
+                },
+                mounted() {
+                    const adSvcIntroContainer = document.getElementById('ad-svc-intro-container');
+                    document.addEventListener('click', (event) => {
+                        if (!adSvcIntroContainer.contains(event.target)) {
+                            this.showAdSvcIntroMenu = false;
+                        }
                     });
                 },
                 methods: {
@@ -3737,6 +3725,15 @@
                             'click_text': clickText,
                         });
                     },
+                    handleAdSvcIntroClick() {
+                        this.showAdSvcIntroMenu = !this.showAdSvcIntroMenu;
+                    },
+                    handleAdSvcIntroHover() {
+                        this.showAdSvcIntroMenu = true;
+                    },
+                    adMixpanelTrack(type, param1, param2) {
+                        adcenterIndexApp.methods.mixpanelTrack(type, param1, param2);
+                    },
                     closeDropdown(){
                         console.log("들어오나?")
                         const event = new KeyboardEvent('keydown', {
@@ -4093,8 +4090,10 @@
                 packageName: 'com.DHYSenjtpL.sjXrVtojDn',
                 scheme: 'sjXrVtojDn',
                 playStoreUrl: 'https://play.google.com/store/apps/details?id=com.DHYSenjtpL.sjXrVtojDn',
+                appStoreUrl: 'https://apps.apple.com/kr/app/%EC%9D%B4%EB%B2%A4%ED%84%B0%EC%8A%A4-%ED%96%89%EC%82%AC-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EA%B0%95%EC%9D%98-%EC%84%B8%EB%AF%B8%EB%82%98%EB%A5%BC-%ED%95%9C-%EB%88%88%EC%97%90/id6752992247',
                 isMobile: 'False' === 'True',
                 isAndroid: /android/i.test(navigator.userAgent || navigator.vendor || window.opera),
+                isIOS: /iphone|ipad|ipod/i.test(navigator.userAgent || navigator.vendor),
                 // variables
                 isOpen: false,
             }),
@@ -4103,16 +4102,19 @@
             },
             methods: {
                 initAppModal() {
-                    if (!this.isMobile || !this.isAndroid) return;
-                    if (util.getCookie(this.cookieName)) return;
+                    const runningEnv = Nachocode.env.getRunningEnv();
+                    if (runningEnv === 'app') return;
+                    
+                    if (!this.isMobile && !this.isAndroid && !this.isIOS) { return; }
+                    if (util.getCookie(this.cookieName)) { return; }
                     const allowedPagePathRegexList = [
                         /^\/$/, // 메인페이지
                         /^\/\w+\/event\/\d+$/i, // 행사페이지
                         /^\/search$/i, // 검색페이지
                     ];
                     const isAllowedPage = allowedPagePathRegexList.some((regex) => regex.test(location.pathname));
-                    if (!isAllowedPage) return;
-                    if (document.referrer && (document.referrer.includes('event-us.kr') || document.referrer.includes('localhost'))) return;
+                    if (!isAllowedPage) {  return; }
+                    if (!this.isIOS && document.referrer && (document.referrer.includes('event-us.kr') || document.referrer.includes('localhost'))) { return; }
 
                     // headlessui dialog 버그 수정 코드 (html 태그에 padding-right가 잘못 설정되는 문제)
                     const style = document.createElement('style');
@@ -4124,28 +4126,42 @@
                 handleAppOpen() {
                     const start = Date.now();
                     const timeout = 1500;
-
-                    // 앱이 설치되어 있는 경우 앱 열기
                     const encodedUrl = encodeURIComponent(`https://event-us.kr${location.pathname}${location.search}`);
-                    window.location = `${this.scheme}://open?targeturl=${encodedUrl}`;
+                    const appUrl = `${this.scheme}://open?targeturl=${encodedUrl}`;
+                    const storeUrl = this.isIOS ? this.appStoreUrl : this.playStoreUrl;
 
-                    // 앱이 설치되어 있지 않은 경우 1.5초 후에 Play Store로 이동
-                    setTimeout(() => {
-                        const elapsed = Date.now() - start;
-                        if (elapsed < timeout + 200) {
-                            window.open(this.playStoreUrl, '_blank');
-                        }
-                    }, timeout);
+                    if (this.isIOS) {
+                        // iOS는 iframe 방식으로 앱 열기 시도 (에러 얼럿 방지)
+                        const iframe = document.createElement('iframe');
+                        iframe.style.display = 'none';
+                        iframe.src = appUrl;
+                        document.body.appendChild(iframe);
+
+                        setTimeout(() => {
+                            document.body.removeChild(iframe);
+                            window.location.href = storeUrl;
+                        }, timeout);
+                    } else {
+                        // Android는 기존 방식
+                        window.location = appUrl;
+
+                        setTimeout(() => {
+                            const elapsed = Date.now() - start;
+                            if (elapsed < timeout + 200) {
+                                window.location.href = storeUrl;
+                            }
+                        }, timeout);
+                    }
 
                     this.isOpen = false;
-                    this.setAppModalCloseCookie(30);
+                    //this.setAppModalCloseCookie(30);
                 },
                 handleClose() {
                     this.isOpen = false;
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'N_XMYKB9nOqfvZgzSjDL-LEbGvdKmiY8jKg5VgdZ-SvKGEMMujkXQ3GSsrrcWQh8hzmdFYvRYmxrKs2JZDYwqRn9F05K94Yy6-Mkc5oIVs9WTnIzWSDJTreTO59n3xFAUeuhnA2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, 'pNIVdHShGxVf1p_VB-fJ9jCfHPc81Tpx11gpOV1thUp4e8pG-jQCw05ZgXPSUv4SeAXHvipHW9QFE7Vku_Tt51CKqo9MCw5aQjvTObIM6qOfXXyZPdxe05mry-HnvYE9b7BmWw2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4177,25 +4193,6 @@ function engineResultToItem(engineResult) {
     };
 }
 docReady(() => {
-    if (window.navigator.standalone === false) {
-        if (navigator.userAgent.indexOf('KAKAOTALK') === -1) {
-            const isSafari = iOSSafari(navigator.userAgent);
-            if (isSafari) {
-                if (util.getCookie('Iphone_message_disabled') !== 'true') {
-                    document.getElementById('Iphone_message').style.display = 'block';
-                }
-            }
-        }
-    }
-
-
-    function iOSSafari(userAgent) {
-        return (
-            /iP(ad|od|hone)/i.test(userAgent) &&
-            /WebKit/i.test(userAgent) &&
-            !/(CriOS|FxiOS|OPiOS|mercury)/i.test(userAgent)
-        );
-    }
 
     const priceConstants = {
         min: 0,
@@ -4245,8 +4242,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":7642,"New_Start_Date":"2025-10-14T00:00:00","New_End_Date":"2025-11-03T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-10-14T12:01:02.6540689","Support":false,"Order":0,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/31974731c946470d974e79bf6d6c2f79.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0434a7a8ea594beea1b35ae8834487f7.jpg","Click_Url":"https://event-us.kr/omikorea/event/114207","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"품질 관리 혁신을 위한","BannerDescription":"AI 기반 테스트 자동화 응용","BannerDate":"2025. 11. 04(화) 14:00","BannerPlace":"오프라인 행사"},{"Id":7678,"New_Start_Date":"2025-10-19T00:00:00","New_End_Date":"2025-11-01T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-10-17T17:53:04.4301558","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b4cdc13a2e6040088da68a35b9690d58.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/3d51bc2119d747ba877ae387c0e1a826.jpg","Click_Url":"https://event-us.kr/dimaco/event/114568?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=tgdywwceak","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"외국인 관광객에게 선택 받는","BannerDescription":"K브랜드의 조건과 바이럴 전략 세미나","BannerDate":"2025. 11. 07(금) 14:00","BannerPlace":"오프라인 행사"}],
-                    searchResultBanners: [{"Id":"114781","CoverImageUrl":"/Image/shdreamfd/114781/ProjectInfo/Cover/a777db06261649c4bc547a4f78b5cfa2.png","Title":"2025 신한 스퀘어브릿지 대학생 창업 공모전 HERO IR(~11/4)","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/shdreamfd/TopLogoImage/99c5540fc94d4a4aa66e57deec625906.png","EventType":"멘토링/대외활동","Category":"창업","Category2":"창업 지원","StartDate":"2025-11-27T00:00:00","CloseDate":"2025-11-27T23:30:00","RegisterStartDate":"2025-10-20T00:00:00","RegisterDueDate":"2025-11-04T16:00:00","ViewCount":14,"AppSubDomain":"shdreamfd","IsSuper":false,"AppTitle":"『신한 스퀘어브릿지』","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"인천 연수구","EventAddress":"인천 연수구 컨벤시아대로 204","EventAddressTitle":"『신한 스퀘어브릿지 인천』","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-10-20T18:35:38.8627471","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":149836,"ProjectId":"114781","ProjectSubDomain":"shdreamfd","TagId":9490,"Date":"2025-10-22T16:37:29.243579","Sort":0,"Project":null,"Tag":null},{"Id":149837,"ProjectId":"114781","ProjectSubDomain":"shdreamfd","TagId":383,"Date":"2025-10-22T16:37:29.243579","Sort":1,"Project":null,"Tag":null},{"Id":149838,"ProjectId":"114781","ProjectSubDomain":"shdreamfd","TagId":5289,"Date":"2025-10-22T16:37:29.243579","Sort":2,"Project":null,"Tag":null},{"Id":149839,"ProjectId":"114781","ProjectSubDomain":"shdreamfd","TagId":1172,"Date":"2025-10-22T16:37:29.243579","Sort":3,"Project":null,"Tag":null},{"Id":149840,"ProjectId":"114781","ProjectSubDomain":"shdreamfd","TagId":5740,"Date":"2025-10-22T16:37:29.243579","Sort":4,"Project":null,"Tag":null}],"pitId":7695,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/shdreamfd/event/114781","CorrectionValue":0.0},{"Id":"114568","CoverImageUrl":"/Image/dimaco/114568/ProjectInfo/Cover/778bfc5642c74aa490597fd8bbcc6dce.jpg","Title":"외국인 관광객을 타겟팅하는 브랜드 마케팅 전략","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dimaco/TopLogoImage/3a80d810aa124477b202743511dc4a12.png","EventType":"강연/세미나","Category":"마케팅","Category2":"브랜딩","StartDate":"2025-11-07T14:00:00","CloseDate":"2025-11-07T16:00:00","RegisterStartDate":"2025-10-17T12:00:00","RegisterDueDate":"2025-11-06T15:00:00","ViewCount":1291,"AppSubDomain":"dimaco","IsSuper":false,"AppTitle":"DI·MA·CO ","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 역삼로 180","EventAddressTitle":"마루 180, 이벤트홀 B1층","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-10-17T09:31:18.4634962","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":148853,"ProjectId":"114568","ProjectSubDomain":"dimaco","TagId":125,"Date":"2025-10-17T11:42:14.6787407","Sort":0,"Project":null,"Tag":null},{"Id":148854,"ProjectId":"114568","ProjectSubDomain":"dimaco","TagId":126,"Date":"2025-10-17T11:42:14.6787407","Sort":1,"Project":null,"Tag":null},{"Id":148855,"ProjectId":"114568","ProjectSubDomain":"dimaco","TagId":29938,"Date":"2025-10-17T11:42:14.6787407","Sort":2,"Project":null,"Tag":null},{"Id":148856,"ProjectId":"114568","ProjectSubDomain":"dimaco","TagId":4773,"Date":"2025-10-17T11:42:14.6787407","Sort":3,"Project":null,"Tag":null},{"Id":148857,"ProjectId":"114568","ProjectSubDomain":"dimaco","TagId":842,"Date":"2025-10-17T11:42:14.6787407","Sort":4,"Project":null,"Tag":null}],"pitId":7672,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/dimaco/event/114568?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=pwcmizrrwa","CorrectionValue":400.0},{"Id":"114240","CoverImageUrl":"/Image/artstartupday/114240/ProjectInfo/Cover/fb7096aedd3f472eba16b255d8d1bc39.png","Title":"2025 아트스타트업 데이","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/artstartupday/TopLogoImage/1808e16b996f45d0b5f6429a877df4e8.png","EventType":"강연/세미나","Category":"예술","Category2":null,"StartDate":"2025-11-03T11:00:00","CloseDate":"2025-11-03T19:00:00","RegisterStartDate":"2025-10-15T09:00:00","RegisterDueDate":"2025-10-28T14:00:00","ViewCount":1940,"AppSubDomain":"artstartupday","IsSuper":false,"AppTitle":"2025 아트스타트업데이","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 종로구","EventAddress":"서울 종로구 율곡로 6","EventAddressTitle":"아트코리아랩 6층 아고라","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-10-13T22:09:39.9203484","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[],"pitId":7710,"IsAdCheck":true,"AdOrder":2,"IsAdMark":true,"Url":"https://event-us.kr/artstartupday/event/114240","CorrectionValue":0.0}],
+                    banners: [{"Id":8055,"New_Start_Date":"2025-12-24T00:00:00","New_End_Date":"2026-01-15T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-12-24T14:16:35.3283028","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f3f158b16da14638be6ef8460e46d8ce.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c1fc2eea643c449692eafe34ffc0a24a.jpg","Click_Url":"https://event-us.kr/m/118676/48003","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"10가지 핵심 키워드 전략과 실행","BannerDescription":"2026 디지털 마케팅 키워드","BannerDate":"2026. 01. 21(수) 14:00","BannerPlace":"오프라인 행사"},{"Id":8077,"New_Start_Date":"2026-01-01T00:00:00","New_End_Date":"2026-01-21T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-12-30T11:53:41.4469731","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/02abc53dde304b2fba8a80df7c1d16a9.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/1eb0e41f00b74ebe876da0c7ca095a13.png","Click_Url":"https://event-us.kr/m/118668/48116","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"프리리치 공식 기반 비즈니스 설계","BannerDescription":"1인 사업가 수익화 시스템 설계","BannerDate":"2026. 01. 22(목) 15:30","BannerPlace":"오프라인 행사"},{"Id":8036,"New_Start_Date":"2025-12-24T00:00:00","New_End_Date":"2026-01-07T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-12-23T10:55:43.2047208","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/50c6545c077d4c54abd49bf57566b464.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/9de9c34157df4cf3b7cfff2fa14dd6aa.png","Click_Url":"https://event-us.kr/m/118435/47963","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"브랜딩부터 자본 유치까지 A-Z","BannerDescription":"F&B창업을 사업으로 만드는 성공전략","BannerDate":"2025. 12. 23(화) ~ 2026. 01. 10(토)","BannerPlace":"온라인 행사"},{"Id":8056,"New_Start_Date":"2025-12-24T00:00:00","New_End_Date":"2026-01-14T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-12-24T14:19:05.268679","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ea7de73dba0447f8a3c7ade9b487345c.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/fc11d502efa243d98b78c0e14a008c59.png","Click_Url":"https://event-us.kr/m/118557/47964","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"AI 시대 인력 관리의 재구성","BannerDescription":"HR 시리즈 웨비나 2026","BannerDate":"2026. 01. 16(금) ~ 2026. 02. 13(금)","BannerPlace":"온라인 행사"},{"Id":7996,"New_Start_Date":"2025-12-15T00:00:00","New_End_Date":"2026-01-05T23:59:59","Status":"ADVERTISING","ApplyDate":"2025-12-08T10:33:24.8947723","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/bc8aa678ba8e47679dc5a0993e6a48ba.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/7068babf564a43feb41ed0100ce9efe4.png","Click_Url":"https://event-us.kr/m/117847/47435","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"부정 게시글 관리부터 모니터링까지","BannerDescription":"AI시대, 브랜드 평판 리스크 관리 ","BannerDate":"2026. 01. 15(목) 14:00","BannerPlace":"온라인 행사"},{"Id":8085,"New_Start_Date":"2026-01-03T00:00:00","New_End_Date":"2026-01-17T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-01-03T07:07:01.9930451","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/c8d71550122e4ad1bcf8b3b74e91a0b8.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/96dab56652724405ab78586f453efaab.png","Click_Url":"https://event-us.kr/dallem/event/118635","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"미국 진출 시행 착오를 줄이는","BannerDescription":"미국 GTM 성공 전략 세미나","BannerDate":"2026. 01. 17(토) 13:00","BannerPlace":"오프라인 행사"},{"Id":8084,"New_Start_Date":"2026-01-03T00:00:00","New_End_Date":"2026-01-10T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-01-03T06:59:56.1296287","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/81c08692122a49148bee0d1f126f09a8.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/fd11866825924e95909186ed31a0acff.png","Click_Url":"https://event-us.kr/GroupBy/event/118388","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"80개의 채용 기업을 만나는 기회","BannerDescription":"2026 스타트업 채용 박람회","BannerDate":"2026. 01. 10(토) 09:00","BannerPlace":"오프라인 행사"}],
+                    searchResultBanners: [{"Id":"117847","CoverImageUrl":"/Image/webinar/117847/ProjectInfo/Cover/054f8a97f4c94418a0adb2b65de26e57.png","Title":"AI시대, 브랜드 평판 리스크 관리 전략","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"경영","Category2":"AI","StartDate":"2026-01-15T14:00:00","CloseDate":"2026-01-15T15:00:00","RegisterStartDate":"2025-12-08T00:00:00","RegisterDueDate":"2026-01-14T23:30:00","ViewCount":1727,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-12-03T15:50:00","EventSystemType":"online","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":157301,"ProjectId":"117847","ProjectSubDomain":"webinar","TagId":23266,"Date":"2025-12-03T15:52:20.4953969","Sort":0,"Project":null,"Tag":null},{"Id":157302,"ProjectId":"117847","ProjectSubDomain":"webinar","TagId":31389,"Date":"2025-12-03T15:52:20.4953969","Sort":1,"Project":null,"Tag":null},{"Id":157303,"ProjectId":"117847","ProjectSubDomain":"webinar","TagId":444,"Date":"2025-12-03T15:52:20.4953969","Sort":2,"Project":null,"Tag":null},{"Id":157304,"ProjectId":"117847","ProjectSubDomain":"webinar","TagId":3890,"Date":"2025-12-03T15:52:20.4953969","Sort":3,"Project":null,"Tag":null},{"Id":157305,"ProjectId":"117847","ProjectSubDomain":"webinar","TagId":31390,"Date":"2025-12-03T15:52:20.4953969","Sort":4,"Project":null,"Tag":null}],"pitId":7989,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/117847/47436","CorrectionValue":0.0},{"Id":"118557","CoverImageUrl":"/Image/thomsonreuters/118557/ProjectInfo/Cover/25edf3b4477242f4b422c7b3805bf826.jpg","Title":"AI 시대 인력관리의 재구성 - 인재 전략, 조직 구조, 리더십 변화를 이끄는 글로벌 인사이트 -","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/thomsonreuters/TopLogoImage/d1b6ad36306146fb9f8c232b79231995.png","EventType":"강연/세미나","Category":"경영","Category2":"HR","StartDate":"2026-01-16T16:00:00","CloseDate":"2026-02-13T17:00:00","RegisterStartDate":"2025-12-19T00:00:00","RegisterDueDate":"2026-01-15T15:00:00","ViewCount":504,"AppSubDomain":"thomsonreuters","IsSuper":false,"AppTitle":"톰슨로이터코리아","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":99000,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-12-19T10:58:10.7649615","EventSystemType":"online","OnlineEventType":null,"ReceptionType":"eventus","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":159131,"ProjectId":"118557","ProjectSubDomain":"thomsonreuters","TagId":545,"Date":"2025-12-19T11:12:01.4461896","Sort":0,"Project":null,"Tag":null},{"Id":159132,"ProjectId":"118557","ProjectSubDomain":"thomsonreuters","TagId":544,"Date":"2025-12-19T11:12:01.4461896","Sort":1,"Project":null,"Tag":null},{"Id":159133,"ProjectId":"118557","ProjectSubDomain":"thomsonreuters","TagId":4435,"Date":"2025-12-19T11:12:01.4461896","Sort":2,"Project":null,"Tag":null},{"Id":159134,"ProjectId":"118557","ProjectSubDomain":"thomsonreuters","TagId":1291,"Date":"2025-12-19T11:12:01.4461896","Sort":3,"Project":null,"Tag":null},{"Id":159135,"ProjectId":"118557","ProjectSubDomain":"thomsonreuters","TagId":97,"Date":"2025-12-19T11:12:01.4461896","Sort":4,"Project":null,"Tag":null}],"pitId":8039,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/118557/47964","CorrectionValue":0.0},{"Id":"118676","CoverImageUrl":"/Image/dimaco/118676/ProjectInfo/Cover/bfbc1455f05b42d8b1f692e2253b2ce4.png","Title":"2026 디지털 마케팅 키워드","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/dimaco/TopLogoImage/3a80d810aa124477b202743511dc4a12.png","EventType":"강연/세미나","Category":"마케팅","Category2":"브랜딩","StartDate":"2026-01-21T14:00:00","CloseDate":"2026-01-21T16:00:00","RegisterStartDate":"2025-12-24T13:00:00","RegisterDueDate":"2026-01-18T12:00:00","ViewCount":1174,"AppSubDomain":"dimaco","IsSuper":false,"AppTitle":"DI·MA·CO ","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 역삼로 180","EventAddressTitle":"마루 180, 이벤트홀 B1층","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2025-12-23T15:10:00","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":159374,"ProjectId":"118676","ProjectSubDomain":"dimaco","TagId":125,"Date":"2025-12-23T16:04:56.8254327","Sort":0,"Project":null,"Tag":null},{"Id":159375,"ProjectId":"118676","ProjectSubDomain":"dimaco","TagId":126,"Date":"2025-12-23T16:04:56.8254327","Sort":1,"Project":null,"Tag":null},{"Id":159376,"ProjectId":"118676","ProjectSubDomain":"dimaco","TagId":29271,"Date":"2025-12-23T16:04:56.8254327","Sort":2,"Project":null,"Tag":null},{"Id":159377,"ProjectId":"118676","ProjectSubDomain":"dimaco","TagId":842,"Date":"2025-12-23T16:04:56.8254327","Sort":3,"Project":null,"Tag":null},{"Id":159378,"ProjectId":"118676","ProjectSubDomain":"dimaco","TagId":97,"Date":"2025-12-23T16:04:56.8254327","Sort":4,"Project":null,"Tag":null}],"pitId":8057,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/118676/48003","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
