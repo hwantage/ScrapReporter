@@ -18,16 +18,16 @@
 <link href="/contents/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/rd-navbar-2.1.8/dist/css/rd-navbar.css" rel="stylesheet"/>
-<link href="/contents/main_css/animation.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/main_css/layout.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/main_css/main-content.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/main_css/slick.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/css/new_base.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/css/sub_cont.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/css/login.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/common.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/layout.css?ver=2026-01-05" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/nav.css?ver=2026-01-05" rel="stylesheet"/>
+<link href="/contents/main_css/animation.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/main_css/layout.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/main_css/main-content.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/main_css/slick.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/css/new_base.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/css/sub_cont.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/css/login.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/common.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/layout.css?ver=2026-01-12" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/nav.css?ver=2026-01-12" rel="stylesheet"/>
 <link href="/contents/js/jquery-ui/jquery-ui.css" rel="stylesheet"/>
 <script src="/contents/main_js/core.min.js"></script>
 <script src="/contents/main_js/easings.min.js"></script>
@@ -37,9 +37,9 @@
 <script src="/contents/js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/src/localization/messages_ko.js"></script>
-<script src="/contents/js/func.js?ver=2026-01-05"></script>
-<script src="/contents/js/common.js?ver=2026-01-05"></script>
-<script src="/contents/js/action.js?ver=2026-01-05"></script>
+<script src="/contents/js/func.js?ver=2026-01-12"></script>
+<script src="/contents/js/common.js?ver=2026-01-12"></script>
+<script src="/contents/js/action.js?ver=2026-01-12"></script>
 <script src="/contents/nav_common/nav_js/core.min.js"></script>
 <script src="/contents/js/google_analytics.js"></script>
 </head>
@@ -288,7 +288,7 @@ function registData() {
 </div>
 <div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>4,047건</strong></span>
+<span>총 게시물 : <strong>4,050건</strong></span>
 <span>현재페이지 : 
 						<strong>
 							1
@@ -329,9 +329,51 @@ function registData() {
 <tbody>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4047
+									4050
 								</th>
 <td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14633">
+										RoboDEX 2026 - Robot Development &amp; Application EXPO(2026 일본 도쿄 로봇 개발 및 활용 전시회)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-01-21 ~ 2026-01-23</td>
+<td data-cell-header="접수기간">2025-11-23 ~ 2026-01-21</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4049
+								</th>
+<td data-cell-header="구분">진행</td>
+<td data-cell-header="개최국">아랍에미리트연합국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14632">
+										2026년 UAE 두바이 보안장비 전시회
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-01-12 ~ 2026-01-14</td>
+<td data-cell-header="접수기간">2025-12-28 ~ 2026-01-11</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4048
+								</th>
+<td data-cell-header="구분">종료</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14631">
+										Web3 오픈 컨퍼런스 2026 
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-01-12 ~ 2026-01-12</td>
+<td data-cell-header="접수기간">2026-01-01 ~ 2026-01-11</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4047
+								</th>
+<td data-cell-header="구분">종료</td>
 <td data-cell-header="개최국">미국</td>
 <td data-cell-header="제목">
 <a href="/seminar/seminarDetail.do?id=14628">
@@ -424,48 +466,6 @@ function registData() {
 </td>
 <td data-cell-header="행사기간">2025-12-12 ~ 2025-12-12</td>
 <td data-cell-header="접수기간">2025-11-11 ~ 2025-12-11</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4040
-								</th>
-<td data-cell-header="구분">종료</td>
-<td data-cell-header="개최국">인도</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14620">
-										2025 인도 뉴델리 보안 화재 전시회 [IFSEC]
-									</a>
-</td>
-<td data-cell-header="행사기간">2025-12-11 ~ 2025-12-13</td>
-<td data-cell-header="접수기간">2025-11-01 ~ 2025-12-11</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4039
-								</th>
-<td data-cell-header="구분">종료</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14617">
-										제21회 스마트금융 콘퍼런스
-									</a>
-</td>
-<td data-cell-header="행사기간">2025-12-11 ~ 2025-12-11</td>
-<td data-cell-header="접수기간">2025-11-10 ~ 2025-12-10</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4038
-								</th>
-<td data-cell-header="구분">종료</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14609">
-										ACC 2025(AI &amp; CLOUD CONFERENCE 2025)
-									</a>
-</td>
-<td data-cell-header="행사기간">2025-12-11 ~ 2025-12-01</td>
-<td data-cell-header="접수기간">2025-11-10 ~ 2025-12-10</td>
 </tr>
 </tbody>
 </table>

@@ -9,11 +9,12 @@
 <meta content="0" http-equiv="Expires">
 <meta content="no-cache" http-equiv="Pragma"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="/rndgate/eg/images/favicon.png?v=20260105" rel="icon" type="image/png"/>
 <title>공고정보 &gt; 국가R&amp;D통합공고 &gt; NTIS</title>
 <link href="https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do" rel="canonical"/>
 <meta content="공고메인화면을 호출한다." name="description"/>
 <link href="/rndgate/eg/css/ntis/Base.css?v=20240222" rel="stylesheet" type="text/css">
-<link href="/rndgate/eg/css/ntis/Layout.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/Layout.css?v=20240222" rel="stylesheet" type="text/css">
 <link href="/rndgate/eg/css/ntis/Header.css?v=20240222" rel="stylesheet" type="text/css"/>
 <link href="/rndgate/eg/css/ntis/Content.css?v=20240222" rel="stylesheet" type="text/css"/>
 <link href="/rndgate/eg/css/ntis/Button.css?v=20240222" rel="stylesheet" type="text/css"/>
@@ -94,7 +95,7 @@
 <script src="/rndgate/eg/js/ntis/webChng/common-globalheader.js" type="text/javascript"></script>
 <script src="/rndgate/eg/js/ntis/webChng/search.js" type="text/javascript"></script>
 <!-- 202308 js 추가 영역 end -->
-</link></meta></meta></head>
+</link></link></meta></meta></head>
 <body class="new_type_unfix">
 <div id="skipToContent">
 <a href="#container">본문 바로가기</a>
@@ -325,110 +326,135 @@ $(function(){
 });
 </script>
 <!-- 202401 header area start -->
-<header>
-<!-- 202308 header area start -->
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+<link href="/rndgate/eg/assets/css/root.css" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/assets/css/common.css" rel="stylesheet" type="text/css"/>
+<script src="/rndgate/eg/assets/js/ui-header.js" type="text/javascript"></script>
+<!-- header -->
+<header id="header">
 <input id="loginYn" name="loginYn" type="hidden" value="0"/>
-<div class="header_area">
-<div class="header_wreap">
-<!-- 공통 헤더 시작 -->
-<div class="common_header_box">
-<!-- 헤더 선택 시작 -->
-<div class="select_header_wreap">
-<div class="tablet_logo"></div>
-<div class="select_header_box" style="display: none;">
-<ul>
-<li id="detailHeader" title="상세형으로 이동">상세형</li>
-<li id="easyHeader" title="요약형으로 이동">요약형</li>
+<div class="gnb-overlay"></div>
+<div class="header-inner">
+<div class="header-left">
+<button class="btn-allmenu" type="button"><span class="sr-only">전체메뉴</span></button>
+<h1><a class="ntis-logo" href="https://www.ntis.go.kr"><span class="sr-only">NTIS</span></a></h1>
+</div>
+<div class="header-util">
+<button class="btn-search btn-tsearch-toggle" type="button"><span class="sr-only">검색</span></button>
+<button class="btn-allmenu" type="button"><span class="sr-only">전체메뉴</span></button>
+<button class="btn-login btn-login-toggle" type="button">시작하기</button>
+</div>
+</div>
+<!-- gnbWrap -->
+<div class="gnb-wrap">
+<h1><a class="ntis-logo" href="https://www.ntis.go.kr"><span class="sr-only">NTIS</span></a></h1>
+<div class="gnb-ntis">
+<ul aria-label="메인메뉴" class="gnb-depth1">
+<li>
+<a href="#" title="국가 R&amp;D 전략">국가 R&amp;D 전략</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndgate/eg/ia/mlp/allMap.do">과학기술분야중장기계획</a></li>
+<li><a href="https://www.ntis.go.kr/rndgate/eg/ia/ccl/cclInfo.do">국가연구개발사업 전주기</a></li>
+<li><a href="https://www.ntis.go.kr/rndtrend/PacstList.do">정책·기술 동향</a></li>
+<li><a href="https://www.ntis.go.kr/rndyeta/index.do">R&amp;D 기획·성과평가 관리</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="R&amp;D 통계와 분석">R&amp;D 통계와 분석</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndsts/Main.do">R&amp;D 통계</a></li>
+<li><a href="https://www.ntis.go.kr/tab/main/main.do">R&amp;D 분석</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="R&amp;D 데이터">R&amp;D 데이터</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/ThSearchTotal.do">국가 R&amp;D 데이터 검색</a></li>
+<li><a href="https://www.ntis.go.kr/rndgate/eg/oneMain/OneIndex.do">R&amp;D 데이터 신청</a></li>
+<li><a href="https://www.ntis.go.kr/rndopen/api/mng/apiMain.do">Open API</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="R&amp;D 과제 준비">R&amp;D 과제 준비</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do">국가 R&amp;D 통합 공고</a></li>
+<li><a href="https://www.ntis.go.kr/yusa/ia/sp/main.do">차별성 검토(舊.유사과제)</a></li>
+<li><a href="https://www.ntis.go.kr/rndgate/eg/si/sa/view.do">제재 정보 조회</a></li>
+<li><a href="https://www.ntis.go.kr/rndtrend/rndlaw/lawList.do">국가 R&amp;D 법령·지침</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="연구자와 연구기관">연구자와 연구기관</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/orginfo/index.jsp">연구 개발 기관</a></li>
+<li><a href="https://www.ntis.go.kr/hurims/ThSearchHumanDetailView.do">연구자 정보</a></li>
+<li><a href="https://www.ntis.go.kr/rfo/index.do">연구개발비</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="성과와 홍보">성과와 홍보</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndtema/">기술사업화 지원</a></li>
+<li><a href="https://www.ntis.go.kr/outcomes/popup/srchTotlDtl.do?cmd=bestoutcomes">R&amp;D 성과</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="이용안내">이용안내</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/ThAbout.do">NTIS 안내</a></li>
+<li><a href="https://www.ntis.go.kr/ThNewBoardList.do?boardDivCd=04&amp;boardDivSeqNo=1">고객지원</a></li>
+</ul>
+</li>
 </ul>
 </div>
+<button class="btn-allmenu-close" type="button"><span class="sr-only">전체메뉴닫기</span></button>
 </div>
-<!-- 공통 헤더 네비게이터 시작 -->
-<div class="navi_header_wreap">
-<div class="tablet_login_btn">
-<button class="btn-mid white mainbtn" onclick="onPopupLogin('')">로그인</button>
+<!--// gnbWrap -->
+<!-- searchWrap -->
+<div class="header-search-wrap">
+<div class="header-search-overlay"></div>
+<div class="header-search-inner">
+<div class="header-search-cont">
+<div class="search-bar-area">
+<fieldset class="search-form-group">
+<legend>통합검색</legend>
+<form action="https://www.ntis.go.kr/ThSearchTotalList.do" autocomplete="off" method="get">
+<input id="sort" name="sort" type="hidden"/>
+<input id="ntisYn" name="ntisYn" type="hidden"/>
+<input id="originalSearchWord" name="originalSearchWord" type="hidden"/>
+<input id="originalSearchGubun" name="originalSearchGubun" type="hidden"/>
+<div class="search-bar">
+<label class="tit sr-only" for="searchWord">검색어 입력</label>
+<input class="input-data" id="searchWord" name="searchWord" placeholder="찾고싶은 국가R&amp;D 데이터를 검색해보세요." type="text"/>
+<div class="btn-area">
+<button class="btn-search" type="submit"><span class="sr-only">검색</span></button>
 </div>
-<div class="navi_header_box">
-<ul>
-<li><a class="link_home" href="https://www.ntis.go.kr/" title="홈으로 이동"></a></li>
-<li class=""><a class="link_set" href="/ThPostList.do" title="NTIS 홍보"></a></li>
-<li onclick="onPopupLogin('')"><a class="link_login" href="#" title="로그인 새창열기"></a></li>
-<li onclick="newLoginGo()">로그인</li>
-</ul>
 </div>
-<!-- 요약형 태블릿,모바일 햄버거
-					<div class="header_util detail_hamburger">
-						<ul>
-							<li class="btn btn_menu act" id="headerGlobalMenuNewSub"><a href="#"><span>메뉴</span></a></li>
-						</ul>
-					</div>
-					-->
-<!-- 요약형 태블릿,모바일 햄버거 -->
-<div class="loginpopWrap">
-<div class="loginpop">
-<ul>
-<li class="loginGo" onclick="onPopupLogin('')"><a href="#">로그인</a></li>
+</form>
+</fieldset>
+</div>
+<button class="btn-tsearch-close" type="button"><span class="sr-only">통합검색 닫기</span></button>
+</div>
+</div>
+</div>
+<!-- //searchWrap -->
+<!-- loginpopWrap -->
+<div class="login-pop-wrap" id="loginpopWrapSub">
+<div class="login-pop">
+<div class="login-pop-head">
+<span class="login-pop-tit">Member</span>
+<button class="btn-login-close" type="button"><span class="sr-only">닫기</span></button>
+</div>
+<ul class="login-pop-list">
+<li class="login-go" onclick="onPopupLogin('')"><a href="#"><i class="ico ico-login"></i>로그인</a></li>
 <li><a href="/ThUserRegister.do">회원가입</a></li>
 <li><a href="javascript:goFindIdView();">아이디찾기</a></li>
 <li><a href="javascript:goFindPwView();">비밀번호찾기</a></li>
 </ul>
 </div>
 </div>
-</div>
-<!-- 공통 헤더 네비게이터 끝 -->
-</div>
-<!-- 공통헤더 끝 -->
-<!-- 상세형 헤더 시작 -->
-<div class="detail_ver_header_wreap active">
-<!-- GNB 시작-->
-<div class="gnb_wreap sub">
-<div class="gnb_box">
-<a href="/ThMain.do" title="NTIS 메인 페이지">
-<div class="ntis_logo">ntis</div>
-</a>
-<ul id="gnbMenu">
-<li aria-label="국가 R&amp;D 전략 그룹입니다" class="theme m1" name="mainLinkMenu1"><a title="국가 R&amp;D 전략">국가 R&amp;D 전략</a></li>
-<li aria-label="R&amp;D 통계와 분석 그룹입니다" class="theme m2" name="mainLinkMenu1"><a title="R&amp;D 통계와 분석">R&amp;D 통계와 분석</a></li>
-<li aria-label="R&amp;D 데이터 그룹입니다" class="theme m3" name="mainLinkMenu1"><a title="R&amp;D 데이터">R&amp;D 데이터</a></li>
-<li aria-label="R&amp;D 과제 준비 그룹입니다" class="theme m4" name="mainLinkMenu1"><a title="R&amp;D 과제 준비">R&amp;D 과제 준비</a></li>
-<li aria-label="연구자와 연구기관 그룹입니다" class="theme m5" name="mainLinkMenu1"><a title="연구자와 연구기관">연구자와 연구기관</a></li>
-<li aria-label="성과와 홍보 그룹입니다" class="theme m6" name="mainLinkMenu1"><a title="성과와 홍보">성과와 홍보</a></li>
-<li aria-label="이용안내 그룹입니다" class="theme m7" name="mainLinkMenu1"><a title="이용안내">이용안내</a></li>
-</ul>
-</div>
-</div>
-<!-- GNB OPEN 시작 -->
-<input id="tmpTypeCd" type="hidden" value="null"/>
-<input id="myMenuDtlSet" type="hidden" value="null"/>
-<!-- sub_gnb_wreap START -->
-<div class="sub_gnb_wreap" id="ThGlobalHeader"></div>
-<!-- sub_gnb_wreap END -->
-<!-- GNB 끝-->
-</div>
-<!-- 상세형 헤더 끝 -->
-<!-- 요약형 헤더 시작 -->
-<div class="easy_ver_header_wreap dpnone" style="padding: 0 !important; display: none;">
-<div class="header_inner">
-<div class="inbox">
-<div class="logoBox">
-<a href="/ThMain.do" title="NTIS 메인 페이지"><div class="ntis_logo">ntis</div></a>
-</div>
-<div class="header_util">
-<ul>
-<li class="btn btn_home"><a href="https://www.ntis.go.kr"><span>홈</span></a></li>
-<li class="btn btn_document"><a href="/ThPostList.do"><span>홍보</span></a></li>
-<li class="btn btn_setting" onclick="onPopupLogin('')"><a href="#"><span>설정</span></a></li>
-<li class="btn btn_login"><a href="javascript:onPopupLogin('');">로그인</a></li>
-<li class="btn btn_menu" id="headerGlobalMenuNew"><a href="#"><span>메뉴</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!-- 요약형 헤더 끝 -->
-</div>
-</div>
+<!-- //loginpopWrap -->
 </header>
+<!-- //header -->
 <!-- 202401 header area end -->
 <!-- 202308 nav area start -->
 <div class="new_nav_wrap">
@@ -970,15 +996,15 @@ $(function(){
        
 </script>
 <form action="/rndgate/eg/un/ra/mng.do" id="rndMngForm" method="post" name="rndMngForm">
-<input id="flag" name="flag" type="hidden" value=""/>
+<input id="flag" name="flag" type="hidden" value="">
 <!-- 현황 전체선택 여부 -->
-<input id="searchFormList" name="searchFormList" type="hidden" value=""/>
+<input id="searchFormList" name="searchFormList" type="hidden" value="">
 <!-- 형태 검색조건 -->
-<input id="searchStatusList" name="searchStatusList" type="hidden" value=""/>
+<input id="searchStatusList" name="searchStatusList" type="hidden" value="">
 <!-- 현황 검색조건 -->
-<input id="searchDeptList" name="searchDeptList" type="hidden" value=""/>
+<input id="searchDeptList" name="searchDeptList" type="hidden" value="">
 <!-- 부서 검색조건 -->
-<input id="searchSortType" name="searchSortType" type="hidden" value=""/>
+<input id="searchSortType" name="searchSortType" type="hidden" value="">
 <!-- 정렬형태 -->
 <input id="searchSortItem" name="searchSortItem" type="hidden" value=""/>
 <!-- 정렬대상 -->
@@ -1414,10 +1440,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="75759">
+<input id="totalCount" name="totalCount" type="hidden" value="75785">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>75,759건</span></h3>
+<h3 class="t_head">검색결과 <span>75,785건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1470,22 +1496,22 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 보건의료기술 연구개발사업 신규지원 대상과제 통합공고" type="checkbox" value="1252731"/></td>
+<td><input name="selectCheckList" title="26-1차 무기체계 부품국산화개발 지원사업 연구개발기관 모집 공고" type="checkbox" value="1252997"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75759
+                            75785
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252731&amp;flag=rndList" onclick="javascript:fn_view('1252731'); return false;" title="2026년도 제1차 보건의료기술 연구개발사업 신규지원 대상과제 통합공고"> 2026년도 제1차 보건의료기술 연구개발사업 신규지원 대상과제 통합공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252997&amp;flag=rndList" onclick="javascript:fn_view('1252997'); return false;" title="26-1차 무기체계 부품국산화개발 지원사업 연구개발기관 모집 공고"> 26-1차 무기체계 부품국산화개발 지원사업 연구개발기관 모집 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2025.12.31</td>
-<td data-title="마감일">2026.01.30</td>
+<td data-title="부처명">방위사업청</td>
+<td data-title="접수일">2026.01.06</td>
+<td data-title="마감일">2026.01.20</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1499,28 +1525,30 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                        D - 9
+                                    
+                                    
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고_(2026)(1. 필수/2-1. 미래)2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고" type="checkbox" value="1252492"/></td>
+<td><input name="selectCheckList" title="2026년도 AX기반지능형농업로봇분야 농식품부-농진청 협업과제 통합 공고_(2026)2026년도 AX기반지능형농업로봇분야 농식품부-농진청 협업과제 통합 공고" type="checkbox" value="1252999"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75758
+                            75784
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252492&amp;flag=rndList" onclick="javascript:fn_view('1252492'); return false;" title="2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고_(2026)(1. 필수/2-1. 미래)2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고"> 2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고_(2026)(1. 필수/2-1. 미래)2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252999&amp;flag=rndList" onclick="javascript:fn_view('1252999'); return false;" title="2026년도 AX기반지능형농업로봇분야 농식품부-농진청 협업과제 통합 공고_(2026)2026년도 AX기반지능형농업로봇분야 농식품부-농진청 협업과제 통합 공고"> 2026년도 AX기반지능형농업로봇분야 농식품부-농진청 협업과제 통합 공고_(2026)2026년도 AX기반지능형농업로봇분야 농식품부-농진청 협업과제 통합 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2025.12.31</td>
-<td data-title="마감일">2026.01.29</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.01.12</td>
+<td data-title="마감일">2026.02.10</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1534,28 +1562,28 @@ $(function(){
                                     
                                     
                                     
-                                    D-25
+                                    D-30
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고_(2026)(2-2. 미래)2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고" type="checkbox" value="1252491"/></td>
+<td><input name="selectCheckList" title="2026년도 AX기반지능형농작업협업산업화기술개발사업 시행계획 공고_(2026)2026년도 AX기반지능형농작업협업산업화기술개발사업 시행계획 공고" type="checkbox" value="1252993"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75757
+                            75783
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252491&amp;flag=rndList" onclick="javascript:fn_view('1252491'); return false;" title="2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고_(2026)(2-2. 미래)2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고"> 2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고_(2026)(2-2. 미래)2026년도 제1차 백신실용화기술개발사업단 신규지원 대상과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252993&amp;flag=rndList" onclick="javascript:fn_view('1252993'); return false;" title="2026년도 AX기반지능형농작업협업산업화기술개발사업 시행계획 공고_(2026)2026년도 AX기반지능형농작업협업산업화기술개발사업 시행계획 공고"> 2026년도 AX기반지능형농작업협업산업화기술개발사업 시행계획 공고_(2026)2026년도 AX기반지능형농작업협업산업화기술개발사업 시행계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2025.12.31</td>
-<td data-title="마감일">2026.01.29</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.01.12</td>
+<td data-title="마감일">2026.02.10</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1569,28 +1597,49 @@ $(function(){
                                     
                                     
                                     
-                                    D-25
+                                    D-30
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 의료현장감염대응역량고도화기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 의료현장감염대응역량고도화기술개발사업 신규지원 대상과제 공고" type="checkbox" value="1252668"/></td>
+<td><input name="selectCheckList" title="[조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (③우선순위 바이러스 감염병 치료전략 마련 등)" type="checkbox" value="1252905"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75756
+                            75782
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252668&amp;flag=rndList" onclick="javascript:fn_view('1252668'); return false;" title="2026년도 제1차 의료현장감염대응역량고도화기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 의료현장감염대응역량고도화기술개발사업 신규지원 대상과제 공고"> 2026년도 제1차 의료현장감염대응역량고도화기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 의료현장감염대응역량고도화기술개발사업 신규지원 대상과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252905&amp;flag=rndList" onclick="javascript:fn_view('1252905'); return false;" title="[조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (③우선순위 바이러스 감염병 치료전략 마련 등)"> [조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (③우선순위 바이러스 감염병 치료전략 마련 등)
                                 </a>
 </div>
 </td>
 <td data-title="부처명">질병관리청</td>
-<td data-title="접수일">2025.12.31</td>
-<td data-title="마감일">2026.01.30</td>
+<td data-title="접수일">2026.01.05</td>
+<td data-title="마감일">2026.01.12</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 1</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 디지털미디어이노베이션기술개발 신규지원 대상과제 공고_(2026)2026년도 디지털미디어이노베이션기술개발 신규지원 대상과제 공고(미디어지능화제작핵심기술개발)" type="checkbox" value="1252902"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            75781
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252902&amp;flag=rndList" onclick="javascript:fn_view('1252902'); return false;" title="2026년도 디지털미디어이노베이션기술개발 신규지원 대상과제 공고_(2026)2026년도 디지털미디어이노베이션기술개발 신규지원 대상과제 공고(미디어지능화제작핵심기술개발)"> 2026년도 디지털미디어이노베이션기술개발 신규지원 대상과제 공고_(2026)2026년도 디지털미디어이노베이션기술개발 신규지원 대상과제 공고(미디어지능화제작핵심기술개발)
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.01.19</td>
+<td data-title="마감일">2026.02.12</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1604,28 +1653,63 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                    D-32
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 환자중심 의료기술 최적화 연구사업 신규지원 대상과제 공고 " type="checkbox" value="1252662"/></td>
+<td><input name="selectCheckList" title="2026년도 글로벌우수기업연구소육성사업(GATC) 신규지원 대상과제 공고_(2026)2026년도 글로벌우수기업연구소육성사업(GATC) 신규지원 대상과제 공고" type="checkbox" value="1252899"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75755
+                            75780
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252899&amp;flag=rndList" onclick="javascript:fn_view('1252899'); return false;" title="2026년도 글로벌우수기업연구소육성사업(GATC) 신규지원 대상과제 공고_(2026)2026년도 글로벌우수기업연구소육성사업(GATC) 신규지원 대상과제 공고"> 2026년도 글로벌우수기업연구소육성사업(GATC) 신규지원 대상과제 공고_(2026)2026년도 글로벌우수기업연구소육성사업(GATC) 신규지원 대상과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">산업통상부</td>
+<td data-title="접수일">2026.01.19</td>
+<td data-title="마감일">2026.02.27</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-47
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 합성화학기반K-신작물보호제글로벌산업화 시행계획 공고_(2026)2026년 합성화학기반K-신작물보호제글로벌산업화 시행계획 공고" type="checkbox" value="1252898"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            75779
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252662&amp;flag=rndList" onclick="javascript:fn_view('1252662'); return false;" title="2026년도 환자중심 의료기술 최적화 연구사업 신규지원 대상과제 공고 "> 2026년도 환자중심 의료기술 최적화 연구사업 신규지원 대상과제 공고 
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252898&amp;flag=rndList" onclick="javascript:fn_view('1252898'); return false;" title="2026년도 합성화학기반K-신작물보호제글로벌산업화 시행계획 공고_(2026)2026년 합성화학기반K-신작물보호제글로벌산업화 시행계획 공고"> 2026년도 합성화학기반K-신작물보호제글로벌산업화 시행계획 공고_(2026)2026년 합성화학기반K-신작물보호제글로벌산업화 시행계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2025.12.30</td>
-<td data-title="마감일">2026.01.30</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.01.12</td>
+<td data-title="마감일">2026.02.10</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1639,28 +1723,28 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                    D-30
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년 농업연구개발사업 3차공모_(2026)AI 기반 인간-반려식물 상호작용 및 심리 케어 시스템 개발" type="checkbox" value="1252619"/></td>
+<td><input name="selectCheckList" title="2026년도 농생명자원기반국가필수의약품원료공급망대응기술개발사업 시행계획 공고_(2026)2026년도 농생명자원기반 국가필수의약품 원료공급망 대응기술개발사업 시행계획 공고" type="checkbox" value="1252897"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75754
+                            75778
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252619&amp;flag=rndList" onclick="javascript:fn_view('1252619'); return false;" title="2026년 농업연구개발사업 3차공모_(2026)AI 기반 인간-반려식물 상호작용 및 심리 케어 시스템 개발"> 2026년 농업연구개발사업 3차공모_(2026)AI 기반 인간-반려식물 상호작용 및 심리 케어 시스템 개발
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252897&amp;flag=rndList" onclick="javascript:fn_view('1252897'); return false;" title="2026년도 농생명자원기반국가필수의약품원료공급망대응기술개발사업 시행계획 공고_(2026)2026년도 농생명자원기반 국가필수의약품 원료공급망 대응기술개발사업 시행계획 공고"> 2026년도 농생명자원기반국가필수의약품원료공급망대응기술개발사업 시행계획 공고_(2026)2026년도 농생명자원기반 국가필수의약품 원료공급망 대응기술개발사업 시행계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">농촌진흥청</td>
-<td data-title="접수일">2025.12.30</td>
-<td data-title="마감일">2026.02.02</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.01.12</td>
+<td data-title="마감일">2026.02.10</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1674,150 +1758,52 @@ $(function(){
                                     
                                     
                                     
-                                    D-29
+                                    D-30
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년 농업연구개발사업 3차공모_(2026)농업활동 치유효과의 AI 다차원 분석" type="checkbox" value="1252618"/></td>
+<td><input name="selectCheckList" title="[조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (②항생제 내성균 치료 관련)" type="checkbox" value="1252896"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75753
+                            75777
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252618&amp;flag=rndList" onclick="javascript:fn_view('1252618'); return false;" title="2026년 농업연구개발사업 3차공모_(2026)농업활동 치유효과의 AI 다차원 분석"> 2026년 농업연구개발사업 3차공모_(2026)농업활동 치유효과의 AI 다차원 분석
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252896&amp;flag=rndList" onclick="javascript:fn_view('1252896'); return false;" title="[조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (②항생제 내성균 치료 관련)"> [조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (②항생제 내성균 치료 관련)
                                 </a>
 </div>
 </td>
-<td data-title="부처명">농촌진흥청</td>
-<td data-title="접수일">2025.12.30</td>
-<td data-title="마감일">2026.02.02</td>
+<td data-title="부처명">질병관리청</td>
+<td data-title="접수일">2026.01.05</td>
+<td data-title="마감일">2026.01.12</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-29
-                                
-
-                            </td>
+<span style="color: red">D - 1</span>
+</td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년 농업연구개발사업 3차공모_(2026)식물세포기반 고부가 기능성소재 대량생산 원천기술개발(자유공모)" type="checkbox" value="1252617"/></td>
+<td><input name="selectCheckList" title="[조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (①항생제 사용량 감소 등 관련)" type="checkbox" value="1252895"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75752
+                            75776
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252617&amp;flag=rndList" onclick="javascript:fn_view('1252617'); return false;" title="2026년 농업연구개발사업 3차공모_(2026)식물세포기반 고부가 기능성소재 대량생산 원천기술개발(자유공모)"> 2026년 농업연구개발사업 3차공모_(2026)식물세포기반 고부가 기능성소재 대량생산 원천기술개발(자유공모)
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252895&amp;flag=rndList" onclick="javascript:fn_view('1252895'); return false;" title="[조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (①항생제 사용량 감소 등 관련)"> [조달청 사전규격공개] (RFP1-1-2) 국내 연구자주도 감염병 임상시험 기획 및 네트워크 구축 (①항생제 사용량 감소 등 관련)
                                 </a>
 </div>
 </td>
-<td data-title="부처명">농촌진흥청</td>
-<td data-title="접수일">2025.12.30</td>
-<td data-title="마감일">2026.02.02</td>
+<td data-title="부처명">질병관리청</td>
+<td data-title="접수일">2026.01.05</td>
+<td data-title="마감일">2026.01.12</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-29
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년 농업연구개발사업 3차공모_(2026)식물세포기반 고부가 기능성소재 대량생산 원천기술개발" type="checkbox" value="1252616"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75751
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
+<span style="color: red">D - 1</span>
 </td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252616&amp;flag=rndList" onclick="javascript:fn_view('1252616'); return false;" title="2026년 농업연구개발사업 3차공모_(2026)식물세포기반 고부가 기능성소재 대량생산 원천기술개발"> 2026년 농업연구개발사업 3차공모_(2026)식물세포기반 고부가 기능성소재 대량생산 원천기술개발
-                                </a>
-</div>
-</td>
-<td data-title="부처명">농촌진흥청</td>
-<td data-title="접수일">2025.12.30</td>
-<td data-title="마감일">2026.02.02</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-29
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년 농업연구개발사업 3차공모_(2026)천연활성바이오소재생산최적화기술개발" type="checkbox" value="1252615"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75750
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1252615&amp;flag=rndList" onclick="javascript:fn_view('1252615'); return false;" title="2026년 농업연구개발사업 3차공모_(2026)천연활성바이오소재생산최적화기술개발"> 2026년 농업연구개발사업 3차공모_(2026)천연활성바이오소재생산최적화기술개발
-                                </a>
-</div>
-</td>
-<td data-title="부처명">농촌진흥청</td>
-<td data-title="접수일">2025.12.30</td>
-<td data-title="마감일">2026.02.02</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-29
-                                
-
-                            </td>
 </tr>
 </tbody>
 </table>
@@ -1830,7 +1816,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7576" onclick="fn_search(7576);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7579" onclick="fn_search(7579);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
@@ -1843,7 +1829,7 @@ $(function(){
 <input name="headTitle" type="hidden" value="순번;현황;형태;부처명;공고명;접수일;마감일;접수마감시간;공고일;공고기관명;문의처;공고문 바로가기(URL);공고유형;공고금액;공고사업명"/>
 <input name="cdId" type="hidden" value=""/>
 <input name="excelId" type="hidden" value=""/>
-</form>
+</input></input></input></input></input></form>
 <form id="rndAncmExcel" method="post" name="rndAncmExcel" target="_top">
 </form>
 <form action="https://apply.ntis.go.kr/tk-service.do" id="monitorForm">
@@ -2237,25 +2223,21 @@ $(function(){
 </div>
 </div>
 <!--202308 mobile bottom tab button end -->
-<!-- 202308 footer area start -->
-<div class="footer">
-<div class="footWrap inner">
-<div class="container">
-<div>
-<p>
-					COPYRIGHT © MINISTRY OF SCIENCE AND ICT. <span>ALL RIGHTS RESERVED.</span>
-</p>
-</div>
-<ul class="links">
+<div id="footer" style="clear: both;">
+<div class="footer-inner">
+<div class="f-cont">
+<div class="f-copy-area">
+<p class="f-copy">COPYRIGHT © MINISTRY OF SCIENCE AND ICT. ALL RIGHTS RESERVED.</p>
+<ul class="f-menu-list" style="font-size: 13px !important;">
 <li><a href="https://www.ntis.go.kr/ThPrivacyAgreement.do">개인정보처리방침</a></li>
 <li><a href="https://www.ntis.go.kr/ThTerms.do">NTIS정책</a></li>
 <li><a href="http://1398.acrc.go.kr/index.html">부정부패신고</a></li>
 </ul>
 </div>
-<button class="btn_return" onclick="location.href='https://www.ntis.go.kr/ThMain.do?pcYn=Y'">기존 홈페이지(PC) 돌아가기</button>
+<div class="f-link"><a class="f-menu" href="https://www.ntis.go.kr/ThNewBoardList.do?boardDivCd=04&amp;boardDivSeqNo=1">이용안내</a></div>
 </div>
 </div>
-<!-- 202308 footer area end -->
+</div>
 <div id="globalMenuNewLayer" style="display: none;"></div>
 <!-- 202308 mobile menu area end -->
 <!-- ====================== end # 페이지 하단 ====================== -->
