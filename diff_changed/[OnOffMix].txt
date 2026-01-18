@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="ko">
 <head>
@@ -10,7 +10,7 @@
 <meta content="width=1280" name="viewport"/>
 <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
 <meta content="8de35207d20064f3dde9f0b5fef702447d5ba460" name="naver-site-verification">
-<title>온오프믹스 :: 모임문화 플랫폼</title>
+<title>온오프믹스 :: 모임문화 플랫폼    </title>
 <meta content="https://static.onoffmix.com/images/common/onoffmix_logo_og.png" property="og:image"> <!-- favicon -->
 <!-- Common -->
 <link href="https://static.onoffmix.com/images/common/icon/favicon_32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -44,256 +44,291 @@
 <!-- OFM Style -->
 <link href="https://static.onoffmix.com/css/pc/event/event-search.css" rel="stylesheet"/> <!-- =================================== 화면 고유 끝 ===================================  -->
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-K5ZBGC5');</script>
+<script>(function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-K5ZBGC5');</script>
 <!-- End Google Tag Manager -->
 <!-- Matomo -->
 <script>
-    var _paq = window._paq = window._paq || [];
-    _paq.push(['trackPageView']);
-    _paq.push(['enableLinkTracking']);
-    (function() {
-        var u="//a.w.onoffmix.com/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-    })();
-</script>
+        var _paq = window._paq = window._paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//a.w.onoffmix.com/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
 <!-- End Matomo Code -->
 <style>
-.ie_end_support_popup_wrap{
-    display: none;
-    width: 900px;
-    height: 608px;
-    padding: 62px 100px 0;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid #c8c8c8;
-    box-sizing: border-box;
-    text-align: center;
-    letter-spacing: -1px;
-    line-height: 28px;
-    color: #333;
-    z-index: 1000;
-    background-color: #fff;
-}
-.ie_end_support_popup_wrap h1{
-    margin-bottom: 37px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #4195f5;
-    letter-spacing: -1.2px
-}
-.ie_end_support_popup_wrap p{
-    font-size: 16px;
-}
-.ie_end_support_popup_wrap p + p{margin-top: 10px;}
-.ie_end_support_popup_wrap p span{ font-weight: bold; }
-.ie_end_support_popup_wrap p span:last-child{ color: #4195f5;  }
-.browser_link{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 15px;
-    margin-top: 39px;
-    border-top: 1px solid #d8d8d8;
-}
-.browser_link > span{
-    display: block;
-    width: 100%;
-    margin-top: 36px;
-    margin-bottom: 24px;
-    font-size: 16px;
-    font-weight: bold;
-}
-.browser_link a{
-    display: block;
-    width: 140px;
-    height: 160px;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 20px;
-    letter-spacing: 0;
-    background-color: #f7f8fa;
-    border-radius: 10px;
-}
-.browser_link a span{
-    display: block;
-    font-weight: normal;
-    letter-spacing: -1px;
-    color: #666;
-}
-.browser_link a::before{
-    content: "";
-    display: block;
-    width: 72px;
-    height: 72px;
-    margin: 21px auto 9px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-.browser_link a:nth-child(2)::before{background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/chrome.png");}
-.browser_link a:nth-child(3)::before{background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/edge.png");}
-.browser_link a:nth-child(4)::before{background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/whale.png");}
-.browser_link a:nth-child(5)::before{background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/firefox.png");}
-.ie_end_support_popup_wrap button{
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 19px;
-    right: 19px;
-    cursor: pointer;
-    border: 0 none;
-    overflow: hidden;
-    text-indent: -9999rem;
-    background-color: transparent;
-    background-image: url("https://static.onoffmix.com/images/pc/svg/menu-close-gray.svg");
-}
-.close_check{
-    position: absolute;
-    right: 21px;
-    bottom: 15px;
-}
-.close_check input{
-    width: 13px;
-    height: 13px;
-    vertical-align: middle;
-    border-color: rgba(0, 0, 0, 0.2);
-}
-.close_check label{
-    margin-left: 7px;
-    font-size: 12px;
-    letter-spacing: -1px;
-    line-height: 14px;
-    vertical-align: middle;
-    color: #333;
-}
+        .ie_end_support_popup_wrap {
+            display: none;
+            width: 900px;
+            height: 608px;
+            padding: 62px 100px 0;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #c8c8c8;
+            box-sizing: border-box;
+            text-align: center;
+            letter-spacing: -1px;
+            line-height: 28px;
+            color: #333;
+            z-index: 1000;
+            background-color: #fff;
+        }
 
-/* 특정 클래스 하이라이트 제거 */
-.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-</style>
+        .ie_end_support_popup_wrap h1 {
+            margin-bottom: 37px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #4195f5;
+            letter-spacing: -1.2px
+        }
+
+        .ie_end_support_popup_wrap p {
+            font-size: 16px;
+        }
+
+        .ie_end_support_popup_wrap p+p {
+            margin-top: 10px;
+        }
+
+        .ie_end_support_popup_wrap p span {
+            font-weight: bold;
+        }
+
+        .ie_end_support_popup_wrap p span:last-child {
+            color: #4195f5;
+        }
+
+        .browser_link {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 15px;
+            margin-top: 39px;
+            border-top: 1px solid #d8d8d8;
+        }
+
+        .browser_link>span {
+            display: block;
+            width: 100%;
+            margin-top: 36px;
+            margin-bottom: 24px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .browser_link a {
+            display: block;
+            width: 140px;
+            height: 160px;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            letter-spacing: 0;
+            background-color: #f7f8fa;
+            border-radius: 10px;
+        }
+
+        .browser_link a span {
+            display: block;
+            font-weight: normal;
+            letter-spacing: -1px;
+            color: #666;
+        }
+
+        .browser_link a::before {
+            content: "";
+            display: block;
+            width: 72px;
+            height: 72px;
+            margin: 21px auto 9px;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .browser_link a:nth-child(2)::before {
+            background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/chrome.png");
+        }
+
+        .browser_link a:nth-child(3)::before {
+            background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/edge.png");
+        }
+
+        .browser_link a:nth-child(4)::before {
+            background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/whale.png");
+        }
+
+        .browser_link a:nth-child(5)::before {
+            background-image: url("https://static.onoffmix.com/images/pc/ie_end_support_popup/firefox.png");
+        }
+
+        .ie_end_support_popup_wrap button {
+            display: block;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: 19px;
+            right: 19px;
+            cursor: pointer;
+            border: 0 none;
+            overflow: hidden;
+            text-indent: -9999rem;
+            background-color: transparent;
+            background-image: url("https://static.onoffmix.com/images/pc/svg/menu-close-gray.svg");
+        }
+
+        .close_check {
+            position: absolute;
+            right: 21px;
+            bottom: 15px;
+        }
+
+        .close_check input {
+            width: 13px;
+            height: 13px;
+            vertical-align: middle;
+            border-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .close_check label {
+            margin-left: 7px;
+            font-size: 12px;
+            letter-spacing: -1px;
+            line-height: 14px;
+            vertical-align: middle;
+            color: #333;
+        }
+
+        /* 특정 클래스 하이라이트 제거 */
+        .VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q {
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+    </style>
 <script>
-    function googleTranslateElementInit(){
-        new google.translate.TranslateElement({
-            pageLanguage: "ko",
-            includedLanguages: "ko,en",
-            autoDisplay: false,
-        }, "googleTranslateElementBanner");
-    }
-    const cookie = document.cookie.split('; ').find(row => row.startsWith('googtrans'));
-    if (cookie && cookie.split('=')[1] === "/ko/en") {
-        setTimeout(() => {
-            document.querySelector('[data-translation_btn]').textContent = "KO";
-        }, 500);
-    }
-    document.addEventListener("click", ( event )=>{
-        const target = event.target;
-        if(target.dataset["translation_btn"] === "" || target.closest("[data-translation_btn]")){
-            const select_element = document.querySelector('.goog-te-combo');
-            if (!select_element) {
-                window.location.reload();
-            }
-            select_element.value = select_element.value === "en" ?
-                "ko" : select_element.value === "ko" ? "en" : "en";
-            select_element.dispatchEvent( new Event("change", {
-                "bubbles": true
-            }) );
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: "ko",
+                includedLanguages: "ko,en",
+                autoDisplay: false,
+            }, "googleTranslateElementBanner");
         }
-    });
-    document.addEventListener("change", ( event )=>{
-        const target = event.target;
-        if( !target.classList.contains("goog-te-combo") ) return;
-        if(target.value !== ""){
-            document.querySelector('[data-translation_btn]').textContent = target.value === "en" ? "KO" : "EN";
-            return;
+        const cookie = document.cookie.split('; ').find(row => row.startsWith('googtrans'));
+        if (cookie && cookie.split('=')[1] === "/ko/en") {
+            setTimeout(() => {
+                document.querySelector('[data-translation_btn]').textContent = "KO";
+            }, 500);
         }
-        target.value = "en";
-        target.dispatchEvent( new Event("change", {"bubbles": true}) );
-    });
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script defer="" type="module">(()=>{
-const channelIOSetting = ()=>{
-    const channelIO_obj = {"pluginKey": "e0130bb5-d745-41a9-88af-b10790bbf1f7"};
-    if( document.querySelector("[data-header-list_box='logout']") ){
-        $.ajax({
-            "type": "POST",
-            "url": window.apiUrlSetting("/v1/auth/me"),
-            "dataType": "JSON",
-            "xhrFields" : {"withCredentials" : true},
-            "async": false,
-            "success": ( response )=>{
-                if(response.API_CODE !== "0000"){
-                    console.error("/v1/auth/me error");
-                    return;
+        document.addEventListener("click", (event) => {
+            const target = event.target;
+            if (target.dataset["translation_btn"] === "" || target.closest("[data-translation_btn]")) {
+                const select_element = document.querySelector('.goog-te-combo');
+                if (!select_element) {
+                    window.location.reload();
                 }
-                const data = response.API_DATA;
-                channelIO_obj["memberId"] = data.USER_NO;
-                channelIO_obj["unsubscribeEmail"] = data.USER_EMAIL_RECEIVE_ALLOW_YN === "Y";
-                channelIO_obj["profile"] = {
-                    "name": data.USER_NM,
-                    "mobileNumber": data.USER_CEL_NO,
-                    "email": data.USER_EMAIL_ADDR
-                }
+                select_element.value = select_element.value === "en" ?
+                    "ko" : select_element.value === "ko" ? "en" : "en";
+                select_element.dispatchEvent(new Event("change", {
+                    "bubbles": true
+                }));
             }
         });
-    }
-    ChannelIO("boot", channelIO_obj);
-}
+        document.addEventListener("change", (event) => {
+            const target = event.target;
+            if (!target.classList.contains("goog-te-combo")) return;
+            if (target.value !== "") {
+                document.querySelector('[data-translation_btn]').textContent = target.value === "en" ? "KO" : "EN";
+                return;
+            }
+            target.value = "en";
+            target.dispatchEvent(new Event("change", { "bubbles": true }));
+        });
+    </script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script defer="" type="module">(() => {
+            const channelIOSetting = () => {
+                const channelIO_obj = { "pluginKey": "e0130bb5-d745-41a9-88af-b10790bbf1f7" };
+                if (document.querySelector("[data-header-list_box='logout']")) {
+                    $.ajax({
+                        "type": "POST",
+                        "url": window.apiUrlSetting("/v1/auth/me"),
+                        "dataType": "JSON",
+                        "xhrFields": { "withCredentials": true },
+                        "async": false,
+                        "success": (response) => {
+                            if (response.API_CODE !== "0000") {
+                                console.error("/v1/auth/me error");
+                                return;
+                            }
+                            const data = response.API_DATA;
+                            channelIO_obj["memberId"] = data.USER_NO;
+                            channelIO_obj["unsubscribeEmail"] = data.USER_EMAIL_RECEIVE_ALLOW_YN === "Y";
+                            channelIO_obj["profile"] = {
+                                "name": data.USER_NM,
+                                "mobileNumber": data.USER_CEL_NO,
+                                "email": data.USER_EMAIL_ADDR
+                            }
+                        }
+                    });
+                }
+                ChannelIO("boot", channelIO_obj);
+            }
 
-if( window.ChannelIO ){
-    console.error("ChannelIO script included twice.");
-    return;
-}
-var ch = function(){ch.c(arguments);};
-ch.q = [];
-ch.c = function( args ){ ch.q.push(args); };
-window.ChannelIO = ch;
-function l(){
-    if( window.ChannelIOInitialized ){
-        channelIOSetting();
-        return;
-    }
+            if (window.ChannelIO) {
+                console.error("ChannelIO script included twice.");
+                return;
+            }
+            var ch = function () { ch.c(arguments); };
+            ch.q = [];
+            ch.c = function (args) { ch.q.push(args); };
+            window.ChannelIO = ch;
+            function l() {
+                if (window.ChannelIOInitialized) {
+                    channelIOSetting();
+                    return;
+                }
 
-    window.ChannelIOInitialized = true;
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
-    var x = document.getElementsByTagName("script")[0];
-    if(x.parentNode){
-        x.parentNode.insertBefore(s, x);
-    }
-}
-if( document.readyState === "complete" ){
-    l();
-}else{
-    window.addEventListener("DOMContentLoaded", l);
-    window.addEventListener("load", l);
-}
-})();
-</script>
+                window.ChannelIOInitialized = true;
+                var s = document.createElement("script");
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js";
+                var x = document.getElementsByTagName("script")[0];
+                if (x.parentNode) {
+                    x.parentNode.insertBefore(s, x);
+                }
+            }
+            if (document.readyState === "complete") {
+                l();
+            } else {
+                window.addEventListener("DOMContentLoaded", l);
+                window.addEventListener("load", l);
+            }
+        })();
+    </script>
 </meta></meta></head>
 <body class="onoffmix">
 <div id="googleTranslateElementBanner"></div>
 <article class="ie_end_support_popup_wrap">
 <h1>인터넷 익스플로러 (IE) 브라우저 지원 종료 안내</h1>
 <p>
-        마이크로소프트 사의 <span>인터넷 익스플로러(이하 IE)의 지원이 중단</span>됨에 따라<br/><span>온오프믹스 사이트의</span> <span>IE 지원이 종료</span>됩니다.
-    </p>
+                마이크로소프트 사의 <span>인터넷 익스플로러(이하 IE)의 지원이 중단</span>됨에 따라<br/><span>온오프믹스 사이트의</span> <span>IE 지원이 종료</span>됩니다.
+            </p>
 <p>
-        IE 브라우저 내에서는 사이트 이용이 원활하지 않을 수 있으니<br/>온오프믹스의 더 나은 사용 경험을 위해 아래 브라우저 중 하나를 선택하여 이용해 주세요.
-    </p>
+                IE 브라우저 내에서는 사이트 이용이 원활하지 않을 수 있으니<br/>온오프믹스의 더 나은 사용 경험을 위해 아래 브라우저 중 하나를 선택하여 이용해 주세요.
+            </p>
 <div class="browser_link">
 <span>지원 브라우저 설치 바로가기</span>
 <a href="https://www.google.com/intl/ko/chrome/" target="_blank">Google Chrome<span>구글 크롬</span></a>
@@ -302,37 +337,53 @@ if( document.readyState === "complete" ){
 <a href="https://www.mozilla.org/ko/firefox/new/" target="_blank">Firefox<span>파이어폭스</span></a>
 </div>
 <button type="button">팝업 닫기</button>
-<div class="close_check"><input id="today_no_view_check" type="checkbox"/><label for="today_no_view_check">오늘 하루 보지 않기</label></div>
+<div class="close_check"><input id="today_no_view_check" type="checkbox"/><label for="today_no_view_check">오늘 하루
+                    보지 않기</label></div>
 <script>
-(function(global, cookie){"use strict";
-var ie_end_support_popup_wrap = document.getElementsByClassName("ie_end_support_popup_wrap")[0];
-var today_no_view_check = ie_end_support_popup_wrap.getElementsByTagName("input")[0];
-var now_time = new Date();
-var agent = navigator.userAgent.toLowerCase();
+                (function (global, cookie) {
+                    "use strict";
+                    var ie_end_support_popup_wrap = document.getElementsByClassName("ie_end_support_popup_wrap")[0];
+                    var today_no_view_check = ie_end_support_popup_wrap.getElementsByTagName("input")[0];
+                    var currentDate = new Date();
+                    var agent = navigator.userAgent.toLowerCase();
+                    var isIE = (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1);
 
+                    if (isIE) {
+                        // IE인 경우 기본적으로 block으로 설정
+                        ie_end_support_popup_wrap.style.display = "block";
 
-if( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)){}else{ return; }
-if( !cookie("ie_end_support_popup") ){
-    ie_end_support_popup_wrap.style.display = "block";
-}
+                        // 쿠키가 있으면 숨김
+                        if (cookie("ie_end_support_popup")) {
+                            ie_end_support_popup_wrap.style.display = "none";
+                        }
+                    } else {
+                        // IE가 아닌 경우 팝업을 확실히 숨김
+                        ie_end_support_popup_wrap.style.display = "none";
+                        return;
+                    }
 
-ie_end_support_popup_wrap.addEventListener("click", function( event ){
-    var target = event.target;
-    if( target.nodeName === "BUTTON" || target.nodeName === "LABEL" ){
-        ie_end_support_popup_wrap.style.display = "none";
-        if( target.nodeName === "LABEL" ) today_no_view_check.checked = true;
-        if( today_no_view_check.checked ){
-            $.cookie("ie_end_support_popup", true, {
-                "path" : "/",
-                "domain" : document.domain,
-                "expires" : new Date(now_time.getFullYear() + ".0" + (now_time.getMonth() + 1) + ".0" + (now_time.getDate() + 1))
-            });
-        }
-        return;
-    }
-});
-})(window, $.cookie)
-</script>
+                    ie_end_support_popup_wrap.addEventListener("click", function (event) {
+                        var target = event.target;
+                        if (target.nodeName === "BUTTON" || target.nodeName === "LABEL") {
+                            ie_end_support_popup_wrap.style.display = "none";
+                            if (target.nodeName === "LABEL") today_no_view_check.checked = true;
+                            if (today_no_view_check.checked) {
+                                // 다음 날 00:00:00.000에 만료되도록 설정
+                                var nextDay = new Date(currentDate);
+                                nextDay.setDate(currentDate.getDate() + 1);
+                                nextDay.setHours(0, 0, 0, 0);
+
+                                $.cookie("ie_end_support_popup", true, {
+                                    "path": "/",
+                                    "domain": document.domain,
+                                    "expires": nextDay
+                                });
+                            }
+                            return;
+                        }
+                    });
+                })(window, $.cookie)
+            </script>
 </article>
 <div class="kakao_js_key" data-key="a1968093029e90d3117baf8277ef5975" style="display:none;"></div>
 <div class="apple_client_key" data-key="com.onoffmix.service" data-url="https://onoffmix.com/account/login/apple" style="display:none;"></div>
@@ -788,8 +839,8 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <ul data-link_box="">
 <li data-keyword_row="">
 <a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI 인공지능</a>
-<a href="/event/main?s=해커톤 공모전">해커톤</a>
-<a href="/event/main?s=국비지원 양성과정">국비지원</a>
+<a href="/event/main?s=게임">게임</a>
+<a href="/event/main?s=취업">취업</a>
 </li>
 <li>
 <a class="link_item event" data-c="b09b92021" href="/event/inviteEvent">무료로 초대해요</a>
@@ -1273,7 +1324,8 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
 <div>
                                     Tel : 02-6080-5579
                                     <span>Fax : 02-6280-8089</span>
-<span>일반/제휴 문의 : <a href="mailto:webmaster@onoffmix.com"> webmaster@onoffmix.com</a></span>
+<span>일반/제휴 문의 : <a href="mailto:webmaster@onoffmix.com">
+                                            webmaster@onoffmix.com</a></span>
 </div>
 </li>
 </ul>
@@ -1322,5 +1374,5 @@ ie_end_support_popup_wrap.addEventListener("click", function( event ){
     <script src="https://static.onoffmix.com/js/pc/dist/common/header.js"></script> -->
 <script src="https://static.onoffmix.com/js/common/dist/plugins/app/app-ver-chk.js"></script>
 <script src="https://static.onoffmix.com/js/common/dist/log/statistic.js"></script>
-<!-- Script --> </body>
+<!-- Script --></body>
 </html>

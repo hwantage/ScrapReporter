@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1362; // 전체 조회 건수
+	var totalNum = 1366; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -188,7 +188,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1362</b>건
+<span>총 <b>1366</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -227,10 +227,31 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3590&amp;page=1">2026년도 개인정보 이노베이션 존 운영기관 지정 공모</a>
+</td>
+<td class="date">2026-01-16</td>
+<td class="count">1268</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3590', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3588&amp;page=1">2026년 양자내성암호 시범전환 사업 설명회 개최</a>
+</td>
+<td class="date">2026-01-14</td>
+<td class="count">1936</td>
+<td class="attach">
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3586&amp;page=1">2026년 개인정보 보호·활용 분야 R&amp;D 사업 신규지원 대상과제 공고(~2.10. 오후3시)</a>
 </td>
 <td class="date">2026-01-09</td>
-<td class="count">1060</td>
+<td class="count">4684</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3586', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -238,11 +259,44 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
+<td class="num">1363</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3589&amp;page=1">2026년 1차 정보보호 인증제품 조달청 벤처나라 추천 희망기업 모집 공고(1월 추천) (~1.23(금) 18시까지)</a>
+</td>
+<td class="date">2026-01-14</td>
+<td class="count">1969</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3589', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr>
+<td class="num">1362</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3587&amp;page=1">2026년 SW 공급망 보안 체계(SSDF) 진단 서비스 안내</a>
+</td>
+<td class="date">2026-01-13</td>
+<td class="count">2235</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3587', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr>
 <td class="num">1361</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3581&amp;page=1">전자문서산업 실태조사 통계 이용자 만족도 조사</a>
+</td>
+<td class="date">2026-01-13</td>
+<td class="count">6423</td>
+<td class="attach">
+</td>
+</tr>
+<tr>
+<td class="num">1360</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3585&amp;page=1">2025년도 공공기관 고객만족도 조사 목적 개인정보처리 위탁 및 재위탁사항 알림</a>
 </td>
 <td class="date">2025-12-30</td>
-<td class="count">3785</td>
+<td class="count">4646</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3585', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -250,11 +304,11 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1360</td>
+<td class="num">1359</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3584&amp;page=1">2026년 블록체인 융복합 타운 조성 사업 모집 공고</a>
 </td>
 <td class="date">2025-12-26</td>
-<td class="count">5529</td>
+<td class="count">6318</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3584', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -262,11 +316,11 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1359</td>
+<td class="num">1358</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3583&amp;page=1">2026년 블록체인 특화 클러스터 조성 사업 모집 공고</a>
 </td>
 <td class="date">2025-12-26</td>
-<td class="count">5381</td>
+<td class="count">6075</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3583', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -274,66 +328,15 @@ function oneDepMenu() {
 </td>
 </tr>
 <tr>
-<td class="num">1358</td>
+<td class="num">1357</td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3582&amp;page=1">2026년도 개인정보 보호·활용 분야 R&amp;D 사업 신규과제 후보(안) 예고 및 인터넷 공시</a>
 </td>
 <td class="date">2025-12-23</td>
-<td class="count">6927</td>
+<td class="count">7694</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3582', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
-</td>
-</tr>
-<tr>
-<td class="num">1357</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3581&amp;page=1">전자문서산업 실태조사 통계 이용자 만족도 조사</a>
-</td>
-<td class="date">2025-12-22</td>
-<td class="count">4516</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1356</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3580&amp;page=1">2026년 정보보호 클러스터 입주기업 모집 공고</a>
-</td>
-<td class="date">2025-12-17</td>
-<td class="count">5709</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3580', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1355</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3579&amp;page=1">온마이데이터 신규 가입 이벤트 개최 안내</a>
-</td>
-<td class="date">2025-12-17</td>
-<td class="count">3301</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1354</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3578&amp;page=1">정보보호제품 성능평가기관 신규 및 재지정 안내</a>
-</td>
-<td class="date">2025-12-15</td>
-<td class="count">5310</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3578', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1353</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3577&amp;page=1">2025 KOREA LBS DAY</a>
-</td>
-<td class="date">2025-12-11</td>
-<td class="count">4871</td>
-<td class="attach">
 </td>
 </tr>
 </tbody>
@@ -361,10 +364,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2026-01-10</dd>
+<dd>2026-01-16</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="57fa198c-ea92-4122-b4ff-2a22547ca372">
+<input name="_csrf" type="hidden" value="aaf37729-4807-46dc-81fb-7406be7f46c7">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -387,7 +390,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "57fa198c-ea92-4122-b4ff-2a22547ca372");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "aaf37729-4807-46dc-81fb-7406be7f46c7");
             },			
 			success: function(data) {
 				alert(data.message)
