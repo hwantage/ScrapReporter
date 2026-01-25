@@ -395,6 +395,7 @@ $(function(){
 <ul class="gnb-depth2">
 <li><a href="https://www.ntis.go.kr/rndtema/">기술사업화 지원</a></li>
 <li><a href="https://www.ntis.go.kr/outcomes/popup/srchTotlDtl.do?cmd=bestoutcomes">R&amp;D 성과</a></li>
+<li><a href="https://www.ntis.go.kr/ThRndPfmPbrlIntro.do">R&amp;D 성과 홍보</a></li>
 </ul>
 </li>
 <li>
@@ -1440,10 +1441,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="75911">
+<input id="totalCount" name="totalCount" type="hidden" value="76024">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>75,911건</span></h3>
+<h3 class="t_head">검색결과 <span>76,024건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1496,21 +1497,56 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2026년도 양식생물 생물보안 체계 구축을 위한 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 양식생물 주요질병 신속·다중 진단고도화 기술개발 신규과제 선정계획 공고" type="checkbox" value="1253538"/></td>
+<td><input name="selectCheckList" title="2026년도 혁신성장 피부건강 기반기술 개발사업 신규지원 대상과제 공고_(2026)규제대응 평가기술 지원" type="checkbox" value="1254291"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75911
+                            76024
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253538&amp;flag=rndList" onclick="javascript:fn_view('1253538'); return false;" title="2026년도 양식생물 생물보안 체계 구축을 위한 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 양식생물 주요질병 신속·다중 진단고도화 기술개발 신규과제 선정계획 공고"> 2026년도 양식생물 생물보안 체계 구축을 위한 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 양식생물 주요질병 신속·다중 진단고도화 기술개발 신규과제 선정계획 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254291&amp;flag=rndList" onclick="javascript:fn_view('1254291'); return false;" title="2026년도 혁신성장 피부건강 기반기술 개발사업 신규지원 대상과제 공고_(2026)규제대응 평가기술 지원"> 2026년도 혁신성장 피부건강 기반기술 개발사업 신규지원 대상과제 공고_(2026)규제대응 평가기술 지원
                                 </a>
 </div>
 </td>
-<td data-title="부처명">해양수산부</td>
-<td data-title="접수일">2026.01.26</td>
+<td data-title="부처명">보건복지부</td>
+<td data-title="접수일">2026.01.28</td>
+<td data-title="마감일">2026.02.23</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-29
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년 해외인증지원체계기반구축(해외인증취득을위한성능개선및현지실증지원) 신규지원 대상과제 공고" type="checkbox" value="1254116"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76023
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254116&amp;flag=rndList" onclick="javascript:fn_view('1254116'); return false;" title="2026년 해외인증지원체계기반구축(해외인증취득을위한성능개선및현지실증지원) 신규지원 대상과제 공고"> 2026년 해외인증지원체계기반구축(해외인증취득을위한성능개선및현지실증지원) 신규지원 대상과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">산업통상부</td>
+<td data-title="접수일">2026.01.27</td>
 <td data-title="마감일">2026.02.19</td>
 <td class="end" data-title="D-day">
                                 
@@ -1525,97 +1561,27 @@ $(function(){
                                     
                                     
                                     
-                                    D-32
+                                    D-25
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 세포기반인공혈액(적혈구 및 혈소판) 제조 및 실증 플랫폼 기술개발사업 신규과제 통합공고_(2026)2026년도 제1차 세포기반인공혈액(적혈구 및 혈소판) 제조 및 실증 플랫폼 기술개발사업 신규과제 통합공고" type="checkbox" value="1253602"/></td>
+<td><input name="selectCheckList" title="2026년 해외인증지원체계기반구축(해외인증지원시험인프라구축) 신규지원 대상과제 공고" type="checkbox" value="1254115"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75910
+                            76022
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253602&amp;flag=rndList" onclick="javascript:fn_view('1253602'); return false;" title="2026년도 제1차 세포기반인공혈액(적혈구 및 혈소판) 제조 및 실증 플랫폼 기술개발사업 신규과제 통합공고_(2026)2026년도 제1차 세포기반인공혈액(적혈구 및 혈소판) 제조 및 실증 플랫폼 기술개발사업 신규과제 통합공고"> 2026년도 제1차 세포기반인공혈액(적혈구 및 혈소판) 제조 및 실증 플랫폼 기술개발사업 신규과제 통합공고_(2026)2026년도 제1차 세포기반인공혈액(적혈구 및 혈소판) 제조 및 실증 플랫폼 기술개발사업 신규과제 통합공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2026.01.13</td>
-<td data-title="마감일">2026.02.12</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-25
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 전자부품산업기술개발(주력산업IT융합) 신규 지원대상 연구개발과제 공고_(2026)2026년도 전자부품산업기술개발(주력산업IT융합)신규 지원대상 연구개발과제 공고" type="checkbox" value="1253536"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75909
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253536&amp;flag=rndList" onclick="javascript:fn_view('1253536'); return false;" title="2026년도 전자부품산업기술개발(주력산업IT융합) 신규 지원대상 연구개발과제 공고_(2026)2026년도 전자부품산업기술개발(주력산업IT융합)신규 지원대상 연구개발과제 공고"> 2026년도 전자부품산업기술개발(주력산업IT융합) 신규 지원대상 연구개발과제 공고_(2026)2026년도 전자부품산업기술개발(주력산업IT융합)신규 지원대상 연구개발과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254115&amp;flag=rndList" onclick="javascript:fn_view('1254115'); return false;" title="2026년 해외인증지원체계기반구축(해외인증지원시험인프라구축) 신규지원 대상과제 공고"> 2026년 해외인증지원체계기반구축(해외인증지원시험인프라구축) 신규지원 대상과제 공고
                                 </a>
 </div>
 </td>
 <td data-title="부처명">산업통상부</td>
-<td data-title="접수일">2026.01.20</td>
-<td data-title="마감일">2026.02.12</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-25
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 민군경 AI 기반 해양영상 융복합 분석기술개발(RD) 사업 신규과제 선정계획 공고_(2026)2026년도 민군경 AI 기반 해양영상 융복합 분석기술개발(RD) 사업 신규과제 선정계획 공고" type="checkbox" value="1253534"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75908
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253534&amp;flag=rndList" onclick="javascript:fn_view('1253534'); return false;" title="2026년도 민군경 AI 기반 해양영상 융복합 분석기술개발(RD) 사업 신규과제 선정계획 공고_(2026)2026년도 민군경 AI 기반 해양영상 융복합 분석기술개발(RD) 사업 신규과제 선정계획 공고"> 2026년도 민군경 AI 기반 해양영상 융복합 분석기술개발(RD) 사업 신규과제 선정계획 공고_(2026)2026년도 민군경 AI 기반 해양영상 융복합 분석기술개발(RD) 사업 신규과제 선정계획 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">해양수산부</td>
-<td data-title="접수일">2026.01.26</td>
+<td data-title="접수일">2026.01.21</td>
 <td data-title="마감일">2026.02.19</td>
 <td class="end" data-title="D-day">
                                 
@@ -1630,28 +1596,28 @@ $(function(){
                                     
                                     
                                     
-                                    D-32
+                                    D-25
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 자율주행차 해상 수출입 서비스 기술개발사업 신규과제 선정계획 공고_(2026)2026년도 자율주행차 해상 수출입 서비스 기술개발사업 신규과제 선정계획 공고" type="checkbox" value="1253522"/></td>
+<td><input name="selectCheckList" title="2026년도 미래수요 대응 기상장비 및 활용기술 개발 사업  공고" type="checkbox" value="1254114"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75907
+                            76021
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253522&amp;flag=rndList" onclick="javascript:fn_view('1253522'); return false;" title="2026년도 자율주행차 해상 수출입 서비스 기술개발사업 신규과제 선정계획 공고_(2026)2026년도 자율주행차 해상 수출입 서비스 기술개발사업 신규과제 선정계획 공고"> 2026년도 자율주행차 해상 수출입 서비스 기술개발사업 신규과제 선정계획 공고_(2026)2026년도 자율주행차 해상 수출입 서비스 기술개발사업 신규과제 선정계획 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254114&amp;flag=rndList" onclick="javascript:fn_view('1254114'); return false;" title="2026년도 미래수요 대응 기상장비 및 활용기술 개발 사업  공고"> 2026년도 미래수요 대응 기상장비 및 활용기술 개발 사업  공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">해양수산부</td>
-<td data-title="접수일">2026.01.26</td>
-<td data-title="마감일">2026.02.13</td>
+<td data-title="부처명">기상청</td>
+<td data-title="접수일">2026.02.09</td>
+<td data-title="마감일">2026.02.20</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1671,162 +1637,57 @@ $(function(){
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_한의중개개인연구" type="checkbox" value="1253520"/></td>
+<td><input name="selectCheckList" title="2026년도 국제해양환경규제 대응 친환경 선박평형수처리기술 고도화 및 미세플라스틱 포집기술 개발사업신규과제 선정계획 공고" type="checkbox" value="1254113"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            75906
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253520&amp;flag=rndList" onclick="javascript:fn_view('1253520'); return false;" title="2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_한의중개개인연구"> 2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_한의중개개인연구
-                                </a>
-</div>
-</td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2026.01.13</td>
-<td data-title="마감일">2026.02.11</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-24
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_한의의료기술 최적화 임상연구" type="checkbox" value="1253519"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75905
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253519&amp;flag=rndList" onclick="javascript:fn_view('1253519'); return false;" title="2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_한의의료기술 최적화 임상연구"> 2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_한의의료기술 최적화 임상연구
-                                </a>
-</div>
-</td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2026.01.13</td>
-<td data-title="마감일">2026.02.11</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-24
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_가이드라인 개발" type="checkbox" value="1253518"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75904
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253518&amp;flag=rndList" onclick="javascript:fn_view('1253518'); return false;" title="2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_가이드라인 개발"> 2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_(2026)2026년도 제1차 한의약혁신기술개발사업 신규지원 대상과제 공고_가이드라인 개발
-                                </a>
-</div>
-</td>
-<td data-title="부처명">보건복지부</td>
-<td data-title="접수일">2026.01.13</td>
-<td data-title="마감일">2026.02.11</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-24
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도  저탄소 사료산업을 위한 바다고리풀 대량생산 시스템 및 사료화 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 저탄소 사료산업을 위한 바다고리풀 대량생산 시스템 및 사료화 기술개발사업 신규과제 선정계획 공고" type="checkbox" value="1253521"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75903
+                            76020
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253521&amp;flag=rndList" onclick="javascript:fn_view('1253521'); return false;" title="2026년도  저탄소 사료산업을 위한 바다고리풀 대량생산 시스템 및 사료화 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 저탄소 사료산업을 위한 바다고리풀 대량생산 시스템 및 사료화 기술개발사업 신규과제 선정계획 공고"> 2026년도  저탄소 사료산업을 위한 바다고리풀 대량생산 시스템 및 사료화 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 저탄소 사료산업을 위한 바다고리풀 대량생산 시스템 및 사료화 기술개발사업 신규과제 선정계획 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기획재정부</td>
-<td data-title="접수일">2026.01.26</td>
-<td data-title="마감일">2026.02.19</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-32
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 수산종자산업 디지털혁신 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 수산종자산업 디지털혁신 기술개발사업 신규과제 선정계획 공고" type="checkbox" value="1253431"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            75902
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1253431&amp;flag=rndList" onclick="javascript:fn_view('1253431'); return false;" title="2026년도 수산종자산업 디지털혁신 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 수산종자산업 디지털혁신 기술개발사업 신규과제 선정계획 공고"> 2026년도 수산종자산업 디지털혁신 기술개발 사업 신규과제 선정계획 공고_(2026)2026년도 수산종자산업 디지털혁신 기술개발사업 신규과제 선정계획 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254113&amp;flag=rndList" onclick="javascript:fn_view('1254113'); return false;" title="2026년도 국제해양환경규제 대응 친환경 선박평형수처리기술 고도화 및 미세플라스틱 포집기술 개발사업신규과제 선정계획 공고"> 2026년도 국제해양환경규제 대응 친환경 선박평형수처리기술 고도화 및 미세플라스틱 포집기술 개발사업신규과제 선정계획 공고
                                 </a>
 </div>
 </td>
 <td data-title="부처명">해양수산부</td>
-<td data-title="접수일">2026.01.26</td>
-<td data-title="마감일">2026.02.19</td>
+<td data-title="접수일">2026.02.03</td>
+<td data-title="마감일">2026.02.23</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-29
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="[과학기술정보통신부 공고 제2026–0058호] 2026년도 국산연구장비기술경쟁력강화(연구장비산업 지속성장 지원) 신규과제 선정 시행 공고" type="checkbox" value="1254084"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76019
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254084&amp;flag=rndList" onclick="javascript:fn_view('1254084'); return false;" title="[과학기술정보통신부 공고 제2026–0058호] 2026년도 국산연구장비기술경쟁력강화(연구장비산업 지속성장 지원) 신규과제 선정 시행 공고"> [과학기술정보통신부 공고 제2026–0058호] 2026년도 국산연구장비기술경쟁력강화(연구장비산업 지속성장 지원) 신규과제 선정 시행 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.09</td>
+<td data-title="마감일">2026.02.26</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1841,6 +1702,146 @@ $(function(){
                                     
                                     
                                     D-32
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 혁신연구장비 핵심기술개발 및 상용화사업 시행 공고_(2026)2026년 첨단연구장비상용화 신규과제(사전기획)" type="checkbox" value="1254040"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76018
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254040&amp;flag=rndList" onclick="javascript:fn_view('1254040'); return false;" title="2026년도 혁신연구장비 핵심기술개발 및 상용화사업 시행 공고_(2026)2026년 첨단연구장비상용화 신규과제(사전기획)"> 2026년도 혁신연구장비 핵심기술개발 및 상용화사업 시행 공고_(2026)2026년 첨단연구장비상용화 신규과제(사전기획)
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.09</td>
+<td data-title="마감일">2026.02.26</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-32
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 혁신연구장비 핵심기술개발 및 상용화사업 시행 공고_(2026)2026년 연구장비핵심원천기술개발 신규과제" type="checkbox" value="1254038"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76017
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254038&amp;flag=rndList" onclick="javascript:fn_view('1254038'); return false;" title="2026년도 혁신연구장비 핵심기술개발 및 상용화사업 시행 공고_(2026)2026년 연구장비핵심원천기술개발 신규과제"> 2026년도 혁신연구장비 핵심기술개발 및 상용화사업 시행 공고_(2026)2026년 연구장비핵심원천기술개발 신규과제
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.09</td>
+<td data-title="마감일">2026.02.26</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-32
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 국산연구장비 기술경쟁력강화사업(연구장비산업지속성장지원) 시행 공고_(2026)2026년 수요대응형전략연구장비개발 신규과제" type="checkbox" value="1254037"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76016
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254037&amp;flag=rndList" onclick="javascript:fn_view('1254037'); return false;" title="2026년도 국산연구장비 기술경쟁력강화사업(연구장비산업지속성장지원) 시행 공고_(2026)2026년 수요대응형전략연구장비개발 신규과제"> 2026년도 국산연구장비 기술경쟁력강화사업(연구장비산업지속성장지원) 시행 공고_(2026)2026년 수요대응형전략연구장비개발 신규과제
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.09</td>
+<td data-title="마감일">2026.02.25</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-31
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 국산연구장비 기술경쟁력강화사업(연구장비산업지속성장지원) 시행 공고_(2026)2026년 국산연구장비혁신기술개발 신규과제" type="checkbox" value="1254036"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76015
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254036&amp;flag=rndList" onclick="javascript:fn_view('1254036'); return false;" title="2026년도 국산연구장비 기술경쟁력강화사업(연구장비산업지속성장지원) 시행 공고_(2026)2026년 국산연구장비혁신기술개발 신규과제"> 2026년도 국산연구장비 기술경쟁력강화사업(연구장비산업지속성장지원) 시행 공고_(2026)2026년 국산연구장비혁신기술개발 신규과제
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.09</td>
+<td data-title="마감일">2026.02.25</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-31
                                 
 
                             </td>
@@ -1856,7 +1857,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7592" onclick="fn_search(7592);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7603" onclick="fn_search(7603);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
