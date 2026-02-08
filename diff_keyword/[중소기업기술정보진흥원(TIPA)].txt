@@ -94,6 +94,36 @@
 		f.action = "/front/ifg/no/notice02_list.do";
 		f.submit();
 	}
+
+	//시스템구분
+	function goSysgubn(){
+		var sGbu = "";		
+		var rGubun = document.form.rdoSysGbun.value;
+		 
+		if (rGubun == "SYS_SMTECH") {
+			sGbu = "smtech";
+		} else if (rGubun == "SYS_IRIS") {
+			sGbu = "iris";
+		} else {
+			sGbu = "all";
+		}
+
+		$("#sysGubun").val(sGbu);
+
+		//document.form.sysGb.value = sGbu;
+						
+		document.form.action = "/front/ifg/no/notice02_list.do";
+		document.form.target = "";
+		document.form.submit();
+		
+	}
+
+	function goMove(){
+		if (confirm("IRIS 홈페이지로 이동하시겠습니까?")){
+			window.open("http://www.iris.go.kr");
+		}
+		return false;		
+	}
 </script>
 </head>
 <body>
@@ -1299,12 +1329,28 @@ $(document).ready(function () {
 <p class="cb"></p>
 </div>
 </div>
+<input id="sysGubun" name="sysGubun" type="hidden" value="all"/>
+<input id="sysGb" name="sysGb" type="hidden" value="all"/>
+<div class="box_ser">
+<p class="fl l280"><b>시스템 구분   </b>
+<p class="fl l05">
+	                	  	 
+		                  	<input checked="checked" id="rdoSysGbunA" name="rdoSysGbun" onclick="goSysgubn();" title="전체선택버튼" type="radio" value="SYS_ALL"/>
+<label for="rcptSteGrpA">전체</label> 
+		                  	<input id="rdoSysGbunS" name="rdoSysGbun" onclick="goSysgubn();" title="SMTECH선택버튼" type="radio" value="SYS_SMTECH"/>
+<label for="rcptSteGrpI">SMTECH</label> 
+		                  	<input id="rdoSysGbunI" name="rdoSysGbun" onclick="goSysgubn();" title="IRIS선택버튼" type="radio" value="SYS_IRIS"/>
+<label for="rcptSteGrpS">IRIS</label> 	                	
+	              	</p>
+<p class="cb"></p>
+</p></div>
 <!-- 조건검색 마침니다-->
 <!-- 사업공고 목록보기 시작입니다-->
 <table class="tbl_base tbl_type01">
 <caption>사업공고 목록</caption>
 <colgroup>
 <col style="width:5%"/>
+<col style="width:7%"/>
 <col style="width:15%"/>
 <col/>
 <col style="width:20%"/>
@@ -1314,6 +1360,7 @@ $(document).ready(function () {
 <thead>
 <tr>
 <th>No</th>
+<th>시스템구분</th>
 <th>사업명</th>
 <th>제목</th>
 <th>접수기간</th>
@@ -1324,178 +1371,11 @@ $(document).ready(function () {
 <tbody>
 <tr>
 <td class="ac">1</td>
-<td class="ac">주력산업 생태계 구축</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02843&amp;buclCd=S6581&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역혁신선도기업육성(R&amp;D)-주력산업 생태계 구축 지원계획 공고</a></td>
-<td class="ac">
-
-	                       	2026. 02. 11 ~ 2026. 03. 03
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--2 3 2 2-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">2</td>
-<td class="ac">지역기업 역량강화</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02844&amp;buclCd=S6582&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역혁신선도기업육성(R&amp;D)-지역기업 역량강화 지원계획 공고</a></td>
-<td class="ac">
-
-	                       	2026. 02. 11 ~ 2026. 03. 03
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--2 3 2 2-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">3</td>
-<td class="ac">(비R&amp;D)지역주력산업육성</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02838&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(지원) 공고</a></td>
-<td class="ac">
-
-	                       	2026. 01. 30 ~ 2026. 02. 20
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">4</td>
-<td class="ac">(비R&amp;D)지역주력산업육성</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02846&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역기업 성장사다리 지원사업(지원)</a></td>
-<td class="ac">
-
-	                       	2026. 02. 01 ~ 2026. 02. 27
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--2 2 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">5</td>
-<td class="ac">(비R&amp;D)지역주력산업육성(제주)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02832&amp;buclCd=S8019&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(제주) 공고</a></td>
-<td class="ac">
-
-	                       	2026. 01. 30 ~ 2026. 02. 20
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">6</td>
-<td class="ac">(비R&amp;D)지역주력산업육성(세종)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02837&amp;buclCd=S801A&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(세종) 공고</a></td>
-<td class="ac">
-
-	                       	2026. 01. 30 ~ 2026. 02. 20
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">7</td>
-<td class="ac">지역중소기업 밸류체인 컨버전스지원</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02830&amp;buclCd=S8111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 지역혁신생태계 구축사업(수도권) 공고</a></td>
-<td class="ac">
-
-	                       	2026. 01. 30 ~ 2026. 02. 13
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">8</td>
-<td class="ac">중소벤처기업부 혁신제품 지정사업</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02845&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 상반기 중소벤처기업부 혁신제품 신규지정 공고</a></td>
-<td class="ac">
-
-	                       	2026. 01. 30 ~ 2026. 03. 05
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--1 3 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">9</td>
-<td class="ac">전담은행 투자설명회(IR)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02831&amp;buclCd=S9171&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 제1차 중소기업 R&amp;D 전담은행 투자지원 신청기업(우수성과 50선 분야) 모집 공고</a></td>
-<td class="ac">
-
-	                       	2026. 01. 30 ~ 2026. 02. 12
-	                  	</td>
-<td class="ac">
-	                    	2026-01-30
-
-	                    </td>
-<td class="ac ll">
-<!--1 2 2 2-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">10</td>
-<td class="ac">산업기술단지거점기능강화</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02840&amp;buclCd=S8012&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 테크노파크 생산장비 고도화 지원계획 공고</a></td>
-<td class="ac">
-
-	                       	2026. 02. 09 ~ 2026. 02. 20
-	                  	</td>
-<td class="ac">
-	                    	2026-01-26
-
-	                    </td>
-<td class="ac ll">
-<!--2 2 2 2-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">11</td>
+<td class="ac">SMTECH</td>
 <td class="ac">딥테크챌린지프로젝트</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02829&amp;buclCd=S9C03&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 딥테크 챌린지 프로젝트(DCP) 생태계혁신형 시행계획 공고</a></td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02829&amp;buclCd=S9C03&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 딥테크 챌린지 프로젝트(DCP) 생태계혁신형 시행계획 공고</a>
+</td>
 <td class="ac">
 
 	                       	2026. 02. 20 ~ 2026. 04. 07
@@ -1505,76 +1385,288 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--2 4 2 2-->
+<!--2 4 2 9-->
 <img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">12</td>
-<td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02828&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 제1차 중소벤처기업부 혁신제품 지정기간 연장(1차연장) 공고</a></td>
+<td class="ac">2</td>
+<td class="ac">SMTECH</td>
+<td class="ac">신진연구인력채용지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02834&amp;buclCd=S6042&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(채용, 신진) 공고</a>
+</td>
 <td class="ac">
 
-	                       	2026. 01. 12 ~ 2026. 01. 30
+	                       	2026. 02. 04 ~ 2026. 03. 06
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">3</td>
+<td class="ac">SMTECH</td>
+<td class="ac">고경력연구인력채용지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02833&amp;buclCd=S6043&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(채용, 고경력) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 04 ~ 2026. 03. 06
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">4</td>
+<td class="ac">SMTECH</td>
+<td class="ac">중소벤처기업부 혁신제품 지정사업</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02845&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 상반기 중소벤처기업부 혁신제품 신규지정 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 03. 05
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 3 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">5</td>
+<td class="ac">SMTECH</td>
+<td class="ac">주력산업 생태계 구축</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02843&amp;buclCd=S6581&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역혁신선도기업육성(R&amp;D)-주력산업 생태계 구축 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 11 ~ 2026. 03. 03
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 9-->
+<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">6</td>
+<td class="ac">SMTECH</td>
+<td class="ac">지역기업 역량강화</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02844&amp;buclCd=S6582&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역혁신선도기업육성(R&amp;D)-지역기업 역량강화 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 11 ~ 2026. 03. 03
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 9-->
+<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">7</td>
+<td class="ac">SMTECH</td>
+<td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02847&amp;buclCd=S6041&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(파견) 2월 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 04 ~ 2026. 02. 28
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--2 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">8</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02838&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(지원) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">9</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성(제주)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02832&amp;buclCd=S8019&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(제주) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">10</td>
+<td class="ac">SMTECH</td>
+<td class="ac">산업기술단지거점기능강화</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02840&amp;buclCd=S8012&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 테크노파크 생산장비 고도화 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 09 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-26
+
+	                    </td>
+<td class="ac ll">
+<!--2 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">11</td>
+<td class="ac">SMTECH</td>
+<td class="ac">지역중소기업 밸류체인 컨버전스지원</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02830&amp;buclCd=S8111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 지역혁신생태계 구축사업(수도권) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">12</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성(세종)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02837&amp;buclCd=S801A&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(세종) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">13</td>
+<td class="ac">IRIS</td>
+<td class="ac">산연협력(사업화R&amp;D)</td>
+<td>
+<a class="board" href="javascript:goMove()">(세부2,3,4)컨소시엄/산연협력 </a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 26 ~ 2026. 02. 12
 	                  	</td>
 <td class="ac">
 	                    	2026-01-12
 
 	                    </td>
 <td class="ac ll">
-<!--1 1 2 2-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">13</td>
-<td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02779&amp;buclCd=S6041&amp;dtlAncmSn=11&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2025년 중소기업 연구인력지원사업(파견) 12월 공고</a></td>
-<td class="ac">
-
-	                       	2025. 12. 01 ~ 2025. 12. 31
-	                  	</td>
-<td class="ac">
-	                    	2025-01-31
-
-	                    </td>
-<td class="ac ll">
-<!--12 12 2 2-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">14</td>
-<td class="ac">시군구연고산업육성</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02826&amp;buclCd=S801B&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">기금연계형 과제 계속 지원 트랙</a></td>
+<td class="ac">IRIS</td>
+<td class="ac">민관공동기술사업화R&amp;D(구매연계· 상생협력)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 민관공동기술사업화(R&amp;D)'구매연계(해외수요처)' 상반기 시행계획 공고</a>
+</td>
 <td class="ac">
 
-	                       	2025. 11. 14 ~ 2025. 12. 05
+	                       	2026. 01. 29 ~ 2026. 02. 12
 	                  	</td>
 <td class="ac">
-	                    	2025-11-14
+	                    	2026-01-12
 
 	                    </td>
 <td class="ac ll">
-<!--11 12 2 2-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">15</td>
-<td class="ac">시군구연고산업육성</td>
-<td><a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02826&amp;buclCd=S801B&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 시군구연고산업육성사업</a></td>
+<td class="ac">IRIS</td>
+<td class="ac">민관공동기술사업화R&amp;D(구매연계· 상생협력)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 민관공동기술사업화(R&amp;D)'구매연계(국내수요처)' 상반기 시행계획 공고</a>
+</td>
 <td class="ac">
 
-	                       	2025. 11. 14 ~ 2025. 12. 05
+	                       	2026. 01. 29 ~ 2026. 02. 12
 	                  	</td>
 <td class="ac">
-	                    	2025-11-14
+	                    	2026-01-12
 
 	                    </td>
 <td class="ac ll">
-<!--11 12 2 2-->
-<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
+<!--1 2 2 9-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 </tbody>
@@ -1583,7 +1675,7 @@ $(document).ready(function () {
 <!--페이지넘버링 시작입니다-->
 <div class="page_num1">
 <div class="ac" id="paging">
-<a href="#" onclick="fn_search_test(1); return false;"><img alt="처음페이지" src="/img/common/btn_prepre.gif" title="처음"/></a> <a href="#" onclick="fn_search_test(1); return false;"><img alt="이전페이지" src="/img/common/btn_pre.gif" title="이전"/></a>  <a class="no num_on" href="#">1</a>  <a class="no" href="#" onclick="fn_search_test(2); return false;">2</a>  <a class="no" href="#" onclick="fn_search_test(3); return false;">3</a>  <a class="no" href="#" onclick="fn_search_test(4); return false;">4</a>  <a class="no" href="#" onclick="fn_search_test(5); return false;">5</a>  <a class="no" href="#" onclick="fn_search_test(6); return false;">6</a>  <a class="no" href="#" onclick="fn_search_test(7); return false;">7</a>  <a class="no" href="#" onclick="fn_search_test(8); return false;">8</a>  <a class="no" href="#" onclick="fn_search_test(9); return false;">9</a>  <a class="no" href="#" onclick="fn_search_test(10); return false;">10</a>   <a href="#" onclick="fn_search_test(11); return false;"><img alt="다음페이지" src="/img/common/btn_ne.gif" title="다음"/></a> <a href="#" onclick="fn_search_test(225); return false;"><img alt="마지막페이지" src="/img/common/btn_nene.gif" title="마지막"/></a> 
+<a href="#" onclick="fn_search_test(1); return false;"><img alt="처음페이지" src="/img/common/btn_prepre.gif" title="처음"/></a> <a href="#" onclick="fn_search_test(1); return false;"><img alt="이전페이지" src="/img/common/btn_pre.gif" title="이전"/></a>  <a class="no num_on" href="#">1</a>  <a class="no" href="#" onclick="fn_search_test(2); return false;">2</a>  <a class="no" href="#" onclick="fn_search_test(3); return false;">3</a>  <a class="no" href="#" onclick="fn_search_test(4); return false;">4</a>  <a class="no" href="#" onclick="fn_search_test(5); return false;">5</a>  <a class="no" href="#" onclick="fn_search_test(6); return false;">6</a>  <a class="no" href="#" onclick="fn_search_test(7); return false;">7</a>  <a class="no" href="#" onclick="fn_search_test(8); return false;">8</a>  <a class="no" href="#" onclick="fn_search_test(9); return false;">9</a>  <a class="no" href="#" onclick="fn_search_test(10); return false;">10</a>   <a href="#" onclick="fn_search_test(11); return false;"><img alt="다음페이지" src="/img/common/btn_ne.gif" title="다음"/></a> <a href="#" onclick="fn_search_test(244); return false;"><img alt="마지막페이지" src="/img/common/btn_nene.gif" title="마지막"/></a> 
 
 						<input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
 </div>
