@@ -1,0 +1,2300 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="no-cache" http-equiv="Cache-Control">
+<meta content="0" http-equiv="Expires">
+<meta content="no-cache" http-equiv="Pragma"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="/rndgate/eg/images/favicon.png?v=20260105" rel="icon" type="image/png"/>
+<title>공고정보 &gt; 국가R&amp;D통합공고 &gt; NTIS</title>
+<link href="https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do" rel="canonical"/>
+<meta content="공고메인화면을 호출한다." name="description"/>
+<link href="/rndgate/eg/css/ntis/Base.css?v=20240222" rel="stylesheet" type="text/css">
+<link href="/rndgate/eg/css/ntis/Layout.css?v=20240222" rel="stylesheet" type="text/css">
+<link href="/rndgate/eg/css/ntis/Header.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/Content.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/Button.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/Footer.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/Layout1.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/notifier.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/announcement.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/ntis2017.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/gnb.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/whole_prc.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/datatables/css/jquery.dataTables.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/js/ntis/zTree/css/zTreeStyle/zTreeStyle.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/jquery-ui-1.11.4.custom/jquery-ui.min.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/whole_prc.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/jalert/jquery.alerts.css?v=20240222" rel="stylesheet" type="text/css"/>
+<script src="/rndgate/eg/js/ntis/webChng/jquery-3.2.1.min.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://www.ntis.go.kr/include/js/jquery.alerts.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/jquery.popupoverlay.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/jquery.form.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/jquery.fileDownload.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/jquery-util.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/jquery.maskedinput.min.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/spin.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/sliding.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/common.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/validate.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/egovframework/com/cmm/fms/EgovMultiFile.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/zTree/js/jquery.ztree.core.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/zTree/js/jquery.ztree.excheck.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/zTree/js/jquery.ztree.exedit.js" type="text/javascript"></script>
+<!-- hight chart -->
+<script src="/rndgate/eg/js/ntis/highcharts.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/highcharts-3d.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/no-data-to-display.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/exporting.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/export-data.js" type="text/javascript"></script>
+<script src="/rndgate/eg/fusionCharts/FusionCharts.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/pdfobject.js" type="text/javascript"></script>
+<script src="/rndgate/eg/datatables/js/jquery.dataTables.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/sly.min.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/rndboard.js" type="text/javascript"></script>
+<!-- NamoCrossUploader Client HTML5 Edition 이 동작하기 위한 필수 파일입니다. -->
+<link href="/rndgate/eg/common/crossuploader/app/lib/slick/css/slick.grid.css" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/common/crossuploader/app/lib/slick/css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/common/crossuploader/app/lib/slick/css/theme.css" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/common/crossuploader/app/css/namocrossuploader.css" rel="stylesheet" type="text/css"/>
+<script src="/rndgate/eg/common/crossuploader/app/lib/jquery.event.drag-2.2.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/slick/slick.core.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/slick/slick.grid.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/slick/slick.dataview.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/slick/plugins/slick.checkboxselectcolumn.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/slick/plugins/slick.rowselectionmodel.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/js/namocrossuploader-config.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/js/namocrossuploader.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/contextmenu/jquery.contextMenu.js" type="text/javascript"></script>
+<script src="/rndgate/eg/common/crossuploader/app/lib/contextmenu/jquery.ui.position.js" type="text/javascript"></script>
+<link href="/rndgate/eg/common/crossuploader/app/lib/contextmenu/jquery.contextMenu.css" rel="stylesheet" type="text/css"/>
+<script src="/rndgate/eg/common/namoeditor/js/namo_scripteditor.js?ver=202506" type="text/javascript"></script>
+<!-- 202308 css 추가 영역 start -->
+<link href="/rndgate/eg/css/ntis/webChng/basic.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/common.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/fonts.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/ico.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/mypage.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/react_common.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/react_table.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/search.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/table.css?v=20240222" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/css/ntis/webChng/new_add.css?v=20240222" rel="stylesheet" type="text/css"/> <!-- 수정 css-->
+<link href="/rndgate/eg/css/ntis/webChng/new_header.css?v=20240222" rel="stylesheet" type="text/css"/>
+<!-- 202308 css 추가 영역 end -->
+<!-- 202308 js 추가 영역 start -->
+<script src="/rndgate/eg/js/ntis/webChng/common_basic.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/webChng/common_function.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/webChng/common_header.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/webChng/common-globalheader.js" type="text/javascript"></script>
+<script src="/rndgate/eg/js/ntis/webChng/search.js" type="text/javascript"></script>
+<!-- 202308 js 추가 영역 end -->
+</link></link></meta></meta></head>
+<body class="new_type_unfix">
+<div id="skipToContent">
+<a href="#container">본문 바로가기</a>
+</div>
+<div id="dimed" style="opacity: 1; display: none;"></div>
+<div class="new_ntis_wrap">
+<!-- ################### tiles Body Start ################### -->
+<script type="text/JavaScript">
+	//헤더 메뉴
+	$(document).ready(function() {
+		$("#gnbArea .login").click(function(){popupLogin();});
+		if ("" != "") {
+			window.alert("");
+		}
+
+		$("table.announcement_table1 td").mouseover(function() {
+			$(this).css("background-color", "#f37221");
+		});
+		$("table.announcement_table1 td").mouseout(function() {
+			$(this).css("background-color", "#fff");
+		});
+		$("table.announcement_table2 td").mouseover(function() {
+			$(this).css("background-color", "#f37221");
+		});
+		$("table.announcement_table2 td").mouseout(function() {
+			$(this).css("background-color", "#fff");
+		});
+	});
+	//검색영역 display function 
+	function openSearchWin() {
+		$('#search_tab').toggle();
+		$('#n_searchwrap').slideToggle(300);
+	}
+
+	// 메뉴더보기 function 
+	function fnOpenTopSubMenu() {
+		$("#topSubMenDiv").toggle();
+	}
+
+	function fn_movePageHM(progrmNo, url) {
+		
+			if( progrmNo=="" ) {
+				popupLogin();
+			} else {
+				location.href=url;
+			}
+		
+	}
+	
+	var opts = {
+		lines : 12, // The number of lines to draw
+		length : 60, // The length of each line
+		width : 15, // The line thickness
+		radius : 40, // The radius of the inner circle
+		corners : 1, // Corner roundness (0..1)
+		rotate : 0, // The rotation offset
+		color : 'black', // #rgb or #rrggbb
+		speed : 1, // Rounds per second
+		trail : 60, // Afterglow percentage
+		shadow : false, // Whether to render a shadow
+		hwaccel : false, // Whether to use hardware acceleration
+		className : 'spinner', // The CSS class to assign to the spinner
+		zIndex : 2e9, // The z-index (defaults to 2000000000)
+		top : 'auto', // Top position relative to parent in px
+		left : 'auto' // Left position relative to parent in px
+	};
+
+	$.fn.spin = function(opts) {
+		this.each(function() {
+			var $this = $(this), data = $this.data();
+
+			if (data.spinner) {
+				data.spinner.stop();
+				delete data.spinner;
+			}
+			if (opts !== false) {
+				data.spinner = new Spinner($.extend({
+					color : $this.css('color')
+				}, opts)).spin(this);
+			}
+		});
+		return this;
+	};
+
+	function fn_goSort(fm, sort) {
+		openProgressive();
+		var s = fm.elements["orderByTarget"].value;
+		fm.elements["orderByTarget"].value = sort;
+		if (s != sort) {
+			fm.elements["orderByMethod"].value = "asc";
+		} else {
+			if (fm.elements["orderByMethod"].value == "") {
+				fm.elements["orderByMethod"].value = "asc";
+			} else if (fm.elements["orderByMethod"].value == "desc") {
+				fm.elements["orderByMethod"].value = "asc";
+			} else if (fm.elements["orderByMethod"].value == "asc") {
+				fm.elements["orderByMethod"].value = "desc";
+			}
+		}
+		fm.elements["pageIndex"].value = "1";
+		fm.submit();
+	}
+
+</script>
+<script type="text/javascript">
+$(function(){
+    // 헤더 글로벌 메뉴
+    $('#headerGlobalMenu').click(function(e){
+        e.preventDefault();
+        
+        if ($('#globalUserMenuLayer').is(':visible')) {
+            $('#globalUserMenuLayer').hide();
+        }
+        
+        $(this).toggleClass('act');
+
+        if ($('#globalMenuLayer').is(':visible')) {
+            $('#globalMenuLayer').hide();
+            return false;
+        }
+        
+        
+        $('#gnbArea').append($('#globalMenuLayer'));
+        
+        var $ojbGlobalMenuLayer = $('#globalMenuLayer');
+        $ojbGlobalMenuLayer.toggle();
+        
+        var urlAction;
+        
+        if (window.location.protocol == "https:") {
+            urlAction = 'https://www.ntis.go.kr/ThGlobalMenu.do';
+        } else {
+            urlAction = 'https://www.ntis.go.kr/ThGlobalMenu.do';
+        }       
+        
+        if ($ojbGlobalMenuLayer.html().trim() == '') {
+            
+            $.ajax({
+                url: urlAction,
+                dataType: 'html'
+            }).done(function(data){
+                $ojbGlobalMenuLayer.html(data);
+                $ojbGlobalMenuLayer.show();
+                
+            }).fail(function(){
+                
+                jAlert('서버에 오류가 발생하였습니다.', '알림', function(){
+                    $ojbGlobalMenuLayer.hide();
+                });
+                
+            });
+            
+        } else {
+            
+            $ojbGlobalMenuLayer.show();
+        }
+        
+    });
+    
+    // 헤더 이용자 메뉴
+    $('#headerGlobalUserMenu').click(function(e){
+        e.preventDefault();
+
+        if ($('#globalMenuLayer').is(':visible')) {
+            $('#globalMenuLayer').hide();
+        }
+        
+        $('#headerGlobalUserMenu').find('.u_arrow').toggleClass("act");
+
+        if ($('#globalUserMenuLayer').is(':visible')) {
+            $('#globalUserMenuLayer').hide();
+            return false;
+        }
+
+        $('#gnbArea').append($('#globalUserMenuLayer'));
+        
+        var $ojbGlobalUserMenuLayer = $('#globalUserMenuLayer');
+        $ojbGlobalUserMenuLayer.toggle();
+        
+        var urlAction;
+        var params;
+        
+        if (window.location.protocol == "https:") {
+            urlAction = 'https://www.ntis.go.kr/ThGlobalUserMenu.do';
+            params = 'returnURI=https://' + window.location.host;
+        } else {
+            urlAction = 'https://www.ntis.go.kr/ThGlobalUserMenu.do';
+            params = 'returnURI=http://' + window.location.host;
+        }
+        
+        if ($ojbGlobalUserMenuLayer.html().trim() == '') {
+            
+            $.ajax({
+                url: urlAction,
+                dataType: 'html',
+                data: params
+            }).done(function(data){
+                $ojbGlobalUserMenuLayer.html(data);
+                $ojbGlobalUserMenuLayer.show();
+                
+            }).fail(function(){
+                
+                jAlert('서버에 오류가 발생하였습니다.', '알림', function(){
+                    $ojbGlobalUserMenuLayer.hide();
+                });
+                
+            });
+            
+        } else {
+            $ojbGlobalUserMenuLayer.show();
+        }
+        
+    }); 
+ // 글로벌 메뉴 클릭 후, body 클릭시 닫기
+//     $("body").click(function(e) {
+//         if (!$(e.target).is('#headerGlobalUserMenu')&& !$(e.target).is('#headerGlobalMenu')&& !$(e.target).is('.u_arrow') && !$(e.target).is('#tempSearchWord')) {
+//             if($('#globalUserMenuLayer').css('display') == 'block') {
+//                 $('#headerGlobalUserMenu').find('.u_arrow').toggleClass("act");
+//                 $('#globalUserMenuLayer').fadeToggle();
+//                 $('#globalUserMenuLayer').show();
+//             } else if($('#globalMenuLayer').css('display') == 'block') {
+//                 $('#headerGlobalMenu').toggleClass("act");
+//                 $('#globalMenuLayer').fadeToggle();
+//                 $('#globalMenuLayer').show();
+//             }
+//         }
+//     });
+});
+</script>
+<!-- 202401 header area start -->
+<link href="/rndgate/eg/assets/css/root.css" rel="stylesheet" type="text/css"/>
+<link href="/rndgate/eg/assets/css/common.css" rel="stylesheet" type="text/css"/>
+<script src="/rndgate/eg/assets/js/ui-header.js" type="text/javascript"></script>
+<!-- header -->
+<header id="header">
+<input id="loginYn" name="loginYn" type="hidden" value="0"/>
+<div class="gnb-overlay"></div>
+<div class="header-inner">
+<div class="header-left">
+<button class="btn-allmenu" type="button"><span class="sr-only">전체메뉴</span></button>
+<h1><a class="ntis-logo" href="https://www.ntis.go.kr"><span class="sr-only">NTIS</span></a></h1>
+</div>
+<div class="header-util">
+<button class="btn-search btn-tsearch-toggle" type="button"><span class="sr-only">검색</span></button>
+<button class="btn-allmenu" type="button"><span class="sr-only">전체메뉴</span></button>
+<button class="btn-login btn-login-toggle" type="button">시작하기</button>
+</div>
+</div>
+<!-- gnbWrap -->
+<div class="gnb-wrap">
+<h1><a class="ntis-logo" href="https://www.ntis.go.kr"><span class="sr-only">NTIS</span></a></h1>
+<div class="gnb-ntis">
+<ul aria-label="메인메뉴" class="gnb-depth1">
+<li>
+<a href="#" title="국가 R&amp;D 전략">국가 R&amp;D 전략</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndgate/eg/ia/mlp/allMap.do">과학기술분야중장기계획</a></li>
+<li><a href="https://www.ntis.go.kr/rndgate/eg/ia/ccl/cclInfo.do">국가연구개발사업 전주기</a></li>
+<li><a href="https://www.ntis.go.kr/rndtrend/PacstList.do">정책·기술 동향</a></li>
+<li><a href="https://www.ntis.go.kr/rndyeta/index.do">R&amp;D 기획·성과평가 관리</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="R&amp;D 통계와 분석">R&amp;D 통계와 분석</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndsts/Main.do">R&amp;D 통계</a></li>
+<li><a href="https://www.ntis.go.kr/tab/main/main.do">R&amp;D 분석</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="R&amp;D 데이터">R&amp;D 데이터</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/ThSearchTotal.do">국가 R&amp;D 데이터 검색</a></li>
+<li><a href="https://www.ntis.go.kr/rndgate/eg/oneMain/OneIndex.do">R&amp;D 데이터 신청</a></li>
+<li><a href="https://www.ntis.go.kr/rndopen/api/mng/apiMain.do">Open API</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="R&amp;D 과제 준비">R&amp;D 과제 준비</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndgate/eg/un/ra/mng.do">국가 R&amp;D 통합 공고</a></li>
+<li><a href="https://www.ntis.go.kr/yusa/ia/sp/main.do">차별성 검토(舊.유사과제)</a></li>
+<li><a href="https://www.ntis.go.kr/rndgate/eg/si/sa/view.do">제재 정보 조회</a></li>
+<li><a href="https://www.ntis.go.kr/rndtrend/rndlaw/lawList.do">국가 R&amp;D 법령·지침</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="연구자와 연구기관">연구자와 연구기관</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/orginfo/index.jsp">연구 개발 기관</a></li>
+<li><a href="https://www.ntis.go.kr/hurims/ThSearchHumanDetailView.do">연구자 정보</a></li>
+<li><a href="https://www.ntis.go.kr/rfo/index.do">연구개발비</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="성과와 홍보">성과와 홍보</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/rndtema/">기술사업화 지원</a></li>
+<li><a href="https://www.ntis.go.kr/outcomes/popup/srchTotlDtl.do?cmd=bestoutcomes">R&amp;D 성과</a></li>
+</ul>
+</li>
+<li>
+<a href="#" title="이용안내">이용안내</a>
+<ul class="gnb-depth2">
+<li><a href="https://www.ntis.go.kr/ThAbout.do">NTIS 안내</a></li>
+<li><a href="https://www.ntis.go.kr/ThNewBoardList.do?boardDivCd=04&amp;boardDivSeqNo=1">고객지원</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<button class="btn-allmenu-close" type="button"><span class="sr-only">전체메뉴닫기</span></button>
+</div>
+<!--// gnbWrap -->
+<!-- searchWrap -->
+<div class="header-search-wrap">
+<div class="header-search-overlay"></div>
+<div class="header-search-inner">
+<div class="header-search-cont">
+<div class="search-bar-area">
+<fieldset class="search-form-group">
+<legend>통합검색</legend>
+<form action="https://www.ntis.go.kr/ThSearchTotalList.do" autocomplete="off" method="get">
+<input id="sort" name="sort" type="hidden"/>
+<input id="ntisYn" name="ntisYn" type="hidden"/>
+<input id="originalSearchWord" name="originalSearchWord" type="hidden"/>
+<input id="originalSearchGubun" name="originalSearchGubun" type="hidden"/>
+<div class="search-bar">
+<label class="tit sr-only" for="searchWord">검색어 입력</label>
+<input class="input-data" id="searchWord" name="searchWord" placeholder="찾고싶은 국가R&amp;D 데이터를 검색해보세요." type="text"/>
+<div class="btn-area">
+<button class="btn-search" type="submit"><span class="sr-only">검색</span></button>
+</div>
+</div>
+</form>
+</fieldset>
+</div>
+<button class="btn-tsearch-close" type="button"><span class="sr-only">통합검색 닫기</span></button>
+</div>
+</div>
+</div>
+<!-- //searchWrap -->
+<!-- loginpopWrap -->
+<div class="login-pop-wrap" id="loginpopWrapSub">
+<div class="login-pop">
+<div class="login-pop-head">
+<span class="login-pop-tit">Member</span>
+<button class="btn-login-close" type="button"><span class="sr-only">닫기</span></button>
+</div>
+<ul class="login-pop-list">
+<li class="login-go" onclick="onPopupLogin('')"><a href="#"><i class="ico ico-login"></i>로그인</a></li>
+<li><a href="/ThUserRegister.do">회원가입</a></li>
+<li><a href="javascript:goFindIdView();">아이디찾기</a></li>
+<li><a href="javascript:goFindPwView();">비밀번호찾기</a></li>
+</ul>
+</div>
+</div>
+<!-- //loginpopWrap -->
+</header>
+<!-- //header -->
+<!-- 202401 header area end -->
+<!-- 202308 nav area start -->
+<div class="new_nav_wrap">
+<div class="mainBox">
+<h1 class="apptitle">
+<a href="/rndgate/eg/un/ra/mng.do" tabindex="5" title="국가R&amp;D통합공고으로 이동">국가R&amp;D통합공고</a>
+</h1>
+</div>
+<div class="mainNav">
+<nav class="mainTab">
+<ul class="newSubMenu">
+<li class="act">
+<a href="/rndgate/eg/un/ra/mng.do" onclick="javascript: fn_movePageHM('CPM000000000209','/rndgate/eg/un/ra/mng.do'); return false;">
+								공고정보
+						</a>
+</li>
+<li class="">
+<a href="/rndgate/eg/un/bzLib/bzLibListView.do" onclick="javascript: fn_movePageHM('CPM000000002503','/rndgate/eg/un/bzLib/bzLibListView.do'); return false;">
+								사업자료실
+						</a>
+</li>
+<li class="">
+<a href="/rndgate/eg/un/ra/myAncmMng.do" onclick="javascript: fn_movePageHM('','/rndgate/eg/un/ra/myAncmMng.do'); return false;" title="로그인팝업">
+								MY공고
+						</a>
+</li>
+<li class="">
+<a href="/rndgate/eg/un/ra/allimi.do" onclick="javascript: fn_movePageHM('','/rndgate/eg/un/ra/allimi.do'); return false;" title="로그인팝업">
+								알리미신청
+						</a>
+</li>
+<li class="">
+<a href="/rndgate/eg/un/ra/rss.do" onclick="javascript: fn_movePageHM('','/rndgate/eg/un/ra/rss.do'); return false;" title="로그인팝업">
+								RSS신청
+						</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<!-- 202308 header area end -->
+<!-- ====================== end # 페이지 상단 ====================== -->
+<!-- ################### tiles Body End   ################### -->
+<div class="new_ntis_container">
+<!-- ################### tiles Body Start ################### -->
+<div class="new_ntis_contents" id="content">
+<script type="text/javaScript">
+    $(document).ready(function() {
+    	
+    	if($("#searchFormList").val()==""){
+    		$("#searchFormList").val("searchFormListALL");
+    	}
+    	
+        /* 도움말 말풍선 */
+        $('.data').mouseover(function(e) {
+            $(this).mousemove(function(e) {
+                $('#divLayer #title').empty().append($(this).attr("I_name"));
+                $('#divLayer #name').empty().append($(this).attr("wr_name"));
+                $('#divLayer #conttent').empty().append($(this).text());
+                var t = e.pageY - 350;
+                var I = e.pageX - 380;
+                $('#divLayer').css({
+                    "top" : t,
+                    "left" : I,
+                    "position" : "absolute",
+                    "opacity" : "0,8"
+                }).show();
+            });
+        });
+        $('.data').mouseout(function() {
+            $('#divLayer').hide();
+        });
+
+        $.datepicker.regional['ko'] = {
+            closeText : '취소',
+            prevText : '이전달',
+            nextText : '다음달',
+            currentText : '오늘',
+            monthNames : [ '1월(JAN)', '2월(FEB)', '3월(MAR)',
+                    '4월(APR)', '5월(MAY)', '6월(JUN)', '7월(JUL)',
+                    '8월(AUG)', '9월(SEP)', '10월(OCT)',
+                    '11월(NOV)', '12월(DEC)' ],
+            monthNamesShort : [ '1월', '2월', '3월', '4월', '5월',
+                    '6월', '7월', '8월', '9월', '10월', '11월', '12월' ],
+            dayNames : [ '일', '월', '화', '수', '목', '금', '토' ],
+            dayNamesShort : [ '일', '월', '화', '수', '목', '금', '토' ],
+            dayNamesMin : [ '일', '월', '화', '수', '목', '금', '토' ],
+            weekHeader : 'Wk',
+            dateFormat : 'yy-mm-dd',
+            buttonImage : "/rndgate/eg/images/ntis/2017/carenda.png",
+            buttonImageOnly : true,
+            buttonText: "달력",
+            firstDay : 0,
+            isRTL : false,
+            showButtonPanel : true,
+            showMonthAfterYear : true,
+            showOn : "button",
+            yearSuffix : ''
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ko']);
+
+        $("#searchCondition2").datepicker({
+            changeMonth : true,
+            changeYear : true,
+            onClose : function(selectedDate) {
+                $("#searchCondition3").datepicker("option", "minDate", selectedDate);
+                if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+                    $("#searchCondition2").val('');
+                }
+            }
+        });
+        
+        $("#searchCondition3").datepicker({
+            changeMonth : true,
+            changeYear : true,
+            onClose : function(selectedDate) {
+                $("#searchCondition2").datepicker("option", "maxDate", selectedDate);
+                if ($(window.event.srcElement).hasClass('ui-datepicker-close')) {
+                    $("#searchCondition3").val('');
+                }
+            }
+        });
+
+        //형태검색조건 유지
+        var formSplit = $("#searchFormList").val().split(',');
+        if (nullDesc(formSplit) != "") {
+            $("#searchFormListALL").removeClass("announcement_on");
+        }
+        for ( var i in formSplit) {
+            $("#searchFormListBtn > TR > TD > P").each(function() {
+                if ($(this).attr('id') == formSplit[i]) {
+                    $(this).addClass("announcement_on");
+                    // 필터선택 셋팅
+                    $("#searchFormListRe").val(formSplit[i]);
+                }
+            });
+        }
+        
+        //현황검색조건 유지
+        var statusSplit = $("#searchStatusList").val().split(',');
+        if (nullDesc(statusSplit) != "") {
+            $("#searchStatusListALL").removeClass("announcement_on");
+        }       
+        
+        for ( var i in statusSplit) {
+            $("#searchStatusListBtn > TR > TD > P").each(function() {
+                if ($(this).attr('id') == statusSplit[i]) {
+                    $(this).addClass("announcement_on");                   
+                }
+            });
+        }
+        
+        //부처검색조건 유지
+        var deptSplit = $("#searchDeptList").val().split(',');
+        if (nullDesc(deptSplit) != "") {
+            $("#ALL").removeClass("announcement_on");
+        }
+        for ( var i in deptSplit) {
+            $("#searchDeptListBtn > TR > TD > P").each(function() {
+                if ($(this).attr('id') == deptSplit[i]) {
+                    $(this).addClass("announcement_on");
+                }
+            });
+        }
+
+        //첨부파일 검색여부 유지
+        if ($("#isFileSearch").val() == "true") {
+            $("#fileSearch").attr('checked', true);
+        }
+        // 공고기관검색 유지
+        if ($("#isRoDptNameSearch").val() == "true") {
+            $("#deptSearch").attr('checked', true);
+        }
+        
+        //공고형태 선택 이벤트
+        $("#searchFormListBtn > TR > TD > P").click(function() {
+            if ($(this).attr('id') == "searchFormListALL") { //전체선택 시
+                $("#searchFormListBtn > TR > TD > P").removeClass("announcement_on");
+                $("#searchFormListRe").val("searchFormListALL");
+            } else {
+                $("#searchFormListALL").removeClass("announcement_on");
+                $("#searchFormListRe").val($(this).attr('id'));
+            }
+            $(this).toggleClass("announcement_on");
+            
+            //통합공고 / 개별공고 둘다 선택 해제 시 전체로 클릭되게
+            if( !$('#searchFormListBtn > TR > TD > P').not("#searchFormListALL").hasClass('announcement_on') ){
+                $("#searchFormListALL").addClass("announcement_on");
+            }
+            
+            //공고형태는 다중선택이 아닌 전체 / 통합공고 / 개별공고가 단일 선택되게 처리 
+            if ($(this).attr('id') == "28801") {
+                $("P#28802").removeClass("announcement_on");
+            }           
+            if ($(this).attr('id') == "28802") {
+                $("P#28801").removeClass("announcement_on");
+            }
+
+            fn_search('1', '');
+        });
+        
+        //공고현황 선택이벤트 
+        $("#searchStatusListBtn > TR > TD > P").click(
+            function() {
+                if ($(this).attr('id') == "searchStatusListALL") { //전체선택 시
+                    $("#searchStatusListBtn > TR > TD > P").not("#searchStatusListALL").removeClass("announcement_on");
+                } else { //개별항목 선택
+                    $("#searchStatusListALL").removeClass("announcement_on");
+                }
+                $(this).toggleClass("announcement_on");
+                
+                if( !$('#searchStatusListBtn > TR > TD > P').not("#searchStatusListALL").hasClass('announcement_on') ){
+                    $("#searchStatusListALL").addClass("announcement_on");
+                }
+                
+                fn_search('1', '');
+        });
+
+        //부처 선택이벤트 
+        $("#searchDeptListBtn > TR > TD > P").click(
+            function() {
+                if ($(this).attr('id') == "ALL") { //전체선택 시
+                    $("#searchDeptListBtn > TR > TD > P").not("#ALL").removeClass("announcement_on");
+                } else { //개별항목 선택
+                    $("#ALL").removeClass("announcement_on");
+                }
+    
+                if (nullDesc($(this).attr('id')) != "") {
+                    $(this).toggleClass("announcement_on");
+                    
+                   if( !$('#searchDeptListBtn > TR > TD > P').not("#ALL").hasClass('announcement_on') ){
+                        $("#ALL").addClass("announcement_on");
+                    }
+                   
+                    fn_search('1', '');
+                }
+        });
+
+        //상세검색 영역 클릭 시
+        var i_text = $('.tn_rnd_search>.tn_rnd_input').next('.i_rnd_text');
+        $('.item>.tn_rnd_input').css('position', 'absolute');
+        i_text.focus(
+            function() {
+                $(this).prev('.tn_rnd_input').css('visibility', 'hidden');
+                $(this).val("");
+            }).blur(
+            function() {
+                if ($(this).val() == '') {
+                    $(this).prev('.tn_rnd_input').css('visibility', 'visible');
+                } else {
+                    $(this).prev('.tn_rnd_input').css('visibility', 'hidden');
+                }
+            });
+        
+        //검색조건유지(단추형)
+        $("button[name=sort]").each(
+            function(i) {
+                
+                var childObj = $(this).children("SPAN");
+                var id = childObj.attr("id");
+                var item = (id =="sort5Btn") ? "S_501" : "S_502";
+                
+                if ( item == $("#searchSortItem").val() ) {
+                    
+                    if ( $("#searchSortOrdr").val() == "S_D"){ $(this).attr("class", "ascending");
+                    }else{ $(this).attr("class", "descending"); }
+                    
+                }
+        });
+
+        //검색조건유지(목록형)
+        $('li[name="sortOption"]').each(
+            function(i) {
+                if ($(this).attr('item') == $("#searchSortItem").val() && $(this).attr('option') == $("#searchSortOrdr").val()) {
+                    $(this).addClass("option_on");
+                }
+        });
+
+        //정렬조건 선택시(단추형)
+        $('button[name="sort"]').click(function() {
+            var childObj = $(this).children("SPAN");
+            var id = childObj.attr("id");
+            var item = (id =="sort5Btn") ? "S_501" : "S_502";
+            var orderbyCd = $("#searchSortOrdr").val();
+            
+            if ( orderbyCd == "" || orderbyCd == "S_A" ){
+                childObj.attr("class", "descending");
+                orderbyCd = "S_D";
+            } else {
+                childObj.attr("class", "ascending");
+                orderbyCd = "S_A";
+            }
+            
+            $("#searchSortType").val("ascDesc");
+            $("#searchSortItem").val(item);
+            $("#searchSortOrdr").val(orderbyCd);
+
+            fn_search();
+            return false;
+            
+        });
+
+        //정렬조건 선택시(목록형)
+        $("#sort1Btn").click(function() {
+            $('#list_option1').toggle();
+        });
+
+        $("#sort2Btn").click(function() {
+            $('#list_option2').toggle();
+        });
+
+        $('li[name="sortOption"]').click(function() {
+            $("#searchSortType").val("decode");
+            $("#searchSortItem").val($(this).attr("item"));
+            $("#searchSortOrdr").val($(this).attr("option"));
+            fn_search();
+        });
+
+        //공고목록 전체선택
+        $("#listAllCheck").click(function() {
+            if ($("#listAllCheck").prop("checked")) {
+                $("input[name=selectCheckList]").prop("checked", true);
+            } else {
+                $("input[name=selectCheckList]").prop("checked", false);
+            }
+        });
+        
+        
+        //filter 관련 소스
+        
+        //filter mo_ 공고형태 체인지 이벤트 
+        $("#searchFormListRe").change(function(){
+            if ($(this).val() == "searchFormListALL") { //전체선택 시
+                $("#searchFormListBtn > TR > TD > P").removeClass("announcement_on");
+            } else {
+                $("#searchFormListALL").removeClass("announcement_on");
+            }
+            
+            //공고형태는 다중선택이 아닌 전체 / 통합공고 / 개별공고가 단일 선택되게 처리 
+            if ($(this).val() == "28801") {
+                $("P#28801").addClass("announcement_on");
+                $("P#28802").removeClass("announcement_on");
+            }else if ($(this).val() == "28802") {
+                $("P#28802").addClass("announcement_on");
+                $("P#28801").removeClass("announcement_on");
+            }else{
+                $("#searchFormListBtn > TR > TD > P").removeClass("announcement_on");
+                $("#searchFormListALL").addClass("announcement_on");
+            }
+        });
+        
+        fn_setFilterSetting("ready");
+        $("#searchFormListRe").val($("#searchFormList").val()).attr("selected",true);
+    });
+    
+    
+    function fn_search(pageNo, xlsYn) {
+        if( nullDesc(pageNo) != "" ) $("#pageIndex").val(pageNo);
+        
+        if ( xlsYn == "N" ){
+            //공고형태
+            $("#searchFormListBtn > TR > TD > P").not("#searchFormListALL").removeClass("announcement_on");
+            $("#searchFormListALL").toggleClass("announcement_on");
+            //공고현황
+            $("#searchStatusListBtn > TR > TD > P").not("#searchStatusListALL").removeClass("announcement_on");
+            $("#searchStatusListALL").toggleClass("announcement_on");
+            //부처명
+            $("#searchDeptListBtn > TR > TD > P").not("#ALL").removeClass("announcement_on");
+            $("#ALL").toggleClass("announcement_on");
+            //$('#rndMngForm').attr("action", "/rndgate/eg/un/ra/mng.do").submit();
+        }
+        
+        //체크된 형태코드 탑재
+        var checkFormValues = [];
+        $("#searchFormListBtn > TR > TD > P").each(function(i) {
+            if ($(this).attr('id') != "searchFormListALL") {
+                if ($(this).hasClass("announcement_on") == true) {
+                    checkFormValues.push($(this).attr('id'));
+                }
+            }
+        });
+        $("#searchFormList").val(checkFormValues);
+        
+        //체크된 현황코드 탑재
+        var checkStatusValues = [];
+        $("#searchStatusListBtn > TR > TD > P").each(function(i) {
+            if ($(this).attr('id') != "searchStatusListALL") {
+                if ($(this).hasClass("announcement_on") == true) {
+                    checkStatusValues.push($(this).attr('id'));
+                }
+            }
+        });
+        $("#searchStatusList").val(checkStatusValues);
+
+        //체크된 부처코드 탑재
+        var checkDeptValues = [];
+        $("#searchDeptListBtn > TR > TD > P").each(function(i) {
+            if ($(this).attr('id') != "ALL") {
+                if ($(this).hasClass("announcement_on") == true) {
+                    checkDeptValues.push($(this).attr('id'));
+                }
+            }
+        });
+        $("#searchDeptList").val(checkDeptValues);
+        
+        //첨부파일 검색 체크여부
+        var fileSearch = false;
+        if ($("#fileSearch").is(":checked") == true) {
+            fileSearch = true;
+            $("#isFileSearch").val("true");
+        }else{
+            $("#isFileSearch").val("false");
+        }
+        //공고기관 검색 체크여부
+        var deptSearch = false;
+        if ($("#deptSearch").is(":checked") == true) {
+            deptSearch = true;
+            $("#isRoDptNameSearch").val("true");
+        }else{
+            $("#isRoDptNameSearch").val("false");
+        }
+
+        //공고기간 체크
+        if($("#searchCondition2").val() != "" && $("#searchCondition3").val() == ""){
+            alert("검색종료일을 입력해 주세요.");
+            $('#searchCondition3').focus();
+            return;
+        }
+        if($("#searchCondition3").val() != "" && $("#searchCondition2").val() == ""){
+            alert("검색시작일을 입력해 주세요.");
+            $('#searchCondition2').focus();
+            return;
+        }
+
+        if( xlsYn=="Y" ){
+            $('#rndMngForm').attr("action", "/rndgate/eg/com/excel/download.do");
+            var data = $("#rndMngForm").serializeArray();
+            data.push({name: 'autoXsl', value: 'ra'}); // 공고정보 엑셀다운로드 구분자.
+
+            $.fileDownload($("#rndMngForm").prop('action'), {
+                httpMethod : "POST",
+                data : data,
+                prepareCallback : function (url){
+                    $("#spinBar").show();
+                },
+                successCallback: function (url){
+                    $("#spinBar").hide();
+                }, 
+                failCallback : function (responseHtml, url){
+                    $("#spinBar").hide();
+                }
+            });
+        }else{
+            $("#spinBar").show();
+            $('#rndMngForm').attr("action", "/rndgate/eg/un/ra/mng.do").submit();
+        }
+    }
+    
+    
+    function fn_view(uid) {
+        /*$("#roRndUid").val(uid);*/
+        $("#flag").val("rndList");
+        $('#rndMngForm').attr("action", "/rndgate/eg/un/ra/view.do?roRndUid="+uid+"").submit();
+    }
+    
+    
+    function fn_create() {
+        
+           popupLogin();
+        
+    }
+    
+    
+    function fn_scrap() {
+        
+        popupLogin();
+        
+    }
+    
+    
+    function doTkService(app_url, ro_rnd_uid, ro_org_no, org_cnsr_id) {
+        
+            popupLogin();
+        
+    }
+    
+    function fn_pageUnit() {
+        fn_search('1','');
+    }
+    
+    
+    function fn_fileDownload(fileUpPath, fileNm) {
+        $('input[name="fileUpPath"]').val(fileUpPath);
+        $('input[name="fileNm"]').val(fileNm);
+
+        $.fileDownload($("#download").prop('action'), {
+            httpMethod : "POST",
+            data : $("#download").serialize()
+        });
+    }
+    function getCookie(name) {
+        var Found = false
+        var start, end
+        var i = 0
+        
+        while(i <= document.cookie.length) {
+            start = i
+            end = start + name.length
+            
+            if(document.cookie.substring(start, end) == name) {
+              Found = true
+              break 
+            }
+            i++
+        }
+        
+        if(Found == true) {
+        start = end + 1
+        end = document.cookie.indexOf(";", start)
+          if(end < start)
+            end = document.cookie.length
+        return document.cookie.substring(start, end)
+        }
+        return ""
+    } 
+    function fn_infoPopup(){
+        var width = '670';
+        var height = '464';
+        var left = (screen.width - width) / 2;
+        var top = (screen.height - height) / 2;
+
+        var winNM = 'ra_infoPopup';
+        var url = '/rndgate/eg/ra_info_popup.html';
+        var windowFeatures = "width=" + width + ",height=" + height
+                + ",status,resizable,scrollbars,left=" + left + ",top=" + top
+                + ",screenX=" + left + ",screenY=" + top;
+        var win = window.open(url,winNM,windowFeatures);
+    }
+       
+</script>
+<form action="/rndgate/eg/un/ra/mng.do" id="rndMngForm" method="post" name="rndMngForm">
+<input id="flag" name="flag" type="hidden" value="">
+<!-- 현황 전체선택 여부 -->
+<input id="searchFormList" name="searchFormList" type="hidden" value="">
+<!-- 형태 검색조건 -->
+<input id="searchStatusList" name="searchStatusList" type="hidden" value="">
+<!-- 현황 검색조건 -->
+<input id="searchDeptList" name="searchDeptList" type="hidden" value="">
+<!-- 부서 검색조건 -->
+<input id="searchSortType" name="searchSortType" type="hidden" value="">
+<!-- 정렬형태 -->
+<input id="searchSortItem" name="searchSortItem" type="hidden" value=""/>
+<!-- 정렬대상 -->
+<input id="searchSortOrdr" name="searchSortOrdr" type="hidden" value=""/>
+<!-- 정렬조건-->
+<!-- 리스트갯수-->
+<input id="isFileSearch" name="isFileSearch" type="hidden" value="false"/>
+<input id="isRoDptNameSearch" name="isRoDptNameSearch" type="hidden" value="false"/>
+<input id="searchStatusListRe" type="hidden" value=""/>
+<input id="searchDeptListRe" type="hidden" value=""/>
+<input id="searchCondition2Re" type="hidden" value=""/>
+<input id="searchCondition3Re" type="hidden" value=""/>
+<br/>
+<!-- start # 공고현황 -->
+<div class="ntis_announcement_box">
+<!-- start # 공고현황 -->
+<div class="announcement_left_box mo_disnone">
+<table class="announcement_table1">
+<caption>공고형태</caption>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+</colgroup>
+<tbody id="searchFormListBtn">
+<tr>
+<th>공고형태</th>
+<td><p class="announcement_on" id="searchFormListALL"><a href="#searchFormListALL" onclick="return false;">전체</a></p></td>
+<td><p id="28801"><a href="#28801" onclick="return false;">통합공고</a></p></td>
+<td><p id="28802"><a href="#28802" onclick="return false;">개별공고</a></p></td>
+<td class="end data" id="helpBtn"><a href="#helpBtn" onclick="return false;">도움말</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="overLayer" id="divLayer">
+<div class="title">
+<strong>통합공고란?</strong> <br/>1개의 공고문에 2개 이상 사업(과제) 등을 포함한 공고입니다. <br/>통합공고의 경우 접수일, 마감일, 접수마감시간, 공고금액, <br/>문의처, 사업명 항목의 정보가 제공되지 않습니다.
+            </div>
+</div>
+<!-- end# 도움말 -->
+<!-- start # 공고유형 -->
+<div class="announcement_right_box disnone_filter">
+<table class="announcement_table1">
+<caption>공고현황</caption>
+<colgroup>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+<col style="width: 20%"/>
+</colgroup>
+<tbody id="searchStatusListBtn">
+<tr>
+<th>공고현황</th>
+<td><p class="announcement_on" id="searchStatusListALL"><a href="#searchStatusListALL" onclick="return false;">전체</a></p></td>
+<td><p id="P"><a href="javascript:fn_search(1)" onclick="return false;">접수예정</a></p></td>
+<td><p id="B"><a href="javascript:fn_search(1)" onclick="return false;">접수중</a></p></td>
+<td class="end"><p id="Y"><a href="javascript:fn_search(1)" onclick="return false;">마감</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- start # 부처명 -->
+<div class="announcement_cnt_box disnone_filter">
+<table class="announcement_table1">
+<caption>부처명</caption>
+<colgroup>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+<col style="width: 10%"/>
+</colgroup>
+<tbody id="searchDeptListBtn">
+<tr>
+<th>부처명</th>
+<td>
+<p class="announcement_on" id="ALL">
+<a href="#ALL" onclick="return false;">전체</a>
+</p>
+</td>
+<td>
+<p id="M59">
+<a href="#M59" onclick="return false;">개인정보보호위원회</a>
+</p>
+</td>
+<td>
+<p id="M10">
+<a href="#M10" onclick="return false;">경찰청</a>
+</p>
+</td>
+<td>
+<p id="M11">
+<a href="#M11" onclick="return false;">고용노동부</a>
+</p>
+</td>
+<td>
+<p id="M12">
+<a href="#M12" onclick="return false;">공정거래위원회</a>
+</p>
+</td>
+<td>
+<p id="M13">
+<a href="#M13" onclick="return false;">과학기술정보통신부</a>
+</p>
+</td>
+<td>
+<p id="M15">
+<a href="#M15" onclick="return false;">교육부</a>
+</p>
+</td>
+<td>
+<p id="M67">
+<a href="#M67" onclick="return false;">국가데이터처</a>
+</p>
+</td>
+<td>
+<p id="M63">
+<a href="#M63" onclick="return false;">국가보훈부</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="M65">
+<a href="#M65" onclick="return false;">국가유산청</a>
+</p>
+</td>
+<td>
+<p id="M16">
+<a href="#M16" onclick="return false;">국무조정실</a>
+</p>
+</td>
+<td>
+<p id="M17">
+<a href="#M17" onclick="return false;">국방부</a>
+</p>
+</td>
+<td>
+<p id="M19">
+<a href="#M19" onclick="return false;">국토교통부</a>
+</p>
+</td>
+<td>
+<p id="M60">
+<a href="#M60" onclick="return false;">국회</a>
+</p>
+</td>
+<td>
+<p id="M20">
+<a href="#M20" onclick="return false;">기상청</a>
+</p>
+</td>
+<td>
+<p id="M21">
+<a href="#M21" onclick="return false;">기획재정부</a>
+</p>
+</td>
+<td>
+<p id="M71">
+<a href="#M71" onclick="return false;">기후에너지환경부</a>
+</p>
+</td>
+<td>
+<p id="M22">
+<a href="#M22" onclick="return false;">농림축산식품부</a>
+</p>
+</td>
+<td>
+<p id="M23">
+<a href="#M23" onclick="return false;">농촌진흥청</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="M62">
+<a href="#M62" onclick="return false;">대통령경호처</a>
+</p>
+</td>
+<td>
+<p id="M61">
+<a href="#M61" onclick="return false;">대통령비서실</a>
+</p>
+</td>
+<td>
+<p id="M24">
+<a href="#M24" onclick="return false;">문화재청</a>
+</p>
+</td>
+<td>
+<p id="M25">
+<a href="#M25" onclick="return false;">문화체육관광부</a>
+</p>
+</td>
+<td>
+<p id="M72">
+<a href="#M72" onclick="return false;">방송미디어통신위원회</a>
+</p>
+</td>
+<td>
+<p id="M27">
+<a href="#M27" onclick="return false;">방위사업청</a>
+</p>
+</td>
+<td>
+<p id="M28">
+<a href="#M28" onclick="return false;">법무부</a>
+</p>
+</td>
+<td>
+<p id="M29">
+<a href="#M29" onclick="return false;">법제처</a>
+</p>
+</td>
+<td>
+<p id="M30">
+<a href="#M30" onclick="return false;">보건복지부</a>
+</p>
+</td>
+<td>
+<p id="M31">
+<a href="#M31" onclick="return false;">산림청</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="M66">
+<a href="#M66" onclick="return false;">산업통상부</a>
+</p>
+</td>
+<td>
+<p id="M70">
+<a href="#M70" onclick="return false;">성평등가족부</a>
+</p>
+</td>
+<td>
+<p id="M34">
+<a href="#M34" onclick="return false;">소방청</a>
+</p>
+</td>
+<td>
+<p id="M35">
+<a href="#M35" onclick="return false;">식품의약품안전처</a>
+</p>
+</td>
+<td>
+<p id="M38">
+<a href="#M38" onclick="return false;">외교부</a>
+</p>
+</td>
+<td>
+<p id="M64">
+<a href="#M64" onclick="return false;">우주항공청</a>
+</p>
+</td>
+<td>
+<p id="M39">
+<a href="#M39" onclick="return false;">원자력안전위원회</a>
+</p>
+</td>
+<td>
+<p id="M42">
+<a href="#M42" onclick="return false;">중소벤처기업부</a>
+</p>
+</td>
+<td>
+<p id="M69">
+<a href="#M69" onclick="return false;">지식재산처</a>
+</p>
+</td>
+<td>
+<p id="M58">
+<a href="#M58" onclick="return false;">질병관리청</a>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p id="M43">
+<a href="#M43" onclick="return false;">통일부</a>
+</p>
+</td>
+<td>
+<p id="M45">
+<a href="#M45" onclick="return false;">해양경찰청</a>
+</p>
+</td>
+<td>
+<p id="M46">
+<a href="#M46" onclick="return false;">해양수산부</a>
+</p>
+</td>
+<td>
+<p id="M47">
+<a href="#M47" onclick="return false;">행정안전부</a>
+</p>
+</td>
+<td>
+<p id="M97">
+<a href="#M97" onclick="return false;">다부처</a>
+</p>
+</td>
+<td>
+<p id="M99">
+<a href="#M99" onclick="return false;">기타</a>
+</p>
+</td>
+<td class="end_right_bottom last_btn_a"><a class="pr5" href="javascript:fn_search('1','N');"><img alt="설정초기화" src="/rndgate/eg/images/ntis/icon/re_reload.png"/>설정초기화</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- end # 공고현황 -->
+<p class="memo">2018년 이전 국가R&amp;D통합공고는 접수일, 접수마감시간, 공고형태, 공고유형, 공고규모, 문의처, 사업명 정보가 제공되지 않습니다</p>
+<p class="memo">본 통합공고는 관련된 기관에서 자동수집 방식으로 수집되어, <span style="font-weight: 900 !important;">R&amp;D사업과 비R&amp;D사업 공고가 포함</span>됩니다.
+                    <br/>자세한 공고 정보는 해당 공고의 첨부파일 등을 통해 확인하시기 바랍니다</p>
+<!-- start # 검색조건 -->
+<div class="list_search" id="searchShow">
+<p class="disnone_pc">
+<span class="list_name1">공고형태</span>
+<select id="searchFormListRe" name="searchFormListRe" onchange="fn_SelectValueChangeRe(this.id,this.value); return false;">
+<option value="searchFormListALL">전체</option>
+<option value="28801">통합공고</option>
+<option value="28802">개별공고</option>
+</select>
+</p>
+<p>
+<span class="list_name1">키워드</span>
+<input id="searchKeyword" name="searchKeyword" placeholder="국가R&amp;D통합공고 키워드 검색" style="width: 712px;" tabindex="6" title="국가R&amp;D통합공고 키워드 검색" type="text" value="">
+</input></p>
+<p class="check_file_area">
+<span class="list_name1">공고기관 검색</span>
+<input id="deptSearch" name="checkbox_box1" tabindex="7" title="공공기관 검색 여부" type="checkbox"/>
+<span class="list_name1">첨부파일명 검색</span>
+<input id="fileSearch" name="checkbox_box2" tabindex="8" title="첨부파일 검색 여부" type="checkbox"/>
+</p>
+<br class="disnone_filter"/>
+<br class="disnone_filter"/>
+<p class="disnone_filter">
+<span class="list_name1">공고일 </span>
+<input id="searchCondition2" name="searchCondition2" readonly="readonly" style="width:112px; text-align:center; margin-bottom:4.6px;" title="공고시작일" type="text" value="">
+            ~
+        </input></p>
+<p class="disnone_filter">
+<input id="searchCondition3" name="searchCondition3" readonly="readonly" style="width:112px; text-align:center; margin-bottom:4.6px;" title="공고종료일" type="text" value="">
+</input></p>
+<p class="disnone_filter" style="margin-left:6px;">
+<span class="list_name1"><label for="searchCondition10">공고유형</label></span>
+<select id="searchCondition10" name="searchCondition10" style="width: 110px;">
+<option selected="selected" value="">전체</option>
+<option value="28701">수요조사</option>
+<option value="28702">사전공고</option>
+<option value="28703">본공고</option>
+</select>
+</p>
+<p class="disnone_filter" style="margin-left:6px;">
+<span class="list_name1"><label for="searchCondition9">공고규모 </label></span>
+<select id="searchCondition9" name="searchCondition9" style="width: 160px;">
+<option selected="selected" value="">전체</option>
+<option value="1">1억미만</option>
+<option value="1_3">1억이상 ~ 3억미만</option>
+<option value="3_5">3억이상 ~ 5억미만</option>
+<option value="5">5억이상</option>
+</select>
+</p>
+<p class="disnone_filter" style="margin-left:6px;">
+<span class="list_name1"><label for="searchCondition">마감일</label></span>
+<select id="searchCondition" name="searchCondition" style="width: 160px;">
+<option selected="selected" value="">전체</option>
+<option value="3d">마감3일전</option>
+<option value="1w">마감1주전</option>
+<option value="3w">마감3주전</option>
+<option value="1m">마감1달전</option>
+<option value="over1m">마감1달이상</option>
+</select>
+</p>
+<div class="reSearch disnone_pc">
+<div class="reSearch_top">
+<div class="reSearch_top_tit">
+<div class="reSearch_tab">
+<button class="btn_filter" onclick="filterCheck();" type="button">조건필터</button>
+</div>
+<ul>
+<li class="searchStatusListLi" style="display: none;">
+<h4>공고현황</h4>
+<p></p>
+</li>
+<li class="searchDeptListLi" style="display: none;">
+<h4>부처명</h4>
+<p></p>
+</li>
+<li class="searchCondition2Li" style="display: none;">
+<h4>공고일</h4>
+<p></p>
+</li>
+<b style="font-weight:normal; font-size:1.3em;">~</b>
+<li class="searchCondition3Li" style="display: none; margin-bottom:5.7px;">
+<p></p>
+</li>
+<li class="searchCondition10Li" style="display: none;">
+<h4>공고유형</h4>
+<p></p>
+</li>
+<li class="searchCondition9Li" style="display: none;">
+<h4>공고규모</h4>
+<p></p>
+</li>
+<li class="searchConditionLi" style="display: none;">
+<h4>마감일</h4>
+<p></p>
+</li>
+</ul>
+</div>
+<div>
+<p class="filter_text_help">※왼쪽 조건필터 버튼을 눌러 상세 조건 필터를 설정할 수 있습니다.</p>
+</div>
+</div>
+</div>
+<a class="button blue" href="#content" onclick="javascript: fn_search('1', ''); return false;">검색</a>
+</div>
+<!-- end # 검색조건 -->
+<!-- start # 검색 결과 리스트 -->
+<div id="rndListArea">
+<!-- start # 리스트 타이틀 -->
+<input id="totalCount" name="totalCount" type="hidden" value="76411">
+<div class="new_ntis_btitle">
+<div class="btitle_left">
+<h3 class="t_head">검색결과 <span>76,411건</span></h3>
+</div>
+<div class="table_option">
+<a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
+<a class="button white" href="/rndgate/eg/un/ra/createForm.do" onclick="javascript:fn_create(); return false;">등록신청</a>
+<a class="button white" href="/rndgate/eg/un/ra/mng.do" onclick="javascript:fn_search('','Y'); return false;"><img alt="엑셀양식" src="/rndgate/eg/images/ntis/icon/icon_excel.png"/>리스트 다운로드</a>
+<div class="dpib clear">
+<select class="selbp90" name="pageUnit" style="width: 100px; height: 39px; margin-right: -5px; margin-top: -3px;" title="리스트 개수">
+<option selected="selected" value="10">10 개</option>
+<option value="20">20 개</option>
+<option value="30">30 개</option>
+<option value="50">50 개</option>
+<option value="100">100 개</option>
+</select>
+<a class="sm_button" href="#" onclick="javascript:fn_pageUnit(); return false;" style="margin-top: 1px;">적용</a>
+</div>
+</div>
+</div>
+<!-- end # 리스트 타이틀 -->
+<table class="basic_list">
+<caption>기본검색 결과</caption>
+<colgroup>
+<col style="width: 35px"/>
+<col style="width: 66px"/>
+<col style="width: 125px"/>
+<col style="width: 66px"/>
+<col style="width: auto;"/>
+<col style="width: 100px"/>
+<col style="width: 100px"/>
+<col style="width: 66px"/>
+</colgroup>
+<thead>
+<tr>
+<th><input id="listAllCheck" title="전체" type="checkbox" value=""/></th>
+<th class="mo_disnone">순번</th>
+<th>현황 </th>
+<th>공고명</th>
+<th>부처명</th>
+<th>접수일
+                        <button class="descending" name="sort">
+<span class="" id="sort5Btn"></span>
+</button>
+</th>
+<th>마감일
+                        <button class="descending" name="sort">
+<span class="" id="sort6Btn"></span>
+</button>
+</th>
+<th class="end">D-day</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><input name="selectCheckList" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고" type="checkbox" value="1256599"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76411
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256599&amp;flag=rndList" onclick="javascript:fn_view('1256599'); return false;" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고"> 2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.02.24</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                        D - 9
+                                    
+                                    
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고_(2026)2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고" type="checkbox" value="1256596"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76410
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256596&amp;flag=rndList" onclick="javascript:fn_view('1256596'); return false;" title="2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고_(2026)2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고"> 2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고_(2026)2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고_(2026)2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고" type="checkbox" value="1256595"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76409
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256595&amp;flag=rndList" onclick="javascript:fn_view('1256595'); return false;" title="2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고_(2026)2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고"> 2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고_(2026)2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고_(2026)2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고" type="checkbox" value="1256594"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76408
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256594&amp;flag=rndList" onclick="javascript:fn_view('1256594'); return false;" title="2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고_(2026)2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고"> 2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고_(2026)2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고_(2026)2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고" type="checkbox" value="1256593"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76407
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256593&amp;flag=rndList" onclick="javascript:fn_view('1256593'); return false;" title="2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고_(2026)2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고"> 2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고_(2026)2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고_(2026)2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고" type="checkbox" value="1256592"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76406
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256592&amp;flag=rndList" onclick="javascript:fn_view('1256592'); return false;" title="2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고_(2026)2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고"> 2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고_(2026)2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도?핵융합 플러그인 프로그램?사업신규과제 공모_(2026)2026년도 핵융합 플러그인 프로그램 사업 신규과제 공모" type="checkbox" value="1256591"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76405
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256591&amp;flag=rndList" onclick="javascript:fn_view('1256591'); return false;" title="2026년도?핵융합 플러그인 프로그램?사업신규과제 공모_(2026)2026년도 핵융합 플러그인 프로그램 사업 신규과제 공모"> 2026년도?핵융합 플러그인 프로그램?사업신규과제 공모_(2026)2026년도 핵융합 플러그인 프로그램 사업 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.26</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고" type="checkbox" value="1256590"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76404
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256590&amp;flag=rndList" onclick="javascript:fn_view('1256590'); return false;" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고"> 2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.02.24</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                        D - 9
+                                    
+                                    
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년 전국 토양비옥도 평가 신규과제_(2026)전국 토양비옥도 평가" type="checkbox" value="1256587"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76403
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256587&amp;flag=rndList" onclick="javascript:fn_view('1256587'); return false;" title="2026년 전국 토양비옥도 평가 신규과제_(2026)전국 토양비옥도 평가"> 2026년 전국 토양비옥도 평가 신규과제_(2026)전국 토양비옥도 평가
+                                </a>
+</div>
+</td>
+<td data-title="부처명">농촌진흥청</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.04.15</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-59
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모_(2026)2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모" type="checkbox" value="1256578"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76402
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256578&amp;flag=rndList" onclick="javascript:fn_view('1256578'); return false;" title="2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모_(2026)2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모"> 2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모_(2026)2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+</tbody>
+</table>
+<!-- end # 공고목록 -->
+<!-- start # MY공고 추가버튼 -->
+<div class="pageing_button fr">
+<a class="button white" href="#" onclick="javascript:fn_scrap();return false;">MY공고 추가</a>
+</div>
+<!-- end # MY공고 추가버튼 -->
+<!-- start # 페이징 -->
+<div class="pagination">
+<div>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7642" onclick="fn_search(7642);return false; ">끝</a>
+</div>
+</div>
+<input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
+<!-- end # 페이징 -->
+</input></div>
+<!-- end # 검색 결과 리스트 -->
+<input name="queryId" type="hidden" value="excelDownLoadDAO.selectRndMainList"/>
+<input name="fileName" type="hidden" value="공고목록"/>
+<input name="sheetName" type="hidden" value=""/>
+<input name="headTitle" type="hidden" value="순번;현황;형태;부처명;공고명;접수일;마감일;접수마감시간;공고일;공고기관명;문의처;공고문 바로가기(URL);공고유형;공고금액;공고사업명"/>
+<input name="cdId" type="hidden" value=""/>
+<input name="excelId" type="hidden" value=""/>
+</input></input></input></input></input></form>
+<form id="rndAncmExcel" method="post" name="rndAncmExcel" target="_top">
+</form>
+<form action="https://apply.ntis.go.kr/tk-service.do" id="monitorForm">
+<input name="RRNO" type="hidden"/> <input name="ANUC_URL" type="hidden"/> <input name="APPLS_URL" type="hidden"/> <input name="ANUC_NO" type="hidden"/> <input name="ORG_ANUC_NO" type="hidden"/> <input name="targetId" type="hidden"/> <input name="KEY_PARAM" type="hidden"/>
+</form>
+<form action="/rndgate/eg/cmm/file/download.do" id="download" method="post" name="download" target="_top">
+<input name="fileId" type="hidden" value=""/> <input name="fileUpPath" type="hidden" value=""/> <input name="fileNm" type="hidden" value=""/>
+</form>
+<!-- 202308 필터 슬라이드 영역 추가 start -->
+<div class="filter_wrap" style="display: none;">
+<div class="filter_bg"></div>
+<div class="filter">
+<div class="filter_tit">
+<h4 class="ico_filter_bk">필터선택</h4>
+<a class="btn_close" onclick="filterCheck();">닫기</a>
+</div>
+<div class="filter_selected">
+<div class="filter_sel_top">
+<h5>선택한 항목</h5>
+<input onclick="fncResetChk();" type="button" value="전체해제"/>
+</div>
+<ul id="selectNav">
+</ul>
+</div>
+<div class="filter_detail">
+<table>
+<caption>
+<span class="screenout">공고현황 부처명 공고일 공고유형 공고규모 마감일로 구성된 검색조건입니다.</span>
+</caption>
+<tbody>
+<tr>
+<th scope="col">공고현황 
+                            <a class="close" href="#" id="navigation1GroupOpen" onclick="fnNavigationOpen('navigation1Group'); return false;"><span class="screenout">더보기</span></a>
+<a class="more" href="#" id="navigation1GroupClose" onclick="fnNavigationClose('navigation1Group'); return false;" style="display: none;"><span class="screenout">줄이기</span></a>
+</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li id="navigation1Group0">
+<input data-value="searchStatusListALL" name="searchStatusListRe" onclick="filterChk('searchStatusListRe', '전체');" title="전체 입니다." type="checkbox" value="전체"/>
+<label for="searchStatusListRe0" onclick="filterChk('searchStatusListRe', '전체');"></label>
+<a onclick="filterChk('searchStatusListRe', '전체');" title="전체">전체</a>
+</li>
+<li id="navigation1Group1">
+<input data-value="P" name="searchStatusListRe" onclick="filterChk('searchStatusListRe', '접수예정');" title="접수예정 입니다." type="checkbox" value="접수예정"/>
+<label for="searchStatusListRe1" onclick="filterChk('searchStatusListRe', '접수예정');"></label>
+<a onclick="filterChk('searchStatusListRe', '접수예정');" title="접수예정">접수예정</a>
+</li>
+<li id="navigation1Group2">
+<input data-value="B" name="searchStatusListRe" onclick="filterChk('searchStatusListRe', '접수중');" title="접수중 입니다." type="checkbox" value="접수중"/>
+<label for="searchStatusListRe2" onclick="filterChk('searchStatusListRe', '접수중');"></label>
+<a onclick="filterChk('searchStatusListRe', '접수중');" title="접수중">접수중</a>
+</li>
+<li id="navigation1Group3">
+<input data-value="Y" name="searchStatusListRe" onclick="filterChk('searchStatusListRe', '마감');" title="마감 입니다." type="checkbox" value="마감"/>
+<label for="searchStatusListRe3" onclick="filterChk('searchStatusListRe', '마감');"></label>
+<a onclick="filterChk('searchStatusListRe', '마감');" title="마감">마감</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="col">부처명 
+                            <a class="close" href="#" id="navigation2GroupOpen" onclick="fnNavigationOpen('navigation2Group'); return false;"><span class="screenout">더보기</span></a>
+<a class="more" href="#" id="navigation2GroupClose" onclick="fnNavigationClose('navigation2Group'); return false;" style="display: none;"><span class="screenout">줄이기</span></a>
+</th>
+</tr>
+<tr>
+<td>
+<ul>
+<li id="navigation2Group0">
+<input data-value="ALL" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '전체');" title="전체 입니다." type="checkbox" value="전체"/>
+<label for="searchDeptListRe0" onclick="filterChk('searchDeptListRe', '전체');"></label>
+<a onclick="filterChk('searchDeptListRe', '전체');" title="전체">전체</a>
+</li>
+<li id="navigation2Group1">
+<input data-value="M59" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '개인정보보호위원회');" title="개인정보보호위원회 입니다." type="checkbox" value="개인정보보호위원회"/>
+<label for="searchDeptListRe1" onclick="filterChk('searchDeptListRe', '개인정보보호위원회');"></label>
+<a onclick="filterChk('searchDeptListRe', '개인정보보호위원회');" title="전체">개인정보보호위원회</a>
+</li>
+<li id="navigation2Group2">
+<input data-value="M10" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '경찰청');" title="경찰청 입니다." type="checkbox" value="경찰청"/>
+<label for="searchDeptListRe2" onclick="filterChk('searchDeptListRe', '경찰청');"></label>
+<a onclick="filterChk('searchDeptListRe', '경찰청');" title="전체">경찰청</a>
+</li>
+<li id="navigation2Group3">
+<input data-value="M11" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '고용노동부');" title="고용노동부 입니다." type="checkbox" value="고용노동부"/>
+<label for="searchDeptListRe3" onclick="filterChk('searchDeptListRe', '고용노동부');"></label>
+<a onclick="filterChk('searchDeptListRe', '고용노동부');" title="전체">고용노동부</a>
+</li>
+<li id="navigation2Group4" style="display: none;">
+<input data-value="M12" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '공정거래위원회');" title="공정거래위원회 입니다." type="checkbox" value="공정거래위원회"/>
+<label for="searchDeptListRe4" onclick="filterChk('searchDeptListRe', '공정거래위원회');"></label>
+<a onclick="filterChk('searchDeptListRe', '공정거래위원회');" title="전체">공정거래위원회</a>
+</li>
+<li id="navigation2Group5" style="display: none;">
+<input data-value="M13" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '과학기술정보통신부');" title="과학기술정보통신부 입니다." type="checkbox" value="과학기술정보통신부"/>
+<label for="searchDeptListRe5" onclick="filterChk('searchDeptListRe', '과학기술정보통신부');"></label>
+<a onclick="filterChk('searchDeptListRe', '과학기술정보통신부');" title="전체">과학기술정보통신부</a>
+</li>
+<li id="navigation2Group6" style="display: none;">
+<input data-value="M15" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '교육부');" title="교육부 입니다." type="checkbox" value="교육부"/>
+<label for="searchDeptListRe6" onclick="filterChk('searchDeptListRe', '교육부');"></label>
+<a onclick="filterChk('searchDeptListRe', '교육부');" title="전체">교육부</a>
+</li>
+<li id="navigation2Group7" style="display: none;">
+<input data-value="M67" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국가데이터처');" title="국가데이터처 입니다." type="checkbox" value="국가데이터처"/>
+<label for="searchDeptListRe7" onclick="filterChk('searchDeptListRe', '국가데이터처');"></label>
+<a onclick="filterChk('searchDeptListRe', '국가데이터처');" title="전체">국가데이터처</a>
+</li>
+<li id="navigation2Group8" style="display: none;">
+<input data-value="M63" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국가보훈부');" title="국가보훈부 입니다." type="checkbox" value="국가보훈부"/>
+<label for="searchDeptListRe8" onclick="filterChk('searchDeptListRe', '국가보훈부');"></label>
+<a onclick="filterChk('searchDeptListRe', '국가보훈부');" title="전체">국가보훈부</a>
+</li>
+<li id="navigation2Group9" style="display: none;">
+<input data-value="M65" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국가유산청');" title="국가유산청 입니다." type="checkbox" value="국가유산청"/>
+<label for="searchDeptListRe9" onclick="filterChk('searchDeptListRe', '국가유산청');"></label>
+<a onclick="filterChk('searchDeptListRe', '국가유산청');" title="전체">국가유산청</a>
+</li>
+<li id="navigation2Group10" style="display: none;">
+<input data-value="M16" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국무조정실');" title="국무조정실 입니다." type="checkbox" value="국무조정실"/>
+<label for="searchDeptListRe10" onclick="filterChk('searchDeptListRe', '국무조정실');"></label>
+<a onclick="filterChk('searchDeptListRe', '국무조정실');" title="전체">국무조정실</a>
+</li>
+<li id="navigation2Group11" style="display: none;">
+<input data-value="M17" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국방부');" title="국방부 입니다." type="checkbox" value="국방부"/>
+<label for="searchDeptListRe11" onclick="filterChk('searchDeptListRe', '국방부');"></label>
+<a onclick="filterChk('searchDeptListRe', '국방부');" title="전체">국방부</a>
+</li>
+<li id="navigation2Group12" style="display: none;">
+<input data-value="M19" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국토교통부');" title="국토교통부 입니다." type="checkbox" value="국토교통부"/>
+<label for="searchDeptListRe12" onclick="filterChk('searchDeptListRe', '국토교통부');"></label>
+<a onclick="filterChk('searchDeptListRe', '국토교통부');" title="전체">국토교통부</a>
+</li>
+<li id="navigation2Group13" style="display: none;">
+<input data-value="M60" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '국회');" title="국회 입니다." type="checkbox" value="국회"/>
+<label for="searchDeptListRe13" onclick="filterChk('searchDeptListRe', '국회');"></label>
+<a onclick="filterChk('searchDeptListRe', '국회');" title="전체">국회</a>
+</li>
+<li id="navigation2Group14" style="display: none;">
+<input data-value="M20" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기상청');" title="기상청 입니다." type="checkbox" value="기상청"/>
+<label for="searchDeptListRe14" onclick="filterChk('searchDeptListRe', '기상청');"></label>
+<a onclick="filterChk('searchDeptListRe', '기상청');" title="전체">기상청</a>
+</li>
+<li id="navigation2Group15" style="display: none;">
+<input data-value="M21" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기획재정부');" title="기획재정부 입니다." type="checkbox" value="기획재정부"/>
+<label for="searchDeptListRe15" onclick="filterChk('searchDeptListRe', '기획재정부');"></label>
+<a onclick="filterChk('searchDeptListRe', '기획재정부');" title="전체">기획재정부</a>
+</li>
+<li id="navigation2Group16" style="display: none;">
+<input data-value="M71" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기후에너지환경부');" title="기후에너지환경부 입니다." type="checkbox" value="기후에너지환경부"/>
+<label for="searchDeptListRe16" onclick="filterChk('searchDeptListRe', '기후에너지환경부');"></label>
+<a onclick="filterChk('searchDeptListRe', '기후에너지환경부');" title="전체">기후에너지환경부</a>
+</li>
+<li id="navigation2Group17" style="display: none;">
+<input data-value="M22" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '농림축산식품부');" title="농림축산식품부 입니다." type="checkbox" value="농림축산식품부"/>
+<label for="searchDeptListRe17" onclick="filterChk('searchDeptListRe', '농림축산식품부');"></label>
+<a onclick="filterChk('searchDeptListRe', '농림축산식품부');" title="전체">농림축산식품부</a>
+</li>
+<li id="navigation2Group18" style="display: none;">
+<input data-value="M23" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '농촌진흥청');" title="농촌진흥청 입니다." type="checkbox" value="농촌진흥청"/>
+<label for="searchDeptListRe18" onclick="filterChk('searchDeptListRe', '농촌진흥청');"></label>
+<a onclick="filterChk('searchDeptListRe', '농촌진흥청');" title="전체">농촌진흥청</a>
+</li>
+<li id="navigation2Group19" style="display: none;">
+<input data-value="M62" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '대통령경호처');" title="대통령경호처 입니다." type="checkbox" value="대통령경호처"/>
+<label for="searchDeptListRe19" onclick="filterChk('searchDeptListRe', '대통령경호처');"></label>
+<a onclick="filterChk('searchDeptListRe', '대통령경호처');" title="전체">대통령경호처</a>
+</li>
+<li id="navigation2Group20" style="display: none;">
+<input data-value="M61" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '대통령비서실');" title="대통령비서실 입니다." type="checkbox" value="대통령비서실"/>
+<label for="searchDeptListRe20" onclick="filterChk('searchDeptListRe', '대통령비서실');"></label>
+<a onclick="filterChk('searchDeptListRe', '대통령비서실');" title="전체">대통령비서실</a>
+</li>
+<li id="navigation2Group21" style="display: none;">
+<input data-value="M24" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '문화재청');" title="문화재청 입니다." type="checkbox" value="문화재청"/>
+<label for="searchDeptListRe21" onclick="filterChk('searchDeptListRe', '문화재청');"></label>
+<a onclick="filterChk('searchDeptListRe', '문화재청');" title="전체">문화재청</a>
+</li>
+<li id="navigation2Group22" style="display: none;">
+<input data-value="M25" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '문화체육관광부');" title="문화체육관광부 입니다." type="checkbox" value="문화체육관광부"/>
+<label for="searchDeptListRe22" onclick="filterChk('searchDeptListRe', '문화체육관광부');"></label>
+<a onclick="filterChk('searchDeptListRe', '문화체육관광부');" title="전체">문화체육관광부</a>
+</li>
+<li id="navigation2Group23" style="display: none;">
+<input data-value="M72" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '방송미디어통신위원회');" title="방송미디어통신위원회 입니다." type="checkbox" value="방송미디어통신위원회"/>
+<label for="searchDeptListRe23" onclick="filterChk('searchDeptListRe', '방송미디어통신위원회');"></label>
+<a onclick="filterChk('searchDeptListRe', '방송미디어통신위원회');" title="전체">방송미디어통신위원회</a>
+</li>
+<li id="navigation2Group24" style="display: none;">
+<input data-value="M27" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '방위사업청');" title="방위사업청 입니다." type="checkbox" value="방위사업청"/>
+<label for="searchDeptListRe24" onclick="filterChk('searchDeptListRe', '방위사업청');"></label>
+<a onclick="filterChk('searchDeptListRe', '방위사업청');" title="전체">방위사업청</a>
+</li>
+<li id="navigation2Group25" style="display: none;">
+<input data-value="M28" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '법무부');" title="법무부 입니다." type="checkbox" value="법무부"/>
+<label for="searchDeptListRe25" onclick="filterChk('searchDeptListRe', '법무부');"></label>
+<a onclick="filterChk('searchDeptListRe', '법무부');" title="전체">법무부</a>
+</li>
+<li id="navigation2Group26" style="display: none;">
+<input data-value="M29" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '법제처');" title="법제처 입니다." type="checkbox" value="법제처"/>
+<label for="searchDeptListRe26" onclick="filterChk('searchDeptListRe', '법제처');"></label>
+<a onclick="filterChk('searchDeptListRe', '법제처');" title="전체">법제처</a>
+</li>
+<li id="navigation2Group27" style="display: none;">
+<input data-value="M30" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '보건복지부');" title="보건복지부 입니다." type="checkbox" value="보건복지부"/>
+<label for="searchDeptListRe27" onclick="filterChk('searchDeptListRe', '보건복지부');"></label>
+<a onclick="filterChk('searchDeptListRe', '보건복지부');" title="전체">보건복지부</a>
+</li>
+<li id="navigation2Group28" style="display: none;">
+<input data-value="M31" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '산림청');" title="산림청 입니다." type="checkbox" value="산림청"/>
+<label for="searchDeptListRe28" onclick="filterChk('searchDeptListRe', '산림청');"></label>
+<a onclick="filterChk('searchDeptListRe', '산림청');" title="전체">산림청</a>
+</li>
+<li id="navigation2Group29" style="display: none;">
+<input data-value="M66" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '산업통상부');" title="산업통상부 입니다." type="checkbox" value="산업통상부"/>
+<label for="searchDeptListRe29" onclick="filterChk('searchDeptListRe', '산업통상부');"></label>
+<a onclick="filterChk('searchDeptListRe', '산업통상부');" title="전체">산업통상부</a>
+</li>
+<li id="navigation2Group30" style="display: none;">
+<input data-value="M70" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '성평등가족부');" title="성평등가족부 입니다." type="checkbox" value="성평등가족부"/>
+<label for="searchDeptListRe30" onclick="filterChk('searchDeptListRe', '성평등가족부');"></label>
+<a onclick="filterChk('searchDeptListRe', '성평등가족부');" title="전체">성평등가족부</a>
+</li>
+<li id="navigation2Group31" style="display: none;">
+<input data-value="M34" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '소방청');" title="소방청 입니다." type="checkbox" value="소방청"/>
+<label for="searchDeptListRe31" onclick="filterChk('searchDeptListRe', '소방청');"></label>
+<a onclick="filterChk('searchDeptListRe', '소방청');" title="전체">소방청</a>
+</li>
+<li id="navigation2Group32" style="display: none;">
+<input data-value="M35" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '식품의약품안전처');" title="식품의약품안전처 입니다." type="checkbox" value="식품의약품안전처"/>
+<label for="searchDeptListRe32" onclick="filterChk('searchDeptListRe', '식품의약품안전처');"></label>
+<a onclick="filterChk('searchDeptListRe', '식품의약품안전처');" title="전체">식품의약품안전처</a>
+</li>
+<li id="navigation2Group33" style="display: none;">
+<input data-value="M38" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '외교부');" title="외교부 입니다." type="checkbox" value="외교부"/>
+<label for="searchDeptListRe33" onclick="filterChk('searchDeptListRe', '외교부');"></label>
+<a onclick="filterChk('searchDeptListRe', '외교부');" title="전체">외교부</a>
+</li>
+<li id="navigation2Group34" style="display: none;">
+<input data-value="M64" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '우주항공청');" title="우주항공청 입니다." type="checkbox" value="우주항공청"/>
+<label for="searchDeptListRe34" onclick="filterChk('searchDeptListRe', '우주항공청');"></label>
+<a onclick="filterChk('searchDeptListRe', '우주항공청');" title="전체">우주항공청</a>
+</li>
+<li id="navigation2Group35" style="display: none;">
+<input data-value="M39" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '원자력안전위원회');" title="원자력안전위원회 입니다." type="checkbox" value="원자력안전위원회"/>
+<label for="searchDeptListRe35" onclick="filterChk('searchDeptListRe', '원자력안전위원회');"></label>
+<a onclick="filterChk('searchDeptListRe', '원자력안전위원회');" title="전체">원자력안전위원회</a>
+</li>
+<li id="navigation2Group36" style="display: none;">
+<input data-value="M42" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '중소벤처기업부');" title="중소벤처기업부 입니다." type="checkbox" value="중소벤처기업부"/>
+<label for="searchDeptListRe36" onclick="filterChk('searchDeptListRe', '중소벤처기업부');"></label>
+<a onclick="filterChk('searchDeptListRe', '중소벤처기업부');" title="전체">중소벤처기업부</a>
+</li>
+<li id="navigation2Group37" style="display: none;">
+<input data-value="M69" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '지식재산처');" title="지식재산처 입니다." type="checkbox" value="지식재산처"/>
+<label for="searchDeptListRe37" onclick="filterChk('searchDeptListRe', '지식재산처');"></label>
+<a onclick="filterChk('searchDeptListRe', '지식재산처');" title="전체">지식재산처</a>
+</li>
+<li id="navigation2Group38" style="display: none;">
+<input data-value="M58" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '질병관리청');" title="질병관리청 입니다." type="checkbox" value="질병관리청"/>
+<label for="searchDeptListRe38" onclick="filterChk('searchDeptListRe', '질병관리청');"></label>
+<a onclick="filterChk('searchDeptListRe', '질병관리청');" title="전체">질병관리청</a>
+</li>
+<li id="navigation2Group39" style="display: none;">
+<input data-value="M43" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '통일부');" title="통일부 입니다." type="checkbox" value="통일부"/>
+<label for="searchDeptListRe39" onclick="filterChk('searchDeptListRe', '통일부');"></label>
+<a onclick="filterChk('searchDeptListRe', '통일부');" title="전체">통일부</a>
+</li>
+<li id="navigation2Group40" style="display: none;">
+<input data-value="M45" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '해양경찰청');" title="해양경찰청 입니다." type="checkbox" value="해양경찰청"/>
+<label for="searchDeptListRe40" onclick="filterChk('searchDeptListRe', '해양경찰청');"></label>
+<a onclick="filterChk('searchDeptListRe', '해양경찰청');" title="전체">해양경찰청</a>
+</li>
+<li id="navigation2Group41" style="display: none;">
+<input data-value="M46" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '해양수산부');" title="해양수산부 입니다." type="checkbox" value="해양수산부"/>
+<label for="searchDeptListRe41" onclick="filterChk('searchDeptListRe', '해양수산부');"></label>
+<a onclick="filterChk('searchDeptListRe', '해양수산부');" title="전체">해양수산부</a>
+</li>
+<li id="navigation2Group42" style="display: none;">
+<input data-value="M47" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '행정안전부');" title="행정안전부 입니다." type="checkbox" value="행정안전부"/>
+<label for="searchDeptListRe42" onclick="filterChk('searchDeptListRe', '행정안전부');"></label>
+<a onclick="filterChk('searchDeptListRe', '행정안전부');" title="전체">행정안전부</a>
+</li>
+<li id="navigation2Group43" style="display: none;">
+<input data-value="M97" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '다부처');" title="다부처 입니다." type="checkbox" value="다부처"/>
+<label for="searchDeptListRe43" onclick="filterChk('searchDeptListRe', '다부처');"></label>
+<a onclick="filterChk('searchDeptListRe', '다부처');" title="전체">다부처</a>
+</li>
+<li id="navigation2Group44" style="display: none;">
+<input data-value="M99" name="searchDeptListRe" onclick="filterChk('searchDeptListRe', '기타');" title="기타 입니다." type="checkbox" value="기타"/>
+<label for="searchDeptListRe44" onclick="filterChk('searchDeptListRe', '기타');"></label>
+<a onclick="filterChk('searchDeptListRe', '기타');" title="전체">기타</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="col">공고일 
+                        </th>
+</tr>
+<tr>
+<td>
+<ul>
+<li id="navigation3Group0">
+<label for="searchCondition2Re">시작일</label>
+<input id="searchCondition2Re" name="searchCondition2Re" style="width: 150px;" title="시작일 선택" type="date" value=""/>
+</li>
+<li id="navigation3Group1">
+<label for="searchCondition3Re">종료일</label>
+<input id="searchCondition3Re" name="searchCondition3Re" style="width: 150px;" title="종료일 선택" type="date" value=""/>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="col">공고유형 
+                        </th>
+</tr>
+<tr>
+<td>
+<select id="searchCondition10Re" name="searchCondition10Re" onchange="filterChk(this.id,this.options[this.selectedIndex].text);" style="width: 150px;">
+<option selected="selected" value="">전체</option>
+<option value="28701">수요조사</option>
+<option value="28702">사전공고</option>
+<option value="28703">본공고</option>
+</select>
+</td>
+</tr>
+<tr>
+<th scope="col">공고규모 
+                        </th>
+</tr>
+<tr>
+<td>
+<select id="searchCondition9Re" name="searchCondition9Re" onchange="filterChk(this.id,this.options[this.selectedIndex].text);" style="width: 150px;">
+<option selected="selected" value="">전체</option>
+<option value="1">1억미만</option>
+<option value="1_3">1억이상 ~ 3억미만</option>
+<option value="3_5">3억이상 ~ 5억미만</option>
+<option value="5">5억이상</option>
+</select>
+</td>
+</tr>
+<tr>
+<th scope="col">마감일 
+                        </th>
+</tr>
+<tr>
+<td>
+<select id="searchConditionRe" name="searchConditionRe" onchange="filterChk(this.id,this.options[this.selectedIndex].text);" style="width: 150px;">
+<option selected="selected" value="">전체</option>
+<option value="3d">마감3일전</option>
+<option value="1w">마감1주전</option>
+<option value="3w">마감3주전</option>
+<option value="1m">마감1달전</option>
+<option value="over1m">마감1달이상</option>
+</select>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="btnWrap">
+<button class="btn-mid" onclick="filterCheck();">닫기</button>
+<button class="btn-mid btn_done" id="filterSearch">적용</button>
+</div>
+</div>
+</div>
+<!-- 202308 필터 슬라이드 영역 추가 end -->
+</div>
+<!-- ################### tiles Body End   ################### -->
+<div id="dialog-modal" title="">
+<div id="dialog-contents"></div>
+</div>
+</div>
+<!-- ################### tiles Global Footer Start ################### -->
+<br>
+<br>
+<!-- ====================== start # 페이지 하단 ====================== -->
+<!--202308 mobile bottom tab button start -->
+<div class="m_bottomTab">
+<div class="header_util">
+<ul>
+<li class="btn btn_home"><a href="https://www.ntis.go.kr/">홈</a></li>
+<li class="btn btn_document"><a href="https://www.ntis.go.kr/ThPostList.do">홍보</a></li>
+<li class="btn btn_setting" onclick="onPopupLogin('')"><a href="https://www.ntis.go.kr/ThSearchDirectoryViewList.do#">마이메뉴</a></li>
+</ul>
+</div>
+</div>
+<!--202308 mobile bottom tab button end -->
+<div id="footer" style="clear: both;">
+<div class="footer-inner">
+<div class="f-cont">
+<div class="f-copy-area">
+<p class="f-copy">COPYRIGHT © MINISTRY OF SCIENCE AND ICT. ALL RIGHTS RESERVED.</p>
+<ul class="f-menu-list" style="font-size: 13px !important;">
+<li><a href="https://www.ntis.go.kr/ThPrivacyAgreement.do">개인정보처리방침</a></li>
+<li><a href="https://www.ntis.go.kr/ThTerms.do">NTIS정책</a></li>
+<li><a href="http://1398.acrc.go.kr/index.html">부정부패신고</a></li>
+</ul>
+</div>
+<div class="f-link"><a class="f-menu" href="https://www.ntis.go.kr/ThNewBoardList.do?boardDivCd=04&amp;boardDivSeqNo=1">이용안내</a></div>
+</div>
+</div>
+</div>
+<div id="globalMenuNewLayer" style="display: none;"></div>
+<!-- 202308 mobile menu area end -->
+<!-- ====================== end # 페이지 하단 ====================== -->
+<!-- Default Progress Spin Bar Start -->
+<div id="spinBar" style="display: none;">
+<div id="loading-box" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; opacity: 0.8; z-index: 10000; cursor: pointer; text-align: center; ">
+<div style="margin: auto; width: 60px; height: 60px; position: relative; top: 50%; transform: translateY(-50%);">
+<img alt="로딩중" src="/rndgate/eg/images/ntis/content/service/default.gif" style="width: 100%; height: 100%;">
+</img></div>
+</div>
+</div>
+<!-- Default Progress Spin Bar End -->
+<!-- ################### tiles Global Footer End   ################### -->
+</br></br></div>
+</body>
+</html>

@@ -1,0 +1,1759 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>R&amp;D 사업공고 - 중소기업 기술개발사업 종합관리시스템</title>
+<link href="/css/master.css" rel="stylesheet"/>
+<link href="/css/cmadd.css" rel="stylesheet"/>
+<style>
+/*
+.num {font-size:8px; color:#666;}
+.txt1 {font-family:휴먼명조; font-size:10px; color:"black""; letter-spacing:-0.1em; line-height:10px;}
+*/
+</style>
+<!-- 전산번호 :: 93015 , 윤정수 차장 요청으로 파비콘 추가 -->
+<link href="/images/url_logo.ico" rel="shortcut icon"/>
+<link href="/css/calendar_ahmax.css" rel="stylesheet" type="text/css"/>
+<style>
+	.sessionBlock {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(51,51,51,0.7);
+		z-index: 9999;
+	}
+	.sessionBlockContent {
+		position: fixed;
+		width: 30%;
+		left: 67%;
+		margin-left: -30%;
+		height: 380px;
+		top: 50%;
+		margin-top: -150px;
+		overflow: auto;
+	
+		border: 1px solid #000;
+		background-color: #fff;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+	
+	.bt4 {  /**2018 테이블 하단 실행 버튼 **/
+		background-color:#757a85;
+		height:30px;
+		color:#fff;
+		font-weight:700;
+	    text-align:center;
+		padding:0px 15px 2px 15px;
+	    border:none;
+	}
+	
+	.bt4:hover  {   /**2018 테이블 하단 실행 버튼 **/
+		background-color:#1f4bb4;
+		height:30px;
+		color:#fff;
+		font-weight:700;
+	    text-align:center;
+		padding:0px 15px 2px 15px;
+	    border:none;
+	}
+	
+	.ac        {text-align:center;}
+	
+	/*** SiteMap **/
+	.open_sitemap {position:absolute; top:-60px; left:0px; margin:0 auto; display:none; width:100%; height:2150px; border:1px solid #ccc; z-index:1000; background-color:#fff; overflow:auto;}
+	.open_sitemap .sitemapN8 {position:relative; margin:0 auto; width:1280px; height:1800px; margin-top:50px; background-color:#fff;}
+	.open_sitemap .sitemapN8 a.bt_close:hover {background:url("/img/bt_close.jpg") no-repeat center center; }
+	.open_sitemap .sitemapN8 .sitemapNB li:nth-child(6) {position:absolute; top:600px; left:320px; width:282px;}
+	.open_sitemap .sitemapN8 .sitemapNB li:nth-child(7) {position:absolute; top:1100px; left:965px; width:282px;}
+	.open_sitemap .sitemapN8 .sitemapNB li dl {margin-top:30px; width:91%; padding-left:10px;}
+</style>
+<script src="/js/menu2.js" type="text/javascript"></script>
+<script src="/js/common.js?v=20250520" type="text/javascript"></script>
+<script src="/js/quick.js" type="text/javascript"></script>
+<!-- 2018홈페이지 개편 -->
+<meta content="noindex, nofollow" name="robots"/>
+<script src="/js/jquery.js" type="text/javascript"></script>
+<script src="/js/validation.js" type="text/javascript"></script>
+<script src="/js/sba_common.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		$('#tab01_02').focus();
+	});
+
+	//페이지 네비에서 호출
+	function fn_search_test(pageNo){
+		var f = document.form;
+		f.pageIndex.value = pageNo;
+		f.action = "/front/ifg/no/notice02_list.do";
+		f.submit();
+	}
+
+	//시스템구분
+	function goSysgubn(){
+		var sGbu = "";		
+		var rGubun = document.form.rdoSysGbun.value;
+		 
+		if (rGubun == "SYS_SMTECH") {
+			sGbu = "smtech";
+		} else if (rGubun == "SYS_IRIS") {
+			sGbu = "iris";
+		} else {
+			sGbu = "all";
+		}
+
+		$("#sysGubun").val(sGbu);
+
+		//document.form.sysGb.value = sGbu;
+						
+		document.form.action = "/front/ifg/no/notice02_list.do";
+		document.form.target = "";
+		document.form.submit();
+		
+	}
+
+	function goMove(){
+		if (confirm("IRIS 홈페이지로 이동하시겠습니까?")){
+			window.open("http://www.iris.go.kr");
+		}
+		return false;		
+	}
+</script>
+</head>
+<body>
+<noscript><p id="warning_script">자바스크립트가 동작하지 않을 시 디자인이 정상적으로 보이지 않을 수 있습니다.</p></noscript>
+<form action="/front/ifg/no/notice02_list.do" id="searchVO" method="post" name="form">
+<a name="list"></a>
+<ul id="accessibility">
+<li><a href="#subheader">주메뉴바로가기</a></li>
+<li><a href="#subcontent">컨텐츠바로가기</a></li>
+<li><a href="#footer">하단바로가기</a></li>
+</ul>
+<hr/>
+<div id="wrapper">
+<!--header 시작입니다-->
+<meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<script>
+
+
+var min, sec, sTime, cTime;
+
+
+$(document).ready(function(){
+	sTime = 3600;
+	min = sTime / 60;
+	sec = sTime % 60;
+	
+
+
+	$('#allmenu').click(function() {
+    	$('#allmenuview').show();
+    	$('#searchview').hide();
+   	});
+
+   	$('#allmenu_close').click(function() {
+    	$('#allmenuview').hide();
+   	});
+
+   	$('#searchmenu').click(function() {
+    	$('#searchview').show();
+    	$('#searchvalue').focus();
+   	});
+
+   	$('#searchview_close').click(function() {
+    	$('#searchview').hide();
+   	});
+
+	// CORONA-19 VIRUS 상단배너추가 2020.04.24
+   	$("#coronaDiv").animate({
+   		'marginTop' : "0px"
+   		//'opacity'  : "0.5"
+   	}, 0);
+	
+	
+   	
+	if (parent[0]?.window.name == "smes_frame")  {
+		$("#subheader")[0].id = "subheader2";
+	}
+});
+
+function search_includeHeader(){
+	if ($('#searchvalue').val() == "") {
+		alert("검색어를 입력해주세요!");
+		return false;
+	}else{
+    	$('#searchvalue').focus();
+		var param = $('#searchvalue').val();
+		param = encodeURIComponent(param);
+		location.href = "/front/main/mainSearch.do?keyword="+ param;
+	}
+
+}
+
+function fn_valueClear(){
+	if($('#searchvalue').val() == "검색어를 입력하세요") {
+		$('#searchvalue').val('');
+	}
+}
+
+
+
+
+/*
+function logCorpAScript_full(){
+	HTTP_MSN_MEMBER_NAME=""; //member name
+	var prtc=(document.location.protocol=="https:")?"https://":"http://";
+	var hst=prtc+"asp7.http.or.kr";
+	var rnd="r"+(new  Date().getTime()*Math.random()*9);
+	this.ch=function(){
+		if(document.getElementsByTagName("head")[0]){this.dls();}else{window.setTimeout(logCorpAnalysis_full.ch,30)}
+	}
+	this.dls=function(){
+		var  h=document.getElementsByTagName("head")[0];
+		var  s=document.createElement("script");s.type="text/jav"+"ascript";try{s.defer=true;}catch(e){};try{s.async=true;}catch(e){};
+		if(h){s.src=hst+"/HTTP_MSN/UsrConfig/kieejo/js/ASP_Conf.js?s="+rnd;h.appendChild(s);}
+	}
+	this.init= function(){
+		document.write('<img src="'+hst+'/sr.gif?d='+rnd+'"  style="width:1px;height:1px;position:absolute;" alt="" onload="logCorpAnalysis_full.ch()" />');
+	}
+}
+if(typeof logCorpAnalysis_full=="undefined"){	var logCorpAnalysis_full=new logCorpAScript_full();logCorpAnalysis_full.init();}
+*/
+
+function fn_showMenuList() {
+	document.getElementById('mw_temp').style.display='block';
+}
+
+//실명인증전환팝업
+function fn_showRnameConfirmPop(){
+	var renameConfirmPop = "/front/comn/RnameConfirmPop.do";
+
+	//winMbr = window.open("/front/comn/RnameConfirmPop.do","res_link","width=720,height=370,scrollbars=yes,status=no,resizable=yes");
+	winMbr = window.open(renameConfirmPop,"res_link","width=720,height=370,scrollbars=no,status=no,resizable=yes");
+	winMbr.focus();
+	checkChild();
+}
+
+function checkChild(){
+	if(winMbr.closed){
+		window.location.reload(true);
+	}else{
+	  	setTimeout("checkChild()",1);
+	}
+}
+
+/*메뉴보이도록 컨트롤 함수 재활용 2018*/
+function fn_menuFunc(menu) {
+
+	for(var i=0; i<7; i++) {
+		var bro = $('.lst'+(i+1)).children('.depth2-wrap');
+		bro.css('display', '');
+	}
+
+	if(menu == 'menu1') {
+		var chld = $('.lst1').children('.depth2-wrap');
+		chld.css('display', 'block');
+	} else if(menu == 'menu2') {
+		var chld = $('.lst2').children('.depth2-wrap');
+		chld.css('display', 'block');
+	} else if(menu == 'menu3') {
+		var chld = $('.lst3').children('.depth2-wrap');
+		chld.css('display', 'block');
+	} else if(menu == 'menu4') {
+		var chld = $('.lst4').children('.depth2-wrap');
+		chld.css('display', 'block');
+	} else if(menu == 'menu5') {
+		var chld = $('.lst5').children('.depth2-wrap');
+		chld.css('display', 'block');
+	} else if(menu == 'menu6') {
+		var chld = $('.lst6').children('.depth2-wrap');
+		chld.css('display', 'block');
+	} else if(menu == 'menu7') {
+		var chld = $('.lst7').children('.depth2-wrap');
+		chld.css('display', 'block');
+	}
+
+}
+
+/*메뉴보이도록 컨트롤 함수 재활용 2018*/
+function fn_disMenuFunc() {
+	for(var i=0; i<7; i++) {
+		var bro = $('.lst'+(i+1)).children('.depth2-wrap');
+		bro.css('display', '');
+	}
+}
+
+/*사업화지원정보제공동의팝업*/
+/*//2018.11.23 김형우연구원 전산요청으로 사업화지원동의여부 팝업 내림
+function plifOrgnYnPop(){
+	$.ajax({
+		type:"POST",
+		url:"/front/CHK/plifPuseCnt.do",
+		data:null,
+		async:false,
+		dataType:"json",
+		success:function(json){
+			if(json.resultCode!="-1"){
+				var url = "/front/CHK/plifPuseCsnt.do";
+				var winMbr = window.open(url,"사업화정보지원제공동의","left=0,top=0,width=686,height=655,menubar=no,location=no,scrollbars=no,status=no,directories=no,toolbar=no,resizable=no");
+				winMbr.focus();
+			}
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+		}
+	});
+}
+plifOrgnYnPop();
+*/
+
+
+/* ==================================== 258677_이은희_[평가위원] 개인정보 제3자동의처리 추가 기능 구현 요청사항 Start ==================================== */
+// 평가위원 동의서 안내 팝업
+function ecmsnCsntPop(){
+	$.ajax({
+		type:"POST",
+		url:"/front/CHK/ecmsnCsntCnt.do",
+		data:null,
+		async:false,
+		dataType:"json",
+		success:function(json){
+			if(json.resultCode=="1"){
+				// alert('json.CSNT_YN = ' + json.CSNT_YN);
+				// 동의 하지 않은 평가위원만 나오도록 함.
+				if(json.CSNT_YN == 'N'){
+					if(getCookie('100001') == '' || getCookie('100001') == null) {
+						var url = "/front/CHK/ecmsnCsntGuidPop.do";
+						var winMbr = window.open(url,"평가위원 동의서","left=0,top=0,width=920,height=555,menubar=no,location=no,scrollbars=no,status=no,directories=no,toolbar=no,resizable=no");
+						winMbr.focus();
+					}
+				}
+
+			}
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+		}
+	});
+
+}
+
+ecmsnCsntPop();
+
+// 평가위원 동의서 메뉴로 이동 페이지
+function fn_MenuEcmsnMove(){
+	location.href = "/front/mpa/SP/rechSprtCsntEcmsnWrt.do";
+}
+/* ==================================== 258677_이은희_[평가위원] 개인정보 제3자동의처리 추가 기능 구현 요청사항 End ==================================== */
+
+/* ============================ 258686_이은희_[범부처PMS] SMTECH 과제참여연구원 개인정보 제3자 제공 및 활용 동의 처리 기능 추가 Start ============================ */
+// 참여자 동의서 안내 팝업
+function ptcpManPop(){
+	$.ajax({
+		type:"POST",
+		url:"/front/CHK/ptcpManCsntCnt.do",
+		data:null,
+		async:false,
+		dataType:"json",
+		success:function(json){
+			if(json.resultCode=="1"){
+				// alert('json.CSNT_YN = ' + json.CSNT_YN);
+				// 동의 하지 않은 평가위원만 나오도록 함.
+				if(json.CSNT_YN == 'N'){
+					if(getCookie('100000') == '' || getCookie('100000') == null) {
+						var url = "/front/CHK/ptcpManCsntGuidPop.do";
+						var winMbr = window.open(url,"참여자 동의서","left=0,top=0,width=920,height=390,menubar=no,location=no,scrollbars=no,status=no,directories=no,toolbar=no,resizable=no");
+						winMbr.focus();
+					}
+				}
+
+			}
+		},
+		error: function(jqXHR, textStatus, errorThrown) {
+		}
+	});
+
+}
+
+var getCookie4 = function(name) {
+	var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+	return value? value[2] : null;
+};
+
+ptcpManPop();
+
+//평가위원 동의서 메뉴로 이동 페이지
+function fn_MenuPtcpManMove(){
+	location.href = "/front/mpa/SP/rechSprtCsntPtcpManWrt.do";
+}
+
+// 로그인필요한 페이지 이동(로그인 되지 않았을 경우 로그인 페이지로 이동)
+function fn_MenuMrfnPageMove(url){
+	location.href = ""+url+"";
+}
+
+/* ============================ 258686_이은희_[범부처PMS] SMTECH 과제참여연구원 개인정보 제3자 제공 및 활용 동의 처리 기능 추가 End ============================ */
+
+
+	//타이머
+	function fn_timer() {
+
+		sec = sec - 1;
+		if(sec == -1) {
+			min = min-1;
+			sec = 59;
+		}
+		cTime = window.setTimeout('fn_timer()', 1000);
+		if(min > 0) {
+			//if(min == 1 && sec == 50) {
+			if(min == 10 && sec == 0){
+				sessionIngPopup();
+			}
+
+			if(sec > 9) {
+				$('#inactive_time').html("<b>" + min + ":" + sec + "</b>");
+
+				
+				if($("#sessionAlarmPop").css("visibility") == "visible") {
+					$("#inactive_pop_time").html("<b><font size='4' color='red'>만료시간이 " + min + "분 " + sec + "초 남았습니다.</font></b>");
+				}
+
+			} else {
+				$('#inactive_time').html("<b>" + min + ":0" + sec + "</b>");
+				if($("#sessionAlarmPop").css("visibility") == "visible") {
+					$("#inactive_pop_time").html("<b><font size='4' color='red'>만료시간이 " + min + "분 0" + sec + "초 남았습니다.</font></b>");
+				}
+			}
+		} else {
+			if(sec >= 1) {
+				$('#inactive_time').html("<b>0:" + sec + "</b>");
+				if($("#sessionAlarmPop").css("visibility") == "visible") {
+					$("#inactive_pop_time").html("<b><font size='4' color='red'>만료시간이 " + "0분 " + sec + "초 남았습니다.</font></b>");
+				}
+			} else {
+				$('#inactive_time').html("<b>0:00</b>");
+				if($("#sessionAlarmPop").css("visibility") == "visible") {
+					$("#inactive_pop_time").html("<b><font size='4' color='red'>시간이 만료되었습니다.</font></b>");
+				}
+				alert("로그인 시간이 만료되어 로그아웃됩니다.");
+				clearTimeout(cTime);
+
+				location = "/front/log/logoutProc.do";
+				
+
+			}
+		}
+	}
+
+	// 로그아웃 처리
+	function fn_timer_over() {
+		clearTimeout(cTime);
+		$("#sessionAlarmPop").css("visibility", "hidden");
+
+		location = "/front/log/logoutProc.do";
+		
+	}
+
+	// 세션리셋
+	function fn_timer_reset() {
+		sTime = 3600;
+		min = sTime / 60;
+		sec = sTime % 60;
+	}
+
+	// 세션리셋(서버호출)
+	function fn_timer_reset_call() {
+
+		$.ajax({
+				url: "/front/COMN/refreshFrontSession.do",
+				type: "POST",
+				async: false,
+				dataType: "json",
+				success: function(data, textStatus, jqXHR) {
+					fn_timer_reset();
+					$("#sessionAlarmPop").css("visibility", "hidden");
+				},
+				error: function(jqXHR, textStatus, errorThrown) {
+					alert("다시 로그인 후 실행해 주세요.");
+					$("#sessionAlarmPop").css("visibility", "hidden");
+				}
+		});
+	}
+
+	// 타이머 연장 DIV팝업 나타내기
+	function sessionIngPopup() {
+		$("#sessionAlarmPop").css("visibility", "visible");
+
+		
+
+		//var sessionPopAddr = "/front/COMN/sessionExPop.do";
+		//var sessionPop = window.open(sessionPopAddr,"session_pop","width=345,height=350,scrollbars=no,status=no,resizable=no");
+		//sessionPop.focus();
+	}
+
+	// 로그인 연장 클릭시
+	function fn_LoginTimerEx() {
+		if(!confirm("로그인 시간을 연장하시겠습니까?")) {
+			return;
+		}
+
+		fn_timer_reset_call();
+	}
+
+	// 로그아웃 클릭시
+	function fn_LoginTimerLogout() {
+		if(!confirm("로그아웃 하시겠습니까?")) {
+			return;
+		}
+
+		$("#sessionAlarmPop").css("visibility", "hidden");
+		fn_timer_over();
+	}
+
+	function showModalDialogCallback(retVal) {
+  		if(retVal == "ok") { // 로그인 연장시
+			fn_timer_reset_call();
+		} else if(retVal == "logout") {	// 로그아웃시
+			fn_timer_over();
+		} else { // 변경안할시 (세션종료)
+			alert("연장하지 않으면 5분뒤 자동으로 로그아웃됩니다.");
+
+			clearTimeout(cTime);
+			
+			//$('#session_time').val("120");
+		}
+  	}
+
+	// 타이머 session 연장 Callback
+	function sessionIngCall(val) {
+		if(val == "ok") {
+			fn_timer_reset_call();
+			return;
+		} else {
+			return;
+		}
+	}
+
+
+	/*상단메뉴 시안변경에 따른 수정요청 2018*/
+	$(document).ready(function(){
+
+		
+		
+		if (location.host == 'smtech.go.kr') {
+			let protocol = location.protocol;
+			let smtechHost = 'www.smtech.go.kr';
+			let path = location.pathname;
+
+			location.href = `${protocol}//${smtechHost}${path}`;
+			
+			return;
+		}
+		
+		
+
+		$(".inbN8 li a[name=navN8Tit]").mouseover(function(){
+			var inbN8a = $(".inbN8 li a[name=navN8Tit]");
+			var idx = $(this).parent().index();
+
+			for(var i=0;i<inbN8a.length;i++){
+				if(i==idx){
+					continue;
+				}
+				inbN8a.eq(i).removeClass("inb_on");
+			}
+
+			$(this).addClass("inb_on");
+		});
+
+		var subTit = $(".snbN8 div.titleN8").text();
+		var inbN8a = $(".inbN8 li a[name=navN8Tit]");
+		if(subTit=="과제신청"){
+			inbN8a.eq(0).addClass("inb_on");
+		}
+		if(subTit=="과제평가"){
+			inbN8a.eq(1).addClass("inb_on");
+		}
+		if(subTit=="과제수행"){
+			inbN8a.eq(2).addClass("inb_on");
+		}
+		if(subTit=="연구비집행"){
+			inbN8a.eq(3).addClass("inb_on");
+		}
+		if(subTit=="연구비정산"){
+			inbN8a.eq(4).addClass("inb_on");
+		}
+		if(subTit=="정보마당"){
+			inbN8a.eq(5).addClass("inb_on");
+		}
+		if(subTit=="고객지원"){
+			inbN8a.eq(6).addClass("inb_on");
+		}
+
+	});
+
+	function fn_ssoInterPop() {
+		window.open('/front/main/ssoInterPop.do' ,'onlnInfoPop','scrollbars=yes,width=820,height=728' );
+	}
+
+	function fn_ssoUrl(url) {
+		window.open(url, "connSsoPopup");
+	}
+	
+	function ibkLink() {
+		alert(" 이체실행 페이지로 이동합니다. \n 페이지가 정상적으로 열리지 않을경우  \n ie [추가정보-웹페이지로 이동] \n 크롬 [고급-XX.XX.XX.XX이동] \n 을 클릭하여 실행합니다.");
+		var url = "https://rnd.ibk.co.kr:444/cms/jsp/trdamng/jsp/st/ex/STEX010M01.jsp";
+		$.ajax({
+				type: "POST",
+				url: "/front/main/encInfo.do",
+				dataType: "json",
+				success: function(data){
+				window.open(url, "기업은행링크", "", "");	
+				},
+				error: function(jqXHR,textStatus,errorThrown){
+					alert("페이지 오픈에 실패하였습니다.");
+				}
+			});
+	}
+</script>
+<div class="sessionBlock" id="sessionAlarmPop" style="visibility: hidden">
+<div class="sessionBlockContent">
+<div>
+<div class="ac">
+<img alt="10분뒤 자동 로그아웃 안내" src="/front/images/timerExNotice.jpg"/>
+</div>
+<div class="ac" style="width:100%;">
+<span id="inactive_pop_time"></span><br/><br/><br/>
+<input class="bt4" onclick="fn_LoginTimerEx();" title="로그인 시간 연장" type="button" value="로그인 시간 연장"/>
+<input class="bt4" onclick="fn_LoginTimerLogout();" title="로그아웃" type="button" value="로그아웃"/>
+</div>
+</div>
+</div>
+</div>
+<!-- 	<div id='subheader'> -->
+<div>
+<!-- maintop -->
+<!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
+<div class="maintopN8">
+<div class="maintopN8" id="coronaDiv" style="height:102px; border-bottom:0px solid #ccc; text-align:center; width:100%; background:#02244a;">
+<img alt="2026년 중소기업 기술개발 지원사업 통합 공고" src="/front/images/coronaTop-11.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/>
+<map name="imgmap">
+<area alt="통합 공고보러가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=540009&amp;pageIndex=1&amp;noPage=yes" shape="rect" target="_self" title="통합 공고보러가기"/>
+</map>
+</div>
+<div class="gnbNaviN8">
+<a href="/front/main/main.do"><div class="logoN8">SMTECH 중소기업기술개발 종합관리시스템</div></a>
+<!-- 240308 장정연 rms 로고 추가 -->
+<a href="https://www.smtech.go.kr/region/rms"><div class="logo2N8">RMS 기업지원사업 관리시스템</div></a>
+<!-- gnb -->
+<div class="gnbN8">
+<ul>
+<li><a class="homeN8" href="/front/main/main.do">홈</a></li>
+<li><a href="/front/log/login.do?returnUrl=%2ffront%2fifg%2fno%2fnotice02_list.do">로그인</a></li>
+<li><a href="/front/log/member.do">회원가입</a></li>
+<li><a href="/front/log/Info_Correction_Request.do">개인정보정정요청</a></li>
+<li><a href="/front/pdo/pd/publicData02.do">공공데이터제공</a></li>
+<li id="ssoT" style="display:inline-block;">
+<button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444" title="새창으로 열림">통합로그인</button>
+</li>
+</ul>
+</div>
+<!--// gnb -->
+</div>
+</div>
+<!-- // maintop -->
+<!-- mainNavi -->
+<!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
+<div class="mainNaviN8" id="subheader" style="z-index: 200; margin-top:102px;">
+<!-- inb -->
+<div class="inbN8">
+<ul>
+<li class="navN8">
+<a href="/front/SBA/SA/ApplGuid_advnPrprMatrGuid.do" name="navN8Tit">과제신청</a>
+<div class="open_menuN8">
+<ul class="navlinkN8">
+<li>
+<a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">과제기획</a>
+<ul class="depthM3">
+<li><a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">온라인수요조사 신청</a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/SBA/SA/ApplGuid_advnPrprMatrGuid.do">과제신청</a>
+<ul class="depthM3">
+<!-- 524661_자체개선_윤석현_과제신청 졸업제 화면 표시 임시 제외처리
+									<li><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">과제 참여횟수 조사</a></li>
+									-->
+<li><a href="/front/SBA/SA/ApplGuid_advnPrprMatrGuid.do">과제신청 안내</a></li>
+<li><a href="/front/SBA/SA/SbjtAppl_selectSbjtAncmList.do">과제신청</a></li>
+<li><a href="/front/SBA/SA/SbjtAppl_selectSbjtApplList.do">과제 신청내역 조회</a></li>
+<li><a href="/front/SBA/SA/SA_SbjtNseeTdpList.do">맞춤형 기술파트너 신청</a></li>
+<li><a href="/front/SBA/SA/SA_SbjtSmtsnInnoPrjtList.do">스마트센서 과제신청</a></li>
+<li><a href="/front/SBA/RPR/SA_SbjtRhdpXclntFrutList.do">R&amp;D 우수성과 신청</a></li>
+<!-- 20191101_과제신청서류간소화 Start -->
+<li><a href="/front/SBA/SA/SbjtAppl_selectPpnumCsntList.do">과제신청 동의서 작성</a></li>
+<!-- 20191101_과제신청서류간소화 End -->
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a href="/front/sba/ee/ElecEvalSbjtLst.do" name="navN8Tit">과제평가</a>
+<div class="open_menuN8">
+<ul class="navlinkN8">
+<li class="RTline">
+<a href="/front/sba/ee/ElecEvalSbjtLst.do">전자평가</a>
+<ul class="depthM3">
+<li><a href="/front/sba/ee/ElecEvalSbjtLst.do">평가 발표자료 제출</a></li>
+<li><a href="/front/sba/se/OnlineEval.do">온라인평가과제조회(평가위원용)</a></li>
+<li><a href="/front/sba/ee/ElecEvalSbjtReviewQustLst.do">평가 사전질의서 조회</a></li>
+<li><a href="/front/sba/ee/ElecEvalSbjtMfLst.do">온라인평가과제조회(국민평가단)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a href="/front/SBA/EA/AgreGuid_AgrePrprMatrGuid.do" name="navN8Tit">과제수행</a>
+<div class="open_menuN8">
+<ul class="navlinkN8">
+<li>
+<a href="/front/SBA/EA/AgreGuid_AgrePrprMatrGuid.do">전자협약</a>
+<ul class="depthM3">
+<li><a href="/front/SBA/EA/AgreGuid_AgrePrprMatrGuid.do">협약방법 안내</a></li>
+<li><a href="/front/SBA/EA/AgreAppl_selectAgreWrtSbjt.do">협약신청</a></li>
+<li><a href="/front/SBA/EA/AnnuAgreAppl_selectAgreWrtSbjt.do">연차협약신청</a></li>
+<li><a href="/front/SBA/EA/AgreChng_selectAgreChngObjtSbjt.do">협약변경 관리</a></li>
+<li><a href="/front/SBA/EA/ChrgrChng_selectChrgrChngSbjtLst.do">과제 담당자 변경</a></li>
+<li><a href="/front/SBA/EA/PoiLmtChngReq_selectPoiLmtChngReqObjtSbjt.do">연구비한도변경 </a></li>
+<li><a href="/front/SBA/EA/AgreRead_selectAgreRead.do">협약체결 결과 조회 </a></li>
+<li><a href="/front/SBA/EA/StepAgreApplAngel_selectAnAgreWrtSbjt.do">엔젤차년도사업비신청 </a></li>
+<!-- // CORONA-19 VIRUS 대응 2020.04.24 -->
+<li><a href="/front/SBA/EA/PrshmAgreChng_selectPrshmChngSbjt.do">민간부담금 부담완화 신청 </a></li>
+</ul>
+</li>
+<li>
+<a href="/front/SBA/RR/getAlwaysCnsulLst.do">보고서</a>
+<ul class="depthM3">
+<li><a href="/front/SBA/RR/getAlwaysCnsulLst.do">상시컨설팅 의뢰요청</a></li>
+<li><a href="/front/SBA/RR/PrgrtRptpLst_getPrgrtRptLst.do">연차보고서 제출</a></li>
+<li><a href="/front/SBA/RR/LastRptpLst_getLastRptLst.do">최종보고서 제출</a></li>
+<li><a href="/front/SBA/RR/SetlRptpLst_getSetlRptLst.do">회계감사보고서 제출</a></li>
+<li><a href="/front/SBA/RR/HotyRptpLst_getHotyRptLst.do">성실성입증보고서 제출</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/SBA/RN/RechNoteList_viewRechNoteList.do">연구노트</a>
+<ul class="depthM3">
+<li><a href="/front/SBA/RN/RechNoteList_viewRechNoteList.do">연구노트 작성</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/SBA/FA/RechMtrsEstmAdmn.do">연구시설장비 등록</a>
+<ul class="depthM3">
+<li><a href="/front/SBA/FA/RechMtrsEstmAdmn.do">연구시설 및 장비관리</a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/SVY/FA/svyAlasFrutSbjtSearch.do">과제수행 성과등록</a>
+<ul class="depthM3">
+<li><a href="/front/SVY/FA/svyAlasFrutSbjtSearch.do">성과조사 등록</a></li>
+<li><a href="/front/SVY/CA/getSvySbjtLst.do">성과변경 신청</a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/sba/sc/SmbaSancAct.do">제재조회</a>
+<ul class="depthM3">
+<li><a href="/front/sba/sc/SmbaSancAct.do">중기 R&amp;D사업 제재조회</a></li>
+<li><a href="/front/sba/sc/OgovdSancAct.do">NTIS 제재조회</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a href="/front/main/bankLoginGW.do" name="navN8Tit">연구비집행</a>
+<div class="open_menuN8">
+<ul class="navlinkN8">
+<li>
+<a href="/front/REX/SR/SR_OallExecSitu.do">연구비 현황</a>
+<ul class="depthM3">
+<li><a href="/front/REX/SR/SR_OallExecSitu.do">연구비 총괄 조회</a></li>
+<li><a href="/front/REX/SR/SR_IntGenrSitu.do">이자발생 현황 조회</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/REX/RU/RU_RexpUseReg.do">연구비 사용(주관,참여,공동)</a>
+<ul class="depthM3">
+<li><a href="/front/REX/RU/RU_RexpUseReg.do">연구비 사용계획 등록</a></li>
+<!-- 2019.05.23 허인범 책임요청 STR -->
+<li><a href="/front/OSA/BA/BA_RegularChk.do">상시점검 의견 확인</a></li>
+<!-- 2019.05.23 허인범 책임요청 END -->
+<li><a href="/front/REX/RU/UB_RexpUseBrdnRead.do">연구비 사용내역 조회</a></li>
+<li><a href="/front/REX/RU/LU_LcostUseReg.do">인건비 사용계획 등록</a></li>
+<li><a href="/front/REX/RU/LU_LcostUseBrdnRead.do">인건비 사용내역 조회</a></li>
+<li><a href="#" onclick="ibkLink(); return;" title="새창열림">연구비 이체 실행</a></li>
+<li><a href="/front/REX/RU/TR_RexpTrfrRslt.do">연구비 이체 결과</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/REX/RA/RA_RexpUseArsltReg.do">위탁연구비 사용(위탁)</a>
+<ul class="depthM3">
+<li><a href="/front/REX/RA/RA_RexpUseArsltReg.do">위탁연구비 사용실적 등록</a></li>
+<li><a href="/front/REX/RA/RA_RexpUseArsltBrdn.do">위탁연구비 사용실적 조회</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/REX/SU/SU_SpotUseReg.do">현물사용</a>
+<ul class="depthM3">
+<li><a href="/front/REX/SU/SU_SpotUseReg.do">현물사용내역등록</a></li>
+<li><a href="/front/REX/SU/SU_SpotUseBrdn.do">현물사용내역조회</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/REX/SA/RC_Guide.do">연구비사용 설정</a>
+<ul class="depthM3">
+<li><a href="/front/REX/SA/RC_Guide.do">이용환경 안내</a></li>
+<li><a href="/front/REX/SA/RC_CardcReg.do">카드사 등록</a></li>
+<li><a href="/front/REX/SA/RC_SbjtByCardAdmn.do">과제별 카드관리</a></li>
+<li><a href="/front/REX/SA/RC_SelfTrfrAcctAdmn.do">자계좌이체용 계좌관리</a></li>
+<li><a href="/front/REX/SA/RC_WhtxDepoAcctAdmn.do">원천징수 입금계좌관리</a></li>
+<li><a href="/front/REX/SA/RC_LcostDepoAcctAdmn.do">인건비 입금계좌관리</a></li>
+<li><a href="/front/REX/COMN/COMN_IbkCertCen.do">인증서 등록</a></li>
+<li><a href="/front/REX/COMN/COMN_IbkPinChange.do">PIN번호 변경</a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/REX/CL/CL_RexpCardLogn.do">산학연카드제 전용로그인</a>
+<ul class="depthM3">
+<!-- <li><a href="/front/REX/CL/CL_RexpCardLogn.do">연구비 관리</a></li> -->
+<li><a href="/front/REX/CL/CL_RexpCardLogn.do">연구비 관리</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a href="/front/OSA/BR/BR_RtrtGuid.do" name="navN8Tit">연구비정산</a>
+<div class="open_menuN8Tfee">
+<ul class="navlinkN8">
+<li>
+<a href="/front/OSA/BR/BR_RtrtGuid.do">연구비환원</a>
+<ul class="depthM3">
+<li><a href="/front/OSA/BR/BR_RtrtGuid.do">연구비 환원절차 안내</a></li>
+<li><a href="/front/OSA/BR/BR_RtrtSituRead.do">연구비 환원내역 조회</a></li>
+<li><a href="/front/OSA/BR/BR_PntRtrt.do">연구비 포인트 환원</a></li>
+<li><a href="/front/OSA/BR/BR_StaxRtrt.do">부가세 환원</a></li>
+<li><a href="/front/OSA/BR/BR_TrstDvlpRtrt.do">위탁연구비 환원</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/OSA/PS/PS_PaymPlanRead.do">기술료 정산금 조회</a>
+<ul class="depthM3">
+<li><a href="/front/OSA/PS/PS_PaymPlanRead.do">납부대상 계획조회</a></li>
+<!-- // CORONA-19 VIRUS 대응 2020.04.24 -->
+<li><a href="/front/OSA/PS/TfeeCovidPtpmRead.do">기술료 납부기한연장 신청(코로나)</a></li>
+<!--  2023.01.06 yuaesun 수정. 2022.12.31 청년고용 유예신청 마감으로 유예신청은 불가하나, 감면신청만 가능..<li><a href="/front/OSA/PS/TfeeYnmnEmplPtpmRead.do">청년고용기술료 유예·감면신청</a></li>-->
+<!--  2024.07.29 yuaesun 수정. 2022.12.31 청년고용 유예신청 마감으로 유예신청은 불가하지만 신청된 내용은 조회가 가능하도록 -->
+<li><a href="/front/OSA/PS/TfeeYnmnEmplPtpmRead.do">청년고용기술료 유예</a></li>
+<li><a href="/front/OSA/PS/TfeeYnmnEmplRdceRead.do">청년고용기술료 감면신청</a></li>
+<li><a href="/front/OSA/TE/TecEnfoTbRptRead.do">기술료 납부대상 확약서 제출<br/></a></li>
+<li><a href="/front/OSA/PS/PaymPlanWriteRead.do">기술료 납부계획서 제출<br/>(16년2월16일 이전 협약)</a></li>
+<li><a href="/front/OSA/TE/TecEnfoTbWriteRead.do">[통합]기술실시보고서 제출<br/>(16년2월16일 이후)</a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/OSA/OS/OS_SetlGuid.do">연구비 정산</a>
+<ul class="depthM3">
+<li><a href="/front/OSA/OS/OS_SetlGuid.do">정산 절차 안내</a></li>
+<!-- 19.04.30 전산요청 : 221936  정민규 연구원요청사항으로 변경 -->
+<!--<li><a href="/front/OSA/OS/OS_SetlRpt.do">정산 사전 검토</a></li>-->
+<li><a href="/front/OSA/OS/OS_SetlRpt.do">정산 집행내역 조회</a></li>
+<li><a href="/front/OSA/OS/OS_SetlRslt.do">정산 현황 조회</a></li>
+<li><a href="/front/OSA/OS/OS_RcmsSetlSitu.do">정산 현황 조회 (RCMS)</a></li>
+<li><a href="/front/OSA/BA/BA_RegularChk.do">상시점검 의견 확인</a></li>
+<li><a href="/front/OSA/BA/BA_QustAnsr.do">정산관련 문의</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a href="/front/ifg/no/notice01_list.do" name="navN8Tit">정보마당</a>
+<div class="open_menuN8">
+<ul class="navlinkN8">
+<li>
+<a href="/front/ifg/no/notice02_intro.do">알림마당</a>
+<ul class="depthM3">
+<li><a href="/front/ifg/no/notice02_intro.do">R&amp;D 사업공고</a></li>
+<li><a href="/front/ifg/no/notice01_list.do">R&amp;D사업 관련 공지사항</a></li>
+<li><a href="/front/ifg/no/notice03_list.do">기타 공지사항</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/sig/st/prjtIntro.do">자료마당</a>
+<ul class="depthM3">
+<li><a href="/front/sig/st/prjtIntro.do">R&amp;D 사업소개</a></li>
+<!-- <li><a href="/front/sig/sb/senpSprtBusi_intro.do">범부처 지원사업 소개</a></li> -->
+<li><a href="/front/ifg/tr/tecRoadmap_list.do">기술로드맵</a></li>
+<li><a href="/front/ifg/eb/bestCaseBook.do">우수사례집</a></li>
+<li><a href="/front/ifg/dt/datainfo01_intro.do">규정 및 서식</a></li>
+<li><a href="/front/ifg/dt/datainfo02_list.do">자료실</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/ifg/pa/partinfo01_list.do">참여마당</a>
+<ul class="depthM3">
+<li><a href="/front/ifg/pa/partinfo01_list.do">기업 및 제품소개</a></li>
+<!-- 331315_이재휘_SMTECH 홈페이지 메뉴 삭제 요청(기술전문기업소개)_20201217
+                                        <li><a href="/front/sig/tm/tecMsgtEnpr.do">기술전문기업소개</a></li> -->
+<li><a href="/front/ifg/pa/partinfo02_list.do">파트너를 찾아요</a></li>
+<li><a href="/front/ifg/rf/InetPnnRfp_list.do">RFP 인터넷공시</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/csg/pr/preSearch01.do">지원 과제조회</a>
+<ul class="depthM3">
+<li><a href="/front/csg/pr/preSearch01.do">기술분야별 지원과제 검색</a></li>
+<li><a href="/front/csg/pr/preSearch02.do">키워드 과제검색</a></li>
+<li><a href="/front/csg/pr/IrisMigSearch.do">IRIS 이관대상 조회 </a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/mpa/tc/TecInfoRead_revMatch.do">기술연계정보</a>
+<ul class="depthM3">
+<li><a href="/front/mpa/tc/TecInfoRead_revMatch.do">기술정보 조회</a></li>
+<li><a href="/front/mpa/tc/TecInfoReg_main.do">기술정보 등록</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a href="/front/csg/fq/faq_list.do" name="navN8Tit">고객지원</a>
+<div class="open_menuN8">
+<ul class="navlinkN8">
+<li>
+<a href="/front/csg/fq/faq_list.do">고객의 소리</a>
+<ul class="depthM3">
+<li><a href="/front/csg/fq/faq_list.do">자주묻는질문(FAQ)</a></li>
+<li><a href="/front/csg/qn/qna_list.do">질의 및 응답(Q&amp;A)</a></li>
+<li><a href="/front/csg/cr/crn_list.do">코로나-19 애로상담</a></li>
+<li><a href="/front/csg/id/insusDclr.do">부패행위 신고</a></li>
+<li><a href="/front/csg/id/insusDclr_safDclr.do">└ 안심신고제</a></li>
+</ul>
+</li>
+<li>
+<a href="/front/csg/om/manual01_intro.do">이용매뉴얼</a>
+<ul class="depthM3">
+<li><a href="/front/csg/om/manual01_intro.do">시스템 이용 매뉴얼</a></li>
+<li><a href="/front/csg/om/manual02_list.do">과제신청,연구비사용시뮬레이션</a></li>
+<li><a href="/front/csg/om/manual03_list.do">동영상강의</a></li>
+</ul>
+</li>
+<li class="RTline">
+<a href="/front/csg/hi/confirmationInfo.do">고객지원센터</a>
+<ul class="depthM3">
+<li><a href="/front/csg/hi/confirmationInfo.do">확인서 발급</a></li>
+<li><a href="/front/csg/hi/confirmationRndInfo.do">융자확인서 발급</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</li>
+<li class="navN8">
+<a class="allmenu" href="#" id="allmenu">전체메뉴보기</a>
+<!-- 사이트 맵 -->
+<!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
+<div class="open_sitemap" id="allmenuview" style="display:none;">
+<div class="sitemapN8">
+<p>사이트맵</p>
+<a class="bt_close" href="#" id="allmenu_close">창닫기</a>
+<ul class="siteinfo">
+<li><a href="/front/log/login.do?returnUrl=%2ffront%2fifg%2fno%2fnotice02_list.do">로그인</a></li>
+<li><a href="/front/log/member.do">회원가입</a></li>
+<li><a href="https://www.tipa.or.kr/s0801" onclick="window.open(this.href,'_blank','scrollbars=yes, width=800, height=600'); return false;" title="새창으로 열림">개인정보처리방침</a></li>
+<li><a href="/front/etc/guide.do">사이트이용약관</a></li>
+<li><a href="/front/etc/rejection.do">이메일무단수집거부</a></li>
+</ul>
+<ul class="sitemapNB">
+<li>
+<a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">과제신청</a>
+<dl>
+<dt><a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">과제기획</a></dt>
+<dd><a href="/front/SBA/DR/DemResearch_forwardDemResearchApplMain.do">- 온라인수요조사 신청</a></dd>
+<dt><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">과제신청</a></dt>
+<!-- 524661_자체개선_윤석현_과제신청 졸업제 화면 표시 임시 제외처리                                         	
+											<dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtPtcpList.do?gMenu=SBA">- 과제 참여횟수 조사</a></dd>
+											-->
+<dd><a href="/front/SBA/SA/ApplGuid_advnPrprMatrGuid.do">- 과제신청 안내</a></dd>
+<dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtAncmList.do">- 과제신청</a></dd>
+<dd><a href="/front/SBA/SA/SbjtAppl_selectSbjtApplList.do">- 과제 신청내역 조회</a></dd>
+<!-- 331315_이재휘_SMTECH 홈페이지 메뉴 삭제 요청(기술전문기업소개)_20201217
+						                  	<dd><a href="/front/SBA/SA/SA_TecDvlpMsgtEnprSbjtApplList.do">- 기술전문기업 신청</a></dd> -->
+<dd><a href="/front/SBA/SA/SA_SbjtNseeTdpList.do">- 맞춤형 기술파트너 신청</a></dd>
+<dd><a href="/front/SBA/SA/SA_SbjtSmtsnInnoPrjtList.do">- 스마트센서 과제신청</a></dd>
+<dd><a href="/front/SBA/RPR/SA_SbjtRhdpXclntFrutList.do">- R&amp;D 우수성과 신청</a></dd>
+<dd><a href="/front/SBA/SA/SbjtAppl_selectPpnumCsntList.do">- 과제신청 동의서 작성</a></dd>
+</dl>
+</li>
+<li>
+<a href="/front/sba/ee/ElecEvalSbjtLst.do">과제평가</a>
+<dl>
+<dt><a href="/front/sba/ee/ElecEvalSbjtLst.do">전자평가</a></dt>
+<dd><a href="/front/sba/ee/ElecEvalSbjtLst.do">- 평가 발표자료 제출</a></dd>
+<dd><a href="/front/cas/senp/SENP_selectSbjtSituList.do">- 온라인평가과제조회(평가위원용)</a></dd>
+<dd><a href="/front/sba/ee/ElecEvalSbjtReviewQustLst.do">- 평가 사전질의서 조회</a></dd>
+<dd><a href="/front/sba/ee/ElecEvalSbjtMfLst.do">- 온라인평가과제조회(국민평가단)</a></dd>
+</dl>
+</li>
+<li>
+<a href="/front/SBA/EA/AgreGuid_AgrePrprMatrGuid.do">과제수행</a>
+<dl>
+<dt><a href="/front/SBA/EA/AgreGuid_AgrePrprMatrGuid.do">전자협약</a></dt>
+<dd><a href="/front/SBA/EA/AgreGuid_AgrePrprMatrGuid.do">- 협약방법 안내</a></dd>
+<dd><a href="/front/SBA/EA/AgreAppl_selectAgreWrtSbjt.do">- 협약신청</a></dd>
+<dd><a href="/front/SBA/EA/AnnuAgreAppl_selectAgreWrtSbjt.do">- 연차협약신청</a></dd>
+<dd><a href="/front/SBA/EA/AgreChng_selectAgreChngObjtSbjt.do">- 협약변경 관리</a></dd>
+<dd><a href="/front/SBA/EA/ChrgrChng_selectChrgrChngSbjtLst.do">- 과제 담당자 변경</a></dd>
+<dd><a href="/front/SBA/EA/PoiLmtChngReq_selectPoiLmtChngReqObjtSbjt.do">- 연구비한도변경 </a></dd>
+<dd><a href="/front/SBA/EA/AgreRead_selectAgreRead.do">- 협약체결 결과 조회 </a></dd>
+<dd><a href="/front/SBA/EA/StepAgreApplAngel_selectAnAgreWrtSbjt.do">- 엔젤차년도사업비신청 </a></dd>
+<!-- // CORONA-19 VIRUS 대응 2020.04.24 -->
+<dd><a href="/front/SBA/EA/PrshmAgreChng_selectPrshmChngSbjt.do">- 민간부담금 부담완화 신청 </a></dd>
+<dt><a href="/front/SBA/RR/PrgrtRptpLst_getPrgrtRptLst.do">보고서</a></dt>
+<dd><a href="/front/SBA/RR/getAlwaysCnsulLst.do">- 상시컨설팅 의뢰요청</a></dd>
+<dd><a href="/front/SBA/RR/PrgrtRptpLst_getPrgrtRptLst.do">- 연차보고서 제출</a></dd>
+<dd><a href="/front/SBA/RR/LastRptpLst_getLastRptLst.do">- 최종보고서 제출</a></dd>
+<dd><a href="/front/SBA/RR/SetlRptpLst_getSetlRptLst.do">- 회계감사보고서 제출</a></dd>
+<dd><a href="/front/SBA/RR/HotyRptpLst_getHotyRptLst.do">- 성실성입증보고서 제출</a></dd>
+<dt><a href="/front/SBA/RN/RechNoteList_viewRechNoteList.do">연구노트</a></dt>
+<dd><a href="/front/SBA/RN/RechNoteList_viewRechNoteList.do">- 연구노트 작성</a></dd>
+<dt><a href="/front/SBA/FA/RechMtrsEstmAdmn.do">연구시설장비 등록</a></dt>
+<dd><a href="/front/SBA/FA/RechMtrsEstmAdmn.do">- 연구시설 및 장비관리</a></dd>
+<dt><a href="/front/SVY/FA/svyAlasFrutSbjtSearch.do">과제수행 성과등록</a></dt>
+<dd><a href="/front/SVY/FA/svyAlasFrutSbjtSearch.do">- 성과조사 등록</a></dd>
+<dd><a href="/front/SVY/CA/getSvySbjtLst.do">- 성과변경 신청</a></dd>
+<dt><a href="/front/sba/sc/SmbaSancAct.do">제재조회</a></dt>
+<dd><a href="/front/sba/sc/SmbaSancAct.do">- 중기 R&amp;D사업 제재조회</a></dd>
+<dd><a href="/front/sba/sc/OgovdSancAct.do">- NTIS 제재조회</a></dd>
+</dl>
+</li>
+<li>
+<a href="/front/main/bankLoginGW.do">연구비집행</a>
+<dl>
+<dt><a href="/front/REX/SR/SR_OallExecSitu.do">연구비 현황</a></dt>
+<dd><a href="/front/REX/SR/SR_OallExecSitu.do">- 연구비 총괄 조회</a></dd>
+<dd><a href="/front/REX/SR/SR_IntGenrSitu.do">- 이자발생 현황 조회</a></dd>
+<dt><a href="/front/REX/RU/RU_RexpUseReg.do">연구비 사용(주관,참여,공동)</a></dt>
+<dd><a href="/front/REX/RU/RU_RexpUseReg.do">- 연구비 사용계획 등록</a></dd>
+<dd><a href="/front/REX/RU/UB_RexpUseBrdnRead.do">- 연구비 사용내역 조회</a></dd>
+<dd><a href="/front/REX/RU/LU_LcostUseReg.do">- 인건비 사용계획 등록</a></dd>
+<dd><a href="/front/REX/RU/LU_LcostUseBrdnRead.do">- 인건비 사용내역 조회</a></dd>
+<dd><a href="#" onclick="ibkLink(); return;" title="새창열림">- 연구비 이체 실행 </a></dd>
+<dd><a href="/front/REX/RU/TR_RexpTrfrRslt.do">- 연구비 이체 결과</a></dd>
+<dt><a href="/front/REX/RA/RA_RexpUseArsltReg.do">위탁연구비 사용(위탁)</a></dt>
+<dd><a href="/front/REX/RA/RA_RexpUseArsltReg.do">- 위탁연구비 사용실적 등록</a></dd>
+<dd><a href="/front/REX/RA/RA_RexpUseArsltBrdn.do">- 위탁연구비 사용실적 조회 </a></dd>
+<dt><a href="/front/REX/SU/SU_SpotUseReg.do">현물사용</a></dt>
+<dd><a href="/front/REX/SU/SU_SpotUseReg.do">- 현물 사용내역 등록</a></dd>
+<dd><a href="/front/REX/SU/SU_SpotUseBrdn.do">- 현물 사용내역 조회</a></dd>
+<dt><a href="/front/REX/SA/RC_Guide.do">연구비사용 설정</a></dt>
+<dd><a href="/front/REX/SA/RC_Guide.do">- 이용환경 안내</a></dd>
+<dd><a href="/front/REX/SA/RC_CardcReg.do">- 카드사 등록</a></dd>
+<dd><a href="/front/REX/SA/RC_SbjtByCardAdmn.do">- 과제별 카드관리</a></dd>
+<dd><a href="/front/REX/SA/RC_SelfTrfrAcctAdmn.do">- 자계좌이체용 계좌관리</a></dd>
+<dd><a href="/front/REX/SA/RC_WhtxDepoAcctAdmn.do">- 원천징수 입금계좌관리</a></dd>
+<dd><a href="/front/REX/SA/RC_LcostDepoAcctAdmn.do">- 인건비 입금계좌관리</a></dd>
+<dd><a href="/front/REX/COMN/COMN_IbkCertCen.do">- 인증서 등록</a></dd>
+<dd><a href="/front/REX/COMN/COMN_IbkPinChange.do">- PIN번호 변경</a></dd>
+<dt><a href="/front/REX/CL/CL_RexpCardLogn.do">산학연카드제 전용로그인</a></dt>
+<dd><a href="/front/REX/CL/CL_RexpCardLogn.do">- 산학연카드제 전용로그인</a></dd>
+</dl>
+</li>
+<li>
+<a href="/front/OSA/BR/BR_RtrtGuid.do">연구비정산</a>
+<dl>
+<dt><a href="/front/OSA/BR/BR_RtrtGuid.do">연구비환원</a></dt>
+<dd><a href="/front/OSA/BR/BR_RtrtGuid.do">- 연구비 환원절차 안내</a></dd>
+<dd><a href="/front/OSA/BR/BR_RtrtSituRead.do">- 연구비 환원내역 조회</a></dd>
+<dd><a href="/front/OSA/BR/BR_PntRtrt.do">- 연구비 포인트 환원</a></dd>
+<dd><a href="/front/OSA/BR/BR_StaxRtrt.do">- 부가세 환원</a></dd>
+<dd><a href="/front/OSA/BR/BR_TrstDvlpRtrt.do">- 위탁연구비 환원</a></dd>
+<dt><a href="/front/OSA/PS/PS_PaymPlanRead.do">기술료 정산금 조회</a></dt>
+<dd><a href="/front/OSA/PS/PS_PaymPlanRead.do">- 납부대상 계획조회</a></dd>
+<!-- 2020-11-02 ysj 추가 -->
+<dd><a href="/front/OSA/PS/TfeeCovidPtpmRead.do">- 기술료 납부기한연장 신청(코로나)</a></dd>
+<!--  2023.01.06 yuaesun 수정. 2022.12.31 청년고용 유예신청 마감으로 유예신청은 불가하나, 감면신청만 가능.. <dd><a href="/front/OSA/PS/TfeeYnmnEmplPtpmRead.do">- 청년고용 기술료 유예신청</a></dd> -->
+<dd><a href="/front/OSA/PS/TfeeYnmnEmplRdceRead.do">- 청년고용 기술료 감면신청</a></dd>
+<dd><a href="/front/OSA/PS/PaymPlanWriteRead.do">- 기술료 납부계획서 제출<br/>(16년2월16일 이전 협약)</a></dd>
+<dd><a href="/front/OSA/TE/TecEnfoTbWriteRead.do">- [통합]기술실시보고서 제출<br/>(16년2월16일 이후)</a></dd>
+<dt><a href="/front/OSA/OS/OS_SetlGuid.do">연구비 정산</a></dt>
+<dd><a href="/front/OSA/OS/OS_SetlGuid.do">- 정산 절차 안내</a></dd>
+<dd><a href="/front/OSA/OS/OS_SetlRpt.do">- 정산 사전 검토</a></dd>
+<dd><a href="/front/OSA/OS/OS_SetlRslt.do">- 정산 현황 조회</a></dd>
+<dd><a href="/front/OSA/OS/OS_RcmsSetlSitu.do">- 정산 현황 조회 (RCMS)</a></dd>
+<dd><a href="/front/OSA/BA/BA_RegularChk.do">- 상시점검 의견 확인</a></dd>
+<dd><a href="/front/OSA/BA/BA_QustAnsr.do">- 정산관련 문의</a></dd>
+</dl>
+</li>
+<li>
+<a href="/front/ifg/no/notice01_list.do">정보마당</a>
+<dl>
+<dt><a href="/front/ifg/no/notice01_list.do">알림마당</a></dt>
+<dd><a href="/front/ifg/no/notice02_intro.do">- R&amp;D 사업공고</a></dd>
+<dd><a href="/front/ifg/no/notice01_list.do">- R&amp;D사업 관련 공지사항</a></dd>
+<dd><a href="/front/ifg/no/notice03_list.do">- 기타 공지사항</a></dd>
+<dt><a href="/front/sig/st/prjtIntro.do">자료마당</a></dt>
+<dd><a href="/front/sig/st/prjtIntro.do">- R&amp;D 사업소개</a></dd>
+<!--                                             <dd><a href="/front/sig/sb/senpSprtBusi_intro.do">- 범부처 지원사업 소개</a></dd>  -->
+<dd><a href="/front/ifg/tr/tecRoadmap_list.do">- 기술로드맵</a></dd>
+<dd><a href="/front/ifg/eb/bestCaseBook.do">- 우수사례집</a></dd>
+<dd><a href="/front/ifg/dt/datainfo01_intro.do">- 규정 및 서식</a></dd>
+<dd><a href="/front/ifg/dt/datainfo02_list.do">- 자료실</a></dd>
+<dt><a href="/front/ifg/pa/partinfo01_list.do">참여마당</a></dt>
+<dd><a href="/front/ifg/pa/partinfo01_list.do">- 기업 및 제품소개</a></dd>
+<!-- 331315_이재휘_SMTECH 홈페이지 메뉴 삭제 요청(기술전문기업소개)_20201217
+                                            <dd><a href="/front/sig/tm/tecMsgtEnpr.do">- 기술전문기업소개</a></dd> -->
+<dd><a href="/front/ifg/pa/partinfo02_list.do">- 파트너를 찾아요</a></dd>
+<dd><a href="/front/ifg/rf/InetPnnRfp_list.do">- RFP 인터넷공시</a></dd>
+<dt><a href="/front/csg/pr/preSearch01.do">지원 과제조회</a></dt>
+<dd><a href="/front/csg/pr/preSearch01.do">- 기술분야별 지원과제 검색</a></dd>
+<dd><a href="/front/csg/pr/preSearch02.do">- 키워드 과제검색</a></dd>
+<dd><a href="/front/csg/pr/IrisMigSearch.do">- IRIS 이관대상 조회 </a></dd>
+<dt><a href="/front/mpa/tc/TecInfoRead_revMatch.do">기술연계정보</a></dt>
+<dd><a href="/front/mpa/tc/TecInfoRead_revMatch.do">- 기술정보 조회</a></dd>
+<dd><a href="/front/mpa/tc/TecInfoReg_main.do">- 기술정보 등록</a></dd>
+</dl>
+</li>
+<li>
+<a href="/front/csg/fq/faq_list.do">고객지원</a>
+<dl>
+<dt><a href="/front/csg/fq/faq_list.do">고객의 소리</a></dt>
+<dd><a href="/front/csg/fq/faq_list.do">- 자주묻는질문(FAQ)</a></dd>
+<dd><a href="/front/csg/qn/qna_list.do">- 질의 및 응답(Q&amp;A)</a></dd>
+<dd><a href="/front/csg/cr/crn_list.do">- 코로나-19 애로상담</a></dd>
+<dd><a href="/front/csg/id/insusDclr.do">- 부패행위 신고</a></dd>
+<dd><a href="/front/csg/id/insusDclr_safDclr.do">  └ 안심신고제</a></dd>
+<dt><a href="/front/csg/om/manual01_intro.do">이용 매뉴얼</a></dt>
+<dd><a href="/front/csg/om/manual01_intro.do">- 시스템 이용 매뉴얼</a></dd>
+<dd><a href="/front/csg/om/manual02_list.do">- 과제신청,연구비시뮬레이션</a></dd>
+<dd><a href="/front/csg/om/manual03_list.do">- 동영상강의</a></dd>
+<dt><a href="/front/csg/hi/confirmationInfo.do">고객지원센터</a></dt>
+<dd><a href="/front/csg/hi/confirmationInfo.do">- 확인서발급</a></dd>
+<dd><a href="/front/csg/hi/confirmationRndInfo.do">- 융자확인서 발급</a></dd>
+<!-- <dd><a href="/front/ssg/ss/Map.do">- 찾아오시는길</a></dd> -->
+</dl>
+</li>
+</ul>
+</div>
+</div>
+<!-- 사이트 맵 -->
+</li>
+<li class="navN8">
+<a class="search" href="#" id="searchmenu">통합검색</a>
+<!-- 통합검색 -->
+<div class="open_search" id="searchview">
+<div>
+<label for="searchvalue">통합검색</label> <input id="searchvalue" onclick="fn_valueClear();" onkeydown="javascript:if(event.keyCode==13){search_includeHeader();return false;}" tabindex="1" type="text" value="검색어를 입력하세요"/><a href="#" id="search" onclick="search_includeHeader();" tabindex="2" title="검색">검색</a>
+<a class="bt_close" href="#" id="searchview_close" tabindex="3" title="통합검색 닫기">검색창 닫기</a>
+</div>
+</div>
+<!-- 통합검색 -->
+</li>
+</ul>
+</div>
+<!--// inb -->
+</div>
+<!--// maintop -->
+</div>
+<!--subheader //-->
+<!--header 마침니다//-->
+<!--content 시작입니다//-->
+<div id="subcontent">
+<!--왼쪽메뉴 시작입니다//-->
+<script type="text/javascript">
+$(document).ready(function () {
+
+	var nodes = $(".sub_naviN8 > ul > li");
+	var curNodes;
+
+	$(".sub_menuN8").each(function(){
+		var displayCur = $(this).css("display");
+		if(displayCur=="block"){
+			curNodes = $(this).parent();
+		}
+	});
+
+	nodes.each(function(){
+		var leftMenu = $(this);
+		leftMenu.mouseenter(function(){
+
+			var subNodes = leftMenu.find("li");
+			var hei = 0;
+			if(undefined != subNodes.length && null != subNodes.length && subNodes.length > 0){
+				hei = (subNodes.length * 30) + 56;
+			}else{
+				hei = 40;
+			}
+
+			if(curNodes!=leftMenu){
+				leftMenu.css("height",hei);
+				leftMenu.children("div").css("display","block");
+			}
+		});
+
+		leftMenu.mouseleave(function(){
+			var leftMenu = $(this);
+			if(undefined == curNodes){
+				leftMenu.css("height",40);
+				leftMenu.children("div").css("display","none");
+			}else{
+				if(curNodes.text()!=leftMenu.text()){
+					leftMenu.css("height",40);
+					leftMenu.children("div").css("display","none");
+				}
+			}
+		});
+	});
+});
+</script>
+<!-- snb -->
+<div class="snbN8">
+<div class="titleN8">정보마당</div>
+<div class="sub_naviN8">
+<ul>
+<li style="height:146px;"><a class="depthM2" href="/front/ifg/no/notice02_intro.do">알림마당</a>
+<div class="sub_menuN8" style="display:block;">
+<ul class="navi_subN8">
+<li><a class="depthM3" href="/front/ifg/no/notice02_intro.do">R&amp;D 사업공고</a></li>
+<li><a href="/front/ifg/no/notice01_list.do">R&amp;D사업 관련 공지사항</a></li>
+<li><a href="/front/ifg/no/notice03_list.do">기타 공지사항</a></li>
+</ul>
+</div>
+</li>
+<li><a href="/front/sig/st/prjtIntro.do">자료마당</a>
+<div class="sub_menuN8">
+<ul class="navi_subN8">
+<li><a href="/front/sig/st/prjtIntro.do">R&amp;D 사업소개</a></li>
+<!-- -->
+<!--                                     <li><a href="/front/sig/sb/senpSprtBusi_intro.do">범부처 지원사업 소개</a></li>-->
+<li><a href="/front/ifg/tr/tecRoadmap_list.do">기술로드맵</a></li>
+<li><a href="/front/ifg/eb/bestCaseBook.do">우수사례집</a></li>
+<li><a href="/front/ifg/dt/datainfo01_intro.do">규정 및 서식</a></li>
+<li><a href="/front/ifg/dt/datainfo02_list.do">자료실</a></li>
+</ul>
+</div>
+</li>
+<li><a href="/front/ifg/pa/partinfo01_list.do">참여마당</a>
+<div class="sub_menuN8">
+<ul class="navi_subN8">
+<li><a href="/front/ifg/pa/partinfo01_list.do">기업 및 제품소개</a></li>
+<!-- 331315_이재휘_SMTECH 홈페이지 메뉴 삭제 요청(기술전문기업소개)_20201217
+                                    
+                                    <li><a href="/front/sig/tm/tecMsgtEnpr.do">기술전문기업소개</a></li> -->
+<li><a href="/front/ifg/pa/partinfo02_list.do">파트너를 찾아요</a></li>
+<li><a href="/front/ifg/rf/InetPnnRfp_list.do">RFP 인터넷공시</a></li>
+</ul>
+</div>
+</li>
+<li><a href="/front/csg/pr/preSearch01.do">지원 과제조회</a>
+<div class="sub_menuN8">
+<ul class="navi_subN8">
+<li><a href="/front/csg/pr/preSearch01.do">기술분야별 지원과제 검색</a></li>
+<li><a href="/front/csg/pr/preSearch02.do">키워드 과제검색</a></li>
+<li><a href="/front/csg/pr/IrisMigSearch.do">IRIS 이관대상 조회</a></li>
+</ul>
+</div>
+</li>
+<li><a href="/front/mpa/tc/TecInfoRead_revMatch.do">기술연계정보</a>
+<div class="sub_menuN8">
+<ul class="navi_subN8">
+<li><a href="/front/mpa/tc/TecInfoRead_revMatch.do">기술정보 조회</a></li>
+<li><a href="/front/mpa/tc/TecInfoReg_main.do">기술정보 등록</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<!--// snb -->
+<!-- 2018홈페이지 개편 -->
+<!--왼쪽메뉴 마침니다//-->
+<!--오른쪽 콘텐츠 시작입니다//-->
+<div class="right fl">
+<div class="subbg5"><img alt="중기부 R&amp;D 사업공고" src="../../images/if/m1_title2.gif"/></div>
+<div class="l15">
+<!-- 페이지 경로 시작입니다 -->
+<div class="navi ar r10">
+<ul class="udir">
+<li class="ic_home"></li>
+<li class="ic_arr"></li>
+<li>정보마당</li>
+<li class="ic_arr"></li>
+<li>알림마당</li>
+<li class="ic_arr"></li>
+<li>R&amp;D 사업공고</li>
+<li class="ic_arr"></li>
+<li>사업공고 목록</li>
+</ul>
+</div>
+<!-- 페이지 경로 마침니다//-->
+<div class="gap_div"></div>
+<!-- 탭버튼 시작입니다-->
+<div class="tab01">
+<ul>
+<li><a href="/front/ifg/no/notice02_intro.do?buclYy="><img alt="사업공고 일정표" src="../../images/if/tab1_01.gif"/></a></li>
+<li class="l03"><img alt="사업공고 목록" src="../../images/if/tab1_02on.gif"/></li>
+</ul>
+</div>
+<!--탭버튼 마침니다//-->
+<input name="buclYy" type="hidden" value=""/>
+<!-- 조건검색 시작입니다-->
+<div class="box_ser">
+<div>
+<p class="fl l185">
+<select id="searchCondition" name="searchCondition" style="width:100px; height:19px;" title="검색조건 선택">
+<option value="0">제목</option>
+<option value="1">내용</option>
+<option value="2">등록자</option>
+</select>
+<input class="input va_t" id="text01" name="searchKeyword" style="width:338px;" title="검색어 입력창" type="text" value=""/>
+</p>
+<p class="fl l03"><input alt="검색하기" class="va_t" src="/images/common/search_bt1.gif" title="검색하기" type="image"/></p>
+<p class="cb"></p>
+</div>
+</div>
+<input id="sysGubun" name="sysGubun" type="hidden" value="all"/>
+<input id="sysGb" name="sysGb" type="hidden" value="all"/>
+<div class="box_ser">
+<p class="fl l280"><b>시스템 구분   </b>
+<p class="fl l05">
+	                	  	 
+		                  	<input checked="checked" id="rdoSysGbunA" name="rdoSysGbun" onclick="goSysgubn();" title="전체선택버튼" type="radio" value="SYS_ALL"/>
+<label for="rcptSteGrpA">전체</label> 
+		                  	<input id="rdoSysGbunS" name="rdoSysGbun" onclick="goSysgubn();" title="SMTECH선택버튼" type="radio" value="SYS_SMTECH"/>
+<label for="rcptSteGrpI">SMTECH</label> 
+		                  	<input id="rdoSysGbunI" name="rdoSysGbun" onclick="goSysgubn();" title="IRIS선택버튼" type="radio" value="SYS_IRIS"/>
+<label for="rcptSteGrpS">IRIS</label> 	                	
+	              	</p>
+<p class="cb"></p>
+</p></div>
+<!-- 조건검색 마침니다-->
+<!-- 사업공고 목록보기 시작입니다-->
+<table class="tbl_base tbl_type01">
+<caption>사업공고 목록</caption>
+<colgroup>
+<col style="width:5%"/>
+<col style="width:7%"/>
+<col style="width:15%"/>
+<col/>
+<col style="width:20%"/>
+<col style="width:12%"/>
+<col style="width:8%"/>
+</colgroup>
+<thead>
+<tr>
+<th>No</th>
+<th>시스템구분</th>
+<th>사업명</th>
+<th>제목</th>
+<th>접수기간</th>
+<th>공고일</th>
+<th class="ll">상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ac">1</td>
+<td class="ac">SMTECH</td>
+<td class="ac">딥테크챌린지프로젝트</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02829&amp;buclCd=S9C03&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 딥테크 챌린지 프로젝트(DCP) 생태계혁신형 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 20 ~ 2026. 04. 07
+	                  	</td>
+<td class="ac">
+	                    	2026-01-08
+
+	                    </td>
+<td class="ac ll">
+<!--2 4 2 16-->
+<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">2</td>
+<td class="ac">SMTECH</td>
+<td class="ac">기술사업화 패키지 사업</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02852&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제1차 시행계획 공고(기술거래플랫폼 연계)</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 23 ~ 2026. 03. 13
+	                  	</td>
+<td class="ac">
+	                    	2026-02-12
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">3</td>
+<td class="ac">SMTECH</td>
+<td class="ac">기술사업화 패키지 사업</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02851&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제1차 시행계획 공고(정부 R&amp;D 우수과제)</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 23 ~ 2026. 03. 13
+	                  	</td>
+<td class="ac">
+	                    	2026-02-12
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">4</td>
+<td class="ac">SMTECH</td>
+<td class="ac">신진연구인력채용지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02834&amp;buclCd=S6042&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(채용, 신진) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 04 ~ 2026. 03. 06
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">5</td>
+<td class="ac">SMTECH</td>
+<td class="ac">고경력연구인력채용지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02833&amp;buclCd=S6043&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(채용, 고경력) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 04 ~ 2026. 03. 06
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">6</td>
+<td class="ac">SMTECH</td>
+<td class="ac">중소벤처기업부 혁신제품 지정사업</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02845&amp;buclCd=S9111&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 상반기 중소벤처기업부 혁신제품 신규지정 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 03. 05
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">7</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02848&amp;buclCd=S8018&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역기업 성장사다리 지원사업(지원)</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 10 ~ 2026. 03. 04
+	                  	</td>
+<td class="ac">
+	                    	2026-02-10
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">8</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성(제주)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02849&amp;buclCd=S8019&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역기업 성장사다리 지원사업(제주)</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 10 ~ 2026. 03. 04
+	                  	</td>
+<td class="ac">
+	                    	2026-02-10
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">9</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성(세종)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02850&amp;buclCd=S801A&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역기업 성장사다리 지원사업(세종)</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 10 ~ 2026. 03. 04
+	                  	</td>
+<td class="ac">
+	                    	2026-02-10
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">10</td>
+<td class="ac">SMTECH</td>
+<td class="ac">지역기업 역량강화</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02844&amp;buclCd=S6582&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역혁신선도기업육성(R&amp;D)-지역기업 역량강화 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 11 ~ 2026. 03. 03
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">11</td>
+<td class="ac">SMTECH</td>
+<td class="ac">주력산업 생태계 구축</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02843&amp;buclCd=S6581&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역혁신선도기업육성(R&amp;D)-주력산업 생태계 구축 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 11 ~ 2026. 03. 03
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--2 3 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">12</td>
+<td class="ac">SMTECH</td>
+<td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02847&amp;buclCd=S6041&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(파견) 2월 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 04 ~ 2026. 02. 28
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--2 2 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">13</td>
+<td class="ac">IRIS</td>
+<td class="ac">사전연구 및 제조현장진단</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년 표준공정 기반 공정최적화 기술개발 사업 사전연구 및 제조현장진단 전문연구기관 모집공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 05 ~ 2026. 02. 27
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--2 2 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">14</td>
+<td class="ac">SMTECH</td>
+<td class="ac">산업기술단지거점기능강화</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02840&amp;buclCd=S8012&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 테크노파크 생산장비 고도화 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 02. 09 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-26
+
+	                    </td>
+<td class="ac ll">
+<!--2 2 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">15</td>
+<td class="ac">SMTECH</td>
+<td class="ac">(비R&amp;D)지역주력산업육성(세종)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02837&amp;buclCd=S801A&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=2&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 지역특화 프로젝트 지원사업(세종) 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 01. 30 ~ 2026. 02. 20
+	                  	</td>
+<td class="ac">
+	                    	2026-01-30
+
+	                    </td>
+<td class="ac ll">
+<!--1 2 2 16-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- 사업공고 목록보기 리스트 마침니다//-->
+<!--페이지넘버링 시작입니다-->
+<div class="page_num1">
+<div class="ac" id="paging">
+<a href="#" onclick="fn_search_test(1); return false;"><img alt="처음페이지" src="/img/common/btn_prepre.gif" title="처음"/></a> <a href="#" onclick="fn_search_test(1); return false;"><img alt="이전페이지" src="/img/common/btn_pre.gif" title="이전"/></a>  <a class="no num_on" href="#">1</a>  <a class="no" href="#" onclick="fn_search_test(2); return false;">2</a>  <a class="no" href="#" onclick="fn_search_test(3); return false;">3</a>  <a class="no" href="#" onclick="fn_search_test(4); return false;">4</a>  <a class="no" href="#" onclick="fn_search_test(5); return false;">5</a>  <a class="no" href="#" onclick="fn_search_test(6); return false;">6</a>  <a class="no" href="#" onclick="fn_search_test(7); return false;">7</a>  <a class="no" href="#" onclick="fn_search_test(8); return false;">8</a>  <a class="no" href="#" onclick="fn_search_test(9); return false;">9</a>  <a class="no" href="#" onclick="fn_search_test(10); return false;">10</a>   <a href="#" onclick="fn_search_test(11); return false;"><img alt="다음페이지" src="/img/common/btn_ne.gif" title="다음"/></a> <a href="#" onclick="fn_search_test(244); return false;"><img alt="마지막페이지" src="/img/common/btn_nene.gif" title="마지막"/></a> 
+
+						<input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
+</div>
+<div class="cb"></div>
+</div>
+<!--페이지넘버링 마침니다//-->
+<!-- 콘텐츠 담당자 시작입니다-->
+<!-- 콘텐츠 담당자 마침니다//-->
+</div>
+<div class="gap_btm"></div>
+</div>
+<!--오른쪽 콘텐츠 마침니다//-->
+</div>
+<!--content 마침니다//-->
+<div class="cb"></div>
+<!--footer 시작입니다-->
+<style>
+	#pipp:hover{
+		text-decoration: underline;
+		font-size: 1.09rem;
+	}
+</style>
+<div class="cb"></div>
+<!-- footer -->
+<div id="footer">
+<div class="footer_conN8" style="text-align: center;">
+<ul class="etcN8" style="display: inline-flex;">
+<!-- 501226_이호승_[SMTECH 홈페이지 개선] 기관 개인정보처리방침 개정에 따른 연계 방식 변경 요청
+                    <li style="background-color: #777;"><a href="/front/etc/care.do" style="color: #FFE400"><b>개인정보처리방침</b></a></li> -->
+<li style="background-color: #777;">
+<a href="https://www.tipa.or.kr/s0801" id="pipp" onclick="window.open(this.href,'_blank','scrollbars=yes, width=800, height=600'); return false;" style="color: #FFE400" title="새창으로 열림"><b>개인정보처리방침</b></a>
+</li>
+<li><a href="/front/etc/guide.do">이용약관</a></li>
+<li><a href="/front/etc/rejection.do">이메일 무단수집거부</a></li>
+<li><a href="/front/csg/qn/qna_list.do">Contact Us</a></li>
+<li style="width: 22%;"><a href="#" onclick="return false;" style="color: #FFE400; font-weight: bold;">중소기업 통합콜센터 1357(국번없이)</a></li>
+<!--<li><a href="/front/etc/sitemap.do">SiteMap</a></li>
+                    <li><a href="http://m.smtech.go.kr">Mobile App</a></li>
+                    <li><a href="#" onclick="appcheck();">App Down</a></li>
+                    -->
+<li style="margin-left: 100px;">
+<a class="site_link" href="#">관계사이트</a>
+<div class="site_conet">
+<ul>
+<li><a href="http://www.mss.go.kr/site/smba/main.do#btn_topBarNav" target="_blank">중소기업벤처기업부</a></li>
+<li><a href="https://www.tipa.or.kr/" target="_blank">중소기업기술정보진흥원</a></li>
+<li><a href="http://smroadmap.smtech.go.kr/" target="_blank">중소기업기술로드맵</a></li>
+<li><a href="http://www.ntis.go.kr/ThMain.do" target="_blank">국가과학기술지식정보서비스</a></li>
+<!-- <li><a href="http://www.startup.go.kr/" target="_blank">창조경제</a></li> -->
+<li><a href="http://www.innobiz.net/" target="_blank">기술혁신형중소기업</a></li>
+<li><a href="http://www.bizinfo.go.kr" target="_blank">기업마당 비즈인포</a></li>
+<li><a href="http://bridge.smtech.go.kr" target="_blank">중소기업기술혁신센터</a></li>
+<li><a href="http://www.osmb.go.kr/intro_new.jsp" target="_blank">중소기업옴브즈만</a></li>
+<li><a href="https://www.smart-factory.kr" target="_blank">스마트공장 사업관리시스템</a></li>
+<li><a href="https://www.smtech.go.kr/regend50/mps" target="_blank">지역특화 프로젝트(레전드 50+)</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div style="position:relative; margin: 0 auto; width:1280px;">
+<div style="margin-top:20px;">
+<div style="float:left;">
+<img alt="중소벤처기업부" src="/images/main/logo_footer.jpg" style="vertical-align:top;"/>
+</div>
+<div style="float:left;">
+<img alt="중소기업기술정보진흥원" src="/images/main/logo_footer_2.png" style="vertical-align:top;"/>
+</div>
+<div style="float:left; margin-left:15px; margin-top:7px;">
+	                    30141 세종특별자치시 집현중앙로 79, 중소기업기술정보진흥원(TIPA)<br/>
+	                    Copyright ⓒ 중소기업기술정보진흥원. All Rights Reserved.
+		            </div>
+</div>
+</div>
+</div>
+<!-- // footer -->
+<!--footer 마침니다//-->
+</div>
+</form>
+</body>
+</html>
