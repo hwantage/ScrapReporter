@@ -1440,10 +1440,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="76276">
+<input id="totalCount" name="totalCount" type="hidden" value="76411">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>76,276건</span></h3>
+<h3 class="t_head">검색결과 <span>76,411건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1496,43 +1496,59 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2026년도 첨단정밀육종활용고부가산업화기술개발사업 시행계획 재공고" type="checkbox" value="1255671"/></td>
+<td><input name="selectCheckList" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고" type="checkbox" value="1256599"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76276
+                            76411
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255671&amp;flag=rndList" onclick="javascript:fn_view('1255671'); return false;" title="2026년도 첨단정밀육종활용고부가산업화기술개발사업 시행계획 재공고"> 2026년도 첨단정밀육종활용고부가산업화기술개발사업 시행계획 재공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256599&amp;flag=rndList" onclick="javascript:fn_view('1256599'); return false;" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고"> 2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고
                                 </a>
 </div>
 </td>
 <td data-title="부처명">농림축산식품부</td>
-<td data-title="접수일">2026.02.09</td>
-<td data-title="마감일">2026.02.12</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.02.24</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 4</span>
-</td>
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                        D - 9
+                                    
+                                    
+                                
+
+                            </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 제1차 범부처 첨단 의료기기 연구개발사업 신규지원 대상과제 공고_(2026)[1내역] 글로벌 플래그십 의료기기 개발" type="checkbox" value="1255669"/></td>
+<td><input name="selectCheckList" title="2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고_(2026)2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고" type="checkbox" value="1256596"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76275
+                            76410
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255669&amp;flag=rndList" onclick="javascript:fn_view('1255669'); return false;" title="2026년도 제1차 범부처 첨단 의료기기 연구개발사업 신규지원 대상과제 공고_(2026)[1내역] 글로벌 플래그십 의료기기 개발"> 2026년도 제1차 범부처 첨단 의료기기 연구개발사업 신규지원 대상과제 공고_(2026)[1내역] 글로벌 플래그십 의료기기 개발
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256596&amp;flag=rndList" onclick="javascript:fn_view('1256596'); return false;" title="2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고_(2026)2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고"> 2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고_(2026)2026년도 항공 가스터빈 엔진용 구조물 고강도 소재부품 개발 사업 신규과제 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상부</td>
-<td data-title="접수일">2026.02.19</td>
-<td data-title="마감일">2026.03.10</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1552,22 +1568,22 @@ $(function(){
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 원전해체경쟁력강화기술개발사업 신규지원대상 연구개발과제 공고" type="checkbox" value="1255563"/></td>
+<td><input name="selectCheckList" title="2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고_(2026)2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고" type="checkbox" value="1256595"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76274
+                            76409
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255563&amp;flag=rndList" onclick="javascript:fn_view('1255563'); return false;" title="2026년도 원전해체경쟁력강화기술개발사업 신규지원대상 연구개발과제 공고"> 2026년도 원전해체경쟁력강화기술개발사업 신규지원대상 연구개발과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256595&amp;flag=rndList" onclick="javascript:fn_view('1256595'); return false;" title="2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고_(2026)2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고"> 2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고_(2026)2026년도 전기-터빈 하이브리드 추진시스템 핵심기술 선행개발사업 신규과제 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">기후에너지환경부</td>
-<td data-title="접수일">2026.02.13</td>
-<td data-title="마감일">2026.03.13</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1581,28 +1597,133 @@ $(function(){
                                     
                                     
                                     
-                                    D-33
+                                    D-30
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="2026년도 AI+ST 혁신 기술개발(RD)사업 신규과제 공고" type="checkbox" value="1254977"/></td>
+<td><input name="selectCheckList" title="2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고_(2026)2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고" type="checkbox" value="1256594"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76273
+                            76408
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254977&amp;flag=rndList" onclick="javascript:fn_view('1254977'); return false;" title="2026년도 AI+ST 혁신 기술개발(RD)사업 신규과제 공고"> 2026년도 AI+ST 혁신 기술개발(RD)사업 신규과제 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256594&amp;flag=rndList" onclick="javascript:fn_view('1256594'); return false;" title="2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고_(2026)2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고"> 2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고_(2026)2026년도 전기화 항공기용 고바이패스 터보팬 엔진 핵심 기술 개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고_(2026)2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고" type="checkbox" value="1256593"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76407
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256593&amp;flag=rndList" onclick="javascript:fn_view('1256593'); return false;" title="2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고_(2026)2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고"> 2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고_(2026)2026년도 항공 AI 안전성 확보를 위한 자율임무 신뢰성 보증기술 개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고_(2026)2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고" type="checkbox" value="1256592"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76406
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256592&amp;flag=rndList" onclick="javascript:fn_view('1256592'); return false;" title="2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고_(2026)2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고"> 2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고_(2026)2026년도 지속가능 열가소성 항공기 부품 핵심기술개발 사업 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">우주항공청</td>
+<td data-title="접수일">2026.02.23</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도?핵융합 플러그인 프로그램?사업신규과제 공모_(2026)2026년도 핵융합 플러그인 프로그램 사업 신규과제 공모" type="checkbox" value="1256591"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76405
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256591&amp;flag=rndList" onclick="javascript:fn_view('1256591'); return false;" title="2026년도?핵융합 플러그인 프로그램?사업신규과제 공모_(2026)2026년도 핵융합 플러그인 프로그램 사업 신규과제 공모"> 2026년도?핵융합 플러그인 프로그램?사업신규과제 공모_(2026)2026년도 핵융합 플러그인 프로그램 사업 신규과제 공모
                                 </a>
 </div>
 </td>
 <td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2026.02.13</td>
-<td data-title="마감일">2026.03.04</td>
+<td data-title="접수일">2026.02.26</td>
+<td data-title="마감일">2026.03.17</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1616,203 +1737,28 @@ $(function(){
                                     
                                     
                                     
-                                    D-24
+                                    D-30
                                 
 
                             </td>
 </tr>
 <tr>
-<td><input name="selectCheckList" title="「이차전지(ESS용 LFP 등), 태양광 패널 제조·재활용 산업의 폐수 배출특성 조사」 입찰 공고" type="checkbox" value="1255580"/></td>
+<td><input name="selectCheckList" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고" type="checkbox" value="1256590"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76272
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255580&amp;flag=rndList" onclick="javascript:fn_view('1255580'); return false;" title="「이차전지(ESS용 LFP 등), 태양광 패널 제조·재활용 산업의 폐수 배출특성 조사」 입찰 공고"> 「이차전지(ESS용 LFP 등), 태양광 패널 제조·재활용 산업의 폐수 배출특성 조사」 입찰 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기후에너지환경부</td>
-<td data-title="접수일">2026.02.24</td>
-<td data-title="마감일">2026.02.26</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-18
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="「2026년 국내 유통가능 제품내 제한물질 함량 실태조사」 입찰 공고" type="checkbox" value="1255579"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76271
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255579&amp;flag=rndList" onclick="javascript:fn_view('1255579'); return false;" title="「2026년 국내 유통가능 제품내 제한물질 함량 실태조사」 입찰 공고"> 「2026년 국내 유통가능 제품내 제한물질 함량 실태조사」 입찰 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기후에너지환경부</td>
-<td data-title="접수일">2026.02.24</td>
-<td data-title="마감일">2026.02.26</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-18
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="「국토환경 녹색복원 후보목록 4차년도 조사연구」 입찰 공고 (긴급)" type="checkbox" value="1255578"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76270
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255578&amp;flag=rndList" onclick="javascript:fn_view('1255578'); return false;" title="「국토환경 녹색복원 후보목록 4차년도 조사연구」 입찰 공고 (긴급)"> 「국토환경 녹색복원 후보목록 4차년도 조사연구」 입찰 공고 (긴급)
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기후에너지환경부</td>
-<td data-title="접수일">2026.02.24</td>
-<td data-title="마감일">2026.02.26</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-18
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="「지방하천 홍수방어 우선순위 설정 연구」 입찰 재공고 (긴급)" type="checkbox" value="1255574"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76269
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255574&amp;flag=rndList" onclick="javascript:fn_view('1255574'); return false;" title="「지방하천 홍수방어 우선순위 설정 연구」 입찰 재공고 (긴급)"> 「지방하천 홍수방어 우선순위 설정 연구」 입찰 재공고 (긴급)
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기후에너지환경부</td>
-<td data-title="접수일">2026.02.25</td>
-<td data-title="마감일">2026.02.27</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-19
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="「2026년 특정수질유해물질 배출량조사 지원 및 개선방안 연구」 입찰 재공고" type="checkbox" value="1255572"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76268
-                        </td>
-<td data-title="현황">
-<span style="color: blue;">접수예정</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255572&amp;flag=rndList" onclick="javascript:fn_view('1255572'); return false;" title="「2026년 특정수질유해물질 배출량조사 지원 및 개선방안 연구」 입찰 재공고"> 「2026년 특정수질유해물질 배출량조사 지원 및 개선방안 연구」 입찰 재공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기후에너지환경부</td>
-<td data-title="접수일">2026.02.19</td>
-<td data-title="마감일">2026.02.23</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-15
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년 소재부품장비 융합혁신지원단 기술지원사업(심화) 시행계획 공고" type="checkbox" value="1255571"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76267
+                            76404
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255571&amp;flag=rndList" onclick="javascript:fn_view('1255571'); return false;" title="2026년 소재부품장비 융합혁신지원단 기술지원사업(심화) 시행계획 공고"> 2026년 소재부품장비 융합혁신지원단 기술지원사업(심화) 시행계획 공고
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256590&amp;flag=rndList" onclick="javascript:fn_view('1256590'); return false;" title="2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고"> 2026년도 기술사업화지원사업 시행계획 재공고_(2026)2026년도 기술사업화지원사업 시행계획 공고
                                 </a>
 </div>
 </td>
-<td data-title="부처명">산업통상부</td>
-<td data-title="접수일">2026.02.05</td>
-<td data-title="마감일">2026.03.06</td>
+<td data-title="부처명">농림축산식품부</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.02.24</td>
 <td class="end" data-title="D-day">
                                 
                                 
@@ -1826,7 +1772,79 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                        D - 9
+                                    
+                                    
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년 전국 토양비옥도 평가 신규과제_(2026)전국 토양비옥도 평가" type="checkbox" value="1256587"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76403
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256587&amp;flag=rndList" onclick="javascript:fn_view('1256587'); return false;" title="2026년 전국 토양비옥도 평가 신규과제_(2026)전국 토양비옥도 평가"> 2026년 전국 토양비옥도 평가 신규과제_(2026)전국 토양비옥도 평가
+                                </a>
+</div>
+</td>
+<td data-title="부처명">농촌진흥청</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.04.15</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-59
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모_(2026)2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모" type="checkbox" value="1256578"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76402
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256578&amp;flag=rndList" onclick="javascript:fn_view('1256578'); return false;" title="2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모_(2026)2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모"> 2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모_(2026)2026년도 AI기반 디지털 가상 핵융합로 플랫폼 개발사업 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.13</td>
+<td data-title="마감일">2026.03.17</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
                                 
 
                             </td>
@@ -1842,7 +1860,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7628" onclick="fn_search(7628);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7642" onclick="fn_search(7642);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>

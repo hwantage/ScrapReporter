@@ -1262,11 +1262,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">산업난제 해결 위한 양자활용기술 수요조사 실시<i class="blank"></i></a><span class="date">2026.02.11</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">'26년 기계장비산업기술개발사업 추가 기술수요조사 공고<i class="blank"></i></a><span class="date">2026.02.09</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년도 디자인산업기술개발사업 신규 기획과제 인터넷공시<i class="blank"></i></a><span class="date">2026.02.06</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년도 제1차 국가표준기술력향상사업 기획대상 후보과제 인터넷공시<i class="blank"></i></a><span class="date">2026.01.23</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">기술선도 성장을 견인하는 비철금속 R&amp;D 전략수립을 위한 기술수요조사 공고<i class="blank"></i></a><span class="date">2026.01.22</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년 재난안전산업 진흥시설 조성 지원(R&amp;D) 신규지원 과제기획 결과 인터넷공시<i class="blank"></i></a><span class="date">2026.01.21</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년도 제품안전관리기술개발및실증사업 인터넷공시 <i class="blank"></i></a><span class="date">2026.01.21</span></li>
 </ul>
 </div>
 </div>
@@ -1306,11 +1306,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_notice_list">
 <ul>
+<li><a href="#" onclick="f_gotoDetailPage('C', '162173'); return false;">「(가칭) AI 융합 바이오제조 혁신거점센터 구축 사업」인프라 구축을 위한 활용 수요조사 공고</a> <span class="date">2026.02.11</span> </li>
+<li><a href="#" onclick="f_gotoDetailPage('C', '162255'); return false;">2026년 범부처 첨단 의료기기 연구개발사업 신규지원 대상과제 공고</a> <span class="date">2026.02.09</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '161955'); return false;">(2차 연장) 2026년 상반기 행정안전부 혁신제품 지정기간 연장 신청 공고</a> <span class="date">2026.02.02</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '161954'); return false;">(1차 연장) 2026년 상반기 행정안전부 혁신제품 지정기간 연장 신청 공고</a> <span class="date">2026.02.02</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '161505'); return false;">2026년도 제1차 범부처 첨단 의료기기 연구개발사업 과제제안요구소(RFP) 사전 공시 안내</a> <span class="date">2026.01.29</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '161649'); return false;">(추가) 2026년 상반기 행정안전부 재난안전 혁신제품 지정 신청 공고</a> <span class="date">2026.01.19</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '161462'); return false;">(신규) 2026년 상반기 행정안전부 재난안전 혁신제품 지정 신청 공고</a> <span class="date">2026.01.19</span> </li>
 </ul>
 </div>
 </div>
@@ -1503,6 +1503,14 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <a class="rollingPrevNext" href="#"><img alt="다음보기" src="img/main/arrNext_icon.png"/></a>
 <a class="rollingStop" href="#"><img alt="정지" src="img/main/stop_icon.png"/></a>
 </div>
+<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2026/02/11/CDE97AA6-58D4-35DB-6A8D-0A41AA1755AD_W435.png"/></a>
+<!-- 텍스트 영역 -->
+<dl>
+<dt>[이달의 신기술]</dt>
+<dd>테크 포커스 2026년 2월호 (Vol.28)</dd>
+</dl>
+<!--// 텍스트 영역 -->
+</div>
 <div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2026/01/15/BF19DD3A-047C-8C5E-352D-AB623F5AEC87_W435.png"/></a>
 <!-- 텍스트 영역 -->
 <dl>
@@ -1532,14 +1540,6 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <dl>
 <dt>[이달의 신기술]</dt>
 <dd>테크 포커스 2025년 10월호 (Vol.24)</dd>
-</dl>
-<!--// 텍스트 영역 -->
-</div>
-<div class="techlist_wrap rollingItem"><a href="#" onclick="window.open('https://techfocus.kr'); return false;" target="_blank" title="새창으로 열림"><img alt="" onerror="this.src=contextRoot + '/img/common/noimage.png'" src="/app/file/pms/2025/09/10/28AB05F7-BA81-0AC1-FDC3-C0B8E7A419DE_W435.png"/></a>
-<!-- 텍스트 영역 -->
-<dl>
-<dt>[이달의 신기술]</dt>
-<dd>테크 포커스 2025년 9월호 (Vol.23)</dd>
 </dl>
 <!--// 텍스트 영역 -->
 </div>

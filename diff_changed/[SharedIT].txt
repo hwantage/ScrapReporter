@@ -19,6 +19,7 @@
 <meta content="IT 관련 교육 세미나 정보" property="og:image:alt">
 <meta content="https://www.sharedit.co.kr/seminars" property="og:url"/>
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="strict-origin-when-cross-origin" name="referrer"/>
 <link href="https://www.sharedit.co.kr/seminars" rel="canonical"/>
 <!-- Google Structured Data -->
 <script type="application/ld+json">
@@ -53,7 +54,7 @@
 <script data-turbolinks-track="false" src="https://d1t0c50njgghjy.cloudfront.net/assets/production/controllers/seminars-07263be6dab85106e76160b1fe1cd524c0164649ba40806c403a1f82c0c57061.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <meta content="authenticity_token" name="csrf-param">
-<meta content="3ZbB9TA1WsmeTJ3oN/pV158bdg+rYJezXswMLbze9NvxFDIg1rwEJDdbIxN2IHwqbkdraoeRpk1sOLVIA0lKuA==" name="csrf-token">
+<meta content="ywgTmaDl4k0IvMk2U9HBi0uZ1eoLJvJP4VfC7lvJS6lgfSyys9Qte2cCUweb7jU+olM5OibWKvyojhRN3z2uyA==" name="csrf-token">
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   var googletag = googletag || {};
@@ -164,7 +165,7 @@ ga("send","pageview");
 <li class="linkedin"><a href="https://www.linkedin.com/in/sharedit2014/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 <ul class="list-inline hidden-xs">
-<li><a href="/cdn-cgi/l/email-protection#4f222e3c3b2a3d0f3c272e3d2a2b263b612c2061243d"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="e28f8391968790a2918a839087868b96cc818dcc8990">[email protected]</span></a></li>
+<li><a href="/cdn-cgi/l/email-protection#b7dad6c4c3d2c5f7c4dfd6c5d2d3dec399d4d899dcc5"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="f895998b8c9d8ab88b90998a9d9c918cd69b97d6938a">[email protected]</span></a></li>
 <li><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"><i class="fa fa-youtube-play pr-5 pl-10" title="SHAREDIT CLASS / SHAREDIT LIVE"></i></a><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"> YouTube</a></li>
 <li><a href="http://www.podbbang.com/ch/15150" target="_blank"><i class="fa fa-podcast pr-5 pl-10" title="팟빵 - 쌤팍의 전산쟁이 이야기"></i></a><a href="https://www.sharedit.co.kr/posts/1236" target="_blank"> 팟캐스트</a></li>
 </ul>
@@ -184,7 +185,7 @@ ga("send","pageview");
 <button class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" type="button"><i class="fa fa-lock pr-5"></i> 로그인</button>
 <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 <li>
-<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="3+ogUvulw9rF27u3B5+EkgaOETSKGnHTqMll/jRfKEbzaNOHHSydN2zMBUxGRa1v99IMUabrQC2aPdybi8iWJQ=="/>
+<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="lesKS7mmXLV9KryAuLNKVmnlWDoEq1Z2WEhjGxwTOMw+njVgqpeTgxKUJrFwjL7jgC+06ilbjsURkbW4mOfdrQ=="/>
 <div class="form-group has-feedback">
 <label class="control-label">이메일 주소</label>
 <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="" type="email" value=""/>
@@ -440,12 +441,12 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/synapsoft/products">
-<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
-</a> </li>
-<li class="col-lg-6">
 <a href="/companies/bellins/products">
 <i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
+</a> </li>
+<li class="col-lg-6">
+<a href="/companies/synapsoft/products">
+<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
 </a> </li>
 </ul>
 </div>
@@ -667,23 +668,10 @@ document.addEventListener('DOMContentLoaded', function() {
 <a class="" href="/seminars?category_code=educations">교육</a>
 </nav>
 <!-- notice -->
-<div class="pull-right" style="margin-top: 16px;">
-<div style="margin-top:-5px;margin-bottom:10px;">
-<span class="label label-danger" style="font-size: 16px;border-radius: 30px;" title="레노버 자료 다운로드 이벤트 #1 Lenovo ThinkSystem SR V4 | 모든분께 스벅커피 ☕"><i class="fa fa-envelope-o"></i> 
-        <a class="alert-link" href="https://www.sharedit.co.kr/posts/35764?modal=on" style="text-decoration-line : none;" target="_blank"><font color="ffffff">레노버 자료 다운로드 이벤트 #1 Lenovo ThinkSystem SR V4 | 모든분께 스벅커피 ☕</font></a>
-</span>
-</div>
-</div>
 <!-- //notice -->
 </header>
 <ul class="list" style="min-height: 700px;">
 <div class="tags-cloud2 mb-10" style="color: #000000; margin-top: -20px;">
-<div class="tag">
-<a href="/seminars/2272" title="레노버 | 뉴타닉스 | 아티드 - 2/10(화) 아티드와 함께 하는 Lenovo Tech Day’26">10일 (화)</a>
-</div>
-<div class="tag">
-<a href="/seminars/2271" title="Quest Software - [0211] ITDR 실전 가이드, Quest Security Guardian으로 강화하는 아이덴티티 보안">11일 (수)</a>
-</div>
 <div class="tag">
 <a href="/seminars/2274" title="odoo - [인천 IT 커넥트] 전분야 IT 전문가들의 제조·물류·서비스 기반 성장 전략">26일 (목)</a>
 </div>
@@ -707,11 +695,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </dl>
 </li>
 <li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2271/low_0211_thumbnail_sharedit.png');"></figure>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2271/low_0211_thumbnail_sharedit.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-               	    Quest Software
-               </span>
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
 <span class="category">웨비나</span>
 <strong>
 <a href="/seminars/2271" title="[0211] ITDR 실전 가이드, Quest Security Guardian으로 강화하는 아이덴티티 보안">[0211] ITDR 실전 가이드, Quest Security Guardian으로 강화하는 아이덴티티 보안</a>
@@ -720,14 +708,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <dl class="info">
 <dt>일시</dt>
 <dd>2026-02-11(수) 14:00 ~ 15:00</dd>
+<dt>댓글</dt>
+<dd>1개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2272/low_athi.png');"></figure>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2272/low_athi.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-               	    레노버 | 뉴타닉스 | 아티드
-               </span>
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
 <span class="category">세미나</span>
 <strong>
 <a href="/seminars/2272" title="2/10(화) 아티드와 함께 하는 Lenovo Tech Day’26">2/10(화) 아티드와 함께 하는 Lenovo Tech Day’26</a>
@@ -739,7 +729,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>장소</dt>
 <dd>서울 강남구 테헤란로 521 그랜드 인터컨티넨탈 서울 파르나스, 로즈룸(5F)</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -775,7 +765,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2026-02-03(화) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 </ul>
@@ -827,7 +817,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1964" title="미래를 위한 프라이빗 클라우드 구축, Dell PowerStore를 통해 해결해 보세요!">미래를 위한 프라이빗 클 (설문조사)<span>D-9</span></a>
+<a ,="" href="/promotions/1964" title="미래를 위한 프라이빗 클라우드 구축, Dell PowerStore를 통해 해결해 보세요!">미래를 위한 프라이빗 클 (설문조사)<span>D-2</span></a>
 </li>
 </ul>
 </div>
@@ -836,33 +826,33 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/1947" title="[쉐어드IT 단독] 120만원 상당의 '제로다크웹' 유출 진단 혜택을 지원합니다">[쉐어드IT 단독] 12 (할인혜택)<span>D-50
+<a ,="" href="/promotions/1943" title="하이웍스 2026 도약 지원 이벤트, 메일보다 더 저렴한 그룹웨어">하이웍스 2026 도약  (할인혜택)<span>D-12
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1934" title='백신과 정보유출예방(DLP) 기능을 한번에!, 올인원 PC보안 서비스 "엑소스피어"'>백신과 정보유출예방(DL (상담요청)<span>D-50
+<a ,="" href="/seminars/2275" title="서울 명동 르메르디앙에서 ERP, 그룹웨어, AI 통합 워크플로우를 체험하세요!⚡">서울 명동 르메르디앙에서 (세미나)	<span>D-32</span></a>
+</li>
+<li>
+<a ,="" href="/seminars/2277" title="AX INFRA &amp; OPS 2026">AX INFRA &amp; OP (세미나)	<span>D-36</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/1936" title="다크웹에 우리 회사 정보가 유출됐다면?   쉐어드IT 회원 Only :  제로다크웹 1개월 무료 + 120만원 상당 기능 제공">다크웹에 우리 회사 정보 (할인혜택)<span>D-43
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2271" title="[0211] ITDR 실전 가이드, Quest Security Guardian으로 강화하는 아이덴티티 보안">[0211] ITDR 실 (웨비나)	<span>D-2</span></a>
-</li>
-<li>
-<a ,="" href="/promotions/1943" title="하이웍스 2026 도약 지원 이벤트, 메일보다 더 저렴한 그룹웨어">하이웍스 2026 도약  (할인혜택)<span>D-19
+<a ,="" href="/promotions/1942" title="영업 데이터, 이제 엑셀 말고 '하이웍스 세일즈'로 관리하세요">영업 데이터, 이제 엑셀 (할인혜택)<span>D-12
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/1952" title="하이웍스 AI 특별 혜택 OPEN">하이웍스 AI 특별 혜택 (할인혜택)<span>D-19
+<a ,="" href="/promotions/1964" title="미래를 위한 프라이빗 클라우드 구축, Dell PowerStore를 통해 해결해 보세요!">미래를 위한 프라이빗 클 (설문조사)<span>D-2
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2272" title="2/10(화) 아티드와 함께 하는 Lenovo Tech Day’26">2/10(화) 아티드와  (세미나)	<span>D-1</span></a>
-</li>
-<li>
-<a ,="" href="/seminars/2275" title="서울 명동 르메르디앙에서 ERP, 그룹웨어, AI 통합 워크플로우를 체험하세요!⚡">서울 명동 르메르디앙에서 (세미나)	<span>D-39</span></a>
+<a ,="" href="/seminars/2274" title="[인천 IT 커넥트] 전분야 IT 전문가들의 제조·물류·서비스 기반 성장 전략">[인천 IT 커넥트] 전 (세미나)	<span>D-10</span></a>
 </li>
 </ul>
 </div>
@@ -917,20 +907,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav>
 <ul class="nav product-brands-list">
 <li>
-<a href="/board/solutions/3688" rel="nofollow" target="_self">그룹웨어 견적요청<span>상담실</span></a>
+<a href="/seminars/2269" rel="nofollow" target="_self" title="참고합니다.
+">참고합니다.
+<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/35822" rel="nofollow" target="_self" title="규제를 낮추어 국내 산업을 육성하기 위한 정책인데...
-좋은 쪽으로 진행되길..">규제를 낮추어 국내 산업을 육성<span>테크박스</span></a>
+<a href="/seminars/2271" rel="nofollow" target="_self" title="참고합니다.">참고합니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/seminars/2269" rel="nofollow" target="_self" title="유익한 시간이었습니다.">유익한 시간이었습니다.<span>세미나</span></a>
+<a href="/board/solutions/3690" rel="nofollow" target="_self">방화벽 견적 요청드립니다.<span>상담실</span></a>
 </li>
 <li>
-<a href="/board/solutions/3687" rel="nofollow" target="_self">데이터 보안에 필요한 방법 모색<span>상담실</span></a>
+<a href="/posts/35764" rel="nofollow" target="_self" title="참여했습니다.">참여했습니다.<span>테크박스</span></a>
 </li>
 <li>
-<a href="/board/solutions/3687" rel="nofollow" target="_self">데이터 보안에 필요한 방법 모색<span>상담실</span></a>
+<a href="/board/solutions/3694" rel="nofollow" target="_self">M365 도입 검토<span>상담실</span></a>
 </li>
 </ul>
 </nav>
@@ -960,7 +951,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h4 class="modal-title" id="myModalLabel">알림</h4>
 </div>
 <div class="modal-body">
-<p><a href="/cdn-cgi/l/email-protection#0469657770617644776c657661606d702a676b2a6f76"><span class="__cf_email__" data-cfemail="c4a9a5b7b0a1b684b7aca5b6a1a0adb0eaa7abeaafb6">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
+<p><a href="/cdn-cgi/l/email-protection#ec818d9f98899eac9f848d9e89888598c28f83c2879e"><span class="__cf_email__" data-cfemail="fa979b898e9f88ba89929b889f9e938ed49995d49188">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
 <a href="/memberships">멤버십</a>에 가입하신 후 직접 업로드를 하실 수 있습니다.</p>
 </div>
 </div>
@@ -981,7 +972,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 class="title">IT 세미나/교육/프로모션 정보 구독 신청</h3>
 <p>새로운 세미나/교육/프로모션 정보를 메일로 편하게 받아 보세요. 정기적으로 보내 드립니다.</p>
 <div class="separator"></div>
-<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="Em0p6WOjzT3PtyWExDBRHJBWzRWIOlamJ/MYuPcNt30+79o8hSqT0Gagm3+F6njhYQrQcKTLZ1gVB6HdSJoJHg=="/>
+<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="Z/mmZe80wQomQjHMWfUTYr5VFoScQShAT3dMMzoLkrzMjJlO/AUOPEn8q/2RyufXV5/6VLGx8PMGrpqQvv933Q=="/>
 <div class="form-group has-feedback">
 <label class="sr-only" for="subscribe2">Email address</label>
 <input class="form-control" id="email" name="email" placeholder="Enter email" required="required" type="text"/>
@@ -1026,7 +1017,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><i class="text-default fa fa-id-card-o pr-5"></i>사업자 등록번호 : 144-81-29382</li>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>통신판매업신고 : 2017-용인수지-0227</li><br/>
 <li><i class="text-default fa fa-map-marker pr-5"></i>(주) 쉐어드커뮤니케이션</li>
-<li><a class="link-dark" href="/cdn-cgi/l/email-protection#6d000c1e19081f2d1e050c1f08090419430e0243061f"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="f39e9280879681b3809b928196979a87dd909cdd9881">[email protected]</span></a></li>
+<li><a class="link-dark" href="/cdn-cgi/l/email-protection#630e021017061123100b021106070a174d000c4d0811"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="9bf6fae8effee9dbe8f3fae9fefff2efb5f8f4b5f0e9">[email protected]</span></a></li>
 </ul>
 <ul class="list-inline small" style="margin-top: -9px">
 <li><i class="text-default fa fa-lock pr-5"></i><strong> <a class="link-dark" href="/welcome/terms_of_service" style="color: #777777;" target="_blank">이용약관</a> | <a class="link-dark" href="/welcome/personal_information" style="text-decoration: underline!important;" target="_blank">개인정보처리방침</a></strong></li>
@@ -1169,5 +1160,5 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
 </script>
 <script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"24c0684dfaa9483a9ff2b683fac3f4a4","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9caee7d8d8ae132d',t:'MTc3MDU5MzMzMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9ce88ef21f043910',t:'MTc3MTE5Nzg2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
