@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>ITFIND - IT 지식포털</title>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="responsive web" property="og:type"/>
+<meta content="ITFIND - IT 지식포털" property="og:title"/>
+<meta content="/contents/main_images/comm/og_image-1.jpg" property="og:image"/>
+<meta content="정보통신기획평가원(IT지식포털)" name="description"/>
+<meta content="c2b89a1654e15373448ff4c02c299ca9f6872fd9" name="naver-site-verification"/>
+<meta content="정보통신기획평가원; IT지식포털;" name="Keywords"/>
+<meta content="font-src 'self' data:; default-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com ssl.daumcdn.net t1.daumcdn.net stats.g.doubleclick.net; style-src 'self'  'unsafe-inline' 'unsafe-eval' t1.daumcdn.net;  img-src * " http-equiv="Content-Security-Policy"/>
+<link href="/contents/main_images/comm/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/contents/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet"/>
+<link href="/contents/main_vendors/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/contents/main_vendors/rd-navbar-2.1.8/dist/css/rd-navbar.css" rel="stylesheet"/>
+<link href="/contents/main_css/animation.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/main_css/layout.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/main_css/main-content.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/main_css/slick.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/css/new_base.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/css/sub_cont.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/css/login.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/common.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/layout.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/nav.css?ver=2026-03-02" rel="stylesheet"/>
+<link href="/contents/js/jquery-ui/jquery-ui.css" rel="stylesheet"/>
+<script src="/contents/main_js/core.min.js"></script>
+<script src="/contents/main_js/easings.min.js"></script>
+<script src="/contents/main_vendors/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+<script src="/contents/main_vendors/swiper-11.0.7/package/swiper-bundle.min.js"></script>
+<script src="/contents/js/jquery-3.7.1.js"></script>
+<script src="/contents/js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
+<script defer="" src="/contents/js/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+<script defer="" src="/contents/js/jquery-validation-1.19.5/src/localization/messages_ko.js"></script>
+<script src="/contents/js/func.js?ver=2026-03-02"></script>
+<script src="/contents/js/common.js?ver=2026-03-02"></script>
+<script src="/contents/js/action.js?ver=2026-03-02"></script>
+<script src="/contents/nav_common/nav_js/core.min.js"></script>
+<script src="/contents/js/google_analytics.js"></script>
+</head>
+<body>
+<header class="rd-navbar-wrap">
+<nav class="rd-navbar" data-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-sm-device-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-xl-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static">
+<div class="rd-navbar-inner">
+<!-- RD Navbar Panel -->
+<div class="rd-navbar-panel">
+<div class="rd-navbar-panel-canvas"></div>
+<!-- RD Navbar Toggle -->
+<button aria-label="메뉴열기" class="rd-navbar-toggle" data-rd-navbar-toggle=".itf-rd-navbar-nav-wrap" title="메뉴열기"><span></span></button>
+</div>
+<!-- RD Navbar Brand -->
+<div class="rd-navbar-brand">
+<h1><a class="brand" href="/main.do">ITFIND - IT 지식포털</a></h1>
+</div>
+</div>
+<div class="rd-navbar-outer">
+<div class="rd-navbar-inner">
+<div class="rd-navbar-subpanel">
+<div class="itf-rd-navbar-nav-wrap"></div>
+</div>
+</div>
+</div>
+<!-- 오른쪽 메뉴 -->
+<div class="itf-nav-sidemenu">
+<ul class="nav-member-box">
+<li><a href="/mypage/login.do">로그인</a></li>
+<li><a href="/ccenter/userRegist/join.do">회원가입</a></li>
+</ul>
+<div class="open-navigation">
+<button type="button"><span aria-label="사이트맵" class="sitemap-icon" title="사이트맵">사이트맵</span></button>
+<div class="MenuAll">
+<a class="MenuBtn" href="#">
+<span>메뉴열기</span>
+</a>
+<div class="right-Menu"></div>
+</div>
+</div>
+</div>
+<!-- 오른쪽 메뉴끝 -->
+</nav>
+</header>
+<script>
+$(function() {
+	var menuList = [
+		{ menuName: "최신 동향", menuUrl: "/trend/todayNews.do", childMenu: [
+				{ menuName: "오늘의 뉴스", menuUrl: "/trend/todayNews.do" },
+				{ menuName: "AI·ICT Brief", menuUrl: "/trend/ictBrief.do" },
+				{ menuName: "주간기술동향", menuUrl: "/trend/weekly/latestWeekly.do", childMenu: [
+						{ menuName: "최신 주간기술동향 바로보기", menuUrl: "/trend/weekly/latestWeekly.do" },
+						{ menuName: "주간기술동향 목록", menuUrl: "/trend/weekly/weekly.do" },
+						{ menuName: "주간기술동향 원고 모집", menuUrl: "/trend/weekly/recruit.do" },
+						{ menuName: "주간기술동향 메일진", menuUrl: "/trend/weekly/mailzine.do" },
+					]
+				},
+				{ menuName: "IITP 간행물", menuUrl: "/trend/iitp/mailzine.do", childMenu: [
+						{ menuName: "ITFIND 메일진", menuUrl: "/trend/iitp/mailzine.do" },
+						{ menuName: "IITP Digital Outlook", menuUrl: "/trend/iitp/digitalOutlook.do" },
+						{ menuName: "ICT Spot Issue", menuUrl: "/trend/iitp/ictSpotIssue.do" },
+						{ menuName: "ICT 10대 이슈", menuUrl: "/trend/iitp/ictTop10Issue.do" },
+						{ menuName: "IITP 디지털 통상 브리프", menuUrl: "/trend/iitp/usProtectBrief.do" },
+					]
+				},
+				{ menuName: "유관기관 간행물", menuUrl: "/trend/relatedOrgan.do" },
+				{ menuName: "IITP Tech Now", menuUrl: "/trend/iitpTechNow.do" },
+			]
+		},
+		{ menuName: "기술·산업 동향", menuUrl: "/technology/sector.do", childMenu: [
+				{ menuName: "분야별 기술·산업", menuUrl: "/technology/sector.do", childMenu: [
+						{ menuName: "AI", menuUrl: "/technology/sector.do?code=E_19_01" },
+						{ menuName: "AI반도체", menuUrl: "/technology/sector.do?code=E_19_03" },
+						{ menuName: "양자", menuUrl: "/technology/sector.do?code=E_19_07" },
+						{ menuName: "네트워크", menuUrl: "/technology/sector.do?code=E_19_05" },
+						{ menuName: "사이버보안", menuUrl: "/technology/sector.do?code=E_19_08" },
+						{ menuName: "디지털융합 ", menuUrl: "/technology/sector.do?code=E_19_09" },
+						{ menuName: "SW", menuUrl: "/technology/sector.do?code=E_19_02" },
+						{ menuName: "공간컴퓨팅(콘텐츠)", menuUrl: "/technology/sector.do?code=E_19_06" },
+						{ menuName: "스마트디바이스", menuUrl: "/technology/sector.do?code=E_19_04" },
+						{ menuName: "경제·사회", menuUrl: "/technology/sector.do?code=E_19_99" },
+					]
+				},
+				{ menuName: "지식재산", menuUrl: "/technology/patent.do", childMenu: [
+						{ menuName: "특허", menuUrl: "/technology/patent.do" },
+						{ menuName: "논문", menuUrl: "/technology/thesis.do" },
+						{ menuName: "표준", menuUrl: "/technology/standard.do" },
+					]
+				},
+			]
+		},
+		{ menuName: "정책", menuUrl: "/policy/sector.do", childMenu: [
+				{ menuName: "분야별 정책", menuUrl: "/policy/sector.do", childMenu: [
+						{ menuName: "AI", menuUrl: "/policy/sector.do?code=E_19_01" },
+						{ menuName: "AI반도체", menuUrl: "/policy/sector.do?code=E_19_03" },
+						{ menuName: "양자", menuUrl: "/policy/sector.do?code=E_19_07" },
+						{ menuName: "네트워크", menuUrl: "/policy/sector.do?code=E_19_05" },
+						{ menuName: "사이버보안", menuUrl: "/policy/sector.do?code=E_19_08" },
+						{ menuName: "디지털융합", menuUrl: "/policy/sector.do?code=E_19_09" },
+						{ menuName: "SW", menuUrl: "/policy/sector.do?code=E_19_02" },
+						{ menuName: "공간컴퓨팅(콘텐츠)", menuUrl: "/policy/sector.do?code=E_19_06" },
+						{ menuName: "스마트디바이스", menuUrl: "/policy/sector.do?code=E_19_04" },
+						{ menuName: "경제·사회", menuUrl: "/policy/sector.do?code=E_19_99" },
+					]
+				},
+				{ menuName: "ICT 통계", menuUrl: "/policy/statistics.do" },
+				{ menuName: "백서·연차보고서", menuUrl: "/policy/whitePaper.do", childMenu: [
+						{ menuName: "정보통신산업 진흥 연차보고서", menuUrl: "/policy/whitePaper.do?code=B_WPD_71" },
+						{ menuName: "국가정보화백서", menuUrl: "/policy/whitePaper.do?code=B_WPD_14" },
+						{ menuName: "한국인터넷백서 ", menuUrl: "/policy/whitePaper.do?code=B_WPD_18" },
+					]
+				},
+			]
+		},
+		{ menuName: "IITP 사업", menuUrl: "https://www.iitp.kr/web/lay1/program/S1T43C47/business/index.do", childMenu: [
+				{ menuName: "기술개발", menuUrl: "https://www.iitp.kr/web/lay1/program/S1T43C47/business/index.do" },
+				{ menuName: "인재양성", menuUrl: "https://www.iitp.kr/web/lay1/program/S1T43C48/business/index.do" },
+				{ menuName: "국제공동연구·표준화", menuUrl: "https://www.iitp.kr/web/lay1/program/S1T43C49/business/index.do" },
+				{ menuName: "기반조성·사업화", menuUrl: "https://www.iitp.kr/web/lay1/program/S1T43C50/business/index.do" },
+				{ menuName: "AI·ICT 연구지원 서비스", menuUrl: "https://www.iitp.kr/web/lay1/program/S1T45C139/ict_support/support.do" },
+			]
+		},
+		{ menuName: "세미나·포럼", menuUrl: "/seminar/seminar.do", childMenu: [
+				{ menuName: "행사 일정", menuUrl: "/seminar/seminar.do" },
+// 				{ menuName: "발표자료", menuUrl: "/seminar/presentation.do" },
+			]
+		},
+		{ menuName: "고객센터", menuUrl: "/ccenter/introPeriodical.do", childMenu: [
+// 				{ menuName: "ITFIND란?", menuUrl: "/ccenter/introItfind.do" },
+				{ menuName: "IITP 발간자료 안내", menuUrl: "/ccenter/introPeriodical.do" },
+				{ menuName: "메일링 서비스 신청", menuUrl: "/ccenter/mailzineSubscribe.do" },
+// 				{ menuName: "FAQ", menuUrl: "/ccenter/faq.do" },
+				{ menuName: "관련사이트", menuUrl: "/ccenter/relatedSite.do" },
+				{ menuName: "OPEN API", menuUrl: "/ccenter/openAPI.do" },
+				{ menuName: "ITFIND RSS", menuUrl: "/ccenter/itfindRss.do" },
+				{ menuName: "찾아오시는길", menuUrl: "/ccenter/loadmap.do" },
+			]
+		}
+	];
+	
+	$(".itf-rd-navbar-nav-wrap").append(createMenu(menuList, 1, "TOP"));
+	$(".right-Menu").append(createMenu(menuList, 1, "RIGHT"));
+	
+	if (!"/WEB-INF/config/tiles/layout/layout-default.jsp".includes("layout-main.jsp")) {
+		$("header.rd-navbar-wrap").addClass("sub-navbar");
+	}
+	
+	$(".itf-rd-navbar-nav").hover(function(e) {
+		$(".rd-navbar").addClass("nav-bg")
+	}, function(e) {
+		$(".rd-navbar").removeClass("nav-bg")
+	});
+	
+	$(".open-navigation").click(function() {
+		$(".MenuBtn").toggleClass("active");
+		$(".right-Menu").toggleClass("open");
+	});
+	
+	$(".MenuBtn").click(function() {
+		$(".MenuBtn").toggleClass("active");
+	});
+});
+
+function createMenu(menuList, depth, type) {
+	var ul = $('<ul></ul>');
+	
+	if (type == "TOP") {
+		if (depth == 1) {
+			ul.addClass("itf-rd-navbar-nav");
+		} else if (depth == 2) {
+			ul.addClass("rd-navbar-dropdown");
+			ul.addClass("twodepth-list");
+		} else if (depth == 3) {
+			ul.addClass("rd-navbar-dropdown");
+			ul.addClass("threedepth-list");
+		}
+	}
+	
+	menuList.forEach(function(menu){
+		var li = $('<li><a href="' + menu.menuUrl + '">' + menu.menuName + '</a></li>');
+		
+		if (menu.menuUrl.includes("http")) {
+			li.find("a").attr("target", "_blank");
+		}
+		
+		if (menu.childMenu != null) {
+			li.append(createMenu(menu.childMenu, depth + 1, type));
+		}
+		
+		ul.append(li);
+		
+		if (/[a-zA-Z]/.test(menu.menuName)) {
+			if (15 <= menu.menuName.length) {
+				ul.addClass("thm02");
+			}
+		} else if (10 <= menu.menuName.length) {
+			ul.addClass("thm02");
+		}
+	});
+	
+	return ul;
+}
+</script>
+<script src="/contents/nav_common/nav_js/script.js"></script>
+<div class="itf-fullpage-wrapper" id="itf-fullpage">
+<script>
+function registData() {
+	if ("true" == "true") {
+		alert("로그인이 필요한 기능입니다.");
+	} else {
+		goToUrl("/seminar/seminarForm.do", "#searchForm");
+	}
+}
+</script>
+<article class="Cont" id="Cont">
+<h4>세미나·포럼 - 행사 일정</h4>
+<div class="ContArea">
+<ul class="TabMenu">
+<li class="M_on"><a href="/seminar/seminar.do?countryTab=">전체 세미나·포럼</a></li>
+<li class=""><a href="/seminar/seminar.do?countryTab=ko">국내 세미나·포럼</a></li>
+<li class=""><a href="/seminar/seminar.do?countryTab=etc">국외 세미나·포럼</a></li>
+</ul>
+<form action="/seminar/seminar.do" id="searchForm" method="get">
+<input name="countryTab" type="hidden" value=""/>
+<input id="pageNo" name="pageNo" type="hidden" value="1"/>
+<div class="tablestyle01">
+<table>
+<caption>통합 검색</caption>
+<colgroup>
+<col style="width:20%"/>
+<col style="width:80%"/>
+</colgroup>
+<tbody>
+<tr>
+<th scope="row">검색</th>
+<td class="searchList">
+<label class="Hidden" for="searchText">검색어입력</label>
+<input class="w100p" id="searchText" name="searchText" placeholder="검색어 입력" type="text" value=""/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="btngruopR">
+<button class="btnstyle01" onclick="initPageNo()" type="submit">검색</button>
+</div>
+<div class="BoardHeader">
+<div class="BoardCount">
+<span>총 게시물 : <strong>4,065건</strong></span>
+<span>현재페이지 : 
+						<strong>
+							1
+							/
+							407
+						</strong>
+</span>
+<select name="recordCountPerPage" onchange="goToPage(1)" title="건 수 선택">
+<option selected="" value="10">10개씩 보기</option>
+<option value="20">20개씩 보기</option>
+<option value="30">30개씩 보기</option>
+<option value="40">40개씩 보기</option>
+<option value="50">50개씩 보기</option>
+</select>
+</div>
+</div>
+</form>
+<table class="BoardList">
+<caption class="Hidden">전체 세미나&amp;컨퍼런스 목록-번호, 구분, 제목, 행사기간, 접수기간 제공</caption>
+<colgroup>
+<col style="width:100px;"/>
+<col style="width:80px;"/>
+<col style="width:120px;"/>
+<col style="width:auto;"/>
+<col style="width:250px;"/>
+<col style="width:250px;"/>
+</colgroup>
+<thead>
+<tr>
+<th scope="col">번호</th>
+<th scope="col">구분</th>
+<th scope="col">개최국</th>
+<th scope="col">제목</th>
+<th scope="col">행사기간</th>
+<th scope="col">접수기간</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4065
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14643">
+										2026 AI 전력시장에 대응하는 ESS  기술 혁신 컨퍼런스
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-19 ~ 2026-03-19</td>
+<td data-cell-header="접수기간">2026-02-11 ~ 2026-03-19</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4064
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">미국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14637">
+										NVIDIA GTC 2026
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-16 ~ 2026-03-19</td>
+<td data-cell-header="접수기간">2026-01-01 ~ 2026-03-13</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4063
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14647">
+										Display Korea 2026  
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-12 ~ 2026-03-13</td>
+<td data-cell-header="접수기간">2026-02-01 ~ 2026-03-10</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4062
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">중국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14648">
+										2026 중국 광저우 산업 자동화 전시회
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-04 ~ 2026-03-06</td>
+<td data-cell-header="접수기간">2026-02-01 ~ 2026-03-03</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4061
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">영국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14645">
+										Data Centre World London 2026
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-04 ~ 2026-03-05</td>
+<td data-cell-header="접수기간">2026-02-01 ~ 2026-03-03</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4060
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14644">
+										2026 스마트공장 · 자동화산업전(AW 2026)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-04 ~ 2026-03-06</td>
+<td data-cell-header="접수기간">2026-02-01 ~ 2026-03-06</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4059
+								</th>
+<td data-cell-header="구분">진행</td>
+<td data-cell-header="개최국">스페인</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14636">
+										MWC(Mobile World Congress) 2026 
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-02 ~ 2026-03-05</td>
+<td data-cell-header="접수기간">2025-11-01 ~ 2025-11-30</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4058
+								</th>
+<td data-cell-header="구분">종료</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14646">
+										서울AI페스티벌 2026
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-02-28 ~ 2026-02-01</td>
+<td data-cell-header="접수기간">2026-01-05 ~ 2026-02-27</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4057
+								</th>
+<td data-cell-header="구분">종료</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14642">
+										2026 한국전자파학회 동계학술대회
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-02-25 ~ 2026-02-28</td>
+<td data-cell-header="접수기간">2025-12-18 ~ 2026-02-05</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4056
+								</th>
+<td data-cell-header="구분">종료</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14641">
+										2026 한국양자정보학회 정기학술대회 및 정기총회
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-02-25 ~ 2026-02-27</td>
+<td data-cell-header="접수기간">2025-10-16 ~ 2026-01-31</td>
+</tr>
+</tbody>
+</table>
+<!-- 		<div class="btngruopR"> -->
+<!-- 			<button type="button" class="btnstyle01" onclick="registData()">등록</button> -->
+<!-- 		</div> -->
+<div class="Paging">
+<a class="BtnFirst off" href="javascript:void(0);">이전</a><a class="BtnForward off" href="javascript:void(0);">이전</a><div class="No_PC"> <a class="M_on">1</a> <a href="javascript:void(0);" onclick="goToPage(2);">2</a> <a href="javascript:void(0);" onclick="goToPage(3);">3</a> <a href="javascript:void(0);" onclick="goToPage(4);">4</a> <a href="javascript:void(0);" onclick="goToPage(5);">5</a></div><div class="No_Mobile"> <strong>1</strong>/407</div><a class="BtnNext" href="javascript:void(0);" onclick="goToPage(2);">다음</a><a class="BtnLast" href="javascript:void(0);" onclick="goToPage(407);">다음</a>
+</div>
+</div>
+</article>
+</div>
+<div>
+<h1 class="h1-txt">copyright</h1>
+<footer>
+<div class="footer-top">
+<div class="itf-footer-con">
+<div class="foot-menu">
+<ul class="list-inline-box">
+<li class="list-inline-item"><a href="/ccenter/personalInformationPolicy/personalInformationPolicy2025_v2.do" target="_blank" title="새창으로 열림">개인정보처리방침</a></li> <!-- 개인정보처리방침링크 -->
+<li class="list-inline-item"><a href="/ccenter/siteAgreement.do" target="_blank" title="새창으로 열림">이용약관</a></li> <!-- 이용약관링크 -->
+<li class="list-inline-item"><a href="/ccenter/loadmap.do" target="_blank" title="새창으로 열림">찾아오시는길</a></li> <!-- 찾아오시는길링크 -->
+</ul>
+</div>
+<div class="fam-link-box">
+<div class="gray-fam-link">
+<div class="fam-link">
+<div class="fam-con" tabindex="0">
+<span class="fs16">내부사이트 바로가기 <img alt="" class="sns-icon-arrow" src="/contents/main_images/visual/sns-icon-arrow.png"/></span>
+</div>
+<ul class="fam-ul">
+<li class="fs14"><a href="https://www.iitp.kr/" target="_blank" title="새창으로 열림">정보통신기획평가원</a></li><!-- 정보통신기획평가원링크 -->
+</ul>
+</div>
+</div>
+<div class="blue-fam-link">
+<div class="fam-link">
+<a class="fam-con" href="/ccenter/relatedSite.do" tabindex="0">
+<span class="fs16">유관기관 바로가기 <img alt="" class="sns-icon-arrow" src="/contents/main_images/visual/sns-icon-arrow.png"/></span><!-- 유관기관 바로가기링크 -->
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<div class="footer-bottom-logo">
+<a class="footer-bottom-list" href="https://www.facebook.com/iitpkr" target="_blank"> <!-- 페이스북 링크 -->
+<img alt="페이스북" class="footer-bottom-logo-img" src="/contents/main_images/visual/footer-bottom-logo-2.png">
+</img></a>
+<a class="footer-bottom-list" href="/ccenter/itfindRss.do"> <!-- RSS 링크 -->
+<img alt="RSS" class="footer-bottom-logo-img" src="/contents/main_images/visual/footer-bottom-logo-1.png">
+</img></a>
+</div>
+<div class="company-info-box">
+<div>
+<ul class="list-inline-box">
+<li class="list-inline-item">대전광역시 유성구 유성대로 1548 (정보통신기획평가원) <span> </span>
+<span id="managerName"></span>
+<span id="managerTel"></span>
+<span id="managerEmail">E-mail : <a href="mailto:key@iitp.kr">key@iitp.kr</a></span>
+</li>
+</ul>
+</div>
+</div>
+<div class="copyright">All rights reserved ⓒ 정보통신기획평가원</div>
+<div class="related-organization-box">
+<a class="related-organization-lnk" href="https://www.msit.go.kr/index.do" target="_blank" title="새창으로 열림"> <!-- 과학기술정보통신부링크 -->
+<img alt="과학기술정보통신부" src="/contents/main_images/visual/related-organization-1.png"/>
+</a>
+<a class="related-organization-lnk" href="https://www.iitp.kr/" target="_blank" title="새창으로 열림"> <!-- 정보통신기획평가원링크 -->
+<img alt="정보통신기획평가원" src="/contents/main_images/visual/related-organization-2.png"/>
+</a>
+</div>
+</div>
+</footer>
+</div>
+<script>
+$(document).ready(function() {
+	$.ajax({
+		url : "/common/selectItfindManager.do",
+		type : "GET",
+		data : null,
+		dataType : "json",
+		success : function(result, status){
+			if (result.itfindManager.managerNm != "") {
+				$("#managerName").html(result.itfindManager.managerNm);
+			}
+			
+			if (result.itfindManager.managerTel != "") {
+				$("#managerTel").html('Tel : ' + result.itfindManager.managerTel);
+			}
+			
+			if (result.itfindManager.managerEmail != "") {
+				$("#managerEmail").html('E-mail : <a href="mailto:'
+						+ result.itfindManager.managerEmail + '">'
+						+ result.itfindManager.managerEmail + '</a>');
+			}
+		}
+	});
+	
+	$(".fam-con").click(function() {
+		// 현재 클릭된 `.fam-con`의 부모 내 `.fam-ul`만 열기
+		$(this).siblings(".fam-ul").toggleClass("open");
+	
+		// 다른 모든 `.fam-ul`은 닫기
+		$(".fam-ul").not($(this).siblings(".fam-ul")).removeClass("open");
+	});
+	
+	$(".fam-con").keydown(function(e) {
+		if (e.key === "Enter") {
+			// 현재 클릭된 `.fam-con`의 부모 내 `.fam-ul`만 열기
+			$(this).siblings(".fam-ul").toggleClass("open");
+	
+			// 다른 모든 `.fam-ul`은 닫기
+			$(".fam-ul").not($(this).siblings(".fam-ul")).removeClass("open");
+		}
+	});
+});	
+</script>
+</body>
+</html>
