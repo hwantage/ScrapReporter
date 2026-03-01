@@ -3,7 +3,7 @@
 
 <html lang="ko">
 <head>
-<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="523e898f-3768-4c0f-82f5-36622a8431c7" name="_csrf"/>
+<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="5feb915d-e9e9-4343-8678-ab7a471d2fac" name="_csrf"/>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport"/>
@@ -39,8 +39,8 @@
 <script src="/lib/js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
 <script>
 		var site_id = 1;
-		var getIp = '20.130.0.60'
-		var getId = 'E8F0C6115B3FEBCD4E5E8F02814CA67F'
+		var getIp = '20.130.1.171'
+		var getId = 'D1A2B3363991CABA052236F5B9E6B910'
 	</script>
 </head>
 <body>
@@ -1219,7 +1219,7 @@
 					</div>
 <div class="com_board_area sty2 m_info_slide_area">
 <div class="list">
-<a :href="getLink(item)" :key="idx" class="box" v-for="(item, idx) in  all_board_list">
+<a :href="getLink(item)" :key="idx" :target="item.board_seq == 991 ? '_blank' : null" class="box" v-for="(item, idx) in  BoardAllList">
 <div class="skeletion_loading" v-if="bbsloading">
 <div class="skeleton_img"></div>
 </div>
@@ -1229,7 +1229,7 @@
 <div class="new" v-if="item.new_yn === 'Y'">NEW</div>
 </div>
 </div>
-<div class="tit">{{item.title}}</div>
+<div class="tit">{{decodeHtmlEntities(item.title)}}</div>
 <div class="info_area">
 <div class="row">
 <div class="date">{{item.reg_dt}}</div>
