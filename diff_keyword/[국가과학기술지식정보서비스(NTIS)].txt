@@ -1450,10 +1450,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="76442">
+<input id="totalCount" name="totalCount" type="hidden" value="76438">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>76,442건</span></h3>
+<h3 class="t_head">검색결과 <span>76,438건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1506,12 +1506,47 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2026년도 차세대융복합프리폼디스플레이핵심기술개발사업 신규과제 재공모_(2026)2026년도 차세대융복합프리폼디스플레이핵심기술개발사업 신규과제 재공모" type="checkbox" value="1257776"/></td>
+<td><input name="selectCheckList" title="2026년 KISTEP 기본사업 위탁연구과제 공모(임무중심 혁신정책 관점에서 임무목표 달성을 위한 정책-투자 분석 및 개선 방안 연구)" type="checkbox" value="1258404"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76442
+                            76438
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1258404&amp;flag=rndList" onclick="javascript:fn_view('1258404'); return false;" title="2026년 KISTEP 기본사업 위탁연구과제 공모(임무중심 혁신정책 관점에서 임무목표 달성을 위한 정책-투자 분석 및 개선 방안 연구)"> 2026년 KISTEP 기본사업 위탁연구과제 공모(임무중심 혁신정책 관점에서 임무목표 달성을 위한 정책-투자 분석 및 개선 방안 연구)
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.03.12</td>
+<td data-title="마감일">2026.04.10</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-26
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 차세대융복합프리폼디스플레이핵심기술개발사업 신규과제 재공모_(2026)2026년도 차세대융복합프리폼디스플레이핵심기술개발사업 신규과제 재공모" type="checkbox" value="1257776"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76437
+                        </td>
+<td data-title="현황">
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1523,13 +1558,12 @@ $(function(){
 <td data-title="접수일">2026.03.04</td>
 <td data-title="마감일">2026.03.13</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="[중개-7] 뇌졸중으로 인한 장애인의 자발적 재활을 위한 센서 기반 운동 학습 평가 및 AI회복 예측 기술의 실사용 환경에서의 중개연구 및 인증" type="checkbox" value="1257762"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76441
+                            76436
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1556,7 +1590,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-19
+                                    D-12
                                 
 
                             </td>
@@ -1564,7 +1598,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="[중개-4] 실내 재활을 위한 이동식(Portable) 발목재활로봇시스템 중개연구 및 인허가" type="checkbox" value="1257754"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76440
+                            76435
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1579,30 +1613,16 @@ $(function(){
 <td data-title="접수일">2026.03.18</td>
 <td data-title="마감일">2026.03.20</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-12
-                                
-
-                            </td>
+<span style="color: red">D - 5</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="[중개-3] 보행 환경 변화에 실시간 대처가 가능한 AI기반 Assisted-as-Needed 기능을 가진 하지재활로봇 중개연구" type="checkbox" value="1257753"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76439
+                            76434
                         </td>
 <td data-title="현황">
-<span style="color: blue;">접수예정</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1614,13 +1634,12 @@ $(function(){
 <td data-title="접수일">2026.03.10</td>
 <td data-title="마감일">2026.03.12</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 4</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="차세대 해양·극지의 환경 및 생태계에 관한 기후예측시스템 개발사업 재공고" type="checkbox" value="1257468"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76438
+                            76433
                         </td>
 <td data-title="현황">
 <span>마감</span>
@@ -1640,7 +1659,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="(재공고-국-제25호) 2026년 건설 전주기 안전혁신 기술개발 사업 시행 재공고" type="checkbox" value="1257465"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76437
+                            76432
                         </td>
 <td data-title="현황">
 <span>마감</span>
@@ -1660,7 +1679,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="[중개-8] 상지 또는 체간 재활을 위한 지능형 전기자극 및 로봇 연동이 가능한 멀티 모달 중재시스템 중개연구 및 인허가" type="checkbox" value="1257755"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76436
+                            76431
                         </td>
 <td data-title="현황">
 <span style="color: blue;">접수예정</span>
@@ -1675,30 +1694,16 @@ $(function(){
 <td data-title="접수일">2026.03.17</td>
 <td data-title="마감일">2026.03.19</td>
 <td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-11
-                                
-
-                            </td>
+<span style="color: red">D - 4</span>
+</td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2026년도 창업성장기술개발사업(디딤돌) 제2차 시행계획 공고" type="checkbox" value="1257261"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76435
+                            76430
                         </td>
 <td data-title="현황">
-<span style="color: blue;">접수예정</span>
+<span style="color: red;">접수중</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1722,7 +1727,7 @@ $(function(){
                                     
                                     
                                     
-                                    D-26
+                                    D-19
                                 
 
                             </td>
@@ -1730,7 +1735,7 @@ $(function(){
 <tr>
 <td><input name="selectCheckList" title="2026년도 Net-zero구현초격차태양전지개발 사업 신규과제 재공모" type="checkbox" value="1257221"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76434
+                            76429
                         </td>
 <td data-title="현황">
 <span>마감</span>
@@ -1747,41 +1752,6 @@ $(function(){
 <td class="end" data-title="D-day">
 </td>
 </tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 (탄소융복합소재부품) 장비국산화 지원사업  신규지원 대상과제 공고_(2026)장비국산화지원사업" type="checkbox" value="1256524"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76433
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256524&amp;flag=rndList" onclick="javascript:fn_view('1256524'); return false;" title="2026년도 (탄소융복합소재부품) 장비국산화 지원사업  신규지원 대상과제 공고_(2026)장비국산화지원사업"> 2026년도 (탄소융복합소재부품) 장비국산화 지원사업  신규지원 대상과제 공고_(2026)장비국산화지원사업
-                                </a>
-</div>
-</td>
-<td data-title="부처명">산업통상부</td>
-<td data-title="접수일">2026.02.24</td>
-<td data-title="마감일">2026.03.25</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-17
-                                
-
-                            </td>
-</tr>
 </tbody>
 </table>
 <!-- end # 공고목록 -->
@@ -1793,7 +1763,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7645" onclick="fn_search(7645);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7644" onclick="fn_search(7644);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
