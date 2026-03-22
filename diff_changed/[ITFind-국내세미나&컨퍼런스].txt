@@ -18,16 +18,16 @@
 <link href="/contents/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/rd-navbar-2.1.8/dist/css/rd-navbar.css" rel="stylesheet"/>
-<link href="/contents/main_css/animation.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/main_css/layout.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/main_css/main-content.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/main_css/slick.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/css/new_base.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/css/sub_cont.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/css/login.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/common.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/layout.css?ver=2026-03-16" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/nav.css?ver=2026-03-16" rel="stylesheet"/>
+<link href="/contents/main_css/animation.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/main_css/layout.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/main_css/main-content.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/main_css/slick.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/css/new_base.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/css/sub_cont.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/css/login.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/common.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/layout.css?ver=2026-03-23" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/nav.css?ver=2026-03-23" rel="stylesheet"/>
 <link href="/contents/js/jquery-ui/jquery-ui.css" rel="stylesheet"/>
 <script src="/contents/main_js/core.min.js"></script>
 <script src="/contents/main_js/easings.min.js"></script>
@@ -37,9 +37,9 @@
 <script src="/contents/js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/src/localization/messages_ko.js"></script>
-<script src="/contents/js/func.js?ver=2026-03-16"></script>
-<script src="/contents/js/common.js?ver=2026-03-16"></script>
-<script src="/contents/js/action.js?ver=2026-03-16"></script>
+<script src="/contents/js/func.js?ver=2026-03-23"></script>
+<script src="/contents/js/common.js?ver=2026-03-23"></script>
+<script src="/contents/js/action.js?ver=2026-03-23"></script>
 <script src="/contents/nav_common/nav_js/core.min.js"></script>
 <script src="/contents/js/google_analytics.js"></script>
 </head>
@@ -303,7 +303,7 @@ function registData() {
 </div>
 <div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>4,074건</strong></span>
+<span>총 게시물 : <strong>4,077건</strong></span>
 <span>현재페이지 : 
 						<strong>
 							1
@@ -344,7 +344,21 @@ function registData() {
 <tbody>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4074
+									4077
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14660">
+										IICC 2026 지능정보 및 제어 학술대회
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-04-22 ~ 2026-04-24</td>
+<td data-cell-header="접수기간">2026-03-01 ~ 2026-04-10</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4076
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
@@ -358,7 +372,21 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4073
+									4075
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14658">
+										AI·ICT Convergence Korea 2026  
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-04-01 ~ 2026-04-02</td>
+<td data-cell-header="접수기간">2026-03-03 ~ 2026-03-20</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4074
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
@@ -372,7 +400,7 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4072
+									4073
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">프랑스</td>
@@ -383,6 +411,20 @@ function registData() {
 </td>
 <td data-cell-header="행사기간">2026-03-30 ~ 2026-04-01</td>
 <td data-cell-header="접수기간">2026-03-08 ~ 2026-03-29</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4072
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14659">
+										디지털 마케팅 서밋 2026
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-03-24 ~ 2026-03-25</td>
+<td data-cell-header="접수기간">2026-03-01 ~ 2026-03-24</td>
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
@@ -402,7 +444,7 @@ function registData() {
 <th data-cell-header="번호" scope="row">
 									4070
 								</th>
-<td data-cell-header="구분">예정</td>
+<td data-cell-header="구분">종료</td>
 <td data-cell-header="개최국">한국</td>
 <td data-cell-header="제목">
 <a href="/seminar/seminarDetail.do?id=14643">
@@ -416,7 +458,7 @@ function registData() {
 <th data-cell-header="번호" scope="row">
 									4069
 								</th>
-<td data-cell-header="구분">예정</td>
+<td data-cell-header="구분">종료</td>
 <td data-cell-header="개최국">한국</td>
 <td data-cell-header="제목">
 <a href="/seminar/seminarDetail.do?id=14656">
@@ -430,7 +472,7 @@ function registData() {
 <th data-cell-header="번호" scope="row">
 									4068
 								</th>
-<td data-cell-header="구분">예정</td>
+<td data-cell-header="구분">종료</td>
 <td data-cell-header="개최국">중국</td>
 <td data-cell-header="제목">
 <a href="/seminar/seminarDetail.do?id=14651">
@@ -439,48 +481,6 @@ function registData() {
 </td>
 <td data-cell-header="행사기간">2026-03-18 ~ 2026-03-21</td>
 <td data-cell-header="접수기간">2026-03-01 ~ 2026-03-18</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4067
-								</th>
-<td data-cell-header="구분">진행</td>
-<td data-cell-header="개최국">미국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14650">
-										미국 라스베이거스 무선통신 박람회(IWCE 2026) 
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-03-16 ~ 2026-03-19</td>
-<td data-cell-header="접수기간">2026-03-01 ~ 2026-03-15</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4066
-								</th>
-<td data-cell-header="구분">진행</td>
-<td data-cell-header="개최국">미국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14637">
-										엔비디아 GTC(NVIDIA GPU Technology Conference) 2026
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-03-16 ~ 2026-03-19</td>
-<td data-cell-header="접수기간">2026-01-01 ~ 2026-03-13</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4065
-								</th>
-<td data-cell-header="구분">종료</td>
-<td data-cell-header="개최국">싱가포르</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14652">
-										싱가포르 IT 박람회(IT Show 2026)
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-03-12 ~ 2026-03-15</td>
-<td data-cell-header="접수기간">2026-03-01 ~ 2026-03-10</td>
 </tr>
 </tbody>
 </table>
