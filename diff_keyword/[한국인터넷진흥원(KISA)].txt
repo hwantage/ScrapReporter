@@ -38,7 +38,7 @@
 <meta content="/resource/kor/favicon/ms-icon-144x144.png" name="msapplication-TileImage"/>
 <meta content="#ffffff" name="theme-color"/>
 <!--favicon 추가 끝-->
-<link href="/resource/kor/css/style.css?p=23" media="all" rel="stylesheet" type="text/css">
+<link href="/resource/kor/css/style.css?p=24" media="all" rel="stylesheet" type="text/css">
 <link href="/resource/common/css/xeicon.min.css" media="all" rel="stylesheet"/>
 <link href="/resource/kor/css/jquery.fullpage.min.css" media="all" rel="stylesheet" type="text/css">
 <link href="/resource/common/css/swiper.css" media="all" rel="stylesheet">
@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1396; // 전체 조회 건수
+	var totalNum = 1402; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -188,7 +188,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1396</b>건
+<span>총 <b>1402</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -227,10 +227,22 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3623&amp;page=1">GITEX EUROPE 2026 전시참여 기업 모집 재공고(3.24(화) ~ 4.7.(화) 14:00까지</a>
+</td>
+<td class="date">2026-03-24</td>
+<td class="count">2518</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3623', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3621&amp;page=1">2026년도 과기정통부-산업부-중기부 주요 AX 사업 통합공고</a>
 </td>
 <td class="date">2026-03-19</td>
-<td class="count">2305</td>
+<td class="count">8272</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3621', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -242,9 +254,21 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3620&amp;page=1">2026년 AI 기반 차세대 보안 제품 상용화 지원사업_Type1 모집·공고(~4.17.(금) 14시까지)</a>
 </td>
 <td class="date">2026-03-19</td>
-<td class="count">2287</td>
+<td class="count">6781</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3620', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3619&amp;page=1">2026년 제로트러스트 도입·전환 컨설팅 수요처 모집(~4/20 14:00)</a>
+</td>
+<td class="date">2026-03-19</td>
+<td class="count">3512</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3619', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
 </td>
@@ -254,7 +278,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3617&amp;page=1">2026년 마이데이터 서비스 지원사업 공모(~4.13 14:00)</a>
 </td>
 <td class="date">2026-03-11</td>
-<td class="count">5367</td>
+<td class="count">7536</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3617', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -266,7 +290,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3616&amp;page=1">2026년 공급망 보안 모델 구축 지원사업 공고 (~4.9.(목) 14:00)</a>
 </td>
 <td class="date">2026-03-10</td>
-<td class="count">6664</td>
+<td class="count">9124</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3616', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
@@ -278,7 +302,7 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3615&amp;page=1">2026년 양자내성암호 시범전환 사업 참가기업 모집 재공모</a>
 </td>
 <td class="date">2026-03-10</td>
-<td class="count">4869</td>
+<td class="count">5860</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3615', 2, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
@@ -290,57 +314,33 @@ function oneDepMenu() {
 <td class="sbj txtL"><a href="/401/form?postSeq=3614&amp;page=1">2026년 정보보호제품 신속확인제 수수료 지원 사업 안내</a>
 </td>
 <td class="date">2026-03-10</td>
-<td class="count">4215</td>
+<td class="count">4744</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3614', 1, 'KO');">
-<img alt="첨부파일 HWP" src="/resource/kor/images/common/hwp.png"/>
-</a>
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3613&amp;page=1">GITEX EUROPE 2026 전시참여 기업 모집 공고(3.9(월) ~ 3.20.(금) 14:00까지)</a>
-</td>
-<td class="date">2026-03-09</td>
-<td class="count">3861</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3613', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
 </td>
 </tr>
 <tr>
-<td class="num">1389</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3619&amp;page=1">2026년 제로트러스트 도입·전환 컨설팅 수요처 모집(~4/20 14:00)</a>
+<td class="num">1394</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3627&amp;page=1">2026년 블록체인 기업성장허브 입주기업 모집(~4월 9일(금), 16:00까지)</a>
 </td>
-<td class="date">2026-03-19</td>
-<td class="count">731</td>
+<td class="date">2026-03-26</td>
+<td class="count">559</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3619', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3627', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
 <tr>
-<td class="num">1388</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3618&amp;page=1">2026년 개인정보 이노베이션 존 운영기관 지정 공모(기한연장, ~3.27, 18시까지)</a>
+<td class="num">1393</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3626&amp;page=1">2026년 국가 망 보안체계(N2SF) 도입 지원사업 모집 공고(~4.27.(월) 14:00)</a>
 </td>
-<td class="date">2026-03-16</td>
-<td class="count">1017</td>
+<td class="date">2026-03-26</td>
+<td class="count">1380</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3618', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1387</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3612&amp;page=1">'AI기반 침해대응체계 구축을 위한 GPU 서버 도입' 사업 설명회(3.12)</a>
-</td>
-<td class="date">2026-03-09</td>
-<td class="count">2133</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3612', 1, 'KO');">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3626', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
 </a>
 </td>
@@ -370,10 +370,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2026-03-20</dd>
+<dd>2026-03-27</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="5f6d5f1e-578f-45fd-8cd9-c283a0d55eb6">
+<input name="_csrf" type="hidden" value="39d0a9dd-5bf0-4be8-9be6-c361ee1c3cdf">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -396,7 +396,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "5f6d5f1e-578f-45fd-8cd9-c283a0d55eb6");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "39d0a9dd-5bf0-4be8-9be6-c361ee1c3cdf");
             },			
 			success: function(data) {
 				alert(data.message)

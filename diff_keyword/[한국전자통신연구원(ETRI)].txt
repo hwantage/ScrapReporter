@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
@@ -27,7 +26,7 @@ $(document).ready(function(){
     
 });
 function login(){
-    window.open('https://csc.etri.re.kr/home/common/search/commonLogin.jsp?siteCode=02&amp;returnURL='+returnURL,'login','width=400px,height=205px');
+    window.open('http://cscdev.etri.re.kr/home/common/search/commonLogin.jsp?siteCode=02&amp;returnURL='+returnURL,'login','width=400px,height=205px');
 }
 function login2(){
     window.open('/pcmx/login2.do','login','width=610px,height=350px');
@@ -38,10 +37,10 @@ function infoOpen() {
 
 function logout(){
     loginSSo.returnURL.value = encodeURIComponent("https://pcm.etri.re.kr/pcmx/logout.do");
-    loginSSo.action = "http://hso.etri.re.kr/hmcm/sso/SSOLogout.do";
+    loginSSo.action = "https://hsodev.etri.re.kr/hmcm/sso/SSOLogout.do";
 
     loginSSo.submit();
-    //location.href="http://hso.etri.re.kr/hmcm/sso/SSOLogout.do?returnURL=https%3A%2F%2Fpcm.etri.re.kr%2Fpcmx%2Flogout.do";
+    //location.href="https://hsodev.etri.re.kr/hmcm/sso/SSOLogout.do?returnURL=https%3A%2F%2Fpcm.etri.re.kr%2Fpcmx%2Flogout.do";
 }
 function oldPopup(){
     var option = new Object();
@@ -133,8 +132,8 @@ function fnAnnoView(key){
 </script>
 </head>
 <body>
-<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIqUsDANpGVbbvweUI03BtVOnwpXwzG9/N9ECw+j5a4mvynWYqPS42AOGi7o63lAdrEEHOCO+k0oJRxZerw/znIcZal8uiY3LnWmK3wJQyxyQuGHKrgN3fpjIqjxKE2rhDbw4EfadGN+Ah1HXW92ac5cf3ZW3Xrltl4YlVl2PvPGJ/Ncg9sdmdoA+37ARkom8ew3bddE8bD6Uglbe+L6YUw5h5Tcb/YKm4WKHAKltapVlvVnHUN4XV2B9zD7qOZDOWRE4B6K+d0nD67Pn06o7lz7nV7+ZRm+QiND17paAXZ3r+5lae4hQXuVsDdFiIg0u2MxXUGd6yRO+3I+k1CrNCW2K0O1nKc7Ju9V6I09V1a3QZ65SuCk8lJ3G2TLB/HBbhDpK39Dre6rxqQF/0WAfsO0f+T9EHUrG28jFmx2maFpdVN/pQF++zpB5CkeGCALIyo+TY8jVAwzq0wLQ9IxiBxa+jOJS8/3DWNaiV3LIK02U/HQ9XEicl4Wy3xGS8OPpZqscV690AHxya+StrczfBjHkc05xrQMSwt+hjIa9pGlw="/>
-<input name="csSignature" type="hidden" value="vov7Osf/OfslDxCAtFqM8A=="/>
+<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIaTbtI8PE8RiWVKw72/IOTQ216G/5lGFFOQLN/BG90sgiGNc++iweVE6vqYwzHdMUIguC4U1SzI8dDLoUChuYdq6dhAbv/zI/uYr+AqlhjbpCs4uYbdosUGsvPNlSXSwwwpTv6uDxoUvJzfO0ymjEazcMGfrea+fOEp/UGqcU5uxMwTL/2bBp9JxApUdCmcrAo8QyoIlPfKgWOBaXQdLssQFPj64Jj1VzTjK1mjHz81Tx9b0JcbGXjuzNOHKl8sZS7ReDcafgWrNxMIstHz9wmlaP6Oxyiq7FnFdXCbefzle8nU9sQlgsG+M8PmzcyReIgg315t3U5LPOYNtONOg/bDdrzJ0d9SWPmimoJt8s9VpX1fn5HYOLTvtIXMxWP1OCVM8xD2WyLEjz7mP+LJoSuUL+szlv37Rx28WotklvQ5XEHeCbOinHrHqKPwWCniLDGjyXAv3T6/hT9MmXecTWZlcLcc4xMGXiswRBWgJ9EK4bkx0LZjCNHj0BNZyQtcCAm5ALw0gqI+OJZ5RyzIsGJy5KAKlbRZ8TG67CAh8m0kE="/>
+<input name="csSignature" type="hidden" value="RhQsQkgqxsugoLtgZQ3MLA=="/>
 <input id="returnURL" name="returnURL" type="hidden" value=""/>
 <input id="userId" name="userId" type="hidden" value="">
 <input id="loginType" name="loginType" type="hidden" value=""/>
@@ -158,7 +157,7 @@ function fnAnnoView(key){
 <h3 class="hidden">유틸메뉴</h3>
 <ul class="global_a">
 <li class="link1"><a href="/pcmx/index.do" title="홈으로 바로가기">HOME</a></li>
-<li class="link2"><a href="https://csc.etri.re.kr/home/" rel="noopener noreferrer" target="_blank" title="새창으로 고객만족센터 홈페이지가 열립니다.">고객만족센터</a></li>
+<li class="link2"><a href="http://cscdev.etri.re.kr/home/" rel="noopener noreferrer" target="_blank" title="새창으로 고객만족센터 홈페이지가 열립니다.">고객만족센터</a></li>
 <li class="link3"><a onclick="javascript:infoOpen(); return false;">홈페이지 안내</a></li>
 <li class="link4"><a href="http://www.etri.re.kr" rel="noopener noreferrer" target="_blank" title="새창으로 ETRI 홈페이지가 열립니다.">한국전자통신연구원</a></li>
 </ul>
@@ -170,7 +169,8 @@ function fnAnnoView(key){
 <!-- //if else -->
 </div>
 </div>
-<!-- //global --><!-- logo -->
+<!-- //global -->
+<!-- logo -->
 <h1>
 <a href="/pcmx/index.do"><img alt="한국전자통신연구원" height="50" src="/pcmx/images/logo.gif" width="124"/></a>
 </h1>
@@ -184,7 +184,8 @@ function fnAnnoView(key){
 <!-- //gnb -->
 </div>
 </div>
-<!-- //header --><!-- container -->
+<!-- //header -->
+<!-- container -->
 <div id="main_wrap">
 <div class="content">
 <div class="content_left">
@@ -201,7 +202,7 @@ function fnAnnoView(key){
                             <li><a href="/pcmx/join/qna/qnaList.do">질의응답</a></li>
                             <li><a href="/pcmx/join/pds/pdsList.do">자료실</a></li>
                             <li><a href="/pcmx/join/faq/faqList.do">FAQ</a></li>
-                            <li><a href="https://csc.etri.re.kr/home/myVoc.do?method=executeGetMyVocList&amp;type=VOCLIST" title="새창으로 고객의 소리 홈페이지로 이동합니다." target="_blank" rel="noopener noreferrer">고객의 소리</a></li>
+                            <li><a href="http://cscdev.etri.re.kr/home/myVoc.do?method=executeGetMyVocList&amp;type=VOCLIST" title="새창으로 고객의 소리 홈페이지로 이동합니다." target="_blank" rel="noopener noreferrer">고객의 소리</a></li>
                              -->
 <li><a href="/pcmx/join/pds/pdsList.do">자료실</a></li>
 </ul>
@@ -214,9 +215,7 @@ function fnAnnoView(key){
 <div class="content_right" id="content_wrap">
 <div class="top">
 <div class="nav">
-<div class="icon_home" style="width: 600px;">Home &gt; 공동연구
-                         &gt; 공동연구공고
-                        </div>
+<div class="icon_home" style="width: 600px;">Home &gt; 공동연구 &gt; 공동연구공고</div>
 </div>
 <span class="nav_info">공동연구, 위탁연구 홈페이지에 오신 것을 환영합니다.</span>
 </div>
@@ -224,8 +223,8 @@ function fnAnnoView(key){
 <div class="table_set">
 <h3 class="txt_coop_001">공동연구공고 검색</h3>
 <div class="search">
-<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIqUsDANpGVbbvweUI03BtVOnwpXwzG9/N9ECw+j5a4mvynWYqPS42AOGi7o63lAdrOmCumM13vwH5jJAKfuHnnxA7GXj6H8NCQZT99HoYOnICeOEwVcjOTc1+Xzb5boE0Ow3hEkqpBuj8Nixp4xgwrgTzJJz+SK/mB6OM2jRkq5FgPo8WETgtMHk/LHKt8ns6Iw8JE5w3EwZ+xLNCO8CV8S6oyi26ej6zOIym/EXOjMdilz0Evomy38Mg/9QdiqtWAUcmV1YsyPqkV4ItfxrwSsfiXnrpk5ZVoGrU8QJB0/3XcUBitJKPDnkudcyhtcUUC3ksupnyyHjeH/25ma8ikYj8TxqT1WeO8HWa+A362e1OZFVH9lD/CWaJcUNayqrFy+7nrRo4hWYZwN7Aw8sQBf1kbHwDwKj5513Qdyo32d368WucCDv81Z1NW0xH7+qj"/>
-<input name="csSignature" type="hidden" value="vov7Osf/OfslDxCAtFqM8A=="/>
+<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIaTbtI8PE8RiWVKw72/IOTQ216G/5lGFFOQLN/BG90sgiGNc++iweVE6vqYwzHdMUObdU9WKU5d1engD5Z+ov9PKuy8BfPRKYkCBB1gD3/3/aGMd8nBcpQXJGZilBJGo5HhIDUcHgQonqVYz5gCc9BsFBjWc7vJ5xDKZiNuRGMenencfA0nsEpqFbpjDCIrIgAFEcx6mzmNWo37tDF3vAoQE+XEWzCejQtXZB24DZtxUWvnrTHxwvxksaiZ2kW8f1AWYORTAkyNz0uKgVVbDb8LSTqcEzcIB9yFGyeAQQkPJkGHIwux6NmPzKrwMpp5yeKPdUDspz2k4Q4VmWeuAulowh6d4GpOeTtNYOEJ6YJHGOhdbY87iKmvSza3s3AJNQQheX0U7ZlwiHHNJp1f2N508VYpy7InqFDMOOgG/CJFxCLkJIA0kY2mQwIS4f4TpE"/>
+<input name="csSignature" type="hidden" value="RhQsQkgqxsugoLtgZQ3MLA=="/>
 <script type="text/javascript">
 $(document).ready(function(){
     $('#searchStartDate').focus(function(){
@@ -497,17 +496,17 @@ $(document).ready(function(){
 <div class="boardbtn">
 <div class="pagination">
 <strong>1</strong>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2">2</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=3">3</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=4">4</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=5">5</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=6">6</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=7">7</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=8">8</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
-<a href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
-<a class="direction last" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
-<a class="direction" href="/pcmx/join/anno/annoList.do?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=296"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2">2</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=3">3</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=4">4</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=5">5</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=6">6</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=7">7</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=8">8</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
+<a class="direction last" href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
+<a class="direction" href="/pcmx/join/anno/annoList.do;pcmx=21272A840D56591055166BE1DDA030FF?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=296"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
 </div>
 </div>
 </div>
@@ -517,7 +516,8 @@ $(document).ready(function(){
 </div>
 </div>
 </div>
-<!--// container --><!-- footer -->
+<!--// container -->
+<!-- footer -->
 <div id="footer_wrap">
 <div class="footer_spot">
 <h3 class="hidden">하단메뉴</h3>
@@ -531,8 +531,8 @@ $(document).ready(function(){
 <div class="spot_2">
 <ul>
 <li>
-<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIqUsDANpGVbbvweUI03BtVOnwpXwzG9/N9ECw+j5a4mvynWYqPS42AOGi7o63lAdrR8UqEo9w9qB7mQd2klpcaA==">
-<input name="csSignature" type="hidden" value="vov7Osf/OfslDxCAtFqM8A==">
+<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIaTbtI8PE8RiWVKw72/IOTQ216G/5lGFFOQLN/BG90sgiGNc++iweVE6vqYwzHdMUPN7b+xDmw7dXXl+HhAVngw==">
+<input name="csSignature" type="hidden" value="RhQsQkgqxsugoLtgZQ3MLA==">
 <fieldset>
 <legend>ETRI 직할부서 바로가기</legend>
 <label class="hidden" for="etri_siteurl">ETRI 직할부서 바로가기</label>
@@ -557,8 +557,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIqUsDANpGVbbvweUI03BtVOnwpXwzG9/N9ECw+j5a4mvynWYqPS42AOGi7o63lAdrR8UqEo9w9qB7mQd2klpcaA==">
-<input name="csSignature" type="hidden" value="vov7Osf/OfslDxCAtFqM8A==">
+<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIaTbtI8PE8RiWVKw72/IOTQ216G/5lGFFOQLN/BG90sgiGNc++iweVE6vqYwzHdMUPN7b+xDmw7dXXl+HhAVngw==">
+<input name="csSignature" type="hidden" value="RhQsQkgqxsugoLtgZQ3MLA==">
 <fieldset>
 <legend>ETRI SERVICE 바로가기</legend>
 <label class="hidden" for="etri_siteur2">ETRI SERVICE 바로가기</label>
@@ -581,8 +581,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIqUsDANpGVbbvweUI03BtVOnwpXwzG9/N9ECw+j5a4mvynWYqPS42AOGi7o63lAdrR8UqEo9w9qB7mQd2klpcaA=="/>
-<input name="csSignature" type="hidden" value="vov7Osf/OfslDxCAtFqM8A=="/>
+<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIaTbtI8PE8RiWVKw72/IOTQ216G/5lGFFOQLN/BG90sgiGNc++iweVE6vqYwzHdMUPN7b+xDmw7dXXl+HhAVngw=="/>
+<input name="csSignature" type="hidden" value="RhQsQkgqxsugoLtgZQ3MLA=="/>
 <fieldset>
 <legend>ETRI 유관기관 바로가기</legend>
 <label class="hidden" for="etri_siteur3">ETRI 유관기관 바로가기</label>
