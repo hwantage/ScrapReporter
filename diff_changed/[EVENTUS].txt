@@ -90,10 +90,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'IGJMT0Oc98HTH-0J-Sv1XlMEyHK54CSHnAmBw80QZCB7P1g8zRWWnDkGe_2y6Wd7JwzznxrjukgUMi3iQRRtQTcjP8GcO8UC5wTYIZmDZnAA1meDpGnMy32aeq9zoEdJbf_R8g2'
+            'user_id': '3_3h3ZoyxLPfA2kaXgIaWbJt9eH2b1AMaxebXeTUfXYCbEYnbgwIJQI-_LdqJPJoLNeCDzOTv_uyaGW9fBwNY0--9ZTjAsG8gTHb_ON4TFXVWfksF5EWrNn8tcjmCN8G9maxDA2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'IGJMT0Oc98HTH-0J-Sv1XlMEyHK54CSHnAmBw80QZCB7P1g8zRWWnDkGe_2y6Wd7JwzznxrjukgUMi3iQRRtQTcjP8GcO8UC5wTYIZmDZnAA1meDpGnMy32aeq9zoEdJbf_R8g2'
+            'crm_id': '3_3h3ZoyxLPfA2kaXgIaWbJt9eH2b1AMaxebXeTUfXYCbEYnbgwIJQI-_LdqJPJoLNeCDzOTv_uyaGW9fBwNY0--9ZTjAsG8gTHb_ON4TFXVWfksF5EWrNn8tcjmCN8G9maxDA2'
         });
     </script>
 <script>
@@ -160,7 +160,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?d7b640f66fa0f3cb"></script><style>body {
+<script src="/Content/dist/js/preload.js?98d00cf4bb5765d5"></script><style>body {
         opacity: 0;
       }
 
@@ -174,7 +174,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?d7b640f66fa0f3cb"></script><script defer="defer" src="/Content/dist/js/default.js?d7b640f66fa0f3cb"></script><link href="/Content/dist/css/default.css?d7b640f66fa0f3cb" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?98d00cf4bb5765d5"></script><script defer="defer" src="/Content/dist/js/default.js?98d00cf4bb5765d5"></script><link href="/Content/dist/css/default.css?98d00cf4bb5765d5" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -2446,282 +2446,158 @@
 </div>
 </ev-modal>
 </div>
-</main>
-<footer id="footer">
-<div class="border-y">
+<div class="border-y" id="notice-banner">
 <div class="container">
 <div class="flex space-x-4">
 <a class="text-gray-500 w-20" href="/notice/list">
-<span v-if="language === 'ko'">공지사항</span>
-<span v-else="">Announcements</span>
+<span class="lang-ko">공지사항</span>
+<span class="lang-en" style="display:none">Announcements</span>
 </a>
 <a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 8월 ~ 2026년 1월 이벤터스 휴무일 안내</a>
 </div>
 </div>
 </div>
-<div class="bg-gray-50">
-<div class="container space-y-4">
-<div class="max-w-2xl space-y-4">
-<div class="grid grid-cols-3 gap-2 sm:flex sm:justify-between">
-<a href="https://www.zillinks.com/share/introduction/xd7MF9ZIbp/1">
-<span v-if="language === 'ko'">회사 소개</span>
-<span v-else="">Company</span>
-</a>
-<a href="/hostcenter">
-<span v-if="language === 'ko'">서비스 소개</span>
-<span v-else="">Products &amp; Solutions</span>
-</a>
-<a href="/notice/list">
-<span v-if="language === 'ko'">공지사항</span>
-<span v-else="">Announcements</span>
-</a>
-<a href="https://eventwithus.notion.site/348a2604a70a4a16a97073985c2c304d" target="_blank">
-<span v-if="language === 'ko'">자주 묻는 질문</span>
-<span v-else="">FAQ</span>
-</a>
-<a href="https://eventwithus.notion.site/21720cee823780df852cdf89c06cecdb" target="_blank">
-<span v-if="language === 'ko'">채용</span>
-<span v-else="">About Us</span>
-</a>
-<ui-popover class="!ml-0 relative flex" v-slot="{ open }">
-<ui-popover-button @click="channelActive='channel'">
-<div class="flex items-center font-bold text-gray-900">
-<svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" stroke-linecap="round" stroke-linejoin="round"></path>
+<script>
+        document.addEventListener('languageChanged', function (e) {
+            var isKo = e.detail.language === 'ko';
+            document.querySelectorAll('#notice-banner .lang-ko').forEach(function (el) { el.style.display = isKo ? '' : 'none'; });
+            document.querySelectorAll('#notice-banner .lang-en').forEach(function (el) { el.style.display = isKo ? 'none' : ''; });
+        });
+    </script>
+</main>
+<footer class="footer-wrap" id="footer">
+<div class="container py-0">
+<div class="flex flex-col md:flex-row md:justify-between md:gap-x-8">
+<div class="order-last md:order-first">
+<details class="footer-section md:!flex-none md:w-auto md:shrink-0" open="">
+<summary class="md:hidden flex justify-between items-center py-3">
+<span class="font-bold text-sm text-primary-500">(주)이벤터스</span>
+<svg class="chevron w-4 h-4 text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
 </svg>
-<span class="pr-1 notranslate">
-                                        Language
-                                    </span>
-<svg class="fill-current h-4 w-4" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+</summary>
+<div class="footer-section-content">
+<div class="font-bold text-primary-500 hidden md:block">(주)이벤터스</div>
+<div class="text-[12px] text-gray-600 md:mt-4 space-y-1">
+<div>사업자등록번호: 114-87-20403</div>
+<div>통신판매업 신고번호: 제2023-서울마포-1346호</div>
+<div>대표이사: 안영학 <span class="text-gray-300 mx-1">|</span> 개인정보책임자: 이정수</div>
+<div>서울 영등포구 양산로 85, 하이퍼타워 4층 405, 406호</div>
+</div>
+<div class="text-[12px] text-gray-500 mt-2.5 max-w-[348px]">
+            이벤터스는 통신판매중개자이며 행사에 대한 당사자 및 주최자가 아닙니다.<br/>
+            따라서 이벤터스는 등록된 행사에 대해 책임지지 않습니다.
+        </div>
+</div>
+</details>
+</div>
+<div class="md:flex md:gap-x-4 lg:gap-x-8 md:w-[790px] md:shrink-0">
+<details class="footer-section xl:!w-[185px] xl:!flex-none" open="">
+<summary class="md:hidden flex justify-between items-center py-3">
+<span class="font-bold text-sm">고객지원</span>
+<svg class="chevron w-4 h-4 text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
 </svg>
-</div>
-</ui-popover-button>
-<ui-popover-panel class="flex absolute z-[100] flex-col w-32 right-0 rounded-md mt-2 py-2.5 bg-white text-gray-900 focus:outline-none shadow-lg origin-top-right top-[22px]" v-slot="{ close }">
-<a @click="leng('ko')" class="py-2 px-4 hover:bg-gray-100 cursor-pointer notranslate">
-                                    한국어
-                                </a>
-<a @click="leng('en')" class="py-2 px-4 hover:bg-gray-100 cursor-pointer notranslate">
-                                    English
-                                </a>
-</ui-popover-panel>
-</ui-popover>
-</div>
-<div class="text-gray-500">
-<table>
-<tr>
-<td>
-<span v-if="language === 'ko'">서비스 이용 문의</span>
-<span v-else="">Contact Us</span>
-</td>
-<td class="pl-2 flex">
-<a class="text-gray-900" href="https://event-us.channel.io/" target="_blank">
-<span v-if="language === 'ko'">채팅상담</span>
-<span v-else="">Chat</span>
-</a>
-<span class="pl-2">
-<span v-if="language === 'ko'">(평일 10:00~17:00)</span>
-<span v-else="">(Weekdays 10:00-17:00 KST)</span>
-</span>
-</td>
-</tr>
-<tr>
-<td>
-<span v-if="language === 'ko'">사업 제휴 문의</span>
-<span v-else="">Partnership</span>
-</td>
-<td class="pl-2">
-<a class="text-gray-900" href="mailto:partnership@event-us.kr">partnership@event-us.kr</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="flex">
+</summary>
+<div class="footer-section-content">
+<div class="font-bold text-gray-700 hidden md:block">고객지원</div>
+<div class="text-gray-600 space-y-2 md:mt-4">
+<div><a href="https://eventwithus.notion.site/348a2604a70a4a16a97073985c2c304d" target="_blank">자주 묻는 질문</a></div>
 <div>
-<a @click="track('광고센터 클릭', {'위치': '푸터'})" class="inline py-2 px-6 text-xs bg-gray-900 text-white rounded-md" href="/adcenter" target="_blank">
-<span v-if="language === 'ko'">광고센터</span>
-<span v-else="">Advertising Center</span>
-</a>
-</div>
-<div class="pl-3">
-<a @click="showBrochure()" class="inline py-2 px-6 text-xs bg-white text-black border border-gray-200 rounded cursor-pointer">
-<span v-if="language === 'ko'">서비스 소개자료</span>
-<span v-else="">Service Brochure</span>
-</a>
-<ev-modal :open="brochure.isShow" @close="brochure.isShow = false" class="min-w-fit z-40">
-<div ref="modalContent">
-</div>
-</ev-modal>
-</div>
+<a href="https://event-us.channel.io/" target="_blank">서비스 채팅 상담</a>
+<span class="text-xs text-gray-500 block">평일 10:00 ~17:00</span>
 </div>
 <div>
-<ev-modal :open="errorModal.isShow" @close="errorModal.isShow = false" class="text-center">
-<template #title="">
-<div class="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-danger-50">
-<svg aria-hidden="true" class="w-6 h-6 text-danger-500" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+<span>사업 제휴 문의</span>
+<a class="text-xs text-gray-500 block" href="mailto:partnership@event-us.kr">partnership@event-us.kr</a>
+</div>
+</div>
+</div>
+</details>
+<details class="footer-section xl:!w-[120px] xl:!flex-none" open="">
+<summary class="md:hidden flex justify-between items-center py-3">
+<span class="font-bold text-sm">회사</span>
+<svg class="chevron w-4 h-4 text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
 </svg>
+</summary>
+<div class="footer-section-content">
+<div class="font-bold text-gray-700 hidden md:block">회사</div>
+<div class="text-gray-600 space-y-2 md:mt-4">
+<div><a href="https://www.zillinks.com/share/introduction/xd7MF9ZIbp/1" target="_blank">서비스 소개자료</a></div>
+<div><a href="https://eventwithus.notion.site/21720cee823780df852cdf89c06cecdb" target="_blank">채용</a></div>
 </div>
-<div class="mt-5">{{ errorModal.title }}</div>
-</template>
-<template #description="">
-                            {{ errorModal.contents }}
-                        </template>
-<ev-button @click="errorModal.isShow = false" class="bg-white"> 닫기 </ev-button>
-</ev-modal>
-<ev-modal :open="successModal.isShow" @close="successModal.isShow = false" class="text-center">
-<template #title="">
-<div class="flex justify-center items-center mx-auto w-12 h-12 rounded-full bg-success-50">
-<svg class="w-6 h-6 text-success-500" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
+</div>
+</details>
+<details class="footer-section xl:!w-[154px] xl:!flex-none" open="">
+<summary class="md:hidden flex justify-between items-center py-3">
+<span class="font-bold text-sm">정책/약관</span>
+<svg class="chevron w-4 h-4 text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
 </svg>
-</div>
-<div class="mt-5">{{ successModal.title }}</div>
-</template>
-<template #description="">
-                            {{ successModal.contents }}
-                        </template>
-<ev-button @click="successModal.isShow = false" class="bg-primary-500"> 확인 </ev-button>
-</ev-modal>
-</div>
-<div class="notranslate pt-4 space-y-1">
-<div>
-<a class="text-base text-gray-500" href="/">
-<span v-if="language === 'ko'">이벤터스</span>
-<span v-else="">EVENTUS</span>
-</a>
-</div>
-<div class="text-xs text-gray-500 space-y-1">
-<div class="space-x-2">
-<span v-if="language === 'ko'">(주)이벤터스</span>
-<span v-else="">EVENTUS Co., Ltd.</span>
-<span>|</span>
-<span v-if="language === 'ko'">사업자등록번호 114-87-20403</span>
-<span v-else="">Business Registration Number 114-87-20403</span>
-</div>
-<div>
-<span v-if="language === 'ko'">통신판매업 신고번호 제2023-서울마포-1346호</span>
-<span v-else="">Mail-order Business Registration No. 2023-Seoul Mapo-1346</span>
-</div>
-<div class="space-x-2">
-<span v-if="language === 'ko'">대표 안영학</span>
-<span v-else="">CEO Ahn Young Hak</span>
-<span>|</span>
-<span v-if="language === 'ko'">개인정보책임자 이정수</span>
-<span v-else="">CPO Lee Jung Soo</span>
-</div>
-<div>
-<span v-if="language === 'ko'">서울 영등포구 양산로 85, 하이퍼타워 4층 405, 406호</span>
-<span v-else="">4F, Units 405–406, Hyper Tower, 85 Yangsan-ro, Yeongdeungpo-gu, Seoul, Republic of Korea</span>
+</summary>
+<div class="footer-section-content">
+<div class="font-bold text-gray-700 hidden md:block">정책/약관</div>
+<div class="text-gray-600 space-y-2 md:mt-4">
+<div><a href="/legal/service">이용약관</a></div>
+<div><a class="font-bold text-gray-500" href="/legal/privacyprovision" target="_blank">개인정보처리방침</a></div>
+<div><a href="/legal/e_banking">전자금융거래약관</a></div>
+<div><a href="/legal/refund">취소 및 환불 약관</a></div>
+<div><a href="/legal/email">이메일 주소 무단수집 거부</a></div>
 </div>
 </div>
-<div class="text-xs text-primary-400">
-<span v-if="language === 'ko'">
-            이벤터스는 통신판매중개자이며 행사에 대한 당사자 및 주최자가 아닙니다. 따라서 이벤터스는 등록된 행사에 대해 책임지지 않습니다.
-        </span>
-<span v-else="">
-            EVENTUS is a mail order intermediary and is not a party to or organizer of the event. Therefore, EVENTUS is not responsible for registered events.
-        </span>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-1 text-xs sm:flex sm:justify-between">
-<a href="/legal/service">
-<span v-if="language === 'ko'">서비스 이용 약관</span>
-<span v-else="">Terms of Service</span>
-</a>
-<a class="font-bold" href="/legal/privacyprovision" target="_blank">
-<span v-if="language === 'ko'">개인정보처리방침</span>
-<span v-else="">Privacy Policy</span>
-</a>
-<a href="/legal/e_banking">
-<span v-if="language === 'ko'">전자금융거래 이용약관</span>
-<span v-else="">EFT Terms of Use</span>
-</a>
-<a href="/legal/refund">
-<span v-if="language === 'ko'">취소 및 환불 약관</span>
-<span v-else="">Cancellation and Refund Policy</span>
-</a>
-<a href="/legal/email">
-<span v-if="language === 'ko'">이메일 주소 무단수집 거부</span>
-<span v-else="">Refusal of Unauthorized Email Address Collection</span>
-</a>
-</div>
-</div>
-<div class="space-y-2 sm:flex sm:justify-between">
-<div class="flex space-x-2 sm:order-2" v-if="isPersonalLayout!='isUse'">
-<a @click="outlinkClick($event)" href="/hostcenter/blog" target="_blank">
-<svg class="w-8" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0h32v32H0z" fill="transparent"></path>
-<path d="M8.8 14.3a1 1 0 0 0-.6.3 1 1 0 0 0 0 1.4 1 1 0 0 0 .7.3 1 1 0 0 0 0-2zm8.5-.1a1 1 0 0 0-.7.3 1 1 0 0 0 0 1.4 1 1 0 0 0 .7.3 1 1 0 0 0 0-2zm5.5.1a1 1 0 0 0-.6.3 1 1 0 0 0 0 1.4 1 1 0 0 0 .6.3 1 1 0 0 0 0-2z" fill="currentColor"></path>
-<path d="M25.4 6.9h-19a2.6 2.6 0 0 0-2.6 2.7v10.7a2.6 2.6 0 0 0 2.6 2.6h7.4s1.5 4 2 4 2-4 2-4h7.5a2.6 2.6 0 0 0 2.7-2.6V9.6a2.6 2.6 0 0 0-2.7-2.7zm-14.6 9.9a2.3 2.3 0 0 1-2.9.2v.3H6.5v-6.2h1.4v2.4a2.3 2.3 0 0 1 1.5-.5 1.9 1.9 0 0 1 1.4.7 2.5 2.5 0 0 1 .6 1.6 2 2 0 0 1-.6 1.5zm3 .5h-1.4v-3.8a1 1 0 0 0-.7-1V11a2.4 2.4 0 0 1 2.1 2.6zm5.7-1.1a2.3 2.3 0 0 1-.5.7 2.4 2.4 0 0 1-.8.5 2.6 2.6 0 0 1-1 .2 2.6 2.6 0 0 1-.9-.2 2.5 2.5 0 0 1-.8-.5 2.4 2.4 0 0 1-.5-.7 2.2 2.2 0 0 1 0-1.8 2.4 2.4 0 0 1 .5-.7 2.5 2.5 0 0 1 .8-.5 2.6 2.6 0 0 1 1-.2 2.6 2.6 0 0 1 1 .2 2.4 2.4 0 0 1 .7.5 2.2 2.2 0 0 1 .5.7 2.2 2.2 0 0 1 0 1.8zm5.7.6a2.8 2.8 0 0 1-.7 2.2 2.5 2.5 0 0 1-2 .5v-1.1a1.2 1.2 0 0 0 1.3-1.1V17a1.6 1.6 0 0 1-1.4.6 1.8 1.8 0 0 1-1.5-.6 2.4 2.4 0 0 1-.5-1.6 2.7 2.7 0 0 1 .6-1.8 2 2 0 0 1 1.5-.7 1.7 1.7 0 0 1 1.3.5V13h1.4z" fill="currentColor"></path>
+</details>
+<details class="footer-section" open="">
+<summary class="md:hidden flex justify-between items-center py-3">
+<span class="font-bold text-sm">다운로드</span>
+<svg class="chevron w-4 h-4 text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
 </svg>
-</a>
-<a @click="outlinkClick($event)" href="https://www.facebook.com/eventus.korea" target="_blank">
-<svg class="w-8" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M0 0h32v32H0z" fill="transparent"></path>
-<path d="M19.1 9.4H21V6.3a23 23 0 0 0-2.6-.2c-2.5 0-4.3 1.6-4.3 4.6v2.7h-2.8V17H14v8.7h3.5V17h2.7l.4-3.5h-3.1V11c0-1 .2-1.6 1.6-1.6z" fill="currentColor"></path>
-</g>
-</svg>
-</a>
-<a @click="outlinkClick($event)" href="https://pf.kakao.com/_xfxhGxcl" target="_blank">
-<svg class="w-8" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-<g>
-<g>
-<path d="M0 0h32v32H0z" fill="transparent"></path>
-<path d="m13.6 13.9-.7 1.8h1.4z" fill="currentColor"></path>
-<path d="M16 6C9.7 6 4.7 10 4.7 15c0 3.1 2 5.9 5.3 7.5-1.2 4.2-1.3 4.2-1 4.3.2.2.5 0 5-3.1a14.5 14.5 0 0 0 2 .1c6.3 0 11.3-4 11.3-8.9s-5-8.8-11.3-8.8zm-5.6 11.4a.7.7 0 0 1-1.3 0v-3.8H8a.6.6 0 1 1 0-1.3h3.3a.6.6 0 1 1 0 1.3h-1zm5 .6c-.6 0-.5-.5-.8-1.1h-2c-.3.6-.2 1.1-.9 1.1-.6 0-.7-.4-.5-1l1.5-4a1 1 0 0 1 .9-.7 1 1 0 0 1 .9.6c1 3.2 2.5 5.1 1 5.1zm3.8 0H17c-1.1 0-.4-1.5-.6-5a.7.7 0 0 1 1.3 0v3.7h1.4a.6.6 0 1 1 0 1.2zm5.1-.6a.6.6 0 0 1-.2.5c-1 .7-1.6-1.3-2.5-2.2l-.2.3v1.4a.7.7 0 0 1-1.3 0v-4.5a.7.7 0 0 1 1.3 0v1.4c1.2-.9 1.8-2.5 2.6-1.7s-.8 1.4-1.4 2.2c1.5 2.1 1.8 2.2 1.7 2.6z" fill="currentColor"></path>
-</g>
-</g>
-</svg>
-</a>
-<a @click="outlinkClick($event)" href="https://www.instagram.com/event.with.us/" target="_blank">
-<svg class="w-8" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M0 0h32v32H0z" fill="transparent"></path>
-<g>
-<path d="M19.9 6.4h-7.5a6.3 6.3 0 0 0-6.3 6.3v7.5a6.3 6.3 0 0 0 6.3 6.3h7.5a6.3 6.3 0 0 0 6.3-6.3v-7.5a6.3 6.3 0 0 0-6.3-6.3zm4.4 13.8a4.4 4.4 0 0 1-4.4 4.4h-7.5A4.4 4.4 0 0 1 8 20.2v-7.5a4.4 4.4 0 0 1 4.4-4.4h7.5a4.4 4.4 0 0 1 4.4 4.4z" fill="currentColor"></path>
-</g>
-<g>
-<path d="M16.1 11.4a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8.2a3.1 3.1 0 1 1 3.2-3.2 3.1 3.1 0 0 1-3.2 3.2z" fill="currentColor"></path>
-</g>
-<g fill="currentColor" transform="translate(20.9 10.4)">
-<circle cx=".7" cy=".7" r=".7"></circle>
-</g>
-</g>
-</svg>
-</a>
-<a @click="outlinkClick($event)" href="https://www.youtube.com/channel/UCotb2ainbLyD59J88M0XXxw" target="_blank">
-<svg class="w-8" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M0 0h32v32H0z" fill="transparent"></path>
-<path d="M29 9.5A3.4 3.4 0 0 0 26.6 7c-2.1-.6-10.7-.6-10.7-.6s-8.5 0-10.6.5a3.5 3.5 0 0 0-2.4 2.5 35.9 35.9 0 0 0-.5 6.5 35.8 35.8 0 0 0 .5 6.5A3.4 3.4 0 0 0 5.3 25c2.2.6 10.7.6 10.7.6s8.5 0 10.6-.5a3.4 3.4 0 0 0 2.4-2.4 35.9 35.9 0 0 0 .5-6.6 34 34 0 0 0-.5-6.5zM13.2 20v-8.2l7.1 4.1zm0 0" fill="currentColor"></path>
-</g>
-</svg>
-</a>
+</summary>
+<div class="footer-section-content">
+<div class="font-bold text-gray-700 hidden md:block">다운로드</div>
+<div class="text-gray-600 space-y-2 md:mt-4">
+<div><a href="https://play.google.com/store/apps/details?id=com.DHYSenjtpL.sjXrVtojDn" target="_blank">Android 앱</a></div>
+<div><a href="https://apps.apple.com/us/app/이벤터스-행사-이벤트-강의-세미나를-한-눈에/id6752992247" target="_blank">iOS 앱</a></div>
 </div>
-<div v-if="isAndroid">
-<ev-button @click="appDownload()" href="https://play.google.com/store/apps/details?id=com.DHYSenjtpL.sjXrVtojDn" small="" target="_blank">
-<div class="flex items-center">
-<div class="mr-2.5">
-<svg fill="none" height="24" viewbox="0 0 25 24" width="25" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.9199 0.959961L14.3149 11.28L17.1649 8.42996L4.5649 1.15496C4.3549 1.03309 4.1299 0.965586 3.9199 0.959961ZM3.0499 1.43996C2.95615 1.60684 2.8999 1.80371 2.8999 2.02496V22.08C2.8999 22.2412 2.93365 22.3856 2.9899 22.515L13.6249 11.955L3.0499 1.43996ZM18.0349 8.92496L14.9899 11.955L18.0349 14.97L21.7549 12.84C22.2837 12.5343 22.3587 12.1462 22.3549 11.94C22.3493 11.5987 22.1337 11.28 21.7699 11.085C21.453 10.9143 19.0999 9.54371 18.0349 8.92496ZM14.3149 12.63L3.8299 23.025C4.00428 23.0156 4.19365 22.9781 4.3699 22.875C4.78053 22.6368 13.0849 17.835 13.0849 17.835L17.1799 15.48L14.3149 12.63Z" fill="#878D91"></path>
+</div>
+</details>
+<details class="footer-section" open="">
+<summary class="md:hidden flex justify-between items-center py-3">
+<span class="font-bold text-sm">Language</span>
+<svg class="chevron w-4 h-4 text-gray-400" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
 </svg>
+</summary>
+<div class="footer-section-content">
+<div class="font-bold text-gray-700 hidden md:block">Language</div>
+<div class="text-gray-600 space-y-2 md:mt-4">
+<div><a :class="{ 'font-bold': language === 'ko' }" class="cursor-pointer" onclick="window.setLanguage('ko')">한국어</a></div>
+<div><a :class="{ 'font-bold': language === 'en' }" class="cursor-pointer" onclick="window.setLanguage('en')">English</a></div>
 </div>
-<div>
-                    Google Play
-                </div>
 </div>
-</ev-button>
+</details>
 </div>
-<div class="text-xs text-gray-500 sm:order-1 sm:text-sm notranslate">
-        Copyright ⓒ EVENTUS Co.,Ltd. All Rights Reserved.
-    </div>
 </div>
+<div class="text-[12px] text-gray-500 md:pt-4 notranslate">
+    Copyright © EVENTUS Co.,Ltd. All Rights Reserved.
 </div>
 </div>
 </footer>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="hfRwwXXTjzP8w1wBfw_R18Lh4xapYVfRpPkncOABA6hjlSqpEVyY99SURJ-dhp41pOt2jzR46UHBeseKd2iefhEX8_01"/></form> <style>
+<script>
+    (function () {
+        var mq = window.matchMedia('(min-width: 768px)');
+        function toggle(e) {
+            document.querySelectorAll('#footer .footer-section').forEach(function (d) {
+                if (e.matches) d.setAttribute('open', '');
+                else d.removeAttribute('open');
+            });
+        }
+        toggle(mq);
+        mq.addEventListener('change', toggle);
+    })();
+</script>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="iT7Y_LAFMNX1ONNZPGo5nSe72HV6hrEts7EFRD4K0RIyLEB1Cz0VXdRzEDM6H1JsnfNrcmsgCV9_lQ1GrP6m22MZVlY1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4158,7 +4034,7 @@
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'IGJMT0Oc98HTH-0J-Sv1XlMEyHK54CSHnAmBw80QZCB7P1g8zRWWnDkGe_2y6Wd7JwzznxrjukgUMi3iQRRtQTcjP8GcO8UC5wTYIZmDZnAA1meDpGnMy32aeq9zoEdJbf_R8g2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, '3_3h3ZoyxLPfA2kaXgIaWbJt9eH2b1AMaxebXeTUfXYCbEYnbgwIJQI-_LdqJPJoLNeCDzOTv_uyaGW9fBwNY0--9ZTjAsG8gTHb_ON4TFXVWfksF5EWrNn8tcjmCN8G9maxDA2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4239,8 +4115,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":8331,"New_Start_Date":"2026-03-19T00:00:00","New_End_Date":"2026-03-30T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-18T14:18:35.9698091","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/8eecc92b44964601a61a708aa98cb058.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/29bd32b118114ae9bbbd95e3276bb85a.jpg","Click_Url":"https://event-us.kr/m/121981/51573","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"AI의 역설, 4가지 해결 전략","BannerDescription":"AI Partners Day 2026","BannerDate":"2026. 03. 31(화) 13:00","BannerPlace":"오프라인 행사"},{"Id":8342,"New_Start_Date":"2026-03-23T00:00:00","New_End_Date":"2026-04-12T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-23T12:10:24.0939072","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ab998dcc7f16475eb6db38130e59da59.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a585498fe1f841a992219e47e43262a0.png","Click_Url":"https://event-us.kr/m/122037/51729","Banner":{"color":{"title":"#C9FF52","description":"#C9FF52","date":"#C9FF52","place":"#C9FF52"}},"BannerJson":"{\"color\":{\"title\":\"#C9FF52\",\"description\":\"#C9FF52\",\"date\":\"#C9FF52\",\"place\":\"#C9FF52\"}}","BannerTitle":"팬심에서 성과까지 여정을 만듭니다","BannerDescription":"2026 이벤터스 행사 트렌드 웨비나","BannerDate":"2026. 04. 14(화) 14:00","BannerPlace":"온라인 행사"},{"Id":8310,"New_Start_Date":"2026-03-18T00:00:00","New_End_Date":"2026-03-31T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-12T15:01:31.9471807","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/20decad11e52497d884cd6258f7d37ad.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/1e958c13e5534b688432a87b8275a6d6.png","Click_Url":"https://event-us.kr/webinar/event/122236?utm_source=eventus_ad&utm_medium=search_banner&utm_campaign=seihtmwlal","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"[100명 한정 오프라인 세미나]","BannerDescription":"AX가 우리 회사에서는 안 되는 이유","BannerDate":"2026. 04. 02(목) 14:00","BannerPlace":"오프라인 행사"},{"Id":8361,"New_Start_Date":"2026-03-26T00:00:00","New_End_Date":"2026-04-08T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-26T10:23:05.4265772","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0fad7709b6ff414d8e571a3a6a863e1e.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f0e90fd72eb84e4baa8b6a38dc0db00e.png","Click_Url":"https://event-us.kr/dcampprogram/event/123027","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"오피스아워 1:1 멘토링","BannerDescription":"VC투자 / 대중견기업 오픈이노베이션","BannerDate":"2026. 03. 25(수) ~ 2026. 04. 08(수)","BannerPlace":"온라인 접수"}],
-                    searchResultBanners: [{"Id":"121887","CoverImageUrl":"/Image/shdreamfd/121887/ProjectInfo/Cover/d5bc3760ba174f64b670fbe7c6d6389d.jpg","Title":"『신한 스퀘어브릿지』 2026 스타트업 모집(~3/31)","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/shdreamfd/TopLogoImage/99c5540fc94d4a4aa66e57deec625906.png","EventType":"기타","Category":"창업","Category2":"창업 지원","StartDate":"2026-04-01T00:00:00","CloseDate":"2026-11-30T23:30:00","RegisterStartDate":"2026-03-04T09:00:00","RegisterDueDate":"2026-03-31T23:30:00","ViewCount":473,"AppSubDomain":"shdreamfd","IsSuper":false,"AppTitle":"『신한 스퀘어브릿지』","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 중구","EventAddress":"서울 중구 명동10길 52","EventAddressTitle":"신한 익스페이스","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-03-04T18:30:25.853067","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":false,"JaccardScore":0.0,"EventPlayListId":3718,"ProjectTags":[{"Id":169088,"ProjectId":"121887","ProjectSubDomain":"shdreamfd","TagId":596,"Date":"2026-03-04T18:56:13.7459997","Sort":0,"Project":null,"Tag":null},{"Id":169089,"ProjectId":"121887","ProjectSubDomain":"shdreamfd","TagId":391,"Date":"2026-03-04T18:56:13.7459997","Sort":1,"Project":null,"Tag":null},{"Id":169090,"ProjectId":"121887","ProjectSubDomain":"shdreamfd","TagId":33312,"Date":"2026-03-04T18:56:13.7459997","Sort":2,"Project":null,"Tag":null},{"Id":169091,"ProjectId":"121887","ProjectSubDomain":"shdreamfd","TagId":1172,"Date":"2026-03-04T18:56:13.7459997","Sort":3,"Project":null,"Tag":null},{"Id":169092,"ProjectId":"121887","ProjectSubDomain":"shdreamfd","TagId":5740,"Date":"2026-03-04T18:56:13.7459997","Sort":4,"Project":null,"Tag":null}],"pitId":8282,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/shdreamfd/event/121887","CorrectionValue":0.0},{"Id":"121981","CoverImageUrl":"/Image/bespinglobalkorea/121981/ProjectInfo/Cover/993d52f900094dc1b0ed16031eaee3ba.jpg","Title":"BESPIN AI Partners Day 2026 - AI의 역설, 생산성 이면의 IT가 해결해야 할 4가지 전략","State":"Start","AppTopLogoImageUrl":null,"EventType":"강연/세미나","Category":"IT/프로그래밍","Category2":"AI","StartDate":"2026-03-31T13:00:00","CloseDate":"2026-03-31T17:30:00","RegisterStartDate":"2026-03-06T11:00:00","RegisterDueDate":"2026-03-30T17:00:00","ViewCount":2257,"AppSubDomain":"bespinglobalkorea","IsSuper":false,"AppTitle":"베스핀글로벌","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 서초구","EventAddress":"서울 서초구 강남대로 213","EventAddressTitle":"엘타워 6F 그레이스홀 ","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-03-06T10:56:54.989497","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":169398,"ProjectId":"121981","ProjectSubDomain":"bespinglobalkorea","TagId":97,"Date":"2026-03-06T11:01:46.9693739","Sort":0,"Project":null,"Tag":null},{"Id":169399,"ProjectId":"121981","ProjectSubDomain":"bespinglobalkorea","TagId":32,"Date":"2026-03-06T11:01:46.9693739","Sort":1,"Project":null,"Tag":null},{"Id":169400,"ProjectId":"121981","ProjectSubDomain":"bespinglobalkorea","TagId":96,"Date":"2026-03-06T11:01:46.9693739","Sort":2,"Project":null,"Tag":null},{"Id":169401,"ProjectId":"121981","ProjectSubDomain":"bespinglobalkorea","TagId":390,"Date":"2026-03-06T11:07:43.0014288","Sort":3,"Project":null,"Tag":null},{"Id":169402,"ProjectId":"121981","ProjectSubDomain":"bespinglobalkorea","TagId":759,"Date":"2026-03-06T11:07:43.0014288","Sort":4,"Project":null,"Tag":null}],"pitId":8326,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/121981/51574","CorrectionValue":0.0},{"Id":"122236","CoverImageUrl":"/Image/webinar/122236/ProjectInfo/Cover/7de5986275aa40f8b1fc76079e438760.png","Title":"AX가 우리 회사에서는 안 되는 이유: 사내 데이터를 AI  자산으로 바꾸는 방법","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"경영","Category2":"비즈니스 컨설팅","StartDate":"2026-04-02T14:00:00","CloseDate":"2026-04-02T17:00:00","RegisterStartDate":"2026-03-12T12:00:00","RegisterDueDate":"2026-04-01T23:59:00","ViewCount":3013,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 선릉로 551","EventAddressTitle":"디캠프 선릉 6층 다목적홀","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-03-10T15:05:00","EventSystemType":"offline","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":258,"ProjectTags":[{"Id":170861,"ProjectId":"122236","ProjectSubDomain":"webinar","TagId":97,"Date":"2026-03-12T15:03:10.9313547","Sort":0,"Project":null,"Tag":null},{"Id":170862,"ProjectId":"122236","ProjectSubDomain":"webinar","TagId":34,"Date":"2026-03-12T15:03:10.9313547","Sort":1,"Project":null,"Tag":null},{"Id":170863,"ProjectId":"122236","ProjectSubDomain":"webinar","TagId":5846,"Date":"2026-03-12T15:03:10.9313547","Sort":2,"Project":null,"Tag":null},{"Id":170864,"ProjectId":"122236","ProjectSubDomain":"webinar","TagId":12583,"Date":"2026-03-12T15:03:10.9313547","Sort":3,"Project":null,"Tag":null},{"Id":170865,"ProjectId":"122236","ProjectSubDomain":"webinar","TagId":388,"Date":"2026-03-12T15:03:10.9313547","Sort":4,"Project":null,"Tag":null}],"pitId":8319,"IsAdCheck":true,"AdOrder":2,"IsAdMark":true,"Url":"https://event-us.kr/webinar/event/122236?utm_source=eventus_ad&utm_medium=search_result&utm_campaign=gmmm0czzzp","CorrectionValue":0.0}],
+                    banners: [{"Id":8342,"New_Start_Date":"2026-03-23T00:00:00","New_End_Date":"2026-04-12T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-23T12:10:24.0939072","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/ab998dcc7f16475eb6db38130e59da59.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a585498fe1f841a992219e47e43262a0.png","Click_Url":"https://event-us.kr/m/122037/51729","Banner":{"color":{"title":"#C9FF52","description":"#C9FF52","date":"#C9FF52","place":"#C9FF52"}},"BannerJson":"{\"color\":{\"title\":\"#C9FF52\",\"description\":\"#C9FF52\",\"date\":\"#C9FF52\",\"place\":\"#C9FF52\"}}","BannerTitle":"팬심에서 성과까지 여정을 만듭니다","BannerDescription":"2026 이벤터스 행사 트렌드 웨비나","BannerDate":"2026. 04. 14(화) 14:00","BannerPlace":"온라인 행사"},{"Id":8380,"New_Start_Date":"2026-03-31T00:00:00","New_End_Date":"2026-04-06T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-31T16:10:57.9816013","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/882fc7d6ebf4457e8a723c2ea6ca2bf0.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/4e5fed92ada1496394315760a4cb470b.png","Click_Url":"https://event-us.kr/datarize/event/122393","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"일본 진출 전략 인사이트 세미나","BannerDescription":"K-Brands, Go-Japan!","BannerDate":"2026. 04. 22(수) 13:00","BannerPlace":null},{"Id":8361,"New_Start_Date":"2026-03-26T00:00:00","New_End_Date":"2026-04-08T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-03-26T10:23:05.4265772","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/0fad7709b6ff414d8e571a3a6a863e1e.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/f0e90fd72eb84e4baa8b6a38dc0db00e.png","Click_Url":"https://event-us.kr/dcampprogram/event/123027","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"오피스아워 1:1 멘토링","BannerDescription":"VC투자 / 대중견기업 오픈이노베이션","BannerDate":"2026. 03. 25(수) ~ 2026. 04. 08(수)","BannerPlace":"온라인 접수"}],
+                    searchResultBanners: [{"Id":"122037","CoverImageUrl":"/Image/webinar/122037/ProjectInfo/Cover/644021330bf24010a1955b4496642e28.png","Title":"2026 이벤터스 행사 트렌드 웨비나 : 팬심에서 성과까지, 여정을 만드는 사람들","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/webinar/TopLogoImage/5b5b2e6b5dcb4495be8397f7c11b4d6f.png","EventType":"강연/세미나","Category":"마케팅","Category2":"브랜딩","StartDate":"2026-04-14T14:00:00","CloseDate":"2026-04-14T15:30:00","RegisterStartDate":"2026-03-19T14:30:00","RegisterDueDate":"2026-04-13T23:30:00","ViewCount":5250,"AppSubDomain":"webinar","IsSuper":false,"AppTitle":"EVENTUS LIVE","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":true,"IsDirectPlace":false,"CreatedDate":"2026-03-06T16:53:00","EventSystemType":"online","OnlineEventType":"eventus","ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":172060,"ProjectId":"122037","ProjectSubDomain":"webinar","TagId":125,"Date":"2026-03-19T14:03:21.508726","Sort":0,"Project":null,"Tag":null},{"Id":173786,"ProjectId":"122037","ProjectSubDomain":"webinar","TagId":653,"Date":"2026-03-30T15:17:12.0238526","Sort":1,"Project":null,"Tag":null},{"Id":173787,"ProjectId":"122037","ProjectSubDomain":"webinar","TagId":2225,"Date":"2026-03-30T15:17:12.0238526","Sort":2,"Project":null,"Tag":null},{"Id":173788,"ProjectId":"122037","ProjectSubDomain":"webinar","TagId":387,"Date":"2026-03-30T15:17:12.0238526","Sort":3,"Project":null,"Tag":null},{"Id":173789,"ProjectId":"122037","ProjectSubDomain":"webinar","TagId":319,"Date":"2026-03-30T15:17:12.0238526","Sort":4,"Project":null,"Tag":null}],"pitId":8351,"IsAdCheck":true,"AdOrder":2,"IsAdMark":true,"Url":"https://event-us.kr/m/122037/51804","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,
