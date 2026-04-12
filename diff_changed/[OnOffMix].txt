@@ -4,14 +4,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"/>
-<meta content="onoffmix, event, 온오프믹스, 모임, 행사, 번개, 이벤트" name="keywords"/>
-<meta content="세상의 모든 모임 '온오프믹스'" name="description"/>
+<meta content="온오프믹스, 모임찾기, 이벤트검색, 세미나, 컨퍼런스, 워크숍, 네트워킹, 밋업, 강연" name="keywords"/>
+<meta content="IT, 창업, 교육, 문화예술 분야의 세미나와 컨퍼런스를 찾아보세요. 온오프라인 모임을 한 곳에서 검색하고 참여할 수 있습니다." name="description"/>
 <meta content="ONOFFMIX Inc. (webmaster@onoffmix.com)" name="author"/>
 <meta content="width=1280" name="viewport"/>
 <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
 <meta content="8de35207d20064f3dde9f0b5fef702447d5ba460" name="naver-site-verification">
-<title>온오프믹스 :: 모임문화 플랫폼    </title>
-<meta content="https://static.onoffmix.com/images/common/onoffmix_logo_og.png" property="og:image"> <!-- favicon -->
+<title>모임 찾기 | 온오프믹스    </title>
+<meta content="모임 찾기 | 온오프믹스" property="og:title"><meta content="IT, 창업, 교육, 문화예술 분야의 세미나와 컨퍼런스를 찾아보세요. 온오프라인 모임을 한 곳에서 검색하고 참여할 수 있습니다." property="og:description"><meta content="website" property="og:type"><meta content="https://onoffmix.com/event/main?c=087" property="og:url"><meta content="https://static.onoffmix.com/images/common/onoffmix_logo_og.png" property="og:image"> <meta content="summary_large_image" name="twitter:card"/>
+<meta content="@onoffmix" name="twitter:site"/>
+<meta content="모임 찾기 | 온오프믹스" name="twitter:title"/>
+<meta content="IT, 창업, 교육, 문화예술 분야의 세미나와 컨퍼런스를 찾아보세요. 온오프라인 모임을 한 곳에서 검색하고 참여할 수 있습니다." name="twitter:description"/>
+<!-- favicon -->
 <!-- Common -->
 <link href="https://static.onoffmix.com/images/common/icon/favicon_32x32.png" rel="icon" sizes="32x32" type="image/png"/>
 <link href="https://static.onoffmix.com/images/common/icon/favicon_57x57.png" rel="icon" sizes="57x57" type="image/png"/>
@@ -30,7 +34,46 @@
 <link href="https://static.onoffmix.com/images/common/icon/favicon_167x167.png" rel="apple-touch-icon" sizes="167x167" type="image/png"/>
 <!-- favicon -->
 <!-- canonical(alternate) link tag -->
-<link href="https://m.onoffmix.com/event/main/?c=087" media="only screen and (max-width:640px)" rel="alternate"/> <!-- =================================== 공통 시작 ===================================  -->
+<link href="https://onoffmix.com/event/main/?c=087" rel="canonical"/><link href="https://m.onoffmix.com/event/main/?c=087" media="only screen and (max-width:640px)" rel="alternate"/> <!-- Organization JSON-LD -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "온오프믹스",
+        "alternateName": ["ONOFFMIX", "onoffmix"],
+        "url": "https://onoffmix.com",
+        "logo": "https://static.onoffmix.com/images/common/onoffmix_logo_og.png",
+        "description": "대한민국 대표 모임 플랫폼. 세미나, 컨퍼런스, 네트워킹, 문화예술 크라우드펀딩까지.",
+        "foundingDate": "2009",
+        "sameAs": [
+            "https://www.facebook.com/onoffmix",
+            "https://www.instagram.com/onoffmix_official"
+        ],
+        "subOrganization": {
+            "@type": "Organization",
+            "name": "컬처모아",
+            "alternateName": "CultureMoa",
+            "url": "https://onoffmix.com/culturemoa",
+            "description": "경기도 문화예술 크라우드펀딩 플랫폼"
+        }
+    }
+    </script>
+<!-- WebSite + SearchAction JSON-LD -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "온오프믹스",
+        "alternateName": "ONOFFMIX",
+        "url": "https://onoffmix.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://onoffmix.com/event?s={search_term}",
+            "query-input": "required name=search_term"
+        }
+    }
+    </script>
+<!-- =================================== 공통 시작 ===================================  -->
 <!-- OFM Common Style -->
 <link href="https://static.onoffmix.com/css/common/pc/common-pc.css" rel="stylesheet"/>
 <!-- Common Script -->
@@ -87,7 +130,7 @@
             background-color: #fff;
         }
 
-        .ie_end_support_popup_wrap h1 {
+        .ie_end_support_popup_wrap .ie_popup_title {
             margin-bottom: 37px;
             font-size: 24px;
             font-weight: bold;
@@ -318,14 +361,14 @@
             }
         })();
     </script>
-</meta></meta></head>
+</meta></meta></meta></meta></meta></meta></head>
 <body class="onoffmix">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-K5ZBGC5" style="display:none;visibility:hidden" width="0"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div id="googleTranslateElementBanner"></div>
 <article class="ie_end_support_popup_wrap">
-<h1>인터넷 익스플로러 (IE) 브라우저 지원 종료 안내</h1>
+<div class="ie_popup_title">인터넷 익스플로러 (IE) 브라우저 지원 종료 안내</div>
 <p>
                 마이크로소프트 사의 <span>인터넷 익스플로러(이하 IE)의 지원이 중단</span>됨에 따라<br/><span>온오프믹스 사이트의</span> <span>IE 지원이 종료</span>됩니다.
             </p>
@@ -839,8 +882,8 @@
 <ul data-link_box="">
 <li data-keyword_row="">
 <a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI 인공지능</a>
-<a href="/event/main?s=스타트업">스타트업</a>
-<a href="/event/main?s=국비지원 양성과정">국비지원</a>
+<a href="/event/main?s=창업">창업</a>
+<a href="/event/main?s=취업">취업</a>
 </li>
 <li>
 <a class="link_item event" data-c="b09b92021" href="/event/inviteEvent">무료로 초대해요</a>
@@ -869,7 +912,7 @@
 </header>
 <main class="event_search" id="content">
 <div class="content_wrapping wide_max_width_area">
-<h2 class="main_title">
+<h2 class="main_title" data-nosnippet="">
 <span class="total">0</span>개의 이벤트가 검색되었습니다.
         </h2>
 <!-- keyword search area -->

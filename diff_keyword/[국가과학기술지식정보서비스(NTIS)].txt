@@ -1450,10 +1450,10 @@ $(function(){
 <!-- start # 검색 결과 리스트 -->
 <div id="rndListArea">
 <!-- start # 리스트 타이틀 -->
-<input id="totalCount" name="totalCount" type="hidden" value="76456">
+<input id="totalCount" name="totalCount" type="hidden" value="76574">
 <div class="new_ntis_btitle">
 <div class="btitle_left">
-<h3 class="t_head">검색결과 <span>76,456건</span></h3>
+<h3 class="t_head">검색결과 <span>76,574건</span></h3>
 </div>
 <div class="table_option">
 <a class="button blue" href="/rndgate/eg/cmm/file/download.do" onclick="javascript: fn_fileDownload('upload/ancm_manual.pdf','NTIS 국가R&amp;D통합공고 이용 매뉴얼.pdf'); return false;">이용자 매뉴얼 다운로드</a>
@@ -1506,12 +1506,158 @@ $(function(){
 </thead>
 <tbody>
 <tr>
-<td><input name="selectCheckList" title="2026년도 한국철도기술연구원 기본사업 신규 위탁과제 수행기관 공모" type="checkbox" value="1259526"/></td>
+<td><input name="selectCheckList" title="2026년 KISTEP 기본사업 위탁연구과제 공모(과학기술 논문성과 분석연구(2011-2025))" type="checkbox" value="1260757"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76456
+                            76574
                         </td>
 <td data-title="현황">
 <span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1260757&amp;flag=rndList" onclick="javascript:fn_view('1260757'); return false;" title="2026년 KISTEP 기본사업 위탁연구과제 공모(과학기술 논문성과 분석연구(2011-2025))"> 2026년 KISTEP 기본사업 위탁연구과제 공모(과학기술 논문성과 분석연구(2011-2025))
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.04.09</td>
+<td data-title="마감일">2026.05.08</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-26
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년 AI 기반 대학 과학기술 혁신사업(중앙거점) 신규과제 공모" type="checkbox" value="1260361"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76573
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1260361&amp;flag=rndList" onclick="javascript:fn_view('1260361'); return false;" title="2026년 AI 기반 대학 과학기술 혁신사업(중앙거점) 신규과제 공모"> 2026년 AI 기반 대학 과학기술 혁신사업(중앙거점) 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.04.28</td>
+<td data-title="마감일">2026.05.12</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-30
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년 AI 기반 대학 과학기술 혁신사업(AI4ST) 신규과제 공모" type="checkbox" value="1260360"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76572
+                        </td>
+<td data-title="현황">
+<span style="color: blue;">접수예정</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1260360&amp;flag=rndList" onclick="javascript:fn_view('1260360'); return false;" title="2026년 AI 기반 대학 과학기술 혁신사업(AI4ST) 신규과제 공모"> 2026년 AI 기반 대학 과학기술 혁신사업(AI4ST) 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.05.07</td>
+<td data-title="마감일">2026.05.22</td>
+<td class="end" data-title="D-day">
+                                
+                                
+
+                                
+                                
+
+                                
+                                
+                                
+                                    
+                                    
+                                    
+                                    D-40
+                                
+
+                            </td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 Net-zero구현초격차태양전지개발 사업 신규과제 공모" type="checkbox" value="1254323"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76571
+                        </td>
+<td data-title="현황">
+<span>마감</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1254323&amp;flag=rndList" onclick="javascript:fn_view('1254323'); return false;" title="2026년도 Net-zero구현초격차태양전지개발 사업 신규과제 공모"> 2026년도 Net-zero구현초격차태양전지개발 사업 신규과제 공모
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.01.23</td>
+<td data-title="마감일">2026.02.23</td>
+<td class="end" data-title="D-day">
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="해외우수과학자유치사업 (Brain Pool / Brain Pool+) 2026년도 신규과제 공고" type="checkbox" value="1256395"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76570
+                        </td>
+<td data-title="현황">
+<span style="color: red;">접수중</span>
+</td>
+<td class="tl" data-title="공고명">
+<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+<a href="/rndgate/eg/un/ra/view.do?roRndUid=1256395&amp;flag=rndList" onclick="javascript:fn_view('1256395'); return false;" title="해외우수과학자유치사업 (Brain Pool / Brain Pool+) 2026년도 신규과제 공고"> 해외우수과학자유치사업 (Brain Pool / Brain Pool+) 2026년도 신규과제 공고
+                                </a>
+</div>
+</td>
+<td data-title="부처명">과학기술정보통신부</td>
+<td data-title="접수일">2026.02.12</td>
+<td data-title="마감일">2026.04.16</td>
+<td class="end" data-title="D-day">
+<span style="color: red">D - 4</span>
+</td>
+</tr>
+<tr>
+<td><input name="selectCheckList" title="2026년도 한국철도기술연구원 기본사업 신규 위탁과제 수행기관 공모" type="checkbox" value="1259526"/></td>
+<td data-title="순번" id="mo_disnone_td1">
+                            76569
+                        </td>
+<td data-title="현황">
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1523,16 +1669,15 @@ $(function(){
 <td data-title="접수일">2026.03.27</td>
 <td data-title="마감일">2026.04.10</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="2026년도 한국철도기술연구원 기본사업 신규 공동과제 수행기관 공모" type="checkbox" value="1259525"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76455
+                            76568
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1544,16 +1689,15 @@ $(function(){
 <td data-title="접수일">2026.03.27</td>
 <td data-title="마감일">2026.04.10</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="한국기초과학지원연구원 2026년도 주요사업 위탁연구개발과제(신규) 선정계획 공고(3차)" type="checkbox" value="1259428"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76454
+                            76567
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1565,16 +1709,15 @@ $(function(){
 <td data-title="접수일">2026.03.26</td>
 <td data-title="마감일">2026.04.10</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="한국기초과학지원연구원 2026년도 주요사업 위탁연구개발과제(신규) 선정계획 공고(2차)" type="checkbox" value="1259426"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76453
+                            76566
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1586,16 +1729,15 @@ $(function(){
 <td data-title="접수일">2026.03.26</td>
 <td data-title="마감일">2026.04.10</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
 </tr>
 <tr>
 <td><input name="selectCheckList" title="한국기초과학지원연구원 2026년도 주요사업 위탁연구개발과제(신규) 선정계획 공고(1차)" type="checkbox" value="1259424"/></td>
 <td data-title="순번" id="mo_disnone_td1">
-                            76452
+                            76565
                         </td>
 <td data-title="현황">
-<span style="color: red;">접수중</span>
+<span>마감</span>
 </td>
 <td class="tl" data-title="공고명">
 <div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1607,172 +1749,7 @@ $(function(){
 <td data-title="접수일">2026.03.26</td>
 <td data-title="마감일">2026.04.10</td>
 <td class="end" data-title="D-day">
-<span style="color: red">D - 5</span>
 </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 경찰청 연구개발(RD) 기술수요조사 실시 공고" type="checkbox" value="1258890"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76451
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1258890&amp;flag=rndList" onclick="javascript:fn_view('1258890'); return false;" title="2026년도 경찰청 연구개발(RD) 기술수요조사 실시 공고"> 2026년도 경찰청 연구개발(RD) 기술수요조사 실시 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">경찰청</td>
-<td data-title="접수일">2026.03.23</td>
-<td data-title="마감일">2026.04.21</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-16
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 해외우수연구기관 협력허브 구축사업​ 「글로벌 연구네트워크 확산」 신규 과제 공모" type="checkbox" value="1255975"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76450
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1255975&amp;flag=rndList" onclick="javascript:fn_view('1255975'); return false;" title="2026년도 해외우수연구기관 협력허브 구축사업​ 「글로벌 연구네트워크 확산」 신규 과제 공모"> 2026년도 해외우수연구기관 협력허브 구축사업​ 「글로벌 연구네트워크 확산」 신규 과제 공모
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2026.02.10</td>
-<td data-title="마감일">2026.04.20</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-15
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년 경기도 양자-반도체 융합산업 경쟁력 강화 사업 참여기업 모집 공고" type="checkbox" value="1259527"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76449
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1259527&amp;flag=rndList" onclick="javascript:fn_view('1259527'); return false;" title="2026년 경기도 양자-반도체 융합산업 경쟁력 강화 사업 참여기업 모집 공고"> 2026년 경기도 양자-반도체 융합산업 경쟁력 강화 사업 참여기업 모집 공고
-                                </a>
-</div>
-</td>
-<td data-title="부처명">기타</td>
-<td data-title="접수일">2026.03.19</td>
-<td data-title="마감일">2026.04.20</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                    D-15
-                                
-
-                            </td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년도 한국과학기술정보연구원 기본사업 위탁연구과제 공모(1차 재공모)" type="checkbox" value="1258814"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76448
-                        </td>
-<td data-title="현황">
-                                
-                                
-                                
-                                -
-                            </td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1258814&amp;flag=rndList" onclick="javascript:fn_view('1258814'); return false;" title="2026년도 한국과학기술정보연구원 기본사업 위탁연구과제 공모(1차 재공모)"> 2026년도 한국과학기술정보연구원 기본사업 위탁연구과제 공모(1차 재공모)
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일"></td>
-<td data-title="마감일"></td>
-<td class="end" data-title="D-day"></td>
-</tr>
-<tr>
-<td><input name="selectCheckList" title="2026년 산학연 연계 중소벤처 RBD 지원사업" type="checkbox" value="1259671"/></td>
-<td data-title="순번" id="mo_disnone_td1">
-                            76447
-                        </td>
-<td data-title="현황">
-<span style="color: red;">접수중</span>
-</td>
-<td class="tl" data-title="공고명">
-<div style="display: block; width: 490px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-<a href="/rndgate/eg/un/ra/view.do?roRndUid=1259671&amp;flag=rndList" onclick="javascript:fn_view('1259671'); return false;" title="2026년 산학연 연계 중소벤처 RBD 지원사업"> 2026년 산학연 연계 중소벤처 RBD 지원사업
-                                </a>
-</div>
-</td>
-<td data-title="부처명">과학기술정보통신부</td>
-<td data-title="접수일">2026.03.13</td>
-<td data-title="마감일">2026.04.13</td>
-<td class="end" data-title="D-day">
-                                
-                                
-
-                                
-                                
-
-                                
-                                
-                                
-                                    
-                                    
-                                    
-                                        D - 8
-                                    
-                                    
-                                
-
-                            </td>
 </tr>
 </tbody>
 </table>
@@ -1785,7 +1762,7 @@ $(function(){
 <!-- start # 페이징 -->
 <div class="pagination">
 <div>
-<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7646" onclick="fn_search(7646);return false; ">끝</a>
+<a href="?pageIndex=1" onclick="fn_search(1);return false; ">처음</a><a href="?pageIndex=1" onclick="fn_search(1);return false; ">이전</a><a class="active" href="#">1</a><a href="?pageIndex=2" onclick="fn_search(2);return false; ">2</a><a href="?pageIndex=3" onclick="fn_search(3);return false; ">3</a><a href="?pageIndex=4" onclick="fn_search(4);return false; ">4</a><a href="?pageIndex=5" onclick="fn_search(5);return false; ">5</a><a href="?pageIndex=6" onclick="fn_search(6);return false; ">6</a><a href="?pageIndex=7" onclick="fn_search(7);return false; ">7</a><a href="?pageIndex=8" onclick="fn_search(8);return false; ">8</a><a href="?pageIndex=9" onclick="fn_search(9);return false; ">9</a><a href="?pageIndex=10" onclick="fn_search(10);return false; ">10</a><a href="?pageIndex=11" onclick="fn_search(11);return false; ">다음</a><a href="?pageIndex=7658" onclick="fn_search(7658);return false; ">끝</a>
 </div>
 </div>
 <input id="pageIndex" name="pageIndex" type="hidden" value="1"/>
