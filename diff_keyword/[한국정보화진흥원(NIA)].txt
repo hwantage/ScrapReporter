@@ -58,7 +58,16 @@
 <script src="/js/nia_kor/nia_common.js" type="text/javascript"></script>
 <script src="/js/nia_kor/UserScriptConf.js" type="text/javascript"></script>
 <script src="/viewer/skin/browser_check.js" type="text/javascript"></script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TZ354KHQB3"></script>
 <script>
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-TZ354KHQB3');
+
 $(document).ready(function(){
 	
 	$("a").removeAttr("alt");
@@ -1422,8 +1431,8 @@ function doOrderby(cbIdx,orderbyDiv){
 //]]>
 </script>
 <h3 id="sub_contentsArea2">
-<span class="board_tit">전체</span><span class="search_num"><em class="num">1,910</em>건
-            (1페이지 / 191페이지)</span>
+<span class="board_tit">전체</span><span class="search_num"><em class="num">1,912</em>건
+            (1페이지 / 192페이지)</span>
 <span class="search_array">
 <a href="javascript:doOrderby('99835','count');" title="선택안됨">조회순</a>
 <span class="bar"></span>
@@ -1509,7 +1518,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.01.22</em>
-<em>조회수 16874</em>
+<em>조회수 17519</em>
 </span>
 <span class="writer">
 <em>김은선</em>
@@ -1584,11 +1593,163 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.11.24</em>
-<em>조회수 7807</em>
+<em>조회수 8035</em>
 </span>
 <span class="writer">
 <em>박은명</em>
 <em>기획조정팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','29272','16010100','29272');return false;" title="기업 공공데이터 문제해결 지원센터 운영 지침 일부 개정(안) 입안예고(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             기업 공공데이터 문제해결 지원센터 운영 지침 일부 개정(안) 입안예고
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2026.04.16</em>
+<em>조회수 82</em>
+</span>
+<span class="writer">
+<em>김규리</em>
+<em>공공지능데이터개방팀</em>
+</span>
+</a>
+</li>
+<li class="">
+<a href="#view" onclick="doBbsFView('99835','29265','16010100','29265');return false;" title="2026년도 AI라운지 거점운영사업 설명회 질의응답 자료 공유(새 글)-첨부파일 있음">
+<span class="subject searchItem">
+                    
+                        
+
+                            
+                            
+                                    
+                                     
+                                    
+                                        
+                                        
+                                             2026년도 AI라운지 거점운영사업 설명회 질의응답 자료 공유
+                                        
+                                    
+                                    
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                        
+
+                            
+                            
+                        
+                    
+                    
+                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
+<em class="list_new">new</em>
+</span>
+<span class="src">
+<em>2026.04.15</em>
+<em>조회수 223</em>
+</span>
+<span class="writer">
+<em>방인혜</em>
+<em>AI혁신사업팀</em>
 </span>
 </a>
 </li>
@@ -1662,7 +1823,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.04.10</em>
-<em>조회수 85</em>
+<em>조회수 316</em>
 </span>
 <span class="writer">
 <em>이원혁</em>
@@ -1671,7 +1832,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','29246','16010100','29246');return false;" title="2026년 디지털정부 해외진출 컨설턴트 1차 경력자 과정 온라인 청강 모집 안내(새 글)-첨부파일 없음">
+<a href="#view" onclick="doBbsFView('99835','29246','16010100','29246');return false;" title="2026년 디지털정부 해외진출 컨설턴트 1차 경력자 과정 온라인 청강 모집 안내-첨부파일 없음">
 <span class="subject searchItem">
                     
                         
@@ -1736,11 +1897,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     
-                        <em class="list_new">new</em>
-</span>
+                    </span>
 <span class="src">
 <em>2026.04.09</em>
-<em>조회수 978</em>
+<em>조회수 1674</em>
 </span>
 <span class="writer">
 <em>김기택</em>
@@ -1749,7 +1909,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','29242','16010100','29242');return false;" title="제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','29242','16010100','29242');return false;" title="제14회 범정부 공공데이터·AI 활용 창업경진대회 통합공고-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1812,11 +1972,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2026.04.08</em>
-<em>조회수 380</em>
+<em>조회수 645</em>
 </span>
 <span class="writer">
 <em>김보람</em>
@@ -1825,7 +1984,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','29227','16010100','29227');return false;" title="2026년 데이터 스페이스 통합 사업 설명회(4.2) 자료 공유(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','29227','16010100','29227');return false;" title="2026년 데이터 스페이스 통합 사업 설명회(4.2) 자료 공유-첨부파일 있음">
 <span class="subject searchItem">
                     
                         
@@ -1888,11 +2047,10 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2026.04.03</em>
-<em>조회수 742</em>
+<em>조회수 965</em>
 </span>
 <span class="writer">
 <em>오대훈</em>
@@ -1969,7 +2127,7 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2026.03.30</em>
-<em>조회수 297</em>
+<em>조회수 370</em>
 </span>
 <span class="writer">
 <em>전예은</em>
@@ -2044,7 +2202,7 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.03.27</em>
-<em>조회수 312</em>
+<em>조회수 383</em>
 </span>
 <span class="writer">
 <em>구서연</em>
@@ -2052,160 +2210,10 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 </a>
 </li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','29160','16010100','29160');return false;" title="(안내) 2026년 국산 양자기술 소부장 보급활용 지원사업의 공급기업 Pool 신규 등록 결과-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             (안내) 2026년 국산 양자기술 소부장 보급활용 지원사업의 공급기업 Pool 신규 등록 결과
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2026.03.25</em>
-<em>조회수 331</em>
-</span>
-<span class="writer">
-<em>정현철</em>
-<em>양자기술활용센터</em>
-</span>
-</a>
-</li>
-<li class="">
-<a href="#view" onclick="doBbsFView('99835','29159','16010100','29159');return false;" title="(안내) 2026년 국산 양자기술 소부장 보급활용 지원사업의 수요처 선정 결과-첨부파일 있음">
-<span class="subject searchItem">
-                    
-                        
-
-                            
-                            
-                                    
-                                     
-                                    
-                                        
-                                        
-                                             (안내) 2026년 국산 양자기술 소부장 보급활용 지원사업의 수요처 선정 결과
-                                        
-                                    
-                                    
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                        
-
-                            
-                            
-                        
-                    
-                    
-                    <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-</span>
-<span class="src">
-<em>2026.03.25</em>
-<em>조회수 348</em>
-</span>
-<span class="writer">
-<em>정현철</em>
-<em>양자기술활용센터</em>
-</span>
-</a>
-</li>
 </ul>
 </div>
 <div class="pageNation">
-<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=191" onclick="doBbsFPag(191);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
+<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=192" onclick="doBbsFPag(192);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
 </div>
 </section>
 <!-- 0926수정 top버튼추가 --><!-- 0928 -->

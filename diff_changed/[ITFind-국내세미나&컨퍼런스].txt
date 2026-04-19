@@ -9,25 +9,25 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="responsive web" property="og:type"/>
 <meta content="ITFIND - IT 지식포털" property="og:title"/>
-<meta content="/contents/main_images/comm/og_image-1.jpg" property="og:image"/>
+<meta content="/contents/main_images/comm/og_image-2.jpg" property="og:image"/>
 <meta content="정보통신기획평가원(IT지식포털)" name="description"/>
 <meta content="c2b89a1654e15373448ff4c02c299ca9f6872fd9" name="naver-site-verification"/>
 <meta content="정보통신기획평가원; IT지식포털;" name="Keywords"/>
-<meta content="font-src 'self' data:; default-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com ssl.daumcdn.net t1.daumcdn.net stats.g.doubleclick.net; style-src 'self'  'unsafe-inline' 'unsafe-eval' t1.daumcdn.net;  img-src * " http-equiv="Content-Security-Policy"/>
+<meta content="default-src 'self' www.google-analytics.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' www.googletagmanager.com www.google-analytics.com ssl.daumcdn.net t1.daumcdn.net stats.g.doubleclick.net https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' 'unsafe-inline' 'unsafe-eval' t1.daumcdn.net; img-src *; font-src 'self' data:; frame-src https://www.google.com/recaptcha/;" http-equiv="Content-Security-Policy"/>
 <link href="/contents/main_images/comm/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 <link href="/contents/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/rd-navbar-2.1.8/dist/css/rd-navbar.css" rel="stylesheet"/>
-<link href="/contents/main_css/animation.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/main_css/layout.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/main_css/main-content.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/main_css/slick.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/css/new_base.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/css/sub_cont.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/css/login.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/common.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/layout.css?ver=2026-04-13" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/nav.css?ver=2026-04-13" rel="stylesheet"/>
+<link href="/contents/main_css/animation.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/main_css/layout.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/main_css/main-content.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/main_css/slick.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/css/new_base.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/css/sub_cont.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/css/login.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/common.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/layout.css?ver=2026-04-20" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/nav.css?ver=2026-04-20" rel="stylesheet"/>
 <link href="/contents/js/jquery-ui/jquery-ui.css" rel="stylesheet"/>
 <script src="/contents/main_js/core.min.js"></script>
 <script src="/contents/main_js/easings.min.js"></script>
@@ -37,9 +37,9 @@
 <script src="/contents/js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/src/localization/messages_ko.js"></script>
-<script src="/contents/js/func.js?ver=2026-04-13"></script>
-<script src="/contents/js/common.js?ver=2026-04-13"></script>
-<script src="/contents/js/action.js?ver=2026-04-13"></script>
+<script src="/contents/js/func.js?ver=2026-04-20"></script>
+<script src="/contents/js/common.js?ver=2026-04-20"></script>
+<script src="/contents/js/action.js?ver=2026-04-20"></script>
 <script src="/contents/nav_common/nav_js/core.min.js"></script>
 <script src="/contents/js/google_analytics.js"></script>
 </head>
@@ -303,12 +303,12 @@ function registData() {
 </div>
 <div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>4,095건</strong></span>
+<span>총 게시물 : <strong>4,103건</strong></span>
 <span>현재페이지 : 
 						<strong>
 							1
 							/
-							410
+							411
 						</strong>
 </span>
 <select name="recordCountPerPage" onchange="goToPage(1)" title="건 수 선택">
@@ -344,7 +344,35 @@ function registData() {
 <tbody>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4095
+									4103
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14679">
+										대한전자공학회 2026 SoC 학술대회
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-05-29 ~ 2026-05-30</td>
+<td data-cell-header="접수기간">2026-04-01 ~ 2026-05-28</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4102
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14683">
+										피지컬AI 가 주도하는 주요 산업 분석 세미나(#1/#2)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-05-27 ~ 2026-05-28</td>
+<td data-cell-header="접수기간">2026-04-17 ~ 2026-05-26</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4101
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
@@ -358,7 +386,35 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4094
+									4100
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14684">
+										2026 국제인공지능대전(AI Expo Korea)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-05-06 ~ 2026-05-08</td>
+<td data-cell-header="접수기간">2026-04-01 ~ 2026-04-05</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4099
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">아랍에미리트연합국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14686">
+										UAE 두바이 사이버 보안 전시회(GISEC Global 2026) 
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-05-05 ~ 2026-05-07</td>
+<td data-cell-header="접수기간">2026-04-01 ~ 2026-05-06</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4098
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">미국</td>
@@ -372,7 +428,7 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4093
+									4097
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
@@ -386,7 +442,21 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4092
+									4096
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14685">
+										2026 자율제조AI 월드쇼(AMW 2026)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-04-27 ~ 2026-04-27</td>
+<td data-cell-header="접수기간">2026-04-17 ~ 2026-04-27</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4095
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">미국</td>
@@ -400,87 +470,17 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4091
+									4094
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
 <td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14667">
-										한국기술혁신학회 2026 춘계학술대회 
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-04-24 ~ 2026-04-25</td>
-<td data-cell-header="접수기간">2026-03-09 ~ 2026-04-23</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4090
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14666">
-										한국정책학회 2026 춘계학술대회
+<a href="/seminar/seminarDetail.do?id=14682">
+										제2회 양자전파 워크숍
 									</a>
 </td>
 <td data-cell-header="행사기간">2026-04-24 ~ 2026-04-24</td>
-<td data-cell-header="접수기간">2026-03-01 ~ 2026-04-15</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4089
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">미국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14671">
-										Google Cloud Next 2026 
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-04-22 ~ 2026-04-24</td>
-<td data-cell-header="접수기간">2026-01-01 ~ 2026-04-21</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4088
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14660">
-										IICC 2026 지능정보 및 제어 학술대회
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-04-22 ~ 2026-04-24</td>
-<td data-cell-header="접수기간">2026-03-01 ~ 2026-04-10</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4087
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14655">
-										2026 월드IT쇼/ITRC 인재양성대전/ICT기술사업화페스티벌
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-04-22 ~ 2026-04-24</td>
-<td data-cell-header="접수기간">2026-03-01 ~ 2026-04-21</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4086
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">미국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14672">
-										Microsoft 365 Community Conference 2026
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-04-21 ~ 2026-04-23</td>
-<td data-cell-header="접수기간">2026-03-01 ~ 2026-04-20</td>
+<td data-cell-header="접수기간">2026-04-18 ~ 2026-04-24</td>
 </tr>
 </tbody>
 </table>
@@ -488,7 +488,7 @@ function registData() {
 <!-- 			<button type="button" class="btnstyle01" onclick="registData()">등록</button> -->
 <!-- 		</div> -->
 <div class="Paging">
-<a class="BtnFirst off" href="javascript:void(0);">이전</a><a class="BtnForward off" href="javascript:void(0);">이전</a><div class="No_PC"> <a class="M_on">1</a> <a href="javascript:void(0);" onclick="goToPage(2);">2</a> <a href="javascript:void(0);" onclick="goToPage(3);">3</a> <a href="javascript:void(0);" onclick="goToPage(4);">4</a> <a href="javascript:void(0);" onclick="goToPage(5);">5</a></div><div class="No_Mobile"> <strong>1</strong>/410</div><a class="BtnNext" href="javascript:void(0);" onclick="goToPage(2);">다음</a><a class="BtnLast" href="javascript:void(0);" onclick="goToPage(410);">다음</a>
+<a class="BtnFirst off" href="javascript:void(0);">이전</a><a class="BtnForward off" href="javascript:void(0);">이전</a><div class="No_PC"> <a class="M_on">1</a> <a href="javascript:void(0);" onclick="goToPage(2);">2</a> <a href="javascript:void(0);" onclick="goToPage(3);">3</a> <a href="javascript:void(0);" onclick="goToPage(4);">4</a> <a href="javascript:void(0);" onclick="goToPage(5);">5</a></div><div class="No_Mobile"> <strong>1</strong>/411</div><a class="BtnNext" href="javascript:void(0);" onclick="goToPage(2);">다음</a><a class="BtnLast" href="javascript:void(0);" onclick="goToPage(411);">다음</a>
 </div>
 </div>
 </article>
