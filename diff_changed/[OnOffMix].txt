@@ -313,6 +313,35 @@
                         "success": (response) => {
                             if (response.API_CODE !== "0000") {
                                 console.error("/v1/auth/me error");
+                                // 메인('/') 한정: 서버가 로그아웃 상태로 판정했는데 헤더가 로그인으로 렌더된 "잔상" 감지.
+                                // 리로드 대신 헤더의 로그인 영역만 DOM 교체해 로그아웃 UI 로 전환한다.
+                                if (window.location.pathname === "/") {
+                                    const mainMenu = document.querySelector("[data-user_menu_box] ul");
+                                    if (mainMenu) {
+                                        ["sm", "mypage", "my_channel", "logout"].forEach((key) => {
+                                            const el = mainMenu.querySelector("[data-header-list_box='" + key + "']");
+                                            if (el) el.remove();
+                                        });
+                                        if (!mainMenu.querySelector("[data-header-list_box='login']")) {
+                                            const loginLi = document.createElement("li");
+                                            loginLi.setAttribute("data-header-list_box", "login");
+                                            loginLi.innerHTML = '<a href="/account/login">로그인 및 회원가입</a>';
+                                            mainMenu.insertBefore(loginLi, mainMenu.firstChild);
+                                        }
+                                    }
+                                    const subMenu = document.querySelector("[data-sub_header] ul");
+                                    if (subMenu) {
+                                        subMenu.querySelectorAll(".list_item.sm, .list_item.logout").forEach((el) => el.remove());
+                                        const userNameLink = subMenu.querySelector(".user_name");
+                                        if (userNameLink) userNameLink.closest("li")?.remove();
+                                        if (!subMenu.querySelector(".list_item.login")) {
+                                            const loginLi = document.createElement("li");
+                                            loginLi.className = "list_item login";
+                                            loginLi.innerHTML = '<a href="/account/login">로그인 및 회원가입</a>';
+                                            subMenu.insertBefore(loginLi, subMenu.firstChild);
+                                        }
+                                    }
+                                }
                                 return;
                             }
                             const data = response.API_DATA;
@@ -445,9 +474,9 @@
 <div data-search_box="">
 <form action="/event/main" class="search_form" data-gtm_submit='{"event" : "clickKeywordSearchButton", "keyword" : ""}' method="GET">
 <label for="searchInput">검색할 이벤트를 입력해주세요.</label>
-<input autocomplete="off" class="search_input" data-event="341231" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
-<span class="ofm_keyword_value" data-creative_name="PC_메인_검색창광고" data-creative_slot="1" data-event_no="341231" data-event_title="서울바이오허브 보건·의료 창업기업 북미 시장 진출 지원 사업" data-href="/cs/a/99336?url=%2Fevent%2F341231">
-                                                    서울바이오허브 보건·의료 창업기업 북미 시장 진출 지원 사업                                                </span>
+<input autocomplete="off" class="search_input" data-event="341511" id="searchInput" name="s" title="키워드로 이벤트를 검색하세요" type="text" value=""/>
+<span class="ofm_keyword_value" data-creative_name="PC_메인_검색창광고" data-creative_slot="1" data-event_no="341511" data-event_title="AI 네이티브 과정 교육생 모집(무료 교육 &amp; 장학금 월 100만 원)" data-href="/cs/a/99365?url=%2Fevent%2F341511">
+                                                    최대 500만원 장학금받는 무료 AI 교육                                                </span>
 <input data-gtag_dto_key="_GTAG_DTO_KEY_1001" data-search_btn="" title="검색" type="submit" value="검색"/>
 </form>
 </div>
@@ -884,7 +913,7 @@
 <ul data-link_box="">
 <li data-keyword_row="">
 <a href="/event/main?s=인공지능 ai chatgpt 챗gpt">AI 인공지능</a>
-<a href="/event/main?s=국비지원 양성과정">국비지원</a>
+<a href="/event/main?s=문화 예술">문화・예술</a>
 <a href="/event/main?s=창업">창업</a>
 </li>
 <li>
@@ -910,7 +939,7 @@
                 <a href="http://pf.kakao.com/_xoWIcE/chat" title="상담톡" target="_blank">톡상담</a>
             </div> -->
 <script>
-            var _GTAG_DTO_KEY_1001 = {"event":"clickEvent","eventID":341231,"eventName":"서울바이오허브 보건·의료 창업기업 북미 시장 진출 지원 사업","eventType":"일반","categoryID":"105","categoryName":"공모전/대회/지원사업","eventFeeType":["무료"],"applicationType":"외부","recommendFieldID":["A0101","A0103","A0199"],"recommendFieldName":["비즈니스/스타트업","과학/IT/AI","기타"],"recommendJobID":[],"recommendJobName":[],"keyword":"","pageIndex":0,"sequenceNumber":0,"clickPoint":"검색창","adCode":"PM20","sectionNumber":"","ai":"n"};
+            var _GTAG_DTO_KEY_1001 = {"event":"clickEvent","eventID":341511,"eventName":"AI 네이티브 과정 교육생 모집(무료 교육 & 장학금 월 100만 원)","eventType":"일반","categoryID":"101","categoryName":"교육/워크숍","eventFeeType":["무료"],"applicationType":"외부","recommendFieldID":["A0103"],"recommendFieldName":["과학/IT/AI"],"recommendJobID":[],"recommendJobName":[],"keyword":"","pageIndex":0,"sequenceNumber":0,"clickPoint":"검색창","adCode":"PM20","sectionNumber":"","ai":"n"};
         </script>
 </header>
 <main class="event_search" id="content">
