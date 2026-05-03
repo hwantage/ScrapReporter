@@ -1,0 +1,51 @@
+
+<script type="text/javascript">
+
+function fnMoveMainPage() {
+    location.href="/main.do";
+}
+</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="ko" xml:lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="noindex, nofollow" name="robots"/>
+<title>한국능률협회</title>
+<link href="/css/common.css" rel="stylesheet" type="text/css"/>
+<!-- 메인 페이지 스타일 시트 - Mobile -->
+<link href="/css/resp/media_mo.css" media="all and (max-width:767px)" rel="stylesheet" type="text/css"/>
+<!-- 메인 페이지 스타일 시트 - Tablet -->
+<link href="/css/resp/media_pc.css" media="all and (min-width:768px) and (max-width:1099px)" rel="stylesheet" type="text/css"/>
+<!-- 메인 페이지 스타일 시트 - PC -->
+<link href="/css/resp/media_pc.css" media="all and (min-width:1100px)" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" style="background: #F9FAFB;" width="100%">
+<tr>
+<td align="center" height="100%" valign="middle" width="100%"><table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<div class="wrapSubError renewal">
+<div class="wrapSubMistake">
+<img alt="해당 서비스 접속이 원활하지 않습니다." src="/images/resp/template/common/icon_error.png"/>
+<h2>해당 서비스 접속이 원활하지 않습니다.</h2>
+<p>
+						해당 서비스 접속이 원활하지 않습니다.<br/>
+						잠시 후에 다시 접속해 주시기 바랍니다.<br/>
+						이용에 불편을 드린 점  사과의 말씀드립니다.
+					</p>
+<div class="error_btn_area"><button class="errorbtn" onclick="fnMoveMainPage();" type="button">메인페이지로 돌아가기</button></div>
+<div class="info-box">
+<span>긴급연락처</span>
+<p>02)3274-9301</p>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+</body>
+</html>
