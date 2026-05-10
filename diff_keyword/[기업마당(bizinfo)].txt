@@ -10,7 +10,7 @@
 <head>
 <style>
 </style>
-<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="0299a542-5124-4018-95ef-7ba441b3a02f" name="_csrf"/>
+<meta content="_csrf" name="_csrf_parameter"/><meta content="X-CSRF-TOKEN" name="_csrf_header"/><meta content="0f75403a-92a9-47b3-b3f1-71568254e257" name="_csrf"/>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, user-scalable=0, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport"/>
@@ -412,13 +412,19 @@
 	let currentScale = 1;
 
 	function setZoom(percent) {
-	    const scale = percent / 100;
-	    
-	    document.body.style.zoom = percent + "%";
-	    $(".current_zoom").text(percent + "%");
-	    $(".zoom_menu li").removeClass("active");
-	    $(".zoom_menu li[data-zoom='" + percent + "']").addClass("active");
+
+		document.body.style.zoom = percent + "%";
+		$(".current_zoom").text(percent + "%");
+	
+		$(".zoom_menu li").removeClass("active");
+		$(".zoom_menu button").removeAttr("title");
+	
+		const selectedBtn = $(".zoom_menu li[data-zoom='" + percent + "'] button");
+	
+		selectedBtn.parent().addClass("active");
+		selectedBtn.attr("title", "선택됨");
 	}
+
 
 	$(".btn_zoom_main").click(function() {
 	    $(".zoom_menu").toggle();
@@ -1108,7 +1114,7 @@
 <div class="category">
 <div class="scroll_x">
 <div class="category_list icon_1">
-<a alt="분야(1250) 공고보기" class="on" href="#" id="hashAll" onclick="fn_hashCode_Change('')" title="분야(1250) 공고보기"><span>분야(1250)</span></a>
+<a alt="분야(1278) 공고보기" class="on" href="#" id="hashAll" onclick="fn_hashCode_Change('')" title="분야(1278) 공고보기"><span>분야(1278)</span></a>
 </div>
 <div class="category_list icon_2">
 <a alt="금융" href="javascript:void(0); return false;" id="01" onclick="fn_hashCode_Change('01')" title="금융">
@@ -1117,37 +1123,37 @@
 </div>
 <div class="category_list icon_3">
 <a alt="기술" href="javascript:void(0); return false;" id="02" onclick="fn_hashCode_Change('02')" title="기술">
-<span>기술(218)</span>
+<span>기술(228)</span>
 </a>
 </div>
 <div class="category_list icon_4">
 <a alt="인력" href="javascript:void(0); return false;" id="03" onclick="fn_hashCode_Change('03')" title="인력">
-<span>인력(136)</span>
+<span>인력(132)</span>
 </a>
 </div>
 <div class="category_list icon_8">
 <a alt="수출" href="javascript:void(0); return false;" id="07" onclick="fn_hashCode_Change('07')" title="수출">
-<span>수출(173)</span>
+<span>수출(179)</span>
 </a>
 </div>
 <div class="category_list icon_9">
 <a alt="내수" href="javascript:void(0); return false;" id="08" onclick="fn_hashCode_Change('08')" title="내수">
-<span>내수(70)</span>
+<span>내수(71)</span>
 </a>
 </div>
 <div class="category_list icon_10">
 <a alt="창업" href="javascript:void(0); return false;" id="09" onclick="fn_hashCode_Change('09')" title="창업">
-<span>창업(89)</span>
+<span>창업(92)</span>
 </a>
 </div>
 <div class="category_list icon_11">
 <a alt="경영" href="javascript:void(0); return false;" id="10" onclick="fn_hashCode_Change('10')" title="경영">
-<span>경영(338)</span>
+<span>경영(349)</span>
 </a>
 </div>
 <div class="category_list icon_13">
 <a alt="기타" href="javascript:void(0); return false;" id="12" onclick="fn_hashCode_Change('12')" title="기타">
-<span>기타(19)</span>
+<span>기타(20)</span>
 </a>
 </div>
 </div>
@@ -1157,61 +1163,61 @@
 <div class="area_btn_list">
 <ul style="display:inline-table;">
 <li class="total_area_btn">
-<button class="toggle_area_btn" id="wnty" name="지역" title="지역(849) 공고보기" type="button">
-						                	지역(849)
+<button class="toggle_area_btn" id="wnty" name="지역" title="지역(874) 공고보기" type="button">
+						                	지역(874)
 						                </button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6110000" name="6110000" type="button">서울(35)</button>
+<button class="toggle_area_btn" id="6110000" name="6110000" type="button">서울(40)</button>
 </li>
 <li class="area_btn">
 <button class="toggle_area_btn" id="6260000" name="6260000" type="button">부산(45)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6270000" name="6270000" type="button">대구(19)</button>
+<button class="toggle_area_btn" id="6270000" name="6270000" type="button">대구(23)</button>
 </li>
 <li class="area_btn">
 <button class="toggle_area_btn" id="6280000" name="6280000" type="button">인천(50)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6290000" name="6290000" type="button">광주(42)</button>
+<button class="toggle_area_btn" id="6290000" name="6290000" type="button">광주(46)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6300000" name="6300000" type="button">대전(30)</button>
+<button class="toggle_area_btn" id="6300000" name="6300000" type="button">대전(26)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6310000" name="6310000" type="button">울산(29)</button>
+<button class="toggle_area_btn" id="6310000" name="6310000" type="button">울산(32)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="5690000" name="5690000" type="button">세종(15)</button>
+<button class="toggle_area_btn" id="5690000" name="5690000" type="button">세종(16)</button>
 </li>
 <div style="height:10px;"></div>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6410000" name="6410000" type="button">경기(123)</button>
+<button class="toggle_area_btn" id="6410000" name="6410000" type="button">경기(131)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6420000" name="6420000" type="button">강원(64)</button>
+<button class="toggle_area_btn" id="6420000" name="6420000" type="button">강원(62)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6430000" name="6430000" type="button">충북(60)</button>
+<button class="toggle_area_btn" id="6430000" name="6430000" type="button">충북(50)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6440000" name="6440000" type="button">충남(36)</button>
+<button class="toggle_area_btn" id="6440000" name="6440000" type="button">충남(41)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6450000" name="6450000" type="button">전북(47)</button>
+<button class="toggle_area_btn" id="6450000" name="6450000" type="button">전북(53)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6460000" name="6460000" type="button">전남(53)</button>
+<button class="toggle_area_btn" id="6460000" name="6460000" type="button">전남(55)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6470000" name="6470000" type="button">경북(106)</button>
+<button class="toggle_area_btn" id="6470000" name="6470000" type="button">경북(108)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6480000" name="6480000" type="button">경남(71)</button>
+<button class="toggle_area_btn" id="6480000" name="6480000" type="button">경남(73)</button>
 </li>
 <li class="area_btn">
-<button class="toggle_area_btn" id="6500000" name="6500000" type="button">제주(24)</button>
+<button class="toggle_area_btn" id="6500000" name="6500000" type="button">제주(23)</button>
 </li>
 </ul>
 </div>
@@ -1269,7 +1275,33 @@
 </thead>
 <tbody>
 <tr>
-<td>1250</td>
+<td>1278</td>
+<td>
+		                            
+		                                
+		                                경영
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121787" title="[경기] 2026년 사회적가치지표(SVI) 측정교육ㆍ컨설팅 참여기업 모집 공고 페이지 이동">
+										[경기] 2026년 사회적가치지표(SVI) 측정교육ㆍ컨설팅 참여기업 모집 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-04-30 ~ 2026-09-30
+		                                
+		                            
+		                        </td>
+<td>고용노동부</td>
+<td>협동조합 소셜랩</td>
+<td>2026-05-08</td>
+<td>2906</td>
+</tr>
+<tr>
+<td>1277</td>
 <td>
 		                            
 		                                
@@ -1277,346 +1309,34 @@
 		                            
 		                        </td>
 <td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121533" title="[대전] 2026년 2차 Start-up 기술창출 사업화 지원사업 지원기업 모집 공고 페이지 이동">
-										[대전] 2026년 2차 Start-up 기술창출 사업화 지원사업 지원기업 모집 공고
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121786" title="[경기] 2026년 드론산업 육성 지원사업 모집 공고(지역 수요기반 드론 활용 사업모델 발굴 및 실증 지원) 페이지 이동">
+										[경기] 2026년 드론산업 육성 지원사업 모집 공고(지역 수요기반 드론 활용 사업모델 발굴 및 실증 지원)
 									</a>
 </td>
 <td>
 		                            
 		                                
+		                                    차수별 상이
 		                                
-		                                    2026-04-28 ~ 2026-05-27
 		                                
 		                            
 		                        </td>
-<td>대전광역시</td>
-<td>대전테크노파크</td>
-<td>2026-04-30</td>
-<td>4215</td>
+<td>경기도</td>
+<td>경기테크노파크</td>
+<td>2026-05-08</td>
+<td>3133</td>
 </tr>
 <tr>
-<td>1249</td>
+<td>1276</td>
 <td>
 		                            
 		                                
-		                                경영
+		                                인력
 		                            
 		                        </td>
 <td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121532" title="[부산] 2026년 2차 중소기업 디자인개발 지원사업 지원과제  모집 공고 페이지 이동">
-										[부산] 2026년 2차 중소기업 디자인개발 지원사업 지원과제  모집 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-04-29 ~ 2026-05-19
-		                                
-		                            
-		                        </td>
-<td>부산광역시</td>
-<td>부산디자인진흥원</td>
-<td>2026-04-30</td>
-<td>3969</td>
-</tr>
-<tr>
-<td>1248</td>
-<td>
-		                            
-		                                
-		                                기술
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121531" title="[세종] 2026년 SW융합 신규 비즈니스 모델 수립 지원사업 모집 재공고(SW융합클러스터2.0) 페이지 이동">
-										[세종] 2026년 SW융합 신규 비즈니스 모델 수립 지원사업 모집 재공고(SW융합클러스터2.0)
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-04-28 ~ 2026-05-08
-		                                
-		                            
-		                        </td>
-<td>세종특별자치시</td>
-<td>세종테크노파크</td>
-<td>2026-04-30</td>
-<td>3910</td>
-</tr>
-<tr>
-<td>1247</td>
-<td>
-		                            
-		                                
-		                                기술
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121530" title="2026년 대구 차세대선도기술개발사업 신규지원 시행계획 공고 페이지 이동">
-										2026년 대구 차세대선도기술개발사업 신규지원 시행계획 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-05-26 ~ 2026-05-27
-		                                
-		                            
-		                        </td>
-<td>대구광역시</td>
-<td>대구테크노파크</td>
-<td>2026-04-30</td>
-<td>3927</td>
-</tr>
-<tr>
-<td>1246</td>
-<td>
-		                            
-		                                
-		                                기타
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121529" title="[전남] 2026년 일자리 우수기업 인증 시행계획 공고 페이지 이동">
-										[전남] 2026년 일자리 우수기업 인증 시행계획 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-07-01 ~ 2026-07-10
-		                                
-		                            
-		                        </td>
-<td>전라남도</td>
-<td>직접수행</td>
-<td>2026-04-30</td>
-<td>3843</td>
-</tr>
-<tr>
-<td>1245</td>
-<td>
-		                            
-		                                
-		                                경영
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121528" title="[경북] 2026년 중소기업 인증브랜드 실라리안 신규기업 모집 공고 페이지 이동">
-										[경북] 2026년 중소기업 인증브랜드 실라리안 신규기업 모집 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-05-11 ~ 2026-05-31
-		                                
-		                            
-		                        </td>
-<td>경상북도</td>
-<td>경상북도경제진흥원</td>
-<td>2026-04-30</td>
-<td>3823</td>
-</tr>
-<tr>
-<td>1244</td>
-<td>
-		                            
-		                                
-		                                기술
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121527" title="2026년 2차 서천군 해양수산자원 산업화 육성 지원(바이오) 수혜기업 모집 공고 페이지 이동">
-										2026년 2차 서천군 해양수산자원 산업화 육성 지원(바이오) 수혜기업 모집 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-05-13 ~ 2026-05-15
-		                                
-		                            
-		                        </td>
-<td>충청남도</td>
-<td>충남테크노파크</td>
-<td>2026-04-30</td>
-<td>3856</td>
-</tr>
-<tr>
-<td>1243</td>
-<td>
-		                            
-		                                
-		                                창업
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121526" title="[충남] 2026년 정보보호 신규 비즈니스 모델 발굴 및 기업지원 모집 공고(지역 거점 정보보호 클러스터 구축 사업) 페이지 이동">
-										[충남] 2026년 정보보호 신규 비즈니스 모델 발굴 및 기업지원 모집 공고(지역 거점 정보보호 클러스터 구축 사업)
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-04-28 ~ 2026-05-22
-		                                
-		                            
-		                        </td>
-<td>충청남도</td>
-<td>충남테크노파크</td>
-<td>2026-04-30</td>
-<td>3882</td>
-</tr>
-<tr>
-<td>1242</td>
-<td>
-		                            
-		                                
-		                                경영
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121525" title="[충북] 2026년 지역혁신중심 대학지원체계(RISE) AIㆍ스마트제조 연계 사업화 패키지 지원사업 참여기업 모집 공고 페이지 이동">
-										[충북] 2026년 지역혁신중심 대학지원체계(RISE) AIㆍ스마트제조 연계 사업화 패키지 지원사업 참여기업 모집 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-05-06 ~ 2026-05-22
-		                                
-		                            
-		                        </td>
-<td>교육부</td>
-<td>충북테크노파크</td>
-<td>2026-04-30</td>
-<td>3819</td>
-</tr>
-<tr>
-<td>1241</td>
-<td>
-		                            
-		                                
-		                                경영
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121524" title="[전북] 2026년 SW강소기업 도약 패키지 지원사업 공고 페이지 이동">
-										[전북] 2026년 SW강소기업 도약 패키지 지원사업 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-04-28 ~ 2026-05-14
-		                                
-		                            
-		                        </td>
-<td>전북특별자치도</td>
-<td>전북테크노파크</td>
-<td>2026-04-30</td>
-<td>3943</td>
-</tr>
-<tr>
-<td>1240</td>
-<td>
-		                            
-		                                
-		                                창업
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121523" title="로봇분야 예비창업자 및 재창업자를 위한 창업 성장 프로그램 참가자 모집 공고 페이지 이동">
-										로봇분야 예비창업자 및 재창업자를 위한 창업 성장 프로그램 참가자 모집 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                    모집 마감시
-		                                
-		                                
-		                            
-		                        </td>
-<td>산업통상부</td>
-<td>한국로봇산업진흥원</td>
-<td>2026-04-30</td>
-<td>3868</td>
-</tr>
-<tr>
-<td>1239</td>
-<td>
-		                            
-		                                
-		                                경영
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121522" title="제14회 산업통상부 공공데이터 활용 아이디어 공모전 공고 페이지 이동">
-										제14회 산업통상부 공공데이터 활용 아이디어 공모전 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-03-30 ~ 2026-07-06
-		                                
-		                            
-		                        </td>
-<td>산업통상부</td>
-<td>직접수행</td>
-<td>2026-04-30</td>
-<td>3835</td>
-</tr>
-<tr>
-<td>1238</td>
-<td>
-		                            
-		                                
-		                                수출
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121521" title="[경남] 2026년 싱가포르 빅데이터 및 AI 전시회 참가업체 모집 공고 페이지 이동">
-										[경남] 2026년 싱가포르 빅데이터 및 AI 전시회 참가업체 모집 공고
-									</a>
-</td>
-<td>
-		                            
-		                                
-		                                
-		                                    2026-04-28 ~ 2026-05-22
-		                                
-		                            
-		                        </td>
-<td>경상남도</td>
-<td>경남테크노파크</td>
-<td>2026-04-30</td>
-<td>3801</td>
-</tr>
-<tr>
-<td>1237</td>
-<td>
-		                            
-		                                
-		                                경영
-		                            
-		                        </td>
-<td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121520" title="[경북] 경주시 2026년 소상공인 카드수수료 지원사업 참여 점포 모집 공고 페이지 이동">
-										[경북] 경주시 2026년 소상공인 카드수수료 지원사업 참여 점포 모집 공고
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121785" title="[광주] 2026년 소규모 밀착 안전망 구축사업 참여기업 모집 공고(지역 중대재해 예방 사각지대 해소사업) 페이지 이동">
+										[광주] 2026년 소규모 밀착 안전망 구축사업 참여기업 모집 공고(지역 중대재해 예방 사각지대 해소사업)
 									</a>
 </td>
 <td>
@@ -1627,13 +1347,91 @@
 		                                
 		                            
 		                        </td>
-<td>경상북도</td>
-<td>경상북도경제진흥원</td>
-<td>2026-04-30</td>
-<td>3775</td>
+<td>광주광역시</td>
+<td>광주경영자총협회</td>
+<td>2026-05-08</td>
+<td>2931</td>
 </tr>
 <tr>
-<td>1236</td>
+<td>1275</td>
+<td>
+		                            
+		                                
+		                                인력
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121784" title="[경기] 2026년 로봇직업교육센터 취업 연계 지원사업 참여기업 모집 공고 페이지 이동">
+										[경기] 2026년 로봇직업교육센터 취업 연계 지원사업 참여기업 모집 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                    예산 소진시까지
+		                                
+		                                
+		                            
+		                        </td>
+<td>경기도</td>
+<td>경기테크노파크</td>
+<td>2026-05-08</td>
+<td>3011</td>
+</tr>
+<tr>
+<td>1274</td>
+<td>
+		                            
+		                                
+		                                창업
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121783" title="2026년 광주광역시 여성창업지원 사업 공고 페이지 이동">
+										2026년 광주광역시 여성창업지원 사업 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-07 ~ 2026-05-27
+		                                
+		                            
+		                        </td>
+<td>광주광역시</td>
+<td>한국여성경제인협회광주지회</td>
+<td>2026-05-08</td>
+<td>3112</td>
+</tr>
+<tr>
+<td>1273</td>
+<td>
+		                            
+		                                
+		                                경영
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121782" title="[부산] 2026년 산업기술단지 거점기능강화사업 현장애로지원 기술닥터제 수요기업 모집 공고 페이지 이동">
+										[부산] 2026년 산업기술단지 거점기능강화사업 현장애로지원 기술닥터제 수요기업 모집 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-06 ~ 2026-12-31
+		                                
+		                            
+		                        </td>
+<td>중소벤처기업부</td>
+<td>부산테크노파크</td>
+<td>2026-05-08</td>
+<td>2743</td>
+</tr>
+<tr>
+<td>1272</td>
 <td>
 		                            
 		                                
@@ -1641,22 +1439,230 @@
 		                            
 		                        </td>
 <td class="txt_l">
-<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121519" title="[전북] 2026년 SW강소기업 우수아이디어제품화 연구개발 지원(R&amp;D) 공고 페이지 이동">
-										[전북] 2026년 SW강소기업 우수아이디어제품화 연구개발 지원(R&amp;D) 공고
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121781" title="[경기] 2026년 드론산업 육성 지원사업 모집 공고(드론 원천기술 고도화 지원) 페이지 이동">
+										[경기] 2026년 드론산업 육성 지원사업 모집 공고(드론 원천기술 고도화 지원)
 									</a>
 </td>
 <td>
 		                            
 		                                
 		                                
-		                                    2026-04-28 ~ 2026-05-14
+		                                    2026-05-06 ~ 2026-05-29
 		                                
 		                            
 		                        </td>
-<td>전북특별자치도</td>
-<td>전북테크노파크</td>
-<td>2026-04-30</td>
-<td>3870</td>
+<td>경기도</td>
+<td>경기테크노파크</td>
+<td>2026-05-08</td>
+<td>3038</td>
+</tr>
+<tr>
+<td>1271</td>
+<td>
+		                            
+		                                
+		                                경영
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121780" title="[경북] 2026년 가속기 활용 산업체 지원 사업 현장교육 및 전문가 컨설팅 참여기업 모집 연장 공고 페이지 이동">
+										[경북] 2026년 가속기 활용 산업체 지원 사업 현장교육 및 전문가 컨설팅 참여기업 모집 연장 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-07 ~ 2026-05-14
+		                                
+		                            
+		                        </td>
+<td>경상북도</td>
+<td>경북테크노파크</td>
+<td>2026-05-08</td>
+<td>2930</td>
+</tr>
+<tr>
+<td>1270</td>
+<td>
+		                            
+		                                
+		                                경영
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121779" title="[부산] 2026년 고위험산업 사각지대 집중관리사업(안전보호구 지원) 참여기업 추가모집 공고 페이지 이동">
+										[부산] 2026년 고위험산업 사각지대 집중관리사업(안전보호구 지원) 참여기업 추가모집 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-01 ~ 2026-05-29
+		                                
+		                            
+		                        </td>
+<td>부산광역시</td>
+<td>부산테크노파크</td>
+<td>2026-05-08</td>
+<td>2802</td>
+</tr>
+<tr>
+<td>1269</td>
+<td>
+		                            
+		                                
+		                                경영
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121778" title="[경북] 영양군 2026년 2차 6차산업 선도를 위한 음식디미방 기반 K-Food 고부가가치 지원사업 공고(시군구연고산업육성 협업프로젝트) 페이지 이동">
+										[경북] 영양군 2026년 2차 6차산업 선도를 위한 음식디미방 기반 K-Food 고부가가치 지원사업 공고(시군구연고산업육성 협업프로젝트)
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-07 ~ 2026-05-21
+		                                
+		                            
+		                        </td>
+<td>중소벤처기업부</td>
+<td>경북테크노파크</td>
+<td>2026-05-08</td>
+<td>2704</td>
+</tr>
+<tr>
+<td>1268</td>
+<td>
+		                            
+		                                
+		                                금융
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121777" title="[울산] 2026년 소상공인 산재보험료 지원사업 공고 페이지 이동">
+										[울산] 2026년 소상공인 산재보험료 지원사업 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-06 ~ 2026-12-10
+		                                
+		                            
+		                        </td>
+<td>울산광역시</td>
+<td>울산경제일자리진흥원</td>
+<td>2026-05-08</td>
+<td>2930</td>
+</tr>
+<tr>
+<td>1267</td>
+<td>
+		                            
+		                                
+		                                금융
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121776" title="[경남] 2026년 2분기 중소기업육성자금 특별자금 지원계획 공고 페이지 이동">
+										[경남] 2026년 2분기 중소기업육성자금 특별자금 지원계획 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-27 ~ 2026-05-29
+		                                
+		                            
+		                        </td>
+<td>경상남도</td>
+<td>경남투자경제진흥원</td>
+<td>2026-05-08</td>
+<td>3007</td>
+</tr>
+<tr>
+<td>1266</td>
+<td>
+		                            
+		                                
+		                                경영
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121775" title="[경남] 김해시 2026년 중소기업 ESG 경영 컨설팅 지원사업 참여기업 모집 연장 공고 페이지 이동">
+										[경남] 김해시 2026년 중소기업 ESG 경영 컨설팅 지원사업 참여기업 모집 연장 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-07 ~ 2026-05-21
+		                                
+		                            
+		                        </td>
+<td>경상남도</td>
+<td>김해의생명산업진흥원</td>
+<td>2026-05-08</td>
+<td>2860</td>
+</tr>
+<tr>
+<td>1265</td>
+<td>
+		                            
+		                                
+		                                기술
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121774" title="2026년 가공현장 가공공정 디지털화 지원사업 수요기업 추가 모집 연장 공고(디지털융합 제조공정혁신 정밀기계가공산업 육성사업) 페이지 이동">
+										2026년 가공현장 가공공정 디지털화 지원사업 수요기업 추가 모집 연장 공고(디지털융합 제조공정혁신 정밀기계가공산업 육성사업)
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-05-07 ~ 2026-05-20
+		                                
+		                            
+		                        </td>
+<td>대구광역시</td>
+<td>대구기계부품연구원</td>
+<td>2026-05-08</td>
+<td>3053</td>
+</tr>
+<tr>
+<td>1264</td>
+<td>
+		                            
+		                                
+		                                기술
+		                            
+		                        </td>
+<td class="txt_l">
+<a href="/sii/siia/selectSIIA200Detail.do?hashCode=&amp;rowsSel=&amp;rows=15&amp;cpage=&amp;cat=&amp;schPblancDiv=&amp;schJrsdCodeTy=&amp;schWntyAt=&amp;schAreaDetailCodes=&amp;schEndAt=N&amp;orderGb=&amp;sort=&amp;preKeywords=&amp;condition=&amp;condition1=&amp;keyword=&amp;pblancId=PBLN_000000000121773" title="2026년 특장차 수소파워팩 기술지원사업 수혜기업 모집 공고 페이지 이동">
+										2026년 특장차 수소파워팩 기술지원사업 수혜기업 모집 공고
+									</a>
+</td>
+<td>
+		                            
+		                                
+		                                
+		                                    2026-04-22 ~ 2026-05-15
+		                                
+		                            
+		                        </td>
+<td>산업통상부</td>
+<td>충북테크노파크</td>
+<td>2026-05-08</td>
+<td>2911</td>
 </tr>
 </tbody>
 </table>
@@ -1685,7 +1691,7 @@
 <a href="/sii/siia/selectSIIA200View.do?null=&amp;rows=15&amp;cpage=9" title="9페이지">9</a>
 <a href="/sii/siia/selectSIIA200View.do?null=&amp;rows=15&amp;cpage=10" title="10페이지">10</a>
 <a class="txt" href="/sii/siia/selectSIIA200View.do?null=&amp;rows=15&amp;cpage=11" title="다음페이지">다음</a>
-<a class="txt" href="/sii/siia/selectSIIA200View.do?null=&amp;rows=15&amp;cpage=84" title="마지막페이지">마지막</a>
+<a class="txt" href="/sii/siia/selectSIIA200View.do?null=&amp;rows=15&amp;cpage=86" title="마지막페이지">마지막</a>
 </div>
 </section>
 <script type="text/javascript">
@@ -1746,7 +1752,7 @@
 <div id="divPopupImage-WWCer" style="display: none; position: absolute; z-index: 9999; top: 481px; left: 30%; padding: 0px;" tabindex="1">
 <div style="position:absolute;top:1px;right:-29px;">
 <a href="javascript:;" onclick="javascript:fn_closePopupDivFooter('WWCer');" title="닫기">
-<img alt="div팝업닫기이미지" src="/images/bizinfo/popup/btn_pop_close.gif">
+<img alt="레이어팝업 닫기" src="/images/bizinfo/popup/btn_pop_close.gif">
 </img></a>
 </div>
 <div style="border:1px solid #999;" tabindex="0">
