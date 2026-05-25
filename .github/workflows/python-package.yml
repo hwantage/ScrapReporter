@@ -1,74 +1,74 @@
 # This workflow will install Python dependencies, run tests and lint with a variety of Python versions
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: ScrapReporter news
+import time
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.common.exceptions import TimeoutException, WebDriverException
+# webdriver_manager를 사용하신다면 아래 import 유지
+# from webdriver_manager.chrome import ChromeDriverManager 
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-  schedule:
-    - cron: "0 23 * * 0"
-
-jobs:
-  run-all-scrapers:
-    runs-on: ubuntu-22.04
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.11.2"]
-    permissions:
-      contents: write
-      issues: write
-      
-    steps:
-    - uses: actions/checkout@v4
-      with:
-        fetch-depth: 0 # 전체 히스토리를 가져와 Push 충돌 엣지 케이스 방지
-
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v5
-      with:
-        python-version: ${{ matrix.python-version }}
-        architecture: 'x64'
-        cache: 'pip' # 패키지 다운로드 캐싱을 통한 성능 최적화
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        [ -f diff_changed/requirements.txt ] && pip install -r diff_changed/requirements.txt
-        [ -f diff_keyword/requirements.txt ] && pip install -r diff_keyword/requirements.txt
-        [ -f requirements.txt ] && pip install -r requirements.txt
-
-    - name: Run diff_changed Scraper
-      working-directory: diff_changed
-      run: python "scrap.py"
-
-    - name: Run diff_keyword Scraper
-      working-directory: diff_keyword
-      run: python "scrap.py"
-
-    - name: Run secu_news Scraper
-      run: python "secu_news.py"
-
-    - name: Create issue
-      env:
-        ACTION_ACCESS_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
-      run: python "create_issue.py"
-
-    - name: Commit and Push Changes
-      run: |
-        git config --local user.email "hwantagexsw2@gmail.com"
-        git config --local user.name "hwantage"
+class NewsCrawler:
+    def __init__(self):
+        self.driver = self._init_driver()
+        # 페이지 전체가 로드될 때까지 기다리는 최대 시간 (기본값보다 길게 설정: 30초)
+        self.driver.set_page_load_timeout(30) 
         
-        # 스크립트 실행으로 새로 생성되거나 변경된 모든 파일 Stage
-        git add diff_changed/ diff_keyword/ .
+    def _init_driver(self):
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage') # 컨테이너 환경 메모리 부족 방지 (필수)
+        chrome_options.add_argument('--disable-gpu')           # 렌더링 지연 방지
+        chrome_options.add_argument('--window-size=1920x1080')
+        chrome_options.add_argument('user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36') # 봇 차단 우회용 가짜 UA
         
-        # 예외 처리: 변경사항이 존재할 때만 커밋 및 푸시 수행 (에러로 인한 워크플로우 중단 방지)
-        if ! git diff-index --quiet HEAD; then
-          git commit -m "Auto - Update data and create issue"
-          git push origin master
-        else
-          echo "No changes to commit."
-        fi
+        # Service 객체를 명시적으로 사용하는 것이 모던 문법입니다.
+        # service = Service(ChromeDriverManager().install())
+        # return webdriver.Chrome(service=service, options=chrome_options)
+        
+        # 만약 webdriver_manager를 안 쓰신다면:
+        return webdriver.Chrome(options=chrome_options)
+
+    def parsing_news_url(self, urls):
+        max_retries = 3 # 최대 재시도 횟수
+        
+        for url in urls:
+            attempt = 0
+            while attempt < max_retries:
+                try:
+                    print(f"[INFO] 접근 시도 중... ({attempt + 1}/{max_retries}): {url}")
+                    self.driver.get(url)
+                    
+                    # --- 여기에 파싱 로직(BeautifulSoup 등) 작성 ---
+                    
+                    break # 성공 시 while 루프 탈출
+                
+                except TimeoutException as e:
+                    print(f"[WARN] Timeout 발생: {url}")
+                    attempt += 1
+                    if attempt == max_retries:
+                        print(f"[ERROR] 최대 재시도 횟수 초과. 스킵합니다: {url}")
+                    time.sleep(2) # 재시도 전 약간의 대기 시간
+                    
+                except WebDriverException as e:
+                    print(f"[ERROR] WebDriver 관련 치명적 오류 발생: {e}")
+                    # 필요에 따라 브라우저 재시작 로직 등을 추가
+                    break 
+
+    def close(self):
+        if self.driver:
+            self.driver.quit()
+
+if __name__ == "__main__":
+    crawler = NewsCrawler()
+    # 예시 URL 리스트
+    secu_news_all = ["https://example.com/news1", "https://example.com/news2"]
+    
+    try:
+        crawler.parsing_news_url(secu_news_all)
+    finally:
+        # 스크립트 종료 시 반드시 드라이버 자원을 해제합니다.
+        crawler.close()
