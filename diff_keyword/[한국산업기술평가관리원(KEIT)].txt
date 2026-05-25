@@ -435,6 +435,7 @@ var menuList = {
 <script src="/js/keit/rnd/search/searchframe.js" type="text/javascript"></script>
 <!-- 자동완성 관련js -->
 <script src="/js/keit/rnd/search/ark/js/beta.fix.js" type="text/javascript"></script>
+<script src="/js/common/keit_filter.js" type="text/javascript"></script>
 <script type="text/javascript">
 
 if(document.location.hash.replace(/#/g,'') == "00010000" || document.location.hash.replace(/#/g,'') == '') {
@@ -1268,11 +1269,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_sbjt_plnn_list">
 <ul>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년도 K-로봇피지컬AI생태계조성사업 기획대상과제 인터넷공시<i class="blank"></i></a><span class="date">2026.05.18</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2027년도 산업기술 R&amp;D사업 통합기술수요조사 공고<i class="blank"></i></a><span class="date">2026.05.18</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년 제2차 바이오산업기술개발사업 기획대상 과제 인터넷 공시<i class="blank"></i></a><span class="date">2026.05.15</span></li>
+<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년도 제2차 제품안전관리기술개발및실증사업 기획대상과제 인터넷공시<i class="blank"></i></a><span class="date">2026.05.14</span></li>
 <li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년 제2차 자동차산업기술개발(스마트카) 기획대상과제 인터넷 공시<i class="blank"></i></a><span class="date">2026.05.13</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년도 로봇산업기술개발사업 기획대상과제 인터넷공시<i class="blank"></i></a><span class="date">2026.05.06</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년 재난안전 중점기술 로드맵 연계형 기술개발(R&amp;D) 사업 신규 기획과제 인터넷 공시<i class="blank"></i></a><span class="date">2026.05.01</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2027년 미래 판기술 프로젝트 테마 기획을 위한 기술수요조사<i class="blank"></i></a><span class="date">2026.04.23</span></li>
-<li><a href="#" onclick="cf_goPlnnRome('','','','ROME1'); return false;" target="_blank" title="새창으로 열림">2026년 첨단소재 공정고도화 및 기술역량 확보 기술개발사업 신규기획과제 인터넷공시<i class="blank"></i></a><span class="date">2026.04.23</span></li>
 </ul>
 </div>
 </div>
@@ -1312,11 +1313,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 </div>
 <div class="notice_list" id="main_notice_list">
 <ul>
-<li><a href="#" onclick="f_gotoDetailPage('C', '164165'); return false;">2026년 5월 산업기술 R&amp;D 실무과정 교육 안내</a> <span class="date">2026.04.14</span> </li>
+<li><a href="#" onclick="f_gotoDetailPage('C', '164964'); return false;">(2차연장) 2026년 하반기 행정안전부 혁신제품 지정기간 연장 신청 공고</a> <span class="date">2026.05.12</span> </li>
+<li><a href="#" onclick="f_gotoDetailPage('C', '164876'); return false;">(1차연장) 2026년 하반기 행정안전부 혁신제품 지정기간 연장 신청 공고</a> <span class="date">2026.05.12</span> </li>
+<li><a href="#" onclick="f_gotoDetailPage('C', '164963'); return false;">2026년 6월 산업기술 R&amp;D 실무과정 교육 안내</a> <span class="date">2026.05.12</span> </li>
+<li><a href="#" onclick="f_gotoDetailPage('C', '164165'); return false;">2026년 5월 산업기술 R&amp;D 실무과정 교육 안내(5.22 교육 추가안내)</a> <span class="date">2026.04.14</span> </li>
 <li><a href="#" onclick="f_gotoDetailPage('C', '163290'); return false;">2026년도 과기정통부-산업부-중기부 주요 AX 사업 통합공고</a> <span class="date">2026.03.20</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '163470'); return false;">2026년 4월 산업기술 R&amp;D 실무과정 교육 안내</a> <span class="date">2026.03.17</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '162173'); return false;">「(가칭) AI 융합 바이오제조 혁신거점센터 구축 사업」인프라 구축을 위한 활용 수요조사 공고 (기한연장)</a> <span class="date">2026.02.11</span> </li>
-<li><a href="#" onclick="f_gotoDetailPage('C', '162255'); return false;">2026년 범부처 첨단 의료기기 연구개발사업 신규지원 대상과제 공고</a> <span class="date">2026.02.09</span> </li>
 </ul>
 </div>
 </div>
@@ -1614,11 +1615,11 @@ JOIN R&D를 눌렀을 때 로그인 안한 상태이면 “산업기술정보공
 <div class="title">진행중인 교육과정 <a class="more" href="#" onclick="f_chgPage('05020000'); return false;">더보기</a></div>
 <ul class="edu_list" id="edu_list">
 <li><span class="zone">지역</span><span class="edu">교육과정명</span><span class="day">날짜</span></li>
+<li><span class="zone1">부산</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000010'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">06.23~06.23</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000009'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">06.17~06.17</span></li>
+<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000008'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">06.10~06.10</span></li>
 <li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000007'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">05.27~05.27</span></li>
 <li><span class="zone1">충청</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000006'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">05.22~05.22</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000005'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">05.14~05.14</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000004'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">05.06~05.06</span></li>
-<li><span class="zone1">대구</span><span class="edu1"><a class="text_link" href="#" onclick="f_educApplViewM('2026000003'); return false;">2026년 산업기술R&amp;D 교육 실무과정</a></span><span class="day1">04.29~04.29</span></li>
 </ul>
 </div>
 <!--  // edu_box -->

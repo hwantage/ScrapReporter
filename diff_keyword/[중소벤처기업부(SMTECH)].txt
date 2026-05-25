@@ -19,6 +19,56 @@
 <link href="/images/url_logo.ico" rel="shortcut icon"/>
 <link href="/css/calendar_ahmax.css" rel="stylesheet" type="text/css"/>
 <style>
+	.onepassBlock {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(51,51,51,0.7);
+		z-index: 9999;
+	}
+	.onepassBlockContent {
+		position: fixed;
+		width: 30%;
+		left: 67%;
+		margin-left: -30%;
+		height: 380px;
+		top: 50%;
+		margin-top: -150px;
+		overflow: auto;
+	
+		border: 1px solid #000;
+		background-color: #fff;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+	
+	.onepassoutageBlock {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(51,51,51,0.7);
+		z-index: 9999;
+	}
+	.onepassoutageBlockContent {
+		position: fixed;
+		width: 30%;
+		left: 67%;
+		margin-left: -30%;
+		height: 380px;
+		top: 50%;
+		margin-top: -150px;
+		overflow: auto;
+	
+		border: 1px solid #000;
+		background-color: #fff;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+	
 	.sessionBlock {
 		position: fixed;
 		width: 100%;
@@ -139,6 +189,133 @@
 <div id="wrapper">
 <!--header 시작입니다-->
 <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+<script src="/js/aes.js" type="text/javascript"></script>
+<script src="/js/sha256_enc.js" type="text/javascript"></script>
+<link href="/css/onepass/pretendard-gov-dynamic-subset.min.css" rel="stylesheet" type="text/css"/>
+<style>
+
+#popup-container {
+	all: unset;
+	
+	font-family: initial,
+		"Pretendard GOV Variable",
+		"Pretendard GOV",
+		sans-serif !important;
+	font-size: 16px !important;
+	line-height: 1.5 !important;
+	letter-spacing: -0.02em !important;
+	color: #000 !important;
+	
+	
+	position: fixed !important;
+	z-index: 99999999 !important;
+	
+}
+
+
+#popup-container *,
+#popup-container *::before,
+#popup-container *::after {
+	box-sizing: border-box;
+	font-family:
+		"Pretendard GOV Variable",
+		"Pretendard GOV",
+		sans-serif !important;
+}
+
+#popup-container button:hover {
+	background: #b3ceff !important;
+	color: #256EF4 !important;
+	border-color: transparent !important;
+}
+
+#popup-container button:hover i {
+	background-color: #256EF4 !important;
+}
+
+@media screen and (max-width: 768px) {
+	#popup-container {
+		left: 50% !important;
+		transform: translateX(-50%);
+		top: 5% !important;
+		width: 95% !important;
+	}
+}
+
+#outagePopup-container {
+	all: unset;
+	
+	font-family: initial,
+		"Pretendard GOV Variable",
+		"Pretendard GOV",
+		sans-serif !important;
+	font-size: 16px !important;
+	line-height: 1.5 !important;
+	letter-spacing: -0.02em !important;
+	color: #000 !important;
+	
+	
+	position: fixed !important;
+	z-index: 99999999 !important;
+}
+
+
+#outagePopup-container *,
+#outagePopup-container *::before,
+#outagePopup-container *::after {
+	box-sizing: border-box;
+	font-family:
+		"Pretendard GOV Variable",
+		"Pretendard GOV",
+		sans-serif !important;
+}
+
+#outagePopup-container button:hover {
+	background: #b3ceff !important;
+	color: #256EF4 !important;
+	border-color: transparent !important;
+}
+
+#outagePopup-container button:hover i {
+	background-color: #256EF4 !important;
+}
+
+@media screen and (max-width: 768px) {
+	#outagePopup-container {
+		left: 50% !important;
+		transform: translateX(-50%);
+		top: 5% !important;
+		width: 95% !important;
+	}
+}
+
+.eu-btn-process-warning,
+.eu-btn-process-warning:hover,
+.eu-btn-process-warning:focus,
+.eu-btn-process-warning:active {
+	background: #188cf8;
+	color: #ffffff;
+	border: 1px solid #188cf8;
+}
+
+/*
+.onepass-wrap-container,
+.onepass-wrap-container * {
+	all: unset;
+	font-family: 'Pretendard GOV';
+	font-style: normal;
+	font-display: swap;
+	font-weight:100;
+}
+
+#popup-container button:hover {background: #b3ceff !important; color: #256EF4 !important; border-color: transparent !important;}
+#popup-container button:hover i {background-color: #256EF4 !important;}
+
+@media screen and (max-width: 768px) {
+	#popup-container {left: 50% !important; transform: translateX(-50%); top: 5% !important; width: 95% !important;}
+}
+*/
+</style>
 <script>
 
 
@@ -483,6 +660,58 @@ function fn_MenuMrfnPageMove(url){
 				}
 		});
 	}
+	
+	
+	function onepassPopup(lgin_id) {
+	
+		
+		var redirectUrl = "https://www.smtech.go.kr/front/log/onepass_logout.do";
+		redirectUrl = encodeURIComponent(redirectUrl)
+			+ "&mbrId=" + lgin_id
+			+ "&return_client=smtech"
+			+ "&userType=IND";
+			
+		
+		
+		var moveUrl = "https://onepass-dev.smes.go.kr/conversion/step1?redirect_uri="
+				+ redirectUrl;
+		
+		
+		var conversionClickEvent = document.getElementById("onepass-conversion");
+		conversionClickEvent.onclick = function () {
+			$.ajax({
+				url: "/front/log/logoutProc.do",
+				type: "POST",
+				async: true
+			});
+			
+			window.location.href = moveUrl;
+		}
+		
+		
+		var onepassLoginClickEvent = document.getElementById("onepass-login");
+		onepassLoginClickEvent.onclick = function () {
+			
+			$("#container-wrap").css("visibility", "hidden");
+			
+			
+			$("#onepass-conversion").css("visibility", "hidden");
+			$("#onepass-login").css("visibility", "hidden");
+			
+			document.getElementById("memberDetailFrame")
+				.contentWindow
+				.fn_noSSOLogin_Success(
+						document.getElementById("memberDetailFrame").contentWindow.setReady
+				);
+		}
+		
+		$("#container-wrap").css("visibility", "visible");
+	}
+	
+	
+	function onepassOutageClosePop() {
+		$("#outage-wrap").css("visibility", "hidden");
+	}
 
 	// 타이머 연장 DIV팝업 나타내기
 	function sessionIngPopup() {
@@ -619,7 +848,193 @@ function fn_MenuMrfnPageMove(url){
 				}
 			});
 	}
+	
+	
+	function fn_smesIntgLogin() {
+		var ssoPopup = window.open(
+				"https://www.smtech.go.kr/smes/middleware/oauth2/authorization/smes",
+				"ssoLogin",
+				"width=500,height=700,scrollbars=yes"
+		);
+		
+		if (!ssoPopup) {
+			alert("팝업이 차단되었습니다. 팝업을 허용해주세요.");
+		} 
+		
+		window.addEventListener("message", receiveMessage);
+	}
+	
+	
+	function receiveMessage(event) {
+		if (event.origin != "https://www.smtech.go.kr") {
+			return;
+		}
+		
+		//var token = event.data;
+		fn_topNoSSOLogin(event.data);
+		
+		window.removeEventListener("message", receiveMessage);
+	}
+	
+	
+	function fn_topNoSSOLogin(token){
+		var returnUrl = "/front/main/main.do";
+		
+		var loginId = $("#id01").val();
+		var loginPasswd = $("#pw01").val();
+		
+		
+		var key = "0101110101011111";
+		var iv = "0101110101011111";
+		
+		var keyUtf = CryptoJS.enc.Utf8.parse(key);
+		var ivUtf = CryptoJS.enc.Utf8.parse(iv);
+		
+		var idEnc = CryptoJS.AES.encrypt(loginId, keyUtf, {iv: ivUtf});
+		var pwEnc = CryptoJS.AES.encrypt(loginPasswd, keyUtf, {iv: ivUtf});
+		
+
+		
+		var legacyToken = "";
+		if (!token) {
+			token = "";	
+		}
+					
+		$("#id01").val("");
+		$("#pw01").val("");
+
+		//var sbjtId = $("#sbjtId").val();
+		var sbjtExeSituRpYn = $("#sbjtExeSituRpYn").val();
+		
+		$.ajax({
+			url: "/front/log/ajaxTmpLoginProc.do",
+			data: "loginId=" + encodeURIComponent(idEnc)
+					+ "&loginPasswd=" + encodeURIComponent(pwEnc)
+					+ "&returnUrl=" + returnUrl
+			//		+ "&sbjtId=" + sbjtId
+					+ "&sbjtExeSituRpYn=" + sbjtExeSituRpYn
+					//+ "&backDoorSecret=" + backDoorSecret
+					+ "&legacyToken=" + token,
+			dataType:"jsonp",
+			type: 'POST',
+			success:fn_topNoSSOLogin_Success, //fn_noSSOLogin_Success,
+			error: function( jqXHR, textStatus, errorThrown )
+			{
+				alert("로그인 중 에러가 발생하였습니다.");
+			}
+		});
+	}
+	
+	function fn_topNoSSOLogin_Success(result){
+		var url = "/front"+result.resultUrl;
+
+		if ( result.resultCode == "ONEPASS_FAIL") {
+			alert(result.resultMessage);
+			
+		} else if ( result.resultCode == "ESSENTIAL") {
+			alert(result.resultMessage);
+			document.topLoginForm.action = url;
+			document.topLoginForm.target = "_parent";
+			document.topLoginForm.submit();
+		} else if ( result.resultCode == "J01" ) {
+			document.topLoginForm.loginPasswd.value = "";
+			document.topLoginForm.loginId.value = "";
+			document.topLoginForm.action = url;
+			document.topLoginForm.target="_parent";
+			document.topLoginForm.submit();
+		} else if(result.resultCode == "J02") {
+			if ( confirm(result.Message) ) {
+				document.topLoginForm.action = "/front/log/insertEmailAddress.do";
+				document.topLoginForm.target="_parent";
+				document.topLoginForm.submit();
+			} else {
+				document.topLoginForm.action = url;
+				document.topLoginForm.target="_parent";
+				document.topLoginForm.submit();
+			}
+		} else if(result.resultCode == "J03") {
+			document.topLoginForm.action = url;
+			document.topLoginForm.target="_parent";
+			document.topLoginForm.submit();
+		} else if(result.resultCode == "LCK00") {
+			alert("이미 로그인 5회가 실패하여 계정이 잠겼습니다.\n\n본인인증 후에 재시도 하시기 바랍니다.");
+
+			document.topChkPersonForm.isLckSe.value = "LCK00";
+
+			// 본인인증 url
+			document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
+			document.topChkPersonForm.target = "_parent";
+			document.topChkPersonForm.submit();
+		} else if(result.resultCode == "LCK01") {
+			alert("현재 입력하신 비밀번호로 5회 실패하여 계정이 잠겼습니다.\n\n본인인증 화면으로 이동합니다.");
+
+			document.topChkPersonForm.isLckSe.value = "LCK01";
+
+			// 본인인증 url
+			document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
+			document.topChkPersonForm.target = "_parent";
+			document.topChkPersonForm.submit();
+		} else if(result.resultCode == "LCK02") {
+			alert("현재 입력하신 계정이 휴면상태입니다.\n\n본인인증 화면으로 이동합니다.");
+
+			document.topChkPersonForm.isLckSe.value = "LCK02";
+
+			// 본인인증url
+			document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
+			document.topChkPersonForm.target = "_parent";
+			document.topChkPersonForm.submit();
+		} else if(result.resultCode == "LCK04") {
+			//사이버안전센터_계정정보 유출(크리데션스트핑) 관련자
+            alert(" 비정상적 로그인 시도로 인해 로그인이 차단되었으며 " +
+            		"\n 본인인증 후에 비밀번호 변경해 주시기 바랍니다." +
+            		"\n (본인인증 후 임시비밀번호발급 -> 로그인 -> 비밀번호변경)" +
+            		"\n " +
+            		"\n 본인인증 화면으로 이동합니다.");
+
+            document.topChkPersonForm.isLckSe.value = "LCK04";
+
+            // 본인인증url
+            document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
+            document.topChkPersonForm.target = "_parent";
+            document.topChkPersonForm.submit();
+		} else if ( result.resultCode == "E01" || result.resultCode == "LCK03") {
+			//alert("현재 입력하신 아이디가 등록되어 있지 않거나, \n아이디 또는 비밀번호를 잘못 입력 하셨습니다.\n비밀번호가 "+ result.failCnt + "회 틀렸습니다.");
+			alert("현재 입력하신 아이디가 등록되어 있지 않거나, \n아이디 또는 비밀번호를 잘못 입력 하셨습니다.");
+		} else if(result.resultCode == "P01") {	// 비밀번호 3개월 미변경시 변경안내로 이동
+			document.topChkPersonForm.action = "/front/log/goChngPwd.do";
+			document.topChkPersonForm.target = "_parent";
+			document.topChkPersonForm.submit();
+		}else if(result.resultCode = "SJ01"){
+			alert($("#sbjtId").val()+"과제에 속한 대표자/과제책임자가 아니거나, \n아이디 또는 비밀번호를 잘못 입력하셨습니다. \n확인해주시기 바랍니다.");
+		}	
+	}
+	
+	document.addEventListener('keydown', function(e) {
+		var keyCode = e.keyCode;
+		
+		if (e.shiftKey && e.ctrlKey && keyCode === 90) {
+			if (document.getElementById("smesT").style.display == "none") {
+				document.getElementById("smesT").style.display = "inline-block";
+			} else if (document.getElementById("smesT").style.display == "inline-block") {
+				document.getElementById("smesT").style.display = "none";
+			}
+		}
+	});
 </script>
+<form action="" method="post" name="topLoginForm">
+<input name="isLckSe" type="hidden" value=""/>
+<input name="cmd" type="hidden" value="homeLogin2"/>
+<input name="ServerName" type="hidden" value="www.smtech.go.kr"/>
+<input name="SystemId" type="hidden" value="DI8011"/>
+<input name="successRedir" type="hidden" value="/front/log/loginProc.do"/> <!-- renet 로그인 action page -->
+<input name="failRedir" type="hidden" value="/front/log/login.do?returnUrl=/front/main/main.do"/> <!--  로그인 실패시 redirect page -->
+<input id="sbjtExeSituRpYn" name="sbjtExeSituRpYn" type="hidden" value=""/>
+<input id="id01" name="loginId" title="아이디 입력창" type="hidden" value=""/>
+<input id="pw01" name="loginPasswd" title="비밀번호 입력창" type="hidden"/>
+</form>
+<form action="" method="post" name="topChkPersonForm">
+<input name="isLckSe" type="hidden" value=""/>
+</form>
 <div class="sessionBlock" id="sessionAlarmPop" style="visibility: hidden">
 <div class="sessionBlockContent">
 <div>
@@ -634,19 +1049,55 @@ function fn_MenuMrfnPageMove(url){
 </div>
 </div>
 </div>
+<div class="onepassBlock" id="container-wrap" style="visibility: hidden">
+<div class="onepassBlockContent" id="popup-container" style="position: fixed; z-index: 100000; max-width: 500px; width: 30%; border-radius: 8px; background: #eee; border: 1px solid #ddd; letter-spacing: -.6px; left: 40%; top: 30%; min-width: 485px;">
+<div style="padding: 30px clamp(20px, 3vw, 30px); display: flex; flex-direction: column; text-align: center;">
+<h2 style="line-height: 29px; color: #000; font-size: clamp(17px, 3vw, 20px); font-weight: 600; margin: 0; margin-bottom: clamp(20px, 3vw, 30px)">통합로그인</h2>
+<figure style="margin: 0 auto 20px; max-width: 45%;"><img alt="image" src="/images/onepass/modal_integrated_login_img.png" style="width: 100%;"/></figure>
+<div style="margin: 0 0 20px; display: flex; flex-direction: column; gap: 8px; word-break: keep-all;">
+<p style="line-height: 35px; margin: 0; font-size: clamp(20px, 2vw, 24px); color: #256EF4; font-weight: 700;">중기 원패스 전환</p>
+<p style="color: #000; margin: 0; font-size: 15px; line-height: 1.6;"><strong style="font-weight: 700;">하나의 아이디로 중소벤처기업부 유관기관 서비스를 모두 이용해 보세요.</strong><br/> 기존 계정을 통합로그인으로 전환하시면, 사이트마다 로그인할 필요 없이 더욱 편리하고 안전하게 서비스를 이용하실 수 있습니다.</p>
+<button id="onepass-conversion" style="color: #000; transition: .5s ease; cursor: pointer; letter-spacing: -.6px; outline: none; border: none; padding: 0 12px 0 20px; border-radius: 8px; background: #256EF4; box-sizing: border-box; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 15px; font-weight: 500; color: #fff; height: 40px;" type="button"><span style="font-size: inherit; color: inherit;">중기 원패스 전환 바로가기</span><i style="display: block; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; -webkit-mask-image: url(/images/onepass/ico_chevron_forward.svg); mask-image: url(/images/onepass/ico_chevron_forward.svg); background-color: #fff; width: 20px; height: 20px;"></i></button>
+</div>
+<button id="onepass-login" style="color: #000; transition: .5s ease; cursor: pointer; letter-spacing: -.6px; outline: none; border: none; padding: 0 12px 0 20px; border-radius: 8px; background: #fff; border: 1px solid #256ef4; box-sizing: border-box; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 15px; font-weight: 500; color: #256EF4; height: 40px;" type="button"><span style="font-size: inherit; color: inherit;">나중에 전환하기</span><i style="display: block; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; -webkit-mask-image: url(/images/onepass/ico_chevron_forward.svg); mask-image: url(/images/onepass/ico_chevron_forward.svg); background-color: #256EF4; width: 20px; height: 20px;"></i></button>
+</div>
+</div>
+</div>
+<div class="onepassoutageBlock" id="outage-wrap" style="visibility: hidden">
+<div class="onepassoutageBlockContent" id="outagePopup-container" style="position: fixed; z-index: 100000; max-width: 500px; width: 90%; border-radius: 8px; background: #eee; border: 1px solid #ddd; letter-spacing: -.6px; left: 40%; top: 30%; min-width: 485px;">
+<div style="padding: 40px clamp(20px, 3vw, 30px); display: flex; flex-direction: column; text-align: center;">
+<h2 style="line-height: 29px; margin: 0; font-size: clamp(20px, 2vw, 24px); color: #256EF4; font-weight: 700; margin-bottom: clamp(20px, 3vw, 30px)">통합로그인 서비스 일시 장애 안내</h2>
+<figure style="margin: 0 auto 20px; max-width: 45%;"><img alt="image" src="/images/onepass/modal_integrated_login_error_img.png" style="width: 100%;"/></figure>
+<div style="margin: 0 0 20px; padding: 20px 0; display: flex; flex-direction: column; gap: 20px; line-height: 1.6; word-break: keep-all;">
+<p style="color: #000; margin: 0; font-weight: 700;">현재 중소벤처기업부 통합로그인 서비스에 <br/>일시적인 접속 지연(장애)이 발생하고 있습니다.</p>
+<p style="color: #000; margin: 0; font-size: 15px;">서비스 이용에 불편을 드려 대단히 죄송합니다. <br/>통합로그인이 복구될 때까지, 이용하시려는 유관기관 웹사이트의 <br/> <span style="color: #F46315; font-weight: 700;">[개별 로그인]</span>을 이용해 주시기 바랍니다. <br/>최대한 빠른 시간 내에 서비스를 정상화하도록 최선을 다하겠습니다.</p>
+</div>
+<button id="onepass-outage-close" onclick="onepassOutageClosePop()" style="transition: .5s ease; cursor: pointer; letter-spacing: -.6px; outline: none; border: none; padding: 0 12px 0 20px; border-radius: 8px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 15px; font-weight: 500; background: #256EF4; color: #fff; height: 40px; margin: 0 auto; max-width: 200px; width: 100%;" type="button"><span style="font-size: inherit; color: inherit;">확인</span><i style="display: block; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; -webkit-mask-image: url(/images/onepass/ico_chevron_forward.svg); mask-image: url(/images/onepass/ico_chevron_forward.svg); background-color: #fff; width: 20px; height: 20px;"></i></button>
+</div>
+</div>
+<style>
+		#popup-container button:hover {background: #b3ceff !important; color: #256EF4 !important; border-color: transparent !important;}
+		#popup-container button:hover i {background-color: #256EF4 !important;}
+
+		@media screen and (max-width: 768px) {
+			#popup-container {left: 50% !important; transform: translateX(-50%); top: 5% !important; width: 95% !important;}
+		}
+	</style>
+</div>
 <!-- 	<div id='subheader'> -->
 <div>
 <!-- maintop -->
 <!-- // CORONA-19 VIRUS 상단배너추가 2020.04.24 -->
 <div class="maintopN8">
 <div class="maintopN8" id="coronaDiv" style="height:102px; border-bottom:0px solid #ccc; text-align:center; width:100%; background:#02244a;">
-<img alt="2026년 중소기업 기술개발 지원사업 통합 공고" src="/front/images/coronaTop-11.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap"/>
+<img alt="2026년 중소기업 기술개발 지원사업 통합 공고" src="/front/images/coronaTop-12.png" style="width:100%; vertical-align:middle; max-height:150px; max-width:1300px; min-height:102px; min-width:1300px;" usemap="#imgmap">
 <map name="imgmap">
 <area alt="통합 공고보러가기" coords="965,25,1269,76" href="/front/ifg/no/notice01_detail.do?searchCondition=&amp;searchKeyword=&amp;bitmSeq=540009&amp;pageIndex=1&amp;noPage=yes" shape="rect" target="_self" title="통합 공고보러가기"/>
 </map>
-</div>
+</img></div>
 <div class="gnbNaviN8">
 <a href="/front/main/main.do"><div class="logoNew8">SMTECH 중소기업기술개발 종합관리시스템</div></a>
+<img alt="AI 로고" class="logoAI" src="/front/img/logo_AI.png" style="width:70px; position:absolute; left:210px; top:15px;">
 <!-- 240308 장정연 rms 로고 추가 -->
 <!-- gnb -->
 <div class="gnbN8">
@@ -657,12 +1108,18 @@ function fn_MenuMrfnPageMove(url){
 <li><a href="/front/log/Info_Correction_Request.do">개인정보정정요청</a></li>
 <li><a href="/front/pdo/pd/publicData02.do">공공데이터제공</a></li>
 <li id="ssoT" style="display:inline-block;">
-<button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444" title="새창으로 열림">통합로그인</button>
+<button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444" title="새창으로 열림">중소벤처24 로그인</button>
+</li>
+<li id="smesT" style="display: none;">
+<button class="eu-btn-process-warning" onclick="fn_smesIntgLogin();" style="display: inline-flex; align-items: center; justify-content: center; background: #004C97; border: none; height: 25px; font-size: 14px; padding-right: 10px;" type="link">
+<img alt="중기원패스 통합로그인" src="/images/onepass/intg_btn_ico.png" style="height: 25px"/>
+							통합 로그인
+						</button>
 </li>
 </ul>
 </div>
 <!--// gnb -->
-</div>
+</img></div>
 </div>
 <!-- // maintop -->
 <!-- mainNavi -->
@@ -862,8 +1319,8 @@ function fn_MenuMrfnPageMove(url){
 <li><a href="/front/OSA/PS/TfeeYnmnEmplPtpmRead.do">청년고용기술료 유예</a></li>
 <li><a href="/front/OSA/PS/TfeeYnmnEmplRdceRead.do">청년고용기술료 감면신청</a></li>
 <li><a href="/front/OSA/TE/TecEnfoTbRptRead.do">기술료 납부대상 확약서 제출<br/></a></li>
-<li><a href="/front/OSA/PS/PaymPlanWriteRead.do">기술료 납부계획서 제출<br/>(16년2월16일 이전 협약)</a></li>
-<li><a href="/front/OSA/TE/TecEnfoTbWriteRead.do">[통합]기술실시보고서 제출<br/>(16년2월16일 이후)</a></li>
+<li><a href="/front/OSA/PS/PaymPlanWriteRead.do">기술료 납부계획서 제출<br>(16년2월16일 이전 협약)</br></a></li>
+<li><a href="/front/OSA/TE/TecEnfoTbWriteRead.do">[통합]기술실시보고서 제출<br>(16년2월16일 이후)</br></a></li>
 </ul>
 </li>
 <li class="RTline">
@@ -938,7 +1395,7 @@ function fn_MenuMrfnPageMove(url){
                                         <li><a href="/front/tbp/pkg/trackBusiCont.do">트랙별 사업화 지원 내용</a></li>
                                         -->
 <li><a href="/front/tbp/pkg/busiMenu.do">사업화 메뉴판</a></li>
-<!--                                        <li><a href="/front/tbp/pkg/primeSbjtSearch.do">우수 과제 여부 조회</a></li>-->
+<li><a href="/front/tbp/pkg/primeSbjtSearch.do">우수 과제 여부 조회</a></li>
 </ul>
 </li>
 </ul>
@@ -1101,8 +1558,8 @@ function fn_MenuMrfnPageMove(url){
 <dd><a href="/front/OSA/PS/TfeeCovidPtpmRead.do">- 기술료 납부기한연장 신청(코로나)</a></dd>
 <!--  2023.01.06 yuaesun 수정. 2022.12.31 청년고용 유예신청 마감으로 유예신청은 불가하나, 감면신청만 가능.. <dd><a href="/front/OSA/PS/TfeeYnmnEmplPtpmRead.do">- 청년고용 기술료 유예신청</a></dd> -->
 <dd><a href="/front/OSA/PS/TfeeYnmnEmplRdceRead.do">- 청년고용 기술료 감면신청</a></dd>
-<dd><a href="/front/OSA/PS/PaymPlanWriteRead.do">- 기술료 납부계획서 제출<br/>(16년2월16일 이전 협약)</a></dd>
-<dd><a href="/front/OSA/TE/TecEnfoTbWriteRead.do">- [통합]기술실시보고서 제출<br/>(16년2월16일 이후)</a></dd>
+<dd><a href="/front/OSA/PS/PaymPlanWriteRead.do">- 기술료 납부계획서 제출<br>(16년2월16일 이전 협약)</br></a></dd>
+<dd><a href="/front/OSA/TE/TecEnfoTbWriteRead.do">- [통합]기술실시보고서 제출<br>(16년2월16일 이후)</br></a></dd>
 <dt><a href="/front/OSA/OS/OS_SetlGuid.do">연구비 정산</a></dt>
 <dd><a href="/front/OSA/OS/OS_SetlGuid.do">- 정산 절차 안내</a></dd>
 <dd><a href="/front/OSA/OS/OS_SetlRpt.do">- 정산 사전 검토</a></dd>
@@ -1145,7 +1602,7 @@ function fn_MenuMrfnPageMove(url){
                                             <dd><a href="/front/tbp/pkg/trackBusiCont.do">- 트랙별 사업화 지원 내용</a></dd>
                                             -->
 <dd><a href="/front/tbp/pkg/busiMenu.do">- 사업화 메뉴판</a></dd>
-<!--                                            <dd><a href="/front/tbp/pkg/primeSbjtSearch.do">- 우수 과제 여부 조회</a></dd>-->
+<dd><a href="/front/tbp/pkg/primeSbjtSearch.do">- 우수 과제 여부 조회</a></dd>
 </dl>
 </li>
 <li>
@@ -1306,8 +1763,7 @@ $(document).ready(function () {
                                     <li><a href="/front/tbp/pkg/trackBusiCont.do">트랙별 사업화 지원 내용</a></li>
                                     -->
 <li><a href="/front/tbp/pkg/busiMenu.do">사업화 메뉴판</a></li>
-<!-- -->
-<!--                                    <li><a href="/front/tbp/pkg/primeSbjtSearch.do">우수 과제 여부 조회</a></li>-->
+<li><a href="/front/tbp/pkg/primeSbjtSearch.do">우수 과제 여부 조회</a></li>
 </ul>
 </div>
 </li>
@@ -1417,7 +1873,7 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 6 5 11-->
+<!--4 6 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
@@ -1426,19 +1882,19 @@ $(document).ready(function () {
 <td class="ac">IRIS</td>
 <td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
 <td>
-<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(자유공모형_일반) 제2차 시행계획 공고</a>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(예비연구형) 제1차 시행계획 공고</a>
 </td>
 <td class="ac">
 
-	                       	2026. 05. 13 ~ 2026. 06. 01
+	                       	2026. 05. 26 ~ 2026. 06. 09
 	                  	</td>
 <td class="ac">
-	                    	2026-04-29
+	                    	2026-05-19
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 5 11-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+<!--5 6 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
@@ -1457,8 +1913,8 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 5 11-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+<!--5 6 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
@@ -1477,12 +1933,52 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 5 11-->
-<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+<!--5 6 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">5</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(자유공모형_일반) 제2차 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 13 ~ 2026. 06. 01
+	                  	</td>
+<td class="ac">
+	                    	2026-04-29
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">6</td>
+<td class="ac">SMTECH</td>
+<td class="ac">전담은행 투자설명회(IR)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02864&amp;buclCd=S9171&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 제3차 중소기업 R&amp;D 전담은행 투자지원 추천기업(호남·제주권) 모집 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 11 ~ 2026. 06. 01
+	                  	</td>
+<td class="ac">
+	                    	2026-05-11
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">7</td>
 <td class="ac">SMTECH</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td>
@@ -1497,12 +1993,32 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 5 5 11-->
+<!--5 5 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">6</td>
+<td class="ac">8</td>
+<td class="ac">IRIS</td>
+<td class="ac">투·융자연계기술개발사업(정책지정형_우주항공청)</td>
+<td>
+<a class="board" href="javascript:goMove()">투·융자 연계 기술개발사업 정책지정형(전략기술 분야) 스케일업 팁스</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 13 ~ 2026. 05. 29
+	                  	</td>
+<td class="ac">
+	                    	2026-05-13
+
+	                    </td>
+<td class="ac ll">
+<!--5 5 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">9</td>
 <td class="ac">SMTECH</td>
 <td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
 <td>
@@ -1517,72 +2033,52 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 5 5 11-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">7</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02861&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(규제혁신 연계)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 11-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">8</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02859&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(정부 R&amp;D 우수과제)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 11-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">9</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02860&amp;buclCd=S9H01&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(기술거래플랫폼 연계)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 11-->
+<!--4 5 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">10</td>
+<td class="ac">IRIS</td>
+<td class="ac">중소기업수출핵심품목탄소감축기술개발사업(R&amp;D)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업 수출 핵심품목 탄소감축 기술개발사업 하반기 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 13 ~ 2026. 05. 27
+	                  	</td>
+<td class="ac">
+	                    	2026-04-28
+
+	                    </td>
+<td class="ac ll">
+<!--5 5 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">11</td>
+<td class="ac">IRIS</td>
+<td class="ac">투·융자연계기술개발사업(정책지정형_과학기술정보통신부)</td>
+<td>
+<a class="board" href="javascript:goMove()">투·융자 연계 기술개발사업 정책지정형(전략기술 분야) 스케일업 팁스</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 12 ~ 2026. 05. 27
+	                  	</td>
+<td class="ac">
+	                    	2026-05-12
+
+	                    </td>
+<td class="ac ll">
+<!--5 5 5 26-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">12</td>
 <td class="ac">SMTECH</td>
 <td class="ac">기술사업화 패키지 사업</td>
 <td>
@@ -1597,107 +2093,67 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 5 5 11-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">11</td>
-<td class="ac">IRIS</td>
-<td class="ac">창업성장기술개발사업(TIPS)</td>
-<td>
-<a class="board" href="javascript:goMove()">2026년 2차 팁스R&amp;D(딥테크트랙) 창업기업 지원계획 공고</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 13
-	                  	</td>
-<td class="ac">
-	                    	2026-03-19
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 11-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">12</td>
-<td class="ac">IRIS</td>
-<td class="ac">창업성장기술개발사업(TIPS)</td>
-<td>
-<a class="board" href="javascript:goMove()">2차(6월) 팁스 R&amp;D 창업기업 지원계획 공고(일반트랙)_엔젤협회</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 13
-	                  	</td>
-<td class="ac">
-	                    	2026-03-19
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 11-->
+<!--5 5 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">13</td>
 <td class="ac">SMTECH</td>
-<td class="ac">스케일업팁스</td>
+<td class="ac">기술사업화 패키지 사업</td>
 <td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02853&amp;buclCd=S9C01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 투·융자 연계 기술개발사업 지원계획 공고</a>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02861&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(규제혁신 연계)</a>
 </td>
 <td class="ac">
 
-	                       	2026. 04. 28 ~ 2026. 05. 12
+	                       	2026. 05. 11 ~ 2026. 05. 26
 	                  	</td>
 <td class="ac">
-	                    	2026-02-27
+	                    	2026-04-27
 
 	                    </td>
 <td class="ac ll">
-<!--4 5 5 11-->
+<!--5 5 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">14</td>
-<td class="ac">IRIS</td>
-<td class="ac">투·융자연계기술개발사업(글로벌 팁스_특화형)</td>
+<td class="ac">SMTECH</td>
+<td class="ac">기술사업화 패키지 사업</td>
 <td>
-<a class="board" href="javascript:goMove()">(특화형, 26-1차) 글로벌 팁스R&amp;D</a>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02859&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(정부 R&amp;D 우수과제)</a>
 </td>
 <td class="ac">
 
-	                       	2026. 04. 28 ~ 2026. 05. 12
+	                       	2026. 05. 11 ~ 2026. 05. 26
 	                  	</td>
 <td class="ac">
-	                    	2026-02-27
+	                    	2026-04-27
 
 	                    </td>
 <td class="ac ll">
-<!--4 5 5 11-->
+<!--5 5 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
 <td class="ac">15</td>
-<td class="ac">IRIS</td>
-<td class="ac">투·융자연계기술개발사업(스케일업 팁스_특화형)</td>
+<td class="ac">SMTECH</td>
+<td class="ac">기술사업화 패키지 사업</td>
 <td>
-<a class="board" href="javascript:goMove()">(특화형, 26-1차) 스케일업 팁스 R&amp;D</a>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02860&amp;buclCd=S9H01&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(기술거래플랫폼 연계)</a>
 </td>
 <td class="ac">
 
-	                       	2026. 04. 28 ~ 2026. 05. 12
+	                       	2026. 05. 11 ~ 2026. 05. 26
 	                  	</td>
 <td class="ac">
-	                    	2026-02-27
+	                    	2026-04-27
 
 	                    </td>
 <td class="ac ll">
-<!--4 5 5 11-->
+<!--5 5 5 26-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
