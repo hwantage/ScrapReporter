@@ -90,10 +90,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'fMZFS-61EgHNnXrBpTD1L2sJDdugJALKXamVJnvZz9W31xFbYhVlABieDV54-dmAf7RhO1Wn7957ZrnMpcdrBlKGqu768KSq5e31M-qo4dFi3d9wQMOtX4mVsg2l_Ym-vIk7Kw2'
+            'user_id': 'NRyu6V1rHNICMtCIKNW7gMWxZt7xhitkEoLBfy-hxEFbTGrZU3jYdyFHdT6H3F9kRj6HfjQMb0zhUUYC1kBUFcAXC4E65scVfvm8q2s5OdeOZ8zhOodisKj8TYZXaEH-yICGyw2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'fMZFS-61EgHNnXrBpTD1L2sJDdugJALKXamVJnvZz9W31xFbYhVlABieDV54-dmAf7RhO1Wn7957ZrnMpcdrBlKGqu768KSq5e31M-qo4dFi3d9wQMOtX4mVsg2l_Ym-vIk7Kw2'
+            'crm_id': 'NRyu6V1rHNICMtCIKNW7gMWxZt7xhitkEoLBfy-hxEFbTGrZU3jYdyFHdT6H3F9kRj6HfjQMb0zhUUYC1kBUFcAXC4E65scVfvm8q2s5OdeOZ8zhOodisKj8TYZXaEH-yICGyw2'
         });
     </script>
 <script>
@@ -160,7 +160,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?db2a08497355f9ec"></script><style>body {
+<script src="/Content/dist/js/preload.js?c0134ac0932ad775"></script><style>body {
         opacity: 0;
       }
 
@@ -174,7 +174,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?db2a08497355f9ec"></script><script defer="defer" src="/Content/dist/js/default.js?db2a08497355f9ec"></script><link href="/Content/dist/css/default.css?db2a08497355f9ec" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?c0134ac0932ad775"></script><script defer="defer" src="/Content/dist/js/default.js?c0134ac0932ad775"></script><link href="/Content/dist/css/default.css?c0134ac0932ad775" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -293,22 +293,36 @@
 </template>
 <template v-if="confirmTheme">
 <div class="flex space-x-4">
-<ev-button @click="closeAction" small="" v-if="!hideCloseButton &amp;&amp; onClose !== false">
+<ev-button :disabled="isProcessing" @click="closeAction" small="" v-if="!hideCloseButton &amp;&amp; onClose !== false">
                     {{ closeTitle ?? '닫기' }}
                 </ev-button>
-<ev-button :class="[ confirmButtonClass[confirmTheme] ]" @click="confirmAction" small="" v-if="!hideConfirmButton">
-                    {{ confirmTitle ?? '확인' }}
-                </ev-button>
+<ev-button :class="[ confirmButtonClass[confirmTheme] ]" :disabled="isProcessing" @click="confirmAction" small="" v-if="!hideConfirmButton">
+<span class="inline-flex items-center justify-center gap-2" v-if="isProcessing">
+<span>{{ processingTitle ?? '진행 중' }}</span>
+<svg class="animate-spin w-4 h-4" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" fill="currentColor"></path>
+</svg>
+</span>
+<template v-else="">{{ confirmTitle ?? '확인' }}</template>
+</ev-button>
 </div>
 </template>
 <template v-else="">
 <div class="flex space-x-2">
-<ev-button @click="closeAction" class="flex-1" small="" v-if="!hideCloseButton">
+<ev-button :disabled="isProcessing" @click="closeAction" class="flex-1" small="" v-if="!hideCloseButton">
                     {{ closeTitle ?? '닫기' }}
                 </ev-button>
-<ev-button :class="[ 'flex-1', confirmTheme === 'danger' ? 'bg-danger-500' : 'bg-primary-500' ]" @click="confirmAction" small="" v-if="!hideConfirmButton &amp;&amp; onConfirm">
-                    {{ confirmTitle ?? '확인' }}
-                </ev-button>
+<ev-button :class="[ 'flex-1', confirmTheme === 'danger' ? 'bg-danger-500' : 'bg-primary-500' ]" :disabled="isProcessing" @click="confirmAction" small="" v-if="!hideConfirmButton &amp;&amp; onConfirm">
+<span class="inline-flex items-center justify-center gap-2" v-if="isProcessing">
+<span>{{ processingTitle ?? '진행 중' }}</span>
+<svg class="animate-spin w-4 h-4" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" fill="currentColor"></path>
+</svg>
+</span>
+<template v-else="">{{ confirmTitle ?? '확인' }}</template>
+</ev-button>
 </div>
 </template>
 </ev-modal>
@@ -328,6 +342,9 @@
                     confirmTheme: null,
                     hideCloseButton: false,
                     hideConfirmButton: false,
+                    isProcessing: false,
+                    loadingOnConfirm: false,
+                    processingTitle: null,
 
                     confirmButtonClass: {
                         success: 'bg-primary-500',
@@ -340,20 +357,34 @@
             },
             methods: {
                 closeAction() {
+                    if (this.isProcessing) return;
                     if (typeof this.onClose === 'function') {
                         this.onClose();
                     }
                     this.isOpen = false;
                 },
                 confirmAction() {
+                    if (this.isProcessing) return;
                     if (typeof this.onConfirm === 'function') {
-                        this.onConfirm();
+                        const result = this.onConfirm();
+                        if (this.loadingOnConfirm && result && typeof result.then === 'function') {
+                            this.isProcessing = true;
+                            const self = this;
+                            result.finally(() => {
+                                self.isProcessing = false;
+                            });
+                            return;
+                        }
                     }
                     this.isOpen = false;
                 },
             },
             mounted() {
                 const self = this;
+                ui.alertClose = function () {
+                    self.isProcessing = false;
+                    self.isOpen = false;
+                };
                 ui.alert = function (model) {
                     Object.assign(self, {
                         title: null,
@@ -365,6 +396,9 @@
                         confirmTheme: null,
                         hideCloseButton: false,
                         hideConfirmButton: false,
+                        isProcessing: false,
+                        loadingOnConfirm: false,
+                        processingTitle: null,
 
                         confirmButtonClass: {
                             success: 'bg-primary-500',
@@ -2452,7 +2486,7 @@
 <span class="lang-ko">공지사항</span>
 <span class="lang-en" style="display:none">Announcements</span>
 </a>
-<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2025년 8월 ~ 2026년 1월 이벤터스 휴무일 안내</a>
+<a class="overflow-hidden text-ellipsis whitespace-nowrap text-gray-500" href="/notice/list">2026년 5월 ~ 8월 이벤터스 휴무일 안내</a>
 </div>
 </div>
 </div>
@@ -2479,7 +2513,7 @@
 <div class="font-bold text-primary-500 hidden md:block">(주)이벤터스</div>
 <div class="text-[12px] text-gray-600 md:mt-4 space-y-1">
 <div>사업자등록번호: 114-87-20403</div>
-<div>통신판매업 신고번호: 제2023-서울마포-1346호</div>
+<div>통신판매업 신고번호: 제2026-서울영등포-0199호</div>
 <div>대표이사: 안영학 <span class="text-gray-300 mx-1">|</span> 개인정보책임자: 이정수</div>
 <div>서울 영등포구 양산로 85, 하이퍼타워 4층 405, 406호</div>
 </div>
@@ -2596,7 +2630,7 @@
         mq.addEventListener('change', toggle);
     })();
 </script>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="Y1roK5loTVSRsqOPqZKSrb3zkAnCIiDx_V_uWO9CZ8gjQtfqOO4eWBzVGV5VcrfeHTCXCHJfebVKzRwrWS9JU711cWg1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="PjQxXQyrqYY5H1MgyKUqmgmB18qRhTctOnVA-UcCajC5lj3dfqRDsqnsp10phzW3S-i_yEH3Q24h_HLxwWnqyg6mBng1"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4033,7 +4067,7 @@
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'fMZFS-61EgHNnXrBpTD1L2sJDdugJALKXamVJnvZz9W31xFbYhVlABieDV54-dmAf7RhO1Wn7957ZrnMpcdrBlKGqu768KSq5e31M-qo4dFi3d9wQMOtX4mVsg2l_Ym-vIk7Kw2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, 'NRyu6V1rHNICMtCIKNW7gMWxZt7xhitkEoLBfy-hxEFbTGrZU3jYdyFHdT6H3F9kRj6HfjQMb0zhUUYC1kBUFcAXC4E65scVfvm8q2s5OdeOZ8zhOodisKj8TYZXaEH-yICGyw2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4114,8 +4148,8 @@ docReady(() => {
                     searchTriggerModel: getSearchTriggerModel(),
                     showFilter: false,
                     searchDataRaw: null,
-                    banners: [{"Id":8547,"New_Start_Date":"2026-05-13T00:00:00","New_End_Date":"2026-06-10T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-05-07T17:23:13.2742646","Support":false,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/60f5faf4818546e281a5025290649dff.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/5e1bc58278de41ab814f7896e83e8575.png","Click_Url":"https://event-us.kr/skintellixhackathon/event/125194?utm_source=eventus&utm_medium=mix&utm_campaign=ddgrimq6im","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"총 상금 500만원에 도전!","BannerDescription":"2nd NAMUHX Hackathon","BannerDate":"2026. 04. 30(목) ~ 2026. 06. 10(수)","BannerPlace":"온·오프라인 행사"},{"Id":8596,"New_Start_Date":"2026-05-18T00:00:00","New_End_Date":"2026-06-08T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-05-14T17:14:08.2691825","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/20df6d5a8be24e67b65ad7f9b18f1344.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/a7985b4f97fb4a41b3f5ee61e7f449f9.png","Click_Url":"https://event-us.kr/m/126062/54292","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"레드오션 K-뷰티 생존기","BannerDescription":"500억 기업 휩드의 스케일업 전략","BannerDate":"2026. 06. 11(목) 14:00","BannerPlace":"오프라인 행사"},{"Id":8611,"New_Start_Date":"2026-05-18T00:00:00","New_End_Date":"2026-06-12T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-05-14T17:44:39.4711515","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e391c37b2610416899e495ae985b0439.jpg","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/bc4616d805de46c6bf64c7837b4d0eac.jpg","Click_Url":"https://event-us.kr/m/125479/54296","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"AX전환 답을 찾는 리더라면 주목","BannerDescription":"플로우 AX Festa 2026","BannerDate":"2026. 06. 25(목) 09:00","BannerPlace":"오프라인 행사"},{"Id":8648,"New_Start_Date":"2026-05-22T00:00:00","New_End_Date":"2026-05-29T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-05-20T17:02:00.0851344","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/20cbff9e172f41a090cf14285f506fb5.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/82ee30550fc44ac49808a61fc19c6b26.png","Click_Url":"https://event-us.kr/zinidata/event/125498","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"2026 고양시 중소기업","BannerDescription":"빅데이터 지원사업 설명회","BannerDate":"2026. 05. 29(금) 14:00","BannerPlace":"오프라인 행사"}],
-                    searchResultBanners: [{"Id":"126175","CoverImageUrl":"/Image/landlordclub/126175/ProjectInfo/Cover/8969a6fa478f441bb05e9874522fba4b.jpg","Title":"시행사가 직접 운영하는 부동산 개발 실무 클래스, 강남 디벨로퍼와의 7주, 실전 자산 전략 클럽 | LANDLORD CLUB SEASON 8","State":"Start","AppTopLogoImageUrl":"/Image/landlordclub/0586a38e18fb46df9d8fe306c13b098c.png","EventType":"강연/세미나","Category":"경제/금융","Category2":"부동산","StartDate":"2026-06-10T19:00:00","CloseDate":"2026-07-22T21:00:00","RegisterStartDate":"2026-05-14T13:00:00","RegisterDueDate":"2026-06-09T23:30:00","ViewCount":170,"AppSubDomain":"landlordclub","IsSuper":false,"AppTitle":"랜드로드 클럽","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 봉은사로 151","EventAddressTitle":"분데스 언주, 7층","GroupRequestGroupMoney":0,"IsCheck":false,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-05-14T14:26:22.7466453","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"external","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":183011,"ProjectId":"126175","ProjectSubDomain":"landlordclub","TagId":4672,"Date":"2026-05-14T14:34:00.252897","Sort":0,"Project":null,"Tag":null},{"Id":183012,"ProjectId":"126175","ProjectSubDomain":"landlordclub","TagId":35927,"Date":"2026-05-14T14:34:00.252897","Sort":1,"Project":null,"Tag":null},{"Id":183013,"ProjectId":"126175","ProjectSubDomain":"landlordclub","TagId":1659,"Date":"2026-05-14T14:34:00.252897","Sort":2,"Project":null,"Tag":null},{"Id":183014,"ProjectId":"126175","ProjectSubDomain":"landlordclub","TagId":35928,"Date":"2026-05-14T14:34:00.252897","Sort":3,"Project":null,"Tag":null},{"Id":183015,"ProjectId":"126175","ProjectSubDomain":"landlordclub","TagId":269,"Date":"2026-05-14T14:34:00.252897","Sort":4,"Project":null,"Tag":null}],"pitId":8616,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/landlordclub/event/126175","CorrectionValue":0.0},{"Id":"126062","CoverImageUrl":"/Image/flexteam/126062/ProjectInfo/Cover/9750e72fc25b43ffbf5e7998ed2143f7.png","Title":"레드오션 K-뷰티 생존기: 휩드가 500억 기업이 되기까지","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/flexteam/TopLogoImage/f3a2531a099f4c89b818ec50f7ef34cf.png","EventType":"강연/세미나","Category":"경영","Category2":"HR","StartDate":"2026-06-11T14:00:00","CloseDate":"2026-06-11T16:00:00","RegisterStartDate":"2026-05-14T14:00:00","RegisterDueDate":"2026-06-08T21:00:00","ViewCount":1165,"AppSubDomain":"flexteam","IsSuper":false,"AppTitle":"플렉스팀","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 성동구","EventAddress":"서울 성동구 왕십리로 125","EventAddressTitle":"패스트파이브 서울숲 세미나룸","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-05-13T11:20:00","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":182631,"ProjectId":"126062","ProjectSubDomain":"flexteam","TagId":172,"Date":"2026-05-13T11:40:57.0877537","Sort":0,"Project":null,"Tag":null},{"Id":182632,"ProjectId":"126062","ProjectSubDomain":"flexteam","TagId":4573,"Date":"2026-05-13T11:40:57.0877537","Sort":1,"Project":null,"Tag":null},{"Id":182633,"ProjectId":"126062","ProjectSubDomain":"flexteam","TagId":143,"Date":"2026-05-13T11:40:57.0877537","Sort":2,"Project":null,"Tag":null},{"Id":182634,"ProjectId":"126062","ProjectSubDomain":"flexteam","TagId":13400,"Date":"2026-05-13T11:40:57.0877537","Sort":3,"Project":null,"Tag":null},{"Id":182635,"ProjectId":"126062","ProjectSubDomain":"flexteam","TagId":12888,"Date":"2026-05-13T11:40:57.0877537","Sort":4,"Project":null,"Tag":null}],"pitId":8591,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/126062/54292","CorrectionValue":0.0},{"Id":"125479","CoverImageUrl":"/Image/U4H7PR41737I/125479/ProjectInfo/Cover/921453ea1a4c44ba8a3becd309d913b1.jpg","Title":"플로우 AX Festa 2026","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/U4H7PR41737I/TopLogoImage/d4d0e897ab9d4ecfb98771208dd91d26.png","EventType":"강연/세미나","Category":"IT/프로그래밍","Category2":"AI","StartDate":"2026-06-25T09:00:00","CloseDate":"2026-06-25T18:00:00","RegisterStartDate":"2026-05-11T14:00:00","RegisterDueDate":"2026-06-12T00:00:00","ViewCount":1549,"AppSubDomain":"U4H7PR41737I","IsSuper":false,"AppTitle":"협업툴 플로우","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 영등포구","EventAddress":"서울 영등포구 여의대로 108","EventAddressTitle":"페어몬트 앰배서더 서울 (B1 그랜드볼룸)","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-05-04T15:19:00","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":180927,"ProjectId":"125479","ProjectSubDomain":"U4H7PR41737I","TagId":35534,"Date":"2026-05-04T15:47:41.2661063","Sort":0,"Project":null,"Tag":null},{"Id":180928,"ProjectId":"125479","ProjectSubDomain":"U4H7PR41737I","TagId":35535,"Date":"2026-05-04T15:47:41.2661063","Sort":1,"Project":null,"Tag":null},{"Id":180929,"ProjectId":"125479","ProjectSubDomain":"U4H7PR41737I","TagId":35536,"Date":"2026-05-04T15:47:41.2661063","Sort":2,"Project":null,"Tag":null},{"Id":180930,"ProjectId":"125479","ProjectSubDomain":"U4H7PR41737I","TagId":35537,"Date":"2026-05-04T15:47:41.2661063","Sort":3,"Project":null,"Tag":null},{"Id":180931,"ProjectId":"125479","ProjectSubDomain":"U4H7PR41737I","TagId":30935,"Date":"2026-05-04T15:47:41.2661063","Sort":4,"Project":null,"Tag":null}],"pitId":8606,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/125479/54296","CorrectionValue":0.0}],
+                    banners: [{"Id":8547,"New_Start_Date":"2026-05-20T00:00:00","New_End_Date":"2026-06-17T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-05-07T17:23:13.2742646","Support":false,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/60f5faf4818546e281a5025290649dff.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/5e1bc58278de41ab814f7896e83e8575.png","Click_Url":"https://event-us.kr/skintellixhackathon/event/125194?utm_source=eventus&utm_medium=mix&utm_campaign=ddgrimq6im","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"총 상금 500만원에 도전!","BannerDescription":"2nd NAMUHX Hackathon","BannerDate":"2026. 04. 30(목) ~ 2026. 06. 10(수)","BannerPlace":"온·오프라인 행사"},{"Id":1228,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:50:30.9875727","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/184abb4c894b449f98b3ea9fd61426bc.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/fe753666d41040f89f3825fdee3b6802.png","Click_Url":"https://event-us.kr/hostcenter","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"이벤터스에선 누구나 가능한 호스트","BannerDescription":"원하는 행사가 없다면 직접 열어보세요","BannerDate":null,"BannerPlace":null},{"Id":1169,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:46:36.7216886","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/46c0670202bc4819bc14ff0043a82996.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/a16131386c55407a9d5a6b41c647efc7.png","Click_Url":"https://page.stibee.com/subscriptions/3818","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"이벤트레터 구독으로 누구보다 빠르게!","BannerDescription":"이번 주 놓쳐서는 안 되는 행사 확인!","BannerDate":null,"BannerPlace":null},{"Id":1158,"New_Start_Date":"2023-02-19T00:00:00","New_End_Date":"2023-02-19T23:59:59","Status":"CANCEL","ApplyDate":"2022-11-21T18:43:59.0500939","Support":null,"Order":0,"Position":"search","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/ba77f6b9392e4985b3d77048e6bd60d4.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/search/58305a2be9fc4b01a2702067870aadf9.png","Click_Url":"https://pf.kakao.com/_xfxhGxcl","Banner":{"color":{"title":"#000000","description":"#000000","date":"#000000","place":"#000000"}},"BannerJson":"{\"color\":{\"title\":\"#000000\",\"description\":\"#000000\",\"date\":\"#000000\",\"place\":\"#000000\"}}","BannerTitle":"카카오 플러스 친구가 되어주세요!","BannerDescription":"이벤터스가 추천하는 행사가 궁금하다면","BannerDate":null,"BannerPlace":null}],
+                    searchResultBanners: [{"Id":"126537","CoverImageUrl":"/Image/postechholdings/126537/ProjectInfo/Cover/e848b8c9d33b45efba10f7cf051d707b.jpg","Title":"TIPS 갈 팀, 지금 찾습니다.","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/postechholdings/TopLogoImage/0af853b0c0a640b692a128da9b084168.png","EventType":"데모데이","Category":"창업","Category2":"스타트업","StartDate":"2026-05-20T14:00:00","CloseDate":"2026-06-21T00:00:00","RegisterStartDate":"2026-05-20T14:00:00","RegisterDueDate":"2026-06-21T00:00:00","ViewCount":643,"AppSubDomain":"postechholdings","IsSuper":false,"AppTitle":"포스텍홀딩스","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":false,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-05-20T14:18:13.1628889","EventSystemType":"online","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":184277,"ProjectId":"126537","ProjectSubDomain":"postechholdings","TagId":1890,"Date":"2026-05-20T14:25:48.5862967","Sort":0,"Project":null,"Tag":null},{"Id":184278,"ProjectId":"126537","ProjectSubDomain":"postechholdings","TagId":134,"Date":"2026-05-20T14:25:48.5862967","Sort":1,"Project":null,"Tag":null},{"Id":184279,"ProjectId":"126537","ProjectSubDomain":"postechholdings","TagId":6816,"Date":"2026-05-20T14:25:48.5862967","Sort":2,"Project":null,"Tag":null},{"Id":184280,"ProjectId":"126537","ProjectSubDomain":"postechholdings","TagId":178,"Date":"2026-05-20T14:25:48.5862967","Sort":3,"Project":null,"Tag":null},{"Id":184281,"ProjectId":"126537","ProjectSubDomain":"postechholdings","TagId":377,"Date":"2026-05-20T14:25:48.5862967","Sort":4,"Project":null,"Tag":null}],"pitId":8636,"IsAdCheck":true,"AdOrder":0,"IsAdMark":true,"Url":"https://event-us.kr/postechholdings/event/126537","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,

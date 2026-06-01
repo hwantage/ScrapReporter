@@ -94,6 +94,35 @@
 		box-sizing: border-box;
 	}
 	
+	.onepassAgreeBlock {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: rgba(51, 51, 51, 0.7);
+		z-index: 9999;
+	}
+	
+	.onepassAgreeBlockContent {
+		position: fixed;
+		width: 70%;
+		left: 47%;
+		margin-left: -30%;
+		height: 75%;
+		top: 20%;
+		margin-top: -150px;
+		overflow: auto;
+		
+		border: 1px solid #000;
+		background-color: #fff;
+		padding: 1em;
+		box-sizingL border-box;
+	}
+	
+	
+	
+	
 	.bt4 {  /**2018 테이블 하단 실행 버튼 **/
 		background-color:#757a85;
 		height:30px;
@@ -315,6 +344,7 @@
 	#popup-container {left: 50% !important; transform: translateX(-50%); top: 5% !important; width: 95% !important;}
 }
 */
+
 </style>
 <script>
 
@@ -358,6 +388,14 @@ $(document).ready(function(){
 	if (parent[0]?.window.name == "smes_frame")  {
 		$("#subheader")[0].id = "subheader2";
 	}
+	
+	
+	if ("" == "Y"
+		&& "" == "N"
+		&& !window.location.href.endsWith("/mpa/ii/IndyInfoAdmn_viewInfoAuth.do")
+	) {
+		location.href = "/front/mpa/ii/IndyInfoAdmn_viewInfoAuth.do";
+	}
 });
 
 function search_includeHeader(){
@@ -378,7 +416,6 @@ function fn_valueClear(){
 		$('#searchvalue').val('');
 	}
 }
-
 
 
 
@@ -673,7 +710,8 @@ function fn_MenuMrfnPageMove(url){
 			
 		
 		
-		var moveUrl = "https://onepass-dev.smes.go.kr/conversion/step1?redirect_uri="
+		//var moveUrl = "https://onepass-dev.smes.go.kr/conversion/step1?redirect_uri="
+		var moveUrl = "https://onepass.smes.go.kr/conversion/step1?redirect_uri="
 				+ redirectUrl;
 		
 		
@@ -866,12 +904,12 @@ function fn_MenuMrfnPageMove(url){
 	
 	
 	function receiveMessage(event) {
-		if (event.origin != "https://www.smtech.go.kr") {
+		if (event.origin == "https://www.smtech.go.kr" && !event.data.dataResult) {
 			return;
 		}
 		
 		//var token = event.data;
-		fn_topNoSSOLogin(event.data);
+		fn_topNoSSOLogin(event.data.encData);
 		
 		window.removeEventListener("message", receiveMessage);
 	}
@@ -933,56 +971,223 @@ function fn_MenuMrfnPageMove(url){
 			
 		} else if ( result.resultCode == "ESSENTIAL") {
 			alert(result.resultMessage);
-			document.topLoginForm.action = url;
-			document.topLoginForm.target = "_parent";
-			document.topLoginForm.submit();
-		} else if ( result.resultCode == "J01" ) {
-			document.topLoginForm.loginPasswd.value = "";
-			document.topLoginForm.loginId.value = "";
-			document.topLoginForm.action = url;
-			document.topLoginForm.target="_parent";
-			document.topLoginForm.submit();
-		} else if(result.resultCode == "J02") {
-			if ( confirm(result.Message) ) {
-				document.topLoginForm.action = "/front/log/insertEmailAddress.do";
-				document.topLoginForm.target="_parent";
-				document.topLoginForm.submit();
-			} else {
-				document.topLoginForm.action = url;
-				document.topLoginForm.target="_parent";
-				document.topLoginForm.submit();
+			
+			// ========== 폼을 찾지 못하면 동적폼 생성 START ==========
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			if (!topForm && window.opener) {
+				topForm = window.opener.document.forms["topLoginForm"];
 			}
+			if (!topForm && window.parent) {
+				topForm = window.parent.document.forms["topLoginForm"];
+			}
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", url);
+				dynamicForm.setAttribute("target", "_parent");
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
+			// ========== 폼을 찾지 못하면 동적폼 생성 START ==========
+				
+			topForm.action = url;
+			topForm.target = _parent;
+			topForm.submit();
+			//document.topLoginForm.action = url;
+			//document.topLoginForm.target = "_parent";
+			//document.topLoginForm.submit();
+		} else if ( result.resultCode == "J01" ) {
+
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", url);
+				dynamicForm.setAttribute("target", "_parent");
+				
+				var idInput = document.createElement("input");
+				idInput.setAttribute("type", "hidden");
+				idInput.setAttribute("name", "loginId");
+				idInput.setAttribute("value", "");
+				dynamicForm.appendChild(idInput);
+				
+				var pwInput = document.createElement("input");
+				idInput.setAttribute("type", "hidden");
+				idInput.setAttribute("name", "loginPasswd");
+				idInput.setAttribute("value", "");
+				dynamicForm.appendChild(pwInput);
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
+						
+			topForm.loginPasswd.value = "";
+			topForm.loginId.value = "";
+			topForm.action = url;
+			topForm.target="_parent";
+			topForm.submit();
+			
+		} else if(result.resultCode == "J02") {
+			
+			if ( confirm(result.Message) ) {
+				var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+				if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+				if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+				
+				if (!topForm) {
+					var dynamicForm = document.createElement("form");
+					dynamicForm.setAttribute("method", "post");
+					dynamicForm.setAttribute("action", "/front/log/insertEmailAddress.do");
+					dynamicForm.setAttribute("target", "_parent");
+					
+					document.body.appendChild(dynamicForm);
+					dynamicForm.submit();
+					return;					
+				}
+				
+				topForm.action = "/front/log/insertEmailAddress.do";
+				topForm.target="_parent";
+				topForm.submit();
+			} else {
+				var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+				if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+				if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+				
+				if (!topForm) {
+					var dynamicForm = document.createElement("form");
+					dynamicForm.setAttribute("method", "post");
+					dynamicForm.setAttribute("action", url);
+					dynamicForm.setAttribute("target", "_parent");
+					
+					document.body.appendChild(dynamicForm);
+					dynamicForm.submit();
+					return;					
+				}
+				
+				topForm.action = url;
+				topForm.target="_parent";
+				topForm.submit();
+			}
+			
 		} else if(result.resultCode == "J03") {
-			document.topLoginForm.action = url;
-			document.topLoginForm.target="_parent";
-			document.topLoginForm.submit();
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", url);
+				dynamicForm.setAttribute("target", "_parent");
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;					
+			}
+			
+			topForm.action = url;
+			topForm.target="_parent";
+			topForm.submit();
 		} else if(result.resultCode == "LCK00") {
 			alert("이미 로그인 5회가 실패하여 계정이 잠겼습니다.\n\n본인인증 후에 재시도 하시기 바랍니다.");
+			
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", "/front/log/chkPersonCert.do");
+				dynamicForm.setAttribute("target", "_parent");
+				
+				var idInput = document.createElement("input");
+				idInput.setAttribute("type", "hidden");
+				idInput.setAttribute("name", "isLckSe");
+				idInput.setAttribute("value", "LCK00");
+				dynamicForm.appendChild(idInput);
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
 
-			document.topChkPersonForm.isLckSe.value = "LCK00";
+			topForm.isLckSe.value = "LCK00";
 
 			// 본인인증 url
-			document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
-			document.topChkPersonForm.target = "_parent";
-			document.topChkPersonForm.submit();
+			topForm.action = "/front/log/chkPersonCert.do";
+			topForm.target = "_parent";
+			topForm.submit();
 		} else if(result.resultCode == "LCK01") {
 			alert("현재 입력하신 비밀번호로 5회 실패하여 계정이 잠겼습니다.\n\n본인인증 화면으로 이동합니다.");
+			
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", "/front/log/chkPersonCert.do");
+				dynamicForm.setAttribute("target", "_parent");
+				
+				var idInput = document.createElement("input");
+				idInput.setAttribute("type", "hidden");
+				idInput.setAttribute("name", "isLckSe");
+				idInput.setAttribute("value", "LCK01");
+				dynamicForm.appendChild(idInput);
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
 
-			document.topChkPersonForm.isLckSe.value = "LCK01";
+			topForm.isLckSe.value = "LCK01";
 
 			// 본인인증 url
-			document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
-			document.topChkPersonForm.target = "_parent";
-			document.topChkPersonForm.submit();
+			topForm.action = "/front/log/chkPersonCert.do";
+			topForm.target = "_parent";
+			topForm.submit();
 		} else if(result.resultCode == "LCK02") {
 			alert("현재 입력하신 계정이 휴면상태입니다.\n\n본인인증 화면으로 이동합니다.");
+			
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", "/front/log/chkPersonCert.do");
+				dynamicForm.setAttribute("target", "_parent");
+				
+				var idInput = document.createElement("input");
+				idInput.setAttribute("type", "hidden");
+				idInput.setAttribute("name", "isLckSe");
+				idInput.setAttribute("value", "LCK02");
+				dynamicForm.appendChild(idInput);
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
 
-			document.topChkPersonForm.isLckSe.value = "LCK02";
+			topForm.isLckSe.value = "LCK02";
 
 			// 본인인증url
-			document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
-			document.topChkPersonForm.target = "_parent";
-			document.topChkPersonForm.submit();
+			topForm.action = "/front/log/chkPersonCert.do";
+			topForm.target = "_parent";
+			topForm.submit();
 		} else if(result.resultCode == "LCK04") {
 			//사이버안전센터_계정정보 유출(크리데션스트핑) 관련자
             alert(" 비정상적 로그인 시도로 인해 로그인이 차단되었으며 " +
@@ -990,24 +1195,66 @@ function fn_MenuMrfnPageMove(url){
             		"\n (본인인증 후 임시비밀번호발급 -> 로그인 -> 비밀번호변경)" +
             		"\n " +
             		"\n 본인인증 화면으로 이동합니다.");
+			
+			var topForm = document.forms["topLoginForm"] || $("form[name='topLoginForm']")[0];
+			
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topLoginForm"];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topLoginForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", "/front/log/chkPersonCert.do");
+				dynamicForm.setAttribute("target", "_parent");
+				
+				var idInput = document.createElement("input");
+				idInput.setAttribute("type", "hidden");
+				idInput.setAttribute("name", "isLckSe");
+				idInput.setAttribute("value", "LCK04");
+				dynamicForm.appendChild(idInput);
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
 
-            document.topChkPersonForm.isLckSe.value = "LCK04";
+			topForm.isLckSe.value = "LCK04";
 
             // 본인인증url
-            document.topChkPersonForm.action = "/front/log/chkPersonCert.do";
-            document.topChkPersonForm.target = "_parent";
-            document.topChkPersonForm.submit();
+            topForm.action = "/front/log/chkPersonCert.do";
+            topForm.target = "_parent";
+            topForm.submit();
 		} else if ( result.resultCode == "E01" || result.resultCode == "LCK03") {
 			//alert("현재 입력하신 아이디가 등록되어 있지 않거나, \n아이디 또는 비밀번호를 잘못 입력 하셨습니다.\n비밀번호가 "+ result.failCnt + "회 틀렸습니다.");
 			alert("현재 입력하신 아이디가 등록되어 있지 않거나, \n아이디 또는 비밀번호를 잘못 입력 하셨습니다.");
 		} else if(result.resultCode == "P01") {	// 비밀번호 3개월 미변경시 변경안내로 이동
+
+			var topForm = document.forms["topChkPersonForm"] || $("form[name='topChkPersonForm']")[0];
+			
+			if (!topForm && window.parent) topForm = window.parent.document.forms["topChkPersonForm"];
+			if (!topForm && window.opener) topForm = window.opener.document.forms["topChkPersonForm"];
+			
+			if (!topForm) {
+				var dynamicForm = document.createElement("form");
+				dynamicForm.setAttribute("method", "post");
+				dynamicForm.setAttribute("action", "/front/log/goChngPwd.do");
+				dynamicForm.setAttribute("target", "_parent");
+				
+				document.body.appendChild(dynamicForm);
+				dynamicForm.submit();
+				return;
+			}
+			
 			document.topChkPersonForm.action = "/front/log/goChngPwd.do";
 			document.topChkPersonForm.target = "_parent";
 			document.topChkPersonForm.submit();
 		}else if(result.resultCode = "SJ01"){
 			alert($("#sbjtId").val()+"과제에 속한 대표자/과제책임자가 아니거나, \n아이디 또는 비밀번호를 잘못 입력하셨습니다. \n확인해주시기 바랍니다.");
-		}	
+		}
 	}
+	
+	
+	
 	
 	document.addEventListener('keydown', function(e) {
 		var keyCode = e.keyCode;
@@ -1111,7 +1358,7 @@ function fn_MenuMrfnPageMove(url){
 <button onclick="fn_ssoInterPop(); return;" style="border: 0 none; background-color: transparent; cursor: pointer; color: #444444" title="새창으로 열림">중소벤처24 로그인</button>
 </li>
 <li id="smesT" style="display: none;">
-<button class="eu-btn-process-warning" onclick="fn_smesIntgLogin();" style="display: inline-flex; align-items: center; justify-content: center; background: #004C97; border: none; height: 25px; font-size: 14px; padding-right: 10px;" type="link">
+<button class="eu-btn-process-warning" onclick="fn_smesIntgLogin();" style="display: inline-flex; align-items: center; justify-content: center; background: #004C97; border: none; height: 25px; font-size: 14px; padding-right: 10px;" type="button">
 <img alt="중기원패스 통합로그인" src="/images/onepass/intg_btn_ico.png" style="height: 25px"/>
 							통합 로그인
 						</button>
@@ -1860,6 +2107,46 @@ $(document).ready(function () {
 <tr>
 <td class="ac">1</td>
 <td class="ac">IRIS</td>
+<td class="ac">디지털기반중소제조산재예방기술개발(R&amp;D)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 디지털기반 중소사업장 산재예방 기술개발 지원사업 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 06. 15 ~ 2026. 07. 02
+	                  	</td>
+<td class="ac">
+	                    	2026-05-28
+
+	                    </td>
+<td class="ac ll">
+<!--6 7 6 1-->
+<img alt="접수예정" class="va_t" src="/images/common/icon06.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">2</td>
+<td class="ac">SMTECH</td>
+<td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02847&amp;buclCd=S6041&amp;dtlAncmSn=5&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년 중소기업 연구인력지원사업(파견) 6월 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 06. 01 ~ 2026. 06. 30
+	                  	</td>
+<td class="ac">
+	                    	2026-02-04
+
+	                    </td>
+<td class="ac ll">
+<!--6 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">3</td>
+<td class="ac">IRIS</td>
 <td class="ac">투·융자연계기술개발사업(DCP_기술도전형)</td>
 <td>
 <a class="board" href="javascript:goMove()">(2026-DCP-32_방산·우주항공·해양_딥테크 챌린지 프로젝트(DCP*))</a>
@@ -1873,12 +2160,132 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--4 6 5 26-->
+<!--4 6 6 1-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">2</td>
+<td class="ac">4</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(중소기업유망기술개발)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 중소기업유망기술개발(소부장) 하반기(2차) 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 06. 01 ~ 2026. 06. 15
+	                  	</td>
+<td class="ac">
+	                    	2026-05-15
+
+	                    </td>
+<td class="ac ll">
+<!--6 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">5</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(점프업) 하반기(2차) 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 06. 01 ~ 2026. 06. 15
+	                  	</td>
+<td class="ac">
+	                    	2026-05-15
+
+	                    </td>
+<td class="ac ll">
+<!--6 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">6</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌선도기술개발(수출지향형) 하반기(2차) 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 06. 01 ~ 2026. 06. 15
+	                  	</td>
+<td class="ac">
+	                    	2026-05-15
+
+	                    </td>
+<td class="ac ll">
+<!--6 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">7</td>
+<td class="ac">SMTECH</td>
+<td class="ac">시군구연고산업육성</td>
+<td>
+<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02865&amp;buclCd=S801B&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">협업형 지역생활경제 활성화 시범사업 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 28 ~ 2026. 06. 12
+	                  	</td>
+<td class="ac">
+	                    	2026-05-29
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">8</td>
+<td class="ac">IRIS</td>
+<td class="ac">투·융자연계기술개발사업(글로벌 팁스_일반형)</td>
+<td>
+<a class="board" href="javascript:goMove()">(일반형, 26-1차) 글로벌 팁스 R&amp;D 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 28 ~ 2026. 06. 11
+	                  	</td>
+<td class="ac">
+	                    	2026-02-27
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">9</td>
+<td class="ac">IRIS</td>
+<td class="ac">투·융자연계기술개발사업(스케일업 팁스_일반형)</td>
+<td>
+<a class="board" href="javascript:goMove()">(일반형, 26-1차) 스케일업 팁스 R&amp;D 지원계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 28 ~ 2026. 06. 11
+	                  	</td>
+<td class="ac">
+	                    	2026-02-27
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">10</td>
 <td class="ac">IRIS</td>
 <td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
 <td>
@@ -1893,72 +2300,12 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 5 26-->
+<!--5 6 6 1-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">3</td>
-<td class="ac">IRIS</td>
-<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
-<td>
-<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(에코브릿지_자유품목) 제2차 시행계획 공고</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 13 ~ 2026. 06. 01
-	                  	</td>
-<td class="ac">
-	                    	2026-04-29
-
-	                    </td>
-<td class="ac ll">
-<!--5 6 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">4</td>
-<td class="ac">IRIS</td>
-<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
-<td>
-<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(에코브릿지_수요품목) 제2차 시행계획 공고</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 13 ~ 2026. 06. 01
-	                  	</td>
-<td class="ac">
-	                    	2026-04-29
-
-	                    </td>
-<td class="ac ll">
-<!--5 6 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">5</td>
-<td class="ac">IRIS</td>
-<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
-<td>
-<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(자유공모형_일반) 제2차 시행계획 공고</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 13 ~ 2026. 06. 01
-	                  	</td>
-<td class="ac">
-	                    	2026-04-29
-
-	                    </td>
-<td class="ac ll">
-<!--5 6 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">6</td>
+<td class="ac">11</td>
 <td class="ac">SMTECH</td>
 <td class="ac">전담은행 투자설명회(IR)</td>
 <td>
@@ -1973,12 +2320,72 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 6 5 26-->
+<!--5 6 6 1-->
 <img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
 </td>
 </tr>
 <tr>
-<td class="ac">7</td>
+<td class="ac">12</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(자유공모형_일반) 제2차 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 13 ~ 2026. 06. 01
+	                  	</td>
+<td class="ac">
+	                    	2026-04-29
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">13</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(에코브릿지_수요품목) 제2차 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 13 ~ 2026. 06. 01
+	                  	</td>
+<td class="ac">
+	                    	2026-04-29
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">14</td>
+<td class="ac">IRIS</td>
+<td class="ac">★중소기업기술혁신개발사업(글로벌선도기술개발_글로벌협력형)</td>
+<td>
+<a class="board" href="javascript:goMove()">2026년도 중소기업기술혁신개발사업 글로벌협력형R&amp;D(에코브릿지_자유품목) 제2차 시행계획 공고</a>
+</td>
+<td class="ac">
+
+	                       	2026. 05. 13 ~ 2026. 06. 01
+	                  	</td>
+<td class="ac">
+	                    	2026-04-29
+
+	                    </td>
+<td class="ac ll">
+<!--5 6 6 1-->
+<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+</td>
+</tr>
+<tr>
+<td class="ac">15</td>
 <td class="ac">SMTECH</td>
 <td class="ac">공공연연구인력파견지원(참여기업접수용)</td>
 <td>
@@ -1993,168 +2400,8 @@ $(document).ready(function () {
 
 	                    </td>
 <td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">8</td>
-<td class="ac">IRIS</td>
-<td class="ac">투·융자연계기술개발사업(정책지정형_우주항공청)</td>
-<td>
-<a class="board" href="javascript:goMove()">투·융자 연계 기술개발사업 정책지정형(전략기술 분야) 스케일업 팁스</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 13 ~ 2026. 05. 29
-	                  	</td>
-<td class="ac">
-	                    	2026-05-13
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">9</td>
-<td class="ac">SMTECH</td>
-<td class="ac">중소벤처기업부 혁신제품 지정 연장사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02863&amp;buclCd=S9112&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 제2차 중소벤처기업부 혁신제품 지정기간 연장(1차연장) 공고</a>
-</td>
-<td class="ac">
-
-	                       	2026. 04. 29 ~ 2026. 05. 28
-	                  	</td>
-<td class="ac">
-	                    	2026-04-29
-
-	                    </td>
-<td class="ac ll">
-<!--4 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">10</td>
-<td class="ac">IRIS</td>
-<td class="ac">중소기업수출핵심품목탄소감축기술개발사업(R&amp;D)</td>
-<td>
-<a class="board" href="javascript:goMove()">2026년도 중소기업 수출 핵심품목 탄소감축 기술개발사업 하반기 시행계획 공고</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 13 ~ 2026. 05. 27
-	                  	</td>
-<td class="ac">
-	                    	2026-04-28
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">11</td>
-<td class="ac">IRIS</td>
-<td class="ac">투·융자연계기술개발사업(정책지정형_과학기술정보통신부)</td>
-<td>
-<a class="board" href="javascript:goMove()">투·융자 연계 기술개발사업 정책지정형(전략기술 분야) 스케일업 팁스</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 12 ~ 2026. 05. 27
-	                  	</td>
-<td class="ac">
-	                    	2026-05-12
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">12</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02862&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(R&amp;D 수행 창업기업)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">13</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02861&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(규제혁신 연계)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">14</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02859&amp;buclCd=S9H01&amp;dtlAncmSn=1&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(정부 R&amp;D 우수과제)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
-</td>
-</tr>
-<tr>
-<td class="ac">15</td>
-<td class="ac">SMTECH</td>
-<td class="ac">기술사업화 패키지 사업</td>
-<td>
-<a class="board" href="/front/ifg/no/notice02_detail.do?buclYy=&amp;ancmId=S02860&amp;buclCd=S9H01&amp;dtlAncmSn=2&amp;schdSe=MO5005&amp;aplySn=1&amp;searchCondition=&amp;searchKeyword=&amp;pageIndex=1">2026년도 기술사업화 패키지 지원사업 제2차 시행계획 공고(기술거래플랫폼 연계)</a>
-</td>
-<td class="ac">
-
-	                       	2026. 05. 11 ~ 2026. 05. 26
-	                  	</td>
-<td class="ac">
-	                    	2026-04-27
-
-	                    </td>
-<td class="ac ll">
-<!--5 5 5 26-->
-<img alt="접수중" class="va_t" src="/images/common/icon08.gif"/>
+<!--5 5 6 1-->
+<img alt="접수완료" class="va_t" src="/images/common/icon07.gif"/>
 </td>
 </tr>
 </tbody>
