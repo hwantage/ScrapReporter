@@ -73,6 +73,7 @@ $(document).ready(function(){
 	$("a").removeAttr("alt");
 	$("i").attr("aria-hidden","true");
 	$(".mobile_naviArea i").removeAttr("aria-hidden");
+	$(".view_pn i").removeAttr("aria-hidden");
 	
 	/** 2017.04.20 Add for focus's movement by anchor : web accessibility **/
 	$("a[href='#sub_contentsArea2']").click(function()
@@ -1218,7 +1219,7 @@ function ignore(e){
 </nav>
 <div class="m_globalArea">
 <ul>
-<li><a href="https://blog.naver.com/withnia" target="_blank" title="네이버블로그- 새창"><img alt="naver blog" src="/images/nia_kor/img/blog.svg"/><span class="hiddenTxt">네이버블로그</span></a></li>
+<li><a href="https://blog.naver.com/withnia" target="_blank" title="네이버블로그- 새창"><i aria-hidden="true"><img alt="naver blog" src="/images/nia_kor/img/blog.png"/><span class="hiddenTxt">네이버블로그</span></i></a></li>
 <li><a href="https://www.facebook.com/ITKOREANIA" target="_blank" title="페이스북 - 새창"><i class="ion-social-facebook"></i><span class="hiddenTxt">페이스북</span></a></li>
 <li><a href="http://www.youtube.com/channel/UCoezsjw8NsN8BFsEE7fWyUw" target="_blank" title="유투브 - 새창"><i class="ion-social-youtube"></i><span class="hiddenTxt">유투브</span></a></li>
 <li><a href="https://www.instagram.com/withnia1114/" target="_blank" title="인스타그램- 새창"><img alt="instagram" class="mCS_img_loaded" src="/images/nia_kor/img/instagram.svg" style="width:40px; height:40px; margin-top:10px;"/><span class="hiddenTxt">인스타그램</span></a></li>
@@ -1234,7 +1235,7 @@ function ignore(e){
 <input id="slType" name="slType" type="hidden"/>
 </input></form>
 </nav>
-<div class="c-mask" id="c-mask"></div>
+<div aria-hidden="true" class="c-mask" id="c-mask"></div>
 </div>
 <!--
         //글로벌 메뉴영역
@@ -1317,7 +1318,7 @@ function ignore(e){
 <h2>NIA 알림</h2>
 <div class="hiddenText" id="menu_title">공지사항</div>
 <div class="sub_navi">
-<div class="slide_title">공지사항<a class="slide-btn" href="javascript:" title="공지사항"><em><span class="hiddenText" title="탭 메뉴 보기">탭 메뉴 보기</span></em></a></div>
+<div class="slide_title">공지사항<a class="slide-btn" href="javascript:" title="공지사항"><em aria-hidden="true"><span class="hiddenText" title="탭 메뉴 보기">탭 메뉴 보기</span></em></a></div>
 <ul class="sub_naviList" id="sub_naviList">
 <li style="width:15%;border-left:1px solid #b6b6b6;">
 <a class="active" href="/site/nia_kor/ex/bbs/List.do?cbIdx=99835" title="공지사항-선택됨">공지사항</a>
@@ -1453,6 +1454,7 @@ function doOrderby(cbIdx,orderbyDiv){
 <ul>
 <li class="nia_noti">
 <a href="#view" onclick="doBbsFView('99835','28987','16010100','28987');return false;" title="AI기본법 시행 및 하위법령 공개(1.22.~)-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1518,16 +1520,18 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.01.22</em>
-<em>조회수 20816</em>
+<em>조회수 21350</em>
 </span>
 <span class="writer">
 <em>김은선</em>
 <em>AI법제도센터</em>
 </span>
+</i>
 </a>
 </li>
 <li class="nia_noti">
 <a href="#view" onclick="doBbsFView('99835','28771','16010100','28771');return false;" title="NIA 인공지능 전환(AX) 추진 전략-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1593,16 +1597,18 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2025.11.24</em>
-<em>조회수 9346</em>
+<em>조회수 9649</em>
 </span>
 <span class="writer">
 <em>박은명</em>
 <em>기획조정팀</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','29431','16010100','29431');return false;" title="정보화투자관리 가이드(1판) 배포(새 글)-첨부파일 있음">
+<a href="#view" onclick="doBbsFView('99835','29431','16010100','29431');return false;" title="정보화투자관리 가이드(1판) 배포-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1665,20 +1671,21 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     <em><i class="file_icon" title="첨부파일 있음"><span class="hiddenTxt">첨부파일 있음</span></i></em>
-<em class="list_new">new</em>
 </span>
 <span class="src">
 <em>2026.05.26</em>
-<em>조회수 789</em>
+<em>조회수 1131</em>
 </span>
 <span class="writer">
 <em>김승준</em>
 <em>디지털투자성과센터</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
-<a href="#view" onclick="doBbsFView('99835','29430','16010100','29430');return false;" title="2026년도 1/4분기 한국지능정보사회진흥원 신규채용자와 재직 임직원과의 친인척 현황 공개(새 글)-첨부파일 없음">
+<a href="#view" onclick="doBbsFView('99835','29430','16010100','29430');return false;" title="2026년도 1/4분기 한국지능정보사회진흥원 신규채용자와 재직 임직원과의 친인척 현황 공개-첨부파일 없음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1743,20 +1750,21 @@ function doOrderby(cbIdx,orderbyDiv){
                     
                     
                     
-                        <em class="list_new">new</em>
-</span>
+                    </span>
 <span class="src">
 <em>2026.05.26</em>
-<em>조회수 224</em>
+<em>조회수 368</em>
 </span>
 <span class="writer">
 <em>박연홍</em>
 <em>인사총무팀</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
 <a href="#view" onclick="doBbsFView('99835','29385','16010100','29385');return false;" title="2026년 국가지식정보 품질개선 및 기술지원 과제 재공고-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1822,16 +1830,18 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.05.13</em>
-<em>조회수 540</em>
+<em>조회수 632</em>
 </span>
 <span class="writer">
 <em>고민석</em>
 <em>국가데이터인프라팀</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
 <a href="#view" onclick="doBbsFView('99835','29361','16010100','29361');return false;" title="2026년 디지털정부 국제개발협력 실무자과정 교육생 모집 안내-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1897,16 +1907,18 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.05.08</em>
-<em>조회수 1199</em>
+<em>조회수 1391</em>
 </span>
 <span class="writer">
 <em>김기택</em>
 <em>글로벌아카데미</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
 <a href="#view" onclick="doBbsFView('99835','29354','16010100','29354');return false;" title="2026년 정보통신보조기기 보급 및 체험전시 안내-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -1972,16 +1984,18 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.05.06</em>
-<em>조회수 511</em>
+<em>조회수 596</em>
 </span>
 <span class="writer">
 <em>이정현</em>
 <em>디지털접근성팀</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
 <a href="#view" onclick="doBbsFView('99835','29332','16010100','29332');return false;" title="도서형 기후·해양 재난 AX실증사업 사업설명회 안내(5.7.(목) 13:30)-첨부파일 없음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -2049,16 +2063,18 @@ function doOrderby(cbIdx,orderbyDiv){
                     </span>
 <span class="src">
 <em>2026.04.28</em>
-<em>조회수 873</em>
+<em>조회수 948</em>
 </span>
 <span class="writer">
 <em>박눈솔</em>
 <em>AI기술전략팀</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
 <a href="#view" onclick="doBbsFView('99835','29318','16010100','29318');return false;" title="「2026 공공기관 AI 혁신 챌린지」 개최 안내-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -2124,16 +2140,18 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.04.24</em>
-<em>조회수 4762</em>
+<em>조회수 5512</em>
 </span>
 <span class="writer">
 <em>안소연</em>
 <em>공공AI전환지원센터</em>
 </span>
+</i>
 </a>
 </li>
 <li class="">
 <a href="#view" onclick="doBbsFView('99835','29310','16010100','29310');return false;" title="2026년 개도국 공동 사업기획 워크숍 참여 기업 모집 연장(~5/8)-첨부파일 있음">
+<i aria-hidden="true">
 <span class="subject searchItem">
                     
                         
@@ -2199,18 +2217,19 @@ function doOrderby(cbIdx,orderbyDiv){
 </span>
 <span class="src">
 <em>2026.04.24</em>
-<em>조회수 723</em>
+<em>조회수 785</em>
 </span>
 <span class="writer">
 <em>예리원</em>
 <em>글로벌기획팀</em>
 </span>
+</i>
 </a>
 </li>
 </ul>
 </div>
 <div class="pageNation">
-<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></a></span><span class="last_next"><a href="?pageIndex=193" onclick="doBbsFPag(193);return false;" title="맨 뒤로 이동"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></a></span>
+<span class="last_prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="처음으로 이동"><i aria-hidden="true"><i class="ion-ios-arrow-left"></i><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">처음으로 이동</span></i></a></span><span class="prev"><a href="?pageIndex=1" onclick="doBbsFPag(1);return false;" title="이전 페이지"><i aria-hidden="true"><i class="ion-ios-arrow-left"></i><span class="hiddenTxt">이전 페이지</span></i></a></span><span><a class="active" href="javascript:" title="현재 페이지">1</a></span><span><a href="?pageIndex=2" onclick="doBbsFPag(2);return false;" title="2페이지로 이동">2</a></span><span><a href="?pageIndex=3" onclick="doBbsFPag(3);return false;" title="3페이지로 이동">3</a></span><span><a href="?pageIndex=4" onclick="doBbsFPag(4);return false;" title="4페이지로 이동">4</a></span><span><a href="?pageIndex=5" onclick="doBbsFPag(5);return false;" title="5페이지로 이동">5</a></span><span class="next"><a href="?pageIndex=6" onclick="doBbsFPag(6);return false;" title="다음 페이지"><i aria-hidden="true"><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">다음 페이지</span></i></a></span><span class="last_next"><a href="?pageIndex=193" onclick="doBbsFPag(193);return false;" title="맨 뒤로 이동"><i aria-hidden="true"><i class="ion-ios-arrow-right"></i><i class="ion-ios-arrow-right"></i><span class="hiddenTxt">맨 뒤로 이동</span></i></a></span>
 </div>
 </section>
 <!-- 0926수정 top버튼추가 --><!-- 0928 -->
