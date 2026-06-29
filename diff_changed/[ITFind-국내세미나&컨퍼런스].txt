@@ -21,16 +21,16 @@
 <link href="/contents/main_vendors/swiper-11.0.7/package/swiper-bundle.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="/contents/main_vendors/rd-navbar-2.1.8/dist/css/rd-navbar.css" rel="stylesheet"/>
-<link href="/contents/main_css/animation.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/main_css/layout.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/main_css/main-content.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/main_css/slick.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/css/new_base.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/css/sub_cont.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/css/login.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/common.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/layout.css?ver=2026-06-22" rel="stylesheet"/>
-<link href="/contents/nav_common/nav_css/nav.css?ver=2026-06-22" rel="stylesheet"/>
+<link href="/contents/main_css/animation.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/main_css/layout.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/main_css/main-content.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/main_css/slick.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/css/new_base.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/css/sub_cont.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/css/login.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/common.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/layout.css?ver=2026-06-29" rel="stylesheet"/>
+<link href="/contents/nav_common/nav_css/nav.css?ver=2026-06-29" rel="stylesheet"/>
 <link href="/contents/js/jquery-ui/jquery-ui.css" rel="stylesheet"/>
 <script src="/contents/main_js/core.min.js"></script>
 <script src="/contents/main_js/easings.min.js"></script>
@@ -40,9 +40,9 @@
 <script src="/contents/js/jquery-ui-1.14.1/jquery-ui.min.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/dist/jquery.validate.js"></script>
 <script defer="" src="/contents/js/jquery-validation-1.19.5/src/localization/messages_ko.js"></script>
-<script src="/contents/js/func.js?ver=2026-06-22"></script>
-<script src="/contents/js/common.js?ver=2026-06-22"></script>
-<script src="/contents/js/action.js?ver=2026-06-22"></script>
+<script src="/contents/js/func.js?ver=2026-06-29"></script>
+<script src="/contents/js/common.js?ver=2026-06-29"></script>
+<script src="/contents/js/action.js?ver=2026-06-29"></script>
 <script src="/contents/nav_common/nav_js/core.min.js"></script>
 <script src="/contents/js/google_analytics.js"></script>
 </meta></meta></meta></head>
@@ -306,7 +306,7 @@ function registData() {
 </div>
 <div class="BoardHeader">
 <div class="BoardCount">
-<span>총 게시물 : <strong>4,144건</strong></span>
+<span>총 게시물 : <strong>4,150건</strong></span>
 <span>현재페이지 : 
 						<strong>
 							1
@@ -347,7 +347,63 @@ function registData() {
 <tbody>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4144
+									4150
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14730">
+										AXIS 2026 (Asia eXperience &amp; Innovation Summit)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-07-14 ~ 2026-07-16</td>
+<td data-cell-header="접수기간">2026-06-01 ~ 2026-07-10</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4149
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">홍콩</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14733">
+										2026년 홍콩 데이터 및 AI 인프라 전시회(DCA Hong Kong 2026)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-07-08 ~ 2026-07-09</td>
+<td data-cell-header="접수기간">2026-06-01 ~ 2026-07-05</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4148
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">인도네시아</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14728">
+										2026 인도네시아 자카르타 인공지능 전시회(World AI Show Indonesia)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-07-07 ~ 2026-07-08</td>
+<td data-cell-header="접수기간">2026-06-01 ~ 2026-07-05</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4147
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14731">
+										Global AI Frontiers Symposium 2026
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-07-03 ~ 2026-07-03</td>
+<td data-cell-header="접수기간">2026-06-01 ~ 2026-06-30</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4146
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
@@ -361,7 +417,21 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4143
+									4145
+								</th>
+<td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">한국</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14729">
+										빅테크쇼(BIG TECH SHOW) 2026
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-07-01 ~ 2026-07-03</td>
+<td data-cell-header="접수기간">2026-06-01 ~ 2026-06-30</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4144
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">일본</td>
@@ -375,7 +445,7 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4142
+									4143
 								</th>
 <td data-cell-header="구분">예정</td>
 <td data-cell-header="개최국">한국</td>
@@ -389,9 +459,23 @@ function registData() {
 </tr>
 <tr>
 <th data-cell-header="번호" scope="row">
-									4141
+									4142
 								</th>
 <td data-cell-header="구분">예정</td>
+<td data-cell-header="개최국">독일</td>
+<td data-cell-header="제목">
+<a href="/seminar/seminarDetail.do?id=14732">
+										2026 독일 베를린 정보통신 전시회(GITEX Europe 2026)
+									</a>
+</td>
+<td data-cell-header="행사기간">2026-06-30 ~ 2026-06-01</td>
+<td data-cell-header="접수기간">2026-06-01 ~ 2026-06-26</td>
+</tr>
+<tr>
+<th data-cell-header="번호" scope="row">
+									4141
+								</th>
+<td data-cell-header="구분">진행</td>
 <td data-cell-header="개최국">한국</td>
 <td data-cell-header="제목">
 <a href="/seminar/seminarDetail.do?id=14714">
@@ -400,90 +484,6 @@ function registData() {
 </td>
 <td data-cell-header="행사기간">2026-06-27 ~ 2026-07-05</td>
 <td data-cell-header="접수기간">2026-05-29 ~ 2026-06-25</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4140
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14708">
-										2026년 한국정보기술전략혁신학회 하계 학술대회
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-06-26 ~ 2026-06-27</td>
-<td data-cell-header="접수기간">2026-04-01 ~ 2026-05-29</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4139
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14726">
-										제53회 한국컴퓨터종합학술대회(KCC 2026)
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-06-24 ~ 2026-06-26</td>
-<td data-cell-header="접수기간">2026-05-22 ~ 2026-06-15</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4138
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">중국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14721">
-										중국 상하이 모바일 전시회 2026(MWC Shanghai 2026)
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-06-24 ~ 2026-06-29</td>
-<td data-cell-header="접수기간">2026-06-23 ~ 2026-05-20</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4137
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14717">
-										Deloitte ConnecT Korea 2026
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-06-24 ~ 2026-06-24</td>
-<td data-cell-header="접수기간">2026-06-01 ~ 2026-06-21</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4136
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14716">
-										배터리 차징쇼 2026
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-06-24 ~ 2026-06-26</td>
-<td data-cell-header="접수기간">2025-12-23 ~ 2026-06-21</td>
-</tr>
-<tr>
-<th data-cell-header="번호" scope="row">
-									4135
-								</th>
-<td data-cell-header="구분">예정</td>
-<td data-cell-header="개최국">한국</td>
-<td data-cell-header="제목">
-<a href="/seminar/seminarDetail.do?id=14715">
-										2026 대한민국 전기산업엑스포
-									</a>
-</td>
-<td data-cell-header="행사기간">2026-06-24 ~ 2026-06-26</td>
-<td data-cell-header="접수기간">2026-05-01 ~ 2026-06-23</td>
 </tr>
 </tbody>
 </table>

@@ -80,8 +80,8 @@ function getFile(fileString, sig){
 	$form.attr('method', 'post');
 	$form.appendTo('body');
 	$form.append(fileCd);
-	$form.append(fileDiv);
 	$form.append(sig);
+	$form.append(fileDiv);
 	$form.submit();
 }
 
@@ -131,9 +131,267 @@ function fnAnnoView(key){
 }
 </script>
 </head>
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+        var anyidAdaptor = anyidAdaptor || {};
+		        /*이용기관 수정 영역 Start*/
+		anyidAdaptor.orgLogin = function(data){
+		        	
+		  try{
+		    var params   = new URLSearchParams(getSearchQS());
+		    
+		    var tag = params.get('tx') || data.res?.txCode || data.txId;
+		
+		    var ssob = data && (data.ssob || data.SSOB || (data.result && data.result.ssob));
+		    if (ssob && typeof ssob !== 'string') ssob = JSON.stringify(ssob);
+		    
+		    if (!ssob) {
+		      ssob = JSON.stringify({ ci: "20250828_ci" });
+		    }
+			
+		    var form = new URLSearchParams();
+		    
+		    form.set("ssob", ssob);
+		    form.set("tag",  tag);
+		    
+		    var ci = data?.res?.data?.ci;
+		    if (ci) form.set("ci", ci);
+		    
+		    fetch("/pcmx/usr/orgLogin.do", {
+		      method: "POST",
+		      headers: {
+		        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+		        "Accept": "application/json"
+		      },
+		      credentials: "same-origin",
+		      body: form.toString()
+		    })
+		    .then(r => r.text())
+		    .then(t => {
+		      var res; try { res = JSON.parse(t); } catch(e){ alert("JSON 응답 아님:\n"+t.slice(0,200)); return; }
+		
+		      if (res.status === "success") {
+		        window.top.location.href = res.redirect || "/pcmx/loginSuccess.do";
+		        return;
+		      }
+		
+		      if (res.status === "redirect") {
+		        var loginUrl = res.to      || "/pcmx/login2.do?anyid=1";
+		        var joinUrl  = res.joinUrl || "/pcmx/usr/termsAgree.do?anyid=1";
+		
+		        var ok = confirm("공동위탁 홈페이지에 법인 회원 가입 이력이 있으십니까? \n 확인 : 기존 계정 로그인 / 취소 : 회원가입");
+		        if (ok) {
+		          window.top.open(
+		            loginUrl,
+		            "login",
+		            "width=610,height=350,resizable=yes,scrollbars=yes,toolbar=no,location=no"
+		          );
+		        } else {
+		          window.top.location.href = joinUrl;
+		        }
+		        return;
+		      }
+		
+		      // 그 외 실패
+		      alert(res.message || "로그인 실패");
+		    })
+		    .catch(err => {
+		      console.error(err);
+		      alert("처리중 오류");
+		    });
+		
+		  } catch(err){
+		    console.error(err);
+		    alert("처리중 오류 발생22");
+		  }
+		};
+        /*이용기관 수정 영역 End*/
+        
+        
+        /*이용기관 문구수정 영역 Start*/
+        anyidAdaptor.JoinConfirm = function(portalJoinUri, memberData){
+            if(!confirm('Any-ID 사용자등록 하시겠습니까?')) {
+                anyidAdaptor.orgLogin();
+                return;
+            }else{
+                anyidAdaptor.receiveAnyIdJoin(portalJoinUri, memberData);
+            }
+        }
+        /*이용기관 문구수정 영역 End*/
+        
+        
+        
+
+        anyidAdaptor.portalJoinUri = "null";
+        anyidAdaptor.certData = null;
+        anyidAdaptor.ssoByPass = "1";
+        anyidAdaptor.niRegYn = "null";
+        anyidAdaptor.agencyContextPath = "/pcmx";
+        
+        anyidAdaptor.success = function(data){
+            if(anyidAdaptor.ssoByPass != 0 || !data.useSso) {
+            	anyidAdaptor.orgLogin(data);
+                
+            } else {
+                anyidAdaptor.certData = data;
+                anyidAdaptor.userCheck();
+            }  
+        }
+        
+        anyidAdaptor.userCheck = function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", anyidAdaptor.agencyContextPath + "/oidc/userCheck", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        anyidAdaptor.ssoLogin();
+                    } else {
+                        setTimeout(function() {
+                            anyidAdaptor.receiveAnyIdJoin(response.uri, response.data);
+                        }, 100);  
+                    }
+                }
+            };
+
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            
+            let jsonStr = JSON.stringify(jsonObject);
+            let encodedString = btoa(jsonStr);
+            
+            var data = "data=" + encodedString + "&txId=" + anyidAdaptor.certData.txId;
+            xhr.send(data);
+            
+        }
+
+        //anyid가입
+        anyidAdaptor.receiveAnyIdJoin = function(portalJoinUri, memberData){
+        
+            var url = portalJoinUri+encodeURIComponent(memberData);
+            anyidAdaptor.popup(url,"openAnyIdRegistUserIdv",700,740);
+
+            window.addEventListener("message", function(event) {
+                var result;
+                try {
+                    result = JSON.parse(event.data);
+                } catch (error) {
+                    console.error("Received message is not valid JSON:", error);
+                    return;
+                }
+                
+                if(!result.funcName || (result.funcName !== "trmsAgreComplete" && result.funcName !== "registUserComplete")) {
+                    return;
+                }
+                if(result.status === "success") {
+                    if(result.trmsAgreYn == "Y"){
+                        anyidAdaptor.ssoLogin();
+                    }else{
+                        anyidAdaptor.orgLogin();
+                    }
+                }else{
+                    
+                    anyidAdaptor.orgLogin();
+                }
+
+            }, false);
+        }
+
+        // 팝업 호출
+        anyidAdaptor.popup = function(url, name, width, height){
+            let left = (screen.width) ? (screen.width-width)/2 : 0;
+            let top = (screen.height) ? (screen.height-height)/2 : 0;
+            let popup=window.open(url, name ,"resizable=yes,toolbar=no,scrollbars=yes,location=no,top="+top+"px,left="+left+"px,width="+width+"px,height="+height+"px");
+            if(popup){
+                popup.focus();
+            }
+        }
+
+        anyidAdaptor.ssoLogin = function(){
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            let jsonStr = JSON.stringify(jsonObject);
+            let encodedString = btoa(jsonStr);
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogin";
+            
+            var urlWithParams = baseUrl + "?data=" + encodedString;
+
+//             window.opener.top.location.href = urlWithParams;
+//             window.close();
+        }
+        
+        anyidAdaptor.ssoLoginPageSub = function(baseUrl, endPoint, acrValues){
+            var subUrl = "";
+            if (endPoint && endPoint.trim() !== "") {
+                subUrl = "?endPoint=" + encodeURIComponent(endPoint);
+            }
+            
+            if (!acrValues && acrValues.trim() == "") {
+                acrValues = "3" 
+            }
+            
+            if (acrValues && acrValues.trim() !== "") {
+                if(subUrl == ""){
+                    subUrl = "?";
+                }else{
+                    subUrl = subUrl + "&";
+                }
+                subUrl = subUrl + "acrValues=" + acrValues;
+            }
+            
+//         	if(window.opener && !window.opener.closed){
+//         		window.opener.top.location.href = baseUrl+subUrl;
+//         	}
+//         	window.close();
+
+          window.location.replace(baseUrl+subUrl);
+        }
+        
+        /**/
+        anyidAdaptor.ssoLogout = function(endPoint) {
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogout";
+            baseUrl = baseUrl + "?endPoint=" + encodeURIComponent(endPoint);
+            window.location.replace(baseUrl);
+        }
+        /**/
+        anyidAdaptor.reAuthLevel = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/reAuthLevel";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues)
+
+        }
+        /**/
+        anyidAdaptor.ssoLoginPage = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = origin + anyidAdaptor.agencyContextPath + "/oidc/auth";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues)
+        }
+        
+        /**/
+        anyidAdaptor.ssoSvcToSvc = function(url, endPoint){
+            var baseUrl = url + "/oidc/svcToSvc?endPoint=" + encodeURIComponent(endPoint);
+            window.open(baseUrl, "_blank");
+        }
+
+
+    </script>
+</head>
 <body>
-<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIbfy+7Vg///HNwWn9D4HpSAZS21Ivs5bwrIB4eXS5A1XYq5SBpm8BDWzc4Z/7TZyGLznBgBp29UEu0LNqYIhDSV/oIJ8PZ4RoVIi3cSBmriiga2Q807PiG6vZl1TQyY9mqSEvKkKc9kIqxrGes4lvMZe4Vumo82N8pmzgfLaUrng+vMdGpohvhXuBwP8EWAG0Hu2zIyhj2RavO8sXfn1ERVQAcTl/lhCZujeKDArQ2pezHDwEd8P73mzxqaAO4bPHXLNsfMPxjptFwso+NTdhXkKkqhOTD5mz59xWg2PJKX6TwKNMnLt1PYQd1SGAvGlcTyxQuoKTWiKz013mWOeiboowSufvX/HpIhMoRAPABC1DfXT+uudJrGbXglwim1LPSDxSpWT7C6MCoym/Gc8+RzOlVYQt5lKVzuZVOwDMqxfbfBGqy1zS73OVoPzZRe9kNXjtoxZU5XFOoAU7tBHQUi70EJM0GUWrY5AHuJZJS6UoC0VhIpf380FCq6EoqT66acIYH+Eg3HLEEtMvL1tcTxhK0hqcjhYDSDcA2es/3kw="/>
-<input name="csSignature" type="hidden" value="fwWTOay89AQGICxxaVqqpQ=="/>
+</body>
+</html>
+<body>
+<form id="loginSSo" method="post" name="loginSSo"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIybZmkiBbWARdp5KOdkXRGTw9E+UPPAAc58XuESoR/6DKbik9wpduBEpgxd4pWB/L1wuOVsEQLyd1entMFYcU41VW9ofpIngRGQSSwnYS+dDtqOY2kAJXA5oGL3pq+uGJRgLIQdzKTQY9ozmGofYG0B8uFFOshh3qL0H9KdHfSrjXThZqP8xZx3lOd6ZEAoMkg1/hiw/hGMQc8mm4SaxlyTl8hpap0pEQhF9pE/Dmgus411XoZs2D0EFohhmrKIrtqyn8fmi+smwqWfGpjjVS2iBQnJQdmLvbLgUsCU1NWKJg2Dw3XkJ+fQCQ0E/okIQ0gMBpxZ25RCihTWoy7UiwZECplEEHTeAVTvee1xJc60MGKEaMKASZPDCM0vpbiu0mPNUjGXEWq3ymuHbz5HYG7QQffkisoB3SapRkiyG4DHKlZqxfRusTkk5jKonfTy2bcgvbo/VE/3sX6VubHF+5Bx6SfVqwqsZ3zFevvJeDySHDn8m0FxGd2BlDp7DLuB672OinYhSOJwv31JmxSltXlmJl1d28hvxJOE9j/d0CR/g="/>
+<input name="csSignature" type="hidden" value="eGQekp81D8YbzTsKg5Nmfw=="/>
 <input id="returnURL" name="returnURL" type="hidden" value=""/>
 <input id="userId" name="userId" type="hidden" value="">
 <input id="loginType" name="loginType" type="hidden" value=""/>
@@ -157,15 +415,19 @@ function fnAnnoView(key){
 <h3 class="hidden">유틸메뉴</h3>
 <ul class="global_a">
 <li class="link1"><a href="/pcmx/index.do" title="홈으로 바로가기">HOME</a></li>
-<li class="link2"><a href="http://cscdev.etri.re.kr/home/" rel="noopener noreferrer" target="_blank" title="새창으로 고객만족센터 홈페이지가 열립니다.">고객만족센터</a></li>
 <li class="link3"><a onclick="javascript:infoOpen(); return false;">홈페이지 안내</a></li>
 <li class="link4"><a href="http://www.etri.re.kr" rel="noopener noreferrer" target="_blank" title="새창으로 ETRI 홈페이지가 열립니다.">한국전자통신연구원</a></li>
 </ul>
 <div class="global_b">
 <div class="login_area">
-<a class="btn_login" onclick="login2(); return false;" style="cursor:pointer;" title="새창으로 로그인 팝업창 페이지로 이동합니다.">로그인</a>
+<a class="btn_login" href="#" onclick="anyidAdaptor.ssoLoginPage('/index.do','')">로그인</a>
 </div>
 </div>
+<!--                     <div class="global_b"> -->
+<!--                         <div class="login_area"> -->
+<!--                         <a class="btn_login" title="새창으로 로그인 팝업창 페이지로 이동합니다." style="cursor:pointer;" onclick="login2(); return false;" >로그인</a> -->
+<!--                         </div> -->
+<!--                     </div> -->
 <!-- //if else -->
 </div>
 </div>
@@ -223,8 +485,8 @@ function fnAnnoView(key){
 <div class="table_set">
 <h3 class="txt_coop_001">공동연구공고 검색</h3>
 <div class="search">
-<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIbfy+7Vg///HNwWn9D4HpSAZS21Ivs5bwrIB4eXS5A1XYq5SBpm8BDWzc4Z/7TZyG849O237Tommtq+DHot9E0obrgmrsrcf0fBcFi5lFtpLmwJgwGFJpK0Y2iIQ1v5DlXJDU8eXKMRNPd+d7OOnw176b+hABSyrLzewvFmDvTOCUr8ktrAcv4FjQTenxnRSU1/a7DlN7BYT05UoD0BWQD0e1B5g2FAi+91TYWl31SzgHF/PxwJyeGTwlsnQzR5xusTo9KF5K5tNCykkzB/ya918RAZ6pDRnkq/rQ0KL7r08zkQbZR/ZopVYRDQJN2CPb1M7bHTmHzeTRMoff+sPM5cKRU1aa0P9v7iEq4YHCHOp8Yod+1yd3I60HIbh0N65QUo4NNrrWrqfjsmb5/R7dwk4qbLfvGLoNZhmvHIIPG49pXVhD03J6YddgCw4BgjuV"/>
-<input name="csSignature" type="hidden" value="fwWTOay89AQGICxxaVqqpQ=="/>
+<form action="/pcmx/join/anno/annoList.do" method="post" onsubmit="return chk(this);"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIybZmkiBbWARdp5KOdkXRGTw9E+UPPAAc58XuESoR/6DKbik9wpduBEpgxd4pWB/Ltqrfifpy+MXJC9EoUmiQilw/t/DHVnjZ+ZjKZjOaNB0I7AI4j3vaDfDMXnUatqbqCDmgiNYLUzfULCsUEnwsoaK1tEKmu7GZARSilhkhJaRH5yKWG4tt15gq7DKDBZ5cWUifsq43Mr7KyJ2E5uhglk/uQwwCOp198CjQKpF/L3h7eAsTSmCmszOzcmoS8tG7+rdmca4XlqzozvpdbTxr8SyzyyVwoI8Hbcn4GGE8ZIRXCrVmnFIHmOkH1mYTGotKwC0t1JIEwl+BguCvgWKnC0XcTwd6SWg2jF7O+e2zoVTFgYSiDN6QJL7/EMiDBz3Fj1nMRCrPPw+I9w0CplgJZyopAiotfAUOdolrv8R9HN0989CXzb/H/mI844iyBNkk"/>
+<input name="csSignature" type="hidden" value="eGQekp81D8YbzTsKg5Nmfw=="/>
 <script type="text/javascript">
 $(document).ready(function(){
     $('#searchStartDate').focus(function(){
@@ -496,17 +758,17 @@ $(document).ready(function(){
 <div class="boardbtn">
 <div class="pagination">
 <strong>1</strong>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2">2</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=3">3</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=4">4</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=5">5</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=6">6</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=7">7</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=8">8</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
-<a href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
-<a class="direction last" href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
-<a class="direction" href="/pcmx/join/anno/annoList.do;pcmx=0CCAAAE7B7DC0A4FDE5EAEB4B32AABEB?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=297"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2">2</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=3">3</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=4">4</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=5">5</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=6">6</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=7">7</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=8">8</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=9">9</a>
+<a href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=10">10</a>
+<a class="direction last" href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=2"><img alt="다음 10페이지" src="/pcmx/images/page_03.gif"/></a>
+<a class="direction" href="/pcmx/join/anno/annoList.do;pcmx=068A9F41870567BD2487FF38ECC71EB3?prgrs_sttus=&amp;keywords=&amp;searchWord=&amp;searchStartDate=&amp;searchEndDate=&amp;page=297"><img alt="마지막페이지" src="/pcmx/images/page_04.gif"/></a>
 </div>
 </div>
 </div>
@@ -531,8 +793,8 @@ $(document).ready(function(){
 <div class="spot_2">
 <ul>
 <li>
-<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIbfy+7Vg///HNwWn9D4HpSAZS21Ivs5bwrIB4eXS5A1XYq5SBpm8BDWzc4Z/7TZyGcyfwGoAhPHmTgPpTfgNFFQ==">
-<input name="csSignature" type="hidden" value="fwWTOay89AQGICxxaVqqpQ==">
+<form action="#sitelist1" method="get" name="site_form_list1" onsubmit="go_url('etri_siteurl'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIybZmkiBbWARdp5KOdkXRGTw9E+UPPAAc58XuESoR/6DKbik9wpduBEpgxd4pWB/L6xr/y9OLqGIsXNinyYyUGg==">
+<input name="csSignature" type="hidden" value="eGQekp81D8YbzTsKg5Nmfw==">
 <fieldset>
 <legend>ETRI 직할부서 바로가기</legend>
 <label class="hidden" for="etri_siteurl">ETRI 직할부서 바로가기</label>
@@ -557,8 +819,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIbfy+7Vg///HNwWn9D4HpSAZS21Ivs5bwrIB4eXS5A1XYq5SBpm8BDWzc4Z/7TZyGcyfwGoAhPHmTgPpTfgNFFQ==">
-<input name="csSignature" type="hidden" value="fwWTOay89AQGICxxaVqqpQ==">
+<form action="#sitelist2" method="get" name="site_form_list2" onsubmit="go_url('etri_siteur2'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIybZmkiBbWARdp5KOdkXRGTw9E+UPPAAc58XuESoR/6DKbik9wpduBEpgxd4pWB/L6xr/y9OLqGIsXNinyYyUGg==">
+<input name="csSignature" type="hidden" value="eGQekp81D8YbzTsKg5Nmfw==">
 <fieldset>
 <legend>ETRI SERVICE 바로가기</legend>
 <label class="hidden" for="etri_siteur2">ETRI SERVICE 바로가기</label>
@@ -581,8 +843,8 @@ $(document).ready(function(){
 </input></input></form>
 </li>
 <li>
-<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIbfy+7Vg///HNwWn9D4HpSAZS21Ivs5bwrIB4eXS5A1XYq5SBpm8BDWzc4Z/7TZyGcyfwGoAhPHmTgPpTfgNFFQ=="/>
-<input name="csSignature" type="hidden" value="fwWTOay89AQGICxxaVqqpQ=="/>
+<form action="#sitelist3" method="get" name="site_form_list3" onsubmit="go_url('etri_siteur3'); return false;"><input name="ptSignature" type="hidden" value="/pS05Qqbf8xzJstDqscmdsHb+NmFCZUIlLjFqr+eup1k0sLOi0DmXyaU3+IliGoIybZmkiBbWARdp5KOdkXRGTw9E+UPPAAc58XuESoR/6DKbik9wpduBEpgxd4pWB/L6xr/y9OLqGIsXNinyYyUGg=="/>
+<input name="csSignature" type="hidden" value="eGQekp81D8YbzTsKg5Nmfw=="/>
 <fieldset>
 <legend>ETRI 유관기관 바로가기</legend>
 <label class="hidden" for="etri_siteur3">ETRI 유관기관 바로가기</label>
