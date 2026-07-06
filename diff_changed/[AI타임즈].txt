@@ -54,7 +54,7 @@ $(function(e) {
 // 도메인
 var SITE_DOMAIN = 'https://www.aitimes.com'
 	,CDN_DOMAIN = 'https://cdn.aitimes.com'
-	,___currentTime	= 1782086856;
+	,___currentTime	= 1783296112;
 
 // 즐겨찾기 스크립트
 function bookmark() {
@@ -181,9 +181,9 @@ wcs_do();
 <p class="txt">www.aitimes.com</p>
 </div>
 <div class="gl-banner">
-<!--제호우측--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/59.js?1781678069"></script><!--//제호우측--> </div>
+<!--제호우측--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/59.js?1782802406"></script><!--//제호우측--> </div>
 <div class="gl-banner etc">
-<div class="gl-updated">발행일: 2026-06-22 08:03 (월) </div>
+<div class="gl-updated">발행일: 2026-07-06 08:03 (월) </div>
 <div class="etc-list">
 <a class="item" href="https://www.aitimes.com/member/login.html" target="_top">로그인</a>
 <div class="selec-box">
@@ -195,7 +195,8 @@ wcs_do();
 <button class="translate-btn cn" data-lang="cn" data-tooltip="" onclick="javascript:ChangeLanguages('zh-CN');" title="중국어" type="button"><span class="show-for-sr">중국어</span>CH</button>
 </div>
 </div>
-<a class="item letter" href="https://page.stibee.com/subscriptions/169359" target="_top"><i class="icon-mail-o"></i> 뉴스레터 신청</a>
+<!--<a href="https://page.stibee.com/subscriptions/169359" target="_top" class="item letter"><i class="icon-mail-o"></i>&nbsp;뉴스레터 신청</a>-->
+<a class="item letter" href="https://www.aitimes.com/com/letter.html" target="_top"><i class="icon-mail-o"></i> 뉴스레터 신청</a>
 </div>
 </div>
 </article>
@@ -508,12 +509,12 @@ $(function() {
 <header class="altlist-header">
 <article class="altlist-header-item">
 <h1 class="altlist-title">
-				전체기사    			<small class="altlist-count">총 <strong>34,057</strong>건의 기사가 있습니다.</small>
+				전체기사    			<small class="altlist-count">총 <strong>34,411</strong>건의 기사가 있습니다.</small>
 </h1>
 <div class="altlist-btn-group">
-<a aria-label="제목형" class="altlist-btn altlist-btn-list active" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=34057&amp;sc_section_code=&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E" title="제목형:제목과 간략정보만 보실 수 있습니다."></a>
-<a aria-label="요약형" class="altlist-btn altlist-btn-webzine" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=34057&amp;sc_section_code=&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."></a>
-<a aria-label="포토형" class="altlist-btn altlist-btn-tile" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=34057&amp;sc_section_code=&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."></a>
+<a aria-label="제목형" class="altlist-btn altlist-btn-list active" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=34411&amp;sc_section_code=&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E" title="제목형:제목과 간략정보만 보실 수 있습니다."></a>
+<a aria-label="요약형" class="altlist-btn altlist-btn-webzine" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=34411&amp;sc_section_code=&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=sm" title="요약형:사진,제목,간략정보를 함께 보실 수 있습니다."></a>
+<a aria-label="포토형" class="altlist-btn altlist-btn-tile" href="https://www.aitimes.com/news/articleList.html?page=1&amp;total=34411&amp;sc_section_code=&amp;sc_sub_section_code=&amp;sc_serial_code=&amp;sc_area=&amp;sc_level=&amp;sc_article_type=&amp;sc_view_level=&amp;sc_sdate=&amp;sc_edate=&amp;sc_serial_number=&amp;sc_word=&amp;sc_andor=&amp;sc_word2=&amp;box_idxno=&amp;sc_multi_code=&amp;sc_is_image=&amp;sc_is_movie=&amp;sc_user_name=&amp;sc_order_by=E&amp;view_type=tm" title="포토형:박스형태로 정리된 기사를 보실 수 있습니다."></a>
 </div>
 </article>
 </header>
@@ -522,282 +523,281 @@ $(function() {
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211946" target="_top">
-								'최초·최다 AI 더빙' 허드슨에이아이 “에이전틱 더빙 시대 열 것”
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212448" target="_top">
+								“GPU보다 부족한 건 AI 신뢰성 전문가…규제는 발전과 동일 선상”
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">인터뷰</div>
 <div class="altlist-info-item">장세민 기자</div>
-<div class="altlist-info-item">06-21 20:00</div>
+<div class="altlist-info-item">07-05 19:42</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211948" target="_top">
-								미니맥스, 초장문 컨텍스트 해결한 'MSA' 공개…추론 속도 14배↑·연산량 28배↓
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212446" target="_top">
+								"모델 다변화는 성공, 거버넌스는 낙제점"…기업 AI '통제 격차' 본격화
 							</a>
 </h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-21 19:18</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211947" target="_top">
-								"RAG도 미세조정도 한계"... 실시간 모델 만드는 '하이퍼네트워크' 뜬다
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-21 18:39</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211953" target="_top">
-								손으로 작동하는 '크랭크GPT'..."AI 답변 받으려면 직접 전력 생산"
-							</a>
-</h2>
-<i class="icon-youtube-play" title="동영상기사"><span class="show-for-sr">동영상기사</span></i>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">산업일반</div>
 <div class="altlist-info-item">임대준 기자</div>
-<div class="altlist-info-item">06-21 17:48</div>
+<div class="altlist-info-item">07-05 17:16</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211951" target="_top">
-								"기억할 건 기억하고 잊을 건 잊는다"…뇌 닮은 초저전력 AI 소자 개발
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212447" target="_top">
+								SKT, 15GW AI 데이터센터 구축 "아시아 AI 인프라 허브 도약"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">AI 기업</div>
+<div class="altlist-info-item">김해원 기자</div>
+<div class="altlist-info-item">07-05 17:15</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212441" target="_top">
+								바이트댄스, ‘시댄스 2.5’ 이번 주 출시 예정...최대 3분 영상 생성
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">07-05 17:15</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212444" target="_top">
+								AI 평가 플랫폼 아레나, 상용화 8개월 만에 연매출 1500억 돌파
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">07-05 16:47</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212443" target="_top">
+								자체 칩 생산 속도 내는 머스크...'테라팹' 책임자로 인텔 베테랑 영입
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">07-05 16:31</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212442" target="_top">
+								엔비디아, 차세대 원자로로 블랙웰 구동…발라와 데이터센터 파트너십
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">07-05 16:17</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212440" target="_top">
+								"교류에서 직류로"... AI 데이터센터 증설에 전력 인프라 시장 격변
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">07-05 15:50</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212445" target="_top">
+								네이버 "이미지 중심 AI 검색으로 진화"… 멀티모달 기술 고도화
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">AI 기업</div>
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">07-05 13:49</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212437" target="_top">
+								KAIST, 에이전트 전력 비용 규명..."챗봇보다 136배 에너지 사용"
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">뉴테크</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-21 12:57</div>
+<div class="altlist-info-item">김해원 기자</div>
+<div class="altlist-info-item">07-05 12:00</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211950" target="_top">
-								구글, '제미나이' 탑재한 AI 스피커 5년 만에 출시…한국은 미정
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212435" target="_top">
+								​​​​​​​[기고] 한국딥러닝 “기업 LLM 시대, AI 경쟁력은 모델이 아니라 ‘컨텍스트 관리 시스템’에 있다”
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-21 12:42</div>
+<div class="altlist-info-item">기고</div>
+<div class="altlist-info-item">장세민 기자</div>
+<div class="altlist-info-item">07-05 10:00</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211952" target="_top">
-								한은의 '반도체 보너스발 인플레 경고'...CNBC "유례없는 규모" 조명
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">임대준 기자</div>
-<div class="altlist-info-item">06-21 12:14</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211949" target="_top">
-								오픈AI, 이번 주 'GPT-5.6' 출시 전망…앤트로픽 규제 틈타나
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">임대준 기자</div>
-<div class="altlist-info-item">06-21 11:20</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211921" target="_top">
-								네덜란드 전력망 병목에 주택 전기화·기업 투자 지연
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212375" target="_top">
+								IRENA “재생에너지, 전 세계 화석연료 비용 742조 절감”
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">Future Energy</div>
 <div class="altlist-info-item">주영효 기자</div>
-<div class="altlist-info-item">06-21 09:30</div>
+<div class="altlist-info-item">07-05 09:15</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211798" target="_top">
-								박준우 베슬AI 리더 "분산 GPU 최적화, 토큰 시대의 해답"
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212434" target="_top">
+								'AI 토큰 지출' 지표 첫 하락세…AI 거품 붕괴 vs 수요 조정 의견 맞서
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
-<div class="altlist-info-item">인터뷰</div>
-<div class="altlist-info-item">김해원 기자</div>
-<div class="altlist-info-item">06-20 22:40</div>
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">임대준 기자</div>
+<div class="altlist-info-item">07-04 20:40</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211942" target="_top">
-								에버퓨어 "단순 저장 넘어 ‘데이터 인텔리전스’ 역량 강화"
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212433" target="_top">
+								젠슨 황 '가죽 재킷', 소더비 경매에 등장...낙찰가 9000만원 예상
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
-<div class="altlist-info-item">인터뷰</div>
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">임대준 기자</div>
+<div class="altlist-info-item">07-04 19:33</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212432" target="_top">
+								메타, 앤트로픽 '클로드' 직접 서비스 추진..."클라우드 진입 준비"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">임대준 기자</div>
+<div class="altlist-info-item">07-04 19:10</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212431" target="_top">
+								엔라이튼, 사내 맞춤형 AI 챗봇 '엔튼이' 도입…“연내로 단계적 AX 실행”
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">AI 기업</div>
 <div class="altlist-info-item">장세민 기자</div>
-<div class="altlist-info-item">06-20 18:49</div>
+<div class="altlist-info-item">07-04 18:10</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211931" target="_top">
-								헤르메스, 신규 기여자 수에서 오픈클로 역전...'하네스' 최적화의 승리
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212428" target="_top">
+								미스트랄, 수학 증명·코드 검증 특화 ‘린스트랄 1.5’ 전격 공개…“퍼트넘벤치서 역대 최고 성적”
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">산업일반</div>
 <div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-20 18:21</div>
+<div class="altlist-info-item">07-04 17:22</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211936" target="_top">
-								MS, 중국 기업에 오픈AI API 판매로 수익 올려…’증류’ 위험 경고
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212421" target="_top">
+								엔비디아, 차세대 '루빈 울트라' 4칩렛 대신 2칩렛으로 선회…양산 현실 고려했나
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">산업일반</div>
 <div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-20 17:56</div>
+<div class="altlist-info-item">07-04 16:49</div>
 </div>
 </li>
 <li class="altlist-text-item">
 <div class="altlist-text-group">
 <h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211941" target="_top">
-								[AI 이슈트렌드] 월드컵 열기 속 미·이란 종전 MOU와 스페이스X 상장 주목
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212422" target="_top">
+								인텔, 코어 울트라·제온 CPU 일부 가격 인상..."공급망 비용·강한 수요 반영"
+							</a>
+</h2>
+</div>
+<div class="altlist-info">
+<div class="altlist-info-item">산업일반</div>
+<div class="altlist-info-item">박찬 기자</div>
+<div class="altlist-info-item">07-04 16:41</div>
+</div>
+</li>
+<li class="altlist-text-item">
+<div class="altlist-text-group">
+<h2 class="altlist-subject">
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212430" target="_top">
+								[AI 이슈트렌드] 월드컵 32강 탈락 속 '호남 반도체 투자' 논란 주목
 							</a>
 </h2>
 </div>
 <div class="altlist-info">
 <div class="altlist-info-item">포커스</div>
 <div class="altlist-info-item">김해원 기자</div>
-<div class="altlist-info-item">06-20 17:45</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211945" target="_top">
-								'GIST-Arm 스쿨' 22일까지 첫 교육생 모집
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">AI 교육</div>
-<div class="altlist-info-item">김해원 기자</div>
-<div class="altlist-info-item">06-20 15:45</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211932" target="_top">
-								퍼플렉시티, 밤마다 스스로 학습하는 AI 에이전트 메모리 '브레인' 출시
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-20 13:39</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211930" target="_top">
-								구글·MS, AI 에이전트 연결 표준 'ARD' 발표…오픈AI·앤트로픽 견제 나서
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-20 13:23</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211938" target="_top">
-								아마존, 자체 AI 칩 외부 공급 추진…엔비디아 독주에 '가장 실질적 도전'
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-20 13:03</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211934" target="_top">
-								미드저니, AI 이미지 생성 넘어 의료기기 도전…'수중 전신 스캐너' 공개
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">산업일반</div>
-<div class="altlist-info-item">박찬 기자</div>
-<div class="altlist-info-item">06-20 12:35</div>
-</div>
-</li>
-<li class="altlist-text-item">
-<div class="altlist-text-group">
-<h2 class="altlist-subject">
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211940" target="_top">
-								노르웨이, 초등학교 생성 AI 사실상 금지..."읽기·쓰기·수학이 먼저"
-							</a>
-</h2>
-</div>
-<div class="altlist-info">
-<div class="altlist-info-item">Global</div>
-<div class="altlist-info-item">임대준 기자</div>
-<div class="altlist-info-item">06-20 11:58</div>
+<div class="altlist-info-item">07-04 16:32</div>
 </div>
 </li>
 </ul>
@@ -817,7 +817,7 @@ $(function() {
 $(function() { 
 	var params = {};
 
-	params['total'] = "34057";
+	params['total'] = "34411";
 params['list_per_page'] = "20";
 params['page_per_page'] = "10";
 params['page'] = "1";
@@ -841,74 +841,74 @@ params['list_page_limit'] = "200";
 <header class="header"><strong>Most<br/>Popular</strong></header>
 <section class="content"><style>#skin-18 { --gutter-y: 0.875rem; --nd-atx-title-font-size: 14px; --nd-atx-title-line-height: 22px; --item-border: 1px solid var(--global-border-color, #e8e8e9); } #skin-18 > .item { display: flex; flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 0.75rem; } #skin-18 > .item::after { content: normal; } #skin-18 > .item .number { flex: 0 0 auto; width: 24px; height: 24px; max-width: 100%; font-size: .875rem; font-weight: 500; line-height: 24px; text-align: center; color: #fff; background-color: #fff; } #skin-18 > .item > *:not(.number) { flex: 1 1 0; min-width: 0; max-width: 100%; } #skin-18 > .item:nth-child(-n+3) { /*min-height: var(--item-min-height, 3.9375rem);*/ } #skin-18 > .item + .item { margin-top: var(--gutter-y); }</style><div class="auto-article" id="skin-18"><div class="item">
 <div class="number user-bg">1</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211810" target="_top"><div class="auto-titles line-x2 onload">'챗GPT' 독주 흔들…글로벌 점유율 사상 첫 50% 아래로</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212279" target="_top"><div class="auto-titles line-x2 onload">구글, '제미나이' 개인화 이미지 생성 기능 무료 개방…미국부터 적용</div></a>
 </div>
 <div class="item">
 <div class="number user-bg">2</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211771" target="_top"><div class="auto-titles line-x2 onload">“버려지는 폰으로 서버 구축”…구글·UCSD, ‘폰 클러스터 컴퓨팅’ 개발</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212404" target="_top"><div class="auto-titles line-x2 onload">"제미나이 할인받고 쓰자"...SKT, ‘구글 AI 플랜’ 구독 서비스 출시</div></a>
 </div>
 <div class="item">
 <div class="number user-bg">3</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211808" target="_top"><div class="auto-titles line-x2 onload">"앤트로픽 수출 규제는 한국 통신사 탓"...국내 3사는 전면 부인</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212356" target="_top"><div class="auto-titles line-x2 onload">메타, 치솟는 메모리 가격에 구형 ‘DDR4 재활용’으로 돌파</div></a>
 </div>
 <div class="item">
 <div class="number user-point">4</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211874" target="_top"><div class="auto-titles line-x2 onload">앤트로픽 “코딩 몰라도 업무 전문가라면 개발자 못지않게 AI 잘 쓴다”</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212392" target="_top"><div class="auto-titles line-x2 onload">AI 데이터센터 전력 폭증에 배터리 스타트업 '특수'</div></a>
 </div>
 <div class="item">
 <div class="number user-point">5</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211857" target="_top"><div class="auto-titles line-x2 onload">앤트로픽, '클로드 디자인' 업그레이드...기업용 플랫폼으로 진화</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212432" target="_top"><div class="auto-titles line-x2 onload">메타, 앤트로픽 '클로드' 직접 서비스 추진..."클라우드 진입 준비"</div></a>
 </div>
 <div class="item">
 <div class="number user-point">6</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211816" target="_top"><div class="auto-titles line-x2 onload">오픈AI, '페이블 5' 금지 이후 '코덱스' 용량 초과 시달려</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212256" target="_top"><div class="auto-titles line-x2 onload">아마존-앤트로픽 파트너십 균열…'클로드' 요금 체계 변경 촉발</div></a>
 </div>
 <div class="item">
 <div class="number user-point">7</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211859" target="_top"><div class="auto-titles line-x2 onload">[6월18일] 반도체 다음은 AI 모델...G7서 떠오른 '접근권 외교'</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212326" target="_top"><div class="auto-titles line-x2 onload">오픈AI, '컴퓨트 멀티플라이어’로 추론 비용 절반으로 줄여</div></a>
 </div>
 <div class="item">
 <div class="number user-point">8</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211937" target="_top"><div class="auto-titles line-x2 onload">'알파폴드' 노벨상 존 점퍼, 구글 떠나 앤트로픽 합류</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212261" target="_top"><div class="auto-titles line-x2 onload">오픈AI, 개발자 겨냥 ‘코덱스’ 전용 첫 하드웨어 티저 공개</div></a>
 </div>
 <div class="item">
 <div class="number user-point">9</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211932" target="_top"><div class="auto-titles line-x2 onload">퍼플렉시티, 밤마다 스스로 학습하는 AI 에이전트 메모리 '브레인' 출시</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212306" target="_top"><div class="auto-titles line-x2 onload">"퇴사 징후 미리 파악"...블라인드, 1400만 직장인 데이터 기반 AI 서비스 출시</div></a>
 </div>
 <div class="item">
 <div class="number user-point">10</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211834" target="_top"><div class="auto-titles line-x2 onload">미 국방부, ‘그록’ 활용해 이란 공습 계획 수립…"96시간 만에 2000개 표적 타격 지원"</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212217" target="_top"><div class="auto-titles line-x2 onload">[6월29일] '챗GPT' 비밀번호를 공유하면 안 되는 이유..."넷플릭스와는 달라"</div></a>
 </div>
 </div></section>
-</article><div class="box-margins" style="margin-bottom:30px;"></div><!--우측단--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/58.js?1781504611"></script><!--//우측단--><div class="marbtm-20"></div><article class="box-skin idx--box">
+</article><div class="box-margins" style="margin-bottom:30px;"></div><!--우측단--><script src="https://cdn.aitimes.com/bannerpop/uploads/js_activity/58.js?1782802415"></script><!--//우측단--><div class="marbtm-20"></div><article class="box-skin idx--box">
 <header class="header"></header>
 <section class="content"><style>#skin-20 { --nd-atx-section-margin: 0 0 0.375rem; --nd-atx-section-color: var(--nd-primary, #fff); --nd-atx-title-color: #fff; --frame-width: 4rem; --gutter-y: 1.25rem; --item-border: 1px solid rgba(255,255,255,.25); } #skin-20 > .item { display: flex; flex-direction: row; align-items: center; gap: 1.25rem; } #skin-20 > .item::after { content: normal; } #skin-20 > .item .frame { flex: 0 0 auto; width: var(--frame-width); max-width: 100%; } #skin-20 > .item .auto-content { flex: 1 1 0; min-width: 0; max-width: 100%; } #skin-20 > .item + .item { margin-top: var(--gutter-y); padding-top: var(--gutter-y); border-top: var(--item-border); } #skin-20 .frame { align-self: flex-end; }</style><div class="auto-article" id="skin-20"><div class="item">
 <div class="auto-content">
-<div class="auto-section line-x1 fw-medium">포커스</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211941" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI 이슈트렌드] 월드컵 열기 속 미·이란 종전 MOU와 스페이스X 상장 주목</div></a>
+<div class="auto-section line-x1 fw-medium">뉴스 브리핑</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212386" target="_top"><div class="auto-titles size-15 line-x3 onload">[7월3일] "비싼 모델만 쓸 필요 없다"…AI 토큰 비용 절감이 보여주는 변화</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=211941" target="_top"><div class="auto-images thumb"><img alt="[AI 이슈트렌드] 월드컵 열기 속 미·이란 종전 MOU와 스페이스X 상장 주목" height="80" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260622/211941_215064_1554_1781939760_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=212386" target="_top"><div class="auto-images thumb"><img alt='[7월3일] "비싼 모델만 쓸 필요 없다"…AI 토큰 비용 절감이 보여주는 변화' height="67" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260706/212386_215620_152_1783047713_120.jpg" width="120"/></div></a>
 </div>
 <div class="item">
 <div class="auto-content">
-<div class="auto-section line-x1 fw-medium">AI WEBTOON</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211927" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI카툰] Bob, Senior IT guy - 밥, 길거리에 나앉을지도…</div></a>
+<div class="auto-section line-x1 fw-medium">포커스</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212430" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI 이슈트렌드] 월드컵 32강 탈락 속 '호남 반도체 투자' 논란 주목</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=211927" target="_top"><div class="auto-images thumb"><img alt="[AI카툰] Bob, Senior IT guy - 밥, 길거리에 나앉을지도…" height="141" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260622/211927_215045_25_1781877737_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=212430" target="_top"><div class="auto-images thumb"><img alt="[AI 이슈트렌드] 월드컵 32강 탈락 속 '호남 반도체 투자' 논란 주목" height="79" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260706/212430_215684_5631_1783144591_120.jpg" width="120"/></div></a>
 </div>
 <div class="item">
 <div class="auto-content">
 <div class="auto-section line-x1 fw-medium">칼럼</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211928" target="_top"><div class="auto-titles size-15 line-x3 onload">[내면 지도 그리기] 21 Inner Mapping: 나를 찾는 지도</div></a>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212426" target="_top"><div class="auto-titles size-15 line-x3 onload">[내면 지도 그리기] 23 Inner Mapping: 나를 찾는 지도</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=211928" target="_top"><div class="auto-images thumb"><img alt="[내면 지도 그리기] 21 Inner Mapping: 나를 찾는 지도" height="80" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260622/211928_215046_2348_1781879028_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=212426" target="_top"><div class="auto-images thumb"><img alt="[내면 지도 그리기] 23 Inner Mapping: 나를 찾는 지도" height="80" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260706/212426_215674_5410_1783133650_120.jpg" width="120"/></div></a>
 </div>
 <div class="item">
 <div class="auto-content">
-<div class="auto-section line-x1 fw-medium">뉴스 브리핑</div>
-<a href="https://www.aitimes.com/news/articleView.html?idxno=211859" target="_top"><div class="auto-titles size-15 line-x3 onload">[6월18일] 반도체 다음은 AI 모델...G7서 떠오른 '접근권 외교'</div></a>
+<div class="auto-section line-x1 fw-medium">AI WEBTOON</div>
+<a href="https://www.aitimes.com/news/articleView.html?idxno=212418" target="_top"><div class="auto-titles size-15 line-x3 onload">[AI카툰] Bob, Senior IT guy - 키오스크 vs 밥</div></a>
 </div>
-<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=211859" target="_top"><div class="auto-images thumb"><img alt="[6월18일] 반도체 다음은 AI 모델...G7서 떠오른 '접근권 외교'" height="74" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260622/211859_214953_259_1781753109_120.jpg" width="120"/></div></a>
+<a class="frame ratio-11 radius line" href="https://www.aitimes.com/news/articleView.html?idxno=212418" target="_top"><div class="auto-images thumb"><img alt="[AI카툰] Bob, Senior IT guy - 키오스크 vs 밥" height="147" loading="lazy" src="https://cdn.aitimes.com/news/thumbnail/custom/20260706/212418_215661_45_1783065847_120.jpg" width="120"/></div></a>
 </div>
 </div></section>
 </article><div class="box-margins" style="margin-bottom:40px;"></div>
