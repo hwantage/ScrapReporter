@@ -90,10 +90,10 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-Z3JJ3P1SEG', {
-            'user_id': 'fQcVkGHi1sn0D0Uozo7FEss3KZWWoOvdfw8pwLn4pyqXDe4PrS8ls38WlQCYmWvm9UoXKXDgo33m9RiGbsz2fe33oQBXPXpH0RGtlvrSQM3Z4_VYP8m6psBV0a2g5VudDGou_g2'
+            'user_id': 'D6X_8FfyBSiB1FeO2Q0vnaYI7hivIdnf-ZXgFANtA2A4RTXHZxu1ZLDXN50Ecn4zfFMtpTwWWaVWoauQ8s8LTl-lZBtbdG6OHiCeku2eN_Sr8CFE2aXqG5Qe8FghWAGJ4HINJw2'
         });
         gtag('set', 'user_properties', {
-            'crm_id': 'fQcVkGHi1sn0D0Uozo7FEss3KZWWoOvdfw8pwLn4pyqXDe4PrS8ls38WlQCYmWvm9UoXKXDgo33m9RiGbsz2fe33oQBXPXpH0RGtlvrSQM3Z4_VYP8m6psBV0a2g5VudDGou_g2'
+            'crm_id': 'D6X_8FfyBSiB1FeO2Q0vnaYI7hivIdnf-ZXgFANtA2A4RTXHZxu1ZLDXN50Ecn4zfFMtpTwWWaVWoauQ8s8LTl-lZBtbdG6OHiCeku2eN_Sr8CFE2aXqG5Qe8FghWAGJ4HINJw2'
         });
     </script>
 <script>
@@ -160,7 +160,7 @@
             }; w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
         })(window, document, "//rum.beusable.net/load/b190312e135117u861");
     </script>
-<script src="/Content/dist/js/preload.js?e8f5b9c8ba3ebd5a"></script><style>body {
+<script src="/Content/dist/js/preload.js?8ca9b790d9ae3673"></script><style>body {
         opacity: 0;
       }
 
@@ -174,7 +174,7 @@
       docReady(() => {
         document.querySelector('body').setAttribute('loaded', '');
       });</script>
-<script defer="defer" src="/Content/dist/js/chunk-vendors.js?e8f5b9c8ba3ebd5a"></script><script defer="defer" src="/Content/dist/js/default.js?e8f5b9c8ba3ebd5a"></script><link href="/Content/dist/css/default.css?e8f5b9c8ba3ebd5a" rel="stylesheet"/>
+<script defer="defer" src="/Content/dist/js/chunk-vendors.js?8ca9b790d9ae3673"></script><script defer="defer" src="/Content/dist/js/default.js?8ca9b790d9ae3673"></script><link href="/Content/dist/css/default.css?8ca9b790d9ae3673" rel="stylesheet"/>
 <style>
         img.optimize {
             image-rendering: -webkit-optimize-contrast;
@@ -258,8 +258,14 @@
 </iframe>
 </noscript>
 <div id="uiAlerts">
-<ev-modal :class="{ 'text-center': confirmTheme }" :open="isOpen" class="max-w-sm" level="alert">
+<ev-modal :class="[position === 'center' ? 'max-w-sm' : '', { 'text-center': confirmTheme || iconTheme }]" :dismissible="isBottomSheet &amp;&amp; !hideCloseButton &amp;&amp; onClose !== false" :open="isOpen" :position="position" @dismiss="closeAction" level="alert">
 <template #title="" v-if="title">
+<div class="mx-auto mb-5 h-1 w-10 rounded-full bg-gray-200 sm:hidden" v-if="isBottomSheet"></div>
+<div class="flex justify-center items-center mx-auto mb-6 w-12 h-12 rounded-full bg-primary-50" v-if="iconTheme === 'lock'">
+<svg class="w-6 h-6 text-primary-500" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
 <div class="flex justify-center items-center mx-auto mb-6 w-12 h-12 rounded-full bg-success-50" v-if="confirmTheme === 'success'">
 <svg class="w-6 h-6 text-success-500" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" fill-rule="evenodd"></path>
@@ -291,7 +297,24 @@
 <div class="whitespace-pre-line mt-2" v-dompurify-html="description">
 </div>
 </template>
-<template v-if="confirmTheme">
+<template v-if="stacked">
+<div class="space-y-2">
+<ev-button :disabled="isProcessing" @click="confirmAction" class="bg-primary-500" v-if="!hideConfirmButton &amp;&amp; onConfirm">
+<span class="inline-flex items-center justify-center gap-2" v-if="isProcessing">
+<span>{{ processingTitle ?? '진행 중' }}</span>
+<svg class="animate-spin w-4 h-4" fill="none" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+<path class="opacity-75" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" fill="currentColor"></path>
+</svg>
+</span>
+<template v-else="">{{ confirmTitle ?? '확인' }}</template>
+</ev-button>
+<ev-button :disabled="isProcessing" @click="closeAction" class="border-0 bg-transparent shadow-none text-gray-500" small="" v-if="!hideCloseButton &amp;&amp; onClose !== false">
+                    {{ closeTitle ?? '닫기' }}
+                </ev-button>
+</div>
+</template>
+<template v-else-if="confirmTheme">
 <div class="flex space-x-4">
 <ev-button :disabled="isProcessing" @click="closeAction" small="" v-if="!hideCloseButton &amp;&amp; onClose !== false">
                     {{ closeTitle ?? '닫기' }}
@@ -345,6 +368,9 @@
                     isProcessing: false,
                     loadingOnConfirm: false,
                     processingTitle: null,
+                    position: 'center',
+                    iconTheme: null,
+                    stacked: false,
 
                     confirmButtonClass: {
                         success: 'bg-primary-500',
@@ -354,6 +380,11 @@
                         copy: 'bg-primary-500',
                     },
                 };
+            },
+            computed: {
+                isBottomSheet() {
+                    return String(this.position).split(' ').indexOf('bottom') !== -1;
+                },
             },
             methods: {
                 closeAction() {
@@ -399,6 +430,9 @@
                         isProcessing: false,
                         loadingOnConfirm: false,
                         processingTitle: null,
+                        position: 'center',
+                        iconTheme: null,
+                        stacked: false,
 
                         confirmButtonClass: {
                             success: 'bg-primary-500',
@@ -636,199 +670,6 @@
             },
         }).mount('#uiSuperChannelAlert');
     });
-</script>
-<div id="uiNeedModel">
-<ev-modal :open="isOpen" @close="isOpen = false" class="max-w-sm">
-<template #title="">
-            공유하기
-        </template>
-<div class="my-4">
-<div class="grid grid-cols-3 gap-4">
-<button @click="facebookShare" class="aspect-1 p-4 border rounded-lg bg-white" type="button">
-<svg class="rounded-full" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.68 0H1.32C.6 0 0 .6 0 1.32v21.36C0 23.4.6 24 1.32 24h11.5v-9.3H9.69v-3.62h3.13V8.41c0-3.1 1.9-4.79 4.66-4.79 1.32 0 2.46.1 2.8.15V7h-1.92c-1.5 0-1.8.71-1.8 1.76v2.32h3.59l-.47 3.62h-3.12V24h6.12c.73 0 1.32-.6 1.32-1.32V1.32C24 .6 23.4 0 22.68 0z" fill="#1877f2"></path>
-</svg>
-</button>
-<button @click="kakaoShare" class="aspect-1 p-4 border rounded-lg bg-white" type="button">
-<svg class="rounded-xl" viewbox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-<path d="M256 236c0 11-9 20-20 20H20c-11 0-20-9-20-20V20C0 9 9 0 20 0h216c11 0 20 9 20 20v216z" fill="#FFE812"></path>
-<path d="M128 36C70.6 36 24 72.7 24 118c0 29.3 19.5 55 48.7 69.5-1.5 5.5-10.2 35.3-10.5 37.7 0 0-.2 1.7.9 2.4s2.5.1 2.5.1c3.3-.4 38-24.8 44-29 6 .9 12.1 1.3 18.4 1.3 57.4 0 104-36.7 104-82s-46.6-82-104-82z"></path>
-<path d="M70.5 146.6c-3.3 0-6-2.5-6-5.7v-35.7h-9.4a5.9 5.9 0 0 1 0-11.7H86a5.9 5.9 0 0 1 0 11.8h-9.4v35.6c0 3.2-2.7 5.7-6 5.7zm52.6 0c-2.5 0-4.4-1-5-2.7l-3-7.8H97l-3 7.8c-.6 1.6-2.5 2.6-5 2.6a9.2 9.2 0 0 1-3.8-.8c-1.7-.7-3.3-2.8-1.4-8.5L98 99.4a9 9 0 0 1 8-5.9c4 0 7 3 8 6l14.3 37.7c1.9 5.7.3 7.8-1.4 8.5a9.2 9.2 0 0 1-3.8.8zM112 125.4l-6-17-6 17h12zm26 20.3a5.6 5.6 0 0 1-5.8-5.6V99.5c0-3.3 2.8-6 6.2-6s6.1 2.7 6.1 6v35.3h12.8c3.1 0 5.7 2.4 5.7 5.4s-2.6 5.6-5.8 5.6H138zm33.3.7a6 6 0 0 1-6-6v-41a6 6 0 0 1 12 0v12.9l16.8-16.7c.8-.9 2-1.4 3.3-1.4a6 6 0 0 1 4.1 1.8 6 6 0 0 1 1.8 3.8c0 1.4-.4 2.7-1.3 3.7l-13.7 13.6 14.8 19.6a6 6 0 0 1 1.1 4.4 6 6 0 0 1-2.3 4 6 6 0 0 1-3.6 1.2 6 6 0 0 1-4.8-2.4l-14-18.6-2.2 2v13.1a6 6 0 0 1-6 6z" fill="#FFE812"></path>
-</svg>
-</button>
-<button @click="copyUrl" class="aspect-1 p-4 border rounded-lg bg-white" type="button">
-<div class="aspect-1 bg-gray-50 rounded-lg flex items-center justify-center">
-<svg class="h-5 w-5 text-success-300" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-</div>
-</button>
-</div>
-<div class="mt-2">
-<button @click="renderQr" class="text-gray-500 underline" type="button">
-                    QR코드 생성하기
-                </button>
-<div class="mt-2">
-<div class="flex justify-center w-full">
-<div id="_uiSahare_Qr"></div>
-</div>
-</div>
-<div class="mt-2 text-center" id="_uiShare_saveQr" style="display: none">
-<button @click="saveQr" class="text-gray-500 underline" type="button">
-                        QR코드 저장하기
-                    </button>
-</div>
-</div>
-</div>
-<ev-button @click="isOpen = false">
-            닫기
-        </ev-button>
-</ev-modal>
-</div>
-<script>
-        /* globals Kakao FB QRCode html2canvas */
-        docReady(() => {
-            let model;
-            function url() {
-                const host = location.origin;
-                if (model && model.url) {
-                    if (model.url[0] === '/') {
-                        return host + model.url;
-                    }
-
-                    return model.url;
-                }
-
-                return host + location.pathname;
-            }
-            function getShareModel() {
-                return {
-                    title: document.title,
-                    description: document.querySelector('meta[name="description"]').content,
-                    imageUrl: document.querySelector('meta[property="og:image"]').content,
-                };
-            }
-
-            ui.createApp({
-                data() {
-                    return {
-                        isOpen: false,
-                        shareModel: getShareModel(),
-                    };
-                },
-                methods: {
-                    facebookShare() {
-                        FB.ui({
-                            method: 'share',
-                            display: 'popup',
-                            href: url(),
-                        });
-                        axios.get(location.pathname.replace(/(\/event)/gi, '') + '/share');
-                        this.pushGtag('facebook');
-                    },
-                    kakaoShare() {
-                        const model = this.shareModel;
-                        const kakaoObj = {
-                            objectType: 'feed',
-                            content: {
-                                title: model.title,
-                                description: model.description,
-                                imageUrl: model.imageUrl,
-                                link: {
-                                    mobileWebUrl: url(),
-                                    webUrl: url(),
-                                },
-                                imageWidth: 180,
-                                imageHeight: 180,
-                            },
-                            buttons: [
-                                {
-                                    title: '채널 바로가기',
-                                    link: {
-                                        mobileWebUrl: url(),
-                                        webUrl: url(),
-                                    },
-                                },
-                            ],
-                        };
-                        Kakao.Link.sendDefault(kakaoObj);
-                        axios.get(location.pathname.replace(/(\/event)/gi, '') + '/share');
-                        this.pushGtag('kakao');
-                    },
-                    copyUrl() {
-                        const self = this;
-                        self.isOpen = false;
-                        navigator.clipboard.writeText(url()).then(() => {
-                            self.pushGtag('copyurl');
-                            self.$nextTick(() => {
-                                ui.alert('URL을 복사했습니다.');
-                            });
-                        });
-                    },
-                    renderQr() {
-                        const targetEle = document.getElementById('_uiSahare_Qr');
-                        if (targetEle.innerHTML) {
-                            return;
-                        }
-                        new QRCode(targetEle, { width: 112, height: 112, text: url() });
-                        document.getElementById('_uiShare_saveQr').style.display = 'block';
-                        this.pushGtag('qrcode');
-                    },
-                    saveQr() {
-                        const self = this;
-                        html2canvas(document.querySelector('#_uiSahare_Qr')).then(function (canvas) {
-                            const link = document.createElement('a');
-                            link.download = `${self.shareModel.title}.png`;
-                            link.href = canvas.toDataURL();
-                            document.body.appendChild(link);
-                            link.click();
-                        });
-                        mixpanel.track("file_download", {
-                            page_path: url(),
-                            click_text: 'QR코드 저장하기',
-                            file_extension: 'png',
-                            file_name: self.shareModel.title,
-                            click_url: '',
-                        });
-                        gtag('event', 'file_download', {
-                            page_path: url(),
-                            click_text: 'QR코드 저장하기',
-                            file_extension: 'png',
-                            file_name: self.shareModel.title,
-                            click_url: '',
-                            items: [
-                                {
-                                    index: 'file_download',
-                                },
-                            ],
-                        });
-                    },
-                    pushGtag(type) {
-                        gtag('event', 'share', {
-                            position: 'channel',
-                            content_type: type,
-                            item_id: url(),
-                            index: 'share',
-                        });
-                    },
-                },
-                mounted() {
-                    const self = this;
-                    ui.share = function (shareModel) {
-                        const t = {
-                            url: null,
-                        };
-                        if (typeof shareModel === 'string') {
-                            t.url = shareModel;
-                        } else if (typeof shareModel === 'object') {
-                            Object.assign(t, shareModel);
-                        }
-                        model = t;
-                        self.isOpen = true;
-                    };
-                },
-            }).mount('#uiNeedModel');
-        });
 </script>
 <div class="print:hidden" id="uiToast">
 <ui-transition-root :show="isOpen" as="template" enter="transition-opacity duration-500" enter-from="opacity-0" enter-to="opacity-100" leave="transition-opacity duration-500" leave-from="opacity-100" leave-to="opacity-0">
@@ -2520,7 +2361,7 @@
 <div>서울 영등포구 양산로 85, 하이퍼타워 4층 405, 406호</div>
 </div>
 <div class="text-[12px] text-gray-500 mt-2.5 max-w-[348px]">
-            이벤터스는 통신판매중개자이며 행사에 대한 당사자 및 주최자가 아닙니다.<br/>
+            이벤터스는 통신판매중개자로, 행사의 당사자나 주최자가 아닙니다. <br/>
             따라서 이벤터스는 등록된 행사에 대해 책임지지 않습니다.
         </div>
 </div>
@@ -2632,7 +2473,7 @@
         mq.addEventListener('change', toggle);
     })();
 </script>
-<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="uXq6PNtTou3mkSRpY4Q8HdIm8m77Unpj3-EvmnbKlLIBAQPQ7T8MQvkoNsDH3zog11gHMovoaxOzGCp29wgXsz0uC2Q1"/></form> <style>
+<form action="/account/logoff" id="logoutform" method="post"><input name="__RequestVerificationToken" type="hidden" value="rbXmORhznfVbcbQPzjsvUU3XaX0C7LMujfTSRtC1kWn_Ua4pXddtGUkeov3aOeViaZ5LC079OY4qalpzbAHyfXR4oD01"/></form> <style>
         body {
             top: 0 !important;
         }
@@ -4070,7 +3911,7 @@
                     this.setAppModalCloseCookie();
                 },
                 setAppModalCloseCookie(expiredDaysFromToday) {
-                    util.setCookie(this.cookieName, 'fQcVkGHi1sn0D0Uozo7FEss3KZWWoOvdfw8pwLn4pyqXDe4PrS8ls38WlQCYmWvm9UoXKXDgo33m9RiGbsz2fe33oQBXPXpH0RGtlvrSQM3Z4_VYP8m6psBV0a2g5VudDGou_g2', expiredDaysFromToday ?? 1);
+                    util.setCookie(this.cookieName, 'D6X_8FfyBSiB1FeO2Q0vnaYI7hivIdnf-ZXgFANtA2A4RTXHZxu1ZLDXN50Ecn4zfFMtpTwWWaVWoauQ8s8LTl-lZBtbdG6OHiCeku2eN_Sr8CFE2aXqG5Qe8FghWAGJ4HINJw2', expiredDaysFromToday ?? 1);
                 },
             },
         }).mount('#app-prompt-popup');
@@ -4152,7 +3993,7 @@ docReady(() => {
                     showFilter: false,
                     searchDataRaw: null,
                     banners: [{"Id":8865,"New_Start_Date":"2026-07-02T00:00:00","New_End_Date":"2026-07-22T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-07-01T23:13:07.5097992","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/15afd6f723aa4d71be33cbb261644ff8.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/b9325f59d9424df690cf490fc635a327.png","Click_Url":"https://event-us.kr/live/event/128767","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"B2B 이벤트 트렌드부터 실무까지","BannerDescription":"기업 행사 담당자를 위한 컨퍼런스","BannerDate":"2026. 07. 23(목) 10:00","BannerPlace":"오프라인 행사"},{"Id":8888,"New_Start_Date":"2026-07-07T00:00:00","New_End_Date":"2026-07-27T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-07-06T16:32:53.4909692","Support":true,"Order":1,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/06190e05fc23400eabf42acc41178aeb.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/9fc1ba1b3b564b2eadf60a6155b45265.png","Click_Url":"https://event-us.kr/m/130012/57153","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"Finance AX Roadmap","BannerDescription":"글로벌 브랜드 AI-native 전략","BannerDate":"2026. 07. 30(목) 14:00","BannerPlace":"온라인 행사"},{"Id":8892,"New_Start_Date":"2026-07-13T00:00:00","New_End_Date":"2026-07-26T23:59:59","Status":"ADVERTISING","ApplyDate":"2026-07-08T11:19:53.312329","Support":true,"Order":2,"Position":"searchpage","ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/e3145b847e814f0ba10299688f3c7069.png","M_ImageUrl":"https://eventusstorage.blob.core.windows.net/evs/Images/searchpage/d1c437eb089948d7913fcf92fd6626e7.png","Click_Url":"https://event-us.kr/gngschool/event/128064","Banner":{"color":{"title":"#FFFFFF","description":"#FFFFFF","date":"#FFFFFF","place":"#FFFFFF"}},"BannerJson":"{\"color\":{\"title\":\"#FFFFFF\",\"description\":\"#FFFFFF\",\"date\":\"#FFFFFF\",\"place\":\"#FFFFFF\"}}","BannerTitle":"[전액지원] 창업 스케일업 과정","BannerDescription":"G&G School 9기 모집","BannerDate":"2026. 07. 01(수) ~ 2026. 07. 31(금)","BannerPlace":"온라인 접수"}],
-                    searchResultBanners: [{"Id":"128767","CoverImageUrl":"/Image/live/128767/ProjectInfo/Cover/998a8925ab4e47e3bb03cf57e72a41ca.png","Title":"기업 행사 담당자를 위한 BES 2026 :: Business Event Summit","State":"Start","AppTopLogoImageUrl":"https://eventusstorage.blob.core.windows.net/evs/UploadedFiles/live/TopLogoImage/f983c9e0a1b64b6a9c1b464b3ce33f8b.png","EventType":"강연/세미나","Category":"마케팅","Category2":"IT","StartDate":"2026-07-23T10:00:00","CloseDate":"2026-07-23T19:30:00","RegisterStartDate":"2026-06-25T10:00:00","RegisterDueDate":"2026-07-22T10:00:00","ViewCount":5945,"AppSubDomain":"live","IsSuper":false,"AppTitle":"EventUs","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 마포구","EventAddress":"서울 마포구 상암산로 34","EventAddressTitle":"큐브컨벤션센터","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-06-18T14:37:00","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":true,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":191699,"ProjectId":"128767","ProjectSubDomain":"live","TagId":2225,"Date":"2026-06-22T13:57:48.6922077","Sort":0,"Project":null,"Tag":null},{"Id":191700,"ProjectId":"128767","ProjectSubDomain":"live","TagId":12854,"Date":"2026-06-22T13:57:48.6922077","Sort":1,"Project":null,"Tag":null},{"Id":191701,"ProjectId":"128767","ProjectSubDomain":"live","TagId":13784,"Date":"2026-06-22T13:57:48.6922077","Sort":2,"Project":null,"Tag":null},{"Id":191702,"ProjectId":"128767","ProjectSubDomain":"live","TagId":125,"Date":"2026-06-22T13:57:48.6922077","Sort":3,"Project":null,"Tag":null},{"Id":191703,"ProjectId":"128767","ProjectSubDomain":"live","TagId":653,"Date":"2026-06-22T13:57:48.6922077","Sort":4,"Project":null,"Tag":null}],"pitId":8838,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/live/event/128767","CorrectionValue":0.0},{"Id":"127572","CoverImageUrl":"/Image/imwebme/127572/ProjectInfo/Cover/43dbf32f45d54dc3b6210b93ef06c133.png","Title":"BRANDCON 26","State":"Start","AppTopLogoImageUrl":"/Image/imwebme/b78d5d2ff27246b79946b45a448123af.png","EventType":"강연/세미나","Category":"창업","Category2":"스타트업","StartDate":"2026-07-28T09:00:00","CloseDate":"2026-07-28T17:30:00","RegisterStartDate":"2026-06-08T16:00:00","RegisterDueDate":"2026-07-05T23:30:00","ViewCount":3186,"AppSubDomain":"imwebme","IsSuper":false,"AppTitle":"아임웹","AppThemeColor":"eventus-purple","ProjectInfoArea":"서울/경기/인천","ProjectInfoArea_Detail":"서울 강남구","EventAddress":"서울 강남구 영동대로 513","EventAddressTitle":"COEX GRAND BALLROOM 코엑스 그랜드 볼룸","GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":true,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-06-04T19:25:00","EventSystemType":"offline","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":187431,"ProjectId":"127572","ProjectSubDomain":"imwebme","TagId":753,"Date":"2026-06-04T19:28:03.025575","Sort":0,"Project":null,"Tag":null},{"Id":187432,"ProjectId":"127572","ProjectSubDomain":"imwebme","TagId":59,"Date":"2026-06-04T19:28:03.025575","Sort":1,"Project":null,"Tag":null},{"Id":187433,"ProjectId":"127572","ProjectSubDomain":"imwebme","TagId":89,"Date":"2026-06-04T19:28:03.025575","Sort":2,"Project":null,"Tag":null},{"Id":187434,"ProjectId":"127572","ProjectSubDomain":"imwebme","TagId":125,"Date":"2026-06-04T19:28:03.025575","Sort":3,"Project":null,"Tag":null},{"Id":187435,"ProjectId":"127572","ProjectSubDomain":"imwebme","TagId":592,"Date":"2026-06-04T19:28:03.025575","Sort":4,"Project":null,"Tag":null}],"pitId":8761,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/127572/55484","CorrectionValue":0.0},{"Id":"130012","CoverImageUrl":"/Image/portonekorea/130012/ProjectInfo/Cover/47eedf97be554f0ab9641bff6a51bb0c.png","Title":"Finance AX Roadmap : 글로벌 브랜드 재무팀을 위한 AI 전환 전략","State":"Start","AppTopLogoImageUrl":"/Image/portonekorea/f7d55eb6e0fe4df2bc85e31a7107750d.png","EventType":"강연/세미나","Category":"경영","Category2":"AI","StartDate":"2026-07-30T14:00:00","CloseDate":"2026-07-30T17:00:00","RegisterStartDate":"2026-07-06T18:00:00","RegisterDueDate":"2026-07-29T23:30:00","ViewCount":617,"AppSubDomain":"portonekorea","IsSuper":false,"AppTitle":"포트원","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-07-06T14:27:00","EventSystemType":"online","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":194536,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":30230,"Date":"2026-07-06T14:33:08.1953625","Sort":0,"Project":null,"Tag":null},{"Id":194537,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":12583,"Date":"2026-07-06T14:33:08.1953625","Sort":1,"Project":null,"Tag":null},{"Id":194538,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":32841,"Date":"2026-07-06T14:33:08.1953625","Sort":3,"Project":null,"Tag":null},{"Id":194539,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":38001,"Date":"2026-07-06T14:33:08.1953625","Sort":2,"Project":null,"Tag":null},{"Id":194540,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":38002,"Date":"2026-07-06T14:33:08.1953625","Sort":4,"Project":null,"Tag":null}],"pitId":8881,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/130012/57154","CorrectionValue":0.0}],
+                    searchResultBanners: [{"Id":"130012","CoverImageUrl":"/Image/portonekorea/130012/ProjectInfo/Cover/47eedf97be554f0ab9641bff6a51bb0c.png","Title":"Finance AX Roadmap : 글로벌 브랜드 재무팀을 위한 AI 전환 전략","State":"Start","AppTopLogoImageUrl":"/Image/portonekorea/f7d55eb6e0fe4df2bc85e31a7107750d.png","EventType":"강연/세미나","Category":"경영","Category2":"AI","StartDate":"2026-07-30T14:00:00","CloseDate":"2026-07-30T17:00:00","RegisterStartDate":"2026-07-06T18:00:00","RegisterDueDate":"2026-07-29T23:30:00","ViewCount":1858,"AppSubDomain":"portonekorea","IsSuper":false,"AppTitle":"포트원","AppThemeColor":"eventus-purple","ProjectInfoArea":null,"ProjectInfoArea_Detail":null,"EventAddress":null,"EventAddressTitle":null,"GroupRequestGroupMoney":0,"IsCheck":true,"IsOpen":true,"IsEnd":false,"IsPlace":false,"IsDirectPlace":false,"CreatedDate":"2026-07-06T14:27:00","EventSystemType":"online","OnlineEventType":null,"ReceptionType":"eventus","Payway":false,"JaccardScore":0.0,"EventPlayListId":null,"ProjectTags":[{"Id":194536,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":30230,"Date":"2026-07-06T14:33:08.1953625","Sort":0,"Project":null,"Tag":null},{"Id":194537,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":12583,"Date":"2026-07-06T14:33:08.1953625","Sort":1,"Project":null,"Tag":null},{"Id":194538,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":32841,"Date":"2026-07-06T14:33:08.1953625","Sort":3,"Project":null,"Tag":null},{"Id":194539,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":38001,"Date":"2026-07-06T14:33:08.1953625","Sort":2,"Project":null,"Tag":null},{"Id":194540,"ProjectId":"130012","ProjectSubDomain":"portonekorea","TagId":38002,"Date":"2026-07-06T14:33:08.1953625","Sort":4,"Project":null,"Tag":null}],"pitId":8881,"IsAdCheck":true,"AdOrder":1,"IsAdMark":true,"Url":"https://event-us.kr/m/130012/57154","CorrectionValue":0.0}],
                     isSearchResultBannerShown: false,
                     eventList: [],
                     eventCount: 0,

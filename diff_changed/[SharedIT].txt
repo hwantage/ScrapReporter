@@ -54,7 +54,7 @@
 <script data-turbolinks-track="false" src="https://d1t0c50njgghjy.cloudfront.net/assets/production/controllers/seminars-07263be6dab85106e76160b1fe1cd524c0164649ba40806c403a1f82c0c57061.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <meta content="authenticity_token" name="csrf-param">
-<meta content="AoEirHW8X0ouWTSeJXMiQ5UUbJuWSYGPdHCRkElAuyMjWMI9aP4CQ1MsP6Wyl5LCSqchO3Vj1oyw+2VsraTaQg==" name="csrf-token">
+<meta content="ly5eurgrVEOqpJf/zlcuQ+ajDV/Kejkz6JOtNkIaihAdMHMVOjj1hc52q5ilMz1Tl+moOxUHwtjiHFt+K6TawA==" name="csrf-token">
 <script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
   var googletag = googletag || {};
@@ -165,7 +165,7 @@ ga("send","pageview");
 <li class="linkedin"><a href="https://www.linkedin.com/in/sharedit2014/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 </ul>
 <ul class="list-inline hidden-xs">
-<li><a href="/cdn-cgi/l/email-protection#87eae6f4f3e2f5c7f4efe6f5e2e3eef3a9e4e8a9ecf5"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="0568647671607745766d647760616c712b666a2b6e77">[email protected]</span></a></li>
+<li><a href="/cdn-cgi/l/email-protection#89e4e8fafdecfbc9fae1e8fbecede0fda7eae6a7e2fb"><i class="fa fa-envelope-o pr-5 pl-10"></i> <span class="__cf_email__" data-cfemail="4825293b3c2d3a083b20293a2d2c213c662b2766233a">[email protected]</span></a></li>
 <li><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"><i class="fa fa-youtube-play pr-5 pl-10" title="SHAREDIT CLASS / SHAREDIT LIVE"></i></a><a href="https://www.youtube.com/channel/UCKmGquVYo0RkOwfAsxJ-WCQ" target="_blank"> YouTube</a></li>
 <li><a href="http://www.podbbang.com/ch/15150" target="_blank"><i class="fa fa-podcast pr-5 pl-10" title="팟빵 - 쌤팍의 전산쟁이 이야기"></i></a><a href="https://www.sharedit.co.kr/posts/1236" target="_blank"> 팟캐스트</a></li>
 <li style="color: rgba(255,255,255,0.4); padding: 0 10px;">|</li>
@@ -196,7 +196,7 @@ ga("send","pageview");
 <button class="btn dropdown-toggle btn-default btn-sm" data-toggle="dropdown" type="button"><i class="fa fa-lock pr-5"></i> 로그인</button>
 <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
 <li>
-<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="qXQQ0moIiisqe5OL7LfDYzrvT5Gt+UQMOsehmqkUrcmIrfBDd0rXIlcOmLB7U3Pi5VwCMU7TEw/+TFVmTfDMqA=="/>
+<form accept-charset="UTF-8" action="/users/sign_in" class="login-form margin-clear" id="new_user" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="KBBMZ7B03kX4i1fJpgXG0KjUQpIPqkfKUoJ+Lxq+QKmiDmHIMmd/g5xZa67NYdXA2Z7n9tDXvCFYDYhncwAQeQ=="/>
 <div class="form-group has-feedback">
 <label class="control-label">이메일 주소</label>
 <input autofocus="autofocus" class="form-control" id="user_email" name="user[email]" placeholder="" type="email" value=""/>
@@ -452,12 +452,12 @@ ga("send","pageview");
 <div class="divider"></div>
 <ul class="menu">
 <li class="col-lg-6">
-<a href="/companies/jiransoft/products">
-<i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
-</a> </li>
-<li class="col-lg-6">
 <a href="/companies/wantsnet/products">
 <i class="menus wantsnet" style="margin-left:-15px;"></i> 원츠넷
+</a> </li>
+<li class="col-lg-6">
+<a href="/companies/synapsoft/products">
+<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
 </a> </li>
 </ul>
 </div>
@@ -469,8 +469,8 @@ ga("send","pageview");
 <i class="menus bellins" style="margin-left:-15px;"></i> 벨아이앤에스
 </a> </li>
 <li class="col-lg-6">
-<a href="/companies/synapsoft/products">
-<i class="menus synapsoft" style="margin-left:-15px;"></i> 사이냅소프트
+<a href="/companies/jiransoft/products">
+<i class="menus jiransoft" style="margin-left:-15px;"></i> 지란지교소프트
 </a> </li>
 </ul>
 </div>
@@ -643,7 +643,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  window.newData = {"qnaboards":[],"freeboards":[],"posts":[],"data_centers":[],"promotions":[],"seminars":[],"solutions":[]};
+  window.newData = {"qnaboards":[{"id":27804,"post_entity_id":null,"user_id":26463,"category_id":1,"reference_id":null,"reference_type":"Qnaboard","notice":false,"title":"IT관리자 이직 시 어떤 강점을 어필하나요?","content":"\u003cdiv class=\"se-contents\" role=\"textbox\" style=\"box-sizing: content-box; font-family: \u0026quot;맑은 고딕\u0026quot;; font-size: 11pt; line-height: 1.2;\" data-document-fixed-width=\"false\" data-document-padding-top=\"18\" data-document-padding-bottom=\"18\" data-document-padding-left=\"23\" data-document-padding-right=\"23\"\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e안녕하세요 선배님들\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e장마철에 비도 오고 많이 꿉꿉하네요.. 빗길 안전운전 하시길 바랍니다!\u003c/span\u003e\u003cbr\u003e\u003cbr\u003e\u003cspan class=\"se-zws-run\"\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e저는 300명 정도 되는 회사에서 IT관리자 겸 네트워크, 보안.. 이것저것 하고 있습니다.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e최근 임원 및 대표이사님을 대상으로 정보보안 5개년 마스터플랜을 작성하여 최종 승인을 받았습니다. 회사 사정상 IT관리자가 저 뿐이고 (다른 개발자는 있음) 네트워크/보안 쪽으로 아는 사람은 저 뿐이고.. 전임자 분께서도 여러 시스템을 넣으려고 했는데 항상 반려가 되었던 것을 감안하면, 나름 회사에 큰 업적(?)을 세우고 있다고 스스로 자부합니다.\u0026nbsp;\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e마스터플랜을 따라간다면, 앞으로 많은 솔루션 및 시스템을 도입 구축, 현행 개선 등 많은 업무를 수행할 것 같습니다. 그런 경험을 토대로 향후 2~3년 후에 이직을 생각하고 있구요!\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cbr\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e만약 이런 경험을 토대로 이직을 하게 된다면, 이직 시 강점을 발휘할 수 있을까요? 추후 대기업이나 중견기업 등으로 이직이 목표인데, 정보보안기사도 취득할 생각입니다.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e현재 재직 중이신 선배님들이 경력직으로 면접에 들어가게 된다면 어떤 점을 많이 보시나요?\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cbr\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e이 외에도 조언 주실 부분이 있으시다면 감사드리겠습니다.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e","content_backup":null,"status":"published","user_delete":false,"view_count":74,"email_send":false,"created_at":"2026-07-20T09:13:51.000+09:00","updated_at":"2026-07-20T09:34:06.000+09:00"},{"id":27805,"post_entity_id":null,"user_id":27265,"category_id":11,"reference_id":null,"reference_type":"Qnaboard","notice":false,"title":"진로가 고민입니다.","content":"\u003cdiv class=\"se-contents\" role=\"textbox\" style=\"box-sizing: content-box; font-family: \u0026quot;맑은 고딕\u0026quot;; font-size: 11pt; line-height: 1.2;\" data-document-fixed-width=\"false\" data-document-padding-top=\"18\" data-document-padding-bottom=\"18\" data-document-padding-left=\"23\" data-document-padding-right=\"23\"\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e안녕하세요.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e\r\n97년생이고 현재 스마트팩토리(MCS) 운영 및 유지보수 업무를 2년 정도 하고 있습니다.\r\n\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e현재 하는 업무는\r\n\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003eMCS 운영 및 유지보수,\u0026nbsp;\u003c/span\u003e\u003cspan\u003e장애 대응\r\n테스트, 고객 대응,\r\nOracle DB 조회 및 간단한 수정,\r\nJava 코드 간단한 유지보수,\r\n현장 상주 운영\r\n정도이고\u003c/span\u003e\u003cspan\u003e\u0026nbsp;신규 개발은 거의 하지 않습니다.\r\n\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e요즘 가장 고민되는 부분은 이 경력이 계속 쌓여도 시장에서 경쟁력이 있는지입니다. 흔히 말하는 '물경력'이 될까 봐 걱정이 됩니다.\r\n결혼도 앞두고 있어서 장기적으로 안정적인 커리어를 만들고 싶습니다.\r\n\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e어떻게 커리어를 확장을 해야할까요? 제가 비전공자에 지금도 개발을 안하다보니 자신감도 없고 SI개발 보단 비개발 It 직군으로 가야하나 싶습니다..\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e\r\n혹시 비슷한 경력으로 이직하신 분들의 경험도 듣고 싶습니다.\u003c/span\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cbr\u003e\u003c/p\u003e\u003cp style=\"margin: 16px 0px; display: block; overflow-wrap: break-word;\"\u003e\u003cspan\u003e감사합니다.\u003c/span\u003e\u003c/p\u003e\u003c/div\u003e","content_backup":null,"status":"published","user_delete":false,"view_count":44,"email_send":true,"created_at":"2026-07-20T10:34:59.000+09:00","updated_at":"2026-07-20T10:34:59.000+09:00"}],"freeboards":[],"posts":[],"data_centers":[],"promotions":[],"seminars":[],"solutions":[]};
 
   resetCookieIfNewDay();
   checkNewData();
@@ -703,16 +703,13 @@ document.addEventListener('DOMContentLoaded', function() {
 <ul class="list" style="min-height: 700px;">
 <div class="tags-cloud2 mb-10" style="color: #000000; margin-top: -20px;">
 <div class="tag">
-<a href="/seminars/2315" title="Okta - [0715] Okta for AI Agent 론칭 웨비나">15일 (수)</a>
-</div>
-<div class="tag">
-<a href="/seminars/2321" title="Cisco - [시스코 웨비나 초청] AI 자율 공격 시대, 대응 및 전략을 소개합니다.">16일 (목)</a>
-</div>
-<div class="tag">
 <a href="/seminars/2318" title="지란지교소프 - [0721] 보안 담당자들은 DLP 운영에 지치는 이유는?">21일 (화)</a>
 </div>
 <div class="tag">
 <a href="/seminars/2312" title="Databricks  - Databricks Data + AI 러닝 페스티벌 2026">22일 (수)</a>
+</div>
+<div class="tag">
+<a href="/seminars/2323" title="Salesforce - 세일즈포스 라이브 웨비나 초대: Slack으로 시작하는 CRM">28일 (화)</a>
 </div>
 <div class="tag">
 <a href="/seminars/2319" title="지란지교소프트 - [0729] AI 시대, 운영 가능한 보안은 어떤 모습이어야 하나?">29일 (수)</a>
@@ -733,7 +730,23 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2026-07-29(수) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>3개의 댓글이 있습니다.</dd>
+<dd>4개의 댓글이 있습니다.</dd>
+</dl>
+</li>
+<li>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2323/low_sf.png');"></figure>
+<header>
+<span class="sponsor">
+               	    Salesforce
+               </span>
+<span class="category">웨비나</span>
+<strong>
+<a href="/seminars/2323" title="세일즈포스 라이브 웨비나 초대: Slack으로 시작하는 CRM">세일즈포스 라이브 웨비나 초대: Slack으로 시작하는 CRM</a>
+</strong>
+</header>
+<dl class="info">
+<dt>일시</dt>
+<dd>2026-07-28(화) 15:00 ~ 17:00</dd>
 </dl>
 </li>
 <li>
@@ -751,7 +764,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2026-07-22(수) 09:00 ~ 17:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -769,15 +782,15 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2026-07-21(화) 14:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2321/low_cisco.png');"></figure>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2321/low_cisco.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-               	    Cisco
-               </span>
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
 <span class="category">웨비나</span>
 <strong>
 <a href="/seminars/2321" title="[시스코 웨비나 초청] AI 자율 공격 시대, 대응 및 전략을 소개합니다.">[시스코 웨비나 초청] AI 자율 공격 시대, 대응 및 전략을 소개합니다.</a>
@@ -791,11 +804,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </dl>
 </li>
 <li>
-<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2315/low_0715_thumbnail_sharedit.png');"></figure>
+<figure style="background-image: url('https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/tool/seminar/thumbnail_image/2315/low_0715_thumbnail_sharedit.png');opacity: .2;"></figure>
 <header>
 <span class="sponsor">
-               	    Okta
-               </span>
+<small><i aria-hidden="true" class="fa fa-info-circle"> 종료 되었습니다.</i></small>
+</span>
 <span class="category">웨비나</span>
 <strong>
 <a href="/seminars/2315" title="[0715] Okta for AI Agent 론칭 웨비나">[0715] Okta for AI Agent 론칭 웨비나</a>
@@ -805,7 +818,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <dt>일시</dt>
 <dd>2026-07-15(수) 13:00 ~ 15:00</dd>
 <dt>댓글</dt>
-<dd>1개의 댓글이 있습니다.</dd>
+<dd>2개의 댓글이 있습니다.</dd>
 </dl>
 </li>
 <li>
@@ -928,38 +941,60 @@ document.addEventListener('DOMContentLoaded', function() {
 </ul>
 </section>
 </div>
+<div class="block clearfix object-non-visible animated object-visible fadeInDownSmall">
+<h5 class="title"><i class="fa fa-connectdevelop"></i> 설문 조사<small> - Event</small></h5>
+<div class="separator-2"></div>
+<ul class="nav product-brands-list">
+<li>
+<a ,="" href="/promotions/2020" title="[가이드북 전원 제공] 한 권으로 정리하는 Dell Technologies 스토리지 포트폴리오">[가이드북 전원 제공]  (자료다운로)<span>D-4</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/2019" title="그 어느때보다 스마트한 스토리지, Dell PowerStore Elite!!">그 어느때보다 스마트한  (설문조사)<span>D-4</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/2018" title="[가이드 다운로드 이벤트] 책상에서 시작, 데이터센터로 확장하는 AI: Dell x NVIDIA AI 솔루션 가이드">[가이드 다운로드 이벤트 (자료다운로)<span>D-4</span></a>
+</li>
+<li>
+<a ,="" href="/promotions/2017" title=" [커피쿠폰 이벤트] AI 혁신을 완성하는 NVIDIA 풀스택 솔루션 확인하고, 설문 이벤트도 참여하세요!"> [커피쿠폰 이벤트] A (설문조사)<span>D-3</span></a>
+</li>
+</ul>
+</div>
 <div class="block clearfix">
 <h5 class="title">세미나 / 프로모션 리스트</h5>
 <div class="separator-2"></div>
 <ul class="nav product-brands-list">
 <li>
-<a ,="" href="/promotions/2014" title="[최신 IDC 백서 전원 제공] 데이터 주권과 AI 경쟁력을 위한 ‘소버린 AI’ 구축 전략">[최신 IDC 백서 전원 (자료다운로)<span>D-7
+<a ,="" href="/promotions/2015" title="RTX 4090 사용한 만큼 클라우드 크레딧 지원 받기">RTX 4090 사용한  (할인혜택)<span>D-72
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/2010" title="[추천솔루션] 엑소스피어 2주 보안운영 체험하고 네이버페이 혜택까지! ">[추천솔루션] 엑소스피어 (데모신청)<span>D-79
+<a ,="" href="/promotions/2014" title="[최신 IDC 백서 전원 제공] 데이터 주권과 AI 경쟁력을 위한 ‘소버린 AI’ 구축 전략">[최신 IDC 백서 전원 (자료다운로)<span>D-0
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/2012" title="네이버에서 만나는 시스코 공식 브랜드스토어 오픈!">네이버에서 만나는 시스코 (견적요청)<span>D-23
+<a ,="" href="/promotions/2018" title="[가이드 다운로드 이벤트] 책상에서 시작, 데이터센터로 확장하는 AI: Dell x NVIDIA AI 솔루션 가이드">[가이드 다운로드 이벤트 (자료다운로)<span>D-4
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2315" title="[0715] Okta for AI Agent 론칭 웨비나">[0715] Okta f (웨비나)	<span>D-2</span></a>
+<a ,="" href="/seminars/2312" title="Databricks Data + AI 러닝 페스티벌 2026">Databricks Da (웨비나)	<span>D-2</span></a>
 </li>
 <li>
-<a ,="" href="/promotions/2007" title="구형 GPU가 AI Factory의 병목? 보상판매로 DGX B200·B300 전환하고 비용까지 줄이세요 ">구형 GPU가 AI Fa (상담요청)<span>D-17
+<a ,="" href="/promotions/2000" title="합리적인 혜택으로 '통합 업무 환경'을 경험해 보세요!">합리적인 혜택으로 '통합 (할인혜택)<span>D-72
 									
 								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2319" title="[0729] AI 시대, 운영 가능한 보안은 어떤 모습이어야 하나?">[0729] AI 시대, (웨비나)	<span>D-16</span></a>
+<a ,="" href="/promotions/2012" title="네이버에서 만나는 시스코 공식 브랜드스토어 오픈!">네이버에서 만나는 시스코 (견적요청)<span>D-16
+									
+								</span></a>
 </li>
 <li>
-<a ,="" href="/seminars/2322" title="[0806] 웹격리 RBI로 실현하는 안전한 망분리 완화">[0806] 웹격리 RB (웨비나)	<span>D-24</span></a>
+<a ,="" href="/promotions/2016" title="K-Digital Training IT 기업 수요조사 자문 요청">K-Digital Tra (설문조사)<span>D-10
+									
+								</span></a>
 </li>
 </ul>
 </div>
@@ -978,21 +1013,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="separator-2"></div>
 <div class="overlay-container overlay-visible" style="width: 100%; border: 1px solid #eee; height:220px; display:table-cell;vertical-align:middle;">
 <div class="sponsor-ad-box" style="width:260px;">
-<img alt="Medium crossuploader rgb en hv" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","558",null);' src="https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/558/medium_crossuploader_rgb_en_hv.png"/>
+<img alt="Medium %ec%97%90%eb%94%94%ed%84%b0 %ea%b5%ad%eb%ac%b8" onclick='ga("send","event","it.infra.evaluations","evaluations.product.click.sponsor_ad","422",null);' src="https://shareditassets.s3.ap-northeast-2.amazonaws.com/production/uploads/product/logo/422/medium_%EC%97%90%EB%94%94%ED%84%B0_%EA%B5%AD%EB%AC%B8.png"/>
 </div>
-<a class="overlay-link" href="/evaluations/products/558">
+<a class="overlay-link" href="/evaluations/products/422">
 <i class="fa fa-link"></i>
 </a>
 <div class="overlay-bottom hidden-xs" style="padding: 10px;">
 <div class="text">
-<p class="lead margin-clear text-left" style="font-size: 16px;">나모 크로스업로더</p>
+<p class="lead margin-clear text-left" style="font-size: 16px;">사이냅 에디터 3.0</p>
 </div>
 </div>
 </div>
 <script>
     ;(function($){
       $(function(){
-        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","558",null);
+        ga("send","event","it.infra.evaluations","evaluations.product.impression.sponsor_ad","422",null);
       });
     })(jQuery);
   </script>
@@ -1014,25 +1049,357 @@ document.addEventListener('DOMContentLoaded', function() {
 <nav>
 <ul class="nav product-brands-list">
 <li>
-<a href="/posts/35952" rel="nofollow" target="_self" title="참고 하겠습니다. 감사합니다. ">참고 하겠습니다. 감사합니다. <span>테크박스</span></a>
+<a href="/seminars/2319" rel="nofollow" target="_self" title="등록했습니다.">등록했습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/35953" rel="nofollow" target="_self" title="참고 하겠습니다. 감사합니다. ">참고 하겠습니다. 감사합니다. <span>테크박스</span></a>
+<a href="/seminars/2318" rel="nofollow" target="_self" title="참고하겠습니다.">참고하겠습니다.<span>세미나</span></a>
 </li>
 <li>
-<a href="/posts/35949" rel="nofollow" target="_self" title="참고 하겠습니다. 감사합니다. ">참고 하겠습니다. 감사합니다. <span>테크박스</span></a>
+<a href="/posts/35957" rel="nofollow" target="_self" title="참고 하겠습니다. ">참고 하겠습니다. <span>테크박스</span></a>
 </li>
 <li>
-<a href="/posts/35950" rel="nofollow" target="_self" title="참고 하겠습니다. 감사합니다. ">참고 하겠습니다. 감사합니다. <span>테크박스</span></a>
+<a href="/promotions/2020" rel="nofollow" target="_self" title="참고합니다.">참고합니다.<span>프로모션</span></a>
 </li>
 <li>
-<a href="/posts/35951" rel="nofollow" target="_self" title="참고 하겠습니다. 감사합니다. ">참고 하겠습니다. 감사합니다. <span>테크박스</span></a>
+<a href="/promotions/2019" rel="nofollow" target="_self" title="참여합니다.">참여합니다.<span>프로모션</span></a>
 </li>
 </ul>
 </nav>
 </div>
 </div>
 <!-- sidebar slide ad -->
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<div class="bottom-right-fixed-banner hidden-xs hidden-sm">
+<button class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+<!-- AD area start -->
+<!-- /78172804/sidebar_fixed  -->
+<div id="div-gpt-ad-1524370771285-0">
+<script>
+	      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1524370771285-0'); });
+	    </script>
+</div>
+<!-- AD area end -->
+</div>
+<script>
+	  $(function () {
+	
+	    $('.bottom-right-fixed-banner').delay(500).animate(
+	      { right: '+=325px' }, 
+	      1500, 
+	      'easeOutBack', 
+	      function () {
+	        $(this).delay(5000).animate(
+	          { right: '-=325px' }, 
+	          1500, 
+	          'easeOutBack', 
+	          function () {
+	        });
+	    });
+	
+	    $('.bottom-right-fixed-banner > button.close').on('click', function(e){
+	      e.preventDefault();
+	      $('.bottom-right-fixed-banner').hide();
+	    });
+	  });
+	</script>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
+<style>
+  .bottom-right-fixed-banner {
+    color: #fff;
+    position: fixed;
+    bottom: 5px;
+    right: -320px;
+    width: 280px;
+    min-height: 260px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1005;
+  }
+  .bottom-right-fixed-banner div {
+    margin: auto auto;
+  }
+  .bottom-right-fixed-banner .close {
+    position: absolute;
+    top: 5px;
+    right: 9px;
+  }
+</style>
 <!-- // sidebar slide ad -->
 <script>
   ;(function($){
@@ -1056,7 +1423,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h4 class="modal-title" id="myModalLabel">알림</h4>
 </div>
 <div class="modal-body">
-<p><a href="/cdn-cgi/l/email-protection#bfd2decccbdacdffccd7decddadbd6cb91dcd091d4cd"><span class="__cf_email__" data-cfemail="cfa2aebcbbaabd8fbca7aebdaaaba6bbe1aca0e1a4bd">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
+<p><a href="/cdn-cgi/l/email-protection#412c20323524330132292033242528356f222e6f2a33"><span class="__cf_email__" data-cfemail="85e8e4f6f1e0f7c5f6ede4f7e0e1ecf1abe6eaabeef7">[email protected]</span></a>로 내용과 파일을 첨부해 보내 주시면 검토 후 업로드 됩니다.<br/>
 <a href="/memberships">멤버십</a>에 가입하신 후 직접 업로드를 하실 수 있습니다.</p>
 </div>
 </div>
@@ -1077,7 +1444,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 class="title">IT 세미나/교육/프로모션 정보 구독 신청</h3>
 <p>새로운 세미나/교육/프로모션 정보를 메일로 편하게 받아 보세요. 정기적으로 보내 드립니다.</p>
 <div class="separator"></div>
-<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="jSst0exq2urt21zg2GHn5pUH6w6znqMzHd1L1aFsClSs8s1A8SiH45CuV9tPhVdnSrSmrlC09DDZVr8pRYhrNQ=="/>
+<form accept-charset="UTF-8" action="/promotions/email_subscribe" class="form-inline margin-clear" id="" method="post"><input name="utf8" type="hidden" value="✓"/><input name="authenticity_token" type="hidden" value="dF2PUr+nrlTpiNp9iqVGvM4x7ctIT7r7n6TpsU00p8H+Q6L9PbQPko1a5hrhwVWsv3tIr5cyQRCVKx/5JIr3EQ=="/>
 <div class="form-group has-feedback">
 <label class="sr-only" for="subscribe2">Email address</label>
 <input class="form-control" id="email" name="email" placeholder="Enter email" required="required" type="text"/>
@@ -1122,7 +1489,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><i class="text-default fa fa-id-card-o pr-5"></i>사업자 등록번호 : 144-81-29382</li>
 <li><i class="text-default fa fa-id-card-o pr-5"></i>통신판매업신고 : 2017-용인수지-0227</li><br/>
 <li><i class="text-default fa fa-map-marker pr-5"></i>(주) 쉐어드커뮤니케이션</li>
-<li><a class="link-dark" href="/cdn-cgi/l/email-protection#9bf6fae8effee9dbe8f3fae9fefff2efb5f8f4b5f0e9"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="96fbf7e5e2f3e4d6e5fef7e4f3f2ffe2b8f5f9b8fde4">[email protected]</span></a></li>
+<li><a class="link-dark" href="/cdn-cgi/l/email-protection#563b372522332416253e372433323f22783539783d24"><i class="text-default fa fa-envelope-o pr-5"></i><span class="__cf_email__" data-cfemail="630e021017061123100b021106070a174d000c4d0811">[email protected]</span></a></li>
 </ul>
 <ul class="list-inline small" style="margin-top: -9px">
 <li><i class="text-default fa fa-lock pr-5"></i><strong> <a class="link-dark" href="/welcome/terms_of_service" style="color: #777777;" target="_blank">이용약관</a> | <a class="link-dark" href="/welcome/personal_information" style="text-decoration: underline!important;" target="_blank">개인정보처리방침</a></strong></li>
@@ -1264,6 +1631,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('turbolinks:load', applyHighlighting);
   })();
 </script>
-<script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"24c0684dfaa9483a9ff2b683fac3f4a4","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1a3f013ead45578',t:'MTc4MzkwMDA5Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1de94552ec1d6eb',t:'MTc4NDUxNDk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script crossorigin="anonymous" data-cf-beacon='{"version":"2024.11.0","token":"24c0684dfaa9483a9ff2b683fac3f4a4","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' defer="" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"></script>
+</body>
 </html>
