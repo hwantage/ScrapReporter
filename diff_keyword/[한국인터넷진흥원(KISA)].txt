@@ -48,7 +48,7 @@
 <script src="/resource/common/js/swiper.min.js" type="text/javascript"></script>
 <script charset="utf-8" src="/resource/kor/js/slider.js" type="text/javascript"></script>
 <!-- 공공누리 스트립트 -->
-<script charset="utf-8" src="/resource/kor/js/koglOpen.js?t=7" type="text/javascript"></script>
+<script charset="utf-8" src="/resource/kor/js/koglOpen.js?t=8" type="text/javascript"></script>
 <script type="text/javascript">
 		$(document).ready(function() {
 
@@ -102,7 +102,7 @@
 </link></link></link></meta></meta></head>
 <head>
 <script type="text/javascript">
-	var totalNum = 1496; // 전체 조회 건수
+	var totalNum = 1513; // 전체 조회 건수
 	var currentPage = 1; // 현재 page 번호
 	var pageSize = 10; // 페이지당 최대 데이터 갯수
 	var pageScale = 5; // 페이지당 최대 페이징 갯수
@@ -188,7 +188,7 @@ function oneDepMenu() {
 </div>
 <div class="board_top">
 <p class="lb count">
-<span>총 <b>1496</b>건
+<span>총 <b>1513</b>건
 								</span> <span>페이지 <b><span id="currentPage"></span>/<span id="totalPage"></span></b></span>
 </p>
 <div class="board_search_box">
@@ -227,112 +227,115 @@ function oneDepMenu() {
 <tbody>
 <tr class="notice">
 <td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3733&amp;page=1">2026년 암호모듈 시험자 양성교육 및 필기시험 안내(8.3~8.21)</a>
+</td>
+<td class="date">2026-08-03</td>
+<td class="count">3442</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3733', 1, 'KO');">
+<img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3732&amp;page=1">2026년 한국인터넷진흥원 지역공부방 참여 대학생 장학금 지원자 모집 안내(~8.28)</a>
+</td>
+<td class="date">2026-08-03</td>
+<td class="count">2770</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3732', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3731&amp;page=1">2026년 전남광주통합특별시 지역문제 해결 프로젝트 공모전 개최 안내(~8.21)</a>
+</td>
+<td class="date">2026-08-03</td>
+<td class="count">2761</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3731', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3730&amp;page=1">2026년 전남광주통합특별시 소상공인·사회적경제기업 판로 확대 지원기업 선발 안내(~8.14)</a>
+</td>
+<td class="date">2026-08-03</td>
+<td class="count">2720</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3730', 1, 'KO');">
+<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3729&amp;page=1">2026년 블록체인 기업성장허브 입주기업 모집(~8월 27일(목) 16:00까지)</a>
+</td>
+<td class="date">2026-07-30</td>
+<td class="count">4750</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3729', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3726&amp;page=1">[기간연장]2026년 정보보호제품 성능평가자 양성교육 신청·접수 안내(1차, BreakingPoint)</a>
+</td>
+<td class="date">2026-07-27</td>
+<td class="count">6479</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3726', 1, 'KO');">
+<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
+</a>
+</td>
+</tr>
+<tr class="notice">
+<td class="num"><span class="cate">공지</span></td>
 <td class="sbj txtL"><a href="/401/form?postSeq=3721&amp;page=1">[2차모집]2026년 정보보호제품 성능평가 지원 공모 사업(~8/14)</a>
 </td>
 <td class="date">2026-07-20</td>
-<td class="count">112</td>
+<td class="count">6225</td>
 <td class="attach">
 <a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3721', 1, 'KO');">
 <img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3719&amp;page=1">AI 기반 소스코드 취약점 점검 서비스 안내</a>
+<tr>
+<td class="num">1506</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3738&amp;page=1">2026년 블록체인 신뢰인프라(K-BTF) 활용·확산사업 공모 사전예고</a>
 </td>
-<td class="date">2026-07-15</td>
-<td class="count">2266</td>
-<td class="attach">
-</td>
-</tr>
-<tr class="notice">
-<td class="num"><span class="cate">공지</span></td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3715&amp;page=1">2026년 팀 시큐리티 코리아 기술세미나 개최 안내(7/22, 서울 로카우스 호텔)</a>
-</td>
-<td class="date">2026-07-13</td>
-<td class="count">3011</td>
+<td class="date">2026-08-07</td>
+<td class="count">720</td>
 <td class="attach">
 </td>
 </tr>
 <tr>
-<td class="num">1493</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3720&amp;page=1">2026년도 개인정보 이노베이션 존 운영기관 지정 공모</a>
+<td class="num">1505</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3737&amp;page=1">2026년도 블록체인 산업 실태조사 실시 및 협조 안내</a>
 </td>
-<td class="date">2026-07-16</td>
-<td class="count">67</td>
+<td class="date">2026-08-07</td>
+<td class="count">398</td>
 <td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3720', 1, 'KO');">
+</td>
+</tr>
+<tr>
+<td class="num">1504</td>
+<td class="sbj txtL"><a href="/401/form?postSeq=3736&amp;page=1">양자내성암호 국제 표준화 동향 분석</a>
+</td>
+<td class="date">2026-08-04</td>
+<td class="count">633</td>
+<td class="attach">
+<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3736', 1, 'KO');">
 <img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1492</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3718&amp;page=1">일상, 생활, 산업 현장 등에서 활용 가능한 위치정보 기반 안전 솔루션 모집공고</a>
-</td>
-<td class="date">2026-07-15</td>
-<td class="count">1467</td>
-<td class="attach">
-</td>
-</tr>
-<tr>
-<td class="num">1491</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3717&amp;page=1">[공지] 2026년 가명정보 전문인력 양성교육 교육생 모집 및 일정 안내</a>
-</td>
-<td class="date">2026-07-15</td>
-<td class="count">1826</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3717', 1, 'KO');">
-<img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1490</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3716&amp;page=1">제21회 대한민국 인터넷대상 시상계획 공고</a>
-</td>
-<td class="date">2026-07-14</td>
-<td class="count">1653</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3716', 1, 'KO');">
-<img alt="첨부파일 JPG" src="/resource/kor/images/common/JPG.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1489</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3714&amp;page=1">[사전규격공개] 공급망 보안 모델 구축 지원사업 회계감사</a>
-</td>
-<td class="date">2026-07-10</td>
-<td class="count">3180</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3714', 1, 'KO');">
-<img alt="첨부파일 HWPX" src="/resource/kor/images/common/hwpx.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1488</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3713&amp;page=1">AI 보안 레드티밍 가이드</a>
-</td>
-<td class="date">2026-07-07</td>
-<td class="count">7109</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3713', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
-</a>
-</td>
-</tr>
-<tr>
-<td class="num">1487</td>
-<td class="sbj txtL"><a href="/401/form?postSeq=3712&amp;page=1">AI 보안 위협 대응 매뉴얼</a>
-</td>
-<td class="date">2026-07-07</td>
-<td class="count">7987</td>
-<td class="attach">
-<a href="#fnPostAttachDownload" onclick="javascript:fnPostAttachDownload(401, '3712', 1, 'KO');">
-<img alt="첨부파일 PDF" src="/resource/kor/images/common/pdf.png"/>
 </a>
 </td>
 </tr>
@@ -361,10 +364,10 @@ function oneDepMenu() {
 <div class="info">
 <dl class="date">
 <dt>최종수정일 : </dt>
-<dd>2026-07-20</dd>
+<dd>2026-08-07</dd>
 </dl>
 </div>
-<input name="_csrf" type="hidden" value="d7c83a98-e942-445f-a217-3836c9f51cac">
+<input name="_csrf" type="hidden" value="5ed82752-666c-4a2c-b1d4-d9e97d25ab4b">
 </input></article>
 <!-- // 만족도 조사 -->
 <script type="text/javascript">
@@ -387,7 +390,7 @@ function oneDepMenu() {
 			data: {menu_seq : 401, satisfy_code : radioVal, satisfy_opinion : $('.txt_sati').val()},
 		    beforeSend : function(xhr)
             {   /*데이터를 전송하기 전에 헤더에 csrf값을 설정한다*/
-            	xhr.setRequestHeader("X-CSRF-TOKEN", "d7c83a98-e942-445f-a217-3836c9f51cac");
+            	xhr.setRequestHeader("X-CSRF-TOKEN", "5ed82752-666c-4a2c-b1d4-d9e97d25ab4b");
             },			
 			success: function(data) {
 				alert(data.message)
